@@ -3,9 +3,11 @@ import "./App.css";
 <<<<<<< HEAD
 import Rotas from "./routes.js";
 import { BrowserRouter } from "react-router-dom";
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Rotas />
     </BrowserRouter>);
 }
+
+
