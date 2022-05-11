@@ -1,14 +1,12 @@
 import React from "react";
 import "./App.css";
-
+import Rotas from "./routes.js";
+import { BrowserRouter } from "react-router-dom";
 function App() {
-  const message = "hello world";
-
   return (
-    <div className="App">
-      {message}
-      <h1>Testando</h1>
-    </div>
+    <BrowserRouter>
+      <Rotas />
+    </BrowserRouter>
   );
 }
 
