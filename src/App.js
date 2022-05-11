@@ -1,15 +1,11 @@
 import React from "react";
 import "./App.css";
+import Footer from './Components/FooterGeral/footer';
 
-function App() {
-  const message = "hello world";
-
+export default function App() {
   return (
     <div className="App">
-      {message}
-      <h1>Testando</h1>
+      <Footer />
     </div>
   );
 }
-
-export default App;
