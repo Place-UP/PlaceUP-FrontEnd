@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./App.css";
 import Rotas from "./routes.js";
@@ -13,5 +14,15 @@ export default function App() {
     </BrowserRouter>    
     );
   }
+=======
+import './reset.css'
+import Rotas from "./Rotas";
+
+export default function App() {
+  return (
+    <Rotas />
+  )
+}
+>>>>>>> 71df9cbb3f8a4fbf4e90a7d48a6fc5424c3bbc03
 
 
