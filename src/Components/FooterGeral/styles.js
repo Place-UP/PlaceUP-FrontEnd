@@ -17,16 +17,20 @@ export const Footergeral = styled.div`
             flex-direction: row;
             justify-content: space-evenly;
         }
+
+        .logo-img{margin: 0px 0px 0px 10px;}
     
         .linksFooter{display: block;}
     
         .linksFooter a{text-align: center;}
+
+        .links{padding: 0px;}
     
-        .links:nth-child(2){margin-top: 0px;}
+        .linksFooter .links:nth-child(2){margin-top: 5px;}
     
         .Social{
             text-align: center;
-            margin-top: 20px;
+            margin-top: 50px;
         }
     
         .Socialh1{
@@ -82,7 +86,7 @@ export const LinksFooter = styled.div`
 export const Logo = styled.img`
     width: 120px;
     height: 110px;
-    margin: 20px;
+    margin: 20px 0;
     cursor: pointer;
 `;
 
@@ -99,6 +103,7 @@ export const FooterP = styled.p`
     text-align: center;
     font-size: 20px;
     color: white;
+    margin-top: 50px;
 `;
 
 export const FooterH1 = styled.h1`
