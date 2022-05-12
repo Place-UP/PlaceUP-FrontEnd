@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.main`
     width: 100%;
     height: 100%;
+    overflow: hidden;
 `
 
 export const Box = styled.div`
@@ -50,12 +51,19 @@ export const Ondinha = styled.img`
     z-index: ${(props) => props.primary ? "-1" : "1"}
     `
 
+export const Ondas = styled.img`
+    position: absolute;
+    bottom: -15%;
+`
+
 export const Estrela = styled.img`
     width: 50px;
     position: absolute;
-    left: 10%;
-    top: 40%;
+    left: ${(props) => props.primary ? "15%" : "25%"};
+    top: ${(props) => props.primary ? "5%" : "40%"} ;
 `
+
+
 
 export const Formulario = styled.form`
     width: 50%;

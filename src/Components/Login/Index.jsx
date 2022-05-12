@@ -1,5 +1,9 @@
 
-import Foto from '../../Img/Mulher.jpg'
+import LogoPlace from '../../Img/Login/PlaceUp_Logo.svg'
+import Onda from '../../Img/Login/Ondas_Top.svg'
+import EstilizacaoOnda from '../../Img/Login/Ondas_Top copy.svg'
+import Star from '../../Img/Login/cruz.svg'
+import OndaSvg from '../../Img/Login/OndaSvg.svg'
 
 import { HiOutlineMail } from 'react-icons/hi'
 import { RiLockPasswordLine } from 'react-icons/ri'
@@ -7,8 +11,8 @@ import { BsFacebook } from 'react-icons/bs'
 import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai'
 import { IoLogoGoogle } from 'react-icons/io'
 import {
-    Container, Header, Logo, Ondulacao, Ondinha, Estrela, Box, Formulario,
-    Legend, LabelBox, Icon, CampoInput, OR, List, SocialMidia
+    Container, Ondas, Header, Logo, Ondulacao, Ondinha, Estrela, Box, Formulario,
+    Legend, LabelBox, Icon, CampoInput, OR, List, SocialMidia,
 } from './style'
 
 
@@ -19,15 +23,18 @@ export function Login() {
             <Container>
                 <Header>
                     <Logo>
-                        <img src={Foto} alt='foto' />
+                        <img src={LogoPlace} alt='Logo placeUP' />
                     </Logo>
 
                 </Header>
 
                 <Ondulacao>
-                    <Ondinha />
-                    <Ondinha />
-                    <Estrela />
+                    <Ondinha src={Onda} alt='Ondas login' />
+                    <Ondinha primary src={EstilizacaoOnda} alt='Onda Estilização' />
+                    <Estrela src={Star} alt='Estrela' />
+                    <Estrela primary src={Star} alt='Estrela' />
+                    <Estrela second src={Star} alt='Estrela' />
+                    <Ondas src={OndaSvg} alt='Onda Login' />
                 </Ondulacao>
                 <Box>
                     <Formulario action="" method="post">
