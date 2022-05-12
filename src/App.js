@@ -1,15 +1,10 @@
 import React from "react";
-import "./App.css";
+
+import Rotas from "./Rotas";
 
 function App() {
-  const message = "hello world";
+  return <Rotas />
 
-  return (
-    <div className="App">
-      {message}
-      <h1>Testando</h1>
-    </div>
-  );
 }
 
 export default App;
