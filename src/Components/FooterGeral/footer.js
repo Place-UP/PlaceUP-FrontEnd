@@ -3,7 +3,7 @@ import logo from "./image/logo.png";
 import { BsFacebook, BsTwitter, BsInstagram } from 'react-icons/bs';
 import { Footergeral , ContainerFooter , Logo , LinksFooter , FooterH1 , Icons , FooterP } from './styles';
 
-export default function Footer() {
+export function FooterGeral() {
   return (
     <>
         <Footergeral> 
