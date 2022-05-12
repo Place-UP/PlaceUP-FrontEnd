@@ -1,16 +1,7 @@
 import React from "react";
 import logo from "./image/logo.png";
-
-import { BsFacebook } from 'react-icons/bs';
-import { BsTwitter } from 'react-icons/bs';
-import { BsInstagram } from 'react-icons/bs';
-import { Footergeral } from './styles';
-import { ContainerFooter } from './styles';
-import { Logo } from './styles';
-import { LinksFooter } from './styles';
-import { FooterH1 } from './styles';
-import { Icons } from './styles';
-import { FooterP } from './styles';
+import { BsFacebook, BsTwitter, BsInstagram } from 'react-icons/bs';
+import { Footergeral , ContainerFooter , Logo , LinksFooter , FooterH1 , Icons , FooterP } from './styles';
 
 export default function Footer() {
   return (
@@ -18,7 +9,7 @@ export default function Footer() {
         <Footergeral> 
             <ContainerFooter className="container">
                 <div>
-                    <Logo src={logo} alt="Logo-PlaceUP" />
+                    <Logo src={logo} alt="Logo-PlaceUP" className="logo-img"/>
                 </div>
 
                 <LinksFooter className="linksFooter">
