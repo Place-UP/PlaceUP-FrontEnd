@@ -22,9 +22,12 @@ export const Footergeral = styled.div`
     
         .linksFooter a{text-align: center;}
     
-        .links:nth-child(2){margin-top: 20px;}
+        .links:nth-child(2){margin-top: 0px;}
     
-        .Social{text-align: center;}
+        .Social{
+            text-align: center;
+            margin-top: 20px;
+        }
     
         .Socialh1{
             text-align: center;
@@ -36,7 +39,7 @@ export const Footergeral = styled.div`
         .icons{
             margin: 50px auto;
             padding: 0px 15px 0px 0px;
-            display: block;
+            display: inline;
         }
     
         .Copyright{
@@ -71,7 +74,7 @@ export const LinksFooter = styled.div`
     }
 
     .links:nth-child(2){
-        margin-top: 61px;
+        margin-top: 59px;
         display: block;
     }
 `;
@@ -80,6 +83,7 @@ export const Logo = styled.img`
     width: 120px;
     height: 110px;
     margin: 20px;
+    cursor: pointer;
 `;
 
 export const Icons = styled.span`
@@ -87,6 +91,7 @@ export const Icons = styled.span`
     height: 40px;
     margin: 0px 20px;
     color: white;
+    cursor: pointer;
 `;
 
 export const FooterP = styled.p`
