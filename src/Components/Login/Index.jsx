@@ -9,7 +9,6 @@ import {
     Legend, LabelBox, Icon, CampoInput, OR, List, SocialMidia
 } from './style'
 
-
 export function Login() {
     return (
         <>
