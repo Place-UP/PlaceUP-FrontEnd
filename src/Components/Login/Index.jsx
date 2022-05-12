@@ -1,4 +1,6 @@
 
+import Foto from '../../Img/Mulher.jpg'
+
 import { HiOutlineMail } from 'react-icons/hi'
 import { RiLockPasswordLine } from 'react-icons/ri'
 import { BsFacebook } from 'react-icons/bs'
@@ -17,7 +19,7 @@ export function Login() {
             <Container>
                 <Header>
                     <Logo>
-
+                        <img src={Foto} alt='foto' />
                     </Logo>
 
                 </Header>
