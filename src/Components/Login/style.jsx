@@ -67,6 +67,17 @@ export const Ondinha = styled.img`
     z-index: ${(props) => props.primary ? "-1" : "1"}
 `
 
+export const Estrela = styled.img`
+    width: 30px;
+    position: absolute;
+`
+
+export const Bolinha = styled.img`
+    width: 60px;
+    position: absolute;
+    top: 48%;
+    left: 10%;
+`
 
 export const Ondulacao = styled.div`
     position: absolute;
@@ -78,17 +89,22 @@ export const Ondulacao = styled.div`
     ${Ondinha}{
         animation: 2s ${SubaAnimaOndulacao} ;
     }
+
+    ${Estrela}#Estrela1{
+        top: 5%;
+        left: 15%;
+    }
+
+    ${Estrela}#Estrela2{
+        top: 40%;
+        left: 26%;
+    }
+
+    ${Estrela}#Estrela3{
+        top: 80%;
+        left: 10%;
+    }
 `
-
-
-export const Estrela = styled.img`
-    width: 50px;
-    position: absolute;
-    left: ${(props) => props.primary ? "15%" : "25%"};
-    top: ${(props) => props.primary ? "5%" : "40%"} ;
-`
-
-
 
 export const Formulario = styled.form`
     width: 50%;
@@ -209,6 +225,16 @@ export const SocialMidia = styled.li`
     }
 `
 
+const AparecaWave = keyframes`
+    to{
+        opacity: 1;
+    }
+
+    from{
+        opacity: 0;
+    }
+`
+
 const AnimaWave = keyframes`
     0%{
         background-position-x: 1000px;
@@ -218,7 +244,6 @@ const AnimaWave = keyframes`
         background-position-x: 0;
     }
 `
-
 
 export const Waves = styled.div`
     position: relative;
@@ -253,7 +278,7 @@ export const FooterOnda = styled.footer`
         top: -15px;
         opacity: 1;
         bottom: 0;
-        animation: 15s ${AnimaWave} linear  infinite ;
+        animation: 21s ${AnimaWave} linear  infinite ;
         z-index: 11;
         background: url(/Img/Wave01.svg);
         background-size: 1000px;
@@ -262,7 +287,7 @@ export const FooterOnda = styled.footer`
         top: -25px;
         opacity: 1;
         bottom: 0;
-        animation: 13.5s  ${AnimaWave} linear  infinite ;
+        animation: 19.5s  ${AnimaWave} linear  infinite ;
         z-index: 10;
         background: url(/Img/Wave02.svg);
         background-size: 1000px;
@@ -271,7 +296,7 @@ export const FooterOnda = styled.footer`
         top: -40px;
         opacity: 1;
         bottom: 0;
-        animation: 14.5s  ${AnimaWave} linear  infinite ;
+        animation: 22.5s  ${AnimaWave} linear  infinite;
         z-index: 9;
         background: url(/Img/Wave03.svg);
         background-size: 1000px;
