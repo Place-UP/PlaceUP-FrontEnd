@@ -3,7 +3,8 @@ import LogoPlace from '../../Img/Login/PlaceUp_Logo.svg'
 import Onda from '../../Img/Login/Ondas_Top.svg'
 import EstilizacaoOnda from '../../Img/Login/Ondas_Top copy.svg'
 import Star from '../../Img/Login/cruz.svg'
-import OndaSvg from '../../Img/Login/OndaSvg.svg'
+
+
 
 import { HiOutlineMail } from 'react-icons/hi'
 import { RiLockPasswordLine } from 'react-icons/ri'
@@ -11,10 +12,9 @@ import { BsFacebook } from 'react-icons/bs'
 import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai'
 import { IoLogoGoogle } from 'react-icons/io'
 import {
-    Container, Ondas, Header, Logo, Ondulacao, Ondinha, Estrela, Box, Formulario,
-    Legend, LabelBox, Icon, CampoInput, OR, List, SocialMidia,
+    Container, Header, Logo, Ondulacao, Ondinha, Estrela, Box, Formulario,
+    Legend, LabelBox, Icon, CampoInput, OR, List, SocialMidia, FooterOnda, Wave, Waves
 } from './style'
-
 
 
 export function Login() {
@@ -34,7 +34,13 @@ export function Login() {
                     <Estrela src={Star} alt='Estrela' />
                     <Estrela primary src={Star} alt='Estrela' />
                     <Estrela second src={Star} alt='Estrela' />
-                    <Ondas src={OndaSvg} alt='Onda Login' />
+                    <FooterOnda>
+                        <Waves>
+                            <Wave id="Wave1" />
+                            <Wave id="Wave2" />
+                            <Wave id="Wave3" />
+                        </Waves>
+                    </FooterOnda>
                 </Ondulacao>
                 <Box>
                     <Formulario action="" method="post">

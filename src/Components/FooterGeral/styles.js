@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const media = {TabletAndMobile: '@media screen and (max-width: 863px)'}
+const media = { TabletAndMobile: '@media screen and (max-width: 863px)' }
 
 export const Footergeral = styled.div`
     width: 100%;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 
 export const Container = styled.main`
     width: 100%;
@@ -23,11 +24,11 @@ export const Header = styled.header`
 
 export const Logo = styled.div`
     width: 100%;
-    height: 100%;
+    height: 100%;.
     display: flex;
     align-items: center;
     justifty-content: center;
-
+    z-index: 10;
     img{
         margin: 10px 0px 0px 20px;
         width: 8%;
@@ -35,13 +36,28 @@ export const Logo = styled.div`
     }
 `
 
-export const Ondulacao = styled.div`
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
+const SubaAnimaOndulacao = keyframes`
+    to{
+        opacity: 1;
+        transform: translate(0, 0);
+    } 
     
+    from{
+        opacity: 0;
+        transform: translate(2000px, -2000px);
+    }
 `
+
+const aparecaForm = keyframes`
+    to {
+        opacity: 1;
+    }
+
+    from{
+        opacity: 0;
+    }
+`
+
 
 export const Ondinha = styled.img`
     width: 35%;
@@ -49,12 +65,21 @@ export const Ondinha = styled.img`
     right: 0;
     position: absolute;
     z-index: ${(props) => props.primary ? "-1" : "1"}
-    `
-
-export const Ondas = styled.img`
-    position: absolute;
-    bottom: -15%;
 `
+
+
+export const Ondulacao = styled.div`
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    ${Ondinha}{
+        animation: 2s ${SubaAnimaOndulacao} ;
+    }
+`
+
 
 export const Estrela = styled.img`
     width: 50px;
@@ -71,6 +96,7 @@ export const Formulario = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: 1.4s ${aparecaForm} ease-in;
 
 
     input[type="submit"]{
@@ -116,7 +142,7 @@ export const Legend = styled.legend`
 
 export const OR = styled.div`
     text-align: center;
-    
+    animation: 1s ${aparecaForm} ease-in;
     span{
         position: relative;
         font-weight: 600;
@@ -163,6 +189,7 @@ export const List = styled.ul`
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    animation: 1s ${aparecaForm} ease-in;
 `
 
 export const SocialMidia = styled.li`
@@ -179,5 +206,74 @@ export const SocialMidia = styled.li`
 
     &:first-child {
         margin-left: 0;
+    }
+`
+
+const AnimaWave = keyframes`
+    0%{
+        background-position-x: 1000px;
+    }
+
+    100%{
+        background-position-x: 0;
+    }
+`
+
+
+export const Waves = styled.div`
+    position: relative;
+    width: 100%;
+    min-height: -10px;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+`
+
+export const Wave = styled.div`
+  
+`
+
+export const FooterOnda = styled.footer`
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    overflow: hidden;
+
+    ${Wave}{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100px;
+    }
+
+    ${Wave}#Wave1{
+        top: -15px;
+        opacity: 1;
+        bottom: 0;
+        animation: 15s ${AnimaWave} linear  infinite ;
+        z-index: 11;
+        background: url(/Img/Wave01.svg);
+        background-size: 1000px;
+    }
+    ${Wave}#Wave2{
+        top: -25px;
+        opacity: 1;
+        bottom: 0;
+        animation: 13.5s  ${AnimaWave} linear  infinite ;
+        z-index: 10;
+        background: url(/Img/Wave02.svg);
+        background-size: 1000px;
+    }
+    ${Wave}#Wave3{
+        top: -40px;
+        opacity: 1;
+        bottom: 0;
+        animation: 14.5s  ${AnimaWave} linear  infinite ;
+        z-index: 9;
+        background: url(/Img/Wave03.svg);
+        background-size: 1000px;
     }
 `
