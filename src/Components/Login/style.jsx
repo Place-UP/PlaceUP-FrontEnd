@@ -114,19 +114,19 @@ export const Ondulacao = styled.div`
     ${Estrela}#Estrela1{
         top: 5%;
         left: 15%;
-        animation: 5s ${EstrelaAnima} linear infinite;
+        animation: 7s ${EstrelaAnima} linear infinite;
     }
 
     ${Estrela}#Estrela2{
         top: 40%;
         left: 26%;
-        animation: 5s ${EstrelaAnima} linear infinite;
+        animation: 7s ${EstrelaAnima} linear infinite;
     }
 
     ${Estrela}#Estrela3{
         top: 80%;
         left: 10%;
-        animation: 5s ${EstrelaAnima} linear infinite;
+        animation: 7s ${EstrelaAnima} linear infinite;
     }
 
     ${Bolinha}{
