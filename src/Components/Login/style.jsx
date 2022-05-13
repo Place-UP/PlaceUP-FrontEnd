@@ -58,6 +58,26 @@ const aparecaForm = keyframes`
     }
 `
 
+const EstrelaAnima = keyframes`
+   to{
+    transform: rotate(0deg);
+   }
+
+   from{
+    transform: rotate(360deg);
+   }
+`
+
+
+const BolinhaAparece = keyframes`
+   to{
+       opacity: 1;
+   }
+
+   from{
+       opacity: 0;
+   }
+`
 
 export const Ondinha = styled.img`
     width: 35%;
@@ -70,6 +90,7 @@ export const Ondinha = styled.img`
 export const Estrela = styled.img`
     width: 30px;
     position: absolute;
+
 `
 
 export const Bolinha = styled.img`
@@ -93,16 +114,23 @@ export const Ondulacao = styled.div`
     ${Estrela}#Estrela1{
         top: 5%;
         left: 15%;
+        animation: 5s ${EstrelaAnima} linear infinite;
     }
 
     ${Estrela}#Estrela2{
         top: 40%;
         left: 26%;
+        animation: 5s ${EstrelaAnima} linear infinite;
     }
 
     ${Estrela}#Estrela3{
         top: 80%;
         left: 10%;
+        animation: 5s ${EstrelaAnima} linear infinite;
+    }
+
+    ${Bolinha}{
+        animation: 2s ${BolinhaAparece};
     }
 `
 
