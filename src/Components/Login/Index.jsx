@@ -25,25 +25,55 @@ import React from 'react'
 export function Login() {
 
     const [coment, setComent] = React.useState()
-    const [error, setError] = React.useState(false)
-    const [sucess, setSucess] = React.useState()
-    function digitei(event) {
+    const [errorEmail, setErrorEmail] = React.useState(null)
+    const [sucessEmail, setSucessEmail] = React.useState(null)
+    const [errorPassword, setErrorPassword] = React.useState(null)
+    const [sucessPassword, setSucessPassword] = React.useState(null)
+
+
+    function digiteiEmail(event) {
         setComent(event.target.value)
+
         const Error = event.target.value;
         const Sucesso = event.target.value;
 
         if (Sucesso.length > 0) {
-            setSucess(true)
+            setSucessEmail(true)
         } else {
-            setSucess(false)
+            setSucessEmail(false)
         }
 
         if (Error === '') {
-            setError(true)
+            setErrorEmail(true)
         } else {
-            setError(false)
+            setErrorEmail(false)
         }
     }
+
+    function digiteiPassword(event) {
+        setComent(event.target.value)
+
+        const Error = event.target.value;
+        const Sucesso = event.target.value;
+
+        if (Sucesso.length > 0) {
+            setSucessPassword(true)
+        } else {
+            setSucessPassword(false)
+        }
+
+        if (Error === '') {
+            setErrorPassword(true)
+        } else {
+            setErrorPassword(false)
+        }
+    }
+
+
+    function LoginUser(e) {
+        e.preventDefault()
+    }
+
 
     return (
         <>
@@ -73,12 +103,12 @@ export function Login() {
                     </FooterOnda>
                 </Ondulacao>
                 <Box>
-                    <Formulario action="" method="post">
+                    <Formulario onClick={LoginUser} action="" method="post">
                         <Legend>LOGIN</Legend>
                         <LabelBox htmlFor="email">
                             <Icon><HiOutlineMail /></Icon>
-                            <CampoInput onChange={digitei} type="email" name="email" id="email" placeholder="E-mail" />
-                            {sucess ? (
+                            <CampoInput onChange={digiteiEmail} type="email" name="email" id="email" placeholder="E-mail" />
+                            {sucessEmail ? (
                                 <>
                                     <IconeValidacao><img src={IconSucess} alt='Icone de Sucesso' /></IconeValidacao>
                                 </>
@@ -86,7 +116,7 @@ export function Login() {
                                 <>
                                 </>
                             )}
-                            {error ? (
+                            {errorEmail ? (
                                 <>
                                     <IconeValidacao><img src={IconERROR} alt='Icone de ERROR' /></IconeValidacao>
                                 </>
@@ -97,8 +127,8 @@ export function Login() {
                         </LabelBox>
                         <LabelBox htmlFor="password" primary >
                             <Icon><RiLockPasswordLine /></Icon>
-                            <CampoInput onChange={digitei} type="password" id="password" name="password" placeholder="Senha" />
-                            {sucess ? (
+                            <CampoInput onChange={digiteiPassword} type="password" id="password" name="password" placeholder="Senha" />
+                            {sucessPassword ? (
                                 <>
                                     <IconeValidacao><img src={IconSucess} alt='Icone de Sucesso' /></IconeValidacao>
                                 </>
@@ -106,7 +136,7 @@ export function Login() {
                                 <>
                                 </>
                             )}
-                            {error ? (
+                            {errorPassword ? (
                                 <>
                                     <IconeValidacao><img src={IconERROR} alt='Icone de ERROR' /></IconeValidacao>
                                 </>
