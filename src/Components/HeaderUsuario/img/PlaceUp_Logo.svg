@@ -1,0 +1,64 @@
+<svg id="Camada_8" data-name="Camada 8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720.41 716.53">
+<style>
+
+</style>
+    <defs>
+   
+        <style>
+
+            .cls-1 {
+                font-size: 150.87px;
+                fill: #070707;
+                font-family:Warlow Sans;
+            }
+
+            .cls-2 {
+                fill: #fff;
+                font-size: 167.64px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+            }
+
+            .cls-3,
+            .cls-4,
+            .cls-5 {
+                fill: none;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+            }
+
+            .cls-3 {
+                stroke: #101111;
+            }
+
+            .cls-3,
+            .cls-5 {
+                stroke-width: 30px;
+            }
+
+            .cls-4 {
+                stroke: #ffff;
+                stroke-width: 24px;
+            }
+
+            .cls-5 {
+                stroke: #0c0c0c;
+            }
+
+            .cls-6 {
+                fill: #0e0f0f;
+            }
+        </style>
+    </defs><text class="cls-1" transform="translate(0 617.12)">Place <tspan class="cls-2" x="501.65" y="0">UP</tspan>
+        </text>
+    <path class="cls-3"
+        d="M757,365.88l12.94-14.32a51.57,51.57,0,0,0,9.55-15.6c11.6-30.9-7.87-65.7-43-67.31-1.07,0-2.16-.07-3.27-.07-19.93,0-32.09,8.36-39.5,18.81a52.21,52.21,0,0,0-9.15,26.89,57.18,57.18,0,0,0,13.65,40.39l35.7,41.83"
+        transform="translate(-376.25 -89)" />
+    <path class="cls-4"
+        d="M733.81,400.84l4.9,5.73c26.45,29.3,62.93,49.12,102,51.94,26.41,1.91,56.61-3,85.64-23.75,31.89-22.76,52.72-58.5,59.11-98,7.29-45,5.6-119.67-54.45-183.75-4-4.29-6.92-9.2-2.58-13.14l3-2.74c7.32-6.62,5-18.94-4.11-22.32L891.7,101.63c-7.35-2.71-14.84,3.67-13.66,11.65l5.83,39.66c1.54,10.46,9.78,18.06,17.28,10.86L904,162"
+        transform="translate(-376.25 -89)" />
+    <path class="cls-5"
+        d="M882.47,359.39l.73-108.91a27.2,27.2,0,0,0-12.9-23.08L748.8,150.35a30.24,30.24,0,0,0-32.13,0L595,227.3a27.19,27.19,0,0,0-12.92,22.9L582,426.45c0,15.2,12.95,27.54,28.95,27.55l54.41,0a49.66,49.66,0,0,0,32.15-11.65l14.09-13.82"
+        transform="translate(-376.25 -89)" />
+    <circle class="cls-6" cx="357.56" cy="227.76" r="14.45" />
+</svg>
