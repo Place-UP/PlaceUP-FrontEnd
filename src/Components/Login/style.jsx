@@ -24,15 +24,19 @@ export const Header = styled.header`
 
 export const Logo = styled.div`
     width: 100%;
-    height: 100%;.
+    height: 100%;
     display: flex;
     align-items: center;
-    justifty-content: center;
     z-index: 10;
     img{
         margin: 10px 0px 0px 20px;
-        width: 8%;
+        width: 50px;
+        padding: 0px 10px 10px 0px;
         cursor: pointer;
+        transition: 0.3s ease-in;
+        &:hover{
+            transform: translate(-6px);
+        }
     }
 `
 
@@ -134,6 +138,8 @@ export const Ondulacao = styled.div`
     }
 `
 
+
+
 export const Formulario = styled.form`
     width: 50%;
     margin: auto;
@@ -143,7 +149,7 @@ export const Formulario = styled.form`
     animation: 1.4s ${aparecaForm} ease-in;
 
 
-    input[type="submit"]{
+    input[type=submit]{
         width: 190px;
         height: 55px;
         padding: 13px 5px;
@@ -156,11 +162,12 @@ export const Formulario = styled.form`
         font-size: 1.2em;
         cursor: pointer;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &:disabled {
+            cursor: not-allowed;
+            background-color: gray;
 
-
-        &:hover{
-            background-color: var(--Azul-Hover);
         }
+      
     }
 `
 
@@ -196,7 +203,7 @@ export const OR = styled.div`
             position: absolute;
             content: '';
             height: 1px;
-            width: 200px;
+            width: 12rem;
             bottom: 50%;
             right: 50px;
             background-color: black;
@@ -222,6 +229,7 @@ export const CampoInput = styled.input`
     width: 100%;
     outline: none;
     background-color: transparent;
+    caret-color: var(--Azul-Escuro);
 `
 
 export const Social = styled.div`
@@ -329,4 +337,10 @@ export const FooterOnda = styled.footer`
         background: url(/Img/Wave03.svg);
         background-size: 1000px;
     }
+`
+
+
+export const IconeValidacao = styled.i`
+    width: 20px;
+    
 `
