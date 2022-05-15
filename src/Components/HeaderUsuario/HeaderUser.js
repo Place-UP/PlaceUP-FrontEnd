@@ -7,27 +7,29 @@ import { BiExit } from "react-icons/bi";
 import Logo from "./img/PlaceUp_Logo.svg";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
+import { List } from "../Login/style";
 export function Header() {
   const Icon = styled.span``;
 
   const Title = styled.span``;
 
-  const List = styled.li`
-  
-    }
-  `;
+  const List = styled.li``;
 
   const Navigation = styled.div`
     position: fixed;
-    width: 250px;
-    height: 100vh;
+    width: 70px;
+    height: 93vh;
     background-color: #2980b9;
+    box-shadow: 10px 0 0 #fff;
     margin: auto;
-
+    overflow-x: hidden;
+    transition: width 0.5s;
+    padding-top: 50px;
+    border-radius: 14px;
+    &:hover {
+      width: 250px;
+    }
     ul {
-      position: absolute;
-      top: 0px;
-      left: 0px;
       width: 100%;
       padding-left: 5px;
       padding-right: 40px;
@@ -40,19 +42,18 @@ export function Header() {
     }
     a {
       position: relative;
-      display: block;
       width: 100%;
       display: flex;
-      color: #fff;
+      align-items: center;
+      color: black;
     }
 
     ${Icon} {
       position: relative;
       display: block;
       min-width: 60px;
-      min-height: 60px;
-      line-height: 70px;
       text-align: center;
+      align-items: center;
       z-index: 1;
     }
 
@@ -65,17 +66,58 @@ export function Header() {
       white-space: nowrap;
       font-family: lato;
       font-size: 1.5rem;
+      align-items: center;
+    }
+
+    .Active {
+      background: #ffffff;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background-color: #2980b9;
+        border-radius: 50%;
+        box-shadow: 15px 15px 0 #ffff;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background-color: #2980b9;
+        border-radius: 50%;
+        box-shadow: 15px -15px 0 #ffff;
+      }
+    }
+
+    img {
+      display: block;
+      max-width: 100px;
+      max-height: 100px;
+      margin: 0 auto;
     }
   `;
-
+  const listar = document.querySelectorAll(List);
+  function ActiveLink() {
+    listar.forEach((item) => item.classListar.remove("active"));
+    listar.forEach((item) => item.classListar.add("active"));
+  }
+  listar.forEach((item) => item.addEventListener("click", ActiveLink));
   return (
     <>
       <Navigation>
-        <div></div>
+        <div>
+          <img src={Logo} />
+        </div>
 
-        <IconContext.Provider value={{ size: "30px", position: "relative" }}>
+        <IconContext.Provider value={{ size: "30px" }}>
           <ul>
-            <List background={"#fff"}>
+            <List>
               <Link to="">
                 <Icon color={"black"}>
                   <BiHomeAlt />
@@ -83,6 +125,7 @@ export function Header() {
                 <Title color={"black"}>Home</Title>
               </Link>
             </List>
+
             <List>
               <Link to="">
                 <Icon>
@@ -91,7 +134,7 @@ export function Header() {
                 <Title>chat</Title>
               </Link>
             </List>
-            <List>
+            <List className="Active ">
               <Link to="">
                 <Icon>
                   <AiOutlineSchedule />
