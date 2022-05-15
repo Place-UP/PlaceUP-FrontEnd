@@ -88,7 +88,7 @@ export const Ondinha = styled.img`
     top: ${(props) => props.primary ? "-11px" : "0"};
     right: 0;
     position: absolute;
-    z-index: ${(props) => props.primary ? "-1" : "1"}
+    z-index: ${(props) => props.primary ? "-11" : "-10"}
 `
 
 export const Estrela = styled.img`
@@ -136,6 +136,10 @@ export const Ondulacao = styled.div`
     ${Bolinha}{
         animation: 2s ${BolinhaAparece};
     }
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 `
 
 
@@ -147,7 +151,16 @@ export const Formulario = styled.form`
     flex-direction: column;
     justify-content: center;
     animation: 1.4s ${aparecaForm} ease-in;
+    
 
+    @media screen and (max-width: 870px) {
+           width: 60%;  
+    }
+
+    @media screen and (max-width: 550px) {
+           width: 100%;
+           
+    }
 
     input[type=submit]{
         width: 190px;
@@ -162,10 +175,21 @@ export const Formulario = styled.form`
         font-size: 1.2em;
         cursor: pointer;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
         &:disabled {
             cursor: not-allowed;
             background-color: gray;
 
+        }
+
+        @media screen and (max-width: 425px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: 1rem;
+            width: 115px;
+            height: 55px;
         }
       
     }
@@ -207,11 +231,17 @@ export const OR = styled.div`
             bottom: 50%;
             right: 50px;
             background-color: black;
+
+            @media screen and (max-width: 460px) {
+            width: 100px;
+            }
         }
 
         &::after{
             left: 50px;
         }
+
+       
     } 
 `
 
@@ -223,6 +253,10 @@ export const LabelBox = styled.label`
     justify-content: center;
     margin-top: ${(props) => props.primary ? "80px" : "0"};
     border-bottom: 5px solid var(--Azul-Escuro);
+
+    @media screen and (max-width: 425px) {
+           width: 80%;
+        }
 `
 
 export const CampoInput = styled.input`
@@ -230,6 +264,11 @@ export const CampoInput = styled.input`
     outline: none;
     background-color: transparent;
     caret-color: var(--Azul-Escuro);
+`
+
+export const BoxMidia = styled.div`
+    width: 100%;
+    height: 100%;
 `
 
 export const Social = styled.div`
@@ -258,6 +297,11 @@ export const SocialMidia = styled.li`
 
     &:first-child {
         margin-left: 0;
+    }
+
+    @media screen and (max-width: 425px) {
+        font-size: 2rem;
+        margin-left: 1.9rem;
     }
 `
 
@@ -336,6 +380,10 @@ export const FooterOnda = styled.footer`
         z-index: 9;
         background: url(/Img/Wave03.svg);
         background-size: 1000px;
+    }
+
+    @media screen and (max-width: 480px) {
+        display: none;
     }
 `
 

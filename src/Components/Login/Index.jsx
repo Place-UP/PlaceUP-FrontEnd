@@ -14,7 +14,7 @@ import { IoLogoGoogle } from 'react-icons/io'
 import {
     Container, Header, Logo, Ondulacao, Ondinha, Estrela, Box, Formulario,
     Legend, LabelBox, Icon, CampoInput, OR, List, SocialMidia, FooterOnda,
-    Wave, Waves, Bolinha, IconeValidacao
+    Wave, Waves, Bolinha, IconeValidacao, BoxMidia
 } from './style'
 
 import { Link } from 'react-router-dom'
@@ -150,14 +150,14 @@ export function Login() {
                     <OR>
                         <span>OR</span>
                     </OR>
-                    <div>
+                    <BoxMidia>
                         <List>
                             <SocialMidia><BsFacebook /></SocialMidia>
                             <SocialMidia><AiOutlineTwitter /></SocialMidia>
                             <SocialMidia><AiFillInstagram /></SocialMidia>
                             <SocialMidia><IoLogoGoogle /></SocialMidia>
                         </List>
-                    </div>
+                    </BoxMidia>
                 </Box>
             </Container >
         </>
