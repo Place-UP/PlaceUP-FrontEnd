@@ -115,6 +115,7 @@ export const FooterP = styled.p`
   text-align: center;
   font-size: 20px;
   color: white;
+  padding-bottom: 50px;
 `;
 
 export const FooterH1 = styled.h1`
