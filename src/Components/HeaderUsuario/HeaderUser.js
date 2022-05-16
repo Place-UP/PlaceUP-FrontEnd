@@ -20,8 +20,8 @@ export function Header() {
 
         <IconContext.Provider value={{ size: "30px" }}>
           <ul>
-            <List className={`${path === "/Teste" ? "Active" : ""}`}>
-              <Link to="/Teste">
+            <List className={`${path === "/" ? "Active" : ""}`}>
+              <Link to="/">
                 <Icon>
                   <BiHomeAlt />
                 </Icon>
