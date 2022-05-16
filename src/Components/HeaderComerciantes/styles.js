@@ -6,11 +6,11 @@ export const Title = styled.span``;
 
 export const List = styled.li``;
 export const Navigation = styled.div`
-  position: fixed;
+  position: relative;
   width: 70px;
   height: 94vh;
   background-color: #2980b9;
-  box-shadow: 10px 0 0 #fff;
+  float: left;
   margin: auto;
   overflow-x: hidden;
   transition: width 0.5s;

@@ -10,7 +10,6 @@ export const Navigation = styled.div`
   width: 70px;
   height: 94vh;
   background-color: #2980b9;
-  box-shadow: 10px 0 0 #fff;
   margin: auto;
   overflow-x: hidden;
   transition: width 0.5s;
