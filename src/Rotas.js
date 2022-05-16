@@ -3,6 +3,7 @@ import { Login } from "./Components/Login/Index";
 import { CadastroUser } from './Pages/cadastroUsuario'
 import { Header } from "./Components/HeaderUsuario/HeaderUser";
 import { FooterGeral } from "./Components/FooterGeral/footer";
+import { IndexCalculadora } from "./Pages/PageCalculadora/index";
 import { Pagina404 } from "./Components/Error404";
 
 function Rotas() {
@@ -15,7 +16,12 @@ function Rotas() {
           <Route path="/CadastroUser" element={<CadastroUser />} />
           <Route path="/HeaderUser" element={<Header />} />
           <Route path="/Footer" element={<FooterGeral />} />
+          <Route
+            path="/Como-Funciona-Calculadora"
+            element={<IndexCalculadora />}
+          />
           <Route path="*" element={<Pagina404 />} />
+       
         </Routes>
       </BrowserRouter>
     </>
