@@ -3,6 +3,8 @@ import styled from 'styled-components';
 const media = { TabletAndMobile: '@media screen and (max-width: 863px)' }
 
 export const Footergeral = styled.div`
+    position: relative;
+    margin-top: 100vh;
     width: 100%;
     height: auto;
     padding-bottom: 50px;
