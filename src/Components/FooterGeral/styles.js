@@ -3,8 +3,8 @@ import styled from "styled-components";
 const media = { TabletAndMobile: "@media screen and (max-width: 863px)" };
 
 export const Footergeral = styled.div`
+
   position: absolute;
-  bottom: 0;
   z-index: 0;
   width: 100%;
   height: auto;

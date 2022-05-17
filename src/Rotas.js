@@ -2,7 +2,7 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { Login } from "./Components/Login/Index";
 import { CadastroUser } from "./Pages/cadastroUsuario";
 import { IndexCalculadora } from "./Pages/PageCalculadora/index";
-import { IndexHomeUser } from "./Pages/homeUsuario/index";
+// import { IndexHomeUser } from "./Pages/PageCalculadora/index";
 import { Pagina404 } from "./Components/Error404";
 
 function Rotas() {
@@ -14,10 +14,10 @@ function Rotas() {
           <Route path="/Login" element={<Login />} />
           <Route path="/CadastroUser" element={<CadastroUser />} />
           <Route
-            path="/Como-Funciona-Calculadora"
+            path="/ComoFuncionaCalculadora"
             element={<IndexCalculadora />}
           />
-          <Route path="/HomeUser" element={<IndexHomeUser />} />
+          {/* <Route path="/HomeUser" element={<IndexHomeUser />} /> */}
           <Route path="*" element={<Pagina404 />} />
         </Routes>
       </BrowserRouter>

@@ -41,7 +41,7 @@ export function HeaderComerciante() {
                 <Icon>
                   <BsGraphUp />
                 </Icon>
-                <Title>Gráficos</Title>
+                <Title>Gráficos</Title> 
               </Link>
             </List>
             <List>
