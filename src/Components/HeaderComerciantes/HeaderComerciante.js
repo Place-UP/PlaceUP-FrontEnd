@@ -20,16 +20,10 @@ export function HeaderComerciante() {
         <IconContext.Provider value={{ size: "30px" }}>
           <ul>
             <div>
-              <List
-                className={`${
-                  path === "/ComoFuncionaCalculadora" ? "Active" : ""
-                }`}
-              >
+              <List className={`${path === "/Calculadora" ? "Active" : ""}`}>
                 <Link
-                  to="/ComoFuncionaCalculadora"
-                  className={`${
-                    path === "/ComoFuncionaCalculadora" ? "preto" : ""
-                  }`}
+                  to="/Calculadora"
+                  className={`${path === "/Calculadora" ? "preto" : ""}`}
                 >
                   <Icon>
                     <BiHomeAlt className="IconsHeader" />
