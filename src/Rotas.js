@@ -13,20 +13,10 @@ function Rotas() {
           <Route path="/" element={<h1>Oi</h1>} />
           <Route path="/Login" element={<Login />} />
           <Route path="/CadastroUser" element={<CadastroUser />} />
-          <Route
-<<<<<<< HEAD
-            path="/Calculadora"
-=======
-            path="/ComoFuncionaCalculadora"
->>>>>>> 5dd69fa08677147146a90b8866edf6caa9340dcf
-            element={<IndexCalculadora />}
-          />
+          <Route path="/Calculadora" element={<IndexCalculadora />} />
+
           {/* <Route path="/HomeUser" element={<IndexHomeUser />} /> */}
           <Route path="*" element={<Pagina404 />} />
-<<<<<<< HEAD
-
-=======
->>>>>>> 5dd69fa08677147146a90b8866edf6caa9340dcf
         </Routes>
       </BrowserRouter>
     </>

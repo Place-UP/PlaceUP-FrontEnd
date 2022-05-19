@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-
-
-export function IndexCalculadora() {
-  return (
-    <>
-      <h1>Oi</h1>
-
-=======
 import React from "react";
 import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
@@ -43,7 +34,6 @@ export function IndexCalculadora() {
         </HowToUseCalculator>
       </Main>
       {/* <FooterGeral /> */}
->>>>>>> 5dd69fa08677147146a90b8866edf6caa9340dcf
     </>
   );
 }
