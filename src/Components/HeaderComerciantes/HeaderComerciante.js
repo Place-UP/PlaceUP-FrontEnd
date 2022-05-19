@@ -20,10 +20,10 @@ export function HeaderComerciante() {
         <IconContext.Provider value={{ size: "30px" }}>
           <ul>
             <div>
-              <List className={`${path === "/Calculadora" ? "Active" : ""}`}>
+              <List className={`${path === "/" ? "Active" : ""}`}>
                 <Link
-                  to="/Calculadora"
-                  className={`${path === "/Calculadora" ? "preto" : ""}`}
+                  to="/"
+                  className={`${path === "/" ? "preto" : ""}`}
                 >
                   <Icon>
                     <BiHomeAlt className="IconsHeader" />
@@ -41,8 +41,8 @@ export function HeaderComerciante() {
                 </Link>
               </List>
 
-              <List>
-                <Link to="" className={`${path === "/" ? "preto" : ""}`}>
+              <List className={`${path === "/Calculadora" ? "Active" : ""}`}>
+                <Link to="/Calculadora" className={`${path === "/Calculadora" ? "preto" : ""}`}>
                   <Icon>
                     <TiCalculator className="IconsHeader" />
                   </Icon>

@@ -20,7 +20,13 @@ export function LadingPage() {
       </Header>
 
       <section>
+        <div>
+          <h1>O COMÉRCIO MAIS <span>PRÓXIMO</span> DE VOCÊ!</h1>
 
+          <p>Encontre comércios mais próximo da sua região e fique sempre atualizado sem sair de casa!</p>
+
+          <button>Saiba Mais</button>
+        </div>
       </section>
     </>
   );
