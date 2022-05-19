@@ -1,11 +1,11 @@
+
+  
 <svg id="Camada_8" data-name="Camada 8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720.41 716.53">
 <style>
-
 </style>
     <defs>
    
         <style>
-
             .cls-3,
             .cls-4,
             .cls-5 {
@@ -13,25 +13,20 @@
                 stroke-linecap: round;
                 stroke-miterlimit: 10;
             }
-
             .cls-3 {
                 stroke: #101111;
             }
-
             .cls-3,
             .cls-5 {
                 stroke-width: 30px;
             }
-
             .cls-4 {
                 stroke: #ffff;
                 stroke-width: 24px;
             }
-
             .cls-5 {
                 stroke: #0c0c0c;
             }
-
             .cls-6 {
                 fill: #0e0f0f;
             }

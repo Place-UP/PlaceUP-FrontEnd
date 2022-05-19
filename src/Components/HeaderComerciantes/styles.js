@@ -8,13 +8,14 @@ export const List = styled.li``;
 export const Navigation = styled.div`
   position: fixed;
   width: 70px;
-  height: 94vh;
+  height: 95vh;
   background-color: #2980b9;
   margin: auto;
   overflow-x: hidden;
+
   transition: width 0.5s;
   padding-top: 50px;
-  border-radius: 14px;
+  border-radius: 0 14px;
 
   &:hover {
     width: 250px;

@@ -1,14 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import { BiHomeAlt } from "react-icons/bi";
-import { BsChatDots, BsGear } from "react-icons/bs";
-import { MdFavoriteBorder } from "react-icons/md";
-import { AiOutlineSchedule } from "react-icons/ai";
+import { BsChatDots, BsGraphUp, BsGear } from "react-icons/bs";
+import { TiCalculator } from "react-icons/ti";
 import { BiExit } from "react-icons/bi";
 import { IconContext } from "react-icons";
 import { Navigation, Title, List, Icon } from "./styles";
 import Logo from "../../Img/logo_header.svg";
 
-export function Header() {
+export function HeaderComerciante() {
   const path = useLocation().pathname;
 
   return (
@@ -40,17 +39,17 @@ export function Header() {
             <List>
               <Link to="">
                 <Icon>
-                  <AiOutlineSchedule />
+                  <BsGraphUp />
                 </Icon>
-                <Title>Reservas</Title>
+                <Title>Gráficos</Title> 
               </Link>
             </List>
             <List>
               <Link to="">
                 <Icon>
-                  <MdFavoriteBorder />
+                  <TiCalculator />
                 </Icon>
-                <Title>Favoritos</Title>
+                <Title>Calculadora</Title>
               </Link>
             </List>
             <List>

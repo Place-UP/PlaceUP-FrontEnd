@@ -1,9 +1,8 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { Login } from "./Components/Login/Index";
-import { CadastroUser } from './Pages/cadastroUsuario'
-import { Header } from "./Components/HeaderUsuario/HeaderUser";
-import { FooterGeral } from "./Components/FooterGeral/footer";
+import { CadastroUser } from "./Pages/cadastroUsuario";
 import { IndexCalculadora } from "./Pages/PageCalculadora/index";
+// import { IndexHomeUser } from "./Pages/PageCalculadora/index";
 import { Pagina404 } from "./Components/Error404";
 
 function Rotas() {
@@ -14,14 +13,20 @@ function Rotas() {
           <Route path="/" element={<h1>Oi</h1>} />
           <Route path="/Login" element={<Login />} />
           <Route path="/CadastroUser" element={<CadastroUser />} />
-          <Route path="/HeaderUser" element={<Header />} />
-          <Route path="/Footer" element={<FooterGeral />} />
           <Route
+<<<<<<< HEAD
             path="/Calculadora"
+=======
+            path="/ComoFuncionaCalculadora"
+>>>>>>> 5dd69fa08677147146a90b8866edf6caa9340dcf
             element={<IndexCalculadora />}
           />
+          {/* <Route path="/HomeUser" element={<IndexHomeUser />} /> */}
           <Route path="*" element={<Pagina404 />} />
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5dd69fa08677147146a90b8866edf6caa9340dcf
         </Routes>
       </BrowserRouter>
     </>
