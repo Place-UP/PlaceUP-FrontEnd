@@ -5,6 +5,9 @@ export const Icon = styled.span``;
 export const Title = styled.span``;
 
 export const List = styled.li``;
+const Media = {
+  MobileL: "@media(max-width:550px)",
+};
 export const Navigation = styled.div`
   position: fixed;
   width: 70px;
@@ -12,18 +15,28 @@ export const Navigation = styled.div`
   background-color: #2980b9;
   margin: auto;
   overflow-x: hidden;
-
   transition: width 0.5s;
   padding-top: 50px;
-  border-radius: 0 14px;
-
+  border-radius: 0 14px 14px 0;
+  ${Media.MobileL} {
+    width: 50px;
+    font-size: 10px;
+  }
   &:hover {
-    width: 250px;
+    width: 220px;
+    ${Media.MobileL} {
+      width: 170px;
+    }
   }
   ul {
     width: 100%;
     padding-left: 5px;
     padding-right: 40px;
+
+    ${Media.MobileL} {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
   li {
     position: relative;
@@ -36,7 +49,7 @@ export const Navigation = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
   }
 
   ${Icon} {
@@ -58,6 +71,14 @@ export const Navigation = styled.div`
     font-family: lato;
     font-size: 1.5rem;
     align-items: center;
+    ${Media.MobileL} {
+      font-size: 1rem;
+    }
+  }
+  .IconsHeader {
+    ${Media.MobileL} {
+      width: 20px;
+    }
   }
 
   .Active {
@@ -83,6 +104,9 @@ export const Navigation = styled.div`
       background-color: #2980b9;
       border-radius: 50%;
       box-shadow: 15px -15px 0 #ffff;
+    }
+    .preto {
+      color: black;
     }
   }
 
