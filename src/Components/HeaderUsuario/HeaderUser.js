@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { BiHomeAlt } from "react-icons/bi";
-import { BsChatDots, BsGear } from "react-icons/bs";
+import { BsChatDots } from "react-icons/bs";
 import { MdFavoriteBorder } from "react-icons/md";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { BiExit } from "react-icons/bi";
@@ -21,7 +21,7 @@ export function Header() {
         <IconContext.Provider value={{ size: "30px" }}>
           <ul>
             <List className={`${path === "/" ? "Active" : ""}`}>
-              <Link to="/">
+              <Link to="/" className={`${path === "/" ? "Active" : ""}`}>
                 <Icon>
                   <BiHomeAlt />
                 </Icon>
@@ -30,7 +30,7 @@ export function Header() {
             </List>
 
             <List className={`${path === "/" ? "Active" : ""}`}>
-              <Link to="/">
+              <Link to="/" className={`${path === "/" ? "Active" : ""}`}>
                 <Icon>
                   <BsChatDots />
                 </Icon>
@@ -38,7 +38,7 @@ export function Header() {
               </Link>
             </List>
             <List>
-              <Link to="">
+              <Link to="" className={`${path === "/" ? "Active" : ""}`}>
                 <Icon>
                   <AiOutlineSchedule />
                 </Icon>
@@ -46,23 +46,16 @@ export function Header() {
               </Link>
             </List>
             <List>
-              <Link to="">
+              <Link to="" className={`${path === "/" ? "Active" : ""}`}>
                 <Icon>
                   <MdFavoriteBorder />
                 </Icon>
                 <Title>Favoritos</Title>
               </Link>
             </List>
+
             <List>
-              <Link to="">
-                <Icon>
-                  <BsGear />
-                </Icon>
-                <Title>Configurações</Title>
-              </Link>
-            </List>
-            <List>
-              <Link to="">
+              <Link to="" className={`${path === "/" ? "Active" : ""}`}>
                 <Icon>
                   <BiExit />
                 </Icon>
