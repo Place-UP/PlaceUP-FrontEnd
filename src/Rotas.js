@@ -17,11 +17,11 @@ function Rotas() {
           <Route path="/HeaderUser" element={<Header />} />
           <Route path="/Footer" element={<FooterGeral />} />
           <Route
-            path="/Como-Funciona-Calculadora"
+            path="/Calculadora"
             element={<IndexCalculadora />}
           />
           <Route path="*" element={<Pagina404 />} />
-       
+
         </Routes>
       </BrowserRouter>
     </>
