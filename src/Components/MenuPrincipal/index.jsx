@@ -2,7 +2,7 @@ import React from "react";
 import './styles'
 import perfil from "./images/perfil.png";
 import { IoIosExit } from "react-icons/io";
-import { Section, Profile, DarkMode, Reserva, Sugestoes, ProfileSugestao, } from "./styles";
+import { Section, Profile, DarkMode, Sugestoes, ProfileSugestao, } from "./styles";
 
 export function MenuPrincipal() {
   return (
@@ -21,12 +21,6 @@ export function MenuPrincipal() {
               <input id="toggle" class="toggle-control" type="checkbox" />
               <label for="toggle"></label>
             </DarkMode>
-
-            <Reserva>
-              <div>
-                <h1>Reserva</h1>
-              </div>
-            </Reserva>
 
             <Sugestoes>
                 <h1>SUGESTÕES</h1>
