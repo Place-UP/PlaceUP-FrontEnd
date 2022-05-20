@@ -18,19 +18,20 @@ export function IndexHomeUser() {
       <Home>
         <MenuPrincipal />
 
-        <HeaderA>
-          <Barra>
-            <span><AiOutlineSearch /></span>
-            <input type="text" className="pesquisa" placeholder="Pesquisa"></input>
-            <IoIosArrowDown className="seta" />
-          </Barra>
-          <Car>
-            <img src={Carrinho} alt="Carrinho" />
-          </Car>
-
-        </HeaderA>
 
         <Categoria>
+          <HeaderA>
+            <Barra>
+              <span><AiOutlineSearch /></span>
+              <input type="text" className="pesquisa" placeholder="Pesquisa"></input>
+              <button><IoIosArrowDown className="seta" /></button>
+            </Barra>
+            <Car>
+              <img src={Carrinho} alt="Carrinho" />
+            </Car>
+
+          </HeaderA>
+
           <h1 className="aaaaa">CATEGORIAS</h1>
           <div className="containerCategoria">
             <CategoriaShopping>

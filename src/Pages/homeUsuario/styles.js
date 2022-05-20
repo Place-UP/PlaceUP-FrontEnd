@@ -30,15 +30,16 @@ export const HeaderA = styled.div`
 `;
 
 export const Barra = styled.div`
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #fff;
+
   
   .pesquisa{
-    width: 70%;
+    width: 90%;
     height: 40px;
     padding: 0px 20px 0px 30px;
     background-color: white;
