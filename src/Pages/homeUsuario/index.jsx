@@ -4,30 +4,36 @@ import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { IoIosArrowDown } from "react-icons/io";
-import { Home, HeaderA, Barra, Categoria, CategoriaShopping, InfoCategoria } from "./styles";
+import { AiOutlineSearch } from "react-icons/ai"
+import { Home, HeaderA, Barra, Categoria, CategoriaShopping, InfoCategoria, Car } from "./styles";
 
 export function IndexHomeUser() {
   return (
     <>
-    <Header />
-    <Home>
-      <MenuPrincipal  />
+      <Header />
+      <Home>
+        <MenuPrincipal />
 
-      <HeaderA>
-        <Barra>
-          <input type="text" className="pesquisa" placeholder="Pesquisa"></input>
-          <IoIosArrowDown className="seta"/>
-        </Barra>
+        <HeaderA>
+          <Barra>
+            <span><AiOutlineSearch /></span>
+            <input type="text" className="pesquisa" placeholder="Pesquisa"></input>
+            <IoIosArrowDown className="seta" />
+          </Barra>
+          <Car>
+            <img src={Carrinho} alt="Carrinho" />
+          </Car>
 
-        <img src={Carrinho} alt="Carrinho"/>
-      </HeaderA>
+        </HeaderA>
 
-      <FeedUser />
-      <FeedUser />
-      <FeedUser />
-      <FeedUser />
-      <FeedUser />
-    </Home>
+        <FeedUser>
+
+        </FeedUser>
+        <FeedUser />
+        <FeedUser />
+        <FeedUser />
+        <FeedUser />
+      </Home>
     </>
   );
 }

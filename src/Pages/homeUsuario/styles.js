@@ -27,32 +27,36 @@ export const HeaderA = styled.div`
         cursor: pointer;
     }
 
-    .seta{
-        width: 30px;
-        height: 30px;
-        padding: 10px 0px 0px 10px;
-        cursor: pointer;
-    }
 `;
 
 export const Barra = styled.div`
-  width: 70%;
-  padding: 27px 0 37px 24%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
   
   .pesquisa{
     width: 70%;
     height: 40px;
     padding: 0px 20px 0px 30px;
-    border-radius: 10px;
     background-color: white;
-    background-image:url(images/busca.png);
     background-size: 15px;
     background-position: 10px 9px;
     background-repeat:no-repeat;     
     border:0;
     outline: 0;
   }
+
+  .seta{
+    background-color: #fff;
+  }
 `;
+
+export const Car = styled.div`
+
+`
 
 export const Categoria = styled.div`
   max-width: 1400px;
