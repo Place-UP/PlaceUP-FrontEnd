@@ -94,6 +94,7 @@ export const ContainerProfile = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 2%;
   
   .buttonVejaMais:hover{
     color: #297FB8;
@@ -132,7 +133,7 @@ export const Profile = styled.div`
 export const Button = styled.button`
   width: 120px;
   height: 40px;
-  margin: 15px 15px 0px 0px;
+  margin: 15px 25px 0px 0px;
   border-radius: 20px;
   font-size: 17px;
   color: white;
