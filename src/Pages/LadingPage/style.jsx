@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import LocalVetor from './LocalDaLogo.svg'
 
+
+
 export const Header = styled.header`
     width: 100%;
     height: 100%;
@@ -53,5 +55,62 @@ export const Btn = styled.button`
     &:hover{
         background-color: ${(props) => props.primary ? "#22597d" : "#F4F4F4"};
     }
+`
+
+export const Container = styled.section`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
+export const Card = styled.div`
+    margin-left: 5%;
+`
+
+export const TitleCard = styled.h1`
+    color: #344758;
+    font-size: 3.25rem;
+    font-weight: 600;
+    font-family: 'Bakbak One', cursive;
+    margin-bottom: 1.5rem;
+
+    span{
+        color: #60BCCB;
+        font-family: 'Bakbak One', cursive;
+    }
+`
+
+export const ParagrafoCard = styled.p`
+    font-size: 1.4rem;
+    color: #344758;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+`
+
+export const BtnCard = styled.button`
+    color: #fff;
+    background: linear-gradient(to right, #60BDCC 0%, #CF71BF 100%);
+    padding: 15px 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+`
+
+export const Midia = styled.ul`
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+
+    a{
+        font-size: 2.25rem;
+    }
+`
+
+export const VetorCidade = styled.div`
+    width: 100%;
 `
 

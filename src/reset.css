@@ -1,14 +1,16 @@
 :root {
   --Azul-Escuro: #2980b9;
   --Azul-Hover: #22597d;
-  
+
 
 }
 
 @font-face {
-  font-family: "Warlow Sans";
+  font-family: "Warlow_Sans";
   src: url("../src/fonts/Warlow Sans.otf");
+
 }
+
 html,
 body,
 div,
