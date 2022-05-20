@@ -29,7 +29,7 @@ export function IndexHomeUser() {
       <Categoria>
         <h1>CATEGORIAS</h1>
         <div className="containerCategoria">
-          <CategoriaShopping> 
+          <CategoriaShopping className="Toma"> 
             <img src={Shopping} alt="Icone Shopping" />
             <InfoCategoria>
               <h2>Shopping</h2>

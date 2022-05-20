@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const media = {
+const Media = {
   Tablet: "@media(max-width: 700px)",
   Mobile: "@media(max-width:675px)",
   MobileS: "@media(max-width:400px)",
@@ -9,11 +9,12 @@ const media = {
 export const Home = styled.div` 
  background-color: #ECF0F1;  
  
- ${media.Tablet} {
+ ${Media.Tablet} {
     .containerCategoria{
-      width: 10%;
+      width: 60%;
+      display: block;
+    }
   }
-}
  `;
 
 export const HeaderA = styled.div`
