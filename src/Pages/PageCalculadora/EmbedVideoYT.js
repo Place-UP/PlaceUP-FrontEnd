@@ -20,8 +20,8 @@ const Iframe = styled.div`
       height: 350px;
     }
     ${Media.MobileL} {
-      max-width: 300px;
-      height: 250px;
+      max-width: 250px;
+      height: 200px;
     }
     ${Media.MobileM} {
       max-width: 150px;
