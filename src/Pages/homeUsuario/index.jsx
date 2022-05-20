@@ -17,13 +17,14 @@ export function IndexHomeUser() {
       <Header />
       <Home>
         <MenuPrincipal />
-
         <HeaderA>
+          
           <Barra>
-            <span><AiOutlineSearch /></span>
+            <span ><AiOutlineSearch size="25px" /></span>
             <input type="text" className="pesquisa" placeholder="Pesquisa"></input>
-            <IoIosArrowDown className="seta" />
+            <span><IoIosArrowDown className="seta" size="25px"/></span>
           </Barra>
+
           <Car>
             <img src={Carrinho} alt="Carrinho" />
           </Car>

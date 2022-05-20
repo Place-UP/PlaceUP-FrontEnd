@@ -15,32 +15,36 @@ export const Home = styled.div`
  `;
 
 export const HeaderA = styled.div`
-    width: 70%;
+    width: 60%;
+    height: 100px;
+    margin-left: 6%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 50%;
 
     img{
         width: 30px;
         height: 30px;        
-        padding: 40px 0px 0px 10px;
+        padding: 33px 0px 0px 10px;
         cursor: pointer;
     }
 
 `;
 
 export const Barra = styled.div`
-  width: 80%;
+  width: 60%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  border-radius: 20px;
   
   .pesquisa{
-    width: 70%;
+    width: 85%;
     height: 40px;
-    padding: 0px 20px 0px 30px;
+    padding: 0px 20px 0px 10px;
     background-color: white;
     background-size: 15px;
     background-position: 10px 9px;
