@@ -100,18 +100,9 @@ export const DarkMode = styled.section`
   input.toggle-control:checked + label::after { margin-left: 20px; }
 `
 
-export const Reserva = styled.div`
-width: 90%;
-margin: 20px 0px 0px 5%;
-text-align: center;
-background-color: white;
-border-radius: 20px;
-padding-bottom: 30px;
-`;
-
 export const Sugestoes = styled.div`
   width: 90%;
-  margin: 150px 0px 0px 5%;
+  margin: 50px 0px 0px 5%;
   text-align: center;
   background-color: white;
   border-radius: 20px;

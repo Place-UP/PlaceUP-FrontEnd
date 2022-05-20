@@ -56,7 +56,7 @@ export const Barra = styled.div`
 
 export const Categoria = styled.div`
   max-width: 1400px;
-  width: 60%;
+  width: 50%;
   padding: 0px 0 30px 17%;
 
   h1{   
@@ -72,7 +72,7 @@ export const Categoria = styled.div`
     flex-direction: row;
     justify-content: space-between;
     ${media.Tablet}{
-      width: 100%;
+      width: 120%;
       grid-template-columns: auto auto auto auto;
       grid: auto / auto auto;
     }
@@ -92,15 +92,15 @@ export const Categoria = styled.div`
 
 export const CategoriaShopping = styled.div`
     width: 120px;
-    height: 90px;
+    height: 100px;
     border-radius: 20px;
     margin-top: 70px;
     text-align: center; 
     background-color: white;
 
     img{
-        width: 100px;
-        height: 100px;
+        width: 110px;
+        height: 110px;
         font-size: 17px;
         margin-top: -50px;
     }
