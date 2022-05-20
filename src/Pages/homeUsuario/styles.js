@@ -1,6 +1,20 @@
 import styled from "styled-components";
 
-export const Home = styled.div`  background-color: #ECF0F1;  `;
+const media = {
+  Tablet: "@media(max-width: 700px)",
+  Mobile: "@media(max-width:675px)",
+  MobileS: "@media(max-width:400px)",
+};
+
+export const Home = styled.div` 
+ background-color: #ECF0F1;  
+ 
+ ${media.Tablet} {
+    .containerCategoria{
+      width: 10%;
+  }
+}
+ `;
 
 export const HeaderA = styled.div`
     width: 70%;
@@ -74,7 +88,7 @@ export const CategoriaShopping = styled.div`
         font-size: 17px;
         margin-top: -50px;
     }
-`
+`;
 
 export const InfoCategoria = styled.div`
     display: flex;

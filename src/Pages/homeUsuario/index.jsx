@@ -4,7 +4,7 @@ import Shopping from "./images/shopping.png";
 import Mercado from "./images/mercado.png";
 import Farmarcia from "./images/farmarcia.png";
 import Restaurante from "./images/restaurantes.png";
-import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
+import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { IoIosArrowDown } from "react-icons/io";
@@ -14,8 +14,8 @@ export function IndexHomeUser() {
   return (
     <>
     <Home>
-      <HeaderComerciante />
-      <MenuPrincipal />
+      <Header />
+      <MenuPrincipal  />
 
       <HeaderA>
         <Barra>
@@ -29,7 +29,7 @@ export function IndexHomeUser() {
       <Categoria>
         <h1>CATEGORIAS</h1>
         <div className="containerCategoria">
-          <CategoriaShopping>
+          <CategoriaShopping> 
             <img src={Shopping} alt="Icone Shopping" />
             <InfoCategoria>
               <h2>Shopping</h2>

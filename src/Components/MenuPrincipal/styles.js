@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-const media = {
-  Tablet: "@media(max-width:900px)",
-  Mobile: "@media(max-width:675px)",
-  MobileS: "@media(max-width:400px)",
-};
+const media = { Tablet: "@media screen and (max-width: 863px)" };
 
 export const Section = styled.section`
   position: fixed;
@@ -15,7 +11,8 @@ export const Section = styled.section`
   margin: auto;
   overflow-x: hidden;
   transition: width 0.5s;
-  padding-top: 30px;
+  padding-top: 30px; 
+  ${media.Tablet}{   .Menu{   display: none; }   } 
 `;
 
 export const Profile = styled.div`
