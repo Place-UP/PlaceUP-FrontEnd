@@ -69,9 +69,10 @@ export const Categoria = styled.div`
   padding: 0px 0 30px 17%;
 
   h1{   
-    font-size: 20px; 
+    font-size: 25px; 
     margin-left: 5px;
-    font-weight: 800;
+    font-weight: 800;      
+    font-family: 'Bakbak One', cursive;
   }
 
   .containerCategoria{
@@ -100,7 +101,7 @@ export const Categoria = styled.div`
 `;
 
 export const CategoriaShopping = styled.div`
-    width: 120px;
+    width: 140px;
     height: 100px;
     border-radius: 20px;
     margin-top: 70px;
@@ -122,20 +123,22 @@ export const InfoCategoria = styled.div`
     border-left: 2px solid #E85959;
 
     h2{   
-        font-size: 15px; 
-        margin-left: 5px;
-        font-weight: 600;
-        cursor: pointer;
+      text-align: center;
+      font-size: 17px; 
+      margin-left: 5px;
+      font-weight: 600;
+      cursor: pointer;
     }
 
     p{
-        width: 20px;
-        height: 20px;
-        background-color: #E85959;
-        color: white;
-        font-size: 17px;
-        border-radius: 10px;
-        line-height: -200px;
-        cursor: pointer;
+      width: 20px;
+      height: 20px;
+      background-color: #E85959;
+      color: white;
+      font-size: 17px;
+      border-radius: 10px;
+      line-height: -200px;
+      cursor: pointer;
+      font-family: 'Lato';
     }
 `;

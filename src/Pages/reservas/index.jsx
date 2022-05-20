@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
-import { FeedUser } from "../../Components/Feed/index";
+import { FeedReservas } from "../../Components/FeedReservas/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { Home, Categoria } from "./styles";
 
@@ -15,11 +15,11 @@ export function Reservas() {
           <h1 className="aaaaa">MINHAS RESERVAS</h1>
         </Categoria>
 
-        <FeedUser />
-        <FeedUser />
-        <FeedUser />
-        <FeedUser />
-        <FeedUser />
+        <FeedReservas />
+        <FeedReservas />
+        <FeedReservas />
+        <FeedReservas />
+        <FeedReservas />
       </Home>
     </>
   );

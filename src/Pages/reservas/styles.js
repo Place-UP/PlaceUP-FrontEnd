@@ -12,8 +12,7 @@ export const Home = styled.div`
     margin-left: 10%;
     text-align: center;
   }
- `;
-
+`;
 
 export const Categoria = styled.div`
   max-width: 1400px;
@@ -21,8 +20,9 @@ export const Categoria = styled.div`
   padding: 0px 0 30px 17%;
 
   h1{   
-    font-size: 20px; 
-    padding: 20px 5px;
-    font-weight: 800;
+    font-size: 30px; 
+    padding: 50px 5px 10px 5px;
+    font-weight: 800;    
+    font-family: 'Bakbak One', cursive;
   }
 `;

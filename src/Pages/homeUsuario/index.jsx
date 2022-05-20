@@ -1,9 +1,9 @@
 import React from "react";
 import Carrinho from "./images/carrinho.png";
-import Shopping from "./images/shopping.png";
-import Mercado from "./images/mercado.png";
+import Moda from "./images/moda.png";
+import Mercearia from "./images/mercearia.png";
 import Farmarcia from "./images/farmarcia.png";
-import Restaurante from "./images/restaurantes.png";
+import Cosmesticos from "./images/cosmesticos.png";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
@@ -33,17 +33,17 @@ export function IndexHomeUser() {
           <h1 className="aaaaa">CATEGORIAS</h1>
           <div className="containerCategoria">
             <CategoriaShopping>
-              <img src={Shopping} alt="Icone Shopping" />
+              <img src={Moda} alt="Icone Shopping" />
               <InfoCategoria>
-                <h2>Shopping</h2>
+                <h2>Moda</h2>
                 <p> &#x2192; </p>
               </InfoCategoria>
             </CategoriaShopping>
 
             <CategoriaShopping>
-              <img src={Mercado} alt="Icone Shopping" />
+              <img src={Mercearia} alt="Icone Shopping" />
               <InfoCategoria>
-                <h2>Mercado</h2>
+                <h2>Mercearia</h2>
                 <p> &#x2192; </p>
               </InfoCategoria>
             </CategoriaShopping >
@@ -57,9 +57,9 @@ export function IndexHomeUser() {
             </CategoriaShopping>
 
             <CategoriaShopping>
-              <img src={Restaurante} alt="Icone Shopping" />
+              <img src={Cosmesticos} alt="Icone Shopping" />
               <InfoCategoria>
-                <h2>Restaurante</h2>
+                <h2>Cosméticos</h2>
                 <p> &#x2192; </p>
               </InfoCategoria>
             </CategoriaShopping>

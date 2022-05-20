@@ -2,6 +2,7 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { Login } from "./Components/Login/Index";
 import { MenuPrincipal } from "./Components/MenuPrincipal/index";
 import { FeedUser } from "./Components/Feed/index";
+import { FeedReservas } from "./Components/FeedReservas/index";
 import { CadastroUser } from "./Pages/cadastroUsuario";
 import { IndexCalculadora } from "./Pages/PageCalculadora/index";
 import { IndexHomeUser } from "./Pages/homeUsuario/index";
@@ -21,6 +22,7 @@ function Rotas() {
           <Route path="/HomeUser" element={<IndexHomeUser />} />
           <Route path="/MenuPrincipal" element={<MenuPrincipal />} />
           <Route path="/Feed" element={<FeedUser />} />
+          <Route path="/FeedReservas" element={<FeedReservas />} />          
           <Route path="/Reservas" element={<Reservas />} />
           <Route path="/Calculadora" element={<IndexCalculadora />} />
           <Route path="*" element={<Pagina404 />} />

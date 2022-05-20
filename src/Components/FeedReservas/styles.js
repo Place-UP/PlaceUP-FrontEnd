@@ -63,26 +63,17 @@ export const Feed = styled.div`
 
         h1{
           margin: -20px 0px;
-          font-size: 19px;          
-          font-family: 'Lato', cursive;
+          font-size: 19px;
         }
 
-        .favorito{margin: 10px 0px;}
+        p{
+          margin: 20px 0px;
+        }
       }
 
-      .cointanerProduto{
-        width: 90%;
-        h1{
-          width: 90%;
-          font-size: 15px;
-          margin: 10px 5px;
-        }
-        
-        p{
-          color: #297FB8;
-          font-size: 15px;
-          margin: 10px 0px 20px 5px;
-        }
+      .cointanerProduto{    
+        width: 90%; 
+        img{ margin: 10px 0px;}    
       }
 
       .buttonVejaMais{  margin: 0;  }
@@ -94,12 +85,6 @@ export const ContainerProfile = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
-  .buttonVejaMais:hover{
-    color: #297FB8;
-    border: 2px solid #297FB8;
-    background-color: white;
-  }
 `
 
 export const Profile = styled.div`
@@ -109,35 +94,41 @@ export const Profile = styled.div`
   img{
     width: 70px;
     height: 70px;
+    margin-top: 30px;
     border-radius: 50%;
     cursor: pointer;
   }
 
   h1{
-    line-height:70px;
     cursor: pointer;    
-    font-weight: bold;    
     font-family: 'Lato', cursive;
-    padding: 0px 5px;
+    color: #297FB8;
+    font-weight: bold;
+    padding: 40px 5px 10px 5px;
   }
 
-  .favorito{
-    width: 30px;
-    height: 30px;
-    margin: 20px 0px 0px 10px;
-    cursor: pointer;
+  p{
+    line-height:-70px;
+    cursor: pointer;    
+    font-weight: 500;
+    padding: 0px 5px 0px 5px;
+    font-family: 'Lato', cursive;
+
+    span{
+      color: #297FB8; 
+      font-weight: bold
+    }
   }
 `;
 
 export const Button = styled.button`
   width: 120px;
   height: 40px;
-  margin: 15px 15px 0px 0px;
+  margin: 50px 15px 0px 0px;
   border-radius: 20px;
   font-size: 17px;
-  color: white;
+  color: #297FB8;
   cursor: pointer;
-  background-color: #297FB8;
 `
 
 export const Produto = styled.div`
@@ -153,21 +144,5 @@ export const CointanerProduto = styled.div`
   img{
     max-width: 400px;
     padding: 0 2%;
-  }
-
-  h1{
-    width: 90%;
-    text-align: left;
-    font-size: 17px;
-    margin: 10px 5px;    
-    font-family: 'Lato', cursive;
-  }
-
-  p{
-    font-family: 'Lato', cursive;
-    text-align: left;
-    color: #297FB8;
-    font-size: 17px;
-    margin-left: 5px;
   }
 `;

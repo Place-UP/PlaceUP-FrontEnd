@@ -41,7 +41,10 @@ export const Profile = styled.div`
     border-radius: 50%;
   }
 
-  h1{line-height: 60px;}
+  h1{
+    line-height: 60px;    
+    font-family: 'Lato', cursive;
+  }
 
   .iconExit{
     width: 15%;
@@ -111,6 +114,7 @@ export const Sugestoes = styled.div`
   h1{
   font-size: 22px;
   padding-top: 20px;
+  font-family: 'Lato', cursive;
   }
 `
 
@@ -131,6 +135,7 @@ export const ProfileSugestao = styled.div`
 
   h2{
     margin-left: 3%;
-    line-height: 50px;
+    line-height: 50px;    
+    font-family: 'Lato', cursive;
   }
 `;
