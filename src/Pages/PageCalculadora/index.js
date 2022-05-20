@@ -1,10 +1,18 @@
 import React from "react";
 import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
-import { Main, Container, HowToUseCalculator } from "./styles";
-import Calculadora from "../../Img/bannercapaCalculadora.png";
-import MulherCalculadora from "../../Img/MulherCalculadora.png";
+import {
+  Main,
+  Container,
+  HowToUseCalculator,
+  VideoHowtoUseCalculator,
+} from "./styles";
+import Calculadora from "../../Img/BackgroundHowUseCalculator.svg";
+import MulherCalculadora from "../../Img/WomanUsingCalculator.svg";
 import "./styles";
+import YoutubeEmbed from "./EmbedVideoYT";
+import { Link } from "react-router-dom";
+
 export function IndexCalculadora() {
   return (
     <>
@@ -32,6 +40,13 @@ export function IndexCalculadora() {
             </p>
           </div>
         </HowToUseCalculator>
+        <VideoHowtoUseCalculator>
+          <h1>Mas como que usa essa calculadora ?</h1>
+          <YoutubeEmbed />
+          <Link to="" className="ButtonGoToCalculator">
+            <span>Calculadora</span>
+          </Link>
+        </VideoHowtoUseCalculator>
       </Main>
       {/* <FooterGeral /> */}
     </>

@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { BiHomeAlt } from "react-icons/bi";
-import { BsChatDots, BsGraphUp, BsGear } from "react-icons/bs";
+import { BsChatDots } from "react-icons/bs";
 import { TiCalculator } from "react-icons/ti";
 import { BiExit } from "react-icons/bi";
 import { IconContext } from "react-icons";
@@ -19,55 +19,47 @@ export function HeaderComerciante() {
 
         <IconContext.Provider value={{ size: "30px" }}>
           <ul>
-            <List className={`${path === "/" ? "Active" : ""}`}>
-              <Link to="/">
-                <Icon>
-                  <BiHomeAlt />
-                </Icon>
-                <Title>Home</Title>
-              </Link>
-            </List>
+            <div>
+              <List className={`${path === "/" ? "Active" : ""}`}>
+                <Link
+                  to="/"
+                  className={`${path === "/" ? "preto" : ""}`}
+                >
+                  <Icon>
+                    <BiHomeAlt className="IconsHeader" />
+                  </Icon>
+                  <Title>Home</Title>
+                </Link>
+              </List>
 
-            <List className={`${path === "/" ? "Active" : ""}`}>
-              <Link to="/">
-                <Icon>
-                  <BsChatDots />
-                </Icon>
-                <Title>chat</Title>
-              </Link>
-            </List>
-            <List>
-              <Link to="">
-                <Icon>
-                  <BsGraphUp />
-                </Icon>
-                <Title>Gráficos</Title> 
-              </Link>
-            </List>
-            <List>
-              <Link to="">
-                <Icon>
-                  <TiCalculator />
-                </Icon>
-                <Title>Calculadora</Title>
-              </Link>
-            </List>
-            <List>
-              <Link to="">
-                <Icon>
-                  <BsGear />
-                </Icon>
-                <Title>Configurações</Title>
-              </Link>
-            </List>
-            <List>
-              <Link to="">
-                <Icon>
-                  <BiExit />
-                </Icon>
-                <Title>Sair</Title>
-              </Link>
-            </List>
+              <List className={`${path === "/" ? "Active" : ""}`}>
+                <Link to="/" className={`${path === "/" ? "preto" : ""}`}>
+                  <Icon>
+                    <BsChatDots className="IconsHeader" />
+                  </Icon>
+                  <Title>chat</Title>
+                </Link>
+              </List>
+
+              <List className={`${path === "/Calculadora" ? "Active" : ""}`}>
+                <Link to="/Calculadora" className={`${path === "/Calculadora" ? "preto" : ""}`}>
+                  <Icon>
+                    <TiCalculator className="IconsHeader" />
+                  </Icon>
+                  <Title>Calculadora</Title>
+                </Link>
+              </List>
+            </div>
+            <div>
+              <List>
+                <Link to="" className={`${path === "/" ? "preto" : ""}`}>
+                  <Icon>
+                    <BiExit className="IconsHeader" />
+                  </Icon>
+                  <Title>Sair</Title>
+                </Link>
+              </List>
+            </div>
           </ul>
         </IconContext.Provider>
       </Navigation>

@@ -1,5 +1,4 @@
-import "./reset.css";
-import api from "./api";
+import './reset.css'
 import Rotas from "./Rotas";
 import { HeaderComerciante } from "./Components/HeaderComerciantes/HeaderComerciante";
 
