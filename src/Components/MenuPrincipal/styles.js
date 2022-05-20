@@ -20,12 +20,11 @@ export const Section = styled.section`
       display: none;
     }
   }    
-}
 `
 
 export const Profile = styled.div`
   width: 100%;
-  background color: #202020;
+  background-color: #202020;
 
   .profile{
     width: 90%;
@@ -128,7 +127,7 @@ export const Sugestoes = styled.div`
 export const ProfileSugestao = styled.div`
   margin-top: 20px;
   width: 100%;
-  background color: #202020;
+  background-color: #202020;
   display: flex;
   flex-direction: row;
   border-left: 3px solid #2980B9;

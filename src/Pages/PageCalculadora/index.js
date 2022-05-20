@@ -48,7 +48,7 @@ export function IndexCalculadora() {
           </Link>
         </VideoHowtoUseCalculator>
       </Main>
-      {/* <FooterGeral /> */}
+      <FooterGeral />
     </>
   );
 }
