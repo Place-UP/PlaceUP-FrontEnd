@@ -13,8 +13,8 @@ import { Home, HeaderA, Barra, Categoria, CategoriaShopping, InfoCategoria } fro
 export function IndexHomeUser() {
   return (
     <>
+    <Header />
     <Home>
-      <Header />
       <MenuPrincipal  />
 
       <HeaderA>
@@ -27,9 +27,9 @@ export function IndexHomeUser() {
       </HeaderA>
 
       <Categoria>
-        <h1>CATEGORIAS</h1>
+        <h1 className="aaaaa">CATEGORIAS</h1>
         <div className="containerCategoria">
-          <CategoriaShopping className="Toma"> 
+          <CategoriaShopping> 
             <img src={Shopping} alt="Icone Shopping" />
             <InfoCategoria>
               <h2>Shopping</h2>
@@ -43,7 +43,7 @@ export function IndexHomeUser() {
               <h2>Mercado</h2>
               <p> &#x2192; </p>
             </InfoCategoria>
-          </CategoriaShopping>
+          </CategoriaShopping >
 
           <CategoriaShopping>
             <img src={Farmarcia} alt="Icone Shopping" />

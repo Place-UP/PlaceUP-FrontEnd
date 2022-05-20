@@ -7,7 +7,8 @@ import { Section, Profile, DarkMode, Reserva, Sugestoes, ProfileSugestao, } from
 export function MenuPrincipal() {
   return (
     <>
-        <Section className="Menu">
+      <Section>
+        <div className="menuPrincipal">
             <Profile>
               <div className="profile">
                 <img src={perfil} alt="Foto de Perfil" />
@@ -55,7 +56,8 @@ export function MenuPrincipal() {
                 </ProfileSugestao>
                 
             </Sugestoes>
-        </Section>
+          </div>  
+      </Section>
     </>
   );
 }

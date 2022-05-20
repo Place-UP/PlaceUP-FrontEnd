@@ -8,10 +8,12 @@ const media = {
 
 export const Feed = styled.div`
   margin: 0px 0px 40px 17%;
+  max-width: 1400px;
   width: 60%;
   border-radius: 20px;
   background-color: white;
-  ${media.Tablet} {
+
+  ${media.Tablet} {    
     .produto {
       max-width: 300px;
       display: block;
@@ -22,7 +24,8 @@ export const Feed = styled.div`
     }
   
     img{
-      width: 100%;
+      width: 90%;
+      margin: 0px 5px;
     }
     
     h1{
@@ -39,6 +42,7 @@ export const Feed = styled.div`
   }
 
     ${media.Mobile} {
+      width: 70%;
       .containerProfile{
         width: 100%;
         display: block;
@@ -63,6 +67,21 @@ export const Feed = styled.div`
         .favorito{margin: 10px 0px;}
       }
 
+      .cointanerProduto{
+        width: 90%;
+        h1{
+          width: 90%;
+          font-size: 15px;
+          margin: 10px 5px;
+        }
+        
+        p{
+          color: #297FB8;
+          font-size: 15px;
+          margin: 10px 0px 20px 5px;
+        }
+      }
+
       .buttonVejaMais{  margin: 0;  }
     }    
   }
@@ -72,8 +91,6 @@ export const ContainerProfile = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0px 3%;
-
   
   .buttonVejaMais:hover{
     color: #297FB8;
@@ -97,6 +114,7 @@ export const Profile = styled.div`
     line-height:70px;
     cursor: pointer;    
     font-weight: bold;
+    padding: 0px 5px;
   }
 
   .favorito{
@@ -121,8 +139,8 @@ export const Button = styled.button`
 export const Produto = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  padding-bottom: 30px;
+  justify-content: space-around;
+  padding: 10px 2% 30px 2%;
 `
 
 export const CointanerProduto = styled.div`
@@ -130,17 +148,20 @@ export const CointanerProduto = styled.div`
   
   img{
     max-width: 400px;
+    padding: 0 2%;
   }
 
-h1{
-  width: 90%;
-  font-size: 17px;
-  margin: 10px 5px;
-}
+  h1{
+    width: 90%;
+    text-align: left;
+    font-size: 17px;
+    margin: 10px 5px;
+  }
 
-p{
-  color: #297FB8;
-  font-size: 17px;
-  margin-left: 5px;
-}
+  p{
+    text-align: left;
+    color: #297FB8;
+    font-size: 17px;
+    margin-left: 5px;
+  }
 `;

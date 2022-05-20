@@ -1,20 +1,17 @@
 import styled from "styled-components";
 
-const Media = {
-  Tablet: "@media(max-width: 700px)",
+const media = {
+  Tablet: "@media(max-width: 790px)",
   Mobile: "@media(max-width:675px)",
-  MobileS: "@media(max-width:400px)",
+  MobileS: "@media(max-width:320px)",
 };
 
 export const Home = styled.div` 
  background-color: #ECF0F1;  
- 
- ${Media.Tablet} {
-    .containerCategoria{
-      width: 60%;
-      display: block;
-    }
-  }
+ ${media.MobileS}{
+  margin-left: 10%;
+  text-align: center;
+}
  `;
 
 export const HeaderA = styled.div`
@@ -58,20 +55,38 @@ export const Barra = styled.div`
 `;
 
 export const Categoria = styled.div`
+  max-width: 1400px;
+  width: 60%;
   padding: 0px 0 30px 17%;
-  padding-bottom: 30px;
 
   h1{   
     font-size: 20px; 
     margin-left: 5px;
     font-weight: 800;
-}
+  }
 
   .containerCategoria{
-    width: 60%;
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     flex-direction: row;
     justify-content: space-between;
+    ${media.Tablet}{
+      width: 100%;
+      grid-template-columns: auto auto auto auto;
+      grid: auto / auto auto;
+    }
+
+    ${media.MobileS}{
+      width: 50%;
+      margin-left: 20%;
+      grid-template-columns: auto auto auto 20px;
+      grid: auto / auto;
+    }
+  }
+
+  ${media.MobileS}{
+    h1{   margin-left: 24px;    }
   }
 `;
 

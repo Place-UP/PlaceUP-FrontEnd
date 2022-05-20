@@ -1,30 +1,29 @@
 import styled from "styled-components";
 
 const media = {
-  Tablet: "@media(max-width: 763px)",
+  Tablet: "@media(max-width: 935px)"
 };
 
 export const Section = styled.section`
-  position: fixed;
-  right: 0pt;
-  width: 300px;
-  height: 100vh;
-  background-color: #ECF0F1;
-  margin: auto;
-  overflow-x: hidden;
-  transition: width 0.5s;
-  padding-top: 30px; 
+  .menuPrincipal{
+    position: fixed;
+    right: 0pt;
+    max-width: 400px;
+    width: 23%;
+    height: 100vh;
+    background-color: #ECF0F1;
+    margin: auto;
+    transition: width 0.5s;
+    padding-top: 30px; 
+  }
 
   ${media.Tablet} {
-    .Menu{
-      display: none;
-    }
+    .menuPrincipal{   display: none;   }
   }    
 `
 
 export const Profile = styled.div`
   width: 100%;
-  background-color: #202020;
 
   .profile{
     width: 90%;
@@ -45,7 +44,7 @@ export const Profile = styled.div`
   h1{line-height: 60px;}
 
   .iconExit{
-    width: 45px;
+    width: 15%;
     height: 50px;
     padding-right: 10px;
     cursor: pointer; 
@@ -127,7 +126,7 @@ export const Sugestoes = styled.div`
 export const ProfileSugestao = styled.div`
   margin-top: 20px;
   width: 100%;
-  background-color: #202020;
+  background-color: white;
   display: flex;
   flex-direction: row;
   border-left: 3px solid #2980B9;
