@@ -3,7 +3,6 @@ import styled from "styled-components";
 const media = { TabletAndMobile: "@media screen and (max-width: 863px)" };
 
 export const Footergeral = styled.div`
-
   position: absolute;
   z-index: 0;
   width: 100%;
@@ -13,7 +12,7 @@ export const Footergeral = styled.div`
 
   ${media.TabletAndMobile} {
     .container {
-      width: 100%;
+      /* width: 100%; */
       padding: 20px 0px;
       display: block;
       flex-direction: row;
@@ -66,11 +65,11 @@ export const Footergeral = styled.div`
 `;
 
 export const ContainerFooter = styled.div`
-  width: 100%;
   padding: 20px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-left: 70px;
 `;
 
 export const LinksFooter = styled.div`

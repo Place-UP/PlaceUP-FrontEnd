@@ -53,15 +53,6 @@ export function Header() {
                 <Title>Favoritos</Title>
               </Link>
             </List>
-
-            <List>
-              <Link to="" className={`${path === "/" ? "Active" : ""}`}>
-                <Icon>
-                  <BiExit />
-                </Icon>
-                <Title>Sair</Title>
-              </Link>
-            </List>
           </ul>
         </IconContext.Provider>
       </Navigation>

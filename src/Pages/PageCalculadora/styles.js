@@ -7,16 +7,18 @@ const Media = {
   MobileM: "@media(max-width:375px)",
 };
 export const Main = styled.main`
-  height: 100vh;
   margin-left: 200px;
+  ${Media.Desktop} {
+    margin-left: 90px;
+  }
   ${Media.Tablet} {
-    margin-left: 120px;
+    margin-left: 100px;
   }
   ${Media.MobileL} {
     margin-left: 100px;
   }
   ${Media.MobileM} {
-    margin-left: 70px;
+    margin-left: 59px;
   }
 `;
 
@@ -39,10 +41,10 @@ export const Container = styled.div`
       max-width: 205px;
     }
     ${Media.MobileL} {
-      font-size: 12px;
+      font-size: 14px;
     }
     ${Media.MobileM} {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
 
@@ -98,10 +100,10 @@ export const HowToUseCalculator = styled.div`
       font-size: 20px;
     }
     ${Media.MobileL} {
-      font-size: 15px;
+      font-size: 14px;
     }
     ${Media.MobileM} {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
 
@@ -125,7 +127,7 @@ export const HowToUseCalculator = styled.div`
       width: 119px;
     }
     ${Media.MobileM} {
-      font-size: 8px;
+      font-size: 10px;
       max-width: 100px;
     }
   }
@@ -150,10 +152,10 @@ export const VideoHowtoUseCalculator = styled.div`
       margin-top: 40px;
     }
     ${Media.MobileL} {
-      font-size: 12px;
+      font-size: 14px;
     }
     ${Media.MobileM} {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
   .ButtonGoToCalculator {
@@ -161,16 +163,16 @@ export const VideoHowtoUseCalculator = styled.div`
     align-items: center;
     justify-content: center;
     span {
-      margin-top: 10px;
+      margin-top: 50px;
       background-color: #2980b9;
       color: #fff;
       padding: 15px 30px;
       border-radius: 15px;
       font-size: 26px;
-
+      margin-bottom: 50px;
       ${Media.Tablet} {
         padding: 10px 25px;
-        font-size: 12px;
+        font-size: 14px;
       }
     }
   }
