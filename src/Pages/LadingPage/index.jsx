@@ -5,8 +5,10 @@ import {
   Card, Midia, VetorCidade
 } from "./style";
 
-import { AiOutlineGooglePlus, AiOutlineTwitter, AiOutlineFacebook } from 'react-icons/ai'
-import { BsInstagram } from 'react-icons/bs'
+import {
+  AiOutlineGoogle, AiOutlineTwitter,
+  AiOutlineFacebook, AiOutlineInstagram
+} from 'react-icons/ai'
 
 import { Link } from 'react-router-dom'
 
@@ -45,7 +47,7 @@ export function LadingPage() {
             </Link >
             <Link to="">
               <li>
-                <BsInstagram />
+                <AiOutlineInstagram />
               </li>
             </Link >
             <Link to="">
@@ -55,7 +57,7 @@ export function LadingPage() {
             </Link >
             <Link to="">
               <li>
-                <AiOutlineGooglePlus />
+                <AiOutlineGoogle />
               </li>
             </Link >
 

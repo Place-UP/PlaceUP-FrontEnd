@@ -97,16 +97,29 @@ export const BtnCard = styled.button`
     cursor: pointer;
     margin-top: 1.7rem;
     margin-bottom: 1.7rem;
+    box-shadow: 0px 5px 15px #C1FAFA;
+
+    &:hover{
+        transition: all 0.5s ease-in-out;
+        opacity: 0.8;
+    }
 `
 
 export const Midia = styled.ul`
     display: flex;  
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 2rem;
 
     a{
-        font-size: 2.25rem;
+        font-size: 2.5rem;
+        color: #2980B9;
+        margin-right: 20%;
+        &:hover{
+                transition: all 0.4s ease-in-out;
+                transform: translate(0px, -8px);
+                opacity: 0.5;
+            }
     }
 `
 
