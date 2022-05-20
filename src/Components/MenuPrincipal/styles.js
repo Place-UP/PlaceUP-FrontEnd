@@ -108,20 +108,20 @@ padding-bottom: 30px;
 
 export const Sugestoes = styled.div`
   width: 90%;
-  margin: 200px 0px 0px 5%;
+  margin: 150px 0px 0px 5%;
   text-align: center;
   background-color: white;
   border-radius: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 
   h1{
   font-size: 22px;
-  padding-top: 30px;
+  padding-top: 20px;
   }
 `
 
 export const ProfileSugestao = styled.div`
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   background color: #202020;
   display: flex;
