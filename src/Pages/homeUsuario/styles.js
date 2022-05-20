@@ -28,6 +28,10 @@ export const HeaderA = styled.div`
         margin: 33px 0px 0px 100px;
         cursor: pointer;
     }
+
+    ${media.MobileS}{
+      width: 30%;
+    }
 `;
 
 export const Barra = styled.div`
