@@ -84,18 +84,18 @@ export const DarkMode = styled.section`
   }		
 
   input.toggle-control + label::before {
-    background: white;
+    background: #202020;
     border-radius: 60px;
   }
 
   input.toggle-control + label::after {
     width: 18px;
-    background: #fff;
+    background: white;
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 
-  input.toggle-control:checked + label::before { background: #202020; }
+  input.toggle-control:checked + label::before { background: white; }
 
   input.toggle-control:checked + label::after { margin-left: 20px; }
 `

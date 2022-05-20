@@ -11,7 +11,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai"
 import { Home, HeaderA, Barra, Categoria, CategoriaShopping, InfoCategoria, Car } from "./styles";
 
-export function IndexHomeUser() {
+export function Reservas() {
   return (
     <>
       <Header />
@@ -30,7 +30,7 @@ export function IndexHomeUser() {
             </Car>
           </HeaderA>
 
-          <h1 className="aaaaa">CATEGORIAS</h1>
+          <h1 className="aaaaa">MINHAS RESERVAS</h1>
           <div className="containerCategoria">
             <CategoriaShopping>
               <img src={Shopping} alt="Icone Shopping" />
