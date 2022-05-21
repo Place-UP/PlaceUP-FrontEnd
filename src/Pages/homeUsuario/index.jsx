@@ -21,9 +21,9 @@ export function IndexHomeUser() {
         <Categoria>
           <HeaderA>
             <Barra>
-              <span><AiOutlineSearch size="25px" /></span>
+              <span><AiOutlineSearch /></span>
               <input type="text" className="pesquisa" placeholder="Pesquisa"></input>
-              <button><IoIosArrowDown className="seta" size="25px" /></button>
+              <button><IoIosArrowDown className="seta" /></button>
             </Barra>
             <Car>
               <img src={Carrinho} alt="Carrinho" />

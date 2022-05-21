@@ -19,15 +19,10 @@ export const HeaderA = styled.div`
     height: 100px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     border-radius: 50%;
 
-    img{
-        width: 30px;
-        height: 30px;        
-        margin: 33px 0px 0px 100px;
-        cursor: pointer;
-    }
 
     ${media.MobileS}{
       width: 30%;
@@ -35,14 +30,20 @@ export const HeaderA = styled.div`
 `;
 
 export const Barra = styled.div`
-  width: 100%;
-  margin: auto;
+  width: 80%;
   display: flex;
   align-items: center;
   padding: 0px 2%;
   justify-content: space-between;
   background-color: #fff;
   border-radius: 20px;
+
+  span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
     
   .pesquisa{
     width: 95%;
@@ -58,18 +59,31 @@ export const Barra = styled.div`
 
   .seta{
     background-color: #fff;
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
   }
 
-  button{ cursor: pointer; }
 `;
 
 export const Car = styled.div`
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   img{
+        width: 30px;
+        height: 30px;        
+        
+        cursor: pointer;
+    }
 
 `
 
 export const Categoria = styled.div`
-  max-width: 1400px;
-  width: 50%;
+  width: 60%;
   padding: 0px 0 30px 17%;
 
   h1{   
@@ -82,8 +96,10 @@ export const Categoria = styled.div`
   .containerCategoria{
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
     justify-content: space-between;
     ${media.Tablet}{
       width: 120%;
@@ -105,9 +121,8 @@ export const Categoria = styled.div`
 `;
 
 export const CategoriaShopping = styled.div`
-    width: 140px;
     height: 100px;
-    border-radius: 20px;
+    border-radius: 8px;
     margin-top: 70px;
     text-align: center; 
     background-color: white;
@@ -122,9 +137,10 @@ export const CategoriaShopping = styled.div`
 
 export const InfoCategoria = styled.div`
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     justify-content: space-around;    
-    border-left: 2px solid #E85959;
 
     h2{   
       text-align: center;
@@ -132,15 +148,24 @@ export const InfoCategoria = styled.div`
       margin-left: 5px;
       font-weight: 600;
       cursor: pointer;
+
+      &::before{
+        content: '';
+        border-left: 5px solid #E85959;
+        padding-right: 8px;
+      }
     }
 
     p{
-      width: 20px;
-      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
       background-color: #E85959;
       color: white;
       font-size: 17px;
-      border-radius: 10px;
+      border-radius: 4px;
       line-height: -200px;
       cursor: pointer;
       font-family: 'Lato';
