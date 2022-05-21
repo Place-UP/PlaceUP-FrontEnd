@@ -136,6 +136,7 @@ export const CategoriaShopping = styled.div`
 `;
 
 export const InfoCategoria = styled.div`
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +145,7 @@ export const InfoCategoria = styled.div`
 
     h2{   
       text-align: center;
-      font-size: 17px; 
+      font-size: 14px; 
       margin-left: 5px;
       font-weight: 600;
       cursor: pointer;
@@ -160,7 +161,7 @@ export const InfoCategoria = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 25px;
+      width: 30px;
       height: 25px;
       background-color: #E85959;
       color: white;
