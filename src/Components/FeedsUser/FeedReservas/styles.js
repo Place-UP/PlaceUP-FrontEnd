@@ -25,7 +25,8 @@ export const Feed = styled.div`
   
     img{
       width: 90%;
-      margin: 0px 5px;
+      margin: 0px 5px;      
+      box-shadow: none;
     }
     
     h1{
@@ -142,7 +143,10 @@ export const CointanerProduto = styled.div`
   width: 90%;
   
   img{
+    width: 90%;
     max-width: 400px;
-    padding: 0 2%;
+    border-radius: 20px;
+    padding: 10px 2%;
+    box-shadow: 10px 10px 10px rgb(180,180,180);
   }
 `;
