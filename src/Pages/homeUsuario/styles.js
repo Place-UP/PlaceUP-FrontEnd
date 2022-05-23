@@ -166,6 +166,10 @@ export const InfoCategoria = styled.div`
       color: white;
       font-size: 17px;
       border-radius: 4px;
+<<<<<<< HEAD
+      line-height: -200px;  
+=======
+>>>>>>> f0c6527ff1b4fa4407474c93d7c62a38d248de9a
       cursor: pointer;
       font-family: 'Lato';
     }
