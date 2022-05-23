@@ -79,7 +79,6 @@ export const Car = styled.div`
         
         cursor: pointer;
     }
-
 `
 
 export const Categoria = styled.div`
@@ -102,7 +101,7 @@ export const Categoria = styled.div`
     align-items: center;
     justify-content: space-between;
     ${media.Tablet}{
-      width: 120%;
+      width: 100%;
       grid-template-columns: auto auto auto auto;
       grid: auto / auto auto;
     }
@@ -121,15 +120,15 @@ export const Categoria = styled.div`
 `;
 
 export const CategoriaShopping = styled.div`
-    height: 100px;
+    height: 80px;
     border-radius: 8px;
     margin-top: 70px;
     text-align: center; 
     background-color: white;
 
     img{
-        width: 110px;
-        height: 110px;
+        width: 90px;
+        height: 90px;
         font-size: 17px;
         margin-top: -50px;
     }
@@ -161,13 +160,16 @@ export const InfoCategoria = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 30px;
+      width: 25px;
       height: 25px;
       background-color: #E85959;
       color: white;
       font-size: 17px;
       border-radius: 4px;
+<<<<<<< HEAD
       line-height: -200px;  
+=======
+>>>>>>> f0c6527ff1b4fa4407474c93d7c62a38d248de9a
       cursor: pointer;
       font-family: 'Lato';
     }

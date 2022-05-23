@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
-import { FeedReservas } from "../../Components/FeedReservas/index";
+import { FeedReservas } from "../../Components/FeedsUser/FeedReservas/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { Home, Categoria } from "./styles";
 

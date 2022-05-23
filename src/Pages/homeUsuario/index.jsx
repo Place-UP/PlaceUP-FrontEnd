@@ -5,7 +5,7 @@ import Mercado from "./images/mercado.png";
 import Farmarcia from "./images/farmarcia.png";
 import Restaurantes from "./images/restaurante.png";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
-import { FeedUser } from "../../Components/Feed/index";
+import { FeedUser } from "../../Components/FeedsUser/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { IoIosArrowDown } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai"
