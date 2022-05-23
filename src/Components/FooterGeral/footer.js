@@ -36,13 +36,13 @@ export function FooterGeral() {
           <div className="Social">
             <FooterH1 className="SocialH1">SOCIAL</FooterH1>
             <Icons className="icons">
-              <BsFacebook size="40px" />
+              <a href="https://www.facebook.com/iplaceup/"><BsFacebook size="40px" /></a>
             </Icons>
             <Icons className="icons">
-              <BsTwitter size="40px" />
+            <a href="https://twitter.com/iPlaceUP"><BsTwitter size="40px" /></a>
             </Icons>
             <Icons className="icons">
-              <BsInstagram size="40px" />
+              <a href="https://www.instagram.com/iplaceup/"><BsInstagram size="40px" /></a>
             </Icons>
           </div>
         </ContainerFooter>
