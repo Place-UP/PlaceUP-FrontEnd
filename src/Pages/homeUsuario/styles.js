@@ -167,7 +167,7 @@ export const InfoCategoria = styled.div`
       color: white;
       font-size: 17px;
       border-radius: 4px;
-      line-height: -200px;
+      line-height: -200px;  
       cursor: pointer;
       font-family: 'Lato';
     }
