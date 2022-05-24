@@ -2,7 +2,7 @@ import React from "react";
 
 import {
   Btn, HeaderImg, Header, Box, Container, TitleCard, BtnCard, ParagrafoCard,
-  Card, Midia, VetorCidade
+  Card, Midia, VetorCidade, ContentRight, ContentText, CenarioRightStyle, CenarioLeftStyle
 } from "./style";
 
 import {
@@ -14,6 +14,13 @@ import { Link } from 'react-router-dom'
 
 import LogoPlaceUP from '../../Img/ImgLading/PlaceUp animação.svg'
 import CidadeVetor from '../../Img/ImgLading/VetorCidadePlaceUp.svg'
+import CursosPlaceUp from '../../Img/ImgLading/Conteudo_Cursos.svg'
+import CenarioRight from '../../Img/ImgLading/Cenario_top_right.svg'
+import UsuarioCompras from '../../Img/ImgLading/Cenario_(1).svg'
+import Calculadora from '../../Img/ImgLading/Calculadora.svg'
+import CenarioLeft from '../../Img/ImgLading/Cenario_top_Left.svg'
+
+import { FooterGeral } from "../../Components/FooterGeral/footer";
 
 export function LadingPage() {
   return (
@@ -24,7 +31,7 @@ export function LadingPage() {
             <img src={LogoPlaceUP} alt="Logo PlaceUP" />
           </div>
         </HeaderImg>
-        <Box>
+        <Box primary>
           <Btn primary>Entrar</Btn>
           <Btn>Cadastrar</Btn>
         </Box>
@@ -36,7 +43,7 @@ export function LadingPage() {
 
           <ParagrafoCard>Encontre comércios mais próximo da sua região e fique sempre atualizado sem sair de casa!</ParagrafoCard>
 
-          <BtnCard>Saiba Mais</BtnCard>
+          <BtnCard primary>Saiba Mais</BtnCard>
 
           <Midia>
 
@@ -68,6 +75,49 @@ export function LadingPage() {
           <img src={CidadeVetor} alt="Cidade Vetor PlaceUP" />
         </VetorCidade>
       </Container>
+
+      <Container primary>
+        <Box>
+          <img src={CursosPlaceUp} alt="Cursos que PlaceUP oferece" />
+        </Box>
+        <ContentRight>
+          <CenarioRightStyle src={CenarioRight} alt="Enfeite do Site" />
+          <ContentText>
+            <h1>Vem cadastrar seu comércio</h1>
+            <p>Aprenda a impulsionar seu negócio com cursos, uma calculadora para te ajudar a precificar o seu produto e muito mais. </p>
+            <BtnCard>Ver mais</BtnCard>
+          </ContentText>
+        </ContentRight>
+      </Container>
+
+      <Container primary>
+        <ContentRight>
+          <CenarioLeftStyle primary src={CenarioLeft} alt="Enfeite do Site" />
+          <ContentText>
+            <h1>Calcula com a gente </h1>
+            <p>Calcule seus produtos de forma efetiva. </p>
+            <BtnCard>Ver mais</BtnCard>
+          </ContentText>
+        </ContentRight>
+        <Box>
+          <img src={Calculadora} alt="Cursos que PlaceUP oferece" />
+        </Box>
+      </Container>
+
+      <Container primary>
+        <Box>
+          <img src={UsuarioCompras} alt="Cursos que PlaceUP oferece" />
+        </Box>
+        <ContentRight>
+          <CenarioRightStyle src={CenarioRight} alt="Enfeite do Site" />
+          <ContentText>
+            <h1>Reserve Seu produto</h1>
+            <p>Reserve produtos quando quiser. </p>
+            <BtnCard>Ver mais</BtnCard>
+          </ContentText>
+        </ContentRight>
+      </Container>
+      <FooterGeral />
     </>
   );
 }

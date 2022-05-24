@@ -34,8 +34,13 @@ export const HeaderImg = styled.div`
 `
 
 export const Box = styled.div`
-    width: 40%;
+    width: ${(props) => props.primary ? "40%" : "60%"};
     height: auto;
+
+    img{
+        width: 100%;
+
+    }
 `
 
 export const Btn = styled.button`
@@ -57,11 +62,14 @@ export const Btn = styled.button`
 `
 
 export const Container = styled.section`
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: ${(props) => props.primary ? "200px" : "0"};
 `
 
 export const Card = styled.div`
@@ -90,7 +98,7 @@ export const ParagrafoCard = styled.p`
 
 export const BtnCard = styled.button`
     color: #fff;
-    background: linear-gradient(to right, #60BDCC 0%, #CF71BF 100%);
+    background: ${(props) => props.primary ? "linear-gradient(to right, #60BDCC 0%, #CF71BF 100%);" : "var(--Azul-Escuro)"};
     padding: 15px 50px;
     border-radius: 40px;
     cursor: pointer;
@@ -126,3 +134,48 @@ export const VetorCidade = styled.div`
     width: 100%;
 `
 
+
+
+export const ContentRight = styled.div`
+    width: 80%;
+    height: 100%;
+`
+
+export const CenarioRightStyle = styled.img`
+      position: absolute;
+        top: 0;
+        right:0;
+        width: 10%;
+`
+
+export const CenarioLeftStyle = styled.img`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+
+`
+
+export const ContentText = styled.article`
+    font-family: 'Bakbak One', cursive;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    
+    h1{
+        font-family: 'Bakbak One', cursive;
+        text-align: center;
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: #2D3E50;
+    }
+
+    p{
+        padding: 0px 20px;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: start;
+        font-weight: 300;
+        font-size: 1.4rem;
+    }
+`
