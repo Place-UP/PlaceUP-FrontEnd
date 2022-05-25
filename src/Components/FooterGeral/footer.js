@@ -23,7 +23,6 @@ export function FooterGeral() {
           <LinksFooter className="linksFooter">
             <div className="links">
               <a href="">Fale conosco</a>
-              <a href="">Código de conduta</a>
               <a href="">Dicas de segurança</a>
             </div>
 

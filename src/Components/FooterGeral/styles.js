@@ -89,7 +89,7 @@ export const LinksFooter = styled.div`
   }
 
   .links:nth-child(2) {
-    margin-top: 59px;
+    margin-top: 20px;
     display: block;
   }
 `;
