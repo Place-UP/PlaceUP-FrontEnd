@@ -20,7 +20,7 @@ function Rotas() {
           <Route path="/ComoFuncionaCalculadora" element={<IndexCalculadora />} />
           <Route path="/HomeUser" element={<IndexHomeUser />} />
           <Route path="/Reservas" element={<Reservas />} />
-          <Route path="/Pedido" element={<Pedido />} />
+          <Route path="/Pedido" element={<Pedido />} />         
           <Route path="/Calculadora" element={<IndexCalculadora />} />
           <Route path="*" element={<Pagina404 />} />
           <Route path="Institucional" element={<Institucional />} />
