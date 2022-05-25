@@ -3,10 +3,9 @@ import { BiHomeAlt } from "react-icons/bi";
 import { BsChatDots } from "react-icons/bs";
 import { MdFavoriteBorder } from "react-icons/md";
 import { AiOutlineSchedule } from "react-icons/ai";
-import { BiExit } from "react-icons/bi";
 import { IconContext } from "react-icons";
 import { Navigation, Title, List, Icon } from "./styles";
-import Logo from "../../Img/logo_header.svg";
+import Logo from '../../Img/PlaceUp animação.svg'
 
 export function Header() {
   const path = useLocation().pathname;

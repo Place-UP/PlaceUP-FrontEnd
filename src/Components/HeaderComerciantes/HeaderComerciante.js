@@ -5,7 +5,7 @@ import { TiCalculator } from "react-icons/ti";
 import { BiExit } from "react-icons/bi";
 import { IconContext } from "react-icons";
 import { Navigation, Title, List, Icon } from "./styles";
-import Logo from "../../Img/logo_header.svg";
+import Logo from "../../Img/PlaceUp animação.svg";
 
 export function HeaderComerciante() {
   const path = useLocation().pathname;

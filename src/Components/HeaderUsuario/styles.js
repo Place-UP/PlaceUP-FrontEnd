@@ -28,6 +28,14 @@ export const Navigation = styled.div`
       width: 170px;
     }
   }
+
+  div{
+    img{
+      padding: 10px;
+      margin-bottom: 40px;
+      width: 70px;
+    }
+  }
   ul {
     width: 100%;
     padding-left: 5px;

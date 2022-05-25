@@ -67,7 +67,7 @@ export const Container = styled.section`
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: ${(props) => props.primary ? "center" : "flex-start"};
 
     margin-top: ${(props) => props.primary ? "200px" : "0"};
 `
@@ -81,6 +81,7 @@ export const TitleCard = styled.h1`
     font-size: 3.25rem;
     font-weight: 600;
     font-family: 'Bakbak One', cursive;
+    margin-top: 4rem;
     margin-bottom: 1.5rem;
 
     span{
@@ -98,8 +99,9 @@ export const ParagrafoCard = styled.p`
 
 export const BtnCard = styled.button`
     color: #fff;
+    font-size: 1.2rem;
     background: ${(props) => props.primary ? "linear-gradient(to right, #60BDCC 0%, #CF71BF 100%);" : "var(--Azul-Escuro)"};
-    padding: 15px 50px;
+    padding: 15px 60px;
     border-radius: 40px;
     cursor: pointer;
     margin-top: 1.7rem;
@@ -158,26 +160,22 @@ export const CenarioLeftStyle = styled.img`
 
 export const ContentText = styled.article`
     font-family: 'Bakbak One', cursive;
-    width: 50%;
+    width: 60%;
+    height: 100%;
     margin: auto;
     text-align: center;
     
     h1{
         font-family: 'Bakbak One', cursive;
-        text-align: center;
         font-weight: 500;
         font-size: 2.5rem;
         color: #2D3E50;
     }
 
     p{
-        width: 85%;
-        margin: auto;
-        padding-left: 50px;
         margin-top: 2.5rem;
         margin-bottom: 2rem;
-        text-align: start;
         font-weight: 300;
-        font-size: 1.4rem;
+        font-size: 1.2em;
     }
 `
