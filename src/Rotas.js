@@ -23,13 +23,13 @@ function Rotas() {
           <Route path="/ComoFuncionaCalculadora" element={<IndexCalculadora />} />
           <Route path="/HomeUser" element={<IndexHomeUser />} />
           <Route path="/Reservas" element={<Reservas />} />
-          <Route path="/Pedido" element={<Pedido />} />         
-          <Route path="/Politica" element={<Politica />} /> 
-          <Route path="/Dicas" element={<Dicas />} /> 
-          <Route path="/Termos" element={<Termos />} /> 
+          <Route path="/Pedido" element={<Pedido />} />
+          <Route path="/Politica" element={<Politica />} />
+          <Route path="/Dicas" element={<Dicas />} />
+          <Route path="/Termos" element={<Termos />} />
           <Route path="/Calculadora" element={<IndexCalculadora />} />
           <Route path="*" element={<Pagina404 />} />
-          <Route path="Institucional" element={<Institucional />} />
+          <Route path="/Institucional" element={<Institucional />} />
         </Routes>
       </BrowserRouter>
     </>

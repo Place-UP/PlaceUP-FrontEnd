@@ -1,11 +1,25 @@
-import React from "react";
+import { Link } from 'react-router-dom'
 
-export const Pagina404 = () => {
+import Error404 from '../../Img/Error/Error.svg'
+import CenarioErrorBottom from '../../Img/Error/CenarioErrorBottom.svg'
+import CaixaPlaceUP from '../../Img/Error/CaixaPlaceUP.svg'
+import CenarioErrorTop from '../../Img/Error/CenarioErrorTop.svg'
+
+import { Container, Box, CenarioBottom, CenarioTop, CaixaError } from './style'
+
+export function Pagina404() {
     return (
-        <>
-            <main>
-                <p>Opss, Essa página não existe</p>
-            </main>
-        </>
+        <Container>
+            <CenarioBottom src={CenarioErrorBottom} alt="Img Cenario Bottom" />
+            <CenarioTop src={CenarioErrorTop} alt="Img Cenario Top" />
+            <Box>
+                <img src={Error404} alt="Vetor de error404" />
+                <span>Está pagina não existe</span>
+                <Link to="/">Voltar</Link>
+            </Box>
+            <CaixaError>
+                <img src={CaixaPlaceUP} alt="Caixa PlaceUP" />
+            </CaixaError>
+        </Container>
     )
 }

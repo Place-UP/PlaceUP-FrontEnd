@@ -16,7 +16,7 @@ export const Box = styled.section`
     margin: auto;
     background-color: #F8F8F8;
     box-shadow: 4px 4px 10px 1px #ccc;
-
+    border-radius: 10px;
 `
 
 export const PerfilFoto = styled.div`
@@ -47,7 +47,7 @@ export const Coment = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 310px;
     margin: auto;
 
     h2{

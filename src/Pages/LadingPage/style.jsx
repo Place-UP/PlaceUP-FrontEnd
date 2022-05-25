@@ -34,13 +34,14 @@ export const HeaderImg = styled.div`
 `
 
 export const Box = styled.div`
+    position: relative;
     width: ${(props) => props.primary ? "40%" : "60%"};
     height: auto;
 
     img{
         width: 100%;
-
     }
+
 `
 
 export const Btn = styled.button`
@@ -72,6 +73,12 @@ export const Container = styled.section`
     margin-top: ${(props) => props.primary ? "200px" : "0"};
 `
 
+export const Cenarios = styled.img`
+    position: absolute;
+    left: 0;
+    bottom: 0;
+`
+
 export const Card = styled.div`
     margin-left: 5%;
 `
@@ -81,8 +88,8 @@ export const TitleCard = styled.h1`
     font-size: 3.25rem;
     font-weight: 600;
     font-family: 'Bakbak One', cursive;
-    margin-top: 4rem;
-    margin-bottom: 1.5rem;
+
+    margin-bottom: 3.5rem;
 
     span{
         color: #60BCCB;
@@ -94,7 +101,7 @@ export const ParagrafoCard = styled.p`
     font-size: 1.4rem;
     color: #344758;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
 `
 
 export const BtnCard = styled.button`
@@ -105,7 +112,7 @@ export const BtnCard = styled.button`
     border-radius: 40px;
     cursor: pointer;
     margin-top: 1.7rem;
-    margin-bottom: 1.7rem;
+    margin-bottom: 2.5rem;
     box-shadow: 0px 5px 15px #C1FAFA;
 
     &:hover{
@@ -135,8 +142,6 @@ export const Midia = styled.ul`
 export const VetorCidade = styled.div`
     width: 100%;
 `
-
-
 
 export const ContentRight = styled.div`
     width: 80%;
@@ -179,3 +184,4 @@ export const ContentText = styled.article`
         font-size: 1.2em;
     }
 `
+

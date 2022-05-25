@@ -2,7 +2,8 @@ import React from "react";
 
 import {
   Btn, HeaderImg, Header, Box, Container, TitleCard, BtnCard, ParagrafoCard,
-  Card, Midia, VetorCidade, ContentRight, ContentText, CenarioRightStyle, CenarioLeftStyle
+  Card, Midia, VetorCidade, ContentRight, ContentText, CenarioRightStyle, CenarioLeftStyle,
+  Cenarios
 } from "./style";
 
 import {
@@ -19,6 +20,7 @@ import CenarioRight from '../../Img/ImgLading/Cenario_top_right.svg'
 import UsuarioCompras from '../../Img/ImgLading/Cenario_(1).svg'
 import Calculadora from '../../Img/ImgLading/Calculadora.svg'
 import CenarioLeft from '../../Img/ImgLading/Cenario_top_Left.svg'
+import Cenario from '../../Img/ImgLading/Cenario.svg'
 
 import { Depoimentos } from "../../Components/ComentariosLading/index";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
@@ -46,7 +48,7 @@ export function LadingPage() {
           <ParagrafoCard>Encontre comércios mais próximo da sua região e fique sempre atualizado sem sair de casa!</ParagrafoCard>
 
           <BtnCard primary>Saiba Mais</BtnCard>
-
+          <Cenarios src={Cenario} alt="Parte do cenario" />
           <Midia>
 
             <Link to="">
