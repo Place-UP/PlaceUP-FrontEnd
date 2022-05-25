@@ -67,7 +67,7 @@ export const Container = styled.section`
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: ${(props) => props.primary ? "center" : "flex-start"};
+    align-items: center;
 
     margin-top: ${(props) => props.primary ? "200px" : "0"};
 `
@@ -101,7 +101,7 @@ export const BtnCard = styled.button`
     color: #fff;
     font-size: 1.2rem;
     background: ${(props) => props.primary ? "linear-gradient(to right, #60BDCC 0%, #CF71BF 100%);" : "var(--Azul-Escuro)"};
-    padding: 15px 60px;
+    padding: 15px 55px;
     border-radius: 40px;
     cursor: pointer;
     margin-top: 1.7rem;
