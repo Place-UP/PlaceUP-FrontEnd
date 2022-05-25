@@ -20,7 +20,9 @@ import UsuarioCompras from '../../Img/ImgLading/Cenario_(1).svg'
 import Calculadora from '../../Img/ImgLading/Calculadora.svg'
 import CenarioLeft from '../../Img/ImgLading/Cenario_top_Left.svg'
 
+import { Depoimentos } from "../../Components/ComentariosLading/index";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
+import { Cards } from "../../Components/CardsLadingPage";
 
 export function LadingPage() {
   return (
@@ -75,7 +77,7 @@ export function LadingPage() {
           <img src={CidadeVetor} alt="Cidade Vetor PlaceUP" />
         </VetorCidade>
       </Container>
-
+      <Cards />
       <Container primary>
         <Box>
           <img src={CursosPlaceUp} alt="Cursos que PlaceUP oferece" />
@@ -117,6 +119,7 @@ export function LadingPage() {
           </ContentText>
         </ContentRight>
       </Container>
+      <Depoimentos />
       <FooterGeral />
     </>
   );

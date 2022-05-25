@@ -171,7 +171,9 @@ export const ContentText = styled.article`
     }
 
     p{
-        padding: 0px 20px;
+        width: 85%;
+        margin: auto;
+        padding-left: 50px;
         margin-top: 2.5rem;
         margin-bottom: 2rem;
         text-align: start;
