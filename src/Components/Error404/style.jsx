@@ -3,15 +3,16 @@ import styled from "styled-components";
 export const Container = styled.main`
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
+    box-sizing: border-box;
 `
 
 export const Box = styled.div`
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,5 +68,5 @@ export const CenarioTop = styled.img`
 `
 
 export const CaixaError = styled.div`
-    margin-bottom: 131px;
+    
 `
