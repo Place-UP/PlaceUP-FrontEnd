@@ -10,6 +10,7 @@ import {
   Icons,
   FooterP,
 } from "./styles";
+import { Link } from "react-router-dom";
 
 export function FooterGeral() {
   return (
@@ -22,13 +23,13 @@ export function FooterGeral() {
 
           <LinksFooter className="linksFooter">
             <div className="links">
-              <a href="">Fale conosco</a>
-              <a href="">Dicas de segurança</a>
+              <Link to="">Fale conosco</Link>
+              <Link to="/Dicas">Dicas de segurança</Link>
             </div>
 
             <div className="links">
-              <a href="">Políticas de privacidade</a>
-              <a href="">Termos de condição de uso</a>
+              <Link to="/Politica">Políticas de privacidade</Link>
+              <Link to="/Termos">Termos de condição de uso</Link>
             </div>
           </LinksFooter>
 
@@ -38,7 +39,7 @@ export function FooterGeral() {
               <a href="https://www.facebook.com/iplaceup/"><BsFacebook size="40px" /></a>
             </Icons>
             <Icons className="icons">
-            <a href="https://twitter.com/iPlaceUP"><BsTwitter size="40px" /></a>
+              <a href="https://twitter.com/iPlaceUP"><BsTwitter size="40px" /></a>
             </Icons>
             <Icons className="icons">
               <a href="https://www.instagram.com/iplaceup/"><BsInstagram size="40px" /></a>
