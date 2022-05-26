@@ -6,8 +6,10 @@ import Logo from "./img/logo.svg";
 import StyleBanner from "./img/StyleBanner.svg";
 import VectorBanner from "./img/VectorBanner.svg";
 import bottomshadow from "./img/bottomshadow.svg";
-import { Colors } from "../../mock/infoCards";
-export function Institucional(Props) {
+
+
+import { colors } from "../../mock/CardsInstitucional";
+export function Institucional() {
   return (
     <Main>
       <header>
@@ -35,7 +37,8 @@ export function Institucional(Props) {
         <img className="imgvectorBanner" src={VectorBanner} />
       </Banner>
       <ContainerCard>
-        {Colors.map((item) => {
+
+        {colors.map((item) => (
           <Cards key={item.id} primary={`0px 10px 0px 0px ${item.color}`}>
             <div className="ContainerCard">
               <div>
@@ -47,8 +50,8 @@ export function Institucional(Props) {
                 <p>{item.Description}</p>
               </div>
             </div>
-          </Cards>;
-        })}
+          </Cards>
+        ))}
       </ContainerCard>
     </Main>
   );
