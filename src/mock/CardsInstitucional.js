@@ -8,17 +8,15 @@ export const colors = [
         img: VisaoTopPic,
         alt: "visao",
         title: "Visão",
-        Description:
-            "Queremos ser reconhecidos como a melhor empresa de impulsionamento para microempreendedores.",
-        color: "##2A7FB7",
+        Description: "Queremos ser reconhecidos como a melhor empresa de impulsionamento para microempreendedores.",
+        color: "#2A7FB7"
     },
     {
         img: MissaoTopPic,
         alt: "missão",
         title: "Missâo",
-        Description:
-            "Divulgar o comércio local, a fim de impulsionar seus serviços e auxilia-los na precificação de seus produtos.",
-        color: "##6B6B6B",
+        Description: "Divulgar o comércio local, a fim de impulsionar seus serviços e auxilia-los na precificação de seus produtos.",
+        color: "#6B6B6B"
     },
 
     {
@@ -27,6 +25,6 @@ export const colors = [
         title: "Valores",
         Description:
             "Deixando sempre claro nossos princípios, sendo responsáveis, comprometidos, inovadores e oferecendo o melhor para a satisfação dos nossos clientes",
-        color: "##CDAD2C",
+        color: "#CDAD2C"
     }
 ];

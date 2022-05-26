@@ -1,5 +1,5 @@
 import React from "react";
-import { Main, Banner, Cards, ContainerCard } from "./style";
+import { Main, Banner, Cards, ContainerCard, Card } from "./style";
 import { Link } from "react-router-dom";
 import LogoBackground from "./img/LogoVector.svg";
 import Logo from "./img/logo.svg";
@@ -39,17 +39,17 @@ export function Institucional() {
       <ContainerCard>
 
         {colors.map((item) => (
-          <Cards key={item.id} primary={`0px 10px 0px 0px ${item.color}`}>
-            <div className="ContainerCard">
+          <Cards>
+            <Card key={item.id} primary={`0 10px 1px ${item.color}`}>
               <div>
                 <img className="topimagecard" src={item.img} />
                 <img className="bottomShadow" src={bottomshadow} />
               </div>
               <div className="ContainerTextCard">
-                <h1>{item.tittle}</h1>
+                <h1>{item.title}</h1>
                 <p>{item.Description}</p>
               </div>
-            </div>
+            </Card>
           </Cards>
         ))}
       </ContainerCard>

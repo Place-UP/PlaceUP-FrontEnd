@@ -84,16 +84,18 @@ export const ContainerCard = styled.div`
   align-items: center;
   justify-content: space-around;
 `;
-export const Cards = styled.main`
-  display: flex;
 
-  .ContainerCard {
+export const Card = styled.div`
     width: 407px;
     height: 454px;
     background: #f8f6f6;
     border-radius: 57px;
-    box-shadow: ${(props)=> props.primary};
-  }
+    box-shadow: ${(props) => props.primary};
+`
+
+export const Cards = styled.main`
+  display: flex;
+
 
   .topimagecard {
     position: relative;
