@@ -5,6 +5,15 @@ import { IoIosExit } from "react-icons/io";
 import { Section, Profile, DarkMode, Sugestoes, ProfileSugestao, } from "./styles";
 
 export function MenuPrincipal() {  
+  
+  function menuHamburger() {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  }
+
   return (
     <>
       <Section>
@@ -103,29 +112,17 @@ export function MenuPrincipal() {
                   </Section>
               </li>
             </ul>
-      
-            <div class="hamburger" id="menuHamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>                                    
+
+            <button onClick={menuHamburger}>
+              <div class="hamburger" id="menuHamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>     
+            </button>                                         
           </nav>   
         </div>   
       </Section>
     </>
   );
 }
-
-/*const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-document.getElementById('menuHamburger').addEventListener
-("click", () =>{
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
-
-document.querySelector(".nav-link").forEach(n => n.addEventListener("click", () =>{
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}))*/

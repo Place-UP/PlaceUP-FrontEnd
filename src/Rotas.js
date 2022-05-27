@@ -10,7 +10,6 @@ import { Politica } from "./Pages/Politica/index";
 import { Dicas } from "./Pages/DicasSeguranca/index";
 import { Termos } from "./Pages/Termos/index";
 import { Pagina404 } from "./Components/Error404";
-import { MenuPrincipal } from "./Components/MenuPrincipal/index";
 import { Institucional } from "./Pages/InstitucionalLading/index";
 
 function Rotas() {
@@ -29,7 +28,6 @@ function Rotas() {
           <Route path="/Dicas" element={<Dicas />} />
           <Route path="/Termos" element={<Termos />} />
           <Route path="/Calculadora" element={<IndexCalculadora />} />
-          <Route path="/MenuPrincipal" element={<MenuPrincipal />} />
           <Route path="*" element={<Pagina404 />} />
           <Route path="/Institucional" element={<Institucional />} />
         </Routes>
