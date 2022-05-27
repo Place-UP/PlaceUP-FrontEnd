@@ -2,31 +2,24 @@ import styled from "styled-components";
 
 const media = {
   Tablet: "@media(max-width: 790px)",
-  Mobile: "@media(max-width:675px)",
+  MobileM: "@media(max-width: 430px)",
   MobileS: "@media(max-width:320px)",
 };
 
 export const Home = styled.div` 
   background-color: #ECF0F1;  
-  ${media.MobileS}{
-    margin-left: 10%;
-    text-align: center;
-  }
+  ${media.MobileS}{ margin-left: 10px;}
  `;
 
 export const HeaderA = styled.div`
     width: 100%;
-    height: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     border-radius: 50%;
 
-
-    ${media.MobileS}{
-      width: 30%;
-    }
+    ${media.MobileS}{ margin-left: 10px;}
 `;
 
 export const Barra = styled.div`
@@ -65,7 +58,6 @@ export const Barra = styled.div`
     justify-content: center;
     font-size: 15px;
   }
-
 `;
 
 export const Car = styled.div`
@@ -73,17 +65,42 @@ export const Car = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-   img{
-        width: 30px;
-        height: 30px;        
-        
-        cursor: pointer;
+
+  img{
+    width: 30px;
+    height: 30px;                
+    cursor: pointer;
+  }
+
+  ${media.MobileS}{ margin-left: 10px;}  
+`;
+
+export const Filtro = styled.div`
+    width: 100%;
+    margin: 30px auto;
+
+    select{      
+      width: 150px;
+      height: 40px;
+      padding: 0px 4px;
+      margin: auto 10px 10px 0px;
+      border-radius: 20px ;
     }
-`
+
+    select:nth-child(2){      
+      width: 150px;
+      height: 40px;
+      padding: 0px 4px;
+      margin: 10px auto 10px 0px;
+      border-radius: 20px ;
+    }
+
+    ${media.MobileS}{ select,select:nth-child(2){margin-left: 10px;}}  
+`;
 
 export const Categoria = styled.div`
   width: 60%;
-  padding: 0px 0 30px 17%;
+  padding: 30px 0 30px 17%;
 
   h1{   
     font-size: 25px; 
@@ -95,31 +112,46 @@ export const Categoria = styled.div`
   .containerCategoria{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 20px;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+
+    img{
+      width: 80px;
+      height: 85px;
+    }
+
     ${media.Tablet}{
       width: 100%;
-      grid-template-columns: auto auto auto auto;
+      gap: 10px;
       grid: auto / auto auto;
     }
 
-    ${media.MobileS}{
-      width: 50%;
-      margin-left: 20%;
+    ${media.MobileM}{
+      width: 100%;
       grid-template-columns: auto auto auto 20px;
       grid: auto / auto;
+      margin: 0 auto;
     }
+
+    ${media.MobileS}{
+      width: 100%;
+      grid-template-columns: auto auto auto 20px;
+      grid: auto / auto;
+      margin: 0 auto;
+    }
+
   }
 
   ${media.MobileS}{
-    h1{   margin-left: 24px;    }
+    h1{  text-align: center;  }
   }
 `;
 
 export const CategoriaShopping = styled.div`
+    width: 170px;
     height: 80px;
     border-radius: 8px;
     margin-top: 70px;
@@ -166,10 +198,7 @@ export const InfoCategoria = styled.div`
       color: white;
       font-size: 17px;
       border-radius: 4px;
-<<<<<<< HEAD
       line-height: -200px;  
-=======
->>>>>>> f0c6527ff1b4fa4407474c93d7c62a38d248de9a
       cursor: pointer;
       font-family: 'Lato';
     }

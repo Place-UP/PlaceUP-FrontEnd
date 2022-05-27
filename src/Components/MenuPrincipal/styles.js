@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const media = {
-  Tablet: "@media(max-width: 935px)"
+  Tablet: "@media(max-width: 935px)",
+  Mobile: "@media(max-width: 600px)"
 };
 
 export const Section = styled.section`
@@ -17,9 +18,113 @@ export const Section = styled.section`
     padding-top: 30px; 
   }
 
+  .menuPrincipal2{
+    max-width: 400px;
+    width: 95%;
+    height: 100vh;
+    background-color: #ECF0F1;
+    margin: auto;
+    transition: width 0.5s;
+    padding-top: 100px; 
+  }
+
+  .mobile{
+    position: relative;
+    display: none;
+  }
+
+  .navbar{
+      position: relative;
+      min-height: 100px;
+      font-size: 16px;
+  }
+
+  .hamburger{
+      display: none;
+      cursor: pointer;
+      margin: 30px auto;
+  }
+
+  .bar{
+      display: block;
+      width: 30px;
+      height: 5px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      background-color: black;
+  }
+
   ${media.Tablet} {
     .menuPrincipal{   display: none;   }
+
+    .hamburger {
+      display: block;
+      padding:  0 1%;
+      padding-lef: 20px; 
+    }    
+  
+    .mobile{   
+        float: right;
+        margin: 7px 10% 0 2%;
+        display: block;  
+        z-index: 3;
+    }
+
+    .desktop{display: none;}
+    
+    .navbar{
+        width: 100%;
+        top: 0;
+    }
+
+    .hamburger.active .bar:nth-child(2){  opacity: 0; }
+
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .nav-menu.active{right: 0;}
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: -20px;
+        height: 100vh;
+        width: 50%;
+        transition: 0.3s;
+        list-style-type: none;
+    }
+
+    .nav-link{     margin: auto;   }
+
+    .nav-item{
+        width: 100%;
+        margin: 10px 0;
+        border-bottom: black 1px solid;        
+    }
   }    
+
+  ${media.Mobile}{
+    .hamburger {
+      display: block;
+      padding-lef: 200px; 
+    }    
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: -20px;
+        height: 100vh;
+        width: 98%;
+        transition: 0.3s;
+        list-style-type: none;
+    }
+  }   
 `
 
 export const Profile = styled.div`
