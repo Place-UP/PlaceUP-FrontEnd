@@ -58,7 +58,7 @@ export const Banner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  margin-top: -70px;
   div h1 {
     color: #344758;
     font-size: 54px;
@@ -76,26 +76,29 @@ export const Banner = styled.div`
   }
 
   .imgvectorBanner {
-    max-width: 900px;
+    max-width: 60%;
   }
 `;
 export const ContainerCard = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 `;
 
 export const Card = styled.div`
-    width: 407px;
-    height: 454px;
-    background: #f8f6f6;
-    border-radius: 57px;
-    box-shadow: ${(props) => props.primary};
-`
+  width: 407px;
+  height: 454px;
+  background: #f8f6f6;
+  border-radius: 57px;
+  box-shadow: ${(props) => props.primary};
+  margin-top: 150px;
+`;
 
 export const Cards = styled.main`
   display: flex;
-
+  &:nth-child(2) {
+    margin-bottom: 10%;
+  }
 
   .topimagecard {
     position: relative;
@@ -133,5 +136,49 @@ export const Cards = styled.main`
     font-family: "Lato";
     font-size: 16px;
     text-align: center;
+  }
+`;
+
+export const Hystory = styled.div`
+  display: flex;
+  background: #2d3e50;
+  flex-direction: column;
+  margin-top: 250px;
+
+  .title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  h1 {
+    margin: auto;
+    margin-top: 90px;
+    font-family: "Bakbak One";
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 90px;
+    color: #ecf0f1;
+  }
+  hr {
+    border: none;
+    height: 10px;
+    width: 88px;
+    background: #2980b9;
+  }
+
+  p {
+    font-family: "Lato";
+    margin-top: 180px;
+    margin-left: 100px;
+    font-size: 42px;
+    color: #ffffff;
+    max-width: 50%;
+    text-align: left;
+    float: left;
+  }
+
+  .OurHistories {
+    position: relative;
+    margin-top: -530px;
   }
 `;
