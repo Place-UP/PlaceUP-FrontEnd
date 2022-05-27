@@ -11,6 +11,7 @@ import { Dicas } from "./Pages/DicasSeguranca/index";
 import { Termos } from "./Pages/Termos/index";
 import { Pagina404 } from "./Components/Error404";
 import { Institucional } from "./Pages/InstitucionalLading/index";
+import { CadastroComerciante } from "./Pages/cadastroComerciante/Index"
 
 function Rotas() {
   return (
@@ -19,6 +20,7 @@ function Rotas() {
         <Routes>
           <Route path="/" element={<LadingPage />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/CadastroComerciante" element={<CadastroComerciante />} />
           <Route path="/CadastroUser" element={<CadastroUser />} />
           <Route path="/ComoFuncionaCalculadora" element={<IndexCalculadora />} />
           <Route path="/HomeUser" element={<IndexHomeUser />} />

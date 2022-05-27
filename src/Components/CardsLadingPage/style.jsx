@@ -19,6 +19,7 @@ export const Box = styled.div`
 
     &:nth-child(2){
         margin-top: 20%;
+        
     }
 
     div{

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720.41 603.03">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-2 {
+                fill: none;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+                stroke-width: 21px;
+            }
+
+            .cls-1 {
+                stroke: #ecf0f1;
+            }
+
+            .cls-2 {
+                stroke: #252d35;
+            }
+
+            .cls-3 {
+                fill: #ecf0f1;
+            }
+
+            .cls-4 {
+                font-size: 150.87px;
+                fill: #fff;
+                font-family: WarlowSans, Warlow Sans;
+            }
+
+            .cls-5 {
+                fill: #000;
+            }
+
+            .cls-6 {
+                fill: #292f35;
+                font-size: 167.64px;
+                font-family: Poppins-SemiBold, Poppins;
+                font-weight: 600;
+            }
+        </style>
+    </defs>
+    <g id="Localização">
+        <path class="cls-1"
+            d="M743.33,398.43,754.52,386a44.74,44.74,0,0,0,8.26-13.5c10-26.73-6.8-56.84-37.22-58.23q-1.38-.06-2.82-.06c-17.24,0-27.76,7.23-34.17,16.27a45,45,0,0,0-7.92,23.26,49.43,49.43,0,0,0,11.81,35l30.88,36.19"
+            transform="translate(-367.25 -124.5)" />
+    </g>
+    <g id="seta">
+        <path class="cls-2"
+            d="M723.29,423.11l4.7,5.5c25.36,28.16,60.36,47.2,97.82,49.92,25.33,1.83,54.3-2.92,82.14-22.83,30.59-21.86,50.56-56.21,56.7-94.17,7-43.27,2.28-113.06-55.32-174.64a10.31,10.31,0,0,1,.62-14.55l2.91-2.63c7-6.37,4.85-18.2-3.94-21.45l-34.19-12.65c-7.05-2.61-14.23,3.52-13.11,11.19l5.6,38.11c1.48,10.05,9.38,17.35,16.57,10.44l3.62-4"
+            transform="translate(-367.25 -124.5)" />
+    </g>
+    <g id="Casa">
+        <path class="cls-1"
+            d="M851.9,392.81l.63-94.22a23.54,23.54,0,0,0-11.16-20L736.26,212a26.17,26.17,0,0,0-27.8,0L603.18,278.53A23.54,23.54,0,0,0,592,298.35l-.09,152.47c0,13.16,11.21,23.83,25.05,23.84l47.06,0a43,43,0,0,0,27.82-10.09l12.19-12"
+            transform="translate(-367.25 -124.5)" />
+    </g>
+    <g id="Bolinha">
+        <circle class="cls-3" cx="356.04" cy="231.43" r="12.5" />
+    </g>
+    <g id="Nome"><text class="cls-4" transform="translate(0 503.62)">Place<tspan class="cls-5" x="436.47" y="0">
+            </tspan>
+            <tspan class="cls-6" x="501.65" y="0">UP</tspan>
+        </text></g>
+</svg>
