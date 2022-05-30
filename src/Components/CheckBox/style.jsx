@@ -15,6 +15,7 @@ export const Forget = styled.div`
         border-radius: 40px;
         cursor: pointer;
         vertical-align: middle;
+        margin-right: 10px;
     }
 
     input[type="checkbox"]::after{

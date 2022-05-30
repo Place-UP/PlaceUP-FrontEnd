@@ -21,7 +21,7 @@ function Rotas() {
           <Route path="/" element={<LadingPage />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/CadastroComerciante" element={<CadastroComerciante />} />
-          <Route path="/CadastroUser" element={<CadastroUser />} />
+          <Route path="/CadastroUsuario" element={<CadastroUser />} />
           <Route path="/ComoFuncionaCalculadora" element={<IndexCalculadora />} />
           <Route path="/HomeUser" element={<IndexHomeUser />} />
           <Route path="/Reservas" element={<Reservas />} />
