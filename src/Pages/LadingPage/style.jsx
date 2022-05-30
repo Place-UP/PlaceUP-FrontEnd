@@ -77,6 +77,7 @@ export const Cenarios = styled.img`
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: -2;
 `
 
 export const Card = styled.div`
@@ -114,6 +115,7 @@ export const BtnCard = styled.button`
     margin-top: 1.7rem;
     margin-bottom: 2.5rem;
     box-shadow: 0px 5px 15px #C1FAFA;
+    z-index: 10;
 
     &:hover{
         transition: all 0.5s ease-in-out;
