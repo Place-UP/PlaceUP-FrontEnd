@@ -9,10 +9,11 @@ import { Link } from "react-router-dom";
 //----------------imagens----------------
 import Logo from '../../Img/CadastroComerciante/PlaceUp_animação.svg'
 import Capa from '../../Img/CadastroComerciante/capa.svg'
+import Seta from '../../Img/CadastroComerciante/seta.svg'
 //----------------Componentes--------------
 import {
     Container, BoxVetor, Login, BoxForm, Form, Label, Remember,
-    Submit, SocialMidia, Termos, CapaVetor, Senha
+    Submit, SocialMidia, Termos, CapaVetor, Senha, Back
 } from "./style";
 
 
@@ -31,6 +32,9 @@ export function CadastroComerciante() {
                 </CapaVetor>
             </BoxVetor>
             <BoxForm>
+                <Back>
+                    <img src={Seta} alt="Seta de voltar" />
+                </Back>
                 <Form>
                     <legend>Cadastro</legend>
 

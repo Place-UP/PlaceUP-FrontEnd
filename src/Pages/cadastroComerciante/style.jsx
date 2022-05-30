@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import FundoVetor from '../../Img/CadastroComerciante/Fundo_do_vetor.svg'
 
 export const Container = styled.main`
@@ -16,7 +16,20 @@ export const BoxVetor = styled.div`
     background-image: url(${FundoVetor});
     background-repeat: no-repeat;
     background-size: 100%;
+`
 
+export const Back = styled.div`
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    transition: 0.3s ease-in all;
+    
+    
+    &:hover{
+        transform: translate(-15px);
+    }
+    
 `
 
 export const Login = styled.section`
@@ -153,6 +166,12 @@ export const SocialMidia = styled.div`
             font-size: 2.5rem;
             cursor: pointer;
             color: #2980B9;
+
+            &:hover{
+                opacity: 0.8;
+                transition: all 0.3s ease-in;
+                transform: translate(0, -15px);
+            }
         }
     }
 `
