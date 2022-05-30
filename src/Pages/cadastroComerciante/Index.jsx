@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 //--------------Icones----------------
 import { HiUser } from "react-icons/hi";
@@ -13,18 +12,19 @@ import Capa from '../../Img/CadastroComerciante/capa.svg'
 //----------------Componentes--------------
 import {
     Container, BoxVetor, Login, BoxForm, Form, Label, Remember,
-    Submit, Forget, SocialMidia, Termos, ImgFundo, CapaVetor
+    Submit, SocialMidia, Termos, CapaVetor, Senha
 } from "./style";
 
 
-export function CadastroComerciante(props) {
-    return (
+import { CheckBox } from "../../Components/CheckBox";
 
+export function CadastroComerciante() {
+    return (
         <Container>
             <BoxVetor>
                 <Login>
                     <img src={Logo} alt="Logo" />
-                    <button>Login</button>
+                    <button><Link to="/Login">Login</Link></button>
                 </Login>
                 <CapaVetor>
                     <img src={Capa} alt="" />
@@ -45,18 +45,15 @@ export function CadastroComerciante(props) {
                     </Label>
 
                     <Remember>
-                        <Forget>
-                            <input type="checkbox" value={props.value} onChange={props.onEvent} />
-                            <span>Lembrar senha</span>
-                        </Forget>
-                        <Forget>
+                        <CheckBox />
+                        <Senha>
                             <Link to="/" > Esqueceu a senha ?</Link>
-                        </Forget>
+                        </Senha>
                     </Remember>
                     <Submit type="submit" value="Proximo" name="Button" />
                 </Form>
                 <Termos>
-                    <p>Ao cadastrar-se, você concorda com os <Link to="">Termos de uso e Privacidade </Link></p>
+                    <p>Ao cadastrar-se, você concorda com os <Link to="/Termos">Termos de uso e Privacidade </Link></p>
                 </Termos>
                 <SocialMidia>
                     <ul>

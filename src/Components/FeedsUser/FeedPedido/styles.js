@@ -50,8 +50,6 @@ export const Feed = styled.div`
       .cointanerProduto{    
         width: 90%; 
         img{ margin: 10px 0px;}    
-
-        img
       }
     }    
   }

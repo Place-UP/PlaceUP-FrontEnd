@@ -23,6 +23,8 @@ export const Login = styled.section`
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     top: 10%;
     right: 60%;
 
@@ -34,7 +36,7 @@ export const Login = styled.section`
     button{
         border: 4px solid #fff;
         color: #fff;
-        padding: 8px 15px;
+        padding: 8px 50px;
         border-radius: 20px;
         font-size: 1.2rem;
         cursor: pointer;
@@ -46,13 +48,13 @@ export const CapaVetor = styled.div`
     width: 100%; 
     height: auto;
     top: 40%;
-    left: -15%;
+    left: -10%;
     display: flex;
     justify-content: center;
     align-items: center;
 
     img{
-        width: 550px;
+        width: 70%;
     }
 `
 
@@ -122,10 +124,9 @@ export const Submit = styled.input`
     }
 `
 
-export const Forget = styled.div`
+export const Senha = styled.div`
     color: #2980B9;
-    font-weight: 600;
-    vertical-align: middle;
+    font-weight: 500;
 `
 
 export const Termos = styled.div`
