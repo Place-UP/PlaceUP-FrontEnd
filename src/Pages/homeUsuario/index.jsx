@@ -7,7 +7,6 @@ import Padaria from "./images/padaria.png";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/FeedsUser/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
-import { IoIosArrowDown } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai"
 import { Home, HeaderA, Barra, Filtro, Categoria, CategoriaShopping, InfoCategoria, Car } from "./styles";
 
@@ -23,7 +22,6 @@ export function IndexHomeUser() {
             <Barra>
               <span><AiOutlineSearch /></span>
               <input type="text" className="pesquisa" placeholder="Pesquisa"></input>
-              <button><IoIosArrowDown className="seta" /></button>
             </Barra>
             <Car>
               <img src={Carrinho} alt="Carrinho" />

@@ -3,7 +3,7 @@ import styled from "styled-components";
 const media = {
   Tablet: "@media(max-width:900px)",
   Mobile: "@media(max-width:675px)",
-  MobileS: "@media(max-width:400px)",
+  MobileS: "@media(max-width:320px)"
 };
 
 export const Feed = styled.div`
@@ -19,9 +19,7 @@ export const Feed = styled.div`
       display: block;
       margin: 10px auto;
 
-    .cointanerProduto{
-      width: 100%;
-    }
+    .cointanerProduto{   width: 100%;   }
   
     img{
       width: 90%;
@@ -88,6 +86,12 @@ export const Feed = styled.div`
 
       .buttonVejaMais{  margin: 0;  }
     }    
+    
+    
+    ${media.MobileS} {  
+      margin-left: auto; 
+      margin-right: 6%;
+    }
   }
 `
 

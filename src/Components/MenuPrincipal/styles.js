@@ -42,7 +42,7 @@ export const Section = styled.section`
   .hamburger{
       display: none;
       cursor: pointer;
-      margin: 30px auto;
+      margin: 30px 0;
   }
 
   .bar{
