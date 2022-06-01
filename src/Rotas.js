@@ -12,6 +12,7 @@ import { Termos } from "./Pages/Termos/index";
 import { Pagina404 } from "./Components/Error404";
 import { Institucional } from "./Pages/InstitucionalLading/index";
 import { CadastroComerciante } from "./Pages/cadastroComerciante/Index"
+import { DirecCadastro } from "./Pages/DirecCadastro";
 
 function Rotas() {
   return (
@@ -32,6 +33,7 @@ function Rotas() {
           <Route path="/Calculadora" element={<IndexCalculadora />} />
           <Route path="*" element={<Pagina404 />} />
           <Route path="/Institucional" element={<Institucional />} />
+          <Route path="/DirecCadastro" element={<DirecCadastro />} />
         </Routes>
       </BrowserRouter>
     </>

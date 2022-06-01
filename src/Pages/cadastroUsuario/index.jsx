@@ -1,5 +1,5 @@
 //----------------------Componentes-------------------------
-import { Container, BoxVetor, Form, Vetores, Termos, Back } from "./style";
+import { Container, BoxVetor, Form, Vetores, Termos, Back, CapaVetor } from "./style";
 import { Forms } from '../../Components/Form/index'
 import { Midia } from "../../Components/SocialMidia/Index";
 
@@ -9,13 +9,15 @@ import { Link } from "react-router-dom";
 
 import Seta from '../../Img/CadastroUser/seta.svg'
 
+import { Register2 } from './../../Components/Register2/index';
+
 export function CadastroUser() {
     return (
         <Container>
             <BoxVetor>
                 <Form>
                     <Back>
-                        <Link to="/">
+                        <Link to="/DirecCadastro">
                             <img src={Seta} alt="Seta De voltar" />
                         </Link>
                     </Back>
@@ -26,7 +28,10 @@ export function CadastroUser() {
                     <Midia />
                 </Form>
                 <Vetores>
-                    <img src={Vetor} alt="Vetor Cadastro Usuario" />
+                    <Register2 />
+                    <CapaVetor>
+                        <img src={Vetor} alt="Vetor Cadastro Usuario" />
+                    </CapaVetor>
                 </Vetores>
             </BoxVetor>
         </Container>

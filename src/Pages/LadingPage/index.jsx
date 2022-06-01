@@ -37,7 +37,7 @@ export function LadingPage() {
         </HeaderImg>
         <Box primary>
           <Link to="/Login"><Btn primary>Entrar</Btn></Link>
-          <Link to="/CadastroComerciante"><Btn>Cadastrar</Btn></Link>
+          <Link to="/DirecCadastro"><Btn>Cadastrar</Btn></Link>
         </Box>
       </Header>
 
