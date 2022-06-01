@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 const media = {
-  Tablet: "@media(max-width: 790px)",
-  MobileM: "@media(max-width: 430px)",
+  Tablet: "@media(max-width: 940px)",
+  MobileM: "@media(max-width: 440px)",
   MobileS: "@media(max-width:320px)",
 };
 
 export const Home = styled.div` 
   background-color: #ECF0F1;  
-  ${media.MobileS}{ margin-left: 10px;}
  `;
 
 export const HeaderA = styled.div`
@@ -19,7 +18,15 @@ export const HeaderA = styled.div`
     justify-content: space-between;
     border-radius: 50%;
 
-    ${media.MobileS}{ margin-left: 10px;}
+    ${media.MobileM}{ 
+      width: 80%;
+      margin-right: auto; 
+    }
+
+    ${media.MobileS}{ 
+      width: 60%;
+      margin-right: auto; 
+    }
 `;
 
 export const Barra = styled.div`
@@ -47,16 +54,8 @@ export const Barra = styled.div`
     background-position: 10px 9px;
     background-repeat:no-repeat;     
     border:0;
-    outline: 0;
-  }
-
-  .seta{
-    background-color: #fff;
-    cursor: pointer; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
+    outline: 0;    
+    border-radius: 20px;
   }
 `;
 
@@ -94,8 +93,18 @@ export const Filtro = styled.div`
       margin: 10px auto 10px 0px;
       border-radius: 20px ;
     }
-
-    ${media.MobileS}{ select,select:nth-child(2){margin-left: 10px;}}  
+    
+    ${media.MobileM}{    
+      select{      
+        width: 150px;
+        height: 40px;
+        padding: 0px 4px;
+        margin: 10px 0px;
+        border-radius: 20px ;
+      }    
+      margin-left: auto;
+      margin-right: auto; 
+    }
 `;
 
 export const Categoria = styled.div`
@@ -142,16 +151,16 @@ export const Categoria = styled.div`
       grid: auto / auto;
       margin: 0 auto;
     }
-
   }
-
-  ${media.MobileS}{
-    h1{  text-align: center;  }
+        
+  ${media.MobileM}{   
+    margin-left: auto;
+    margin-right: auto; 
   }
 `;
 
 export const CategoriaShopping = styled.div`
-    width: 170px;
+    width: 160px;
     height: 80px;
     border-radius: 8px;
     margin-top: 70px;
