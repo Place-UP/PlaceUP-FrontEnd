@@ -27,7 +27,7 @@ import { FooterGeral } from "../../Components/FooterGeral/footer";
 import { Cards } from "../../Components/CardsLadingPage";
 
 export function LadingPage() {
-        //variavel, function
+  //variavel, function
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -39,7 +39,7 @@ export function LadingPage() {
             <img src={LogoPlaceUP} alt="Logo PlaceUP" />
           </div>
         </HeaderImg>
-        <Box primary className={`nav-item ${isOpen && "open"}`}>
+        <Box primary className={`item ${isOpen && "open"}`}>
           <Link to="/Login"><Btn primary>Entrar</Btn></Link>
           <Link to="/DirecCadastro"><Btn>Cadastrar</Btn></Link>
         </Box>

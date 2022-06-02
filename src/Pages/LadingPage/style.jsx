@@ -15,6 +15,7 @@ export const Header = styled.header`
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    overflow: hidden;
 
     .nav-bar{
         ${Media.Tablet}{
@@ -23,7 +24,22 @@ export const Header = styled.header`
         }
     }
 
-  
+    .item{
+        ${Media.Tablet}{
+        position: absolute;
+        bottom: -8%;
+        right: -15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.45s;
+        }
+    }
+
+    .item.open {
+        transform: translateX(0);
+    }
 
     .Hamburguer{
         position: relative;
@@ -43,7 +59,7 @@ export const Header = styled.header`
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 20%;
+            margin-top: 5%;
         }
     }
     
@@ -126,29 +142,12 @@ export const Box = styled.div`
     position: relative;
     text-align: right;
     width: ${(props) => props.primary ? "50%" : "60%"};
+    overflow: hidden;
 
     img{
         width: 100%;
     }
 
-
-    ${Media.Tablet}{
-        position: absolute;
-        bottom: -20%;
-        right: -15%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-    }
-
-    .nav-item.open{
-        ${Media.Tablet}{
-            transform: translateX(0%);
-        }
-    }
-
-    
 `
 
 
@@ -169,6 +168,7 @@ export const Btn = styled.button`
     &:hover{
         background-color: ${(props) => props.primary ? "#22597d" : "#F4F4F4"};
     }
+
 `
 
 export const Container = styled.section`
