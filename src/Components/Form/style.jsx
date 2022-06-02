@@ -37,6 +37,19 @@ export const Label = styled.label`
         outline: none;
         padding-left: 15px;
     }
+
+    img{
+        width: 20px;
+        padding-right: 10px;
+        vertical-align: middle;
+       
+    }
+
+    .active{
+        display: flex;
+    }
+
+
 `
 
 export const Remember = styled.div`
@@ -56,6 +69,11 @@ export const Submit = styled.input`
     border-radius: 40px;
     margin-top: 25px;
     cursor: pointer;
+
+    &:disabled{
+        cursor: not-allowed;
+        background-color: gray;
+    }
 
     &:hover{
         background-color: #2972A3;

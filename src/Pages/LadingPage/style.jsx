@@ -2,18 +2,86 @@ import styled from "styled-components";
 import LocalVetor from './LocalDaLogo.svg'
 
 
+const Media = {
+    Tablet: "@media(max-width: 1024px)",
+    MobileM: "@media(max-width: 425px)",
+    MobileS: "@media(max-width: 320px)",
+}
+
 export const Header = styled.header`
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    .nav-bar{
+        ${Media.Tablet}{
+            width: 20%;
+            height: 100%;
+        }
+    }
+
+    .Hamburguer.open span:nth-child(2) {
+        ${Media.Tablet}{
+            transform: translateY(-15px);
+        }
+    }
+
+    .Hamburguer{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: #f4f4f4;
+        box-shadow: 0 10px 20px #ccc;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        
+        ${Media.Tablet}{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+        }
+    }
+    
+
+    .Hamburguer span {
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        border-radius: 40px;
+        background-color: #000;
+        transition: 0.5s ;
+    }
+
+    .Hamburguer span:nth-child(1){
+        transform: translateY(-12px);
+        width: 25px;
+        right: 15px;
+    }
+    .Hamburguer span:nth-child(2){
+        transform: translateY(12px);
+        width: 25px;
+        right: 15px;
+    }
+
 `
+
 
 export const HeaderImg = styled.div`
     position: relative;
-    width: 100%;
+    width: 60%;
     height: 100%;
+
+    ${Media.Tablet}{
+        width: 50%;
+    }
   
     div{
         position: relative;
@@ -21,28 +89,44 @@ export const HeaderImg = styled.div`
         height: 210px;
         background-repeat: no-repeat;
         background: url(${LocalVetor});
-
+        ${Media.Tablet}{
+            width: 585px;
+            
+        }
         img{
         position: absolute;
         right: 60%;
         top: 5%;
         width: 160px;
         cursor: pointer;
-    }
+        }
     }
     
 `
 
 export const Box = styled.div`
     position: relative;
-    width: ${(props) => props.primary ? "40%" : "60%"};
-    height: auto;
+    text-align: right;
+    width: ${(props) => props.primary ? "50%" : "60%"};
 
     img{
         width: 100%;
     }
 
+
+    ${Media.Tablet}{
+        position: absolute;
+        bottom: -20%;
+        right: -15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
 `
+
+
 
 export const Btn = styled.button`
     background-color: ${(props) => props.primary ? "var(--Azul-Escuro)" : "transparent"} ;
@@ -53,9 +137,9 @@ export const Btn = styled.button`
     height: 45px;
     width: 150px;
     cursor: pointer;
-    margin-top: 20px;
-    margin-right: 40px;
+    margin: 20px 20px;
     transition: all 0.2s ease-in;
+
 
     &:hover{
         background-color: ${(props) => props.primary ? "#22597d" : "#F4F4F4"};

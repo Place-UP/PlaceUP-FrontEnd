@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   Btn, HeaderImg, Header, Box, Container, TitleCard, BtnCard, ParagrafoCard,
@@ -27,20 +27,30 @@ import { FooterGeral } from "../../Components/FooterGeral/footer";
 import { Cards } from "../../Components/CardsLadingPage";
 
 export function LadingPage() {
+
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <>
       <Header>
+
         <HeaderImg>
           <div>
             <img src={LogoPlaceUP} alt="Logo PlaceUP" />
           </div>
         </HeaderImg>
-        <Box primary>
+        <Box primary className={`nav-item ${isOpen && "open"}`}>
           <Link to="/Login"><Btn primary>Entrar</Btn></Link>
           <Link to="/DirecCadastro"><Btn>Cadastrar</Btn></Link>
         </Box>
+        <div className="nav-bar">
+          <div className={`Hamburguer ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </Header>
-
       <Container>
         <Card>
           <TitleCard>O COMÉRCIO <br /> MAIS <span>PRÓXIMO</span> <br /> DE VOCÊ!</TitleCard>
