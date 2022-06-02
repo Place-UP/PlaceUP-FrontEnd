@@ -27,7 +27,7 @@ import { FooterGeral } from "../../Components/FooterGeral/footer";
 import { Cards } from "../../Components/CardsLadingPage";
 
 export function LadingPage() {
-
+        //variavel, function
   const [isOpen, setIsOpen] = useState(false)
 
   return (
