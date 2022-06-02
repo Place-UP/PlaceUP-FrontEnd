@@ -13,7 +13,7 @@ import { Pagina404 } from "./Components/Error404";
 import { Institucional } from "./Pages/InstitucionalLading/index";
 import { CadastroComerciante } from "./Pages/cadastroComerciante/Index"
 import { DirecCadastro } from "./Pages/DirecCadastro";
-
+import {FaleConosco } from "./Pages/FaleConosco"
 function Rotas() {
   return (
     <>
@@ -34,6 +34,8 @@ function Rotas() {
           <Route path="*" element={<Pagina404 />} />
           <Route path="/Institucional" element={<Institucional />} />
           <Route path="/DirecCadastro" element={<DirecCadastro />} />
+          <Route path="/FaleConosco" element={<FaleConosco />} />
+
         </Routes>
       </BrowserRouter>
     </>
