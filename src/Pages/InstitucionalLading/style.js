@@ -58,7 +58,7 @@ export const Banner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: -70px;
+  margin-top: 70px;
   div h1 {
     color: #344758;
     font-size: 54px;
@@ -76,6 +76,11 @@ export const Banner = styled.div`
   }
 
   .imgvectorBanner {
+    max-width: 60%;
+  }
+
+  .imgvectorBannerRight {
+    margin-top: -50px;
     max-width: 60%;
   }
 `;

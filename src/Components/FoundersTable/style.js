@@ -29,17 +29,18 @@ export const FoundersPart = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 1700px;
-    height: 800px;
+    max-width: 80%;
+    width: 90vw;
     background: #2980b9;
+    padding-bottom: 37px;
 
     .circleBlue {
       position: relative;
       background: #2980b9;
       border-radius: 50% 50% 50% 50%;
-      height: 150px;
-      width: 25%;
-      margin-top: -90px;
+      height: 147px;
+      width: 47%;
+      margin-top: -64px;
 
       .yellowCircle {
         position: relative;
@@ -56,10 +57,10 @@ export const FoundersPart = styled.div`
   }
   .WhitePart {
     width: 95%;
-    height: 670px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    gap: 100px;
+    gap: 50px;
     background: white;
   }
 

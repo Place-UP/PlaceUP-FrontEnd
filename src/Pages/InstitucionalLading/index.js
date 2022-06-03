@@ -36,7 +36,7 @@ export function Institucional() {
             </h1>
             <img className="imgvectorBanner" src={StyleBanner} />
           </div>
-          <img className="imgvectorBanner" src={VectorBanner} />
+          <img className="imgvectorBannerRight" src={VectorBanner} />
         </Banner>
         <ContainerCard>
           {colors.map((item) => (
