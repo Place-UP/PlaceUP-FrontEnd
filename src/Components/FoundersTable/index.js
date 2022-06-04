@@ -7,6 +7,7 @@ import KaykyPicFounders from "./img/KaykyicFounders.svg";
 import LarisssaPicFounders from "./img/LarissaPicFounders.svg";
 import VictorPicFounders from "./img/VictorPicFounders.svg";
 import TiagoPicFounders from "./img/TiagoPicFounders.svg";
+
 export default function TableFounders(props) {
   return (
     <FoundersPart>
@@ -25,7 +26,7 @@ export default function TableFounders(props) {
           </div>
           <div className="AreaContent">
             <img src={GabbePicFounders} />
-            <h1 className="contentText">Gabbe Silva</h1>
+            <h1 className="contentText">Gabbe Lins</h1>
           </div>
           <div className="AreaContent">
             <img src={GustavoPicFounders} />
