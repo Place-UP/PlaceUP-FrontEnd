@@ -11,9 +11,10 @@ import { Dicas } from "./Pages/DicasSeguranca/index";
 import { Termos } from "./Pages/Termos/index";
 import { Pagina404 } from "./Components/Error404";
 import { Institucional } from "./Pages/InstitucionalLading/index";
-import { CadastroComerciante } from "./Pages/cadastroComerciante/Index"
+import { CadastroComerciante } from "./Pages/cadastroComerciante/Index";
 import { DirecCadastro } from "./Pages/DirecCadastro";
-import {FaleConosco } from "./Pages/FaleConosco"
+import { FaleConosco } from "./Pages/FaleConosco";
+import { VisualizacaoUsuario } from "./Pages/Visualizacao do usuario/index";
 function Rotas() {
   return (
     <>
@@ -21,9 +22,15 @@ function Rotas() {
         <Routes>
           <Route path="/" element={<LadingPage />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/CadastroComerciante" element={<CadastroComerciante />} />
+          <Route
+            path="/CadastroComerciante"
+            element={<CadastroComerciante />}
+          />
           <Route path="/CadastroUsuario" element={<CadastroUser />} />
-          <Route path="/ComoFuncionaCalculadora" element={<IndexCalculadora />} />
+          <Route
+            path="/ComoFuncionaCalculadora"
+            element={<IndexCalculadora />}
+          />
           <Route path="/HomeUser" element={<IndexHomeUser />} />
           <Route path="/Reservas" element={<Reservas />} />
           <Route path="/Pedido" element={<Pedido />} />
@@ -35,7 +42,10 @@ function Rotas() {
           <Route path="/Institucional" element={<Institucional />} />
           <Route path="/DirecCadastro" element={<DirecCadastro />} />
           <Route path="/FaleConosco" element={<FaleConosco />} />
-
+          <Route
+            path="/VisualizacaoUsuario"
+            element={<VisualizacaoUsuario />}
+          />
         </Routes>
       </BrowserRouter>
     </>

@@ -232,7 +232,7 @@ export const Hystory = styled.div`
 
     ${Media.Desktop} {
       font-size: 50px;
-    }
+    } 
     ${Media.MobileL} {
       margin-top: 20px;
     }
