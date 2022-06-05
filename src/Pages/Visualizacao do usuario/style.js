@@ -7,8 +7,7 @@ export const Main = styled.div`
   justify-content: space-between;
   background-color: #ecf0f1;
   .Container1 {
-    background: red;
-    height: 100vh;
+    height: auto;
     width: 80%;
   }
   .Container2 {
