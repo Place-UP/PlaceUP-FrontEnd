@@ -10,18 +10,13 @@ const Media = {
 export const Main = styled.main`
   width: 90%;
   display: block;
-  margin: auto;
-`;
-
-export const ContWhitePart = styled.div`
-  background: #ffffff;
-  border-radius: 20px;
-  width: 100%;
-  margin-top: 50px;
+  margin: 0 auto;
   height: 100vh;
+  background: white;
 
+  border-radius: 20px;
   .Offers {
-    /* margin: 30px; */
+    margin: 30px;
     padding-top: 20px;
     display: flex;
     align-items: center;
@@ -30,7 +25,15 @@ export const ContWhitePart = styled.div`
       font-family: "Lato";
       font-size: 22px;
     }
-
+    .scrollLeft {
+      cursor: pointer;
+    }
+    .scrollRight {
+      cursor: pointer;
+    }
+    p {
+      cursor: pointer;
+    }
     .FunctionCarousel {
       display: flex;
       flex-direction: column;
@@ -42,29 +45,91 @@ export const ContWhitePart = styled.div`
       }
     }
   }
+`;
+
+export const ContWhitePart = styled.div`
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  overflow: auto;
+  scroll-behavior: smooth;
+  gap: 100px;
+  flex: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   .Carousel {
-    width: 100%;
-    height: 175px;
-    /* margin: 30px; */
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+
     .Item {
       position: relative;
       overflow: auto;
-      /* width: 30vw;
-      height: 20vh; */
     }
     .image {
-      width: 8vw;
-      height: 143px;
-      background: #fbf3f3;
+      width: 350px;
       box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+
       border-radius: 10px;
-      .AddIcon {
-        cursor: pointer;
-        width: 38px;
-        height: 38px;
-        background: #4fce63;
-        border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .AddIcon {
+      margin-right: 3px;
+      cursor: pointer;
+      width: 38px;
+      height: 38px;
+      background: #4fce63;
+      border-radius: 50%;
+      margin-left: 300px;
+      margin-bottom: 20px;
+      margin-top: -43px;
+    }
+    .Info {
+      margin-left: 10px;
+      margin-top: 10px;
+      max-width: 10vw;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .SeparationPrices {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
+      .Tittle {
+        font-family: "Lato";
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .Quant {
+        margin-left: 5px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 9px;
+        color: #7a7979;
+      }
+    }
+    .Price {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11px;
+    }
+
+    .OldPrice {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11px;
+      color: #8b8383;
+      text-decoration: line-through;
     }
   }
 `;
