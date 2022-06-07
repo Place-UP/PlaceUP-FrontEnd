@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./image/logo.png";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 import {
-  Footergeral,
+  Footer,
   ContainerFooter,
   Logo,
   LinksFooter,
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 export function FooterGeral() {
   return (
     <>
-      <Footergeral>
+      <Footer>
         <ContainerFooter className="container">
           <div>
             <Logo src={logo} alt="Logo-PlaceUP" className="logo-img" />
@@ -49,7 +49,7 @@ export function FooterGeral() {
         <FooterP className="Copyright">
           © Copyright 2022 - PlaceUP - Todos os direitos reservados PlaceUP.
         </FooterP>
-      </Footergeral>
+      </Footer>
     </>
   );
 }

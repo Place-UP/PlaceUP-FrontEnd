@@ -14,7 +14,7 @@ export const Home = styled.div`
   }
 `;
 
-export const Categoria = styled.div`
+export const Category = styled.div`
   max-width: 1400px;
   width: 50%;
   padding: 0px 0 30px 17%;

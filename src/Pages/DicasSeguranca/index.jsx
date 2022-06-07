@@ -1,20 +1,20 @@
 import React from "react";
 import logo from "./images/logo.png";
-import { Home, Categoria, Conteud } from "./styles";
+import { Home, Category, Content } from "./styles";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
 
 export function Dicas() {
   return (
     <>
       <Home>
-        <Categoria>
+        <Category>
           <img src={logo} alt="logo" />
           <h1>Dicas de segurança</h1>
-        </Categoria>
+        </Category>
 
-        <Conteud>
+        <Content>
           <h1>Para consumidores</h1>
-          <div class="sublinhado"></div>
+          <div class="underlined"></div>
 
           <p>Sempre dê preferência a dispositivos e redes de confiança: 
           Cuidado com aparelhos e redes de internet públicas ou compartilhadas, 
@@ -38,9 +38,9 @@ export function Dicas() {
           PlaceUP@place.com antes de responder algum contato 
           e não compartilhe seus dados via SMS ou Whatsapp;</p>
 
-        </Conteud>
+        </Content>
 
-        <FooterGeral class="footer"/>
+        <FooterGeral />
       </Home>
     </>
   );

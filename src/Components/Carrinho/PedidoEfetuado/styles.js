@@ -6,7 +6,7 @@ const media = {
 };
 
 export const Section = styled.section`
-  .PedidoEfetuado{
+  .OrderPlaced{
     position: fixed;
     right: 0pt;
     max-width: 400px;
@@ -28,9 +28,7 @@ export const Section = styled.section`
   ${media.Tablet} {
     display: none;
     
-    .PedidoEfetuado{ 
-      width: 50%;
-    }
+    .OrderPlaced{ width: 50%;  }
 
     h1{ font-size: 20px; }
 
@@ -38,18 +36,16 @@ export const Section = styled.section`
   }   
 
   ${media.Mobile} {
-    .PedidoEfetuado{ 
-      width: 100%;
-    }
+    .OrderPlaced{ width: 100%;  }
   }
 `
 
-export const Confirmacao = styled.div`
+export const Confirmation = styled.div`
     position: relative;
     top: 35%;
     text-align: center;
 
-    .confirmacaoContainer{      
+    .ConfirmationContainer{      
       text-align: center;
      
         h1{
@@ -63,8 +59,6 @@ export const Confirmacao = styled.div`
           color: #A6A8A9;
         }
 
-        img{
-          margin-top: 20px;
-        }
+        img{ margin-top: 20px;  }
     }
 `;

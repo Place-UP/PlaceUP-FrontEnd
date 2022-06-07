@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const media = { TabletAndMobile: "@media screen and (max-width: 863px)" };
 
-export const Footergeral = styled.div`
+export const Footer = styled.div`
   position: absolute;
   z-index: 0;
   width: 100%;

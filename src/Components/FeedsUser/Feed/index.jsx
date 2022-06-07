@@ -3,7 +3,7 @@ import './styles'
 import supermarket from "./images/market.png";
 import produto from "./images/imageProduto.png";
 import { AiOutlineHeart } from "react-icons/ai";
-import { Feed, Profile, ContainerProfile, Button, Produto, CointanerProduto } from "./styles";
+import { Feed, Profile, ContainerProfile, Button, Product, CointanerProduct } from "./styles";
 
 export function FeedUser(props) {
   return (
@@ -11,33 +11,33 @@ export function FeedUser(props) {
         <Feed>
             <ContainerProfile className="containerProfile">
                 <Profile className="profile">
-                    <img src={supermarket} alt="foto do comércio" className="foto-perfil" />
+                    <img src={supermarket} alt="foto do comércio" />
                     <h1>NameMarket</h1>
-                    <AiOutlineHeart alt="Favorito" className="favorito" />
+                    <AiOutlineHeart alt="Favorito" className="favorite" />
                 </Profile>
                 
-                <Button className="buttonVejaMais">Veja Mais</Button>
+                <Button className="buttonSeeMore">Veja Mais</Button>
             </ContainerProfile> 
 
-            <Produto className="produto">
-                <CointanerProduto className="cointanerProduto">
+            <Product className="product">
+                <CointanerProduct className="cointanerProduct">
                     <img src={produto} alt="Foto do Produto" />
                     <h1>Nome do Produto</h1>
                     <p>R$ 00,00</p>
-                </CointanerProduto>    
+                </CointanerProduct>    
 
-                <CointanerProduto className="cointanerProduto">
+                <CointanerProduct className="cointanerProduct">
                     <img src={produto} alt="Foto do Produto" />
                     <h1>Nome do Produto</h1>
                     <p>R$ 00,00</p>
-                </CointanerProduto> 
+                </CointanerProduct> 
 
-                <CointanerProduto className="cointanerProduto">
+                <CointanerProduct className="cointanerProduct">
                     <img src={produto} alt="Foto do Produto" />
                     <h1>Nome do Produto</h1>
                     <p>R$ 00,00</p>
-                </CointanerProduto> 
-            </Produto>                                                    
+                </CointanerProduct> 
+            </Product>                                                    
         </Feed>
     </>
   );

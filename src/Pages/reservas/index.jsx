@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedReservas } from "../../Components/FeedsUser/FeedReservas/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
-import { Home, Categoria } from "./styles";
+import { Home, Category } from "./styles";
 
 export function Reservas() {
   return (
@@ -11,9 +11,9 @@ export function Reservas() {
       <Home>
         <MenuPrincipal />
 
-        <Categoria>
-          <h1 className="aaaaa">MINHAS RESERVAS</h1>
-        </Categoria>
+        <Category>
+          <h1>MINHAS RESERVAS</h1>
+        </Category>
 
         <FeedReservas />
         <FeedReservas />

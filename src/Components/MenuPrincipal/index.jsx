@@ -2,7 +2,7 @@ import React from "react";
 import './styles'
 import perfil from "./images/perfil.png";
 import { IoIosExit } from "react-icons/io";
-import { Section, Profile, DarkMode, Sugestoes, ProfileSugestao, } from "./styles";
+import { Section, Profile, DarkMode, Suggestions, ProfileSuggestions } from "./styles";
 
 export function MenuPrincipal() {  
   
@@ -17,7 +17,7 @@ export function MenuPrincipal() {
   return (
     <>
       <Section>
-        <div className="menuPrincipal">
+        <div className="mainMenu">
             <Profile>
               <div className="profile">
                 <img src={perfil} alt="Foto de Perfil" />
@@ -31,34 +31,34 @@ export function MenuPrincipal() {
               <label for="toggle"></label>
             </DarkMode>
 
-            <Sugestoes>
+            <Suggestions>
                 <h1>SUGESTÕES</h1>
-                <ProfileSugestao>
+                <ProfileSuggestions>
                   <img src={perfil} alt="Foto de Perfil" />
                   <h2>Name Market</h2>
-                </ProfileSugestao>
+                </ProfileSuggestions>
 
-                <ProfileSugestao>
+                <ProfileSuggestions>
                   <img src={perfil} alt="Foto de Perfil" />
                   <h2>Name Market</h2>
-                </ProfileSugestao>
+                </ProfileSuggestions>
 
-                <ProfileSugestao>
+                <ProfileSuggestions>
                   <img src={perfil} alt="Foto de Perfil" />
                   <h2>Name Market</h2>
-                </ProfileSugestao>
+                </ProfileSuggestions>
 
-                <ProfileSugestao>
+                <ProfileSuggestions>
                   <img src={perfil} alt="Foto de Perfil" />
                   <h2>Name Market</h2>
-                </ProfileSugestao>
+                </ProfileSuggestions>
 
-                <ProfileSugestao>
+                <ProfileSuggestions>
                   <img src={perfil} alt="Foto de Perfil" />
                   <h2>Name Market</h2>
-                </ProfileSugestao>
+                </ProfileSuggestions>
                 
-            </Sugestoes>
+            </Suggestions>
         </div>
 
         <div class="mobile">
@@ -66,7 +66,7 @@ export function MenuPrincipal() {
             <ul class="nav-menu">
               <li class="nav-item">
                   <Section>
-                      <div className="menuPrincipal2">
+                      <div className="mainMenu-Mobile">
                           <Profile>
                             <div className="profile">
                               <img src={perfil} alt="Foto de Perfil" />
@@ -80,34 +80,34 @@ export function MenuPrincipal() {
                             <label for="toggle"></label>
                           </DarkMode>
 
-                          <Sugestoes>
+                          <Suggestions>
                               <h1>SUGESTÕES</h1>
-                              <ProfileSugestao>
+                              <ProfileSuggestions>
                                 <img src={perfil} alt="Foto de Perfil" />
                                 <h2>Name Market</h2>
-                              </ProfileSugestao>
+                              </ProfileSuggestions>
 
-                              <ProfileSugestao>
+                              <ProfileSuggestions>
                                 <img src={perfil} alt="Foto de Perfil" />
                                 <h2>Name Market</h2>
-                              </ProfileSugestao>
+                              </ProfileSuggestions>
 
-                              <ProfileSugestao>
+                              <ProfileSuggestions>
                                 <img src={perfil} alt="Foto de Perfil" />
                                 <h2>Name Market</h2>
-                              </ProfileSugestao>
+                              </ProfileSuggestions>
 
-                              <ProfileSugestao>
+                              <ProfileSuggestions>
                                 <img src={perfil} alt="Foto de Perfil" />
                                 <h2>Name Market</h2>
-                              </ProfileSugestao>
+                              </ProfileSuggestions>
 
-                              <ProfileSugestao>
+                              <ProfileSuggestions>
                                 <img src={perfil} alt="Foto de Perfil" />
                                 <h2>Name Market</h2>
-                              </ProfileSugestao>
+                              </ProfileSuggestions>
                               
-                          </Sugestoes>
+                          </Suggestions>
                       </div>  
                   </Section>
               </li>

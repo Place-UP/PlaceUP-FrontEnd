@@ -3,9 +3,9 @@ import styled from "styled-components";
   export const Main = styled.main`
 
     .Title{
- display: flex;
- align-items: center;
- justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     p{
     font-size: 50px;

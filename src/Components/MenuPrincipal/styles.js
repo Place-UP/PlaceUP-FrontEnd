@@ -6,7 +6,7 @@ const media = {
 };
 
 export const Section = styled.section`
-  .menuPrincipal{
+  .mainMenu{
     position: fixed;
     right: 0pt;
     max-width: 400px;
@@ -18,7 +18,7 @@ export const Section = styled.section`
     padding-top: 30px; 
   }
 
-  .menuPrincipal2{
+  .mainMenu-Mobile{
     max-width: 400px;
     width: 95%;
     height: 100vh;
@@ -56,7 +56,7 @@ export const Section = styled.section`
   }
 
   ${media.Tablet} {
-    .menuPrincipal{   display: none;   }
+    .mainMenu{   display: none;   }
 
     .hamburger {
       display: block;
@@ -208,7 +208,7 @@ export const DarkMode = styled.section`
   input.toggle-control:checked + label::after { margin-left: 20px; }
 `
 
-export const Sugestoes = styled.div`
+export const Suggestions = styled.div`
   width: 90%;
   margin: 50px 0px 0px 5%;
   text-align: center;
@@ -223,7 +223,7 @@ export const Sugestoes = styled.div`
   }
 `
 
-export const ProfileSugestao = styled.div`
+export const ProfileSuggestions = styled.div`
   margin-top: 20px;
   width: 100%;
   background-color: white;

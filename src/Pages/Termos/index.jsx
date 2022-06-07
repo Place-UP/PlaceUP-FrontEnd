@@ -1,20 +1,20 @@
 import React from "react";
 import logo from "./images/logo.png";
-import { Home, Categoria, Conteud } from "./styles";
+import { Home, Category, Content } from "./styles";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
 
 export function Termos() {
   return (
     <>
       <Home>
-        <Categoria>
+        <Category>
           <img src={logo} alt="logo" />
           <h1>Termos e condições de uso</h1>
-        </Categoria>
+        </Category>
 
-        <Conteud>
+        <Content>
           <h1>Para nossos usuários</h1>
-          <div class="sublinhado"></div>
+          <div class="underlined"></div>
 
           <p>1.INFORMAÇÃO: PLACEUP BRASIL INTERMEDIAÇÃO DE NEGÓCIOS LTDA CNPJ: 00.000.000/0000-00, com constituída na cidade de São Paulo, para os efeitos destes termos será definida como A OPERADORA.</p>
 
@@ -44,9 +44,9 @@ export function Termos() {
           PlaceUP@place.com antes de responder algum contato 
           e não compartilhe seus dados via SMS ou Whatsapp;</p>
 
-        </Conteud>
+        </Content>
 
-        <FooterGeral class="footer"/>
+        <FooterGeral />
       </Home>
     </>
   );

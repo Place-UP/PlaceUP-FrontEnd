@@ -8,7 +8,7 @@ import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/FeedsUser/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { AiOutlineSearch } from "react-icons/ai"
-import { Home, HeaderA, Barra, Filtro, Categoria, CategoriaShopping, InfoCategoria, Car } from "./styles";
+import { Home, SectionSearch, SearchBar, Filter, Category, FilterCategory, InfoCategory, Car } from "./styles";
 
 export function IndexHomeUser() {
   return (
@@ -17,18 +17,18 @@ export function IndexHomeUser() {
       <Home>
         <MenuPrincipal />
 
-        <Categoria>
-          <HeaderA>
-            <Barra>
+        <Category>
+          <SectionSearch>
+            <SearchBar>
               <span><AiOutlineSearch /></span>
-              <input type="text" className="pesquisa" placeholder="Pesquisa"></input>
-            </Barra>
+              <input type="text" className="search" placeholder="Pesquisa"></input>
+            </SearchBar>
             <Car>
               <img src={Carrinho} alt="Carrinho" />
             </Car>
-          </HeaderA>
+          </SectionSearch>
 
-          <Filtro>
+          <Filter>
             <select name="Ordenar por">              
               <option value="ordenar" select>Ordenar</option>
               <option value="maior">Maior Preço</option>
@@ -42,43 +42,43 @@ export function IndexHomeUser() {
               <option value="mudo">Acessível para mudo</option>
               <option value="cadeirante">Acessível para cadeirante</option>
             </select>
-          </Filtro>
+          </Filter>
           
-          <h1 className="aaaaa">CATEGORIAS</h1>
-          <div className="containerCategoria">
-            <CategoriaShopping>
+          <h1>CATEGORIAS</h1>
+          <div className="containerCategory">
+            <FilterCategory>
               <img src={Mercado} alt="Icone Shopping" />
-              <InfoCategoria>
+              <InfoCategory>
                 <h2>Mercado</h2>
                 <p> &#x2192; </p>
-              </InfoCategoria>
-            </CategoriaShopping>
+              </InfoCategory>
+            </FilterCategory>
 
-            <CategoriaShopping>
+            <FilterCategory>
               <img src={Padaria} alt="Icone Shopping" />
-              <InfoCategoria>
+              <InfoCategory>
                 <h2>Padaria</h2>
                 <p> &#x2192; </p>
-              </InfoCategoria>
-            </CategoriaShopping >
+              </InfoCategory>
+            </FilterCategory >
 
-            <CategoriaShopping>
+            <FilterCategory>
               <img src={Sobremesas} alt="Icone Shopping" />
-              <InfoCategoria>
+              <InfoCategory>
                 <h2>Sobremesas</h2>
                 <p> &#x2192; </p>
-              </InfoCategoria>
-            </CategoriaShopping>
+              </InfoCategory>
+            </FilterCategory>
 
-            <CategoriaShopping>
+            <FilterCategory>
               <img src={Bebida} alt="Icone Shopping" />
-              <InfoCategoria>
+              <InfoCategory>
                 <h2>Bebida</h2>
                 <p> &#x2192; </p>
-              </InfoCategoria>
-            </CategoriaShopping>
+              </InfoCategory>
+            </FilterCategory>
           </div>
-        </Categoria>
+        </Category>
 
         <FeedUser />
         <FeedUser />

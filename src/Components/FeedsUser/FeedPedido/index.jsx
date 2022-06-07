@@ -1,85 +1,85 @@
 import React from "react";
 import './styles'
 import produto from "./images/imageProduto.png";
-import { Feed, Produto, CointanerProduto } from "./styles";
+import { Feed, Product, CointanerProduct } from "./styles";
 
 export function FeedPedido() {
   return (
     <>
         <Feed>
-        <Produto className="produto">
-            <CointanerProduto className="cointanerProduto">
+        <Product className="product">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
+            </CointanerProduct>  
 
-            <CointanerProduto className="cointanerProduto">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
+            </CointanerProduct>  
 
-            <CointanerProduto className="cointanerProduto">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
+            </CointanerProduct>  
 
-            <CointanerProduto className="cointanerProduto">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
+            </CointanerProduct>  
 
-            <CointanerProduto className="cointanerProduto">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
+            </CointanerProduct>  
 
-            <CointanerProduto className="cointanerProduto">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
+            </CointanerProduct>  
 
-            <CointanerProduto className="cointanerProduto">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
+            </CointanerProduct>  
 
-            <CointanerProduto className="cointanerProduto">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
+            </CointanerProduct>  
 
-            <CointanerProduto className="cointanerProduto">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
+            </CointanerProduct>  
 
-            <CointanerProduto className="cointanerProduto">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
+            </CointanerProduct>  
 
-            <CointanerProduto className="cointanerProduto">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
+            </CointanerProduct>  
 
-            <CointanerProduto className="cointanerProduto">
+            <CointanerProduct className="cointanerProduct">
                 <img src={produto} alt="Foto do Produto" />
                 <h1>Nome do Produto</h1>
                 <p>R$ 00,00</p>
-            </CointanerProduto>  
-            </Produto>                                                         
+            </CointanerProduct>  
+            </Product>                                                         
         </Feed>
     </>
   );
