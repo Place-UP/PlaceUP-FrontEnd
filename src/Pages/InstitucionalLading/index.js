@@ -1,5 +1,5 @@
 import React from "react";
-import { Main, Banner, Cards, ContainerCard, Card, Hystory } from "./style";
+import { Main, FirstView, Cards, ContainerCard, Card, Hystory } from "./style";
 import { Link } from "react-router-dom";
 import LogoBackground from "./img/LogoVector.svg";
 import Logo from "./img/logo.svg";
@@ -10,17 +10,20 @@ import TableFounders from "../../Components/FoundersTable/index";
 import VectorOurHistory from "./img/VectorOurHistory.svg";
 import { colors } from "../../mock/CardsInstitucional";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
+import Capivara from "./img/imagem-capivara.jpg";
 export function Institucional() {
   return (
     <>
       <Main>
         <header>
-          <img
-            className="logoBackground"
-            src={LogoBackground}
-            alt="logoBackground"
-          />
-          <Link to="">
+          <Link to="/">
+            <img
+              className="logoBackground"
+              src={LogoBackground}
+              alt="logoBackground"
+            />
+          </Link>
+          <Link to="/">
             <img className="logomob" src={Logo} alt="logoBackground" />
           </Link>
           <div>
@@ -29,22 +32,30 @@ export function Institucional() {
             </Link>
           </div>
         </header>
-        <Banner>
+        <FirstView>
           <div>
             <h1>
               <span>PlaceUP</span> <br></br> A empresa que está sempre com você!
             </h1>
-            <img className="imgvectorBanner" src={StyleBanner} />
+            <img
+              className="imgvectorBanner"
+              src={StyleBanner}
+              alt="Imagem da direita"
+            />
           </div>
-          <img className="imgvectorBanner" src={VectorBanner} />
-        </Banner>
+          <img
+            className="imgvectorBannerRight"
+            src={Capivara}
+            alt="Vector de baixo do texto"
+          />
+        </FirstView>
         <ContainerCard>
           {colors.map((item) => (
             <Cards>
               <Card key={item.id} primary={`0 10px 1px ${item.color}`}>
                 <div>
-                  <img className="topimagecard" src={item.img} />
-                  <img className="bottomShadow" src={bottomshadow} />
+                  <img className="topimagecard" src={item.img} alt="." />
+                  <img className="bottomShadow" src={bottomshadow} alt="." />
                 </div>
                 <div className="ContainerTextCard">
                   <h1>{item.title}</h1>

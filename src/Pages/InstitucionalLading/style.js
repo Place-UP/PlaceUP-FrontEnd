@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const Media = {
-  Desktop: "@media(max-width:1440px)",
+  Desktop: "@media(max-width:1300px)",
   Laptop: "@media(max-width:1024px)",
   Tablet: "@media(max-width:768px)",
-  MobileL: "@media(max-width:550px)",
+  MobileL: "@media(max-width:635px)",
   MobileM: "@media(max-width:375px)",
 };
 export const Main = styled.main`
@@ -14,7 +14,7 @@ export const Main = styled.main`
     align-items: center;
     justify-content: space-between;
 
-    ${Media.MobileL} {
+    ${Media.Tablet} {
       background: #2980b9;
       display: flex;
       align-items: center;
@@ -22,7 +22,7 @@ export const Main = styled.main`
     }
     .logomob {
       display: none;
-      ${Media.MobileL} {
+      ${Media.Tablet} {
         display: block;
         width: 88px;
         height: 88px;
@@ -30,7 +30,7 @@ export const Main = styled.main`
       }
     }
     .logoBackground {
-      ${Media.MobileL} {
+      ${Media.Tablet} {
         display: none;
       }
     }
@@ -42,29 +42,52 @@ export const Main = styled.main`
         padding: 10px 30px;
         color: white;
         font-family: Lato;
-        ${Media.MobileL} {
+        ${Media.Tablet} {
           display: none;
         }
       }
-      ${Media.MobileL} {
+      ${Media.Tablet} {
         margin-right: 0;
       }
     }
   }
 `;
 
-export const Banner = styled.div`
+export const FirstView = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: -70px;
+  margin-top: 100px;
+  ${Media.MobileL} {
+    justify-content: center;
+    flex-direction: column;
+  }
   div h1 {
     color: #344758;
     font-size: 54px;
     font-family: "Bakbak One";
     margin-bottom: 90px;
     margin-left: 150px;
+
+    ${Media.Desktop} {
+      font-size: 50px;
+    }
+
+    ${Media.Laptop} {
+      font-size: 45px;
+    }
+    ${Media.Tablet} {
+      font-size: 39px;
+    }
+    ${Media.MobileL} {
+      margin: 0 auto;
+      text-align: center;
+      max-width: 90vw;
+    }
+    ${Media.MobileM} {
+      font-size: 40px;
+    }
     img {
       width: 10%;
     }
@@ -77,27 +100,72 @@ export const Banner = styled.div`
 
   .imgvectorBanner {
     max-width: 60%;
+    ${Media.MobileL} {
+      position: relative;
+      bottom: 200px;
+      opacity: 0.5;
+      width: 100vw;
+    }
+  }
+
+  .imgvectorBannerRight {
+    margin-top: -50px;
+    max-width: 60%;
+    ${Media.Laptop} {
+      max-width: 50%;
+      margin-top: -150px;
+    }
+    ${Media.MobileL} {
+      display: none;
+    }
   }
 `;
 export const ContainerCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  ${Media.Tablet} {
+    width: 60vw;
+    justify-content: start;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+    margin: auto;
+    &::-webkit-scrollbar {
+      height: 1px;
+    }
+  }
+
+  ${Media.MobileL} {
+    width: 100vw;
+  }
 `;
 
 export const Card = styled.div`
-  width: 407px;
+  width: 30vw;
   height: 454px;
   background: #f8f6f6;
   border-radius: 57px;
   box-shadow: ${(props) => props.primary};
+  margin: auto;
   margin-top: 150px;
+  ${Media.Tablet} {
+    width: 50vw;
+    margin-left: 20px;
+  }
+
+  ${Media.MobileL} {
+    width: 80vw;
+    margin: 30px;
+  }
 `;
 
 export const Cards = styled.main`
   display: flex;
   &:nth-child(2) {
     margin-bottom: 10%;
+    ${Media.Laptop} {
+      margin: 0;
+    }
   }
 
   .topimagecard {
@@ -144,6 +212,9 @@ export const Hystory = styled.div`
   background: #2d3e50;
   flex-direction: column;
   margin-top: 250px;
+  ${Media.MobileL} {
+    margin-top: 100px;
+  }
 
   .title {
     display: flex;
@@ -155,9 +226,19 @@ export const Hystory = styled.div`
     margin-top: 90px;
     font-family: "Bakbak One";
     font-weight: 400;
-    font-size: 64px;
+    font-size: 54px;
     line-height: 90px;
     color: #ecf0f1;
+
+    ${Media.Desktop} {
+      font-size: 50px;
+    } 
+    ${Media.MobileL} {
+      margin-top: 20px;
+    }
+    ${Media.MobileM} {
+      font-size: 40px;
+    }
   }
   hr {
     border: none;
@@ -175,10 +256,36 @@ export const Hystory = styled.div`
     max-width: 50%;
     text-align: left;
     float: left;
+    ${Media.Desktop} {
+      font-size: 40px;
+    }
+    ${Media.Tablet} {
+      font-size: 35px;
+      margin-top: 50px;
+    }
+    ${Media.MobileL} {
+      margin: auto;
+      margin-top: 50px;
+      text-align: center;
+      font-size: 20px;
+      max-width: 80vw;
+    }
   }
 
   .OurHistories {
     position: relative;
     margin-top: -530px;
+    ${Media.Desktop} {
+      margin-top: -300px;
+    }
+    ${Media.Tablet} {
+      margin-top: -250px;
+    }
+    ${Media.MobileL} {
+      margin-top: -100px;
+    }
+    ${Media.MobileM} {
+      margin-top: -50px;
+    }
   }
 `;

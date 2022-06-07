@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
+import Fundo from '../../Img/CadastroUser/Fundo.svg'
+
 export const Container = styled.div`
     width: 100vw;
     height: 100vh;
 `
 
 export const BoxVetor = styled.div`
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +20,28 @@ export const Form = styled.div`
 `
 
 export const Vetores = styled.div`
+    position: relative;
+    background-image: url(${Fundo});
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 50%;
+    height: 100%;
+    
+`
+
+export const CapaVetor = styled.div`
+    position: absolute;
+    width: auto; 
+    height: auto;
+    top: 40%;
+    left: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 75%;
+    }
 `
 
 export const Termos = styled.div`

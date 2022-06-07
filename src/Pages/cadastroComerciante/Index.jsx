@@ -10,7 +10,7 @@ import {
 
 import { Forms } from '../../Components/Form/index'
 import { Midia } from '../../Components/SocialMidia/Index'
-import { Register } from "../../Components/Register";
+import { Register } from "../../Components/Register/index";
 
 export function CadastroComerciante() {
 
@@ -24,7 +24,7 @@ export function CadastroComerciante() {
             </BoxVetor>
             <BoxForm>
                 <Back>
-                    <Link to="/" >
+                    <Link to="/DirecCadastro" >
                         <img src={Seta} alt="Seta de voltar" />
                     </Link>
                 </Back>

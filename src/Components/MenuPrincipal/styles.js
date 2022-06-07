@@ -61,7 +61,7 @@ export const Section = styled.section`
     .hamburger {
       display: block;
       padding:  0 1%;
-      padding-lef: 20px; 
+      padding-left: 20px; 
     }    
   
     .mobile{   
@@ -112,7 +112,7 @@ export const Section = styled.section`
   ${media.Mobile}{
     .hamburger {
       display: block;
-      padding-lef: 200px; 
+      padding-left: 200px; 
     }    
 
     .nav-menu{

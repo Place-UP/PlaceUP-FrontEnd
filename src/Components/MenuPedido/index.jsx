@@ -43,7 +43,7 @@ export function MenuPedido() {
                   <input type="submit"></input>
                 </ProfileSuggestion>                
             </Evaluation>
-          </div>  
+        </div>  
 
           <div class="mobile">
           <nav class="navbar">

@@ -1,23 +1,37 @@
 import styled from "styled-components";
-import PaintingFounders from "./img/PaintingFounders.svg";
+const Media = {
+  Desktop: "@media(max-width:1300px)",
+  Laptop: "@media(max-width:1024px)",
+  Tablet: "@media(max-width:880px)",
+  MobileL: "@media(max-width:550px)",
+  MobileM: "@media(max-width:375px)",
+};
 export const FoundersPart = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  clear: both;
+
   .Title {
     h1 {
       margin-top: 100px;
       font-family: "Bakbak One";
       font-weight: bold;
-      font-size: 64px;
+      font-size: 54px;
       line-height: 90px;
       color: #2c3e50;
+      ${Media.Desktop} {
+        font-size: 50px;
+      }
+      ${Media.Desktop} {
+        font-size: 40px;
+      }
     }
 
     hr {
       background: #2980b9;
-      height: 5px;
+      height: 10px;
       width: 100px;
       border: none;
     }
@@ -29,17 +43,25 @@ export const FoundersPart = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 1700px;
-    height: 800px;
+    max-width: 80%;
+    width: 90vw;
     background: #2980b9;
+    padding-bottom: 37px;
+    ${Media.Tablet} {
+      width: 95vw;
+    }
 
     .circleBlue {
       position: relative;
       background: #2980b9;
       border-radius: 50% 50% 50% 50%;
-      height: 150px;
-      width: 25%;
-      margin-top: -90px;
+      height: 147px;
+      width: 47%;
+      margin-top: -64px;
+      ${Media.MobileM} {
+        height: 123px;
+        width: 74%;
+      }
 
       .yellowCircle {
         position: relative;
@@ -51,16 +73,33 @@ export const FoundersPart = styled.div`
         align-items: center;
         margin: auto;
         margin-top: 30px;
+        ${Media.MobileM} {
+          width: 50px;
+          height: 50px;
+        }
       }
     }
   }
   .WhitePart {
     width: 95%;
-    height: 670px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    gap: 100px;
+    gap: 50px;
     background: white;
+    overflow-y: hidden;
+    ${Media.Tablet} {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: smooth;
+      scroll-behavior: smooth;
+      &::-webkit-scrollbar {
+        height: 1px;
+      }
+    }
   }
 
   .AreaContent {
