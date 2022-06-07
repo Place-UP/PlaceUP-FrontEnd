@@ -5,7 +5,7 @@ const Media = {
   Laptop: "@media(max-width:1024px)",
   Tablet: "@media(max-width:768px)",
   MobileL: "@media(max-width:635px)",
-  MobileM: "@media(max-width:375px)",
+  MobileM: "@media(max-width:398px)",
 };
 export const Main = styled.main`
   width: 90%;
@@ -25,11 +25,18 @@ export const Main = styled.main`
       font-family: "Lato";
       font-size: 22px;
     }
+
     .scrollLeft {
       cursor: pointer;
+      ${Media.Tablet} {
+        display: none;
+      }
     }
     .scrollRight {
       cursor: pointer;
+      ${Media.Tablet} {
+        display: none;
+      }
     }
     p {
       cursor: pointer;
@@ -74,9 +81,15 @@ export const ContWhitePart = styled.div`
     .image {
       width: 350px;
       box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-
       border-radius: 10px;
       object-fit: cover;
+
+      ${Media.Tablet} {
+        width: 222px;
+      }
+      ${Media.MobileM} {
+        width: 172px;
+      }
     }
 
     .AddIcon {
@@ -89,14 +102,24 @@ export const ContWhitePart = styled.div`
       margin-left: 300px;
       margin-bottom: 20px;
       margin-top: -43px;
+      ${Media.Tablet} {
+        margin-left: 177px;
+      }
+      ${Media.MobileM} {
+        margin-left: 120px;
+      }
     }
     .Info {
       margin-left: 10px;
       margin-top: 10px;
-      max-width: 10vw;
+      width: 200px;
       display: flex;
       flex-direction: column;
       gap: 5px;
+      ${Media.MobileM} {
+        width: 140px;
+      }
+
       .SeparationPrices {
         display: flex;
         align-items: center;
@@ -106,6 +129,9 @@ export const ContWhitePart = styled.div`
         font-family: "Lato";
         font-size: 15px;
         font-weight: 700;
+        /* ${Media.MobileM} {
+          font-size: 12px;
+        } */
       }
       .Quant {
         margin-left: 5px;
