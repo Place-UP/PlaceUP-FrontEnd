@@ -113,7 +113,7 @@ export function LadingPage() {
             <BtnCard>Ver mais</BtnCard>
           </ContentText>
         </ContentRight>
-        <Box>
+        <Box primary>
           <img src={Calculadora} alt="Cursos que PlaceUP oferece" />
         </Box>
       </Container>

@@ -11,7 +11,6 @@ export const Forms = () => {
     const [text, setText] = useState()
     const [coment, setComent] = useState(null)
 
-
     function comente(e) {
         setText(e.target.value)
 

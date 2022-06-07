@@ -49,6 +49,18 @@ export const Label = styled.label`
         display: flex;
     }
 
+    .error{
+        display: none;
+    }
+
+    .sucess{
+        display: none;
+    }
+
+    .sucessActive{
+        display: flex;
+    }
+
 
 `
 
