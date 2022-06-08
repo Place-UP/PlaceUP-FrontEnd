@@ -14,12 +14,12 @@ export const Feed = styled.div`
   background-color: white;
 
   ${media.Tablet} {    
-    .produto {
+    .product {
       max-width: 300px;
       display: block;
       margin: 10px auto;
 
-    .cointanerProduto{
+    .cointanerProduct{
       width: 100%;
     }
   
@@ -72,12 +72,12 @@ export const Feed = styled.div`
         }
       }
 
-      .cointanerProduto{    
+      .cointanerProduct{    
         width: 90%; 
         img{ margin: 10px 0px;}    
       }
 
-      .buttonVejaMais{  margin: 0;  }
+      .buttonSeeMore{  margin: 0;  }
     }    
   }
 `
@@ -132,14 +132,14 @@ export const Button = styled.button`
   cursor: pointer;
 `
 
-export const Produto = styled.div`
+export const Product = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 10px 2% 30px 2%;
 `
 
-export const CointanerProduto = styled.div`
+export const CointanerProduct = styled.div`
   width: 90%;
   
   img{

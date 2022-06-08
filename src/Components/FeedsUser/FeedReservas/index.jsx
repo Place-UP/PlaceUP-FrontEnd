@@ -2,7 +2,7 @@ import React from "react";
 import './styles'
 import supermarket from "./images/market.png";
 import produto from "./images/imageProduto.png";
-import { Feed, Profile, ContainerProfile, Button, Produto, CointanerProduto } from "./styles";
+import { Feed, Profile, ContainerProfile, Button, Product, CointanerProduct } from "./styles";
 
 export function FeedReservas() {
   return (
@@ -18,22 +18,22 @@ export function FeedReservas() {
                     </div>
                 </Profile>
                 
-                <Button className="buttonVejaMais">Veja Lista</Button>
+                <Button className="buttonSeeMore">Veja Lista</Button>
             </ContainerProfile> 
 
-            <Produto className="produto">
-                <CointanerProduto className="cointanerProduto">
+            <Product className="product">
+                <CointanerProduct className="cointanerProduct">
                     <img src={produto} alt="Foto do Produto" />
-                </CointanerProduto>    
+                </CointanerProduct>    
 
-                <CointanerProduto className="cointanerProduto">
+                <CointanerProduct className="cointanerProduct">
                     <img src={produto} alt="Foto do Produto" />
-                </CointanerProduto> 
+                </CointanerProduct> 
 
-                <CointanerProduto className="cointanerProduto">
+                <CointanerProduct className="cointanerProduct">
                     <img src={produto} alt="Foto do Produto" />
-                </CointanerProduto> 
-            </Produto>                                                    
+                </CointanerProduct> 
+            </Product>                                                    
         </Feed>
     </>
   );

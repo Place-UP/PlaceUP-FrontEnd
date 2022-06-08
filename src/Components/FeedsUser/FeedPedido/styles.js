@@ -14,12 +14,12 @@ export const Feed = styled.div`
   background-color: white;
 
   ${media.Tablet} {    
-    .produto {
+    .product {
       max-width: 300px;
       display: block;
       margin: 10px auto;
 
-    .cointanerProduto{
+    .cointanerProduct{
       width: 100%;
     }
   
@@ -47,7 +47,7 @@ export const Feed = styled.div`
     ${media.Mobile} {
       width: 70%;
 
-      .cointanerProduto{    
+      .cointanerProduct{    
         width: 90%; 
         img{ margin: 10px 0px;}    
       }
@@ -55,7 +55,7 @@ export const Feed = styled.div`
   }
 `
 
-export const Produto = styled.div`
+export const Product = styled.div`
   width: 100%;
   padding: 10px 2% 30px 2%;
   display: flex;
@@ -64,7 +64,7 @@ export const Produto = styled.div`
   padding: 10px 0px;
 `
 
-export const CointanerProduto = styled.div`
+export const CointanerProduct = styled.div`
   width: 33%;
   
   img{

@@ -1,80 +1,80 @@
 import React from "react";
 import './styles'
 import { AiOutlineClose } from "react-icons/ai";
-import { Section, Infomacoes, Hoje, Agendamento, Carrinho, Produto, ContainerProduto, Finalizar, Button } from "./styles";
+import { Section, Information, Day, Scheduling, Cart, Product, ProductContainer, Finalizar, Button } from "./styles";
 
 export function CarrinhoComProduto() {
   return (
     <>
       <Section>
-        <div className="Carrinho">
-            <Infomacoes>
+        <div className="cart">
+            <Information>
               <AiOutlineClose className="Close" />
-              <div className="comercio">                  
+              <div className="business">                  
                 <h3>Seu pedido em </h3>
                 <h1>Nome do Comércio</h1>
               </div>
-            </Infomacoes>
+            </Information>
 
-            <Carrinho>
-              <div className="carrinhoContainer">                  
+            <Cart>
+              <div className="cartContainer">                  
                 <h1 className="Titule">Agendar para:</h1>
 
-                <div className="SistemaReserva">
-                    <Hoje>
+                <div className="ReservationSystem">
+                    <Day>
                       <h1>Hoje:</h1>
                       <p>18:30h</p>
-                    </Hoje>
+                    </Day>
 
-                    <Agendamento>
+                    <Scheduling>
                       <h1>Agendar para:</h1>
                       <p>07/07</p>
                       <p>20:00h</p>
-                    </Agendamento>
+                    </Scheduling>
                 </div>
               </div>
 
 
-              <Produto>
-                <ContainerProduto>
-                  <div className="produto">
+              <Product>
+                <ProductContainer>
+                  <div className="product">
                     <h1>1x</h1>
                     <h1>Nome do Produto</h1>
                     <h1>R$ 100.00</h1>
                   </div>
                   <p>Remover</p>
-                </ContainerProduto>
+                </ProductContainer>
 
-                <ContainerProduto>
-                  <div className="produto">
+                <ProductContainer>
+                  <div className="product">
                     <h1>1x</h1>
                     <h1>Nome do Produto</h1>
                     <h1>R$ 100.00</h1>
                   </div>
                   <p>Remover</p>
-                </ContainerProduto>
+                </ProductContainer>
 
-                <ContainerProduto>
-                  <div className="produto">
+                <ProductContainer>
+                  <div className="product">
                     <h1>1x</h1>
                     <h1>Nome do Produto</h1>
                     <h1>R$ 100.00</h1>
                   </div>
                   <p>Remover</p>
-                </ContainerProduto>
-              </Produto>
+                </ProductContainer>
+              </Product>
 
 
-            </Carrinho>
+            </Cart>
 
-            <Finalizar>
+            <finalize>
               <div className="total">
                 <h1>TOTAL</h1>
                 <h1>R$ 300.00</h1>
               </div>
 
-              <button className="buttonVejaMais">Finalizar Reserva</button>
-            </Finalizar>
+              <button className="buttonSeeMore">Finalizar Reserva</button>
+            </finalize>
         </div>  
       </Section>
     </>

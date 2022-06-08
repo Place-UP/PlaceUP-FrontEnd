@@ -9,11 +9,11 @@ import { LadingPage } from "./Pages/LadingPage";
 import { Politica } from "./Pages/Politica/index";
 import { Dicas } from "./Pages/DicasSeguranca/index";
 import { Termos } from "./Pages/Termos/index";
+import { FaleConosco } from "./Pages/FaleConosco/index";
 import { Pagina404 } from "./Components/Error404";
 import { Institucional } from "./Pages/InstitucionalLading/index";
 import { CadastroComerciante } from "./Pages/cadastroComerciante/Index";
 import { DirecCadastro } from "./Pages/DirecCadastro";
-import { FaleConosco } from "./Pages/FaleConosco";
 import { VisualizacaoUsuario } from "./Pages/Visualizacao do usuario/index";
 function Rotas() {
   return (
@@ -36,12 +36,12 @@ function Rotas() {
           <Route path="/Pedido" element={<Pedido />} />
           <Route path="/Politica" element={<Politica />} />
           <Route path="/Dicas" element={<Dicas />} />
+          <Route path="/FaleConosco" element={<FaleConosco />} />
           <Route path="/Termos" element={<Termos />} />
           <Route path="/Calculadora" element={<IndexCalculadora />} />
           <Route path="*" element={<Pagina404 />} />
           <Route path="/Institucional" element={<Institucional />} />
           <Route path="/DirecCadastro" element={<DirecCadastro />} />
-          <Route path="/FaleConosco" element={<FaleConosco />} />
           <Route
             path="/VisualizacaoUsuario"
             element={<VisualizacaoUsuario />}

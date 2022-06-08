@@ -13,7 +13,7 @@ export const Home = styled.div`
   }
 `;
 
-export const Categoria = styled.div`
+export const Category = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -38,7 +38,7 @@ export const Categoria = styled.div`
   }
 `;
 
-export const Conteud = styled.div`
+export const Content = styled.div`
   h1{   
     font-size: 20px; 
     font-weight: 800;    
@@ -46,7 +46,7 @@ export const Conteud = styled.div`
     color: #297FB8;
   }
 
-  .sublinhado{
+  .underlined{
     width: 5%;
     height: 5px;
     background-color: #297FB8;

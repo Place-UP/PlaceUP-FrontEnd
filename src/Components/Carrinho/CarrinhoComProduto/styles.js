@@ -6,7 +6,7 @@ const media = {
 };
 
 export const Section = styled.section`
-  .Carrinho{
+  .cart{
     position: fixed;
     right: 0pt;
     max-width: 400px;
@@ -27,26 +27,26 @@ export const Section = styled.section`
   ${media.Tablet} {
     display: none;
 
-    .Carrinho{ 
+    .cart{ 
       width: 50%;
     }
 
-    .buttonVejaMais{ width: 80%;}
+    .buttonSeeMore{ width: 80%;}
   }   
   
   ${media.Mobile} {
-    .Carrinho{ 
+    .cart{ 
       width: 100%;
     }
   }
 `
 
-export const Infomacoes = styled.div`
+export const Information = styled.div`
     display: flex;
     padding-bottom: 30px;
     border-bottom: 1px solid #A6A8A9;
 
-    .comercio{ margin-left: 25px; }
+    .business{ margin-left: 25px; }
 
     h1{
       margin-top: 5px;
@@ -60,12 +60,12 @@ export const Infomacoes = styled.div`
     }
 `;
 
-export const Carrinho = styled.div`
+export const Cart = styled.div`
     position: relative;
     top: 5%;
     text-align: center;
 
-    .carrinhoContainer{   text-align: center;   }
+    .cartContainer{   text-align: center;   }
 
     .Titule{
       font-size: 25px;
@@ -74,12 +74,12 @@ export const Carrinho = styled.div`
       margin-bottom: 30px;
     }
 
-    .SistemaReserva{
+    .ReservationSystem{
       margin: 0 auto;
     }
 `;
 
-export const Hoje = styled.div`
+export const Day = styled.div`
     background-color: white;
     width: 45%;
     height: 80px;
@@ -99,7 +99,7 @@ export const Hoje = styled.div`
     }
 `;
 
-export const Agendamento = styled.div`
+export const Scheduling = styled.div`
     background-color: white;
     width: 45%;
     height: auto;
@@ -120,7 +120,7 @@ export const Agendamento = styled.div`
     }
 `;
 
-export const Produto = styled.div`
+export const Product = styled.div`
     margin-top: 50px;
 
     p{
@@ -129,7 +129,7 @@ export const Produto = styled.div`
       padding: 15px 5%; 
       cursor: pointer;
     }
-    .produto{
+    .product{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -137,13 +137,13 @@ export const Produto = styled.div`
     }
 `;
 
-export const ContainerProduto = styled.div`
+export const ProductContainer = styled.div`
     width: 90%;
     margin: 20px auto;
     border-bottom: 2px solid #2980B9;
 `;
 
-export const Finalizar = styled.div`
+export const finalize = styled.div`
     margin-top: 80px;
 
     .total{
@@ -154,13 +154,13 @@ export const Finalizar = styled.div`
       justify-content: space-between;
     }
 
-    .buttonVejaMais:hover{
+    .buttonSeeMore:hover{
       color: #297FB8;
       border: 2px solid #297FB8;
       background-color: white;
     }
 
-    .buttonVejaMais{
+    .buttonSeeMore{
       width: 60%;
       height: 40px;
       margin: 15px auto 0px 20%;

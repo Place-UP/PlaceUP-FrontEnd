@@ -14,12 +14,12 @@ export const Feed = styled.div`
   background-color: white;
 
   ${media.Tablet} {    
-    .produto {
+    .product {
       max-width: 300px;
       display: block;
       margin: 10px auto;
 
-    .cointanerProduto{   width: 100%;   }
+    .cointanerProduct{   width: 100%;   }
   
     img{
       width: 90%;
@@ -66,10 +66,10 @@ export const Feed = styled.div`
           font-family: 'Lato', cursive;
         }
 
-        .favorito{margin: 10px 0px;}
+        .favorite{margin: 10px 0px;}
       }
 
-      .cointanerProduto{
+      .cointanerProduct{
         width: 90%;
         h1{
           width: 90%;
@@ -83,11 +83,9 @@ export const Feed = styled.div`
           margin: 10px 0px 20px 5px;
         }
       }
-
-      .buttonVejaMais{  margin: 0;  }
+      .buttonSeeMore{  margin: 0;  }
     }    
-    
-    
+        
     ${media.MobileS} {  
       margin-left: auto; 
       margin-right: 6%;
@@ -101,7 +99,7 @@ export const ContainerProfile = styled.div`
   justify-content: space-between;
   padding: 0 2%;
   
-  .buttonVejaMais:hover{
+  .buttonSeeMore:hover{
     color: #297FB8;
     border: 2px solid #297FB8;
     background-color: white;
@@ -127,7 +125,7 @@ export const Profile = styled.div`
     padding: 0px 5px;
   }
 
-  .favorito{
+  .favorite{
     width: 30px;
     height: 30px;
     margin: 20px 0px 0px 10px;
@@ -146,14 +144,14 @@ export const Button = styled.button`
   background-color: #297FB8;
 `
 
-export const Produto = styled.div`
+export const Product = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 10px 2% 30px 2%;
 `
 
-export const CointanerProduto = styled.div`
+export const CointanerProduct = styled.div`
   width: 90%;
   
   img{

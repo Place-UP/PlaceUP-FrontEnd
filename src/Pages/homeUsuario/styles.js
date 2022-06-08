@@ -10,7 +10,7 @@ export const Home = styled.div`
   background-color: #ECF0F1;  
  `;
 
-export const HeaderA = styled.div`
+export const SectionSearch = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -29,7 +29,7 @@ export const HeaderA = styled.div`
     }
 `;
 
-export const Barra = styled.div`
+export const SearchBar = styled.div`
   width: 80%;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@ export const Barra = styled.div`
     font-size: 15px;
   }
     
-  .pesquisa{
+  .search{
     width: 95%;
     height: 40px;
     padding: 0px 20px 0px 10px;
@@ -74,7 +74,7 @@ export const Car = styled.div`
   ${media.MobileS}{ margin-left: 10px;}  
 `;
 
-export const Filtro = styled.div`
+export const Filter = styled.div`
     width: 100%;
     margin: 30px auto;
 
@@ -107,7 +107,7 @@ export const Filtro = styled.div`
     }
 `;
 
-export const Categoria = styled.div`
+export const Category = styled.div`
   width: 60%;
   padding: 30px 0 30px 17%;
 
@@ -118,7 +118,7 @@ export const Categoria = styled.div`
     font-family: 'Bakbak One', cursive;
   }
 
-  .containerCategoria{
+  .containerCategory{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
@@ -159,7 +159,7 @@ export const Categoria = styled.div`
   }
 `;
 
-export const CategoriaShopping = styled.div`
+export const FilterCategory = styled.div`
     width: 160px;
     height: 80px;
     border-radius: 8px;
@@ -175,7 +175,7 @@ export const CategoriaShopping = styled.div`
     }
 `;
 
-export const InfoCategoria = styled.div`
+export const InfoCategory = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;

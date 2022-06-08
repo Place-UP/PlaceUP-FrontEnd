@@ -20,10 +20,16 @@ MobileM: "@media(max-width:375px)",
     }
 
     .Title{
+<<<<<<< HEAD
+      display: flex;
+      align-items: center;
+      justify-content: center;
+=======
     display: flex;
     align-items: center;
     justify-content: center;
   
+>>>>>>> 73c4c36e431af99b3ab93300b45b5f8be9ddcddd
     }
     p{
     font-size: 50px;

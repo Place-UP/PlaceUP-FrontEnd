@@ -6,7 +6,7 @@ const media = {
 };
 
 export const Section = styled.section`
-  .CarrinhoVazio{
+  .EmptyCart{
     position: fixed;
     right: 0pt;
     max-width: 400px;
@@ -38,12 +38,12 @@ export const Section = styled.section`
   }
 `
 
-export const Carrinho = styled.div`
+export const Cart = styled.div`
     position: relative;
     top: 40%;
     text-align: center;
 
-    .carrinhoContainer{      
+    .cartContainer{      
       text-align: center;
      
         h1{
