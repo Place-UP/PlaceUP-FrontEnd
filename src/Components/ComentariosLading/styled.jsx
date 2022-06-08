@@ -9,30 +9,65 @@ const Media = {
 }
 
 export const Container = styled.div`
+    position: relative;
     width: 100%;
+    height: 100%;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin-bottom: 10%;
+    overflow-X: auto;
+    padding-top: 30px;
+    scroll-behavior: smooth;
+    padding-top: 30px;
+    padding-bottom: 20px;
 
-    ${Media.Tablet}{
-        grid-template-columns: auto;
-        gap: 5%;
-        margin-bottom: 40%;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+`
+
+export const Buttons = styled.div`
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10%;
+
+    button{
+        cursor: pointer;
+        font-size: 2rem;
+        margin-right: 10px;
+        &:hover{
+            font-size: 1.9rem;
+            opacity: 0.8;
+        }
+    }
+
+    button:nth-child(1){
+        margin-right: 20px;
     }
 `
 
 export const Box = styled.section`
-    width: 95%;
+    width: 40%;
     height: 100%;
     margin: auto;
+    margin-right: 20px;
     background-color: #F8F8F8;
     box-shadow: 4px 4px 10px 1px #ccc;
     border-radius: 10px;
+    margin-left: 15px;
+    flex: none;
 
     ${Media.Tablet}{
-        width: 70%;
+        width: 80%;
+    }
+
+    ${Media.MobileL}{
+        margin-right: 5px;
+        width: 95%;
     }
 `
 
@@ -40,7 +75,7 @@ export const PerfilFoto = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 25px 15px;
+    padding: 15px 25px;
 
     ${Media.Tablet}{
         padding: 15px 10px;
@@ -66,8 +101,8 @@ export const PerfilFoto = styled.div`
     img{
         width: 50%;
         border-radius: 100px;
-        width: 90px;
-        height: 85px;
+        width: 60px;
+        height: 60px;
         object-fit: cover;
 
         ${Media.Tablet}{
@@ -89,7 +124,7 @@ export const Coment = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 310px;
+    height: 280px;
     margin: auto;
 
     ${Media.Tablet}{
@@ -117,7 +152,7 @@ export const Coment = styled.div`
         &::before{
             content: '"';
             position: absolute;
-            top: 20%;
+            top: 15%;
             left: 0;
             font-family: 'Poppins';
             font-style: italic;
