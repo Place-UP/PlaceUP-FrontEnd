@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+const Media = {
+    Laptop: "@media(max-width: 1024px)",
+    Tablet: "@media(max-width: 768px)",
+    MobileL: "@media(max-width: 560px)",
+    MobileM: "@media(max-width: 375px)",
+
+}
+
 export const Container = styled.div`
     position: relative;
     width: 100vw;
@@ -9,6 +17,14 @@ export const Container = styled.div`
     align-items: center;
     background-color: #F9F9F9;
     overflow: hidden;
+    
+
+    ${Media.MobileL}{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     .c1{
         width: 100px;
@@ -45,6 +61,10 @@ export const Container = styled.div`
         &:hover{
             transform: translateX(8px);
         }
+
+        ${Media.MobileL}{
+            width: 60px;
+        }
     }
 `
 
@@ -59,11 +79,40 @@ export const Box = styled.div`
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 10px 10px 50px 0 #8DCFDE;
-
+    transition: all 0.1s ease-in-out;
     z-index: 10;
+
+    ${Media.Laptop}{
+        width: 45%;
+        margin: 10px 30px 10px 30px;
+        height: 80%;
+    }
+
+    ${Media.Tablet}{
+        width: 60%;
+        margin: 5px 15px 5px 15px;
+        height: 70%;
+    }
+
+    ${Media.MobileL}{
+        margin: 20px 0;
+        height: 45%;
+    }
 
     img{
         width: 310px;
+
+        ${Media.Laptop}{
+            width: 220px;
+        }
+
+        ${Media.Tablet}{
+           width: 160px;
+        }
+
+        ${Media.MobileL}{
+            width: 120px;
+        }
     }
     
     h1{
@@ -73,6 +122,14 @@ export const Box = styled.div`
         color: #2980B9;
         margin-top: 10%;
         margin-bottom: 10%;
+
+        ${Media.Laptop}{
+            font-size: 1.7rem;
+        }
+
+        ${Media.MobileL}{
+            font-size: 1.2rem;
+        }
     }
 
     button{
@@ -83,6 +140,11 @@ export const Box = styled.div`
         border-radius: 25px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+
+        ${Media.MobileL}{
+            width: 40px;
+            height: 40px;
+        }
 
         &:hover{
             width: 150px;

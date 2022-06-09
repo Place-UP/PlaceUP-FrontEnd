@@ -22,6 +22,27 @@ export const depoiments = [
         img: JoaoDepoimento,
         name: "Iago Silva",
         coment: "Adorei o serviços que oferecem de forma prática"
-    }
+    },
+
+    {
+        id: 4,
+        img: JoaoDepoimento,
+        name: "Iago Silva",
+        coment: "Adorei o serviços que oferecem de forma prática"
+    },
+
+    {
+        id: 5,
+        img: JoaoDepoimento,
+        name: "Iago Silva",
+        coment: "Adorei o serviços que oferecem de forma prática"
+    },
+
+    {
+        id: 6,
+        img: JoaoDepoimento,
+        name: "Iago Silva",
+        coment: "Adorei o serviços que oferecem de forma prática"
+    },
 
 ]
