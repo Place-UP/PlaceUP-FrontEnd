@@ -5,7 +5,7 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { IconContext } from "react-icons";
 import { Navigation, Title, List, Icon } from "./styles";
-import Logo from '../../Img/PlaceUp animação.svg'
+import Logo from "../../Img/PlaceUp animação.svg";
 
 export function Header() {
   const path = useLocation().pathname;
@@ -19,8 +19,11 @@ export function Header() {
 
         <IconContext.Provider value={{ size: "30px" }}>
           <ul>
-            <List className={`${path === "/" ? "Active" : ""}`}>
-              <Link to="/" className={`${path === "/" ? "Active" : ""}`}>
+            <List className={`${path === "/HomeUser" ? "Active" : ""}`}>
+              <Link
+                to="/HomeUser"
+                className={`${path === "/HomeUser" ? "preto" : ""}`}
+              >
                 <Icon>
                   <BiHomeAlt />
                 </Icon>
@@ -29,23 +32,23 @@ export function Header() {
             </List>
 
             <List className={`${path === "/" ? "Active" : ""}`}>
-              <Link to="/" className={`${path === "/" ? "Active" : ""}`}>
+              <Link to="/" className={`${path === "/" ? "preto" : ""}`}>
                 <Icon>
                   <BsChatDots />
                 </Icon>
                 <Title>chat</Title>
               </Link>
             </List>
-            <List>
-              <Link to="" className={`${path === "/" ? "Active" : ""}`}>
+            <List className={`${path === "/" ? "Active" : ""}`}>
+              <Link to="" className={`${path === "/" ? "preto" : ""}`}>
                 <Icon>
                   <AiOutlineSchedule />
                 </Icon>
                 <Title>Reservas</Title>
               </Link>
             </List>
-            <List>
-              <Link to="" className={`${path === "/" ? "Active" : ""}`}>
+            <List className={`${path === "/" ? "Active" : ""}`}>
+              <Link to="" className={`${path === "/" ? "preto" : ""}`}>
                 <Icon>
                   <MdFavoriteBorder />
                 </Icon>

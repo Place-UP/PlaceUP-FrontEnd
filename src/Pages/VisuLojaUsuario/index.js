@@ -3,6 +3,8 @@ import { Main } from "./style";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { BarraBusca } from "../../Components/BarraDePesquisa/index";
 import { Box } from "../../Components/VisualizacaoUsuarioBox/index";
+import { MenuPrincipal } from "../../Components/NavVisualizacaoUsuario/index";
+
 export function VisualizacaoUsuario() {
   return (
     <>
@@ -13,7 +15,7 @@ export function VisualizacaoUsuario() {
           <Box />
         </div>
         <div className="Container2">
-          <h1>oii</h1>
+          <MenuPrincipal />
         </div>
       </Main>
     </>

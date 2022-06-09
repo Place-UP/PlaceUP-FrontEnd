@@ -23,17 +23,21 @@ export const Navigation = styled.div`
     font-size: 10px;
   }
   &:hover {
-    width: 220px;
+    width: 200px;
     ${Media.MobileL} {
       width: 170px;
     }
   }
 
-  div{
-    img{
-      padding: 10px;
-      margin-bottom: 40px;
-      width: 70px;
+  div {
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      text-align: center;
+      z-index: 1;
+      padding-bottom: 50px;
     }
   }
   ul {

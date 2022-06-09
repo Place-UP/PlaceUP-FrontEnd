@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { box } from "../../mock/boxVisalizer";
 import { Main, ContWhitePart } from "./style";
-import {GrFormPrevious, GrFormNext, GrFormAdd} from "react-icons/gr";
+import { GrFormPrevious, GrFormNext, GrFormAdd } from "react-icons/gr";
 
 export function Box() {
   // const [data, setData] = useState([]);
@@ -38,8 +38,6 @@ export function Box() {
                 <GrFormNext className="scrollRight" />
               </button>
             </div>
-
-            
           </div>
         </div>
         <ContWhitePart className="carousel" ref={carousel}>
@@ -50,9 +48,6 @@ export function Box() {
                 <div className="Carousel">
                   <div className="containerIMG">
                     <img className="image" src={image} alt="img" />
-                    <div>
-                      <GrFormAdd className="AddIcon" />
-                    </div>
                   </div>
                   <div className="Info">
                     <span className="Tittle"> {name}</span>

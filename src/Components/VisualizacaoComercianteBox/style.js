@@ -29,14 +29,9 @@ export const Main = styled.main`
       font-family: "Lato";
       font-size: 22px;
       display: block;
-      h1 {
-        font-family: "Lato";
-        font-size: 22px;
-        display: block;
 
-        ${Media.Tablet} {
-          margin: auto;
-        }
+      ${Media.Tablet} {
+        margin: auto;
       }
     }
 
@@ -103,24 +98,6 @@ export const ContWhitePart = styled.div`
       }
     }
 
-    .AddIcon {
-      margin-right: 3px;
-      cursor: pointer;
-      width: 38px;
-      height: 38px;
-      background: #ffffff;
-      box-shadow: 1px 0px 18px -4px rgba(0, 0, 0, 0.54);
-      border-radius: 50%;
-      margin-left: 300px;
-      margin-bottom: 20px;
-      margin-top: -43px;
-      ${Media.Tablet} {
-        margin-left: 177px;
-      }
-      ${Media.MobileM} {
-        margin-left: 120px;
-      }
-    }
     .Info {
       margin-left: 10px;
       margin-top: 10px;

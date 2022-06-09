@@ -27,9 +27,6 @@ export const Container = styled.div`
     &:nth-child(1) {
       margin-left: 10px;
     }
-    &:nth-child(2) {
-      cursor: pointer;
-    }
   }
 `;
 export const SearchBar = styled.div`

@@ -14,7 +14,8 @@ import { Pagina404 } from "./Components/Error404";
 import { Institucional } from "./Pages/InstitucionalLading/index";
 import { CadastroComerciante } from "./Pages/cadastroComerciante/Index";
 import { DirecCadastro } from "./Pages/DirecCadastro";
-import { VisualizacaoUsuario } from "./Pages/Visualizacao do usuario/index";
+import { VisualizacaoUsuario } from "./Pages/VisuLojaUsuario/index";
+import { VisualizacaoComerciante } from "./Pages/VisuLojaComerciante/index";
 function Rotas() {
   return (
     <>
@@ -46,6 +47,8 @@ function Rotas() {
             path="/VisualizacaoUsuario"
             element={<VisualizacaoUsuario />}
           />
+          <Route path="/VisualizacaoComerciante" element={<VisualizacaoComerciante />} />
+          
         </Routes>
       </BrowserRouter>
     </>
