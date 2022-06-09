@@ -2,12 +2,18 @@ import styled from "styled-components";
 
 import Fundo from '../../Img/CadastroUser/Fundo.svg'
 
+const Media = {
+    Laptop: "@media(max-width: 1024px)",
+    Tablet: "@media(max-width: 768px)"
+}
+
 export const Container = styled.div`
     width: 100vw;
     height: 100vh;
 `
 
 export const BoxVetor = styled.div`
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -17,15 +23,24 @@ export const BoxVetor = styled.div`
 
 export const Form = styled.div`
     width: 50%;
+
+    ${Media.Tablet}{
+        width: 90%;
+        margin: auto;
+    }
 `
 
 export const Vetores = styled.div`
-    position: relative;
+    position: absolute;
     background-image: url(${Fundo});
     background-repeat: no-repeat;
-    background-size: 100%;
+    right: 0;
     width: 50%;
     height: 100%;
+
+    ${Media.Tablet}{
+        display: none;
+    }
     
 `
 

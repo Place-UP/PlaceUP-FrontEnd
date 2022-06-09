@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import LocalVetor from './LocalDaLogo.svg'
+import { HiUser } from 'react-icons/hi';
 
 
 const Media = {
@@ -44,6 +45,10 @@ export const Header = styled.header`
             ${Media.TabletM}{
                 right: -35%;
             }
+
+            ${Media.MobileM}{
+                right: -30%;
+            }
     }
 
     .item.open {
@@ -70,6 +75,7 @@ export const Header = styled.header`
             align-items: center;
             margin-top: 5%;
         }
+
     }
     
 
@@ -80,13 +86,14 @@ export const Header = styled.header`
         border-radius: 40px;
         background-color: #000;
         transition: 0.5s ;
- 
+
+       
     }
 
     .Hamburguer span:nth-child(1){
         transform: translate(-10px, -12px);
         width: 15px;
-        right: 15px;
+        right: 15px;    
     }
     .Hamburguer span:nth-child(2){
         transform: translate(-10px, 12px);
@@ -98,6 +105,7 @@ export const Header = styled.header`
         ${Media.Tablet}{
             transform:  translateX(60px);
         }
+        
     }
 
     .Hamburguer.open span:nth-child(1) {
@@ -115,7 +123,6 @@ export const Header = styled.header`
     }
 
 `
-
 
 export const HeaderImg = styled.div`
     position: relative;
@@ -159,6 +166,7 @@ export const HeaderImg = styled.div`
             ${Media.MobileM}{
                 width: 65px;
                 right: 83%;
+                top: 4%;
             }
 
         }
@@ -166,11 +174,9 @@ export const HeaderImg = styled.div`
     
 `
 
-export const Box = styled.div`
-    position: relative;
+export const Box = styled.div`  
     text-align: ${(props) => props.primary ? "right" : "left"};
-    width: ${(props) => props.primary ? "50%" : "60%"};
-    overflow: hidden;
+    width: ${(props) => props.primary ? "50%" : "60%"}; 
 
     img{
         width: 100%;
@@ -180,7 +186,9 @@ export const Box = styled.div`
         width: 100%;
 
         img{
+            position: ${(props) => props.primary ? "" : "absolute"};
             width: 200px;
+            bottom: ${(props) => props.primary ? "" : "0"};
         }
     }
 `
@@ -208,6 +216,7 @@ export const Btn = styled.button`
         width: 125px;
     }
 
+
 `
 
 export const Container = styled.section`
@@ -219,13 +228,20 @@ export const Container = styled.section`
     align-items: center;
 
     margin-top: ${(props) => props.primary ? "200px" : "0"};
+   
 
     ${Media.Tablet}{
+        width: 100%;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: ${(props) => props.primary ? "100px" : "0"};
+    }
+
+    ${Media.MobileM}{
+        margin-bottom: ${(props) => props.primary ? "50px" : ""};
     }
 `
 
@@ -284,6 +300,13 @@ export const ParagrafoCard = styled.p`
     }
 `
 
+export const BoxCard = styled.div`
+    ${Media.TabletM}{
+        width: 100%;
+        text-align: center;
+    }
+`
+
 export const BtnCard = styled.button`
     color: #fff;
     font-size: 1.2rem;
@@ -294,16 +317,17 @@ export const BtnCard = styled.button`
     margin-top: 1.7rem;
     margin-bottom: 2.5rem;
     box-shadow: 0px 5px 15px #C1FAFA;
-    z-index: 10;
+    z-index: 2;
 
     ${Media.Tablet}{
-        padding: 15px 45px;
-        font-size: 1rem;
+        padding: ${(props) => props.primary ? "" : "12px 45px"};
+        font-size:  ${(props) => props.primary ? "" : "1rem"};
+        margin-top: ${(props) => props.primary ? "" : "0"};
     }
 
     ${Media.MobileM}{
-        padding: 15px 30px;
-        font-size: 0.7rem;
+        padding: ${(props) => props.primary ? "" : "14px 40px"};
+        font-size: 1rem;
     }
 
     &:hover{
@@ -378,6 +402,10 @@ export const ContentText = styled.article`
     height: 100%;
     margin: auto;
     text-align: center;
+
+    ${Media.MobileM}{
+        width: 80%;
+    }
     
     h1{
         font-family: 'Bakbak One', cursive;
@@ -386,7 +414,11 @@ export const ContentText = styled.article`
         color: #2D3E50;
 
         ${Media.TabletM}{
-            font-size: 2rem;
+            font-size: 1.7rem;
+        }
+
+        ${Media.MobileM}{
+            font-size: 1.5rem;
         }
     }
 
@@ -398,6 +430,11 @@ export const ContentText = styled.article`
         
         ${Media.TabletM}{
             font-size: 1rem;
+        }
+
+        ${Media.MobileM}{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
     }
 `

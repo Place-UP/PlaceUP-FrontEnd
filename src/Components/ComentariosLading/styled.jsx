@@ -23,6 +23,10 @@ export const Container = styled.div`
     padding-top: 30px;
     padding-bottom: 20px;
 
+    ${Media.MobileL}{
+        padding-top: 10px;
+    }
+
     &::-webkit-scrollbar{
         display: none;
     }
@@ -39,10 +43,17 @@ export const Buttons = styled.div`
         cursor: pointer;
         font-size: 2rem;
         margin-right: 10px;
+
+        ${Media.MobileL}{
+            font-size: 1.4rem;
+        }
+
         &:hover{
             font-size: 1.9rem;
             opacity: 0.8;
         }
+
+        
     }
 
     button:nth-child(1){

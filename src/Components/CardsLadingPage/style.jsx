@@ -18,6 +18,8 @@ export const Container = styled.div`
 
     ${Media.Tablet}{
         width: 70%;
+        height: 100%;
+        padding-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -65,6 +67,10 @@ export const Box = styled.div`
           height: 100%;
     }
 
+    ${Media.MobileL}{
+        width: 80%;
+    }
+
     img{
        position: absolute;
        top: -30%;
@@ -96,6 +102,10 @@ export const Box = styled.div`
     ${Media.Tablet}{
         margin-top: 35%;
     }
+
+    ${Media.MobileL}{
+        font-size: 0.8rem;
+    }
    }
 
    p{
@@ -114,7 +124,10 @@ export const Box = styled.div`
         margin-top: 18%;
         margin-bottom: 18%;
         font-size: 1rem;
+    }
 
+    ${Media.MobileL}{
+        font-size: 0.7rem;
     }
     
    }

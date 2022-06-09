@@ -16,7 +16,7 @@ import {
   ContentText,
   CenarioRightStyle,
   CenarioLeftStyle,
-  Cenarios,
+  Cenarios, BoxCard
 } from "./style";
 
 import {
@@ -40,6 +40,7 @@ import Cenario from "../../Img/ImgLading/Cenario.svg";
 import { Depoimentos } from "../../Components/ComentariosLading/index";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
 import { Cards } from "../../Components/CardsLadingPage";
+import { styled } from 'styled-components';
 
 export function LadingPage() {
   //variavel, function
@@ -83,7 +84,10 @@ export function LadingPage() {
             atualizado sem sair de casa!
           </ParagrafoCard>
 
-          <BtnCard primary>Saiba Mais</BtnCard>
+          <BoxCard>
+            <BtnCard primary>Saiba Mais</BtnCard>
+          </BoxCard>
+
           <Cenarios src={Cenario} alt="Parte do cenario" />
           <Midia>
             <Link to="">
@@ -113,7 +117,9 @@ export function LadingPage() {
           <img src={CidadeVetor} alt="Cidade Vetor PlaceUP" />
         </VetorCidade>
       </Container>
+
       <Cards />
+
       <Container primary>
         <Box>
           <img src={CursosPlaceUp} alt="Cursos que PlaceUP oferece" />
