@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Back } from './../../Pages/cadastroUsuario/style';
 
 const Media = {
   Desktop: "@media(max-width:1300px)",
@@ -20,10 +21,30 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  .icon {
+  margin-top: 20px;
+  
+`;
+
+export const Carrinho = styled.div`
+    position: relative;
+
+
+    span{
+      position: absolute;
+      left: 30px;
+      text-align: center;
+      background-color: #f01;
+      color: #fff;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+
+
+    .icon {
     width: 30px;
     height: 30px;
-
+    cursor: pointer;
     &:nth-child(1) {
       margin-left: 10px;
     }
@@ -31,9 +52,9 @@ export const Container = styled.div`
       cursor: pointer;
     }
   }
-`;
+`
+
 export const SearchBar = styled.div`
-  margin-top: 30px;
   display: flex;
   align-items: center;
   width: 40vw;
@@ -50,7 +71,7 @@ export const SearchBar = styled.div`
   }
 
   input {
-    width: 37vw;
+    width: 100%;
     background-color: transparent;
     box-shadow: 0;
     border: 0 none;
@@ -74,3 +95,4 @@ export const SearchBar = styled.div`
     }
   }
 `;
+

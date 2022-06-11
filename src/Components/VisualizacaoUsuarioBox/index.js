@@ -1,7 +1,10 @@
-import { useRef } from "react";
+import { useRef, useContext } from "react";
 import { box } from "../../mock/boxVisalizer";
 import { Main, ContWhitePart } from "./style";
-import {GrFormPrevious, GrFormNext, GrFormAdd} from "react-icons/gr";
+import { GrFormPrevious, GrFormNext, GrFormAdd } from "react-icons/gr";
+import { CartContext } from './../../Common/Context/index';
+import { Carrinho } from './../BarraDePesquisa/style';
+
 
 export function Box() {
   // const [data, setData] = useState([]);
@@ -23,6 +26,8 @@ export function Box() {
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 
+  const { HandleAddCart, HandleRemoveCart, carrinho } = useContext(CartContext)
+
   return (
     <>
       <Main>
@@ -34,25 +39,27 @@ export function Box() {
               <button onClick={handleLeftClick}>
                 <GrFormPrevious className="scrollLeft" />
               </button>
+
               <button onClick={handleRightClick}>
                 <GrFormNext className="scrollRight" />
               </button>
             </div>
-
-            
           </div>
         </div>
         <ContWhitePart className="carousel" ref={carousel}>
           {box.map((item) => {
-            const { name, price, oldPrice, image } = item;
+            const { id, name, price, oldPrice, image } = item;
             return (
-              <div className="ContainerCarousel">
+              <div className="ContainerCarousel" key={id}>
                 <div className="Carousel">
                   <div className="containerIMG">
                     <img className="image" src={image} alt="img" />
-                    <div>
+                    <button onClick={() => HandleAddCart({ ...item, date: new Date() })}>
                       <GrFormAdd className="AddIcon" />
-                    </div>
+                    </button>
+                    <button onClick={() => HandleRemoveCart(id)}>
+                      <GrFormAdd className="DeleteIcon" />
+                    </button>
                   </div>
                   <div className="Info">
                     <span className="Tittle"> {name}</span>

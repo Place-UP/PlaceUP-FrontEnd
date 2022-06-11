@@ -103,7 +103,15 @@ export const ContWhitePart = styled.div`
       }
     }
 
+    .containerIMG{
+      position: relative;
+      width: 100%;
+    }
+
     .AddIcon {
+      position: absolute;
+      bottom: 5%;
+      right: -10%;
       margin-right: 3px;
       cursor: pointer;
       width: 38px;
@@ -111,15 +119,26 @@ export const ContWhitePart = styled.div`
       background: #ffffff;
       box-shadow: 1px 0px 18px -4px rgba(0, 0, 0, 0.54);
       border-radius: 50%;
-      margin-left: 300px;
-      margin-bottom: 20px;
-      margin-top: -43px;
+     
       ${Media.Tablet} {
         margin-left: 177px;
       }
       ${Media.MobileM} {
         margin-left: 120px;
       }
+    }
+
+    .DeleteIcon{
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      margin-right: 3px;
+      cursor: pointer;
+      width: 38px;
+      height: 38px;
+      background: #ffffff;
+      box-shadow: 1px 0px 18px -4px rgba(0, 0, 0, 0.54);
+      border-radius: 50%;
     }
     .Info {
       margin-left: 10px;

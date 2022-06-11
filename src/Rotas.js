@@ -16,41 +16,36 @@ import { CadastroComerciante } from "./Pages/cadastroComerciante/Index";
 import { DirecCadastro } from "./Pages/DirecCadastro";
 import { VisualizacaoUsuario } from "./Pages/VisuLojaUsuario/index";
 import { VisualizacaoComerciante } from "./Pages/VisuLojaComerciante/index";
+
+import { CartContextProvider } from './Common/Context/index'
+
 function Rotas() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LadingPage />} />
-          <Route path="/Login" element={<Login />} />
-          <Route
-            path="/CadastroComerciante"
-            element={<CadastroComerciante />}
-          />
-          <Route path="/CadastroUsuario" element={<CadastroUser />} />
-          <Route
-            path="/ComoFuncionaCalculadora"
-            element={<IndexCalculadora />}
-          />
-          <Route path="/HomeUser" element={<IndexHomeUser />} />
-          <Route path="/Reservas" element={<Reservas />} />
-          <Route path="/Pedido" element={<Pedido />} />
-          <Route path="/Politica" element={<Politica />} />
-          <Route path="/Dicas" element={<Dicas />} />
-          <Route path="/FaleConosco" element={<FaleConosco />} />
-          <Route path="/Termos" element={<Termos />} />
-          <Route path="/Calculadora" element={<IndexCalculadora />} />
-          <Route path="*" element={<Pagina404 />} />
-          <Route path="/Institucional" element={<Institucional />} />
-          <Route path="/DirecCadastro" element={<DirecCadastro />} />
-          <Route
-            path="/VisualizacaoUsuario"
-            element={<VisualizacaoUsuario />}
-          />
-          <Route path="/VisualizacaoComerciante" element={<VisualizacaoComerciante />} />
-          
-        </Routes>
-      </BrowserRouter>
+      <CartContextProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LadingPage />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/CadastroComerciante" element={<CadastroComerciante />} />
+            <Route path="/CadastroUsuario" element={<CadastroUser />} />
+            <Route path="/ComoFuncionaCalculadora" element={<IndexCalculadora />} />
+            <Route path="/HomeUser" element={<IndexHomeUser />} />
+            <Route path="/Reservas" element={<Reservas />} />
+            <Route path="/Pedido" element={<Pedido />} />
+            <Route path="/Politica" element={<Politica />} />
+            <Route path="/Dicas" element={<Dicas />} />
+            <Route path="/FaleConosco" element={<FaleConosco />} />
+            <Route path="/Termos" element={<Termos />} />
+            <Route path="/Calculadora" element={<IndexCalculadora />} />
+            <Route path="/Institucional" element={<Institucional />} />
+            <Route path="/DirecCadastro" element={<DirecCadastro />} />
+            <Route path="/VisualizacaoUsuario" element={<VisualizacaoUsuario />} />
+            <Route path="/VisualizacaoComerciante" element={<VisualizacaoComerciante />} />
+            <Route path="*" element={<Pagina404 />} />
+          </Routes>
+        </BrowserRouter>
+      </CartContextProvider>
     </>
   );
 }

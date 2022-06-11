@@ -1,7 +1,12 @@
 import { useRef } from "react";
 import { box } from "../../mock/boxVisalizer";
 import { Main, ContWhitePart } from "./style";
-import { GrFormPrevious, GrFormNext, GrFormAdd } from "react-icons/gr";
+import { GrFormPrevious, GrFormNext } from "react-icons/gr";
+
+import { useContext } from 'react'
+import { CartContext } from '../../Common/Context/index'
+
+
 
 export function Box() {
   // const [data, setData] = useState([]);
@@ -22,6 +27,8 @@ export function Box() {
     e.preventDefault();
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
+
+  const { produto, setProduto, valor, setValor } = useContext(CartContext);
 
   return (
     <>
