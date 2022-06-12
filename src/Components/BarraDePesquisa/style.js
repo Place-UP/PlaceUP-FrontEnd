@@ -27,7 +27,7 @@ export const Container = styled.div`
 
 export const Carrinho = styled.div`
     position: relative;
-
+    margin-right: 25px;
 
     span{
       position: absolute;
@@ -41,7 +41,7 @@ export const Carrinho = styled.div`
     }
 
 
-    .icon {
+    .car {
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -57,7 +57,7 @@ export const Carrinho = styled.div`
 export const SearchBar = styled.div`
   display: flex;
   align-items: center;
-  width: 40vw;
+  width: 90%;
   height: 53px;
   background: #ffffff;
   border-radius: 26.5px;
@@ -68,6 +68,11 @@ export const SearchBar = styled.div`
       transition: 0.5s;
       width: 40vw;
     }
+  }
+
+  .icon {
+    font-size: 1.5rem;
+    padding: 15px;
   }
 
   input {
@@ -96,3 +101,19 @@ export const SearchBar = styled.div`
   }
 `;
 
+export const Filter = styled.div`
+  position: absolute;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 5px;
+  box-shadow: 4px 4px 10px #ccc;
+
+  li{
+    cursor: pointer;
+    &:hover{
+      background-color: #ccc;
+    }
+  }
+`

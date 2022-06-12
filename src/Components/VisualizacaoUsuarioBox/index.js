@@ -54,7 +54,7 @@ export function Box() {
                 <div className="Carousel">
                   <div className="containerIMG">
                     <img className="image" src={image} alt="img" />
-                    <button onClick={() => HandleAddCart({ ...item, date: new Date() })}>
+                    <button onClick={() => HandleAddCart({ ...item })}>
                       <GrFormAdd className="AddIcon" />
                     </button>
                     <button onClick={() => HandleRemoveCart(id)}>

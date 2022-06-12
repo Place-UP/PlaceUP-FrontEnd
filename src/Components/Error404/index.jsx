@@ -5,7 +5,7 @@ import CenarioErrorBottom from '../../Img/Error/CenarioErrorBottom.svg'
 import CaixaPlaceUP from '../../Img/Error/CaixaPlaceUP.svg'
 import CenarioErrorTop from '../../Img/Error/CenarioErrorTop.svg'
 
-import { Container, Box, CenarioBottom, CenarioTop } from './style'
+import { Container, Box, CenarioBottom, CenarioTop, BoxError } from './style'
 
 export function Pagina404() {
     return (
@@ -17,9 +17,9 @@ export function Pagina404() {
                 <span>Está pagina não existe</span>
                 <Link to="/">Voltar</Link>
             </Box>
-            <div>
+            <BoxError>
                 <img src={CaixaPlaceUP} alt="Caixa PlaceUP" />
-            </div>
+            </BoxError>
         </Container>
     )
 }

@@ -327,7 +327,7 @@ export const BtnCard = styled.button`
 
     ${Media.MobileM}{
         padding: ${(props) => props.primary ? "" : "14px 40px"};
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     &:hover{
@@ -402,6 +402,7 @@ export const ContentText = styled.article`
     height: 100%;
     margin: auto;
     text-align: center;
+
 
     ${Media.MobileM}{
         width: 80%;

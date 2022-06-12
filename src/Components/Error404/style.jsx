@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+const Media = {
+    Laptop: "@media(max-width: 1024px)",
+    Tablet: "@media(max-width: 768px)",
+    MobileL: "@media(max-width: 425px)"
+}
+
 export const Container = styled.main`
     position: relative;
     width: 100%;
@@ -9,21 +15,30 @@ export const Container = styled.main`
     align-items: center;
     overflow: hidden;
     box-sizing: border-box;
+
+    ${Media.Laptop} {
+        flex-direction: column;
+    }
 `
 
 export const Box = styled.div`
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    
 
     img{
         width: 250px;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        ${Media.Laptop}{
+            width: 180px;
+        }
     }
 
     span{
@@ -32,6 +47,12 @@ export const Box = styled.div`
         font-weight: 600;
         margin-top: 10%;
         margin-bottom: 10%;
+
+        ${Media.Laptop}{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-size: 1.2rem;
+        }
     }
 
     a{
@@ -41,6 +62,11 @@ export const Box = styled.div`
         border-radius: 30px;
         background: linear-gradient(45deg, #2980B9, #7FC1EC);
         transition: all 0.3s ease-in-out;
+
+        ${Media.Laptop}{
+            padding: 15px 45px;
+            font-size: 0.9rem;
+        }
 
         &:hover{
             background: linear-gradient(45deg, #2980B9, #2980B9);
@@ -67,6 +93,16 @@ export const CenarioTop = styled.img`
     z-index: -1;
 `
 
-export const CaixaError = styled.div`
-    
+export const BoxError = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 400px;
+        ${Media.Laptop}{
+            width: 250px;
+        }
+    }
 `
