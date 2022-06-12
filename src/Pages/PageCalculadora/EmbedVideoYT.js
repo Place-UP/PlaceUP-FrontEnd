@@ -13,8 +13,10 @@ const Iframe = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin: auto;
+    margin-top: 100px;
     border-radius: 10px;
+    margin-bottom: 100px;
     ${Media.Tablet} {
       max-width: 400px;
       height: 350px;

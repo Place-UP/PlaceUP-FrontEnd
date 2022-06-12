@@ -1,17 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
-import {
-  Main,
-  Container,
-  HowToUseCalculator,
-  VideoHowtoUseCalculator,
-} from "./styles";
-import Calculadora from "../../Img/BackgroundHowUseCalculator.svg";
-import MulherCalculadora from "../../Img/WomanUsingCalculator.svg";
-import "./styles";
 import YoutubeEmbed from "./EmbedVideoYT";
-import { Link } from "react-router-dom";
+import { Main, Container, Cards, ContCards } from "./styles";
+import Banner from "../../Img/Calculadora/BannerCalculadora.svg";
+import Porcent2 from "../../Img/Calculadora/PorcentagemIcon2.svg";
+import Porcent from "../../Img/Calculadora/PorcentagemIcon.svg";
+import BackgroundFinal from "../../Img/Calculadora/FinalParte.svg";
+import { calculadoraCards } from "../../mock/CardCalculadora";
 
 export function IndexCalculadora() {
   return (
@@ -19,36 +16,121 @@ export function IndexCalculadora() {
       <HeaderComerciante />
       <Main>
         <Container>
-          <div className="text">Descomplicando a calculadora</div>
-          <div>
-            <img
-              className="vectorCalculator"
-              src={Calculadora}
-              alt="calculadora"
-            />
+          <div className="ContainerBanner">
+            <div className="TextArea">
+              <h1>
+                Pega a caneta e vem <br />
+                calcular com
+                <br /> a gente!
+              </h1>
+              <p>Calcular um produto nunca foi tão fácil.</p>
+              <Link to="">
+                <button>Começar pelo vídeo</button>
+              </Link>
+            </div>
+            <div className="ImageArea">
+              <img src={Banner} alt="." />
+            </div>
+          </div>
+          <div className="HowToUseCalculatorP1">
+            <div className="Tittle">
+              <h1>Descomplicando a calculadora</h1>
+              <hr />
+            </div>
+            <div className="paragraph">
+              <p>
+                Isso mesmo, é só preencher nosso formularios que nossa
+                calculadora fará o resto.
+                <br />
+                <br />
+                It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+          <div className="BackgroundCardsParts">
+            <div className="CardsPart">
+              <div className="AreaTittle">
+                <h1>Lorem Ipsum</h1>
+                <span>
+                  <p>Lorem Ipsum is simply dummy text </p>
+                  <hr />
+                </span>
+              </div>
+              <img className="PorcentIcon icon1" src={Porcent2} alt="" />
+              <ContCards>
+                {calculadoraCards.map((item) => {
+                  const { id, img, title, Description, alt } = item;
+                  return (
+                    <Cards>
+                      <div className="CardsTittle">
+                        <span>{id}</span>
+                        <h1>{title}</h1>
+                      </div>
+
+                      <div className="AreaWhite">
+                        <div className="IntoCard">
+                          <div className="IconCard">
+                            <img src={img} alt={alt} />
+                          </div>
+                          <div className="Textarea">
+                            <p>{Description}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </Cards>
+                  );
+                })}
+              </ContCards>
+            </div>
+            <img className="PorcentIcon icon2" src={Porcent} alt="" />
+          </div>
+          <div className="HowToUseCalculatorP1">
+            <div className="Tittle">
+              <h1>Descomplicando a calculadora</h1>
+              <hr />
+            </div>
+            <div className="paragraph">
+              <p>
+                Isso mesmo, é só preencher nosso formularios que nossa
+                calculadora fará o resto.
+                <br />
+                <br />
+                It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+          <YoutubeEmbed />
+
+          <div className="StartBackground">
+            <div className="FinalPart">
+              <div className="TittleFinalPart">
+                <h1>Vamos Começar ?</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+              <div className="BtnPart">
+                <button>Começara calcular</button>
+                <div className="ImageFinalContent">
+                  <img src={BackgroundFinal} alt=";" />
+                </div>
+              </div>
+            </div>
           </div>
         </Container>
-        <HowToUseCalculator>
-          <div>
-            <img src={MulherCalculadora} alt="teste" />
-          </div>
-          <div>
-            <h1>Mas é só colocar os valores?</h1>
-            <p>
-              Isso mesmo, é só preencher nosso formularios que nossa calculadora
-              fará o resto.
-            </p>
-          </div>
-        </HowToUseCalculator>
-        <VideoHowtoUseCalculator>
-          <h1>Mas como que usa essa calculadora ?</h1>
-          <YoutubeEmbed />
-          <Link to="" className="ButtonGoToCalculator">
-            <span>Calculadora</span>
-          </Link>
-        </VideoHowtoUseCalculator>
+        <FooterGeral />
       </Main>
-      <FooterGeral />
     </>
   );
 }
