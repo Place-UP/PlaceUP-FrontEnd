@@ -16,7 +16,8 @@ import { CadastroComerciante } from "./Pages/cadastroComerciante/Index";
 import { DirecCadastro } from "./Pages/DirecCadastro";
 import { VisualizacaoUsuario } from "./Pages/VisuLojaUsuario/index";
 import { VisualizacaoComerciante } from "./Pages/VisuLojaComerciante/index";
-
+import { Favoritos } from "./Pages/Favoritos/Index";
+import { Teste} from "./Pages/Favoritos/teste"
 import { CartContextProvider } from './Common/Context/index'
 
 function Rotas() {
@@ -43,7 +44,10 @@ function Rotas() {
             <Route path="/VisualizacaoUsuario" element={<VisualizacaoUsuario />} />
             <Route path="/VisualizacaoComerciante" element={<VisualizacaoComerciante />} />
             <Route path="*" element={<Pagina404 />} />
+            <Route path="/Favoritos" element={<Favoritos />} />
+            <Route path="/Teste" element={<Teste />} />
           </Routes>
+          
         </BrowserRouter>
       </CartContextProvider>
     </>
