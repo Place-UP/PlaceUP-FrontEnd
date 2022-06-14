@@ -16,8 +16,9 @@ import { CadastroComerciante } from "./Pages/cadastroComerciante/Index";
 import { DirecCadastro } from "./Pages/DirecCadastro";
 import { VisualizacaoUsuario } from "./Pages/VisuLojaUsuario/index";
 import { VisualizacaoComerciante } from "./Pages/VisuLojaComerciante/index";
+import { Calculator } from "./Pages/Calculadora/index";
 
-import { CartContextProvider } from './Common/Context/index'
+import { CartContextProvider } from "./Common/Context/index";
 
 function Rotas() {
   return (
@@ -27,9 +28,15 @@ function Rotas() {
           <Routes>
             <Route path="/" element={<LadingPage />} />
             <Route path="/Login" element={<Login />} />
-            <Route path="/CadastroComerciante" element={<CadastroComerciante />} />
+            <Route
+              path="/CadastroComerciante"
+              element={<CadastroComerciante />}
+            />
             <Route path="/CadastroUsuario" element={<CadastroUser />} />
-            <Route path="/ComoFuncionaCalculadora" element={<IndexCalculadora />} />
+            <Route
+              path="/ComoFuncionaCalculadora"
+              element={<IndexCalculadora />}
+            />
             <Route path="/HomeUser" element={<IndexHomeUser />} />
             <Route path="/Reservas" element={<Reservas />} />
             <Route path="/Pedido" element={<Pedido />} />
@@ -40,9 +47,16 @@ function Rotas() {
             <Route path="/Calculadora" element={<IndexCalculadora />} />
             <Route path="/Institucional" element={<Institucional />} />
             <Route path="/DirecCadastro" element={<DirecCadastro />} />
-            <Route path="/VisualizacaoUsuario" element={<VisualizacaoUsuario />} />
-            <Route path="/VisualizacaoComerciante" element={<VisualizacaoComerciante />} />
+            <Route
+              path="/VisualizacaoUsuario"
+              element={<VisualizacaoUsuario />}
+            />
+            <Route
+              path="/VisualizacaoComerciante"
+              element={<VisualizacaoComerciante />}
+            />
             <Route path="*" element={<Pagina404 />} />
+            <Route path="/calcular" element={<Calculator />} />
           </Routes>
         </BrowserRouter>
       </CartContextProvider>
