@@ -5,7 +5,7 @@ export const calculadoraCards = [
     id: "1 - ",
     img: Icon,
     alt: "Icon",
-    title: "Visão",
+    title: "LoremImpsum",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
@@ -13,7 +13,7 @@ export const calculadoraCards = [
     id: "2  - ",
     img: Icon,
     alt: "Icon",
-    title: "Missâo",
+    title: "LoremImpsum",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
@@ -22,7 +22,7 @@ export const calculadoraCards = [
     id: "3  - ",
     img: Icon,
     alt: "Icon",
-    title: "Valores",
+    title: "LoremImpsum",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },

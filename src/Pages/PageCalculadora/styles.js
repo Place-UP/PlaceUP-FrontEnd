@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const Media = {
-  Desktop: "@media(max-width:1189px)",
+  Laptop: "@media(max-width:1189px)",
+  Desktop: "@media(max-width:1440px)",
   Tablet: "@media(max-width:768px)",
   MobileL: "@media(max-width:550px)",
   MobileM: "@media(max-width:375px)",
@@ -33,14 +34,14 @@ export const Container = styled.div`
     justify-content: space-between;
 
     .TextArea {
-      width: 35%;
+      width: 25%;
       margin: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       h1 {
         font-family: "Bakbak One";
-        font-size: 60px;
+        font-size: 40px;
         color: #333333;
         margin-bottom: 23px;
       }
@@ -49,7 +50,7 @@ export const Container = styled.div`
         font-family: "Lato";
         font-style: normal;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 18px;
         color: #807b7b;
         margin-bottom: 23px;
       }
@@ -66,7 +67,7 @@ export const Container = styled.div`
         border-radius: 20px;
         padding: 20px 24px;
         font-family: "Lato";
-        font-size: 30px;
+        font-size: 18px;
         text-align: center;
         color: #f4f4f4;
         cursor: pointer;
@@ -82,7 +83,7 @@ export const Container = styled.div`
   }
 
   .HowToUseCalculatorP1 {
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: flex;
     align-items: baseline;
@@ -93,7 +94,7 @@ export const Container = styled.div`
       h1 {
         font-family: "Lato";
         font-style: normal;
-        font-size: 64px;
+        font-size: 40px;
         color: #2d3e50;
       }
       hr {
@@ -120,7 +121,7 @@ export const Container = styled.div`
         width: 90%;
         margin-right: 100px;
         font-family: "Lato";
-        font-size: 30px;
+        font-size: 18px;
         color: #333333;
       }
     }
@@ -129,8 +130,7 @@ export const Container = styled.div`
   //Part do cards background da area
   .BackgroundCardsParts {
     /* width: 90%; */
-    margin-top: 100px;
-    margin-bottom: 100px;
+
     background: linear-gradient(
       91.51deg,
       rgba(232, 237, 238, 0) -9.56%,
@@ -140,14 +140,17 @@ export const Container = styled.div`
       rgba(172, 178, 180, 0.1) 100%
     );
     width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
 
     .CardsPart {
-      width: 80%;
+      width: 70%;
       margin: auto;
     }
     .AreaTittle {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       flex-direction: row;
 
@@ -173,13 +176,13 @@ export const Container = styled.div`
       }
       h1 {
         font-family: "Lato";
-        font-size: 60px;
+        font-size: 40px;
         color: #333333;
       }
       p {
         font-family: "Lato";
         font-weight: 800;
-        font-size: 36px;
+        font-size: 18px;
         color: #333333;
       }
     }
@@ -194,7 +197,7 @@ export const Container = styled.div`
     );
 
     .FinalPart {
-      width: 80%;
+      width: 70%;
       margin: auto;
       .TittleFinalPart {
         margin: auto;
@@ -205,13 +208,13 @@ export const Container = styled.div`
         h1 {
           font-family: "Lato";
           font-weight: 900;
-          font-size: 80px;
+          font-size: 40px;
           color: #333333;
         }
         p {
           font-family: "Lato";
           font-weight: 600;
-          font-size: 30px;
+          font-size: 18px;
           color: #333333;
         }
       }
@@ -240,7 +243,7 @@ export const Container = styled.div`
           border-radius: 20px;
           padding: 20px 24px;
           font-family: "Lato";
-          font-size: 30px;
+          font-size: 24px;
           text-align: center;
           color: #f4f4f4;
         }
@@ -254,12 +257,12 @@ export const ContCards = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: auto;
 `;
 //Parte de dentro do card e sua parte branca
 
 export const Cards = styled.div`
   margin-top: 80px;
-
   .CardsTittle {
     display: flex;
     align-items: flex-start;
@@ -267,7 +270,7 @@ export const Cards = styled.div`
     span {
       margin-left: 10px;
       font-family: "Lato";
-      font-size: 30px;
+      font-size: 24px;
       color: #333333;
       opacity: 0.8;
     }
@@ -275,15 +278,17 @@ export const Cards = styled.div`
   }
 
   .AreaWhite {
-    width: 25vw;
+    width: 22vw;
     height: 500px;
     background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: baseline;
     flex-direction: column;
+    transition: 0.5s;
+
     &:hover {
-      transition: 0.2s;
+      transition: 0.5s;
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     }
     .IntoCard {
@@ -297,7 +302,7 @@ export const Cards = styled.div`
           font-family: "Lato";
           font-style: normal;
           font-weight: 400;
-          font-size: 30px;
+          font-size: 17px;
           color: #333333;
         }
       }
