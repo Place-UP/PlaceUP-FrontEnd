@@ -21,20 +21,17 @@ export function Box() {
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 
-  const { HandleAddCart, HandleRemoveCart } = useContext(CartContext)
+  const { HandleAddCart } = useContext(CartContext)
 
   return (
-
     <Main>
       <div className="Offers">
         <h1>Ofertas</h1>
-
         <div className="FunctionCarousel">
           <div>
             <button onClick={handleLeftClick}>
               <MdOutlineKeyboardArrowLeft className="scrollLeft" />
             </button>
-
             <button onClick={handleRightClick}>
               <MdOutlineKeyboardArrowRight className="scrollRight" />
             </button>
@@ -52,10 +49,6 @@ export function Box() {
                   <button onClick={() => HandleAddCart({ ...item })}>
                     <GrFormAdd className="AddIcon" />
                   </button>
-                  <button onClick={() => HandleRemoveCart(id)}>
-                    <GrFormAdd className="DeleteIcon" />
-                  </button>
-
                 </div>
                 <div className="Info">
                   <span className="Tittle"> {name}</span>

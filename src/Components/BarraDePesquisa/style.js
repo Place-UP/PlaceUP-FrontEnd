@@ -45,6 +45,7 @@ export const Carrinho = styled.div`
     width: 30px;
     height: 30px;
     cursor: pointer;
+    color: ${({ theme }) => theme.fontColor};
     &:nth-child(1) {
       margin-left: 10px;
     }
@@ -59,7 +60,7 @@ export const SearchBar = styled.div`
   align-items: center;
   width: 90%;
   height: 53px;
-  background: #ffffff;
+  background: ${({ theme }) => theme.cards};
   border-radius: 26.5px;
   font-family: "Poppins";
   ${Media.Tablet} {
@@ -73,6 +74,7 @@ export const SearchBar = styled.div`
   .icon {
     font-size: 1.5rem;
     padding: 15px;
+    color: ${({ theme }) => theme.fontColor};
   }
 
   input {
@@ -82,6 +84,8 @@ export const SearchBar = styled.div`
     border: 0 none;
     outline: 0;
     margin-left: 10px;
+
+    color: ${({ theme }) => theme.fontColor};
     ${Media.Tablet} {
       position: absolute;
       &:hover {
@@ -89,7 +93,7 @@ export const SearchBar = styled.div`
       }
     }
     &::placeholder {
-      color: black;
+      color: ${({ theme }) => theme.fontColor};
       ${Media.Tablet} {
         color: transparent;
         &:hover {
@@ -103,13 +107,11 @@ export const SearchBar = styled.div`
 
 export const Filter = styled.div`
  position: absolute;
-  width: 60%;
+  width: 64%;
   height: 60%;
-  right: 30%;
   text-align: center;
   background-color: #fff;
   margin-top: 5px;
-  box-shadow: 4px 4px 10px #ccc;
   border-radius: 10px;
   z-index: 10;
   scroll-behavior: smooth;

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Main } from "./style";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { BarraBusca } from "../../Components/BarraDePesquisa/index";

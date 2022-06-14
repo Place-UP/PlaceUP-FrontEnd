@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import "./styles";
 import perfil from "./images/perfil.png";
 import logoPlace from "./images/LogoPlace.svg";
@@ -19,8 +19,9 @@ export function MenuPrincipal() {
     navMenu.classList.toggle("active");
   }
 
-  return (
 
+
+  return (
     <Section >
       <div className="mainMenu">
         <Profile>

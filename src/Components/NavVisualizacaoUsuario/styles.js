@@ -15,9 +15,11 @@ export const Section = styled.section`
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px;
-
-    background-color: ${({ theme }) => theme.body};
+    border-radius: 20px 0 0 20px;
+    background-color: ${({ theme }) => theme.barRight};
   }
+
+  
 
   .mainMenu-Mobile {
     max-width: 400px;
@@ -62,6 +64,8 @@ export const Section = styled.section`
     justify-content: center;
     flex-direction: column;
     margin: auto;
+
+
 
     .DefaulConfig {
       width: 100%;
@@ -236,10 +240,9 @@ export const Section = styled.section`
     }
   }
 `;
-
 export const Profile = styled.div`
   width: 100%;
-
+  
   .profile {
     width: 90%;
     background-color: white;
@@ -248,6 +251,8 @@ export const Profile = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    background-color: ${({ theme }) => theme.body};
   }
 
   img {
@@ -259,6 +264,7 @@ export const Profile = styled.div`
   h1 {
     line-height: 60px;
     font-family: "Lato", cursive;
+    color: ${({ theme }) => theme.fontColor};
   }
 
   .iconExit {
@@ -267,8 +273,11 @@ export const Profile = styled.div`
     padding-right: 10px;
     cursor: pointer;
     padding-top: 5px;
+
+    color: ${({ theme }) => theme.fontColor};
   }
 `;
+
 
 export const DarkMode = styled.section`
   width: 100%;
