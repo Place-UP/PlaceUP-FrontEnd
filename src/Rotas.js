@@ -27,7 +27,7 @@ function Rotas() {
     return (
         <>
 
-            <ThemeProvider theme={darkMode}>
+            <ThemeProvider theme={lightTheme}>
                 <CartContextProvider>
                     <BrowserRouter>
                         <Routes>
