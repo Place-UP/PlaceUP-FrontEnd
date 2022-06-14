@@ -8,6 +8,8 @@ import { AiOutlineClockCircle, AiOutlineStar } from "react-icons/ai";
 import { MdOutlinePlace } from "react-icons/md";
 import { Section, Profile, DarkMode } from "./styles";
 
+
+
 export function MenuPrincipal() {
   function menuHamburger() {
     const hamburger = document.querySelector(".hamburger");
@@ -18,148 +20,146 @@ export function MenuPrincipal() {
   }
 
   return (
-    <>
-      <Section>
-        <div className="mainMenu">
-          <Profile>
-            <div className="profile">
-              <img src={perfil} alt="Foto de Perfil" />
-              <h1>Name User</h1>
-              <IoIosExit className="iconExit" />
+
+    <Section >
+      <div className="mainMenu">
+        <Profile>
+          <div className="profile">
+            <img src={perfil} alt="Foto de Perfil" />
+            <h1>Name User</h1>
+            <IoIosExit className="iconExit" />
+          </div>
+        </Profile>
+
+        <DarkMode>
+          <input id="toggle" class="toggle-control" type="checkbox" />
+          <label for="toggle"></label>
+        </DarkMode>
+        <div className="ContainerPlace">
+          <div className="PlaceArea">
+            <img className="ImageLogoPlace" src={logoPlace} alt=".." />
+            <h1>Buteco de minas</h1>
+          </div>
+          <div className="box">
+            <div className="WorkTimePlace DefaulConfig">
+              <AiOutlineClockCircle className="IconMenu" />
+              <p> Aberto das 8h/18h</p>
             </div>
-          </Profile>
-
-          <DarkMode>
-            <input id="toggle" class="toggle-control" type="checkbox" />
-            <label for="toggle"></label>
-          </DarkMode>
-          <div className="ContainerPlace">
-            <div className="PlaceArea">
-              <img className="ImageLogoPlace" src={logoPlace} alt=".." />
-              <h1>Buteco de minas</h1>
+            <div className="Avaliation DefaulConfig">
+              <span className="IconMenu">4,4</span>
+              <div className="ImageStars">
+                <AiOutlineStar className="IconMenu " />
+                <AiOutlineStar className="IconMenu " />
+                <AiOutlineStar className="IconMenu " />
+                <AiOutlineStar className="IconMenu " />
+                <AiOutlineStar className="IconMenu " />
+              </div>
             </div>
-            <div>
-              <div className="WorkTimePlace DefaulConfig">
-                <AiOutlineClockCircle className="IconMenu" />
-                <p> Aberto das 8h/18h</p>
-              </div>
-              <div className="Avaliation DefaulConfig">
-                <span>4,4</span>
-                <div className="ImageStars">
-                  <AiOutlineStar className="IconMenu " />
-                  <AiOutlineStar className="IconMenu " />
-                  <AiOutlineStar className="IconMenu " />
-                  <AiOutlineStar className="IconMenu " />
-                  <AiOutlineStar className="IconMenu " />
-                </div>
-              </div>
-              <div className="Location DefaulConfig">
-                <MdOutlinePlace className="IconMenu" />
-                <p> Endereco do restaurante</p>
-              </div>
-              <div className="Acessible DefaulConfig">
-                <FaWheelchair className="IconMenu" />
-                <p> Acessivel</p>
-              </div>
+            <div className="Location DefaulConfig">
+              <MdOutlinePlace className="IconMenu" />
+              <p> Endereco do restaurante</p>
+            </div>
+            <div className="Acessible DefaulConfig">
+              <FaWheelchair className="IconMenu" />
+              <p> Acessivel</p>
+            </div>
 
-              <div className="ContainerCorredor">
-                <h1 className="TitleCorredores">Corredores</h1>
+            <div className="ContainerCorredor">
+              <h1 className="TitleCorredores">Corredores</h1>
 
-                <div className="SectionPlace">
-                  <div>
-                    <span>Snacks</span>
-                    <span>Limpeza</span>
-                    <span>Açougue</span>
-                    <span>Bebidas(+18)</span>
-                    <span>Snacks</span>
-                    <span>Limpeza</span>
-                    <span>Açougue</span>
-                    <span>Bebidas(+18)</span>
-                    <span>Snacks</span>
-                    <span>Limpeza</span>
-                    <span>Açougue</span>
-                    <span>Bebidas(+18)</span>
-                  </div>
-                </div>
+              <div className="SectionPlace">
+                <span>Snacks</span>
+                <span>Limpeza</span>
+                <span>Açougue</span>
+                <span>Bebidas(+18)</span>
+                <span>Snacks</span>
+                <span>Limpeza</span>
+                <span>Açougue</span>
+                <span>Bebidas(+18)</span>
+                <span>Snacks</span>
+                <span>Limpeza</span>
+                <span>Açougue</span>
+                <span>Bebidas(+18)</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="mobile">
-          <nav class="navbar">
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <Section>
-                  <div className="mainMenu-Mobile">
-                    <div className="ContainerPlace">
-                      <div className="PlaceArea">
-                        <img
-                          className="ImageLogoPlace"
-                          src={logoPlace}
-                          alt=".."
-                        />
-                        <h1>Buteca de minas</h1>
+      </div>
+      <div class="mobile">
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <Section>
+                <div className="mainMenu-Mobile">
+                  <div className="ContainerPlace">
+                    <div className="PlaceArea">
+                      <img
+                        className="ImageLogoPlace"
+                        src={logoPlace}
+                        alt=".."
+                      />
+                      <h1>Buteca de minas</h1>
+                    </div>
+                    <div>
+                      <div className="WorkTimePlace DefaulConfig">
+                        <AiOutlineClockCircle className="IconMenu" />
+                        <p> Aberto das 8h/18h</p>
                       </div>
-                      <div>
-                        <div className="WorkTimePlace DefaulConfig">
-                          <AiOutlineClockCircle className="IconMenu" />
-                          <p> Aberto das 8h/18h</p>
+                      <div className="Avaliation DefaulConfig">
+                        <span>4,4</span>
+                        <div className="ImageStars">
+                          <AiOutlineStar className="IconMenu " />
+                          <AiOutlineStar className="IconMenu " />
+                          <AiOutlineStar className="IconMenu " />
+                          <AiOutlineStar className="IconMenu " />
+                          <AiOutlineStar className="IconMenu " />
                         </div>
-                        <div className="Avaliation DefaulConfig">
-                          <span>4,4</span>
-                          <div className="ImageStars">
-                            <AiOutlineStar className="IconMenu " />
-                            <AiOutlineStar className="IconMenu " />
-                            <AiOutlineStar className="IconMenu " />
-                            <AiOutlineStar className="IconMenu " />
-                            <AiOutlineStar className="IconMenu " />
-                          </div>
-                        </div>
-                        <div className="Location DefaulConfig">
-                          <MdOutlinePlace className="IconMenu" />
-                          <p> Endereco do restaurante</p>
-                        </div>
-                        <div className="Acessible DefaulConfig">
-                          <FaWheelchair className="IconMenu" />
-                          <p> Acessivel</p>
-                        </div>
+                      </div>
+                      <div className="Location DefaulConfig">
+                        <MdOutlinePlace className="IconMenu" />
+                        <p> Endereco do restaurante</p>
+                      </div>
+                      <div className="Acessible DefaulConfig">
+                        <FaWheelchair className="IconMenu" />
+                        <p> Acessivel</p>
+                      </div>
 
-                        <div className="ContainerCorredor">
-                          <h1 className="TitleCorredores">Corredores</h1>
+                      <div className="ContainerCorredor">
+                        <h1 className="TitleCorredores">Corredores</h1>
 
-                          <div className="SectionPlace">
-                            <div>
-                              <span>Snacks</span>
-                              <span>Limpeza</span>
-                              <span>Açougue</span>
-                              <span>Bebidas(+18)</span>
-                              <span>Snacks</span>
-                              <span>Limpeza</span>
-                              <span>Açougue</span>
-                              <span>Bebidas(+18)</span>
-                              <span>Snacks</span>
-                              <span>Limpeza</span>
-                              <span>Açougue</span>
-                              <span>Bebidas(+18)</span>
-                            </div>
+                        <div className="SectionPlace">
+                          <div>
+                            <span>Snacks</span>
+                            <span>Limpeza</span>
+                            <span>Açougue</span>
+                            <span>Bebidas(+18)</span>
+                            <span>Snacks</span>
+                            <span>Limpeza</span>
+                            <span>Açougue</span>
+                            <span>Bebidas(+18)</span>
+                            <span>Snacks</span>
+                            <span>Limpeza</span>
+                            <span>Açougue</span>
+                            <span>Bebidas(+18)</span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </Section>
-              </li>
-            </ul>
-            <button onClick={menuHamburger}>
-              <div class="hamburger" id="menuHamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </div>
-            </button>
-          </nav>
-        </div>
-      </Section>
-    </>
+                </div>
+              </Section>
+            </li>
+          </ul>
+          <button onClick={menuHamburger}>
+            <div class="hamburger" id="menuHamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </button>
+        </nav>
+      </div>
+    </Section>
+
   );
 }

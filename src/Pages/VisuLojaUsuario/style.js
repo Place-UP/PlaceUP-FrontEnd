@@ -8,7 +8,7 @@ const Media = {
   NavMob: "@media(max-width:935px)",
 };
 export const Main = styled.div`
-  margin-left: 70px;
+  margin-left: 30px;
   display: flex;
   justify-content: space-between;
   background-color: #ecf0f1;

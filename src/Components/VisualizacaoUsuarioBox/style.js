@@ -12,7 +12,7 @@ export const Main = styled.main`
   width: 90%;
   display: block;
   margin: 0 auto;
-  background: white;
+  background: ${({ theme }) => theme.body};
   ${Media.NavMob} {
     background: none;
     width: 90%;
@@ -29,21 +29,19 @@ export const Main = styled.main`
       font-family: "Lato";
       font-size: 22px;
       display: block;
-      h1 {
-        font-family: "Lato";
-        font-size: 22px;
-        display: block;
-
+      color: ${({ theme }) => theme.fontColor};
+   
         ${Media.Tablet} {
           margin: auto;
-        }
-      }
+        }   
     }
 
     .scrollLeft {
       cursor: pointer;
       width: 25px;
       height: 25px;
+
+      color: ${({ theme }) => theme.fontColor};
       ${Media.Tablet} {
         display: none;
       }
@@ -52,6 +50,8 @@ export const Main = styled.main`
       width: 25px;
       height: 25px;
       cursor: pointer;
+
+      color: ${({ theme }) => theme.fontColor};
       ${Media.Tablet} {
         display: none;
       }
@@ -75,6 +75,8 @@ export const ContWhitePart = styled.div`
   overflow: auto;
   scroll-behavior: smooth;
   gap: 40px;
+  
+
 
   &::-webkit-scrollbar {
     display: none;
@@ -85,12 +87,14 @@ export const ContWhitePart = styled.div`
     margin: auto;
     flex-direction: row;
 
+    
+
     .Item {
       position: relative;
       overflow: auto;
     }
     .image {
-      width: 350px;
+      width: 220px;
       box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
       object-fit: cover;
@@ -116,7 +120,8 @@ export const ContWhitePart = styled.div`
       cursor: pointer;
       width: 38px;
       height: 38px;
-      background: #ffffff;
+      background-color: #4FCE63;
+      color: #fff;
       box-shadow: 1px 0px 18px -4px rgba(0, 0, 0, 0.54);
       border-radius: 50%;
      
@@ -160,6 +165,7 @@ export const ContWhitePart = styled.div`
         font-family: "Lato";
         font-size: 15px;
         font-weight: 700;
+        color: ${({ theme }) => theme.fontColor};
         /* ${Media.MobileM} {
           font-size: 12px;
         } */
@@ -178,6 +184,7 @@ export const ContWhitePart = styled.div`
       font-style: normal;
       font-weight: 700;
       font-size: 11px;
+      color: ${({ theme }) => theme.fontColor};
     }
 
     .OldPrice {

@@ -15,6 +15,8 @@ export const Section = styled.section`
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px;
+
+    background-color: ${({ theme }) => theme.body};
   }
 
   .mainMenu-Mobile {
@@ -72,14 +74,17 @@ export const Section = styled.section`
       p {
         font-family: "Inter";
         font-weight: 500;
-        font-size: 16px;
+        font-size: 14px;
         margin: auto;
         text-align: center;
+
+        color: ${({ theme }) => theme.fontColor};
       }
 
       .IconMenu {
         height: 20px;
         width: 20px;
+        color: ${({ theme }) => theme.fontColor};
       }
     }
     .PlaceArea {
@@ -95,19 +100,15 @@ export const Section = styled.section`
         margin-top: 20px;
         text-align: center;
         margin-bottom: 40px;
+        color: ${({ theme }) => theme.fontColor};
       }
-    }
-    .WorkTimePlace {
-    }
-    .Avaliation {
-      .ImageStars {
+    }   
+    .ImageStars {
         display: block;
         margin: auto;
+        color: ${({ theme }) => theme.fontColor};
       }
-    }
-
-    .Location {
-    }
+  
     .Acessible {
       p {
         color: #4fce63;
@@ -115,6 +116,7 @@ export const Section = styled.section`
     }
   }
   .SectionPlace {
+    width: 70%;
     margin-top: 30px;
     max-height: 100px;
     overflow: auto;
@@ -133,13 +135,10 @@ export const Section = styled.section`
       font-size: 16px;
       margin-top: 20px;
       margin-bottom: 20px;
+      color: ${({ theme }) => theme.fontColor};
     }
   }
-  .TitleCorredores {
-    font-family: "Lato";
-    font-weight: 600;
-    font-size: 22px;
-  }
+
   .ContainerCorredor {
     display: flex;
     align-items: flex-start;
@@ -148,6 +147,14 @@ export const Section = styled.section`
     flex-direction: column;
   }
 
+  .TitleCorredores {
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 22px;
+
+    color: ${({ theme }) => theme.fontColor};
+  }
+ 
   ${media.Tablet} {
     .mainMenu {
       display: none;
