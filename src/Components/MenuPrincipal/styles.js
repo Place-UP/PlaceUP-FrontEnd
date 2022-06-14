@@ -12,7 +12,7 @@ export const Section = styled.section`
     max-width: 400px;
     width: 23%;
     height: 100vh;
-    background-color: #ECF0F1;
+    background-color: #FFFFFF;
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px; 
@@ -132,7 +132,7 @@ export const Profile = styled.div`
 
   .profile{
     width: 90%;
-    background-color: white;
+    background-color: #ECF0F1;
     border-radius: 50px;
     margin: auto;
     display: flex;
@@ -212,19 +212,18 @@ export const Suggestions = styled.div`
   width: 90%;
   margin: 50px 0px 0px 5%;
   text-align: center;
-  background-color: white;
   border-radius: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 
   h1{
-  font-size: 22px;
-  padding-top: 20px;
-  font-family: 'Lato', cursive;
+    font-size: 22px;
+    padding-top: 20px;
+    font-family: 'Lato', cursive;
   }
 `
 
 export const ProfileSuggestions = styled.div`
-  margin-top: 20px;
+  margin-top: 25px;
   width: 100%;
   background-color: white;
   display: flex;
