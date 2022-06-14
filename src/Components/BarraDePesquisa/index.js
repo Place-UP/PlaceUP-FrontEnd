@@ -11,15 +11,16 @@ export function BarraBusca() {
 
   const { carrinho } = useContext(CartContext)
 
-  const [busca, setBusca] = useState(box)
+  const [query, setQuery] = useState("")
 
-  const newFilter = [...busca]
-
-  const filtragem = newFilter.filter((name) => name.includes(newFilter))
-
-  setBusca(filtragem)
-
-
+  const search = () => {
+    if (!query) return ([])
+    return box.filter(
+      (item) =>
+        item.name.toLowerCase().normalize("NFD").replace(/[^a-zA-Zs]/g, "").includes(query) ||
+        item.price.includes(query)
+    )
+  }
 
   return (
     <>
@@ -30,7 +31,7 @@ export function BarraBusca() {
             <input type="text"
               className="input"
               placeholder="Pesquisar"
-              onChange={setBusca}
+              onChange={(e) => setQuery(e.target.value)}
             />
           </SearchBar>
           <Carrinho>
@@ -38,14 +39,17 @@ export function BarraBusca() {
             {!!carrinho.length && <span>{carrinho.length}</span>}
           </Carrinho>
         </Container>
-
-        <Filter>
-          <ul>
-            {busca.map((item) => (
-              <li key={item.id}>{item.name}</li>
+        {query &&
+          <Filter>
+            {search().map((item) => (
+              <div key={item.id}>
+                <p>{item.price}</p>
+                <span>{item.name}</span>
+                <img src={item.image} />
+              </div>
             ))}
-          </ul>
-        </Filter>
+          </Filter>
+        }
       </Main>
     </>
   );

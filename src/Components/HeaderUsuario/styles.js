@@ -18,6 +18,9 @@ export const Navigation = styled.div`
   transition: width 0.5s;
   padding-top: 50px;
   border-radius: 0 14px 14px 0;
+
+  z-index: 30;
+  
   ${Media.MobileL} {
     width: 50px;
     font-size: 10px;

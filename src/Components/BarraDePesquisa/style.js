@@ -102,18 +102,47 @@ export const SearchBar = styled.div`
 `;
 
 export const Filter = styled.div`
-  position: absolute;
+ position: absolute;
   width: 60%;
-  margin: auto;
+  height: 60%;
+  right: 30%;
   text-align: center;
   background-color: #fff;
   margin-top: 5px;
   box-shadow: 4px 4px 10px #ccc;
+  border-radius: 10px;
+  z-index: 10;
+  scroll-behavior: smooth;
 
-  li{
+  overflow-y: auto;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
+  div{
     cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
     &:hover{
-      background-color: #ccc;
+      opacity: 0.6;
+    }
+
+    p{
+      width: 20%;
+    }
+
+    span{
+      width: 20%;
+      font-size: 1.2rem;
+    }
+
+    img{
+      width: 125px;
     }
   }
 `

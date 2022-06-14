@@ -22,9 +22,40 @@ import { Favoritos } from "./Pages/Favoritos/Index";
 import { Teste } from "./Pages/Favoritos/teste"
 
 
+import { lightTheme, darkMode } from './Common/Context/theme'
+import { ThemeProvider } from 'styled-components';
+
 function Rotas() {
   return (
     <>
+<<<<<<< HEAD
+      <ThemeProvider theme={darkMode}>
+        <CartContextProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<LadingPage />} />
+              <Route path="/Login" element={<Login />} />
+              <Route path="/CadastroComerciante" element={<CadastroComerciante />} />
+              <Route path="/CadastroUsuario" element={<CadastroUser />} />
+              <Route path="/ComoFuncionaCalculadora" element={<IndexCalculadora />} />
+              <Route path="/HomeUser" element={<IndexHomeUser />} />
+              <Route path="/Reservas" element={<Reservas />} />
+              <Route path="/Pedido" element={<Pedido />} />
+              <Route path="/Politica" element={<Politica />} />
+              <Route path="/Dicas" element={<Dicas />} />
+              <Route path="/FaleConosco" element={<FaleConosco />} />
+              <Route path="/Termos" element={<Termos />} />
+              <Route path="/Calculadora" element={<IndexCalculadora />} />
+              <Route path="/Institucional" element={<Institucional />} />
+              <Route path="/DirecCadastro" element={<DirecCadastro />} />
+              <Route path="/VisualizacaoUsuario" element={<VisualizacaoUsuario />} />
+              <Route path="/VisualizacaoComerciante" element={<VisualizacaoComerciante />} />
+              <Route path="*" element={<Pagina404 />} />
+            </Routes>
+          </BrowserRouter>
+        </CartContextProvider>
+      </ThemeProvider>
+=======
       <CartContextProvider>
         <BrowserRouter>
           <Routes>
@@ -63,6 +94,7 @@ function Rotas() {
 
         </BrowserRouter >
       </CartContextProvider >
+>>>>>>> e9c2d50fbbc9d48486c324d979dbd0b7e508b1f1
     </>
   );
 }
