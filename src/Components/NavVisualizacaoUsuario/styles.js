@@ -279,7 +279,7 @@ export const Profile = styled.div`
 `;
 
 
-export const DarkMode = styled.section`
+export const DarkMode = styled.button`
   width: 100%;
   display: flex;
   justify-content: center;

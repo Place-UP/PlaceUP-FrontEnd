@@ -21,12 +21,12 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   .icon {
-    width: 30px;
-    height: 30px;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    color: ${({ theme }) => theme.fontColor};
 
-    &:nth-child(1) {
-      margin-left: 10px;
-    }
+    margin-left: 10px;  
   }
 `;
 export const SearchBar = styled.div`
@@ -35,7 +35,7 @@ export const SearchBar = styled.div`
   align-items: center;
   width: 40vw;
   height: 53px;
-  background: #ffffff;
+  background-color: ${({ theme }) => theme.cards};
   border-radius: 26.5px;
   font-family: "Poppins";
   ${Media.Tablet} {
@@ -53,6 +53,7 @@ export const SearchBar = styled.div`
     border: 0 none;
     outline: 0;
     margin-left: 10px;
+    
     ${Media.Tablet} {
       position: absolute;
       &:hover {
@@ -60,7 +61,7 @@ export const SearchBar = styled.div`
       }
     }
     &::placeholder {
-      color: black;
+      color: ${({ theme }) => theme.fontColor};
       ${Media.Tablet} {
         color: transparent;
         &:hover {

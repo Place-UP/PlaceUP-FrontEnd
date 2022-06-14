@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 import { Navigation, Title, List, Icon } from "./styles";
 import Logo from "../../Img/PlaceUp animação.svg";
 
-import { darkMode, lightTheme } from '../../Common/Context/theme'
+import { darkMode, lightMode } from '../../Common/Context/theme'
 
 export function HeaderComerciante() {
   const path = useLocation().pathname;

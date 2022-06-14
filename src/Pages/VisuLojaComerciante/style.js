@@ -11,7 +11,7 @@ export const Main = styled.div`
   margin-left: 70px;
   display: flex;
   justify-content: space-between;
-  background-color: #ecf0f1;
+  background-color: ${({ theme }) => theme.body};
   ${Media.Laptop} {
     margin-left: 30px;
   }

@@ -1,10 +1,7 @@
 import { useRef } from "react";
 import { box } from "../../mock/boxVisalizer";
 import { Main, ContWhitePart } from "./style";
-import { GrFormPrevious, GrFormNext } from "react-icons/gr";
-
-import { useContext } from 'react'
-import { CartContext } from '../../Common/Context/index'
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 
 
@@ -28,8 +25,6 @@ export function Box() {
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 
-  const { produto, setProduto, valor, setValor } = useContext(CartContext);
-
   return (
     <>
       <Main>
@@ -39,10 +34,10 @@ export function Box() {
           <div className="FunctionCarousel">
             <div>
               <button onClick={handleLeftClick}>
-                <GrFormPrevious className="scrollLeft" />
+                <MdKeyboardArrowLeft className="scrollLeft" />
               </button>
               <button onClick={handleRightClick}>
-                <GrFormNext className="scrollRight" />
+                <MdKeyboardArrowRight className="scrollRight" />
               </button>
             </div>
           </div>

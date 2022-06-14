@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from './../../mock/CardsInstitucional';
 
 const media = {
   Tablet: "@media(max-width: 935px)",
@@ -14,6 +15,8 @@ export const Section = styled.section`
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px;
+
+    background-color: ${({ theme }) => theme.barRight};
   }
 
   .mainMenu-Mobile {
@@ -50,6 +53,7 @@ export const Section = styled.section`
     flex-direction: column;
     margin: auto;
     margin-right: 13px;
+
     .DefaulConfig {
       width: 100%;
       display: flex;
@@ -58,17 +62,25 @@ export const Section = styled.section`
       margin-top: 30px;
       gap: 10px;
 
+      span{
+        color: ${({ theme }) => theme.fontColor};
+      }
+
       p {
         font-family: "Inter";
         font-weight: 500;
         font-size: 16px;
         margin: auto;
         text-align: center;
+
+        color: ${({ theme }) => theme.fontColor};
       }
 
       .IconMenu {
         height: 20px;
         width: 20px;
+
+        color: ${({ theme }) => theme.fontColor};
       }
     }
     .PlaceArea {
@@ -84,18 +96,14 @@ export const Section = styled.section`
         margin-top: 20px;
         text-align: center;
         margin-bottom: 40px;
+        color: ${({ theme }) => theme.fontColor};
       }
-    }
-    .WorkTimePlace {
     }
     .Avaliation {
       .ImageStars {
         display: block;
         margin: auto;
       }
-    }
-
-    .Location {
     }
     .Acessible {
       p {
@@ -109,6 +117,7 @@ export const Section = styled.section`
     overflow: auto;
     direction: rtl;
     text-align: left;
+
     &::-webkit-scrollbar {
       width: 8px;
       height: 48px;
@@ -122,19 +131,24 @@ export const Section = styled.section`
       font-size: 16px;
       margin-top: 20px;
       margin-bottom: 20px;
+
+      color: ${({ theme }) => theme.fontColor};
     }
   }
-  .TitleCorredores {
-    font-family: "Lato";
-    font-weight: 600;
-    font-size: 22px;
-  }
+
   .ContainerCorredor {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     margin-top: 50px;
     flex-direction: column;
+
+    h1{
+      font-family: "Lato";
+      font-weight: 600;
+      font-size: 22px;
+      color: ${({ theme }) => theme.fontColor};
+    }
   }
 
   ${media.Tablet} {
@@ -218,3 +232,59 @@ export const Section = styled.section`
     }
   }
 `;
+
+export const DarkMode = styled.button`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+
+  .toggle-control {
+    display: none;
+  }
+
+  input.toggle-control + label {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 60px;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
+
+  input.toggle-control + label::before,
+  input.toggle-control + label::after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
+    content: "";
+    transition: all 0.4s;
+  }
+
+  input.toggle-control + label::before {
+    background: #202020;
+    border-radius: 60px;
+  }
+
+  input.toggle-control + label::after {
+    width: 18px;
+    background: white;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  input.toggle-control:checked + label::before {
+    background: white;
+  }
+
+  input.toggle-control:checked + label::after {
+    margin-left: 20px;
+  }
+`;
+
