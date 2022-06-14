@@ -27,7 +27,7 @@ import { ThemeProvider } from 'styled-components';
 function Rotas() {
     return (
         <>
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={darkMode}>
                 <GlobalStyles />
                 <CartContextProvider>
                     <BrowserRouter>

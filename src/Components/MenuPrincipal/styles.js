@@ -60,14 +60,12 @@ export const Section = styled.section`
 
     .hamburger {
       display: block;
-      padding:  0 1%;
-      padding-left: 20px; 
+      margin-right: 35px;
     }    
   
     .mobile{   
+        display: block;
         float: right;
-        margin: 7px 10% 0 2%;
-        display: block;  
         z-index: 3;
     }
 
@@ -110,10 +108,7 @@ export const Section = styled.section`
   }    
 
   ${media.Mobile}{
-    .hamburger {
-      display: block;
-      padding-left: 200px; 
-    }    
+    .hamburger {   display: block;   }    
 
     .nav-menu{
         position: fixed;

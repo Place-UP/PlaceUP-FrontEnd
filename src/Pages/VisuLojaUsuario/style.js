@@ -7,6 +7,7 @@ const Media = {
   MobileM: "@media(max-width:398px)",
   NavMob: "@media(max-width:935px)",
 };
+
 export const Main = styled.div`
   margin-left: 30px;
   display: flex;

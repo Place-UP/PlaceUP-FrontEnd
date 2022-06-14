@@ -9,8 +9,6 @@ import { useState } from 'react';
 
 export function BarraBusca() {
 
-  const { carrinho } = useContext(CartContext)
-
   const [query, setQuery] = useState("")
 
   const search = () => {
@@ -36,7 +34,6 @@ export function BarraBusca() {
           </SearchBar>
           <Carrinho>
             <AiOutlineShoppingCart className="car" />
-            {!!carrinho.length && <span>{carrinho.length}</span>}
           </Carrinho>
         </Container>
         {query &&
@@ -45,7 +42,7 @@ export function BarraBusca() {
               <div key={item.id}>
                 <p>{item.price}</p>
                 <span>{item.name}</span>
-                <img src={item.image} />
+                <img src={item.image} alt="Foto Produto" />
               </div>
             ))}
           </Filter>

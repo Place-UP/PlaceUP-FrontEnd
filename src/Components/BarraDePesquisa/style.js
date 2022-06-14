@@ -22,7 +22,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
-  
+  ${Media.Laptop} { width: 85%; }
 `;
 
 export const Carrinho = styled.div`
