@@ -6,29 +6,26 @@ const media = {
 };
 
 export const Section = styled.section`
-  .mainMenu {
+  .mainMenu{
     position: fixed;
     right: 0pt;
     max-width: 400px;
     width: 23%;
     height: 100vh;
+    background-color: #FFFFFF;
     margin: auto;
     transition: width 0.5s;
-    padding-top: 30px;
-    border-radius: 20px 0 0 20px;
-    background-color: ${({ theme }) => theme.barRight};
+    padding-top: 30px; 
   }
 
-  
-
-  .mainMenu-Mobile {
+  .mainMenu-Mobile{
     max-width: 400px;
     width: 95%;
     height: 100vh;
-    background-color: #ecf0f1;
+    background-color: #ECF0F1;
     margin: auto;
     transition: width 0.5s;
-    padding-top: 100px;
+    padding-top: 100px; 
   }
 
   .mobile {
@@ -64,8 +61,6 @@ export const Section = styled.section`
     justify-content: center;
     flex-direction: column;
     margin: auto;
-
-
 
     .DefaulConfig {
       width: 100%;
@@ -224,12 +219,23 @@ export const Section = styled.section`
   }
 
   ${media.Mobile} {
+    .mainMenu-Mobile{
+      max-width: 400px;
+      width: 95%;
+      height: 100vh;
+      background-color: #ECF0F1;
+      margin: auto;
+      transition: width 0.5s;
+      padding-top: 100px; 
+    }
+
     .hamburger {
       display: block;
       padding-left: 200px;
     }
 
     .nav-menu {
+      max-width: 400px;
       position: fixed;
       right: -100%;
       top: -20px;
@@ -279,7 +285,7 @@ export const Profile = styled.div`
 `;
 
 
-export const DarkMode = styled.section`
+export const DarkMode = styled.button`
   width: 100%;
   display: flex;
   justify-content: center;

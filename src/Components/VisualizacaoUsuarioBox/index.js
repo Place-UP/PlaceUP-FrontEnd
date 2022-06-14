@@ -1,11 +1,9 @@
-import { useRef, useContext, useState } from "react";
+import { useRef, useContext } from "react";
 import { box } from "../../mock/boxVisalizer";
 import { Main, ContWhitePart } from "./style";
 import { GrFormAdd } from "react-icons/gr";
 import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-icons/md"
 import { CartContext } from './../../Common/Context/index';
-
-
 
 
 export function Box() {

@@ -12,7 +12,7 @@ export const Main = styled.main`
   width: 90%;
   display: block;
   margin: 0 auto;
-  background: white;
+  background-color: ${({ theme }) => theme.cards};
   ${Media.NavMob} {
     background: none;
     width: 90%;
@@ -29,6 +29,7 @@ export const Main = styled.main`
       font-family: "Lato";
       font-size: 22px;
       display: block;
+      color: ${({ theme }) => theme.fontColor};
 
       ${Media.Tablet} {
         margin: auto;
@@ -39,6 +40,8 @@ export const Main = styled.main`
       cursor: pointer;
       width: 25px;
       height: 25px;
+      color: ${({ theme }) => theme.fontColor};
+
       ${Media.Tablet} {
         display: none;
       }
@@ -47,6 +50,7 @@ export const Main = styled.main`
       width: 25px;
       height: 25px;
       cursor: pointer;
+      color: ${({ theme }) => theme.fontColor};
       ${Media.Tablet} {
         display: none;
       }
@@ -85,7 +89,7 @@ export const ContWhitePart = styled.div`
       overflow: auto;
     }
     .image {
-      width: 350px;
+      width: 220px;
       box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
       object-fit: cover;
@@ -118,6 +122,8 @@ export const ContWhitePart = styled.div`
         font-family: "Lato";
         font-size: 15px;
         font-weight: 700;
+        color: ${({ theme }) => theme.fontColor};
+
         /* ${Media.MobileM} {
           font-size: 12px;
         } */
@@ -128,7 +134,6 @@ export const ContWhitePart = styled.div`
         font-style: normal;
         font-weight: 700;
         font-size: 9px;
-        color: #7a7979;
       }
     }
     .Price {
@@ -136,6 +141,7 @@ export const ContWhitePart = styled.div`
       font-style: normal;
       font-weight: 700;
       font-size: 11px;
+      color: ${({ theme }) => theme.fontColor};
     }
 
     .OldPrice {
@@ -145,6 +151,7 @@ export const ContWhitePart = styled.div`
       font-size: 11px;
       color: #8b8383;
       text-decoration: line-through;
+       color: ${({ theme }) => theme.fontColor};
     }
   }
 `;

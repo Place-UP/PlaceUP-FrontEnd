@@ -15,13 +15,14 @@ export const Navigation = styled.div`
   position: fixed;
   width: 70px;
   height: 95vh;
-  background-color: #2980b9;
+  background-color: ${({ theme }) => theme.bar};
   margin: auto;
   overflow-x: hidden;
   transition: width 0.5s;
   padding-top: 50px;
   border-radius: 0 14px 14px 0;
 
+  
 
   ${Media.MobileL} {
     width: 50px;

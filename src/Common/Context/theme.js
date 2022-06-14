@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 
-export const lightTheme = {
+export const lightMode = {
     body: "#ECF0F1",
     fontColor: "#000",
     cards: "#FFFFFF",
