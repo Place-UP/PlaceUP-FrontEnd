@@ -17,8 +17,10 @@ import { DirecCadastro } from "./Pages/DirecCadastro";
 import { VisualizacaoUsuario } from "./Pages/VisuLojaUsuario/index";
 import { VisualizacaoComerciante } from "./Pages/VisuLojaComerciante/index";
 import { Calculator } from "./Pages/Calculadora/index";
-
 import { CartContextProvider } from "./Common/Context/index";
+import { Favoritos } from "./Pages/Favoritos/Index";
+import { Teste } from "./Pages/Favoritos/teste"
+
 
 function Rotas() {
   return (
@@ -57,9 +59,13 @@ function Rotas() {
             />
             <Route path="*" element={<Pagina404 />} />
             <Route path="/calcular" element={<Calculator />} />
-          </Routes>
-        </BrowserRouter>
-      </CartContextProvider>
+            <Route path="/Favoritos" element={<Favoritos />} />
+            <Route path="/Teste" element={<Teste />} />
+
+          </Routes >
+
+        </BrowserRouter >
+      </CartContextProvider >
     </>
   );
 }
