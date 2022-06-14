@@ -26,7 +26,7 @@ export function Box() {
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 
-  const { HandleAddCart, HandleRemoveCart, carrinho } = useContext(CartContext)
+  const { HandleAddCart, HandleRemoveCart } = useContext(CartContext)
 
   return (
     <>
