@@ -3,7 +3,7 @@ import React from "react";
 export default function Calcular(props) {
 
     const calc = () => {
-        props.setResultado(Number(props.preco) + Number(props.imposto / (props.preco)))
+        props.setResultado(Number(props.preco) + Number(props.preco) / Number(props.preco));
 
     }
     return (
