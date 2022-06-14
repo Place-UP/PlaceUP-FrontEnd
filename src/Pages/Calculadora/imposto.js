@@ -8,15 +8,7 @@ export default function Imposto(props) {
                 <input type="text" value={props.imposto} onChange={(entrada) => { props.setImpostos(entrada.target.value) }} />
             </label>
 
-
         </div>
-
-
-
-
     )
-
-
-
 
 }
