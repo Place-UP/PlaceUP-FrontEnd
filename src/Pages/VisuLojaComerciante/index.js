@@ -6,18 +6,18 @@ import { MenuPrincipal } from "../../Components/NavVisualizacaoComerciante/index
 
 export function VisualizacaoComerciante() {
 
-  return (
-    <>
-      <HeaderComerciante />
-      <Main>
-        <div className="Container1">
-          <BarraBusca />
-          <Box />
-        </div>
-        <div className="Container2">
-          <MenuPrincipal />
-        </div>
-      </Main>
-    </>
-  );
+    return (
+        <>
+            <HeaderComerciante />
+            <Main>
+                <div className="Container1">
+                    <BarraBusca />
+                    <Box />
+                </div>
+                <div className="Container2">
+                    <MenuPrincipal />
+                </div>
+            </Main>
+        </>
+    );
 }

@@ -19,7 +19,7 @@ export function Calculator() {
 
                 {/* Valor pago do produto */}
 
-                Margem de lucro
+                {/* Margem de lucro */}
 
                 Custos adicionais
 
