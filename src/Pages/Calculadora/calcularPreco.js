@@ -2,11 +2,12 @@
 import React from "react";
 
 export default function Calcular(props) {
-    let impostos = (Number(props.lucro) + Number(props.imposto));
-    let imposto2 = impostos %= (Number(props.preco));
-    console.log(imposto2)
+    let impostos = ((Number(props.preco) / (Number(props.lucro) + Number(props.imposto))));
+
+
+    console.log(impostos)
     const calc = () => {
-        props.setResultado(imposto2 + Number(props.preco));
+        props.setResultado(impostos + Number(props.preco));
     }
     return (
         <div>
