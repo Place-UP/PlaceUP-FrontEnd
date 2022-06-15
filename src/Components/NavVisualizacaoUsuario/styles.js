@@ -6,27 +6,26 @@ const media = {
 };
 
 export const Section = styled.section`
-  .mainMenu {
+  .mainMenu{
     position: fixed;
     right: 0pt;
     max-width: 400px;
     width: 23%;
     height: 100vh;
+    background-color: #FFFFFF;
     margin: auto;
     transition: width 0.5s;
-    padding-top: 30px;
-
-    background-color: ${({ theme }) => theme.body};
+    padding-top: 30px; 
   }
 
-  .mainMenu-Mobile {
+  .mainMenu-Mobile{
     max-width: 400px;
     width: 95%;
     height: 100vh;
-    background-color: #ecf0f1;
+    background-color: #ECF0F1;
     margin: auto;
     transition: width 0.5s;
-    padding-top: 100px;
+    padding-top: 100px; 
   }
 
   .mobile {
@@ -220,12 +219,23 @@ export const Section = styled.section`
   }
 
   ${media.Mobile} {
+    .mainMenu-Mobile{
+      max-width: 400px;
+      width: 95%;
+      height: 100vh;
+      background-color: #ECF0F1;
+      margin: auto;
+      transition: width 0.5s;
+      padding-top: 100px; 
+    }
+
     .hamburger {
       display: block;
       padding-left: 200px;
     }
 
     .nav-menu {
+      max-width: 400px;
       position: fixed;
       right: -100%;
       top: -20px;
@@ -236,10 +246,9 @@ export const Section = styled.section`
     }
   }
 `;
-
 export const Profile = styled.div`
   width: 100%;
-
+  
   .profile {
     width: 90%;
     background-color: white;
@@ -248,6 +257,8 @@ export const Profile = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    background-color: ${({ theme }) => theme.body};
   }
 
   img {
@@ -259,6 +270,7 @@ export const Profile = styled.div`
   h1 {
     line-height: 60px;
     font-family: "Lato", cursive;
+    color: ${({ theme }) => theme.fontColor};
   }
 
   .iconExit {
@@ -267,10 +279,13 @@ export const Profile = styled.div`
     padding-right: 10px;
     cursor: pointer;
     padding-top: 5px;
+
+    color: ${({ theme }) => theme.fontColor};
   }
 `;
 
-export const DarkMode = styled.section`
+
+export const DarkMode = styled.button`
   width: 100%;
   display: flex;
   justify-content: center;

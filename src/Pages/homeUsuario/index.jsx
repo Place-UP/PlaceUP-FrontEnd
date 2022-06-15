@@ -1,4 +1,8 @@
 import React from "react";
+import { useContext } from 'react'
+import { CartContext } from '../../Common/Context'
+import { useState } from 'react';
+import { box } from '../../mock/boxVisalizer';
 import Carrinho from "./images/carrinho.png";
 import Bebida from "./images/bebida.png";
 import Mercado from "./images/mercado.png";
@@ -8,9 +12,20 @@ import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/FeedsUser/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { AiOutlineSearch } from "react-icons/ai"
-import { Home, SectionSearch, SearchBar, Filter, Category, FilterCategory, InfoCategory, Car } from "./styles";
+import { Home, SectionSearch, SearchBar, Car, ContainerSearch, Filter, Category, FilterCategory, InfoCategory } from "./styles";
 
 export function IndexHomeUser() {
+  const [query, setQuery] = useState("")
+
+  const search = () => {
+    if (!query) return ([])
+    return box.filter(
+      (item) =>
+        item.name.toLowerCase().normalize("NFD").replace(/[^a-zA-Zs]/g, "").includes(query) ||
+        item.price.includes(query)
+    )
+  }
+
   return (
     <>
       <Header />
@@ -20,13 +35,24 @@ export function IndexHomeUser() {
         <Category>
           <SectionSearch>
             <SearchBar>
-              <span><AiOutlineSearch /></span>
-              <input type="text" className="search" placeholder="Pesquisa"></input>
+              <AiOutlineSearch className="icon"/>
+              <input type="text" className="search" placeholder="Pesquisa"  onChange={(e) => setQuery(e.target.value)}></input>
             </SearchBar>
             <Car>
               <img src={Carrinho} alt="Carrinho" />
             </Car>
-          </SectionSearch>
+          </SectionSearch>      
+          {query &&
+            <ContainerSearch>
+              {search().map((item) => (
+                <div key={item.id} className="VisuBarSearch">                  
+                  <img src={item.image} alt="Foto Produto" />                  
+                  <span>{item.name}</span>
+                  <p>{item.price}</p>
+                </div>
+              ))}
+            </ContainerSearch>
+          }
 
           <Filter>
             <select name="Ordenar por">              

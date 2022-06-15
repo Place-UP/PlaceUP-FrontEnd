@@ -1,15 +1,10 @@
-import { useContext } from 'react'
-import { CartContext } from '../../Common/Context'
 import { SearchBar, Container, Main, Carrinho, Filter } from "./style";
-
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import { box } from '../../mock/boxVisalizer';
 import { useState } from 'react';
 
 
 export function BarraBusca() {
-
-  const { carrinho } = useContext(CartContext)
 
   const [query, setQuery] = useState("")
 
@@ -36,16 +31,15 @@ export function BarraBusca() {
           </SearchBar>
           <Carrinho>
             <AiOutlineShoppingCart className="car" />
-            {!!carrinho.length && <span>{carrinho.length}</span>}
           </Carrinho>
         </Container>
         {query &&
           <Filter>
             {search().map((item) => (
-              <div key={item.id}>
-                <p>{item.price}</p>
+              <div key={item.id} className="VisuBarSearch">
+                <img src={item.image} alt="Foto Produto" />                
                 <span>{item.name}</span>
-                <img src={item.image} />
+                <p>{item.price}</p>                
               </div>
             ))}
           </Filter>

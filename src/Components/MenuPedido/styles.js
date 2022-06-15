@@ -12,7 +12,7 @@ export const Section = styled.section`
     max-width: 400px;
     width: 23%;
     height: 100vh;
-    background-color: #ECF0F1;
+    background-color: #FFFFFF;
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px; 
@@ -132,7 +132,7 @@ export const Profile = styled.div`
 
   .profile{
     width: 90%;
-    background-color: white;
+    background-color: #ECF0F1;
     border-radius: 50px;
     margin: auto;
     display: flex;

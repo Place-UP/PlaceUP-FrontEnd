@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./styles";
-import perfil from "./images/perfil.png";
 import logoPlace from "./images/LogoPlace.svg";
 import { FaWheelchair } from "react-icons/fa";
-import { IoIosExit } from "react-icons/io";
 import { AiOutlineClockCircle, AiOutlineStar } from "react-icons/ai";
 import { MdOutlinePlace } from "react-icons/md";
-import { Section, Profile, DarkMode } from "./styles";
+import { Section, DarkMode } from "./styles";
+import { ThemeContext } from "../../Common/Context/DarkThemeProvider.js";
 
 export function MenuPrincipal() {
   function menuHamburger() {
@@ -17,10 +16,16 @@ export function MenuPrincipal() {
     navMenu.classList.toggle("active");
   }
 
+  const { themeToggle } = useContext(ThemeContext)
+
   return (
     <>
       <Section>
         <div className="mainMenu">
+          <DarkMode >
+            <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />
+            <label for="toggle"></label>
+          </DarkMode>
           <div className="ContainerPlace">
             <div className="PlaceArea">
               <img className="ImageLogoPlace" src={logoPlace} alt=".." />
@@ -34,11 +39,11 @@ export function MenuPrincipal() {
               <div className="Avaliation DefaulConfig">
                 <span>4,4</span>
                 <div className="ImageStars">
-                  <AiOutlineStar className="IconMenu " />
-                  <AiOutlineStar className="IconMenu " />
-                  <AiOutlineStar className="IconMenu " />
-                  <AiOutlineStar className="IconMenu " />
-                  <AiOutlineStar className="IconMenu " />
+                  <AiOutlineStar className="IconMenu" />
+                  <AiOutlineStar className="IconMenu" />
+                  <AiOutlineStar className="IconMenu" />
+                  <AiOutlineStar className="IconMenu" />
+                  <AiOutlineStar className="IconMenu" />
                 </div>
               </div>
               <div className="Location DefaulConfig">
@@ -54,20 +59,18 @@ export function MenuPrincipal() {
                 <h1 className="TitleCorredores">Corredores</h1>
 
                 <div className="SectionPlace">
-                  <div>
-                    <span>Snacks</span>
-                    <span>Limpeza</span>
-                    <span>Açougue</span>
-                    <span>Bebidas(+18)</span>
-                    <span>Snacks</span>
-                    <span>Limpeza</span>
-                    <span>Açougue</span>
-                    <span>Bebidas(+18)</span>
-                    <span>Snacks</span>
-                    <span>Limpeza</span>
-                    <span>Açougue</span>
-                    <span>Bebidas(+18)</span>
-                  </div>
+                  <span>Snacks</span>
+                  <span>Limpeza</span>
+                  <span>Açougue</span>
+                  <span>Bebidas(+18)</span>
+                  <span>Snacks</span>
+                  <span>Limpeza</span>
+                  <span>Açougue</span>
+                  <span>Bebidas(+18)</span>
+                  <span>Snacks</span>
+                  <span>Limpeza</span>
+                  <span>Açougue</span>
+                  <span>Bebidas(+18)</span>
                 </div>
               </div>
             </div>

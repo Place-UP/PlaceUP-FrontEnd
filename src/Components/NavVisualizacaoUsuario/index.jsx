@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useContext } from "react";
 import "./styles";
 import perfil from "./images/perfil.png";
 import logoPlace from "./images/LogoPlace.svg";
@@ -7,7 +7,7 @@ import { IoIosExit } from "react-icons/io";
 import { AiOutlineClockCircle, AiOutlineStar } from "react-icons/ai";
 import { MdOutlinePlace } from "react-icons/md";
 import { Section, Profile, DarkMode } from "./styles";
-
+import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
 
 
 export function MenuPrincipal() {
@@ -19,8 +19,9 @@ export function MenuPrincipal() {
     navMenu.classList.toggle("active");
   }
 
-  return (
+  const { themeToggle } = useContext(ThemeContext)
 
+  return (
     <Section >
       <div className="mainMenu">
         <Profile>
@@ -31,8 +32,8 @@ export function MenuPrincipal() {
           </div>
         </Profile>
 
-        <DarkMode>
-          <input id="toggle" class="toggle-control" type="checkbox" />
+        <DarkMode >
+          <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />
           <label for="toggle"></label>
         </DarkMode>
         <div className="ContainerPlace">

@@ -10,7 +10,7 @@ export const Home = styled.div`
   background-color: #ECF0F1;  
  `;
 
-export const SectionSearch = styled.div`
+export const SectionSearch = styled.div`  
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -30,33 +30,51 @@ export const SectionSearch = styled.div`
 `;
 
 export const SearchBar = styled.div`
-  width: 80%;
+  width: 90%;
+  height: 53px;
   display: flex;
-  align-items: center;
-  padding: 0px 2%;
-  justify-content: space-between;
-  background-color: #fff;
-  border-radius: 20px;
+  align-items: center; 
+  background: white;
+  border-radius: 26.5px;
+  font-family: "Poppins";
+  font-color: black;
 
-  span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
+  .icon {
+    min-width: 20px;
+    min-height: 20px;
+    font-size: 1.5rem;
+    padding: 15px;
+    color: black;
   }
-    
-  .search{
-    width: 95%;
-    height: 40px;
-    padding: 0px 20px 0px 10px;
-    background-color: white;
-    background-size: 15px;
-    background-position: 10px 9px;
-    background-repeat:no-repeat;     
-    border:0;
-    outline: 0;    
-    border-radius: 20px;
+
+  input {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0;
+    border: 0 none;
+    outline: 0;
+    padding-left: 2px;
+    color: black;
+
+    &::placeholder {
+      color: black;
+      ${media.MobileM}{
+        color: transparent;
+        &:hover {
+          color: black;
+          width: 20vw;
+        }
+      }
+    }
   }
+  
+  ${media.MobileM} {    
+    width: 50px;
+    &:hover {
+      transition: 0.5s;
+      width: 30vw;
+    }
+  } 
 `;
 
 export const Car = styled.div`
@@ -64,15 +82,107 @@ export const Car = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 
   img{
     width: 30px;
     height: 30px;                
-    cursor: pointer;
+    cursor: pointer;    
   }
 
-  ${media.MobileS}{ margin-left: 10px;}  
+  ${media.MobileM}{ margin-right: 5%;}    
 `;
+
+export const ContainerSearch = styled.div`
+  position: absolute;
+  width: 48%;
+  height: 50%;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 5px;
+  border: 1px solid rgb( 180, 180, 180 );
+  border-radius: 10px;
+  z-index: 10;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar{  display: none; }
+
+  .VisuBarSearch{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      opacity: 0.6;
+    }
+
+    p{
+      width: 20%;
+    }
+
+    span{
+      width: 20%;
+      font-size: 1.2rem;
+    }
+
+    img{
+      width: 125px;
+    }
+  }
+
+  ${media.Tablet}{ 
+    position: absolute;
+    width: 48%;
+    height: 50%;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 5px;
+    border: 1px solid rgb( 180, 180, 180 );
+    border-radius: 10px;
+    z-index: 10;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    
+    &::-webkit-scrollbar{  display: none; }
+
+    .VisuBarSearch{
+      cursor: pointer;
+      width: 100%;      
+      display: block;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 1px solid black;
+      padding: 10px auto;
+      transition: all 0.3s ease-in-out;
+  
+      &:hover{  opacity: 0.6;  }
+  
+      p{  
+        text-align: center;
+        margin: 20px;
+        width: auto;
+      }
+  
+      span{
+        text-align: center;
+        font-size: 1.2rem;
+      }
+  
+      img{  
+        width: 125px;
+        height: 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+      }
+    }
+  }
+`
 
 export const Filter = styled.div`
     width: 100%;

@@ -7,6 +7,8 @@ import { IconContext } from "react-icons";
 import { Navigation, Title, List, Icon } from "./styles";
 import Logo from "../../Img/PlaceUp animação.svg";
 
+import { darkMode, lightMode } from '../../Common/Context/theme'
+
 export function HeaderComerciante() {
   const path = useLocation().pathname;
 
@@ -23,8 +25,7 @@ export function HeaderComerciante() {
               <List className={`${path === "/" ? "Active" : ""}`}>
                 <Link
                   to="/"
-                  className={`${path === "/" ? "preto" : ""}`}
-                >
+                  className={`${path === "/" ? "preto" : ""}`}>
                   <Icon>
                     <BiHomeAlt className="IconsHeader" />
                   </Icon>

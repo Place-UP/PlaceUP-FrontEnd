@@ -12,7 +12,7 @@ export const Main = styled.main`
   width: 90%;
   display: block;
   margin: 0 auto;
-  background: ${({ theme }) => theme.body};
+  background: ${({ theme }) => theme.cards};
   ${Media.NavMob} {
     background: none;
     width: 90%;
@@ -95,7 +95,7 @@ export const ContWhitePart = styled.div`
     }
     .image {
       width: 220px;
-      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.100);
       border-radius: 10px;
       object-fit: cover;
 
@@ -114,7 +114,7 @@ export const ContWhitePart = styled.div`
 
     .AddIcon {
       position: absolute;
-      bottom: 5%;
+      bottom: 10%;
       right: -10%;
       margin-right: 3px;
       cursor: pointer;

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Main } from "./style";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { BarraBusca } from "../../Components/BarraDePesquisa/index";
@@ -9,7 +8,7 @@ export function VisualizacaoUsuario() {
   return (
     <>
       <Header />
-      <Main>
+      <Main>      
         <div className="Container1">
           <BarraBusca />
           <Box />

@@ -4,7 +4,10 @@ export const Icon = styled.span``;
 
 export const Title = styled.span``;
 
-export const List = styled.li``;
+export const List = styled.li`
+
+`;
+
 const Media = {
   MobileL: "@media(max-width:550px)",
 };
@@ -12,13 +15,14 @@ export const Navigation = styled.div`
   position: fixed;
   width: 70px;
   height: 95vh;
-  background-color: #2980b9;
+  background-color: ${({ theme }) => theme.bar};
   margin: auto;
   overflow-x: hidden;
   transition: width 0.5s;
   padding-top: 50px;
   border-radius: 0 14px 14px 0;
 
+  
 
   ${Media.MobileL} {
     width: 50px;
@@ -69,6 +73,8 @@ export const Navigation = styled.div`
     min-width: 60px;
     text-align: center;
     align-items: center;
+
+    color: ${({ theme }) => theme.icon};
     z-index: 1;
   }
 
@@ -82,6 +88,9 @@ export const Navigation = styled.div`
     font-family: lato;
     font-size: 1.5rem;
     align-items: center;
+
+    color: ${({ theme }) => theme.icon};
+
     ${Media.MobileL} {
       font-size: 1rem;
     }
