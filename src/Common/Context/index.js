@@ -1,6 +1,6 @@
 import { createContext } from 'react'
 import { useState } from 'react'
-
+import React from "react";
 
 export const CartContext = createContext({});
 CartContext.displayName = "Carrinho"

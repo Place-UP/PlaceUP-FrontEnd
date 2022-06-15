@@ -63,10 +63,10 @@ export function IndexHomeUser() {
 
             <select name="Acessibilidade">
               <option value="acessibilidade" select>Acessibilidade</option>
-              <option value="cego">Acessível para cego</option>
-              <option value="surdo">Acessível para surdo</option>
-              <option value="mudo">Acessível para mudo</option>
-              <option value="cadeirante">Acessível para cadeirante</option>
+              <option value="cego">Suporte para cego</option>
+              <option value="surdo">Suporte para surdo</option>
+              <option value="mudo">Suporte para mudo</option>
+              <option value="cadeirante">Suporte para cadeirante</option>
             </select>
           </Filter>
           

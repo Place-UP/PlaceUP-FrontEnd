@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-
+import React from 'react';
 //---------------icons-----------------
 import { BiRightArrow, BiLeftArrow } from 'react-icons/bi';
 

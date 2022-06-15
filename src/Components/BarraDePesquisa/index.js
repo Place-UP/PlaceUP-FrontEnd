@@ -1,21 +1,23 @@
 import { SearchBar, Container, Main, Carrinho, Filter } from "./style";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
-import { box } from '../../mock/boxVisalizer';
-import { useState } from 'react';
-
+import { box } from "../../mock/boxVisalizer";
+import { useState } from "react";
+import React from "react";
 
 export function BarraBusca() {
-
-  const [query, setQuery] = useState("")
+  const [query, setQuery] = useState("");
 
   const search = () => {
-    if (!query) return ([])
+    if (!query) return [];
     return box.filter(
       (item) =>
-        item.name.toLowerCase().normalize("NFD").replace(/[^a-zA-Zs]/g, "").includes(query) ||
-        item.price.includes(query)
-    )
-  }
+        item.name
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[^a-zA-Zs]/g, "")
+          .includes(query) || item.price.includes(query)
+    );
+  };
 
   return (
     <>
@@ -23,7 +25,8 @@ export function BarraBusca() {
         <Container>
           <SearchBar>
             <AiOutlineSearch className="icon" />
-            <input type="text"
+            <input
+              type="text"
               className="input"
               placeholder="Pesquisar"
               onChange={(e) => setQuery(e.target.value)}
@@ -33,17 +36,17 @@ export function BarraBusca() {
             <AiOutlineShoppingCart className="car" />
           </Carrinho>
         </Container>
-        {query &&
+        {query && (
           <Filter>
             {search().map((item) => (
               <div key={item.id} className="VisuBarSearch">
-                <img src={item.image} alt="Foto Produto" />                
+                <img src={item.image} alt="Foto Produto" />
                 <span>{item.name}</span>
-                <p>{item.price}</p>                
+                <p>{item.price}</p>
               </div>
             ))}
           </Filter>
-        }
+        )}
       </Main>
     </>
   );

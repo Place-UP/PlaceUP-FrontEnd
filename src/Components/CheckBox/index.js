@@ -1,5 +1,5 @@
 import { Forget } from "./style";
-
+import React from 'react';
 
 export function CheckBox() {
     return (
