@@ -12,7 +12,7 @@ export const Section = styled.section`
     max-width: 400px;
     width: 23%;
     height: 100vh;
-    background-color: #FFFFFF;
+    background-color: ${({ theme }) => theme.barRight};
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px; 

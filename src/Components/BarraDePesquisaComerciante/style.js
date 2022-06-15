@@ -33,7 +33,7 @@ export const SearchBar = styled.div`
   margin-top: 30px;
   display: flex;
   align-items: center;
-  width: 40vw;
+  width: 70vw;
   height: 53px;
   background-color: ${({ theme }) => theme.cards};
   border-radius: 26.5px;
@@ -53,7 +53,7 @@ export const SearchBar = styled.div`
     border: 0 none;
     outline: 0;
     margin-left: 10px;
-    
+    color: ${({ theme }) => theme.fontColor};
     ${Media.Tablet} {
       position: absolute;
       &:hover {

@@ -21,10 +21,13 @@ import { CartContextProvider } from "./Common/Context/index";
 import { Favoritos } from "./Pages/Favoritos/Index";
 import { Teste } from "./Pages/Favoritos/teste"
 
+import { GlobalStyles } from './Common/Context/theme'
+
 function Rotas() {
     return (
         <>
             <CartContextProvider>
+                <GlobalStyles />
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<LadingPage />} />

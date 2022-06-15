@@ -18,7 +18,6 @@ export const darkMode = {
     bar: "#2D3E50",
     icon: "#969FA8"
 }
-
 export const GlobalStyles = createGlobalStyle`
     body{
         background-color: ${props => props.theme.body};

@@ -64,14 +64,14 @@ align-items: center;
 background: white;
 border-radius: 26.5px;
 font-family: "Poppins";
-font-color: black;
+background-color: ${({ theme }) => theme.cards};
 
 .icon {
   min-width: 20px;
   min-height: 20px;
   font-size: 1.5rem;
   padding: 15px;
-  color: black;
+  color: ${({ theme }) => theme.fontColor};
 }
 
 input {
@@ -81,10 +81,10 @@ input {
   border: 0 none;
   outline: 0;
   padding-left: 2px;
-  color: black;
+  color: ${({ theme }) => theme.fontColor};
 
   &::placeholder {
-    color: black;
+    color: ${({ theme }) => theme.fontColor};
     ${Media.Tablet} {  
       color: transparent;
       &:hover {
