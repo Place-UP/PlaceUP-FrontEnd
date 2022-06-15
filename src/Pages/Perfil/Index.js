@@ -1,15 +1,18 @@
 import React from "react";
-import { } from "./style";
+import { Main } from "./style";
+import { Header, Body } from "../../Components/HeaderUsuario/HeaderUser";
 
-export function Perfil(){
-    return(
-        <>
-<h1>
-    ola
-</h1>
-
-        </>
-
-    )
-
+export function Perfil() {
+  return (
+    <>
+      <Header />
+      <Main>
+        <Body>
+          <div className="Title">
+            <p>Favoritos</p>
+          </div>
+        </Body>
+      </Main>
+    </>
+  );
 }

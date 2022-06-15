@@ -3,7 +3,6 @@ import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import { box } from "../../mock/boxVisalizer";
 import { useState } from "react";
 import React from "react";
-import ReactDOM from "react-dom";
 
 export function BarraBusca() {
   const [query, setQuery] = useState("");
