@@ -1,7 +1,11 @@
 {
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
+  "edito}r.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "eslint.nodeEnv": "",
+  "eslint.quiet": false,
+  "eslint.rules.customizations": [
+  ],
 }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import React from 'react';
 const Media = {
     Laptop: "@media(max-width: 1024px)",
     Tablet: "@media(max-width: 768px)",

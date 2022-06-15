@@ -8,7 +8,7 @@ export function VisualizacaoUsuario() {
   return (
     <>
       <Header />
-      <Main>      
+      <Main>
         <div className="Container1">
           <BarraBusca />
           <Box />
