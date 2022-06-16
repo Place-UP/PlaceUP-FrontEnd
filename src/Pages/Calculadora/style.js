@@ -15,6 +15,9 @@ export const Main = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .Button {
+      cursor: pointer;
+    }
   }
   .container {
     width: 90%;
@@ -202,13 +205,13 @@ export const InputArea = styled.div`
   }
 `;
 
-export const ButtonStyle = styled.div`
+export const ButtonStyle = styled.button`
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 209px;
   height: 50px;
-  cursor: pointer;
   background: #2ba0d2;
   box-shadow: 9px 27px 20px rgba(0, 0, 0, 0.1);
   border-radius: 19px;
@@ -219,4 +222,7 @@ export const ButtonStyle = styled.div`
   line-height: 48px;
   text-align: center;
   color: #fff;
+  p {
+    cursor: pointer;
+  }
 `;

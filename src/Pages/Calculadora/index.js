@@ -13,11 +13,11 @@ import BackButton from "./img/BackButton.svg";
 export function Calculator() {
   const [imposto, setImposto] = useState("");
   const [preco, setpreco] = useState("");
-  const [result, setResultado] = useState();
-  const [lucro, setlucro] = useState();
-  const [adicional, setadicional] = useState();
-  const [adicionalPorcentagem, setadicionalPorcentagem] = useState();
-  const [Product, setProduct] = useState();
+  const [result, setResultado] = useState("");
+  const [lucro, setlucro] = useState("");
+  const [adicional, setadicional] = useState(null);
+  const [adicionalPorcentagem, setadicionalPorcentagem] = useState(null);
+  const [Product, setProduct] = useState("");
   return (
     <>
       <Main>
@@ -54,6 +54,7 @@ export function Calculator() {
                 adicionalPorcentagem={adicionalPorcentagem}
                 setadicionalPorcentagem={setadicionalPorcentagem}
               />
+
               <Calcular
                 adicionalPorcentagem={adicionalPorcentagem}
                 adicional={adicional}
