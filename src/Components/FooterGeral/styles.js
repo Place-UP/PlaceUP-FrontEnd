@@ -11,12 +11,9 @@ export const Footer = styled.div`
   background-color: #2c3e50;
 
   ${media.TabletAndMobile} {
-    .container {
-      /* width: 100%; */
-      padding: 20px 0px;
+    .container {      
       display: block;
       flex-direction: row;
-      justify-content: space-evenly;
     }
 
     .logo-img {
@@ -65,11 +62,11 @@ export const Footer = styled.div`
 `;
 
 export const ContainerFooter = styled.div`
+  width: 100%;
   padding: 20px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-left: 70px;
 `;
 
 export const LinksFooter = styled.div`

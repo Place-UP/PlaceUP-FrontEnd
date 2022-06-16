@@ -26,7 +26,6 @@ export const Section = styled.section`
 
   ${media.Tablet} {
     display: none;
-
     .cart{ 
       width: 50%;
     }
@@ -122,12 +121,14 @@ export const Scheduling = styled.div`
 
 export const Product = styled.div`
     margin-top: 50px;
+    height: 250px;
+    overflow-y: scroll;
 
     p{
       color: #2980B9;
       display: flex;
       padding: 15px 5%; 
-      cursor: pointer;
+      cursor: pointer;      
     }
     .product{
       display: flex;
@@ -141,9 +142,16 @@ export const ProductContainer = styled.div`
     width: 90%;
     margin: 20px auto;
     border-bottom: 2px solid #2980B9;
+
+    h1{      
+      margin-left: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 `;
 
-export const finalize = styled.div`
+export const Finalize = styled.div`
     margin-top: 80px;
 
     .total{
