@@ -2,16 +2,27 @@
 import React from "react";
 import { ButtonStyle } from "./style";
 export default function Calcular(props) {
-    let calculoPorcentagem = (Number(props.lucro) + Number(props.imposto));
-    let Markup = (calculoPorcentagem / (100 - calculoPorcentagem) + 1);
+  let adicional = Number(props.adicionalPorcentagem);
+  let calculoPorcentagem =
+    Number(props.lucro) +
+    Number(props.imposto) +
+    Number(props.adicionalPorcentagem);
 
-    function calc() {
-        props.setResultado(Markup * Number(props.preco));
-    }
+  let Markup = calculoPorcentagem / (100 - calculoPorcentagem) + 1;
 
-    return (
-        <ButtonStyle>
-            <button onClick={calc}> Calcular </button>
-        </ButtonStyle>
-    )
+  function calc() {
+    props.setResultado(
+      Markup * (Number(props.preco) + Number(props.adicional))
+    );
+  }
+
+  return (
+    <div className="Button">
+      <ButtonStyle>
+        <button onClick={calc}>
+          <p> Calcular</p>
+        </button>
+      </ButtonStyle>
+    </div>
+  );
 }
