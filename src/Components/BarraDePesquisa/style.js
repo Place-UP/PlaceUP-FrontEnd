@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Back } from './../../Pages/cadastroUsuario/style';
+import { keyframes } from "styled-components";
+
 
 const Media = {
   Desktop: "@media(max-width:1300px)",
@@ -13,22 +14,34 @@ export const Main = styled.main`
   width: 90%;
   display: block;
   margin: auto;
+
   ${Media.Laptop} {
     width: 80%;
   }
+
+  .Active{
+    display: block;
+  }
+
+  .None {
+    display: none;
+  }
+
 `;
 
 export const Container = styled.div`
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
-  ${Media.Laptop} { width: 85%; }
+  ${Media.Laptop} { 
+    width: 85%; 
+    }
 `;
 
 export const Carrinho = styled.div`
-    position: relative;
     margin-right: 25px;
 
     span{
@@ -47,14 +60,58 @@ export const Carrinho = styled.div`
       height: 30px;
       cursor: pointer;
       color: ${({ theme }) => theme.fontColor};
-      &:nth-child(1) {
-        margin-left: 10px;
-      }
-      &:nth-child(2) {
-        cursor: pointer;
+      
+      &:hover{
+        opacity: 0.7;
       }
     }
 `
+
+export const BoxCarrinho = styled.div`
+  position: absolute;
+  width: 60%;
+  right: 25%;
+  top: 15%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 10;
+
+
+  header{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    
+     i{
+        color: #5ABDD4;
+        font-size: 3.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        &:hover{
+          opacity: 0.7;
+        }
+    }
+
+    .BoxTitle{
+      width: 60%;
+      font-family: 'Poppins';
+        p{
+          font-size: 1.3rem;
+          color: #D9D9D9;
+        }
+
+        span{
+          font-size: 1.2rem;
+        }
+    }
+  }
+
+`
+
 
 export const SearchBar = styled.div`
 width: 90%;
@@ -194,3 +251,4 @@ ${Media.Tablet}{
   }
 }
 `
+

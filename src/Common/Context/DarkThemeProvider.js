@@ -16,7 +16,6 @@ export const DarkThemeProvider = ({ children }) => {
 
     function themeToggle() {
         setTheme(theme === "light" ? "dark" : "light")
-
     }
 
     return (

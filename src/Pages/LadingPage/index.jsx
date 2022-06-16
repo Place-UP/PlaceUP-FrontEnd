@@ -143,7 +143,7 @@ export function LadingPage() {
           <ContentText>
             <h1>Calcula com a gente </h1>
             <p>Calcule seus produtos de forma efetiva. </p>
-            <BtnCard>Ver mais</BtnCard>
+            <BtnCard><Link to="/Cursos">Ver mais</Link></BtnCard>
           </ContentText>
         </ContentRight>
         <Box primary>

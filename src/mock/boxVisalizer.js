@@ -7,6 +7,7 @@ export const box = [
     image: "https://imgcentauro-a.akamaihd.net/230x230/94313731.jpg",
 
   },
+
   {
     id: 2,
     name: "Tênis Nike Revolution 5",

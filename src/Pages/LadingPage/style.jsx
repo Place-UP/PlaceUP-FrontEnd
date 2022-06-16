@@ -411,7 +411,7 @@ export const ContentText = styled.article`
     h1{
         font-family: 'Bakbak One', cursive;
         font-weight: 500;
-        font-size: 2.5rem;
+        font-size: 3rem;
         color: #2D3E50;
 
         ${Media.TabletM}{
@@ -427,7 +427,7 @@ export const ContentText = styled.article`
         margin-top: 2.5rem;
         margin-bottom: 2rem;
         font-weight: 300;
-        font-size: 1.2em;
+        font-size: 1.5em;
         
         ${Media.TabletM}{
             font-size: 1rem;

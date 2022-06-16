@@ -50,7 +50,7 @@ export const Buttons = styled.div`
 
         &:hover{
             font-size: 1.9rem;
-            opacity: 0.8;
+           opacity: 0.8;
         }
 
         

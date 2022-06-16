@@ -35,7 +35,6 @@ export function Depoimentos() {
             <Container ref={carrousel}>
                 {depoiments.map((item) => (
                     <Box key={item.id}>
-
                         <PerfilFoto>
                             <img src={item.img} alt="Foto de perfil" />
                             <span>{item.name}</span>
@@ -45,8 +44,6 @@ export function Depoimentos() {
                         </Coment>
                     </Box>
                 ))}
-
-
             </Container>
         </>
     );
