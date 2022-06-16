@@ -22,11 +22,9 @@ export function Politica() {
             <br/>
             <br/>
             Quando Você acessar, utilizar ou interagir com a Plataforma, podemos coletar Dados Pessoais sobre Você. Este documento (que também chamaremos de “Política de Privacidade” ou simplesmente de “Política”) tem o propósito de esclarecer como Dados Pessoais podem ser coletados, usados, compartilhados, armazenados na e de qualquer forma tratados na nossa operação da Plataforma.
-            <br/>
-            <br/>
-            1.Definições importantes:
-            <br/>
-            <br/>
+
+            <h1>1.Definições importantes:</h1>
+
             BANCO DE DADOS: Conjunto estruturado de dados pessoais ou anônimizados, localizado em um ou em vários locais, em suporte eletrônico ou físico;
             <br/>
             <br/>
@@ -97,11 +95,9 @@ export function Politica() {
             <br/>
             <br/>
             A PlaceUP e o USUÁRIO poderão ser mencionados individualmente neste Instrumento como “Parte” ou em conjunto como “Partes”.
-            <br/>
-            <br/>
-            2.Obtenção e Uso dos Dados e Informações dos Usuários:
-            <br/>
-            <br/>
+
+            <h1>2.Obtenção e Uso dos Dados e Informações dos Usuários:</h1>
+
             Os dados e informações (sejam eles PESSOAIS ou ANONIMIZADOS) serão obtidos quando o USUÁRIO: (a) Passar a utilizar os SERVIÇOS da PLATAFORMA; (b) Interagir com as diversas ferramentas existentes na PLATAFORMA, fornecendo as informações voluntariamente ou involuntariamente (no caso de obtenção de informações sobre a frequência de utilização da PLATAFORMA ou os tipos de informações envolvidas; ou (c) Entrar em contato por meio dos canais de comunicação disponíveis na PLATAFORMA.
             <br/>
             <br/>
@@ -109,11 +105,9 @@ export function Politica() {
             <br/>
             <br/>
             Poderão ser solicitados dos USUÁRIOS, dentre outros, os seguintes dados: CPF/CNPJ, nome completo, data de nascimento, endereço residencial, endereço de e-mail, nome completo da mãe e número de telefone, cópia de documento de identidade ou de Carteira Nacional de Habilitação, “selfie”, autodeclaração de Pessoa Exposta Politicamente (se aplicável), IP, hora e data de acesso, geolocalização, dados sobre o dispositivo de acesso e cookies, perfil e comportamento de compra, volume e número de transações e por meio da Plataforma, dados gerais de navegabilidade, utilização da Plataforma e funis de eventos.
-            <br/>
-            <br/>
-            3.Prazos de Armazenamento dos Dados e Informações:
-            <br/>
-            <br/>
+
+            <h1>3.Prazos de Armazenamento dos Dados e Informações:</h1>
+
             Todas as MENSAGENS DE DADOS e informações coletadas dos USUÁRIOS serão incorporados ao BANCO DE DADOS da PLATAFORMA, sendo seus responsáveis e proprietários a PlaceUP. Os dados e informações coletados estarão armazenados em ambiente seguro, observado o estado da técnica disponível e criptografados, e somente poderão ser acessados por pessoas qualificadas e autorizadas pela PlaceUP. Considerando que nenhum sistema de segurança é absolutamente seguro, a PlaceUP se exime de quaisquer responsabilidades por eventuais danos e/ou prejuízos decorrentes de falhas, vírus ou invasões do BANCO DE DADOS na PLATAFORMA.
             <br/>
             <br/>
@@ -121,11 +115,9 @@ export function Politica() {
             <br/>
             <br/>
             Para determinar o período de retenção adequado para cada tipo de Dado Pessoal tratado pela PlaceUP, sempre consideramos a quantidade, a natureza e a sensibilidade de tais Dados, o risco potencial de danos decorrentes do seu uso não autorizado ou da sua divulgação, a finalidade do tratamento e se podemos alcançar tais propósitos por outros meios, e os requisitos legais aplicáveis.
-            <br/>
-            <br/>
-            4.Uso dos Dados e Informações:
-            <br/>
-            <br/>
+
+            <h1>4.Uso dos Dados e Informações:</h1>
+
             A quantidade e o tipo de Dados Pessoais coletados pela PlaceUP variam conforme o seu uso da Plataforma. Coletaremos diferentes Dados caso você seja um Consumidor utilizando a Plataforma, um Mandatário ou um representante de um dos nossos Estabelecimentos Parceiros.
             <br/>
             <br/>
@@ -159,11 +151,9 @@ export function Politica() {
             <br/>
             <br/>
             Os registros mencionados poderão ser utilizados pela PlaceUP em casos de investigação de fraudes ou de alterações indevidas em seus sistemas e cadastros, assim como no compartilhamento com terceiros de forma anonimizada.
-            <br/>
-            <br/>
-            5.COM QUEM A PlaceUP COMPARTILHA DADOS PESSOAIS?
-            <br/>
-            <br/>
+
+            <h1>5.COM QUEM A PlaceUP COMPARTILHA DADOS PESSOAIS?</h1>
+
             Para viabilizar a operação da Plataforma, a PlaceUP depende de relações específicas com diferentes pessoas, incluindo parceiros de negócio. Nessas relações, é possível que Dados Pessoais sejam compartilhados para suportar o regular funcionamento da Plataforma, como no contexto da prestação de serviços de hospedagem de dados, por exemplo. Desta forma, nos reservamos o direito de compartilhar seus Dados Pessoais com os grupos de recipientes abaixo indicados, sempre respeitando a legislação brasileira, e adotaremos as medidas jurídicas, técnicas e organizacionais adequadas visando à preservação da sua privacidade e da integridade de seus Dados Pessoais.
             <br/>
             <br/>
@@ -177,17 +167,13 @@ export function Politica() {
             <br/>
             <br/>
             Alguns Dados Pessoais tratados na Plataforma também podem ser tratados de forma conjunta pela PlaceUP com outras empresas do seu grupo econômico Rappi para fins de reporte e inteligência de mercado. Nesses casos, os Dados Pessoais envolvidos podem ser transferidos para fora do Brasil, mais especificamente para Estados Unidos, Colômbia, México, Argentina, Peru, Equador, Chile e Costa Rica.
-            <br/>
-            <br/>
-            6.Cookies:
-            <br/>
-            <br/>
+
+            <h1>6.Cookies:</h1>
+
             A PLATAFORMA poderá fazer o uso de COOKIES e tecnologias similares para customizar a experiência dos Usuários na Plataforma e para gerar informações relevantes sobre a forma de uso da Plataforma pelos Usuários para a Rappi. Para entender como Cookies e tecnologias similares são utilizadas pela PlaceUP e para exercer seus direitos de escolha quanto ao uso de referidas tecnologias na Plataforma, por favor verifique a nossa Política de Cookies.
-            <br/>
-            <br/>
-            7.Direitos do USUÁRIO:
-            <br/>
-            <br/>
+
+            <h1>7.Direitos do USUÁRIO:</h1>
+
             Seus Dados Pessoais são seus e a legislação brasileira lhe garante, na sua condição de Titular de Dados Pessoais, uma série de direitos relacionados aos seus Dados. Nós estamos comprometidos com o cumprimento desses direitos e, nessa seção, explicaremos quais são esses direitos e como você pode exercê-los junto à PlaceUP.
             <br/>
             <br/>
@@ -236,11 +222,9 @@ export function Politica() {
             <br/>
             <br/>
             LIMITAÇÕES AOS DIREITOS DOS USUÁRIOS: EM ALGUNS CASOS, A PlaceUP PODE TER MOTIVOS LEGÍTIMOS PARA DEIXAR DE ATENDER A UMA SOLICITAÇÃO DE EXERCÍCIO DE DIREITOS. ESSAS SITUAÇÕES INCLUEM, POR EXEMPLO, CASOS EM QUE UMA REVELAÇÃO DE INFORMAÇÕES ESPECÍFICAS PODERIA VIOLAR DIREITOS DE PROPRIEDADE INTELECTUAL OU SEGREDOS DE NEGÓCIO DA PlaceUP OU DE TERCEIROS, BEM COMO CASOS EM QUE PEDIDOS DE ANONIMIZAÇÃO, BLOQUEIO OU ELIMINAÇÃO DE DADOS NÃO POSSAM SER ATENDIDOS EM RAZÃO DA EXISTÊNCIA DE OBRIGAÇÃO DA PlaceUp DE RETER DADOS, SEJA PARA CUMPRIR OBRIGAÇÕES LEGAIS, REGULATÓRIAS OU PARA POSSIBILITAR A DEFESA DE DIREITOS DA RAPPI OU DE TERCEIROS, INCLUSIVE EM DISPUTAS DE QUALQUER NATUREZA.
-            <br/>
-            <br/>
-            8. Política de Proteção de Dados Pessoais
-            <br/>
-            <br/>
+
+            <h1>8. Política de Proteção de Dados Pessoais</h1>
+
             A PlaceUP sempre planeja e toma medidas técnicas, administrativas e organizacionais para proteger todos os Dados Pessoais que trata contra perdas, usos não autorizados ou outras situações ilícitas ou acidentais de tratamento indevido. Todos os Dados Pessoais tratados pela PlaceUP são armazenados e processados em ambientes operacionais seguros não acessíveis ao público.
             <br/>
             <br/>
@@ -248,26 +232,20 @@ export function Politica() {
             <br/>
             <br/>
             A entrada ou uso não autorizado de contas, falhas de hardware ou software e outros fatores alheios à vontade e ao controle razoável da PlaceUP podem comprometer a segurança dos seus Dados Pessoais a qualquer momento. Por isso, pedimos que você nos ajude a manter um ambiente seguro para todos. Além de manter as suas informações de acesso à Plataforma secretas e adotar práticas visando à segurança da sua conta e aos seus Dados, pedimos que caso você identifique ou tome conhecimento de algo que comprometa a segurança dos seus Dados, por favor entre em contato conosco enviando uma mensagem de e-mail para legal.br@rappi.com e detalhando a situação para que possamos ajudá-lo da melhor forma.
-            <br/>
-            <br/>
-            9. Das Disposições Gerais:
-            <br/>
-            <br/>
+
+            <h1>9. Das Disposições Gerais:</h1>
+
             Como estamos sempre buscando melhorar a Plataforma e os nossos serviços, essa Política de Privacidade pode passar por atualizações. Desta forma, recomendamos que você visite periodicamente esta página para que tenha conhecimento sobre todas as modificações que faremos. Caso sejam feitas alterações relevantes, como aquelas que se refiram à necessidade de se obter um consentimento seu, publicaremos essa atualização e solicitaremos o seu consentimento, conforme a necessidade de cada caso.
             <br/>
             <br/>
             As disposições constantes desta Política de Privacidade poderão ser atualizadas ou modificadas a qualquer momento, cabendo ao USUÁRIO verificá-las sempre que efetuar o acesso à PLATAFORMA.
-            <br/>
-            <br/>
-            10.Lei Aplicável e Jurisdição:
-            <br/>
-            <br/>
+
+            <h1>10.Lei Aplicável e Jurisdição:</h1>
+
             A presente Política de Privacidade será interpretada segundo a legislação brasileira, no idioma português, sendo eleito o Foro da Comarca de São Paulo para dirimir qualquer litígio, questão ou dúvida superveniente, com expressa renúncia de qualquer outro, por mais privilegiado que seja.
-            <br/>
-            <br/>
-            11. Aceitação Total deste Termo
-            <br/>
-            <br/>
+
+            <h1>11. Aceitação Total deste Termo</h1>
+
             O USUÁRIO declara ter a capacidade legal, dando o seu CONSENTIMENTO expresso dos termos constantes desta Política de Privacidade, sendo que aceita a totalidade das situações reguladas neste documento</p>
         </Content>
 

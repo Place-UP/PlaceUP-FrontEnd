@@ -7,10 +7,7 @@ const media = {
 };
 
 export const Home = styled.div` 
-  text-align: center;
-  ${media.MobileS}{    
-    p{width: 90%;}
-  }
+  text-align: center; 
 `;
 
 export const Category = styled.div`
@@ -40,10 +37,12 @@ export const Category = styled.div`
 
 export const Content = styled.div`
   h1{   
+    width: 60%;
     font-size: 20px; 
     font-weight: 800;    
     font-family: 'Bakbak One', cursive;
     color: #297FB8;
+    margin: 50px auto;
   }
 
   .underlined{
@@ -54,9 +53,19 @@ export const Content = styled.div`
   }
 
   p{
-    width: 50%;
+    width: 60%;
     font-weight: 400;
     font-size: 20px;
     margin: 50px auto;
   }  
+
+  ${media.Tablet}{    
+    p{ 
+      width: 80%;
+    }
+  }
+
+  ${media.MobileS}{    
+    p{width: 90%;}
+  }
 `;

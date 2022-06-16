@@ -8,6 +8,10 @@ const media = {
 
 export const Home = styled.div`
   background-color: #ecf0f1;
+
+  ${media.MobileM} {   margin-left: 6%;  }  
+
+  ${media.MobileS} {   margin-left: 2%;  } 
 `;
 
 export const SectionSearch = styled.div`
@@ -19,8 +23,8 @@ export const SectionSearch = styled.div`
   border-radius: 50%;
 
   ${media.MobileM} {
-    width: 80%;
-    margin-right: auto;
+    width: 80%;    
+    margin-right: auto;     
   }
 
   ${media.MobileS} {
@@ -193,7 +197,7 @@ export const ContainerSearch = styled.div`
 `;
 
 export const Filter = styled.div`
-  width: 100%;
+  width: 100%;  
   margin: 30px auto;
 
   select {
@@ -217,11 +221,11 @@ export const Filter = styled.div`
       width: 150px;
       height: 40px;
       padding: 0px 4px;
-      margin: 10px 0px;
+      margin: 10px auto;
       border-radius: 20px;
     }
-    margin-left: auto;
     margin-right: auto;
+    margin-left: 5%;
   }
 `;
 
@@ -260,7 +264,7 @@ export const Category = styled.div`
       width: 100%;
       grid-template-columns: auto auto auto 20px;
       grid: auto / auto;
-      margin: 0 auto;
+      margin: 0 auto;     
     }
 
     ${media.MobileS} {
@@ -272,7 +276,12 @@ export const Category = styled.div`
   }
 
   ${media.MobileM} {
-    margin-left: auto;
+    margin-left: 15%;
+    margin-right: auto;
+  }
+
+  ${media.MobileS} {
+    margin-left: 12%;
     margin-right: auto;
   }
 `;

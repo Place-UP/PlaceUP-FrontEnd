@@ -46,13 +46,27 @@ export const Section = styled.section`
   }
 
   .bar{
-      display: block;
-      width: 30px;
-      height: 5px;
-      margin: 5px auto;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
-      background-color: black;
+    display: block;
+    width: 30px;
+    height: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: black;
+}
+
+  .bar:nth-child(1){
+      position: fixed;    
+      margin: 5px auto auto -20px;
+  }
+
+  .bar:nth-child(2){
+    position: fixed;
+    margin: 15px auto auto -20px;
+  }
+
+  .bar:nth-child(3){
+    position: fixed;
+    margin: 25px auto auto -20px;
   }
 
   ${media.Tablet} {
@@ -60,15 +74,13 @@ export const Section = styled.section`
 
     .hamburger {
       display: block;
-      padding:  0 1%;
-      padding-lef: 20px; 
+      margin-right: 35px;
     }    
   
     .mobile{   
+        display: block;
         float: right;
-        margin: 7px 10% 0 2%;
-        display: block;  
-        z-index: 3;
+        z-index: 99;
     }
 
     .desktop{display: none;}
@@ -77,7 +89,6 @@ export const Section = styled.section`
         width: 100%;
         top: 0;
     }
-
     .hamburger.active .bar:nth-child(2){  opacity: 0; }
 
     .hamburger.active .bar:nth-child(1){
@@ -149,6 +160,9 @@ export const Profile = styled.div`
   h1{
     line-height: 60px;    
     font-family: 'Lato', cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .iconExit{
@@ -269,5 +283,8 @@ export const ProfileSuggestion = styled.div`
     font-size: 20px;  
     font-weight: bold;
     font-family: 'Lato', cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 `;

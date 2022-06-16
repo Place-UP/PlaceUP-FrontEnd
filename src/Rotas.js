@@ -20,8 +20,9 @@ import { Calculator } from "./Pages/Calculadora/index";
 import { CartContextProvider } from "./Common/Context/index";
 import { Favoritos } from "./Pages/Favoritos/Index";
 import { Cursos } from "./Pages/Cursos";
-import { Perfil } from "./Pages/Perfil/Index";
 import { GlobalStyles } from './Common/Context/theme'
+import { Perfil } from "./Pages/Perfil/Index";
+
 
 function Rotas() {
     return (

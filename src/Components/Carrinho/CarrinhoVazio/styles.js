@@ -10,7 +10,7 @@ export const Section = styled.section`
     position: fixed;
     right: 0pt;
     max-width: 400px;
-    width: 23%;
+    width: 25%;
     height: 100vh;
     background-color: #ECF0F1;
     margin: auto;
@@ -26,13 +26,14 @@ export const Section = styled.section`
   }
   
   ${media.Tablet} {
-    .CarrinhoVazio{ 
+    display: none;
+    .EmptyCart{ 
       width: 50%;
     }
   }   
-
+  
   ${media.Mobile} {
-    .CarrinhoVazio{ 
+    .EmptyCart{ 
       width: 100%;
     }
   }
