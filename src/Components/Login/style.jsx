@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
+const Media = {
+    MobileL: "@media(min-width: 425px)",
+    Tablet: "@media(min-width: 768px)",
+    Laptop: "@media(min-width: 1024px)"
+}
+
 export const Container = styled.main`
     width: 100%;
     height: 100%;
@@ -142,30 +148,25 @@ export const Ondulacao = styled.div`
     }
 `
 
-
-
 export const Formulario = styled.form`
-    width: 50%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     animation: 1.4s ${aparecaForm} ease-in;
     
-
-    @media screen and (max-width: 870px) {
-           width: 60%;  
+    ${Media.Tablet}{
+        width: 70%;
     }
 
-    @media screen and (max-width: 550px) {
-           width: 100%;
-           
+    ${Media.Laptop}{
+        width: 40%;
     }
 
     input[type=submit]{
-        width: 190px;
+        width: 69%;
         height: 55px;
-        padding: 13px 5px;
         color: #fff;
         margin: auto;
         background-color: var(--Azul-Escuro);
@@ -182,14 +183,13 @@ export const Formulario = styled.form`
 
         }
 
-        @media screen and (max-width: 425px) {
+        @media screen and (min-width: 425px) {
             display: flex;
             justify-content: center;
             align-items: center;
             
             font-size: 1rem;
-            width: 115px;
-            height: 55px;
+            width: 50%;
         }
       
     }
@@ -207,11 +207,15 @@ export const Icon = styled.span`
 
 export const Legend = styled.legend`
     text-align: center;
-    font-size: 2.35em;
+    font-size: 1.6em;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     color: var(--Azul--legend);
     margin-bottom: 60px;
+
+    ${Media.MobileL}{
+        font-size: 2.2rem;
+    }
     
 `
 
@@ -246,17 +250,13 @@ export const OR = styled.div`
 `
 
 export const LabelBox = styled.label`
-    width: 65%;
+    width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: ${(props) => props.primary ? "80px" : "0"};
     border-bottom: 5px solid var(--Azul-Escuro);
-
-    @media screen and (max-width: 425px) {
-           width: 80%;
-        }
 `
 
 export const CampoInput = styled.input`
