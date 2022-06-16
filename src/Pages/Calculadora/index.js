@@ -4,6 +4,7 @@ import Preco from "./preco";
 import Imposto from "./imposto";
 import Calcular from "./calcularPreco";
 import Lucros from "./margemLucro";
+import Resultado from "./resultado";
 import Logo from "./img/mainLogo.svg";
 import BackButton from "./img/BackButton.svg";
 export function Calculator() {
@@ -37,7 +38,7 @@ export function Calculator() {
                                 <p>Margem de lucro: {lucro} </p>
                                 <p>Valor pago:{preco} </p>
                             </div>
-                            <span>Valor: {result}</span>
+                            <Resultado resultado={result} />
                         </div>
                     </div>
                 </div>
