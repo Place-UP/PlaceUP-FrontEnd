@@ -19,10 +19,9 @@ import { VisualizacaoComerciante } from "./Pages/VisuLojaComerciante/index";
 import { Calculator } from "./Pages/Calculadora/index";
 import { CartContextProvider } from "./Common/Context/index";
 import { Favoritos } from "./Pages/Favoritos/Index";
-
-import { GlobalStyles } from './Common/Context/theme'
-
+import { Cursos } from "./Pages/Cursos";
 import { Perfil } from "./Pages/Perfil/Index";
+import { GlobalStyles } from './Common/Context/theme'
 
 function Rotas() {
     return (
@@ -52,6 +51,7 @@ function Rotas() {
                         <Route path="/calcular" element={<Calculator />} />
                         <Route path="/Perfil" element={<Perfil />} />
                         <Route path="/Favoritos" element={<Favoritos />} />
+                        <Route path="/Cursos" element={<Cursos />} />
                     </Routes>
                 </BrowserRouter>
             </CartContextProvider>
