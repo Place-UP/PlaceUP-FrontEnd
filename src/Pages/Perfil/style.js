@@ -10,12 +10,16 @@ const Media = {
 
 export const Main = styled.main``;
 
-export const Bodys = styled.body`
+export const Body = styled.body`
+  width: 60%;
+  height: 570px;
+  margin-left: 13%;
+  margin-right: 28%;
+
   .Title {
     position: relative;
     height: 90px;
-    left: 3%;
-    top: 9%;
+    top: 13%;
     ${Media.Tablet} {
       top: -50px;
     }
@@ -30,3 +34,26 @@ export const Bodys = styled.body`
     }
   }
 `;
+
+export const Photo = styled.div`
+  width: 160px;
+  height: 160px;
+`;
+ export const Inf = styled.div`
+background-color: aqua;
+width: 70%;
+flex-direction: row;
+display: flex;
+margin-top:55px;
+ `
+
+ export const NameEdit = styled.div`
+ background-color:green;
+flex-direction: row;
+display: flex;
+justify-content: space-between;
+ `
+ export const Locate = styled.div`
+ background-color:red;
+ `
+ 

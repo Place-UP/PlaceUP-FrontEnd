@@ -44,11 +44,12 @@ export const Itens = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 10px 20px;
+  margin-bottom: 50px;
 `;
 export const Merchant1 = styled.div`
   width: 150px;
   height: 185px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   box-shadow: rgba(41, 127, 184, 1) 0px 8px 0px 0px;
   border-radius: 40px;
   flex-direction: column;
