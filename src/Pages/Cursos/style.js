@@ -41,6 +41,14 @@ export const Img = styled.img`
     ${Media.MobileL}{
         width: 190px;
     }
+
+    ${Media.Tablet}{
+        width: 370px;
+    }
+
+    ${Media.Laptop}{
+        width: 550px;
+    }
 `
 
 export const BoxImg = styled.div`
@@ -53,11 +61,27 @@ export const BoxImg = styled.div`
         ${Media.MobileL}{
             width: 180px;
         }
+
+        ${Media.Tablet}{
+            width: 280px;
+        }
+
+        ${Media.Laptop}{
+            width: 440px;
+        }
     }
 
     p{
         font-family: 'Poppins';
         font-weight: 600;
+
+        ${Media.MobileL}{
+            font-size: 1.2rem;
+        }
+
+        ${Media.Tablet}{
+            font-size: 1.5rem;
+        }
 
         &::before{
             content: "";
@@ -89,6 +113,14 @@ export const BoxTitle = styled.div`
     p{
         font-weight: 600;
         font-size: 0.6rem;
+
+        ${Media.MobileL}{
+            font-size: 0.8rem;
+        }
+
+        ${Media.Tablet}{
+            font-size: 1.2rem;
+        }
     }
 `
 
@@ -111,7 +143,26 @@ export const BoxSelect = styled.div`
       margin-top: 15px;
       border: 0;
       outline: none;
+      
+      ${Media.Tablet}{
+        margin: 0 10px;
+      }
+
+      ${Media.Laptop}{
+        font-size: 1.2rem;
+        padding: 10px;
+      }
     }
+
+
+   ${Media.Tablet}{
+      width: 90%;
+      margin: auto;
+      display: flex;
+      margin-top: 10%;
+   }
+
+   
 `
 
 export const Calculator = styled.div`
@@ -123,6 +174,17 @@ export const Calculator = styled.div`
 
     p{
         font-size: 0.6rem;
+        font-weight: 300;
+        color: gray;
+
+        ${Media.MobileL}{
+            font-size: 1rem;
+        }
+
+        ${Media.Tablet}{
+            font-size: 1.5rem;
+            
+        }
     }
 
     button{
@@ -132,10 +194,20 @@ export const Calculator = styled.div`
         background-color: #1776B4;
         padding: 10px 20px;
         margin-top: 10%;
+        cursor: pointer;
         transition: all 0.3s ease-in-out;
 
         &:hover{
             background-color: #0B6CAA;
+        }
+
+        ${Media.Tablet}{
+            margin-top: 5%;
+            padding: 20px 45px;
+        }
+
+        ${Media.Laptop}{
+            font-size: 1.2rem;
         }
     }
 `

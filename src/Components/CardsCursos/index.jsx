@@ -6,7 +6,7 @@ export function CardsCursos() {
         <Container>
             <Paragraph>
                 <h1>PLACE UP INDICA</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <p></p>
             </Paragraph>
             {Cards.map((item) => (
                 <Courses key={item.id}>
