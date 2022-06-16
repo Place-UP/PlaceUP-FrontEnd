@@ -23,18 +23,24 @@ export function Calculator() {
                             <p>Calcular um produto nunca foi tão fácil.</p>
                         </div>
                     </div>
-                    <div>
-                        <Imposto imposto={imposto} setImpostos={setImposto} />
-                        <Preco preco={preco} setprecos={setpreco} />
-                        <Lucros lucro={lucro} setlucros={setlucro} />
-                        <Calcular lucro={lucro} preco={preco} imposto={imposto} setResultado={setResultado} /></div>
+                    <div className="ContainerCalculator">
+                        <div>
+                            <Imposto imposto={imposto} setImpostos={setImposto} />
+                            <Preco preco={preco} setprecos={setpreco} />
+                            <Lucros lucro={lucro} setlucros={setlucro} />
+                            <Calcular lucro={lucro} preco={preco} imposto={imposto} setResultado={setResultado} />
+                        </div>
+                        <div className="ResulteWhite">
+
+                            <h1>Lorem ipsum</h1>
+                            <div className="InformationsDescription"> <p>Imposto:{imposto} </p>
+                                <p>Margem de lucro: {lucro} </p>
+                                <p>Valor pago:{preco} </p>
+                            </div>
+                            <span>Valor: {result}</span>
+                        </div>
+                    </div>
                 </div>
-                <div className="ResulteWhite">
-
-
-                </div>
-                {/* <p> Resultado: {result.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</p> */}
-
             </Main >
         </>
     );

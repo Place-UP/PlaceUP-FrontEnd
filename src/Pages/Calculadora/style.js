@@ -5,6 +5,11 @@ export const Main = styled.div`
 background: linear-gradient(304.69deg, rgba(116, 189, 235, 0.2) 0.55%, rgba(240, 240, 255, 0.51) 69.7%, #EDF4F8 98.57%);
 width: 100%;
 margin:auto;
+.ContainerCalculator{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 .container{
     width:90%;
 margin:auto;
@@ -42,7 +47,41 @@ color: #807B7B;
 }
 
 .ResulteWhite{
-    background:white;
+   width: 563px;
+height: 332px;
+background: #FFFFFF;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+border-radius: 62px;
+
+h1{
+    margin-top:30px;
+    text-align:center;
+font-family: 'Lato';
+font-style: normal;
+font-size: 30px;
+color: #493D3D;
+}
+span{
+        display: flex;
+    justify-content: center;
+    margin-top:50px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+color: #2D3E50;
+text-align: center;
+
+}
+.InformationsDescription{
+    margin-top:30px;
+    margin-left:30px;
+    display:flex;
+    align-items:flex-start;
+    gap:30px;
+    flex-direction: column;
+    justify-content:start;
+}
 }
 `
 export const InputArea = styled.div`
