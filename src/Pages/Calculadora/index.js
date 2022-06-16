@@ -1,10 +1,11 @@
-import { } from "./style";
+import { Main } from "./style";
 import React, { useState } from "react";
 import Preco from "./preco";
 import Imposto from "./imposto";
 import Calcular from "./calcularPreco";
 import Lucros from "./margemLucro";
-
+import Logo from "./img/mainLogo.svg";
+import BackButton from "./img/BackButton.svg";
 export function Calculator() {
     const [imposto, setImposto] = useState("");
     const [preco, setpreco] = useState("");
@@ -12,32 +13,29 @@ export function Calculator() {
     const [lucro, setlucro] = useState();
     return (
         <>
-            <p>
-                Campos para inserir:
+            <Main>
+                <div className="container">
+                    <img className="backButton" src={BackButton} alt="Logo" />
+                    <div className="header">
+                        <div className="textArea">
+                            <img src={Logo} alt="Logo" />
+                            <h1>Calculadora de precificação</h1>
+                            <p>Calcular um produto nunca foi tão fácil.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <Imposto imposto={imposto} setImpostos={setImposto} />
+                        <Preco preco={preco} setprecos={setpreco} />
+                        <Lucros lucro={lucro} setlucros={setlucro} />
+                        <Calcular lucro={lucro} preco={preco} imposto={imposto} setResultado={setResultado} /></div>
+                </div>
+                <div className="ResulteWhite">
 
-                {/* Imposto */}
 
-                {/* Valor pago do produto */}
+                </div>
+                {/* <p> Resultado: {result.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</p> */}
 
-                {/* Margem de lucro */}
-
-                Custos adicionais
-
-                Quantidade de produtos
-
-
-                Método de cálculo:
-
-                Calcular tudo, e depois fazer a divisão de gastos
-
-
-                Porcentagem total de intens/ 100% -. Porcentagem total de itens = porcentagem Total de itens / resultado de 100% - porcentagem total de intens
-            </p>
-            <Imposto imposto={imposto} setImpostos={setImposto} />
-            <Preco preco={preco} setprecos={setpreco} />
-            <Lucros lucro={lucro} setlucros={setlucro} />
-            <Calcular lucro={lucro} preco={preco} imposto={imposto} setResultado={setResultado} />
-            <p> Resultado = {result}</p>
+            </Main >
         </>
     );
-}
+} 

@@ -1,16 +1,13 @@
-import React from "react";
+// import React from "react";
 
-export default function Calcular(props) {
-
-    const calc = () => {
-        props.setResultado(Number(props.preco) + Number(props.imposto))
-
-    }
-    return (
-        <div>
-            <button onClick={calc}> calcular </button>
-        </div>
-    )
+// export default function Resultado(props) {
 
 
-}
+//     return (
+//         <div>
+//             {/* <p>resultado: {Resultados.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })} </p> */}
+//         </div>
+//     )
+
+
+// }

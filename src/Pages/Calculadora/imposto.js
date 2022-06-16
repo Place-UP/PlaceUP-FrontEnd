@@ -1,14 +1,14 @@
 import React from "react";
-
+import { InputArea } from "./style";
 export default function Imposto(props) {
     return (
-        <div>
-            <label>
-                Imposto
-                <input type="text" value={props.imposto} onChange={(entrada) => { props.setImpostos(entrada.target.value) }} />
-            </label>
+        <>
+            <InputArea>
+                <p>Imposto pago mensalmente/anualmente: *</p>
+                <input type="text" placeholder="Digite aqui %" value={props.imposto} onChange={(entrada) => { props.setImpostos(entrada.target.value) }} />
+            </InputArea>
 
-        </div>
+        </>
     )
 
 }

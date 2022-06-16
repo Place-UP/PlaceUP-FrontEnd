@@ -1,13 +1,13 @@
 import React from "react";
-
+import { InputArea } from "./style";
 export default function Preco(props) {
     return (
-        <div>
-            <label>
-                preço pago pelo produto:
-                <input type="text" value={props.preco} onChange={(entrada) => { props.setprecos(entrada.target.value) }} />
-            </label>
-        </div>
+        <>
+            <InputArea>
+                <p>preço pago pelo produto:*</p>
+                <input type="text" placeholder="Digite aqui R$" value={props.preco} onChange={(entrada) => { props.setprecos(entrada.target.value) }} />
+            </InputArea>
+        </>
     )
 
 

@@ -1,14 +1,14 @@
 import React from "react";
+import { InputArea } from "./style";
 
 export default function Lucros(props) {
     return (
-        <div>
-            <label>
-                Margem de lucro desejada:
-                <input type="text" value={props.lucro} onChange={(entrada) => { props.setlucros(entrada.target.value) }} />
-            </label>
-
-        </div>
+        <>
+            <InputArea>
+                <p> Margem de lucro desejada:*</p>
+                <input type="text" placeholder="Digite aqui %" value={props.lucro} onChange={(entrada) => { props.setlucros(entrada.target.value) }} />
+            </InputArea>
+        </>
     )
 
 }

@@ -1,21 +1,17 @@
 // import { parse } from "@fortawesome/fontawesome-svg-core";
 import React from "react";
-
+import { ButtonStyle } from "./style";
 export default function Calcular(props) {
-    let impostos = ((Number(props.preco) * (Number(props.lucro) + Number(props.imposto)) / 100));
+    let calculoPorcentagem = (Number(props.lucro) + Number(props.imposto));
+    let Markup = (calculoPorcentagem / (100 - calculoPorcentagem) + 1);
 
-    console.log(impostos)
-
-    const calc = () => {
-
-        props.setResultado(impostos + Number(props.preco));
-
-
+    function calc() {
+        props.setResultado(Markup * Number(props.preco));
     }
 
     return (
-        <div>
-            <button onClick={calc}> calcular </button>
-        </div>
+        <ButtonStyle>
+            <button onClick={calc}> Calcular </button>
+        </ButtonStyle>
     )
 }
