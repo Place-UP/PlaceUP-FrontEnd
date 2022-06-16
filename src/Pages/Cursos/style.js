@@ -83,6 +83,10 @@ export const BoxImg = styled.div`
             font-size: 1.5rem;
         }
 
+        ${Media.Laptop}{
+            font-size: 2rem;
+        }
+
         &::before{
             content: "";
             width: 40px;

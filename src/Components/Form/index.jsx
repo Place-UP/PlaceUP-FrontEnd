@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 //---------------------Componentes---------------------------
 import { CheckBox } from "../../Components/CheckBox";
-import { Form, Label, Remember, Submit } from "./style";
+import { Form, Label, Remember, Submit, Termos } from "./style";
 
 import { Formr } from '../../mock/Form';
-
-
+import { Link } from 'react-router-dom';
 
 export const Forms = () => {
 
@@ -39,8 +38,6 @@ export const Forms = () => {
         } else {
             return false;
         }
-
-
     }
 
     return (
@@ -61,11 +58,13 @@ export const Forms = () => {
                         )}
                     </Label>
                 ))}
-
                 <Remember>
                     <CheckBox />
                 </Remember>
                 <Submit disabled={validateHasErrorInput()} type="submit" value="Proximo" name="Button" />
+                <Termos>
+                    <p>Ao cadastrar-se, você concorda com os <Link to="/Termos">Termos de uso e Privacidade </Link></p>
+                </Termos>
             </Form>
         </>
     );

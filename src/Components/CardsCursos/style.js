@@ -37,12 +37,15 @@ export const Paragraph = styled.div`
             background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);  
         }
          ${Media.MobileL}{
-                font-size: 1.4rem ;
+            font-size: 1.4rem;
          }
 
          ${Media.Tablet}{
             font-size: 2rem;
          }
+
+         
+         
     }
 
     p{
@@ -66,7 +69,8 @@ export const Courses = styled.div`
 
 export const TxtBox = styled.div`
     text-align: center;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 1.5rem;
 
     h2{
         font-size: 0.7rem;
@@ -81,6 +85,10 @@ export const TxtBox = styled.div`
 
          ${Media.Tablet}{
             font-size: 2rem;
+         }
+         
+         ${Media.Tablet}{
+            font-size: 3rem;
          }
     }
 

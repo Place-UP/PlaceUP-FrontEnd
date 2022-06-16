@@ -2,6 +2,8 @@ import { createContext } from 'react'
 import { useState } from 'react'
 import React from "react";
 
+import { box } from '../../mock/boxVisalizer';
+
 export const CartContext = createContext({});
 CartContext.displayName = "Carrinho"
 
@@ -18,7 +20,6 @@ export const CartContextProvider = ({ children }) => {
         } else {
             item.qtd = item.qtd + 1;
         }
-
         setCarrinho(copyProductsCart);
 
         //setCarrinho([...carrinho, item])

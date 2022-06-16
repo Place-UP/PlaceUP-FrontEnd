@@ -5,17 +5,15 @@ import { useState } from "react";
 import React from "react";
 
 export function BarraBusca() {
+
   const [query, setQuery] = useState("");
 
   const search = () => {
     if (!query) return [];
     return box.filter(
       (item) =>
-        item.name
-          .toLowerCase()
-          .normalize("NFD")
-          .replace(/[^a-zA-Zs]/g, "")
-          .includes(query) || item.price.includes(query)
+        item.name.toLowerCase().normalize("NFD").replace(/[^a-zA-Zs]/g, "").includes(query) ||
+        item.price.includes(query)
     );
   };
 

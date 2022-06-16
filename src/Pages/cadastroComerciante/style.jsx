@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import FundoVetor from '../../Img/CadastroComerciante/Fundo_do_vetor.svg'
+
 
 export const Container = styled.main`
     width: 100%;
@@ -13,8 +13,6 @@ export const BoxVetor = styled.div`
     position: relative;
     width: 50%;
     height: 100%;
-    background-image: url(${FundoVetor});
-    background-repeat: no-repeat;
     background-size: 100%;
 `
 
@@ -49,14 +47,4 @@ export const CapaVetor = styled.div`
 
 export const BoxForm = styled.div`
     width: 50%;
-`
-
-export const Termos = styled.div`
-    margin-top: 40px;
-    margin-bottom: 60px;
-    text-align: center;
-
-    a{
-        color: #2980B9;
-    }
 `

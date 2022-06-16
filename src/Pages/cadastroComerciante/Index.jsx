@@ -5,7 +5,7 @@ import Capa from '../../Img/CadastroComerciante/capa.svg'
 import Seta from '../../Img/CadastroComerciante/seta.svg'
 //----------------Componentes--------------
 import {
-    Container, BoxVetor, BoxForm, Termos, CapaVetor, Back
+    Container, BoxVetor, BoxForm, CapaVetor, Back
 } from "./style";
 
 import { Forms } from '../../Components/Form/index'
@@ -29,9 +29,6 @@ export function CadastroComerciante() {
                     </Link>
                 </Back>
                 <Forms />
-                <Termos>
-                    <p>Ao cadastrar-se, você concorda com os <Link to="/Termos">Termos de uso e Privacidade </Link></p>
-                </Termos>
                 <Midia />
             </BoxForm>
         </Container>

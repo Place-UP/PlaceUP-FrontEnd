@@ -1,15 +1,14 @@
 //----------------------Componentes-------------------------
-import { Container, BoxVetor, Form, Vetores, Termos, Back, CapaVetor } from "./style";
+import { Container, BoxVetor, Form, Vetores, Back, CapaVetor, Img } from "./style";
 import { Forms } from '../../Components/Form/index'
 import { Midia } from "../../Components/SocialMidia/Index";
-
-import Vetor from '../../Img/CadastroUser/capa.svg'
-
+import { Register2 } from './../../Components/Register2/index';
 import { Link } from "react-router-dom";
 
+import Vetor from '../../Img/CadastroUser/capa.svg'
 import Seta from '../../Img/CadastroUser/seta.svg'
+import Fundo from '../../Img/CadastroUser/Fundo.svg'
 
-import { Register2 } from './../../Components/Register2/index';
 
 export function CadastroUser() {
     return (
@@ -22,12 +21,10 @@ export function CadastroUser() {
                         </Link>
                     </Back>
                     <Forms />
-                    <Termos>
-                        <p>Ao cadastrar-se, você concorda com os <Link to="/Termos">Termos de uso e Privacidade </Link></p>
-                    </Termos>
                     <Midia />
                 </Form>
                 <Vetores>
+                    <Img src={Fundo} alt="Fundo" />
                     <Register2 />
                     <CapaVetor>
                         <img src={Vetor} alt="Vetor Cadastro Usuario" />

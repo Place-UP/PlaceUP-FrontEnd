@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
+const Media = {
+    MobileL: "@media(min-width: 425px)"
+}
+
 export const Form = styled.form`
-    width: 70%;
+    width: 100%;
     margin: auto;
     height: 100%;
     display: flex;
@@ -10,10 +14,24 @@ export const Form = styled.form`
     align-items: center;
 
     legend{
-        font-size: 3.5rem;
+        font-size: 2rem;
         color: #2980B9;
         font-family: 'Lato', sans-serif;
         font-weight: 500;
+
+        ${Media.MobileL}{
+            font-size: 3rem;
+        }
+    }
+`
+
+export const Termos = styled.div`
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    a{
+        color: #2980B9;
     }
 `
 
@@ -23,7 +41,7 @@ export const Label = styled.label`
     justify-content: center;
     align-items: center;
     border-bottom: 5px solid #2980B9;
-    margin-top: 80px;
+    margin-top: 50px;
 
     i{
         font-size: 1.75rem;
@@ -76,10 +94,12 @@ export const Remember = styled.div`
 export const Submit = styled.input`
     background-color: #2980B9;
     color: #fff;
-    padding: 15px 55px;
-    font-size: 1.4rem;
+    width: 50%;
+    height: 50px;
+    font-size: 1rem;
     border-radius: 40px;
     margin-top: 25px;
+
     cursor: pointer;
 
     &:disabled{

@@ -1,19 +1,24 @@
 import styled from "styled-components";
 
+const Media = {
+    MobileL: "@media(min-width: 425px)",
+    Tablet: "@media(min-width: 768px)"
+}
+
 export const SocialMidia = styled.div`
     width: 100%;
     height: 100%;
-    margin-top: 30px;
 
     ul{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
 
         li{
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             cursor: pointer;
             color: #2980B9;
+            
 
             &:hover{
                 opacity: 0.8;

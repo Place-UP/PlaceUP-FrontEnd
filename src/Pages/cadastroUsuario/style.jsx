@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
-import Fundo from '../../Img/CadastroUser/Fundo.svg'
-
 const Media = {
-    Laptop: "@media(max-width: 1024px)",
+    Laptop: "@media(min-width: 1024px)",
     Tablet: "@media(max-width: 768px)"
 }
 
@@ -31,9 +29,7 @@ export const Form = styled.div`
 `
 
 export const Vetores = styled.div`
-    position: absolute;
-    background-image: url(${Fundo});
-    background-repeat: no-repeat;
+    position: relative;
     right: 0;
     width: 50%;
     height: 100%;
@@ -42,6 +38,10 @@ export const Vetores = styled.div`
         display: none;
     }
     
+`
+
+export const Img = styled.img`
+    position: relative;
 `
 
 export const CapaVetor = styled.div`
@@ -56,16 +56,6 @@ export const CapaVetor = styled.div`
 
     img{
         width: 75%;
-    }
-`
-
-export const Termos = styled.div`
-    margin-top: 40px;
-    margin-bottom: 60px;
-    text-align: center;
-
-    a{
-        color: #2980B9;
     }
 `
 
