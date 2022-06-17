@@ -7,6 +7,7 @@ export default function Preco(props) {
         <p>preço pago pelo produto:*</p>
         <input
           type="number"
+          maxlength="2"
           placeholder="Digite aqui R$"
           value={props.preco}
           onChange={(entrada) => {

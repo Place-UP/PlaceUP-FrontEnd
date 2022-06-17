@@ -176,6 +176,12 @@ export const Main = styled.div`
       justify-content: start;
     }
   }
+  .buttonContainer {
+    position: relative;
+    margin-bottom: -47px;
+    margin-left: 30px;
+    margin-top: 60px;
+  }
 `;
 export const InputArea = styled.div`
   display: flex;

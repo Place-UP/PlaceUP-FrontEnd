@@ -1,4 +1,4 @@
-import { Main, InputArea } from "./style";
+import { Main, InputArea, ButtonStyle } from "./style";
 import React, { useState } from "react";
 import Preco from "./preco";
 import Imposto from "./imposto";
@@ -20,6 +20,22 @@ export function Calculator() {
   const [adicionalPorcentagem, setadicionalPorcentagem] = useState();
   const [Product, setProduct] = useState();
   const [unidade, setUnidade] = useState();
+
+  const formatter = new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+  function del() {
+    setImposto("");
+    setpreco("");
+    setResultado("");
+    setlucro("");
+    setadicional("");
+    setadicionalPorcentagem("");
+    setUnidade("");
+  }
+  const formatterPorcent = new Intl.NumberFormat("pt-BR", {});
+
   return (
     <>
       <Main>
@@ -47,7 +63,6 @@ export function Calculator() {
                   }}
                 />
               </InputArea>
-
               <Imposto imposto={imposto} setImpostos={setImposto} />
               <Lucros lucro={lucro} setlucros={setlucro} />
               <Preco preco={preco} setprecos={setpreco} />
@@ -57,6 +72,7 @@ export function Calculator() {
                 setadicionalPorcentagem={setadicionalPorcentagem}
               />
               <Unidade setUnidade={setUnidade} />
+
               <Calcular
                 unidade={unidade}
                 adicionalPorcentagem={adicionalPorcentagem}
@@ -71,14 +87,46 @@ export function Calculator() {
             <div className="ResulteWhite">
               <h1>{Product}</h1>
               <div className="InformationsDescription">
-                <p>Imposto:{imposto} </p>
-                <p>Margem de lucro: {lucro} </p>
-                <p>Valor pago:{preco} </p>
-                <p>Custo Adicional: {adicional}</p>
-                <p>Custo Adicional: {adicionalPorcentagem}</p>
+                <p>
+                  Imposto:{" "}
+                  {!imposto ? "" : formatterPorcent.format(imposto) + "%"}
+                </p>
+                <p>
+                  Margem de lucro:{" "}
+                  {!lucro ? "" : formatterPorcent.format(lucro) + "%"}
+                </p>
+                <p>Valor pago: {!preco ? "" : formatter.format(preco)} </p>
+                <p>
+                  Custo Adicional: {""}
+                  {!adicional ? "" : formatter.format(adicional)}
+                </p>
+                <p>
+                  Custo Adicional:{" "}
+                  {!adicionalPorcentagem
+                    ? ""
+                    : formatterPorcent.format(adicionalPorcentagem) + "%"}
+                </p>
               </div>
-              <Resultado resultado={result} />
-              <span>Valor unitário: {unidade}</span>
+              <Resultado
+                resultado={
+                  !result
+                    ? ""
+                    : result.toLocaleString("pt-BR", {
+                        style: "currency",
+                        currency: "BRL",
+                      })
+                }
+              />
+
+              <span>
+                Valor unitário:{" "}
+                {!(result / unidade) ? "" : formatter.format(result / unidade)}
+              </span>
+              <div className="buttonContainer">
+                <ButtonStyle onClick={del}>
+                  <p>Redefinir</p>
+                </ButtonStyle>
+              </div>
             </div>
           </div>
           <div className="TableSimilarPrices">
@@ -96,16 +144,16 @@ export function Calculator() {
               </div>
               <div className="TablePlaceUP">
                 <span>PlaceUP</span>
-                <p>{result}</p>
-                <p>{result}</p>
-                <p>{result}</p>
+                <p>{formatter.format(result)}</p>
+                <p>{formatter.format(result)}</p>
+                <p>{formatter.format(result)}</p>
               </div>
 
               <div className="TableGoogleShopping">
                 <span>Google Shopping</span>
-                <p>{result}</p>
-                <p>{result}</p>
-                <p>{result}</p>
+                <p>{formatter.format(result)}</p>
+                <p>{formatter.format(result)}</p>
+                <p>{formatter.format(result)}</p>
               </div>
             </div>
           </div>

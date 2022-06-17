@@ -3,6 +3,8 @@ import React from "react";
 import { ButtonStyle } from "./style";
 export default function Calcular(props) {
   var adicional = Number(props.adicionalPorcentagem);
+
+  var adicionalReal = !Number(props.adicional);
   var lucro = Number(props.lucro);
   var imposto = Number(props.imposto);
   var calculoPorcentagem = lucro + imposto + adicional;
@@ -10,7 +12,7 @@ export default function Calcular(props) {
   var Markup = calculoPorcentagem / (100 - calculoPorcentagem) + 1;
 
   function calc() {
-    props.setResultado(Markup * preco + adicional);
+    props.setResultado(Markup * (preco + adicionalReal));
   }
 
   return (
