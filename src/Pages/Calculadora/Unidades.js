@@ -1,16 +1,16 @@
 import React from "react";
 import { InputArea } from "./style";
-export default function Preco(props) {
+export default function Unidade(props) {
   return (
     <>
       <InputArea>
-        <p>preço pago pelo produto:*</p>
+        <p>Insira quantas unidades tem esse produto: *</p>
         <input
           type="number"
-          placeholder="Digite aqui R$"
-          value={props.preco}
+          placeholder="Digite aqui "
+          value={props.unidade}
           onChange={(entrada) => {
-            props.setprecos(entrada.target.value);
+            props.setUnidade(entrada.target.value);
           }}
         />
       </InputArea>
