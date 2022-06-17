@@ -6,7 +6,7 @@ export default function Adicional(props) {
       <InputArea>
         <p>Gostaria de Adicionar algum valor adicional? </p>
         <input
-          type="text"
+          type="number"
           placeholder="Digite aqui R$"
           value={props.adicional}
           onChange={(entrada) => {

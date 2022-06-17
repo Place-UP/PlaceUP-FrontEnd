@@ -206,22 +206,21 @@ export const InputArea = styled.div`
 
 export const ButtonStyle = styled.button`
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 209px;
-  height: 50px;
+  width: 200px;
   background: #2ba0d2;
-  box-shadow: 9px 27px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 9px 27px 20px rgb(0 0 0 / 10%);
   border-radius: 19px;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 48px;
-  text-align: center;
-  color: #fff;
+  height: 50px;
   p {
-    cursor: pointer;
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    opacity: 0.6;
+    transform: 1s;
+    &:hover {
+      transform: 1s;
+      opacity: 1;
+    }
   }
 `;

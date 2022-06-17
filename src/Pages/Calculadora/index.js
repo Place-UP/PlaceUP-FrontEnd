@@ -4,6 +4,7 @@ import Preco from "./preco";
 import Imposto from "./imposto";
 import Calcular from "./calcularPreco";
 import Lucros from "./margemLucro";
+import Unidade from "./Unidades";
 import Resultado from "./resultado";
 import Adicional from "./Adicional";
 import AdicionalPorcentagem from "./AdicionalPorcentagem";
@@ -11,13 +12,14 @@ import Logo from "./img/mainLogo.svg";
 import BackButton from "./img/BackButton.svg";
 
 export function Calculator() {
-  const [imposto, setImposto] = useState("");
-  const [preco, setpreco] = useState("");
-  const [result, setResultado] = useState("");
-  const [lucro, setlucro] = useState("");
-  const [adicional, setadicional] = useState(null);
-  const [adicionalPorcentagem, setadicionalPorcentagem] = useState(null);
-  const [Product, setProduct] = useState("");
+  const [imposto, setImposto] = useState();
+  const [preco, setpreco] = useState();
+  const [result, setResultado] = useState();
+  const [lucro, setlucro] = useState();
+  const [adicional, setadicional] = useState();
+  const [adicionalPorcentagem, setadicionalPorcentagem] = useState();
+  const [Product, setProduct] = useState();
+  const [unidade, setUnidade] = useState();
   return (
     <>
       <Main>
@@ -54,14 +56,16 @@ export function Calculator() {
                 adicionalPorcentagem={adicionalPorcentagem}
                 setadicionalPorcentagem={setadicionalPorcentagem}
               />
-
+              <Unidade setUnidade={setUnidade} />
               <Calcular
+                unidade={unidade}
                 adicionalPorcentagem={adicionalPorcentagem}
                 adicional={adicional}
                 lucro={lucro}
                 preco={preco}
                 imposto={imposto}
                 setResultado={setResultado}
+                setUnidade={setUnidade}
               />
             </div>
             <div className="ResulteWhite">
@@ -74,6 +78,7 @@ export function Calculator() {
                 <p>Custo Adicional: {adicionalPorcentagem}</p>
               </div>
               <Resultado resultado={result} />
+              <span>Valor unitário: {unidade}</span>
             </div>
           </div>
           <div className="TableSimilarPrices">

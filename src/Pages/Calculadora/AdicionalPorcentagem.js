@@ -6,7 +6,7 @@ export default function AdicionalPorcentagem(props) {
       <InputArea>
         <p>Gostaria de Adicionar algum valor adicional? </p>
         <input
-          type="text"
+          type="number"
           placeholder="Digite aqui %"
           value={props.adicionalPorcentagem}
           onChange={(entrada) => {
