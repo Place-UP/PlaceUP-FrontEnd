@@ -19,11 +19,12 @@ export function Box() {
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 
-  const { HandleAddCart } = useContext(CartContext)
+  const { carrinho, HandleAddCart, HandleRemoveCart } = useContext(CartContext)
 
   return (
     <Main>
       <div className="Offers">
+        <p>{JSON.stringify(carrinho)}</p>
         <h1>Ofertas</h1>
         <div className="FunctionCarousel">
           <div>
@@ -44,9 +45,10 @@ export function Box() {
               <div className="Carousel">
                 <div className="containerIMG">
                   <img className="image" src={image} alt="img" />
-                  <button onClick={() => HandleAddCart({ ...item })}>
+                  <button onClick={() => HandleAddCart(id)}>
                     <GrFormAdd className="AddIcon" />
                   </button>
+                  <button onClick={() => HandleRemoveCart(id)}>Remover</button>
                 </div>
                 <div className="Info">
                   <span className="Tittle"> {name}</span>

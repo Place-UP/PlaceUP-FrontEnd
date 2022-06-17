@@ -43,6 +43,7 @@ export const Container = styled.div`
 
 export const Carrinho = styled.div`
     margin-right: 25px;
+    position: relative;
 
     span{
       position: absolute;
@@ -73,9 +74,10 @@ export const BoxCarrinho = styled.div`
   right: 25%;
   top: 15%;
   height: 80%;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.cards};
   border-radius: 15px;
   z-index: 10;
+  border: 0.5px solid #ccc;
 
 
   header{
@@ -87,8 +89,9 @@ export const BoxCarrinho = styled.div`
     border-bottom: 2px solid #ccc;
     
      i{
+        padding: 15px;
         color: #5ABDD4;
-        font-size: 3.5rem;
+        font-size: 3rem;
         cursor: pointer;
         transition: all 0.3s ease-in;
         &:hover{
@@ -101,11 +104,12 @@ export const BoxCarrinho = styled.div`
       font-family: 'Poppins';
         p{
           font-size: 1.3rem;
-          color: #D9D9D9;
+          color: ${({ theme }) => theme.fontColor};
         }
 
         span{
           font-size: 1.2rem;
+          color: ${({ theme }) => theme.fontColor};
         }
     }
   }

@@ -1,10 +1,10 @@
-import { SearchBar, Container, Main, Carrinho, Filter, BoxCarrinho, BoxTitle } from "./style";
+import { SearchBar, Container, Main, Carrinho, Filter, BoxCarrinho } from "./style";
 
-import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineClose } from "react-icons/ai";
 
-import { AiOutlineClose } from 'react-icons/ai';
 import { box } from "../../mock/boxVisalizer";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { CartContext } from "../../Common/Context";
 
 export function BarraBusca() {
 
@@ -36,6 +36,7 @@ export function BarraBusca() {
           </SearchBar>
           <Carrinho>
             <AiOutlineShoppingCart className="car" onClick={() => setIsOpen(!isOpen)} />
+            <span></span>
           </Carrinho>
         </Container>
         <BoxCarrinho className={isOpen ? "Active" : "None"}>
@@ -46,9 +47,6 @@ export function BarraBusca() {
               <span>Nome do comercio</span>
             </div>
           </header>
-          <div>
-
-          </div>
         </BoxCarrinho>
         {query && (
           <Filter>
