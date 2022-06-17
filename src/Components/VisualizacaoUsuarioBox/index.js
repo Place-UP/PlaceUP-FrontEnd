@@ -19,12 +19,11 @@ export function Box() {
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 
-  const { carrinho, HandleAddCart, HandleRemoveCart } = useContext(CartContext)
+  const { HandleAddCart, HandleRemoveCart } = useContext(CartContext)
 
   return (
     <Main>
       <div className="Offers">
-        <p>{JSON.stringify(carrinho)}</p>
         <h1>Ofertas</h1>
         <div className="FunctionCarousel">
           <div>

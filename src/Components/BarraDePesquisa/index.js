@@ -21,6 +21,8 @@ export function BarraBusca() {
 
   const [isOpen, setIsOpen] = useState(false)
 
+  const { carrinho } = useContext(CartContext)
+
   return (
     <>
       <Main>
@@ -47,6 +49,9 @@ export function BarraBusca() {
               <span>Nome do comercio</span>
             </div>
           </header>
+          <div>
+            <p>{JSON.stringify(carrinho)}</p>
+          </div>
         </BoxCarrinho>
         {query && (
           <Filter>

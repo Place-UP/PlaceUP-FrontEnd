@@ -65,10 +65,6 @@ export const Paragraph = styled.div`
 export const Courses = styled.div`
     width: 100%;
     height: 100%;
-
-    &:nth-child(2){
-        
-    }
 `
 
 export const TxtBox = styled.div`
@@ -121,8 +117,8 @@ export const Box = styled.div`
     background-color: #fff;
     border-radius: 15px;
     margin-bottom: 1.5rem;
-    
     border-right: 5px solid #2575A9;
+
 
     ${Media.Tablet}{
         border-radius: 25px;
@@ -189,5 +185,5 @@ export const Txt = styled.div`
         ${Media.Laptop}{
             font-size: 1.6rem;
         }
-    }
-`
+ }
+` 

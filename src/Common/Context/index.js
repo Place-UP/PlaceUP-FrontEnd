@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react'
 
+
 export const CartContext = createContext({});
 CartContext.displayName = "Carrinho"
 
@@ -13,6 +14,7 @@ export const CartContextProvider = ({ children }) => {
 
         if (!item) {
             copyProduct.push({ id: id, qtd: 1 })
+            console.log(copyProduct)
         } else {
             item.qtd += 1
         }
@@ -32,8 +34,6 @@ export const CartContextProvider = ({ children }) => {
             const arrayFiltered = copyProduct.filter(product => product.id !== id)
             setCarrinho(arrayFiltered)
         }
-
-
     }
 
     return (
