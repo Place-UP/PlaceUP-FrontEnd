@@ -12,14 +12,14 @@ import Logo from "./img/mainLogo.svg";
 import BackButton from "./img/BackButton.svg";
 
 export function Calculator() {
-  const [imposto, setImposto] = useState();
-  const [preco, setpreco] = useState();
-  const [result, setResultado] = useState();
-  const [lucro, setlucro] = useState();
-  const [adicional, setadicional] = useState();
-  const [adicionalPorcentagem, setadicionalPorcentagem] = useState();
-  const [Product, setProduct] = useState();
-  const [unidade, setUnidade] = useState();
+  const [imposto, setImposto] = useState("");
+  const [preco, setpreco] = useState("");
+  const [result, setResultado] = useState("");
+  const [lucro, setlucro] = useState("");
+  const [adicional, setadicional] = useState("");
+  const [adicionalPorcentagem, setadicionalPorcentagem] = useState("");
+  const [Product, setProduct] = useState("");
+  const [unidade, setUnidade] = useState("");
 
   const formatter = new Intl.NumberFormat("pt-BR", {
     style: "currency",
@@ -144,16 +144,16 @@ export function Calculator() {
               </div>
               <div className="TablePlaceUP">
                 <span>PlaceUP</span>
-                <p>{formatter.format(result)}</p>
-                <p>{formatter.format(result)}</p>
-                <p>{formatter.format(result)}</p>
+                <p>{!adicional ? "" : formatter.format(result)}</p>
+                <p>{!result ? "" : formatter.format(result)}</p>
+                <p>{!result ? "" : formatter.format(result)}</p>
               </div>
 
               <div className="TableGoogleShopping">
                 <span>Google Shopping</span>
-                <p>{formatter.format(result)}</p>
-                <p>{formatter.format(result)}</p>
-                <p>{formatter.format(result)}</p>
+                <p>{!result ? "" : formatter.format(result)}</p>
+                <p>{!result ? "" : formatter.format(result)}</p>
+                <p>{!result ? "" : formatter.format(result)}</p>
               </div>
             </div>
           </div>

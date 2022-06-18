@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import LogoBackground from "./img/LogoVector.svg";
 import Logo from "./img/logo.svg";
 import StyleBanner from "./img/StyleBanner.svg";
-import VectorBanner from "./img/VectorBanner.svg";
+// import VectorBanner from "./img/VectorBanner.svg";
 import bottomshadow from "./img/bottomshadow.svg";
 import TableFounders from "../../Components/FoundersTable/index";
 import VectorOurHistory from "./img/VectorOurHistory.svg";

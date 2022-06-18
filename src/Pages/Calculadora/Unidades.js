@@ -4,7 +4,7 @@ export default function Unidade(props) {
   return (
     <>
       <InputArea>
-        <p>Insira quantas unidades tem esse produto: *</p>
+        <p>Insira quantas unidades tem esse produto: </p>
         <input
           type="number"
           placeholder="Digite aqui "
