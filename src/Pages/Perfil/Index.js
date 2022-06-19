@@ -76,56 +76,53 @@ export function Perfil() {
               </div>
             </details>
 
-            <details  className="Endereço">
+            <details className="Endereço">
               <summary> Endereço </summary>
               <div className="InfoLocal">
-                  <p >Informações De Endereço</p>
+                <p>Informações De Endereço</p>
                 <label>
-                Rua
-                <input type="text" />
-                </label>
-                <br />
-
-                 <label>
-                Numero
-                <input type="text" />
+                  Rua
+                  <input type="text" />
                 </label>
                 <br />
 
                 <label>
-                Bairro
-                <input type="text" />
+                  Numero
+                  <input type="text" />
                 </label>
                 <br />
 
                 <label>
-                Cidade
-                <input type="text" />
+                  Bairro
+                  <input type="text" />
                 </label>
                 <br />
-                
+
                 <label>
-                CEP
-                <input type="number" />
+                  Cidade
+                  <input type="text" />
                 </label>
                 <br />
 
-          <div>
+                <label>
+                  CEP
+                  <input type="number" />
+                </label>
+                <br />
 
-         <p> Região </p>
-               <select>
-                <option value=''></option>
-                <option value='Centro'>Centro</option>
-                <option value='Zona Norte'>Zona Norte</option>
-                <option value='Zona Leste'>Zona Leste</option>
-                <option value='Zona Sul'>Zona Sul</option>
-                <option value='Zona Oeste'>Zona Oeste</option>
-               </select>
-
-           </div>
-
-                
-                
+                <div>
+                  <label>
+                    Região
+                    <select>
+                      <option value=""></option>
+                      <option value="Centro">Centro</option>
+                      <option value="Zona Norte">Zona Norte</option>
+                      <option value="Zona Leste">Zona Leste</option>
+                      <option value="Zona Sul">Zona Sul</option>
+                      <option value="Zona Oeste">Zona Oeste</option>
+                    </select>
+                  </label>
+                </div>
               </div>
             </details>
           </Sections>

@@ -49,7 +49,18 @@ export const Inf = styled.div`
 export const Inform = styled.div`
 width: 70%;
 margin-bottom: 50px;
+display: flex;
+flex-direction: column;
+margin-left:auto;
+margin-right: auto;
 `;
+
+export const Locate = styled.div`
+  background-color: red;
+  margin-top: 40px;
+  width: auto;
+  display: flex;
+`
 
 export const NameEdit = styled.div`
   background-color: green;
@@ -58,9 +69,11 @@ export const NameEdit = styled.div`
   width: 100%;
   height: 20px;
   flex-wrap: wrap;
+  margin:auto;
 
   .name {
     font-weight: bold;
+    display: flex;
   }
 
   .edit {
@@ -76,10 +89,7 @@ export const NameEdit = styled.div`
   }
 `;
 
-export const Locate = styled.div`
-  background-color: red;
-  margin-top: 40px;
-`;
+
 
 export const Sections = styled.div`
   display: flex;
@@ -110,10 +120,9 @@ export const Sections = styled.div`
   summary:hover {
     text-decoration: underline 2px green;
   }
-  .Informações[open] {
+  .Informações[open],.Endereço[open] {
     position: absolute;
-    margin-left: -30%;
-    width: 50%;
+    width: 80%;
   }
 
   .InfoPessoal {
@@ -125,9 +134,20 @@ export const Sections = styled.div`
     background-color: green;
   }
 
-  .Endereço[open] {
-    position: absolute;
-    margin-left: -30%;
-    width: 50%;
+  input, select{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 150px;
+    margin-left: 2%;
+    border:none;
+  }
+
+
+  label{
+    margin-bottom:20px;
+    border-bottom: 2px solid red;
+  }
+  p{
+color:violet;
   }
 `;
