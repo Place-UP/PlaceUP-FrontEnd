@@ -7,19 +7,20 @@ CartContext.displayName = "Carrinho"
 export const CartContextProvider = ({ children }) => {
     const [carrinho, setCarrinho] = useState([]);
 
-    function HandleAddCart(id) {
+    function HandleAddCart({ id, name, price, oldPrice, image }) {
         const copyProduct = [...carrinho]
-
+        console.log(carrinho)
         const item = copyProduct.find((product) => product.id === id)
 
         if (!item) {
-            copyProduct.push({ id: id, qtd: 1 })
+            copyProduct.push({ id, name, price, oldPrice, image, qtd: 1 })
             console.log(copyProduct)
         } else {
             item.qtd += 1
         }
 
         setCarrinho(copyProduct)
+        console.log(carrinho)
     }
 
     function HandleRemoveCart(id) {

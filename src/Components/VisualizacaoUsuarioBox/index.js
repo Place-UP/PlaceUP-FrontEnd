@@ -19,7 +19,7 @@ export function Box() {
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 
-  const { HandleAddCart, HandleRemoveCart } = useContext(CartContext)
+  const { HandleAddCart } = useContext(CartContext)
 
   return (
     <Main>
@@ -44,10 +44,9 @@ export function Box() {
               <div className="Carousel">
                 <div className="containerIMG">
                   <img className="image" src={image} alt="img" />
-                  <button onClick={() => HandleAddCart(id)}>
+                  <button onClick={() => HandleAddCart({ ...item })}>
                     <GrFormAdd className="AddIcon" />
                   </button>
-                  <button onClick={() => HandleRemoveCart(id)}>Remover</button>
                 </div>
                 <div className="Info">
                   <span className="Tittle"> {name}</span>

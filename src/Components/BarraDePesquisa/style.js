@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { keyframes } from "styled-components";
-
 
 const Media = {
   Desktop: "@media(max-width:1300px)",

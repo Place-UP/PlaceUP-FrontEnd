@@ -5,6 +5,7 @@ import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineClose } from "react-ic
 import { box } from "../../mock/boxVisalizer";
 import React, { useContext, useState } from "react";
 import { CartContext } from "../../Common/Context";
+import { BoxCart, Txt } from "./styleCart";
 
 export function BarraBusca() {
 
@@ -21,7 +22,7 @@ export function BarraBusca() {
 
   const [isOpen, setIsOpen] = useState(false)
 
-  const { carrinho } = useContext(CartContext)
+  const { carrinho, HandleRemoveCart } = useContext(CartContext)
 
   return (
     <>
@@ -50,7 +51,20 @@ export function BarraBusca() {
             </div>
           </header>
           <div>
-            <p>{JSON.stringify(carrinho)}</p>
+            {carrinho.map((produto) => {
+              const { id, name, price, oldPrice, image, qtd } = produto
+              return (
+                <BoxCart key={id}>
+                  <img src={image} alt="" />
+                  <div>
+                    <h1>{name}</h1>
+                    <p>{price}</p>
+                  </div>
+                  <Txt>{qtd}</Txt>
+                  <button onClick={() => HandleRemoveCart(id)}>Remover</button>
+                </BoxCart>
+              )
+            })}
           </div>
         </BoxCarrinho>
         {query && (
