@@ -46,6 +46,7 @@ export const Itens = styled.div`
   gap: 10px 20px;
   margin-bottom: 50px;
 `;
+
 export const Merchant1 = styled.div`
   width: 150px;
   height: 185px;
