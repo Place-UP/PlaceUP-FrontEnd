@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 const Media = {
   Desktop: "@media(max-width:1189px)",
   Notebook: "@media(max-width:928px",
@@ -8,8 +7,15 @@ const Media = {
   MobileM: "@media(max-width:375px)",
 };
 
+export const EndPage = styled.div`
+width: 50%;
+height: 50%;
+position: fixed;
+justify-content: end;
+`
 export const Main = styled.main`
   width: 100%;
+
 `;
 
 export const Body = styled.body`
@@ -43,33 +49,32 @@ export const Inf = styled.div`
   display: flex;
   margin-top: 55px;
   position: relative;
-  background-color: pink;
-;
-`
+  /* background-color: pink; */ ;
+`;
 export const Inform = styled.div`
-width: 70%;
-margin-bottom: 50px;
-display: flex;
-flex-direction: column;
-margin-left:auto;
-margin-right: auto;
+  width: 70%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const Locate = styled.div`
-  background-color: red;
+  /* background-color: red; */
   margin-top: 40px;
   width: auto;
   display: flex;
-`
+`;
 
 export const NameEdit = styled.div`
-  background-color: green;
+  /* background-color: green; */
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 20px;
   flex-wrap: wrap;
-  margin:auto;
+  margin: auto;
 
   .name {
     font-weight: bold;
@@ -77,77 +82,130 @@ export const NameEdit = styled.div`
   }
 
   .edit {
-    color: blue;
+    /* color: blue; */
     height: 20px;
     cursor: pointer;
     display: flex;
     position: relative;
-    background-color: beige;
+    /* background-color: beige; */
   }
   .edit:hover {
-    text-decoration: underline 2px green;
+    text-decoration: underline 2px #2980b9;
   }
 `;
-
-
 
 export const Sections = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: brown;
+  /* background-color: brown; */
 
   details {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     width: 20%;
   }
 
   details[open] {
     summary {
-      text-decoration: underline 2px green;
-      font-weight: 500;
+      text-decoration: underline 2px #2980b9;
+      font-weight: 700;
     }
   }
 
   summary {
     width: 40%;
     height: 30px;
-    margin-top: 10px;
+    margin-top: 40px;
     cursor: pointer;
     list-style: none;
+    margin-bottom: 20px;
   }
   summary:hover {
-    text-decoration: underline 2px green;
+    text-decoration: underline 2px #2980b9;
+    transition: 0.2s;
   }
-  .Informações[open],.Endereço[open] {
+  .Informações[open],
+  .Endereço[open] {
     position: absolute;
     width: 80%;
+    margin-top: 5%;
   }
 
-  .InfoPessoal {
-    background-color: blue;
-    position: relative;
-  }
-
+  .InfoPessoal,
   .InfoLocal {
-    background-color: green;
+    position: relative;
+    justify-content: space-between;
+    display: grid;
+  }
+  .A {
+    margin-top: -15px;
+  }
+  .A,
+  .B {
+    margin-bottom: 25px;
   }
 
-  input, select{
+  input,
+  select {
     margin-bottom: 20px;
     margin-top: 5px;
-    width: 150px;
+    width: 41%;
+    position: relative;
     margin-left: 2%;
-    border:none;
+    border: none;
+    background-color: transparent;
+    /* background-color: transparent; */
   }
 
-
-  label{
-    margin-bottom:20px;
-    border-bottom: 2px solid red;
+  label {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2980b9;
   }
-  p{
-color:violet;
+  p {
+    font-weight: 500;
+  }
+
+  .button {
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    background: #2980b9;
+    color: white;
+    font-family: inherit;
+    text-align: center;
+    font-size: 13px;
+    box-shadow: 0px 14px 56px -11px 2980b9;
+    width: 10em;
+    padding: 1em;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: -10px;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+
+  .button span:after {
+    content: "Dados";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.7s;
+  }
+
+  .button:hover span {
+    padding-right: 3.55em;
+  }
+
+  .button:hover span:after {
+    opacity: 4;
+    right: 0;
   }
 `;

@@ -8,10 +8,11 @@ import {
   NameEdit,
   Inform,
   Sections,
+  EndPage,
 } from "./style";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import Self from "./img/perfil.svg";
-import { BiEdit } from "react-icons/bi";
+import teste from "./img/detalhe.svg";
 
 export function Perfil() {
   return (
@@ -49,70 +50,73 @@ export function Perfil() {
             <details className="Informações">
               <summary> Sobre </summary> <br />
               <div className="InfoPessoal">
-                <p>Informações Pessoal</p>
+                <p className="A">Informações Pessoais</p>
                 <label>
-                  Nome Do Usuário
-                  <input type="text" />
+                  Nome Do Usuário:
+                  <input type="text" placeholder="UserName" />
                 </label>
                 <br />
 
                 <label>
-                  Email
-                  <input type="email" />
+                  Email:
+                  <input type="email" placeholder="name@gmail.com" />
                 </label>
                 <br />
 
                 <label>
-                  Data de Nascimento
-                  <input type="date" />
+                  Data de Nascimento:
+                  <input type="date" placeholder="data de nascimento" />
                 </label>
                 <br />
 
                 <label>
-                  Senha
-                  <input type="password" />
+                  Senha:
+                  <input type="password" placeholder="*********" />
                 </label>
                 <br />
               </div>
+              <button class="button">
+                <span>Salvar</span>
+              </button>
             </details>
 
             <details className="Endereço">
               <summary> Endereço </summary>
               <div className="InfoLocal">
-                <p>Informações De Endereço</p>
+                <p className="B">Informações De Endereço</p>
                 <label>
-                  Rua
-                  <input type="text" />
+                  Rua:
+                  <input type="text" placeholder="Nome da Rua" />
                 </label>
                 <br />
 
                 <label>
-                  Numero
-                  <input type="text" />
+                  Numero:
+                  <input type="text" placeholder="Numero" />
                 </label>
                 <br />
 
                 <label>
-                  Bairro
-                  <input type="text" />
+                  Bairro:
+                  <input type="text" placeholder="Nome do Bairro" />
                 </label>
                 <br />
 
                 <label>
-                  Cidade
-                  <input type="text" />
+                  Cidade:
+                  <input type="text" placeholder="Nome da cidade" />
                 </label>
                 <br />
 
                 <label>
-                  CEP
-                  <input type="number" />
+                  CEP:
+                  <input type="number" placeholder="Numero do cep" />
                 </label>
                 <br />
 
                 <div>
                   <label>
-                    Região
+                    Região:
                     <select>
                       <option value=""></option>
                       <option value="Centro">Centro</option>
@@ -124,9 +128,16 @@ export function Perfil() {
                   </label>
                 </div>
               </div>
+
+              <button class="button">
+                <span>Salvar</span>
+              </button>
             </details>
           </Sections>
         </Body>
+        {/* <EndPage>
+          <img src={teste} />
+        </EndPage> */}
       </Main>
     </>
   );
