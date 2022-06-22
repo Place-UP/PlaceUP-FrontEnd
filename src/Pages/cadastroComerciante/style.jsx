@@ -19,8 +19,7 @@ export const BoxVetor = styled.div`
     height: 100%;
     background-size: 100%;
     background-color: #2980B9;
-    
-                        
+                    
    clip-path: polygon(68% 0%, 90% 20%, 100% 60%, 87% 100%, 0 100%, 0% 60%, 0 0);
    box-shadow: 20px 0  #A0D1DC;
 
