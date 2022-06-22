@@ -12,33 +12,14 @@ export const Regis = styled.section`
     justify-content: center;
     align-items: center;
     top: 10%;
-    right: 30%;
-
-    ${Media.Laptop}{
-        right: 20%;
-    }
-
-    img{
-        width: 150px;
-        margin: auto;
-
-        ${Media.Laptop}{
-            width: 120px;
-        }
-    }
+    right: 35%;
 
     button{
         border: 4px solid #fff;
         color: #fff;
         padding: 8px 30px;
         border-radius: 20px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         cursor: pointer;
-
-        ${Media.Laptop}{
-            padding: 8px 20px;
-            border-radius: 15px;
-            font-size: 0.6rem;
-        }
     }
 `

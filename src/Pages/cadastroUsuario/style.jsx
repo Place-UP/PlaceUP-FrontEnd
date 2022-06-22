@@ -8,15 +8,23 @@ const Media = {
 export const Container = styled.div`
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `
 
 export const BoxVetor = styled.div`
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 45%;
+    height: 100%;
+    background-color: #2980B9;
+    box-shadow: -20px 0  #A0D1DC;
+    clip-path: polygon(34% 0, 100% 0, 100% 60%, 100% 100%, 14% 100%, 0% 60%, 12% 18%);
+   
+
+    ${Media.Tablet}{
+        display: none;
+    }
 `
 
 export const Form = styled.div`
@@ -28,34 +36,18 @@ export const Form = styled.div`
     }
 `
 
-export const Vetores = styled.div`
-    position: relative;
-    right: 0;
-    width: 50%;
-    height: 100%;
-
-    ${Media.Tablet}{
-        display: none;
-    }
-    
-`
-
-export const Img = styled.img`
-    position: relative;
-`
-
 export const CapaVetor = styled.div`
     position: absolute;
     width: auto; 
     height: auto;
     top: 40%;
-    left: 18%;
+    left: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 
     img{
-        width: 75%;
+        width: 70%;
     }
 `
 

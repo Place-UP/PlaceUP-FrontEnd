@@ -9,7 +9,7 @@ export const Regis = styled.section`
     justify-content: center;
     align-items: center;
     top: 10%;
-    right: 55%;
+    right: 45%;
 
     img{
         width: 150px;

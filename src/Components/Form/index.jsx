@@ -42,10 +42,7 @@ export const Forms = () => {
 
     return (
         <>
-            <Form onSubmit={(e) => {
-                e.preventDefault()
-
-            }}>
+            <Form>
                 <legend>Cadastro</legend>
                 {inputsForms.map((item) => (
                     <Label key={item.id} htmlFor={item.htmlFor} >

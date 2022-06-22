@@ -5,7 +5,7 @@ const Media = {
 }
 
 export const Form = styled.form`
-    width: 100%;
+    width: 80%;
     margin: auto;
     height: 100%;
     display: flex;
