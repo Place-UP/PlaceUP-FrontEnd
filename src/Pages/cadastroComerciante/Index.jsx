@@ -18,10 +18,12 @@ export function CadastroComerciante() {
         <Container>
             <BoxVetor>
                 <Register />
+                <div className="boxShadow"></div>
                 <CapaVetor>
                     <img src={Capa} alt="" />
                 </CapaVetor>
             </BoxVetor>
+
             <BoxForm>
                 <Back>
                     <Link to="/DirecCadastro" >

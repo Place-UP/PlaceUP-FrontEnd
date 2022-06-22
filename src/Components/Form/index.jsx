@@ -58,7 +58,7 @@ export const Forms = () => {
                 <Remember>
                     <CheckBox />
                 </Remember>
-                <Submit disabled={validateHasErrorInput()} type="submit" value="Proximo" name="Button" />
+                <Submit disabled={validateHasErrorInput()} type="submit" value="Próximo" name="Button" />
                 <Termos>
                     <p>Ao cadastrar-se, você concorda com os <Link to="/Termos">Termos de uso e Privacidade </Link></p>
                 </Termos>

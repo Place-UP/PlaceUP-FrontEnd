@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 const Media = {
-    Laptop: "@media(max-width: 1024px)",
-    Tablet: "@media(max-width: 768px)",
+    Laptop: "@media(max-width: 1024px)"
 }
 
 export const Regis = styled.section`
@@ -13,6 +12,11 @@ export const Regis = styled.section`
     align-items: center;
     top: 10%;
     right: 35%;
+
+    img{
+        width: 140px;
+        margin: auto;
+    }
 
     button{
         border: 4px solid #fff;

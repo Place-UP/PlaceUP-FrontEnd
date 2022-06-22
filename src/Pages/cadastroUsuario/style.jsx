@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 const Media = {
-    Laptop: "@media(min-width: 1024px)",
-    Tablet: "@media(max-width: 768px)"
+    Laptop: "@media(max-width: 1024px)",
 }
 
 export const Container = styled.div`
@@ -11,24 +10,33 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .boxShadow{
+        position: absolute;
+        width: 95%;
+        height: 100%;
+        right: 0;
+        clip-path: polygon(100% 100%, 100% 0%, 31.69% 0%, 20.28% 4.18%, 16.17% 7.73%, 12.83% 12.27%, 11.27% 17.7%, 6.41% 38.02%, 1.04% 58.53%, 0% 63.76%, 0% 71.56%, 1.97% 77.58%, 5.82% 83.64%, 11.25% 89.44%, 17.47% 94.38%, 24.54% 100%);
+        background-color: #2980B9;
+        z-index: -20;
+    }
 `
 
 export const BoxVetor = styled.div`
     position: relative;
-    width: 45%;
+    width: 80%;
     height: 100%;
-    background-color: #2980B9;
-    box-shadow: -20px 0  #A0D1DC;
-    clip-path: polygon(34% 0, 100% 0, 100% 60%, 100% 100%, 14% 100%, 0% 60%, 12% 18%);
-   
+    background-color: #A0D1DC;
+    clip-path: polygon(100% 100%, 100% 0%, 31.69% 0%, 20.28% 4.18%, 16.17% 7.73%, 12.83% 12.27%, 11.27% 17.7%, 6.41% 38.02%, 1.04% 58.53%, 0% 63.76%, 0% 71.56%, 1.97% 77.58%, 5.82% 83.64%, 11.25% 89.44%, 17.47% 94.38%, 24.54% 100%);
+    
 
-    ${Media.Tablet}{
+    ${Media.Laptop}{
         display: none;
     }
 `
 
 export const Form = styled.div`
-    width: 50%;
+    width: 100%;
 
     ${Media.Tablet}{
         width: 90%;
@@ -38,7 +46,6 @@ export const Form = styled.div`
 
 export const CapaVetor = styled.div`
     position: absolute;
-    width: auto; 
     height: auto;
     top: 40%;
     left: 10%;

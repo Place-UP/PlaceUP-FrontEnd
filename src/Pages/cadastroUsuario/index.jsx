@@ -22,6 +22,7 @@ export function CadastroUser() {
             </Form>
             <BoxVetor>
                 <Register2 />
+                <div className="boxShadow"></div>
                 <CapaVetor>
                     <img src={Vetor} alt="Vetor Cadastro Usuario" />
                 </CapaVetor>

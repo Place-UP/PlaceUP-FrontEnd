@@ -8,11 +8,12 @@ export const Regis = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     top: 10%;
-    right: 45%;
+    right: 35%;
+    transform: scale(-1, 1);
 
     img{
-        width: 150px;
         margin: auto;
     }
 
