@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Main,
   Body,
@@ -8,17 +8,15 @@ import {
   NameEdit,
   Inform,
   Sections,
-  EndPage,
+  Buttons,
 } from "./style";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import Self from "./img/perfil.svg";
-import teste from "./img/detalhe.svg";
 
 
 export function Perfil() {
- 
-//   function Abrir(){
-//   alert:('teste');
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -51,9 +49,12 @@ export function Perfil() {
             </Inform>
           </Inf>
 
+          <Buttons className="Btns">
+            <button className={`sobre ${isOpen ? "corBtn" : ""}`} onClick={() => setIsOpen(!isOpen)}>sobre</button>
+            <button className={`informacao ${isOpen ? "" : "corBtn"}`} onClick={() => setIsOpen(!isOpen)}>Informações</button>
+          </Buttons>
           <Sections>
-            <details className="Informações">
-              <summary onclick="Abrir()">  Sobre </summary> <br />
+            <div className={`Informações ${isOpen ? "active" : "none"}`}>
               <div id="sobre" className="InfoPessoal">
                 <p className="A">Informações Pessoais</p>
                 <label>
@@ -83,10 +84,10 @@ export function Perfil() {
               <button class="button">
                 <span>Salvar</span>
               </button>
-            </details>
+            </div>
 
-            <details className="Endereço">
-              <summary  onclick="Abrir()" id="endereço"> Endereço </summary>
+
+            <div className={`Endereço ${isOpen ? "none" : "active"}`}>
               <div id="sobre" className="InfoLocal">
                 <p className="B">Informações De Endereço</p>
                 <label>
@@ -137,14 +138,11 @@ export function Perfil() {
               <button class="button">
                 <span>Salvar</span>
               </button>
-            </details>
+            </div>
           </Sections>
-          <EndPage>
-          <img src={teste} />
-        </EndPage> 
         </Body>
-        
-      </Main> 
+
+      </Main>
     </>
   );
 }

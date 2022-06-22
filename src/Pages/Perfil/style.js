@@ -130,6 +130,17 @@ export const NameEdit = styled.div`
   }
 `;
 
+export const Buttons = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .corBtn{
+    border-bottom: 2px solid red;
+  }
+
+`
+
 export const Sections = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -143,36 +154,18 @@ export const Sections = styled.div`
     z-index: 999;
   }
 
-  details[open] {
-    summary {
-      text-decoration: underline 2px #2980b9;
-      font-weight: 700;
-      z-index: 999;
-    }
+  .active:checked{
+    display: block;
   }
 
-  summary {
-    width: 40%;
-    height: 30px;
-    margin-top: 40px;
-    cursor: pointer;
-    list-style: none;
-    margin-bottom: 20px;
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 38px;
-    color: #000000;
-    z-index: 999;
-  }
-  summary:hover {
-    text-decoration: underline 2px #2980b9;
-    transition: 0.2s;
+  .none{
+    display: none;
   }
 
-  .Informações[open],
-  .Endereço[open] {
+ 
+
+  .Informações,
+  .Endereço{
     position: absolute;
     width: 80%;
     margin-top: 5%;
