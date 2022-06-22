@@ -14,7 +14,12 @@ import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import Self from "./img/perfil.svg";
 import teste from "./img/detalhe.svg";
 
+
 export function Perfil() {
+ 
+//   function Abrir(){
+//   alert:('teste');
+
   return (
     <>
       <Header />
@@ -48,8 +53,8 @@ export function Perfil() {
 
           <Sections>
             <details className="Informações">
-              <summary> Sobre </summary> <br />
-              <div className="InfoPessoal">
+              <summary onclick="Abrir()">  Sobre </summary> <br />
+              <div id="sobre" className="InfoPessoal">
                 <p className="A">Informações Pessoais</p>
                 <label>
                   Nome Do Usuário:
@@ -81,8 +86,8 @@ export function Perfil() {
             </details>
 
             <details className="Endereço">
-              <summary> Endereço </summary>
-              <div className="InfoLocal">
+              <summary  onclick="Abrir()" id="endereço"> Endereço </summary>
+              <div id="sobre" className="InfoLocal">
                 <p className="B">Informações De Endereço</p>
                 <label>
                   Rua:
@@ -134,11 +139,12 @@ export function Perfil() {
               </button>
             </details>
           </Sections>
-        </Body>
-        {/* <EndPage>
+          <EndPage>
           <img src={teste} />
-        </EndPage> */}
-      </Main>
+        </EndPage> 
+        </Body>
+        
+      </Main> 
     </>
   );
 }
