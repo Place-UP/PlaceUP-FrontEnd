@@ -8,14 +8,19 @@ const Media = {
 };
 
 export const EndPage = styled.div`
-width: 50%;
-height: 50%;
-position: fixed;
-justify-content: end;
-`
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+
+  img {
+    width: 100%;
+  }
+`;
 export const Main = styled.main`
   width: 100%;
-
 `;
 
 export const Body = styled.body`
@@ -29,7 +34,12 @@ export const Body = styled.body`
     position: relative;
     height: 90px;
     top: 13%;
-
+    ${Media.Tablet} {
+      margin-left: 4%;
+    }
+    ${Media.MobileL} {
+      margin-left: 6%;
+    }
     p {
       color: #2d3e50;
       font-weight: bold;
@@ -39,8 +49,19 @@ export const Body = styled.body`
 `;
 
 export const Photo = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 25%;
+  ${Media.Tablet} {
+    width: 25%;
+    margin-left: 4%;
+  }
+  ${Media.MobileL} {
+    width: 70%;
+    margin-left: 6%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const Inf = styled.div`
@@ -49,11 +70,10 @@ export const Inf = styled.div`
   display: flex;
   margin-top: 55px;
   position: relative;
-  /* background-color: pink; */ ;
+  font-size: 17px;
 `;
 export const Inform = styled.div`
   width: 70%;
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -65,6 +85,12 @@ export const Locate = styled.div`
   margin-top: 40px;
   width: auto;
   display: flex;
+  margin-bottom: 25px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 38px;
 `;
 
 export const NameEdit = styled.div`
@@ -74,11 +100,15 @@ export const NameEdit = styled.div`
   width: 100%;
   height: 20px;
   flex-wrap: wrap;
-  margin: auto;
 
   .name {
     font-weight: bold;
     display: flex;
+    font-family: "Bakbak One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 56px;
   }
 
   .edit {
@@ -87,6 +117,12 @@ export const NameEdit = styled.div`
     cursor: pointer;
     display: flex;
     position: relative;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #2980b9;
     /* background-color: beige; */
   }
   .edit:hover {
@@ -104,12 +140,14 @@ export const Sections = styled.div`
     /* background-color: red; */
     display: flex;
     width: 20%;
+    z-index: 999;
   }
 
   details[open] {
     summary {
       text-decoration: underline 2px #2980b9;
       font-weight: 700;
+      z-index: 999;
     }
   }
 
@@ -120,16 +158,25 @@ export const Sections = styled.div`
     cursor: pointer;
     list-style: none;
     margin-bottom: 20px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+    color: #000000;
+    z-index: 999;
   }
   summary:hover {
     text-decoration: underline 2px #2980b9;
     transition: 0.2s;
   }
+
   .Informações[open],
   .Endereço[open] {
     position: absolute;
     width: 80%;
     margin-top: 5%;
+    /* aqui que eu coloco o display:none */
   }
 
   .InfoPessoal,
@@ -138,6 +185,7 @@ export const Sections = styled.div`
     justify-content: space-between;
     display: grid;
   }
+
   .A {
     margin-top: -15px;
   }
@@ -155,7 +203,16 @@ export const Sections = styled.div`
     margin-left: 2%;
     border: none;
     background-color: transparent;
+    text-align: right;
+    right: -13%;
     /* background-color: transparent; */
+  }
+  Select {
+    text-align: center;
+  }
+
+  .Endereço input {
+    width: 55%;
   }
 
   label {
@@ -209,3 +266,4 @@ export const Sections = styled.div`
     right: 0;
   }
 `;
+
