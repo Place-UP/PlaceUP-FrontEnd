@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import LocalVetor from './LocalDaLogo.svg'
-import { HiUser } from 'react-icons/hi';
-
 
 const Media = {
     Tablet: "@media(max-width: 1024px)",

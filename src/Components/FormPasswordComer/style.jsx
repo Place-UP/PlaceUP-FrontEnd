@@ -13,7 +13,7 @@ export const Form = styled.form`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     animation: fadeInDown 1.2s ease-in-out;
 
     a{
@@ -120,3 +120,40 @@ export const Submit = styled.input`
     }
 `
 
+export const BoxVerified = styled.div`
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: #7CB55B;
+        width: 20%;
+        border-radius: 20px;
+        height: 8px;
+    }
+
+    .box{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #7CB55B;
+
+        &:nth-child(2){
+            background-color: #7CB55B;
+        }
+
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+        }
+
+        
+    }
+`

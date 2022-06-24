@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import 'animate.css';
 
 const Media = {
     MobileL: "@media(min-width: 425px)",
@@ -8,6 +9,8 @@ const Media = {
 export const SocialMidia = styled.div`
     width: 100%;
     height: 100%;
+
+    animation: fadeInDown 1.5s ease-in-out;
 
     ul{
         display: flex;

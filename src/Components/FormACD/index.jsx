@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 //---------------------Componentes---------------------------
 import { CheckBox } from "../../Components/CheckBox";
-import { Form, Label, Remember, Submit, Termos } from "./style";
+import { BoxVerified, CheckACD, Form, Label, Remember, Submit, Termos } from "./style";
 
-import { Formr } from '../../mock/Form';
+import { FormACD } from '../../mock/Form';
+import { CheckACDicons } from '../../mock/Form';
 import { Link } from 'react-router-dom';
+import { SiVerizon } from 'react-icons/si';
 
 export const Forms = () => {
 
-    const [inputsForms, setInputsForms] = useState(Formr)
+    const [inputsForms, setInputsForms] = useState(FormACD)
 
     const [text, setText] = useState(false)
 
@@ -44,6 +46,18 @@ export const Forms = () => {
         <>
             <Form>
                 <legend>Cadastro</legend>
+                <CheckACD>
+                    {CheckACDicons.map((item) => {
+                        const { id, icons, alt } = item
+                        return (
+                            <label key={id} className="box">
+                                <img src={icons} alt={alt} />
+                                <input type="checkbox" />
+                            </label>
+                        )
+
+                    })}
+                </CheckACD>
                 {inputsForms.map((item) => (
                     <Label key={item.id} htmlFor={item.htmlFor} >
                         <i>{item.icon}</i>
@@ -58,13 +72,21 @@ export const Forms = () => {
                 <Remember>
                     <CheckBox />
                 </Remember>
-                <Link to="/UserPhone" >
+                <Link to="/CadastroComerPassword">
                     <Submit disabled={validateHasErrorInput()} type="submit" value="Próximo" name="Button" />
                 </Link>
                 <Termos>
                     <p>Ao cadastrar-se, você concorda com os <Link to="/Termos">Termos de uso e Privacidade </Link></p>
                 </Termos>
-
+                <BoxVerified>
+                    <div className='box'>
+                        <span><SiVerizon /></span>
+                    </div>
+                    <div className='box'>
+                        <span><SiVerizon /></span>
+                    </div>
+                    <div className='box'></div>
+                </BoxVerified>
             </Form>
         </>
     );

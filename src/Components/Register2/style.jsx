@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import 'animate.css';
 
 const Media = {
     Laptop: "@media(max-width: 1024px)"
@@ -12,6 +13,7 @@ export const Regis = styled.section`
     align-items: center;
     top: 10%;
     right: 35%;
+
 
     img{
         width: 140px;

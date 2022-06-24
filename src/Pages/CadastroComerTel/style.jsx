@@ -11,7 +11,6 @@ export const Container = styled.main`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 
     .boxShadow{
         position: absolute;
@@ -77,4 +76,3 @@ export const BoxForm = styled.div`
         width: 90%;
     }
 `
-

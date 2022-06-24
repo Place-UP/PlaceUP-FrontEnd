@@ -58,13 +58,12 @@ export const Forms = () => {
                 <Remember>
                     <CheckBox />
                 </Remember>
-                <Link to="/UserPhone" >
+                <Link to="/CadastroComerTel">
                     <Submit disabled={validateHasErrorInput()} type="submit" value="Próximo" name="Button" />
                 </Link>
                 <Termos>
                     <p>Ao cadastrar-se, você concorda com os <Link to="/Termos">Termos de uso e Privacidade </Link></p>
                 </Termos>
-
             </Form>
         </>
     );

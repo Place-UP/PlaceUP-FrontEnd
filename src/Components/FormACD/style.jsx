@@ -13,7 +13,7 @@ export const Form = styled.form`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     animation: fadeInDown 1.2s ease-in-out;
 
     a{
@@ -120,3 +120,80 @@ export const Submit = styled.input`
     }
 `
 
+export const CheckACD = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin-top: 5%;
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        img{
+            width: 30px;
+        }
+
+        input[type="checkbox"]{
+            appearance: none;
+            -webkit-appearance: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 10px;
+            background-color: #d5d6d5;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+
+        input[type="checkbox"]:hover {
+            transition: all 0.2s ease-in-out;
+            background-color: #a5a5a5;
+        }
+
+        input[type="checkbox"]:checked{
+            background-color: #2972A3;
+        }
+    }
+`
+
+export const BoxVerified = styled.div`
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: #7CB55B;
+        width: 20%;
+        border-radius: 20px;
+        height: 8px;
+    }
+
+    .box{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #7CB55B;
+
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+        }
+
+        &:nth-child(3){
+            background-color: #d5d5d5;
+        }
+    }
+`

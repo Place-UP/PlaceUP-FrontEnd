@@ -1,9 +1,10 @@
-import { Main } from "./style";
 import React from "react";
+import { Main } from "./style";
 import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
 import { BarraBusca } from "../../Components/BarraDePesquisaComerciante/index";
 import { Box } from "../../Components/VisualizacaoComercianteBox/index";
 import { MenuPrincipal } from "../../Components/NavVisualizacaoComerciante/index";
+import { BtnCreateProdutc } from "../../Components/BtnAdcProduto";
 
 export function VisualizacaoComerciante() {
 
@@ -11,11 +12,12 @@ export function VisualizacaoComerciante() {
         <>
             <HeaderComerciante />
             <Main>
-                <div className="Container1">
+                <div className="feed">
                     <BarraBusca />
                     <Box />
+                    <BtnCreateProdutc />
                 </div>
-                <div className="Container2">
+                <div className="busca">
                     <MenuPrincipal />
                 </div>
             </Main>

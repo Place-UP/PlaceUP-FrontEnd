@@ -8,11 +8,10 @@ import {
     Container, BoxVetor, BoxForm, CapaVetor, Back
 } from "./style";
 
-import { Forms } from '../../Components/FormComerciante'
-import { Midia } from '../../Components/SocialMidia/Index'
+import { Forms } from '../../Components/FormPasswordComer'
 import { Register } from "../../Components/Register/index";
 
-export function CadastroComerciante() {
+export function CadastroComerPassword() {
 
     return (
         <Container>
@@ -23,15 +22,13 @@ export function CadastroComerciante() {
                     <img src={Capa} alt="" />
                 </CapaVetor>
             </BoxVetor>
-
             <BoxForm>
                 <Back>
-                    <Link to="/DirecCadastro" >
+                    <Link to="/CadastroComerACD" >
                         <img src={Seta} alt="Seta de voltar" />
                     </Link>
                 </Back>
                 <Forms />
-                <Midia />
             </BoxForm>
         </Container>
 

@@ -22,7 +22,11 @@ import { Favoritos } from "./Pages/Favoritos/Index";
 import { Perfil } from "./Pages/Perfil/Index";
 import { Cursos } from './Pages/Cursos/index';
 import { GlobalStyles } from './Common/Context/theme'
-
+import { CadastroUserPhone } from "./Pages/CadastroUsuerPhone";
+import { CadastroPasswordUser } from "./Pages/CadastroPassWordUser";
+import { CadastroComerTel } from "./Pages/CadastroComerTel";
+import { CadastroComerPassword } from "./Pages/CadastroComerPassword";
+import { CadastroComerACD } from "./Pages/CadastroComerACD";
 
 
 function Rotas() {
@@ -35,9 +39,16 @@ function Rotas() {
                         <Route path="/" element={<LadingPage />} />
                         <Route path="/Login" element={<Login />} />
                         <Route path="/CadastroComerciante" element={<CadastroComerciante />} />
+                        <Route path="/CadastroComerTel" element={<CadastroComerTel />} />
+                        <Route path="/CadastroComerACD" element={<CadastroComerACD />} />
+                        <Route path="/CadastroComerPassword" element={< CadastroComerPassword />} />
+
                         <Route path="/CadastroUsuario" element={<CadastroUser />} />
+                        <Route path="/UserPhone" element={<CadastroUserPhone />} />
+                        <Route path="/UserPassword" element={<CadastroPasswordUser />} />
+
                         <Route path="/ComoFuncionaCalculadora" element={<IndexCalculadora />} />
-                        <Route path="/HomeUser" element={<IndexHomeUser />} />
+                        <Route path="/FeedUser" element={<IndexHomeUser />} />
                         <Route path="/Reservas" element={<Reservas />} />
                         <Route path="/Pedido" element={<Pedido />} />
                         <Route path="/Politica" element={<Politica />} />

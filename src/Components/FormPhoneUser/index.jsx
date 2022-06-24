@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 //---------------------Componentes---------------------------
 import { CheckBox } from "../../Components/CheckBox";
-import { Form, Label, Remember, Submit, Termos } from "./style";
+import { BoxVerified, Form, Label, Remember, Submit, Termos } from "./style";
 
-import { Formr } from '../../mock/Form';
+import { SiVerizon } from 'react-icons/si'
+import { FormrUser } from '../../mock/Form'
 import { Link } from 'react-router-dom';
 
 export const Forms = () => {
 
-    const [inputsForms, setInputsForms] = useState(Formr)
+    const [inputsForms, setInputsForms] = useState(FormrUser)
 
     const [text, setText] = useState(false)
 
@@ -20,7 +21,7 @@ export const Forms = () => {
         console.log(inputsForms)
         const itemIndex = newInputsForms.findIndex(item => item.id === id)
 
-        if (text.length > 4) {
+        if (text.length > 9) {
             newInputsForms[itemIndex].sucess = true;
         } else {
             newInputsForms[itemIndex].sucess = false
@@ -58,13 +59,17 @@ export const Forms = () => {
                 <Remember>
                     <CheckBox />
                 </Remember>
-                <Link to="/UserPhone" >
+                <Link to="/UserPassword">
                     <Submit disabled={validateHasErrorInput()} type="submit" value="Próximo" name="Button" />
                 </Link>
                 <Termos>
                     <p>Ao cadastrar-se, você concorda com os <Link to="/Termos">Termos de uso e Privacidade </Link></p>
                 </Termos>
-
+                <BoxVerified>
+                    <div className='box'>
+                        <span><SiVerizon /></span></div>
+                    <div className='box'></div>
+                </BoxVerified>
             </Form>
         </>
     );

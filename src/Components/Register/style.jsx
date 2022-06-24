@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import 'animate.css';
 
 
 export const Regis = styled.section`
@@ -12,6 +12,7 @@ export const Regis = styled.section`
     top: 10%;
     right: 35%;
     transform: scale(-1, 1);
+
 
     img{
         margin: auto;
