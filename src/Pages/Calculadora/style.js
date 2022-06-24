@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
 export const Main = styled.div`
-  background: linear-gradient(
-    304.69deg,
-    rgba(116, 189, 235, 0.2) 0.55%,
-    rgba(240, 240, 255, 0.51) 69.7%,
-    #edf4f8 98.57%
-  );
+ 
   width: 100%;
   margin: auto;
   height: max-content;
+  background-color: #E1E5E5;
 
   .ContainerCalculator {
     display: flex;
@@ -20,7 +16,7 @@ export const Main = styled.div`
     }
   }
   .container {
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
   .backButton {
@@ -50,6 +46,10 @@ export const Main = styled.div`
         font-weight: 400;
         font-size: 20px;
         color: #807b7b;
+      }
+
+      img{
+        width: 150px;
       }
     }
   }

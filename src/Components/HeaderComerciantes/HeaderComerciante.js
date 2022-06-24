@@ -3,6 +3,7 @@ import { BiHomeAlt } from "react-icons/bi";
 import { BsChatDots } from "react-icons/bs";
 import { TiCalculator } from "react-icons/ti";
 import { BiExit } from "react-icons/bi";
+import { FiBox } from 'react-icons/fi'
 import { IconContext } from "react-icons";
 import { Navigation, Title, List, Icon } from "./styles";
 import Logo from "../../Img/PlaceUp animação.svg";
@@ -21,10 +22,10 @@ export function HeaderComerciante() {
         <IconContext.Provider value={{ size: "30px" }}>
           <ul>
             <div>
-              <List className={`${path === "/" ? "Active" : ""}`}>
+              <List className={`${path === "/FeedUser" ? "Active" : ""}`}>
                 <Link
-                  to="/"
-                  className={`${path === "/" ? "preto" : ""}`}>
+                  to="/FeedUser"
+                  className={`${path === "/FeedUser" ? "preto" : ""}`}>
                   <Icon>
                     <BiHomeAlt className="IconsHeader" />
                   </Icon>
@@ -41,8 +42,17 @@ export function HeaderComerciante() {
                 </Link>
               </List>
 
-              <List className={`${path === "/Calculadora" ? "Active" : ""}`}>
-                <Link to="/Calculadora" className={`${path === "/Calculadora" ? "preto" : ""}`}>
+              <List className={`${path === "/VisualizacaoComerciante" ? "Active" : ""}`}>
+                <Link to="/VisualizacaoComerciante" className={`${path === "/VisualizacaoComerciante" ? "preto" : ""}`}>
+                  <Icon>
+                    <FiBox className="IconsHeader" />
+                  </Icon>
+                  <Title>Reservas</Title>
+                </Link>
+              </List>
+
+              <List className={`${path === "/calcular" ? "Active" : ""}`}>
+                <Link to="/calcular" className={`${path === "/calcular" ? "preto" : ""}`}>
                   <Icon>
                     <TiCalculator className="IconsHeader" />
                   </Icon>

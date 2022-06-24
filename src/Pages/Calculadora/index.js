@@ -8,8 +8,8 @@ import Unidade from "./Unidades";
 import Resultado from "./resultado";
 import Adicional from "./Adicional";
 import AdicionalPorcentagem from "./AdicionalPorcentagem";
-import Logo from "./img/mainLogo.svg";
-import BackButton from "./img/BackButton.svg";
+import Logo from "./img/LogoPlaceUP.svg";
+import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
 
 export function Calculator() {
   const [imposto, setImposto] = useState("");
@@ -38,9 +38,9 @@ export function Calculator() {
 
   return (
     <>
+      <HeaderComerciante />
       <Main>
         <div className="container">
-          <img className="backButton" src={BackButton} alt="Logo" />
           <div className="header">
             <div className="textArea">
               <img src={Logo} alt="Logo" />
@@ -112,9 +112,9 @@ export function Calculator() {
                   !result
                     ? ""
                     : result.toLocaleString("pt-BR", {
-                        style: "currency",
-                        currency: "BRL",
-                      })
+                      style: "currency",
+                      currency: "BRL",
+                    })
                 }
               />
 

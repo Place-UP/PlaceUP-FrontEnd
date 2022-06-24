@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: 100%;
-
     .active{
         display: block;
     }
@@ -11,24 +9,32 @@ export const Container = styled.div`
     .none{
         display: none;
     }
+    
+    .Box{
+        padding: 30px 20px;
+    }
 `
 
 export const BoxAdd = styled.div`
     position: fixed;
-    bottom: 15%;
-    right: 22%;
+    bottom: 10%;
+    right: 24.2%;
 
    
     button{
         position: absolute;
         right: 30%;
         background-color: #4FCE63;
-        padding: 15px 20px;
+        width: 75px;
+        height: 75px;
         font-size: 2rem;
         box-sizing: border-box;
         border-radius: 50px;
         color: #fff;
         cursor: pointer;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 `
 
@@ -38,20 +44,19 @@ export const Modal = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    bottom: 18%;
-    right: 21%;
     background-color: #fff;
-
-   
-    
+    border-radius: 15px;
+    bottom: 20%;
+    right: 20.5%;
 
     a{
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         
         &:hover{
+            transition: all 0.1s ease; 
             border-bottom: 2px solid #000;
         }
     }

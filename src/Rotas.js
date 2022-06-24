@@ -27,6 +27,7 @@ import { CadastroPasswordUser } from "./Pages/CadastroPassWordUser";
 import { CadastroComerTel } from "./Pages/CadastroComerTel";
 import { CadastroComerPassword } from "./Pages/CadastroComerPassword";
 import { CadastroComerACD } from "./Pages/CadastroComerACD";
+import { AddProdutc } from "./Pages/AddProduct";
 
 
 function Rotas() {
@@ -60,6 +61,7 @@ function Rotas() {
                         <Route path="/DirecCadastro" element={<DirecCadastro />} />
                         <Route path="/VisualizacaoUsuario" element={<VisualizacaoUsuario />} />
                         <Route path="/VisualizacaoComerciante" element={<VisualizacaoComerciante />} />
+                        <Route path="/AddProduct" element={<AddProdutc />} />
                         <Route path="*" element={<Pagina404 />} />
                         <Route path="/calcular" element={<Calculator />} />
                         <Route path="/Perfil" element={<Perfil />} />
