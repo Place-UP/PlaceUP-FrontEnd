@@ -33,12 +33,12 @@ export function HeaderComerciante() {
                 </Link>
               </List>
 
-              <List className={`${path === "/" ? "Active" : ""}`}>
-                <Link to="/" className={`${path === "/" ? "preto" : ""}`}>
+              <List className={`${path === "/Chat" ? "Active" : ""}`}>
+                <Link to="/Chat" className={`${path === "/Chat" ? "preto" : ""}`}>
                   <Icon>
                     <BsChatDots className="IconsHeader" />
                   </Icon>
-                  <Title>chat</Title>
+                  <Title>Chat</Title>
                 </Link>
               </List>
 
