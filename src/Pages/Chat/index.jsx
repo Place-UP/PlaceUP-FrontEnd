@@ -1,15 +1,33 @@
-import { Contact } from "../../Components/Contact";
+import React, { useEffect, useState } from "react";
+import { useAuthState } from 'react-firebase-hooks/auth'
+
+import { SideBar } from "../../Components/SideBar";
 import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
-import { Chat, Container } from './style'
+import { auth, db } from "../../Services/firebase";
+import { LoginChat } from "../../Components/LoginChat";
+import * as C from './style'
+import { Chat } from "../../Components/Chat";
+
 
 export function ChatComerciante() {
+    const [user] = useAuthState(auth)
+    const [userChat, setUserChat] = useState(null)
+    useEffect(() => {
+        if (user) {
+            db.collection("users").doc(user.uid).set({
+                email: user.email,
+                photoURL: user.photoURL
+            })
+        }
+    }, [user])
+
+    if (!user) return <LoginChat />
+
     return (
-        <Container>
+        <C.Container>
             <HeaderComerciante />
-            <Chat>
-                <h1>Olá</h1>
-            </Chat>
-            <Contact />
-        </Container>
+            <Chat userChat={userChat} />
+            <SideBar setUserChat={setUserChat} userChat={userChat} />
+        </C.Container>
     )
 }
