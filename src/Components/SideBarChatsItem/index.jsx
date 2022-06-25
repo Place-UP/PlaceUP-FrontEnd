@@ -6,7 +6,7 @@ import * as C from './style'
 
 const getUser = (users, userLogged) => users?.filter((user) => user !== userLogged?.email)[0]
 
-export const SlideBarChatsItem = (id, users, user, setUserChat, active) => {
+export const SlideBarChatsItem = ({ id, users, user, setUserChat, active }) => {
     const [getUserItem] = useCollection(
         db.collection("users").where("email", "==", getUser(users, user))
     )
@@ -25,8 +25,7 @@ export const SlideBarChatsItem = (id, users, user, setUserChat, active) => {
 
     return (
         <C.Container onClick={handleNewChat} className={active}>
-            {Avatar ? <C.Avatar src={Avatar?.photoURL} /> : <MdPerson />}
-            <C.Name >{item.split("@")[0]}</C.Name>
+
         </C.Container>
     )
 }

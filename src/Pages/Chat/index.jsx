@@ -5,12 +5,13 @@ import { SideBar } from "../../Components/SideBar";
 import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
 import { auth, db } from "../../Services/firebase";
 import { LoginChat } from "../../Components/LoginChat";
+import { Loading } from "../../Components/Loading";
 import * as C from './style'
 import { Chat } from "../../Components/Chat";
 
 
 export function ChatComerciante() {
-    const [user] = useAuthState(auth)
+    const [user, loading] = useAuthState(auth)
     const [userChat, setUserChat] = useState(null)
     useEffect(() => {
         if (user) {
@@ -20,6 +21,8 @@ export function ChatComerciante() {
             })
         }
     }, [user])
+
+    if (loading) return <Loading />
 
     if (!user) return <LoginChat />
 
