@@ -25,7 +25,8 @@ export const SlideBarChatsItem = ({ id, users, user, setUserChat, active }) => {
 
     return (
         <C.Container onClick={handleNewChat} className={active}>
-
+            {Avatar ? <C.Avatar src={Avatar?.photoURL} /> : <MdPerson />}
+            <C.Name>{item}</C.Name>
         </C.Container>
     )
 }

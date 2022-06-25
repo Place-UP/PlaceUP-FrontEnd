@@ -6,7 +6,7 @@ export const Line = styled.div`
     margin: 10px;
     display: flex;
 
-    &:me{
+    &.me{
         > div{
             background-color: #dcf8c6;
         }
@@ -20,17 +20,19 @@ export const Content = styled.div`
     box-shadow: 0 1px 1px #ccc;
     display: flex;
     flex-direction: column;
-    padding: 3px;
+    padding: 5px;
     max-width: 80%;
+    
 `
 
 export const Message = styled.span`
-    font-size: 14px;
+    font-size: 15px;
+    padding: 5px 0;
     margin: 5px 40px 5px 5px;
 `
 
 export const MessageDate = styled.span`
-    font-size: 11px;
+    font-size: 10px;
     color: #999;
     text-align: right;
     height: 15px;

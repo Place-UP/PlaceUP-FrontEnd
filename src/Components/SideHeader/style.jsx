@@ -5,13 +5,13 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 15%;
-    border-bottom: 2px solid #ccc;
-    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
 `
 
 export const Avatar = styled.img`
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     border-radius: 50%;
 `
@@ -33,4 +33,3 @@ export const CreateContact = styled.div`
         cursor: pointer;
     }
 `
-
