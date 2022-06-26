@@ -134,22 +134,12 @@ export const Buttons = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5%;
-  .corBtn {
-    border-bottom: 2px solid #2980b9;
-  }
-  button {
-    cursor: pointer;
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
+
+  .corBtn{
+    border-bottom: 2px solid red;
   }
 
-  button:hover {
-    border-bottom: 2px solid #2980b9;
-  }
-`;
+`
 
 export const Sections = styled.div`
   display: flex;
@@ -157,16 +147,25 @@ export const Sections = styled.div`
   justify-content: center;
   /* background-color: brown; */
 
-  .active:checked {
+  details {
+    /* background-color: red; */
+    display: flex;
+    width: 20%;
+    z-index: 999;
+  }
+
+  .active:checked{
     display: block;
   }
 
-  .none {
+  .none{
     display: none;
   }
 
+ 
+
   .Informações,
-  .Endereço {
+  .Endereço{
     position: absolute;
     width: 80%;
     margin-top: 5%;
@@ -178,7 +177,6 @@ export const Sections = styled.div`
     position: relative;
     justify-content: space-between;
     display: grid;
-    align-items: center;
   }
 
   .A {
@@ -192,25 +190,18 @@ export const Sections = styled.div`
   input,
   select {
     margin-bottom: 20px;
-    width: 50%;
+    margin-top: 5px;
+    width: 41%;
     position: relative;
     margin-left: 2%;
     border: none;
     background-color: transparent;
     text-align: right;
-    float: right;
+    right: -13%;
     /* background-color: transparent; */
-  
   }
   Select {
     text-align: center;
-  }
-  .regiao{
-    border-bottom: 2px solid #2980b9;
-    margin-bottom: 30px;
-  }
-  .regiãoselect{
-    border: none;
   }
 
   .Endereço input {
@@ -220,9 +211,6 @@ export const Sections = styled.div`
   label {
     margin-bottom: 20px;
     border-bottom: 2px solid #2980b9;
-    width: 600px;
-    justify-content: center;
-    font-weight: 500;
   }
   p {
     font-weight: 500;
@@ -271,3 +259,4 @@ export const Sections = styled.div`
     right: 0;
   }
 `;
+

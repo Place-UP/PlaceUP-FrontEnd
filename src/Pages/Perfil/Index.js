@@ -38,7 +38,7 @@ export function Perfil() {
                   <p className="name">UserName</p>
                 </div>
 
-                <div className="edit">
+                <div>
                   <p className="edit">EDITAR PERFIL</p>
                 </div>
               </NameEdit>
@@ -49,10 +49,11 @@ export function Perfil() {
             </Inform>
           </Inf>
 
-          <Buttons className="Btns">
-            <button className={`sobre ${isOpen ? "corBtn" : ""}`} onClick={() => setIsOpen(!isOpen)}>sobre</button>
-            <button className={`informacao ${isOpen ? "" : "corBtn"}`} onClick={() => setIsOpen(!isOpen)}>Informações</button>
+          <Buttons>
+            <button  className={`sobre ${isOpen ? "corBtn" : ""}`} onClick={() => setIsOpen(!isOpen)}>Sobre</button>
+            <button  className={`informacao ${isOpen ? "" : "corBtn"}`} onClick={() => setIsOpen(!isOpen)}>Informações</button>
           </Buttons>
+
           <Sections>
             <div className={`Informações ${isOpen ? "active" : "none"}`}>
               <div id="sobre" className="InfoPessoal">
@@ -80,6 +81,12 @@ export function Perfil() {
                   <input type="password" placeholder="*********" />
                 </label>
                 <br />
+
+                <label>
+                  Confirme Senha:
+                  <input type="password" placeholder="*********" />
+                </label>
+                <br />
               </div>
               <button class="button">
                 <span>Salvar</span>
@@ -88,7 +95,7 @@ export function Perfil() {
 
 
             <div className={`Endereço ${isOpen ? "none" : "active"}`}>
-              <div id="sobre" className="InfoLocal">
+              <div className="InfoLocal">
                 <p className="B">Informações De Endereço</p>
                 <label>
                   Rua:
@@ -120,8 +127,8 @@ export function Perfil() {
                 </label>
                 <br />
 
-                <div>
-                  <label>
+                <div className="regiao">
+                  <label className="regiãoselect">
                     Região:
                     <select>
                       <option value=""></option>

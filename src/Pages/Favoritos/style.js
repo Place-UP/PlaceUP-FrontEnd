@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 const Media = {
   Desktop: "@media(max-width:1189px)",
+  NotebookL: "@media(max-width:935px)",
   Notebook: "@media(max-width:928px",
   Tablet: "@media(max-width:768px)",
   MobileL: "@media(max-width:535px)",
   MobileM: "@media(max-width:375px)",
+   MobileS: "@media(max-width:320px)",
 };
 
 export const Main = styled.div``;
@@ -14,15 +16,14 @@ export const Body = styled.body`
   height: 570px;
   margin-left: 13%;
   margin-right: 28%;
-
+  ${Media.NotebookL} {
+    width: 80%;
+  }
   .Title {
     position: relative;
     height: 90px;
     left: 3%;
     top: 9%;
-    ${Media.Tablet} {
-      top: -50px;
-    }
 
     p {
       color: #2d3e50;
@@ -58,13 +59,18 @@ export const Merchant1 = styled.div`
   align-items: center;
   align-content: space-between;
   ${Media.Tablet} {
-    width: 40%;
+    width: 30%;
   }
   ${Media.MobileL} {
-    width: 50%;
+    width: 40%;
   }
   ${Media.MobileM} {
-    width: 70%;
+    width: 43%;
+    margin-left: 3%;
+  }
+   ${Media.MobileS} {
+    width: 50%;
+    margin-left: 3%;
   }
 
   .Icon {
