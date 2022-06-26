@@ -2,6 +2,7 @@ import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderCom
 import { MenuPrincipal } from "../../Components/NavVisualizacaoComerciante/index";
 import { Main } from "./style";
 import { AiOutlineUpload } from "react-icons/ai";
+import { TextField } from "@mui/material";
 export function AddProduct() {
   return (
     <>
@@ -22,42 +23,12 @@ export function AddProduct() {
                 </label>
                 <input type="file" name="arquivo" id="arquivo" />
               </div>
-              <div>
-                <div className="informationProduct">
-                  <div className="aboutProduct">
-                    <p>Nome do produto:</p>
-                    <input type="text" />
-                  </div>
-                  <hr />
-                </div>
-                <div className="informationProduct">
-                  <div className="aboutProduct">
-                    <p>Marca:</p>
-                    <input type="text" />
-                  </div>
-                  <hr />
-                </div>
-                <div className="informationProduct">
-                  <div className="aboutProduct">
-                    <p>Categoria:</p>
-                    <input type="text" />
-                  </div>
-                  <hr />
-                </div>
-                <div className="informationProduct">
-                  <div className="aboutProduct">
-                    <p>Peso:</p>
-                    <input type="text" />
-                  </div>
-                  <hr />
-                </div>
-                <div className="informationProduct">
-                  <div className="aboutProduct">
-                    <p>preço:</p>
-                    <input type="text" />
-                  </div>
-                  <hr />
-                </div>
+              <div className="informationProduct">
+                <TextField id="filled-basic" label="Nome" variant="filled" />
+                <TextField id="filled-basic" label="Marca" variant="filled" />
+                <TextField id="filled-basic" label="Categoria" variant="filled" />
+                <TextField id="filled-basic" label="Peso" variant="filled" />
+                <TextField id="filled-basic" label="Valor" variant="filled" />
               </div>
             </div>
             <div className="description">

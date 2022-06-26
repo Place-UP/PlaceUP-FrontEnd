@@ -73,7 +73,8 @@ export const Main = styled.div`
   }
   .putImage {
     position: relative;
-    width: 372px;
+    width: 60%;
+    margin-right: 5%;
     height: 366px;
     background: #c5c5c5;
     border-radius: 20px;
@@ -105,30 +106,19 @@ export const Main = styled.div`
     }
   }
   .informationProduct {
+    width: 50%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
 
-    .aboutProduct {
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
-      margin-top: 30px;
-      margin-bottom: 5px;
+
+      input{
+        width: 100%;
+        background-color: #fff;
+      }
     }
-    p {
-      font-family: "Lato";
-      font-weight: 700;
-      font-size: 20px;
-      color: #000000;
-    }
-    hr {
-      width: 100%;
-      height: 3px;
-      background: #2980b9;
-      border: none;
-    }
-  }
+
 
   .description {
     width: 80%;
@@ -141,10 +131,11 @@ export const Main = styled.div`
     }
     input {
       margin-top: 20px;
-      width: 105%;
+      width: 100%;
       height: 50px;
       background: #c5c5c5;
       border-radius: 20px;
+   
     }
   }
 `;
