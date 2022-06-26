@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 import LogoBackground from "./img/LogoVector.svg";
 import Logo from "./img/logo.svg";
 import StyleBanner from "./img/StyleBanner.svg";
-// import VectorBanner from "./img/VectorBanner.svg";
+import VectorBanner from "./img/VectorBanner.svg";
 import bottomshadow from "./img/bottomshadow.svg";
 import TableFounders from "../../Components/FoundersTable/index";
 import VectorOurHistory from "./img/VectorOurHistory.svg";
 import { colors } from "../../mock/CardsInstitucional";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
-import Capivara from "./img/imagem-capivara.jpg";
 export function Institucional() {
   return (
     <>
@@ -45,7 +44,7 @@ export function Institucional() {
           </div>
           <img
             className="imgvectorBannerRight"
-            src={Capivara}
+            src={VectorBanner}
             alt="Vector de baixo do texto"
           />
         </FirstView>
