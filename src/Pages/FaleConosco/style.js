@@ -28,9 +28,9 @@ export const Main = styled.main`
     width: 80%;
     text-align: center;
     margin: auto;
-    font-weight: bold;
     font-family: "Bakbak One";
     text-decoration: underline 4px #2980b9;
+    color: #2d3e50;
     ${Media.MobileL} {
       font-size: 30px;
     }
