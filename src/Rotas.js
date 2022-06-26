@@ -27,9 +27,8 @@ import { CadastroPasswordUser } from "./Pages/CadastroPassWordUser";
 import { CadastroComerTel } from "./Pages/CadastroComerTel";
 import { CadastroComerPassword } from "./Pages/CadastroComerPassword";
 import { CadastroComerACD } from "./Pages/CadastroComerACD";
-import { AddProdutc } from "./Pages/AddProduct";
 import { ChatComerciante } from './Pages/Chat/index'
-
+import { AddProduct } from "./Pages/adicionarProduto/index";
 
 function Rotas() {
     return (
@@ -63,7 +62,7 @@ function Rotas() {
                         <Route path="/VisualizacaoUsuario" element={<VisualizacaoUsuario />} />
                         <Route path="/VisualizacaoComerciante" element={<VisualizacaoComerciante />} />
                         <Route path="/Chat" element={<ChatComerciante />} />
-                        <Route path="/AddProduct" element={<AddProdutc />} />
+                        <Route path="/AddProduct" element={<AddProduct />} />
                         <Route path="*" element={<Pagina404 />} />
                         <Route path="/calcular" element={<Calculator />} />
                         <Route path="/Perfil" element={<Perfil />} />
