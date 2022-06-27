@@ -51,11 +51,19 @@ export const Information = styled.div`
       margin-top: 5px;
       font-size: 20px;
       font-weight: bold;
+
+      ${media.Tablet} { font-size: 18px; }  
+
+      ${media.Mobile} { font-size: 15px; }  
     }
 
     h3{
       font-size: 17px;
       color: #A6A8A9;
+
+      ${media.Tablet} { font-size: 15px; }  
+
+      ${media.Mobile} { font-size: 12px; }   
     }
 `;
 
@@ -87,14 +95,22 @@ export const Day = styled.div`
     border: 2px solid #2980B9;
 
     h1{      
-      font-size: 18px;
+      font-size: 17px;
       font-weight: bold;
       margin-top: 15px;
+
+      ${media.Tablet} { font-size: 15px; }  
+
+      ${media.Mobile} { font-size: 12px; }   
     }
 
     p{
       font-size: 15px;
       margin-top: 10px;
+      
+      ${media.Tablet} { font-size: 13px; }  
+
+      ${media.Mobile} { font-size: 11px; }  
     }
 `;
 
@@ -108,14 +124,22 @@ export const Scheduling = styled.div`
     border: 2px solid #2980B9;
 
     h1{      
-      font-size: 18px;
+      font-size: 17px;
       font-weight: bold;
       margin-top: 5px;
+
+      ${media.Tablet} { font-size: 15px; }  
+
+      ${media.Mobile} { font-size: 12px; }   
     }
 
     p{
       font-size: 15px;
       margin-top: 5px;
+
+      ${media.Tablet} { font-size: 13px; }  
+
+      ${media.Mobile} { font-size: 11px; }   
     }
 `;
 
@@ -130,6 +154,7 @@ export const Product = styled.div`
       padding: 15px 5%; 
       cursor: pointer;      
     }
+    
     .product{
       display: flex;
       flex-direction: row;

@@ -30,9 +30,21 @@ export const Section = styled.section`
     
     .OrderPlaced{ width: 50%;  }
 
-    h1{ font-size: 20px; }
+    h1{ 
+      font-size: 20px; 
 
-    h2{ font-size: 20px; }
+      ${media.Tablet} { font-size: 18px; }  
+
+      ${media.Mobile} { font-size: 15px; }  
+    }
+
+    h2{ 
+      font-size: 20px; 
+
+      ${media.Tablet} { font-size: 18px; }  
+
+      ${media.Mobile} { font-size: 15px; }  
+    }
   }   
 
   ${media.Mobile} {
@@ -49,16 +61,24 @@ export const Confirmation = styled.div`
       text-align: center;
      
         h1{
-          font-size: 23px;
+          font-size: 20px;
           font-weight: bold;
+
+          ${media.Tablet} { font-size: 18px; }  
+
+          ${media.Mobile} { font-size: 15px; }  
         }
 
         h2{
           margin-top: 10px;
-          font-size: 23px;
+          font-size: 20px;
           color: #A6A8A9;
+
+          ${media.Tablet} { font-size: 18px; }  
+
+          ${media.Mobile} { font-size: 15px; }  
         }
 
-        img{ margin-top: 20px;  }
+        img{ margin-top: 20px; }
     }
 `;

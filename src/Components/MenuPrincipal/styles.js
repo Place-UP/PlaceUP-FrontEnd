@@ -94,13 +94,9 @@ export const Section = styled.section`
 
     .hamburger.active .bar:nth-child(2){  opacity: 0; }
 
-    .hamburger.active .bar:nth-child(1){
-      transform: translateY(10px) rotate(45deg);
-    }
+    .hamburger.active .bar:nth-child(1){   transform: translateY(10px) rotate(45deg);   }
 
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-10px) rotate(-45deg);
-    }
+    .hamburger.active .bar:nth-child(3){  transform: translateY(-10px) rotate(-45deg);   }
 
     .nav-menu.active{right: 0;}
 
@@ -177,6 +173,13 @@ export const Profile = styled.div`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 20px;
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.Mobile} { font-size: 15px; } 
+
+    ${media.MobileS} { font-size: 12px; }  
   }
 
   .iconExit{
@@ -238,22 +241,29 @@ export const DarkMode = styled.section`
 
 export const Suggestions = styled.div`
   width: 90%;
-  margin: 50px 0px 0px 5%;
+  margin: 120px 0px 0px 5%;
   text-align: center;
   border-radius: 20px;
+  background-color: #ECF0F1;
   padding-bottom: 30px;
 
   h1{
-    font-size: 22px;
+    color: #2980B9;
+    font-size: 25px;
     padding-top: 20px;
     font-family: 'Lato', cursive;
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.Mobile} { font-size: 15px; } 
+
+    ${media.MobileS} { font-size: 12px; }  
   }
 `
 
 export const ProfileSuggestions = styled.div`
   margin-top: 25px;
   width: 100%;
-  background-color: white;
   display: flex;
   flex-direction: row;
   border-left: 3px solid #2980B9;
@@ -262,15 +272,22 @@ export const ProfileSuggestions = styled.div`
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-left: 15%;
+    margin-left: 12%;
   }
 
   h2{
-    margin-left: 3%;
+    margin-left: 5%;
     line-height: 50px;    
     font-family: 'Lato', cursive;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 20px;
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.Mobile} { font-size: 15px; } 
+
+    ${media.MobileS} { font-size: 12px; }  
   }
 `;

@@ -47,15 +47,15 @@ export const Category = styled.div`
 export const Content = styled.div`
   h1{   
     width: 60%;
-    font-size: 36px; 
+    font-size: 34px; 
     font-weight: 800;    
     font-family: 'Bakbak One', cursive;
     color: #297FB8;
     margin: 50px auto;
 
-    ${media.Tablet} { font-size: 33px; }  
+    ${media.Tablet} { font-size: 31px; }  
 
-    ${media.Mobile} { font-size: 30px; }  
+    ${media.Mobile} { font-size: 28px; }  
   
     ${media.MobileS} { font-size: 26px; }  
   }

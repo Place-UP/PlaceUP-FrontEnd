@@ -90,15 +90,12 @@ export const Section = styled.section`
         width: 100%;
         top: 0;
     }
+
     .hamburger.active .bar:nth-child(2){  opacity: 0; }
 
-    .hamburger.active .bar:nth-child(1){
-      transform: translateY(10px) rotate(45deg);
-    }
+    .hamburger.active .bar:nth-child(1){    transform: translateY(10px) rotate(45deg);   }
 
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-10px) rotate(-45deg);
-    }
+    .hamburger.active .bar:nth-child(3){    transform: translateY(-10px) rotate(-45deg);    }
 
     .nav-menu.active{right: 0;}
 
@@ -178,6 +175,13 @@ export const Profile = styled.div`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 20px;
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.Mobile} { font-size: 15px; } 
+
+    ${media.MobileS} { font-size: 12px; }  
   }
 
   .iconExit{
@@ -255,13 +259,23 @@ export const Evaluation = styled.div`
   h1{
     font-size: 20px;
     font-family: 'Bakbak One', cursive;
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.Mobile} { font-size: 15px; } 
+
+    ${media.MobileS} { font-size: 12px; }  
   }
 
   p{
-    font-size: 18px;
+    font-size: 17px;
     padding-top: 20px;
     font-weight: 700px;
     font-family: 'Lato', cursive;
+
+    ${media.Tablet} { font-size: 15px; }  
+
+    ${media.Mobile} { font-size: 13px; } 
   }
 `
 
@@ -301,5 +315,11 @@ export const ProfileSuggestion = styled.div`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.Mobile} { font-size: 15px; } 
+
+    ${media.MobileS} { font-size: 12px; }  
   }
 `;

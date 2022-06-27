@@ -48,14 +48,22 @@ export const Cart = styled.div`
       text-align: center;
      
         h1{
-          font-size: 25px;
+          font-size: 20px;
           font-weight: bold;
+
+          ${media.Tablet} { font-size: 18px; }  
+
+          ${media.Mobile} { font-size: 15px; }   
         }
 
         h2{
           margin-top: 10px;
-          font-size: 23px;
+          font-size: 17px;
           color: #A6A8A9;
+
+          ${media.Tablet} { font-size: 15px; }  
+
+          ${media.Mobile} { font-size: 13px; }  
         }
     }
 `;

@@ -236,14 +236,14 @@ export const Category = styled.div`
   padding: 30px 0 30px 12%;
 
   h1 {
-    font-size: 36px;
+    font-size: 34px;
     margin-left: 5px;
     font-weight: 800;
     font-family: "Bakbak One", cursive;
 
-    ${media.Tablet} { font-size: 33px; }  
+    ${media.Tablet} { font-size: 31px; }  
 
-    ${media.MobileM} { font-size: 30px; }  
+    ${media.MobileM} { font-size: 28px; }  
   
     ${media.MobileS} { font-size: 26px; }  
   }

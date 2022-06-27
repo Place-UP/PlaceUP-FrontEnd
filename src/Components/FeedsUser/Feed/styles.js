@@ -164,7 +164,7 @@ export const CointanerProduct = styled.div`
     width: 90%;
     text-align: left;
     font-size: 17px;
-    padding: 20px 10px 0px 10px;    
+    padding: 10px 10px 0px 15px;    
     font-family: 'Lato', cursive;
   }
 
@@ -173,6 +173,6 @@ export const CointanerProduct = styled.div`
     text-align: left;
     color: #297FB8;
     font-size: 17px;
-    padding-left: 10px;
+    padding: 5px 10px 0px 15px;    
   }
 `;
