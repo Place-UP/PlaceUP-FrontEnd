@@ -1,12 +1,21 @@
 import styled from "styled-components";
-
+const Media = {
+  Laptop: "@media(max-width:1250px)",
+  Desktop: "@media(max-width:1440px)",
+  Tablet: "@media(max-width:800px)",
+  MobileL: "@media(max-width:660px)",
+  MobileM: "@media(max-width:375px)",
+  Nav: "@media(max-width:550px)",
+};
+export const Conatiner = styled.div`
+  width: 90%;
+  margin-left: 70px;
+`;
 export const Main = styled.div`
- 
   width: 100%;
   margin: auto;
-  height: max-content;
-  background-color: #E1E5E5;
 
+  background-color: #e1e5e5;
   .ContainerCalculator {
     display: flex;
     justify-content: space-between;
@@ -16,8 +25,9 @@ export const Main = styled.div`
     }
   }
   .container {
-    width: 80%;
+    /* width: 90%; */
     margin: auto;
+    margin-left: 70px;
   }
   .backButton {
     width: 4%;
@@ -36,9 +46,18 @@ export const Main = styled.div`
         font-family: "Lato";
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 38px;
         color: #2980b9;
         margin-bottom: 10px;
+        ${Media.Laptop} {
+          font-size: 36px;
+        }
+        ${Media.Tablet} {
+          font-size: 32px;
+        }
+        ${Media.MobileL} {
+          font-size: 28px;
+        }
       }
       p {
         font-family: "Lato";
@@ -46,10 +65,28 @@ export const Main = styled.div`
         font-weight: 400;
         font-size: 20px;
         color: #807b7b;
+        ${Media.Laptop} {
+          font-size: 18px;
+        }
+        ${Media.Tablet} {
+          font-size: 15px;
+        }
+        ${Media.MobileL} {
+          font-size: 12px;
+        }
       }
 
-      img{
+      img {
         width: 150px;
+        ${Media.Laptop} {
+          width: 130px;
+        }
+        ${Media.Tablet} {
+          width: 100px;
+        }
+        ${Media.MobileL} {
+          width: 80px;
+        }
       }
     }
   }
@@ -67,6 +104,15 @@ export const Main = styled.div`
         color: #2980b9;
         margin-bottom: 10px;
         margin-top: 30px;
+        ${Media.Laptop} {
+          font-size: 36px;
+        }
+        ${Media.Tablet} {
+          font-size: 32px;
+        }
+        ${Media.MobileL} {
+          font-size: 28px;
+        }
       }
       p {
         font-family: "Lato";
@@ -74,6 +120,15 @@ export const Main = styled.div`
         font-weight: 400;
         font-size: 20px;
         color: #807b7b;
+        ${Media.Laptop} {
+          font-size: 18px;
+        }
+        ${Media.Tablet} {
+          font-size: 15px;
+        }
+        ${Media.MobileL} {
+          font-size: 12px;
+        }
       }
     }
     .TableTitleList {
@@ -89,6 +144,15 @@ export const Main = styled.div`
         font-weight: 700;
         font-size: 20px;
         color: #2980b9;
+        ${Media.Laptop} {
+          font-size: 18px;
+        }
+        ${Media.Tablet} {
+          font-size: 15px;
+        }
+        ${Media.MobileL} {
+          font-size: 12px;
+        }
       }
       span {
         text-align: center;
@@ -97,6 +161,15 @@ export const Main = styled.div`
         font-weight: 700;
         font-size: 20px;
         color: #807b7b;
+        ${Media.Laptop} {
+          font-size: 18px;
+        }
+        ${Media.Tablet} {
+          font-size: 15px;
+        }
+        ${Media.MobileL} {
+          font-size: 12px;
+        }
       }
     }
     .TableContainer {
@@ -136,6 +209,15 @@ export const Main = styled.div`
           font-weight: 400;
           font-size: 20px;
           color: #807b7b;
+          ${Media.Laptop} {
+            font-size: 18px;
+          }
+          ${Media.Tablet} {
+            font-size: 15px;
+          }
+          ${Media.MobileL} {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -152,8 +234,17 @@ export const Main = styled.div`
       text-align: center;
       font-family: "Lato";
       font-style: normal;
-      font-size: 30px;
+      font-size: 34px;
       color: #493d3d;
+      ${Media.Laptop} {
+        font-size: 31px;
+      }
+      ${Media.Tablet} {
+        font-size: 28px;
+      }
+      ${Media.MobileL} {
+        font-size: 26px;
+      }
     }
     span {
       display: flex;
@@ -162,9 +253,18 @@ export const Main = styled.div`
       font-family: "Lato";
       font-style: normal;
       font-weight: 400;
-      font-size: 40px;
+      font-size: 38px;
       color: #2d3e50;
       text-align: center;
+      ${Media.Laptop} {
+        font-size: 36px;
+      }
+      ${Media.Tablet} {
+        font-size: 32px;
+      }
+      ${Media.MobileL} {
+        font-size: 28px;
+      }
     }
     .InformationsDescription {
       margin-top: 30px;
@@ -195,14 +295,32 @@ export const InputArea = styled.div`
     font-size: 20px;
     line-height: 36px;
     color: #807b7b;
+    ${Media.Laptop} {
+      font-size: 18px;
+    }
+    ${Media.Tablet} {
+      font-size: 15px;
+    }
+    ${Media.MobileL} {
+      font-size: 12px;
+    }
   }
   h1 {
     font-family: "Lato";
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 34px;
     line-height: 36px;
     color: #0009;
+    ${Media.Laptop} {
+      font-size: 31px;
+    }
+    ${Media.Tablet} {
+      font-size: 28px;
+    }
+    ${Media.MobileL} {
+      font-size: 26px;
+    }
   }
 
   input {
@@ -224,6 +342,15 @@ export const ButtonStyle = styled.button`
     color: white;
     opacity: 0.6;
     transform: 1s;
+    ${Media.Laptop} {
+      font-size: 18px;
+    }
+    ${Media.Tablet} {
+      font-size: 15px;
+    }
+    ${Media.MobileL} {
+      font-size: 12px;
+    }
     &:hover {
       transform: 1s;
       opacity: 1;

@@ -1,4 +1,4 @@
-import { Main, InputArea, ButtonStyle } from "./style";
+import { Main, InputArea, ButtonStyle, Conatiner } from "./style";
 import React, { useState } from "react";
 import Preco from "./preco";
 import Imposto from "./imposto";
@@ -40,124 +40,128 @@ export function Calculator() {
     <>
       <HeaderComerciante />
       <Main>
-        <div className="container">
-          <div className="header">
-            <div className="textArea">
-              <img src={Logo} alt="Logo" />
-              <h1>Calculadora de precificação</h1>
-              <p>Calcular um produto nunca foi tão fácil.</p>
+        <Conatiner>
+          <div className="container">
+            <div className="header">
+              <div className="textArea">
+                <img src={Logo} alt="Logo" />
+                <h1>Calculadora de precificação</h1>
+                <p>Calcular um produto nunca foi tão fácil.</p>
+              </div>
             </div>
-          </div>
 
-          <div className="ContainerCalculator">
-            <div>
-              <InputArea>
-                <h1> Coloque o nome do produto</h1>
+            <div className="ContainerCalculator">
+              <div>
+                <InputArea>
+                  <h1> Coloque o nome do produto</h1>
 
-                <input
-                  type="text"
-                  value={Product}
-                  placeholder="Nome do produto"
-                  onChange={(entrada) => {
-                    setProduct(entrada.target.value);
-                  }}
+                  <input
+                    type="text"
+                    value={Product}
+                    placeholder="Nome do produto"
+                    onChange={(entrada) => {
+                      setProduct(entrada.target.value);
+                    }}
+                  />
+                </InputArea>
+                <Imposto imposto={imposto} setImpostos={setImposto} />
+                <Lucros lucro={lucro} setlucros={setlucro} />
+                <Preco preco={preco} setprecos={setpreco} />
+                <Adicional adicional={adicional} setadicional={setadicional} />
+                <AdicionalPorcentagem
+                  adicionalPorcentagem={adicionalPorcentagem}
+                  setadicionalPorcentagem={setadicionalPorcentagem}
                 />
-              </InputArea>
-              <Imposto imposto={imposto} setImpostos={setImposto} />
-              <Lucros lucro={lucro} setlucros={setlucro} />
-              <Preco preco={preco} setprecos={setpreco} />
-              <Adicional adicional={adicional} setadicional={setadicional} />
-              <AdicionalPorcentagem
-                adicionalPorcentagem={adicionalPorcentagem}
-                setadicionalPorcentagem={setadicionalPorcentagem}
-              />
-              <Unidade setUnidade={setUnidade} />
+                <Unidade setUnidade={setUnidade} />
 
-              <Calcular
-                unidade={unidade}
-                adicionalPorcentagem={adicionalPorcentagem}
-                adicional={adicional}
-                lucro={lucro}
-                preco={preco}
-                imposto={imposto}
-                setResultado={setResultado}
-                setUnidade={setUnidade}
-              />
-            </div>
-            <div className="ResulteWhite">
-              <h1>{Product}</h1>
-              <div className="InformationsDescription">
-                <p>
-                  Imposto:{" "}
-                  {!imposto ? "" : formatterPorcent.format(imposto) + "%"}
-                </p>
-                <p>
-                  Margem de lucro:{" "}
-                  {!lucro ? "" : formatterPorcent.format(lucro) + "%"}
-                </p>
-                <p>Valor pago: {!preco ? "" : formatter.format(preco)} </p>
-                <p>
-                  Custo Adicional: {""}
-                  {!adicional ? "" : formatter.format(adicional)}
-                </p>
-                <p>
-                  Custo Adicional:{" "}
-                  {!adicionalPorcentagem
-                    ? ""
-                    : formatterPorcent.format(adicionalPorcentagem) + "%"}
-                </p>
+                <Calcular
+                  unidade={unidade}
+                  adicionalPorcentagem={adicionalPorcentagem}
+                  adicional={adicional}
+                  lucro={lucro}
+                  preco={preco}
+                  imposto={imposto}
+                  setResultado={setResultado}
+                  setUnidade={setUnidade}
+                />
               </div>
-              <Resultado
-                resultado={
-                  !result
-                    ? ""
-                    : result.toLocaleString("pt-BR", {
-                      style: "currency",
-                      currency: "BRL",
-                    })
-                }
-              />
+              <div className="ResulteWhite">
+                <h1>{Product}</h1>
+                <div className="InformationsDescription">
+                  <p>
+                    Imposto:{" "}
+                    {!imposto ? "" : formatterPorcent.format(imposto) + "%"}
+                  </p>
+                  <p>
+                    Margem de lucro:{" "}
+                    {!lucro ? "" : formatterPorcent.format(lucro) + "%"}
+                  </p>
+                  <p>Valor pago: {!preco ? "" : formatter.format(preco)} </p>
+                  <p>
+                    Custo Adicional: {""}
+                    {!adicional ? "" : formatter.format(adicional)}
+                  </p>
+                  <p>
+                    Custo Adicional:{" "}
+                    {!adicionalPorcentagem
+                      ? ""
+                      : formatterPorcent.format(adicionalPorcentagem) + "%"}
+                  </p>
+                </div>
+                <Resultado
+                  resultado={
+                    !result
+                      ? ""
+                      : result.toLocaleString("pt-BR", {
+                          style: "currency",
+                          currency: "BRL",
+                        })
+                  }
+                />
 
-              <span>
-                Valor unitário:{" "}
-                {!(result / unidade) ? "" : formatter.format(result / unidade)}
-              </span>
-              <div className="buttonContainer">
-                <ButtonStyle onClick={del}>
-                  <p>Redefinir</p>
-                </ButtonStyle>
+                <span>
+                  Valor unitário:{" "}
+                  {!(result / unidade)
+                    ? ""
+                    : formatter.format(result / unidade)}
+                </span>
+                <div className="buttonContainer">
+                  <ButtonStyle onClick={del}>
+                    <p>Redefinir</p>
+                  </ButtonStyle>
+                </div>
+              </div>
+            </div>
+            <div className="TableSimilarPrices">
+              <div className="TableTitle">
+                <h1> Tabela PlaceUp</h1>
+
+                {/* <p>Última atualização: </p> */}
+              </div>
+              <div className="TableContainer">
+                <div className="TableTitleList">
+                  <span>Produto: {Product}</span>
+                  <p>Mínimo</p>
+                  <p>Média</p>
+                  <p>Máximo</p>
+                </div>
+                <div className="TablePlaceUP">
+                  <span>PlaceUP</span>
+                  <p>{!adicional ? "" : formatter.format(result)}</p>
+                  <p>{!result ? "" : formatter.format(result)}</p>
+                  <p>{!result ? "" : formatter.format(result)}</p>
+                </div>
+
+                <div className="TableGoogleShopping">
+                  <span>Google Shopping</span>
+                  <p>{!result ? "" : formatter.format(result)}</p>
+                  <p>{!result ? "" : formatter.format(result)}</p>
+                  <p>{!result ? "" : formatter.format(result)}</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="TableSimilarPrices">
-            <div className="TableTitle">
-              <h1> Tabela PlaceUp</h1>
-
-              {/* <p>Última atualização: </p> */}
-            </div>
-            <div className="TableContainer">
-              <div className="TableTitleList">
-                <span>Produto: {Product}</span>
-                <p>Mínimo</p>
-                <p>Média</p>
-                <p>Máximo</p>
-              </div>
-              <div className="TablePlaceUP">
-                <span>PlaceUP</span>
-                <p>{!adicional ? "" : formatter.format(result)}</p>
-                <p>{!result ? "" : formatter.format(result)}</p>
-                <p>{!result ? "" : formatter.format(result)}</p>
-              </div>
-
-              <div className="TableGoogleShopping">
-                <span>Google Shopping</span>
-                <p>{!result ? "" : formatter.format(result)}</p>
-                <p>{!result ? "" : formatter.format(result)}</p>
-                <p>{!result ? "" : formatter.format(result)}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Conatiner>
       </Main>
     </>
   );
