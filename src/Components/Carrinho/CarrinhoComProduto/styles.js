@@ -11,7 +11,7 @@ export const Section = styled.section`
     right: 0pt;
     max-width: 400px;
     width: 25%;
-    background-color: #ECF0F1;
+    background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px; 
@@ -50,6 +50,7 @@ export const Information = styled.div`
     h1{
       margin-top: 5px;
       font-size: 20px;
+      color: ${({ theme }) => theme.fontColor};
       font-weight: bold;
 
       ${media.Tablet} { font-size: 18px; }  
@@ -59,7 +60,7 @@ export const Information = styled.div`
 
     h3{
       font-size: 17px;
-      color: #A6A8A9;
+      color: ${({ theme }) => theme.fontColor};
 
       ${media.Tablet} { font-size: 15px; }  
 
@@ -77,7 +78,7 @@ export const Cart = styled.div`
     .Titule{
       font-size: 25px;
       font-weight: bold;
-      color: #2980B9;
+      color: ${({ theme }) => theme.fontColor};
       margin-bottom: 30px;
     }
 
@@ -87,7 +88,7 @@ export const Cart = styled.div`
 `;
 
 export const Day = styled.div`
-    background-color: white;
+    background-color: ${({ theme }) => theme.body};
     width: 45%;
     height: 80px;
     margin: 0 auto;
@@ -97,6 +98,7 @@ export const Day = styled.div`
     h1{      
       font-size: 17px;
       font-weight: bold;
+      color: ${({ theme }) => theme.fontColor};
       margin-top: 15px;
 
       ${media.Tablet} { font-size: 15px; }  
@@ -106,6 +108,7 @@ export const Day = styled.div`
 
     p{
       font-size: 15px;
+      color: ${({ theme }) => theme.fontColor};
       margin-top: 10px;
       
       ${media.Tablet} { font-size: 13px; }  
@@ -115,7 +118,7 @@ export const Day = styled.div`
 `;
 
 export const Scheduling = styled.div`
-    background-color: white;
+    background-color: ${({ theme }) => theme.body};
     width: 45%;
     height: auto;
     padding-bottom: 10px;
@@ -127,6 +130,7 @@ export const Scheduling = styled.div`
       font-size: 17px;
       font-weight: bold;
       margin-top: 5px;
+      color: ${({ theme }) => theme.fontColor};
 
       ${media.Tablet} { font-size: 15px; }  
 
@@ -136,6 +140,7 @@ export const Scheduling = styled.div`
     p{
       font-size: 15px;
       margin-top: 5px;
+      color: ${({ theme }) => theme.fontColor};
 
       ${media.Tablet} { font-size: 13px; }  
 
@@ -149,7 +154,7 @@ export const Product = styled.div`
     overflow-y: scroll;
 
     p{
-      color: #2980B9;
+      color: ${({ theme }) => theme.fontColor};
       display: flex;
       padding: 15px 5%; 
       cursor: pointer;      
@@ -173,6 +178,7 @@ export const ProductContainer = styled.div`
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      color: ${({ theme }) => theme.fontColor};
     }
 `;
 

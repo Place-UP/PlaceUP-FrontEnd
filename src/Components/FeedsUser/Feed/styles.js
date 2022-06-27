@@ -11,7 +11,7 @@ export const Feed = styled.div`
   max-width: 1400px;
   width: 60%;
   border-radius: 20px;
-  background-color: white;
+  background-color: ${({ theme }) => theme.cards};
 
   ${media.Tablet} {    
     .product {
@@ -101,7 +101,7 @@ export const ContainerProfile = styled.div`
   .buttonSeeMore:hover{
     color: #297FB8;
     border: 2px solid #297FB8;
-    background-color: white;
+    background-color: ${({ theme }) => theme.body};
   }
 `
 
@@ -110,25 +110,28 @@ export const Profile = styled.div`
   flex-direction: row;
 
   img{
-    width: 70px;
-    height: 70px;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer;    
   }
 
   h1{
-    line-height:70px;
+    line-height: 70px;
     cursor: pointer;    
     font-weight: bold;    
     font-family: 'Lato', cursive;
-    padding: 0px 5px;
+    padding: 5px 10px;
+    color: ${({ theme }) => theme.fontColor};
   }
 
   .favorite{
     width: 30px;
     height: 30px;
-    margin: 20px 0px 0px 10px;
+    margin: 26px 0px 0px 0px;
     cursor: pointer;
+    color: ${({ theme }) => theme.fontColor};
   }
 `;
 
@@ -165,7 +168,8 @@ export const CointanerProduct = styled.div`
     text-align: left;
     font-size: 17px;
     padding: 10px 10px 0px 15px;    
-    font-family: 'Lato', cursive;
+    font-family: 'Lato', cursive;    
+    color: ${({ theme }) => theme.fontColor};
   }
 
   p{

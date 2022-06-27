@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import React from "react";
+
 const media = {
   Tablet: "@media(max-width: 940px)",
   MobileM: "@media(max-width: 440px)",
   MobileS: "@media(max-width:320px)",
 };
 
-export const Home = styled.div`
-  background-color: #ecf0f1;
+export const Main = styled.div`
+  background-color: ${({ theme }) => theme.body};
 
   ${media.Tablet} {   margin-left: 6%;   }  
 
@@ -40,17 +40,17 @@ export const SearchBar = styled.div`
   height: 53px;
   display: flex;
   align-items: center;
-  background: white;
+  background-color: ${({ theme }) => theme.cards};
   border-radius: 26.5px;
   font-family: "Poppins";
-  font-color: black;
+  color: ${({ theme }) => theme.fontColor};
 
   .icon {
     min-width: 20px;
     min-height: 20px;
     font-size: 1.5rem;
     padding: 15px;
-    color: black;
+    color: ${({ theme }) => theme.fontColor};
   }
 
   input {
@@ -60,14 +60,14 @@ export const SearchBar = styled.div`
     border: 0 none;
     outline: 0;
     padding-left: 2px;
-    color: black;
+    color: ${({ theme }) => theme.fontColor};
 
     &::placeholder {
-      color: black;
+      color: ${({ theme }) => theme.fontColor};
       ${media.MobileM} {
         color: transparent;
         &:hover {
-          color: black;
+          color: ${({ theme }) => theme.fontColor};
           width: 20vw;
         }
       }
@@ -89,16 +89,16 @@ export const Car = styled.div`
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  color: ${({ theme }) => theme.fontColor};
 
-  img {
+  .carIcon {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    color: ${({ theme }) => theme.fontColor};
   }
 
-  ${media.MobileM} {
-    margin-right: 5%;
-  }
+  ${media.MobileM} {   margin-right: 5%;  }
 `;
 
 export const ContainerSearch = styled.div`
@@ -106,7 +106,7 @@ export const ContainerSearch = styled.div`
   width: 48%;
   height: 50%;
   text-align: center;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.cards};
   margin-top: 5px;
   border: 1px solid rgb(180, 180, 180);
   border-radius: 10px;
@@ -131,12 +131,14 @@ export const ContainerSearch = styled.div`
     }
 
     p {
-      width: 20%;
+      width: 20%;      
+      color: ${({ theme }) => theme.fontColor};
     }
 
     span {
       width: 20%;
-      font-size: 1.2rem;
+      font-size: 1.2rem;      
+      color: ${({ theme }) => theme.fontColor};
     }
 
     img {
@@ -149,7 +151,7 @@ export const ContainerSearch = styled.div`
     width: 48%;
     height: 50%;
     text-align: center;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.cards};
     margin-top: 5px;
     border: 1px solid rgb(180, 180, 180);
     border-radius: 10px;
@@ -179,11 +181,13 @@ export const ContainerSearch = styled.div`
         text-align: center;
         margin: 20px;
         width: auto;
+        color: ${({ theme }) => theme.fontColor};
       }
 
       span {
         text-align: center;
         font-size: 1.2rem;
+        color: ${({ theme }) => theme.fontColor};
       }
 
       img {
@@ -205,9 +209,11 @@ export const Filter = styled.div`
   select {
     width: 150px;
     height: 40px;
-    padding: 0px 4px;
+    padding: 0px 5px;
     margin: auto 10px 10px 0px;
     border-radius: 20px;
+    background-color: ${({ theme }) => theme.cards};
+    color: ${({ theme }) => theme.fontColor};
   }
 
   select:nth-child(2) {
@@ -240,6 +246,7 @@ export const Category = styled.div`
     margin-left: 5px;
     font-weight: 800;
     font-family: "Bakbak One", cursive;
+    color: ${({ theme }) => theme.fontColor};
 
     ${media.Tablet} { font-size: 31px; }  
 
@@ -300,7 +307,7 @@ export const FilterCategory = styled.div`
   border-radius: 8px;
   margin-top: 70px;
   text-align: center;
-  background-color: white;
+  background-color: ${({ theme }) => theme.cards};
 
   img {
     width: 100px;
@@ -324,6 +331,7 @@ export const InfoCategory = styled.div`
     margin-left: 5px;
     font-weight: 400;
     cursor: pointer;
+    color: ${({ theme }) => theme.fontColor};
 
     ${media.Tablet} { font-size: 18px; }  
 
@@ -345,7 +353,7 @@ export const InfoCategory = styled.div`
     width: 25px;
     height: 25px;
     background-color: #0D5E92;
-    color: white;
+    color: ${({ theme }) => theme.fontColor};
     font-size: 20px;
     border-radius: 4px;
     line-height: -200px;

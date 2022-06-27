@@ -13,7 +13,7 @@ export const Section = styled.section`
     max-width: 400px;
     width: 23%;
     height: 100vh;
-    background-color: #FFFFFF;
+    background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px; 
@@ -23,7 +23,7 @@ export const Section = styled.section`
     max-width: 450px;
     width: 100%;
     height: 100vh;
-    background-color: #FFFFFF;
+    background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
     padding-top: 100px; 
@@ -53,12 +53,12 @@ export const Section = styled.section`
     margin: 5px auto;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    background-color: black;
+    background-color: ${({ theme }) => theme.fontColor};
 }
 
   .bar:nth-child(1){
-      position: fixed;    
-      margin: 5px auto auto -20px;
+    position: fixed;    
+    margin: 5px auto auto -20px;
   }
 
   .bar:nth-child(2){
@@ -153,7 +153,7 @@ export const Profile = styled.div`
 
   .profile{
     width: 90%;
-    background-color: #ECF0F1;
+    background-color: ${({ theme }) => theme.body};
     border-radius: 50px;
     margin: auto;
     display: flex;
@@ -174,6 +174,7 @@ export const Profile = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 20px;
+    color: ${({ theme }) => theme.fontColor};
 
     ${media.Tablet} { font-size: 18px; }  
 
@@ -188,6 +189,7 @@ export const Profile = styled.div`
     padding-right: 10px;
     cursor: pointer; 
     padding-top: 5px;
+    color: ${({ theme }) => theme.fontColor};
   }
 `;
 
@@ -204,7 +206,6 @@ export const DarkMode = styled.section`
     display: block;
     width: 40px;
     height: 20px;
-    background: #ddd;
     border-radius: 60px;
     cursor: pointer;
     outline: none;
@@ -223,18 +224,18 @@ export const DarkMode = styled.section`
   }		
 
   input.toggle-control + label::before {
-    background: #202020;
+    background: white;
     border-radius: 60px;
   }
 
   input.toggle-control + label::after {
     width: 18px;
-    background: white;
+    background: #297FB8;
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 
-  input.toggle-control:checked + label::before { background: white; }
+  input.toggle-control:checked + label::before { background: black; }
 
   input.toggle-control:checked + label::after { margin-left: 20px; }
 `
@@ -244,11 +245,11 @@ export const Suggestions = styled.div`
   margin: 120px 0px 0px 5%;
   text-align: center;
   border-radius: 20px;
-  background-color: #ECF0F1;
+  background-color: ${({ theme }) => theme.body};
   padding-bottom: 30px;
 
   h1{
-    color: #2980B9;
+    color: #297FB8;
     font-size: 25px;
     padding-top: 20px;
     font-family: 'Lato', cursive;
@@ -283,6 +284,7 @@ export const ProfileSuggestions = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 20px;
+    color: ${({ theme }) => theme.fontColor};
 
     ${media.Tablet} { font-size: 18px; }  
 

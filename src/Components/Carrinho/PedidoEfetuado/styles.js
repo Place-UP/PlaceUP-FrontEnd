@@ -12,7 +12,7 @@ export const Section = styled.section`
     max-width: 400px;
     width: 23%;
     height: 100vh;
-    background-color: #ECF0F1;
+    background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px; 
@@ -32,6 +32,7 @@ export const Section = styled.section`
 
     h1{ 
       font-size: 20px; 
+      color: ${({ theme }) => theme.fontColor};
 
       ${media.Tablet} { font-size: 18px; }  
 
@@ -40,6 +41,7 @@ export const Section = styled.section`
 
     h2{ 
       font-size: 20px; 
+      color: ${({ theme }) => theme.fontColor};
 
       ${media.Tablet} { font-size: 18px; }  
 
@@ -62,6 +64,7 @@ export const Confirmation = styled.div`
      
         h1{
           font-size: 20px;
+          color: ${({ theme }) => theme.fontColor};
           font-weight: bold;
 
           ${media.Tablet} { font-size: 18px; }  
@@ -72,7 +75,7 @@ export const Confirmation = styled.div`
         h2{
           margin-top: 10px;
           font-size: 20px;
-          color: #A6A8A9;
+          color: ${({ theme }) => theme.fontColor};
 
           ${media.Tablet} { font-size: 18px; }  
 

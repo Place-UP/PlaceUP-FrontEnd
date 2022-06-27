@@ -13,7 +13,7 @@ export const Section = styled.section`
     max-width: 400px;
     width: 23%;
     height: 100vh;
-    background-color: #FFFFFF;
+    background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px; 
@@ -23,7 +23,7 @@ export const Section = styled.section`
     max-width: 450px;
     width: 100%;
     height: 100vh;
-    background-color: #FFFFFF;
+    background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
     padding-top: 100px; 
@@ -52,7 +52,7 @@ export const Section = styled.section`
     height: 5px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    background-color: black;
+    background-color: ${({ theme }) => theme.fontColor};
 }
 
   .bar:nth-child(1){
@@ -155,7 +155,7 @@ export const Profile = styled.div`
 
   .profile{
     width: 90%;
-    background-color: #ECF0F1;
+    background-color: ${({ theme }) => theme.body};
     border-radius: 50px;
     margin: auto;
     display: flex;
@@ -176,6 +176,7 @@ export const Profile = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 20px;
+    color: ${({ theme }) => theme.fontColor};
 
     ${media.Tablet} { font-size: 18px; }  
 
@@ -190,6 +191,7 @@ export const Profile = styled.div`
     padding-right: 10px;
     cursor: pointer; 
     padding-top: 5px;
+    color: ${({ theme }) => theme.fontColor};
   }
 `;
 
@@ -206,7 +208,6 @@ export const DarkMode = styled.section`
     display: block;
     width: 40px;
     height: 20px;
-    background: #ddd;
     border-radius: 60px;
     cursor: pointer;
     outline: none;
@@ -225,18 +226,18 @@ export const DarkMode = styled.section`
   }		
 
   input.toggle-control + label::before {
-    background: #202020;
+    background: white;
     border-radius: 60px;
   }
 
   input.toggle-control + label::after {
     width: 18px;
-    background: white;
+    background: #297FB8;
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 
-  input.toggle-control:checked + label::before { background: white; }
+  input.toggle-control:checked + label::before { background: black; }
 
   input.toggle-control:checked + label::after { margin-left: 20px; }
 `
@@ -245,7 +246,7 @@ export const Evaluation = styled.div`
   width: 90%;
   margin: 50px 0px 0px 5%;
   text-align: center;
-  background-color: white;
+  bbackground-color: ${({ theme }) => theme.body};
   border-radius: 20px;
   padding-bottom: 20px;
 
@@ -258,7 +259,8 @@ export const Evaluation = styled.div`
 
   h1{
     font-size: 20px;
-    font-family: 'Bakbak One', cursive;
+    font-family: 'Bakbak One', cursive;    
+    color: ${({ theme }) => theme.fontColor}; 
 
     ${media.Tablet} { font-size: 18px; }  
 
@@ -267,11 +269,14 @@ export const Evaluation = styled.div`
     ${media.MobileS} { font-size: 12px; }  
   }
 
+  span{ color:#2980B9; }
+
   p{
     font-size: 17px;
     padding-top: 20px;
     font-weight: 700px;
-    font-family: 'Lato', cursive;
+    font-family: 'Lato', cursive;    
+    color: ${({ theme }) => theme.fontColor}; 
 
     ${media.Tablet} { font-size: 15px; }  
 
@@ -284,15 +289,18 @@ export const ProfileSuggestion = styled.div`
   width: 100%;
   text-align: center;
   display: inline-block;
-  background-color: white;
 
   textarea{
     width: 90%;
     height: 150px;
     padding-left: 10px;
+    padding-top: 10px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid ${({ theme }) => theme.body};
     resize: none;
+    outline:0px none transparent;
+    color: ${({ theme }) => theme.fontColor};    
+    background-color: ${({ theme }) => theme.body};
   }
 
   input{
@@ -303,7 +311,11 @@ export const ProfileSuggestion = styled.div`
     font-size: 17px;
     color: white;
     cursor: pointer;
-    background-color: #297FB8;
+    background-color: ${({ theme }) => theme.body};
+  }
+
+  input:hover{
+    background-color: #2980B9;
   }
 
   h2{
@@ -315,6 +327,7 @@ export const ProfileSuggestion = styled.div`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: ${({ theme }) => theme.fontColor};
 
     ${media.Tablet} { font-size: 18px; }  
 

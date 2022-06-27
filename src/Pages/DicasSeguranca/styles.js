@@ -7,6 +7,7 @@ const media = {
 };
 
 export const Home = styled.div` 
+  background-color: ${({ theme }) => theme.body};
   text-align: center;
   ${media.MobileS}{    
     p{width: 90%;}
@@ -22,8 +23,9 @@ export const Category = styled.div`
   h1{   
     font-size: 38px; 
     padding: 50px 5px 10px 20px;
-    font-weight: 800;    
+    font-weight: 500;    
     font-family: 'Bakbak One', cursive;
+    color: ${({ theme }) => theme.fontColor};
 
     ${media.Tablet} { font-size: 36px; }  
 
@@ -47,7 +49,7 @@ export const Category = styled.div`
 export const Content = styled.div`
   h1{   
     font-size: 34px; 
-    font-weight: 800;    
+    font-weight: 500;    
     font-family: 'Bakbak One', cursive;
     color: #297FB8;
 
@@ -70,6 +72,8 @@ export const Content = styled.div`
     font-weight: 400;
     font-size: 20px;
     margin: 50px auto;
+    color: ${({ theme }) => theme.fontColor};
+
     ${media.Tablet} { font-size: 18px; }  
 
     ${media.Mobile} { font-size: 15px; }  

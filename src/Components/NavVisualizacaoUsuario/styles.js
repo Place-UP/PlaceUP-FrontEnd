@@ -285,57 +285,49 @@ export const Profile = styled.div`
 `;
 
 
-export const DarkMode = styled.button`
+export const DarkMode = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 20px 0px;
 
-  .toggle-control {
-    display: none;
-  }
-
+  .toggle-control { display: none;  }
+  
   input.toggle-control + label {
     position: relative;
     display: block;
     width: 40px;
     height: 20px;
-    background: #ddd;
     border-radius: 60px;
     cursor: pointer;
     outline: none;
     user-select: none;
   }
 
-  input.toggle-control + label::before,
-  input.toggle-control + label::after {
+  input.toggle-control + label::before, input.toggle-control + label::after {
     display: block;
     position: absolute;
     top: 1px;
     left: 1px;
     bottom: 1px;
     right: 1px;
-    content: "";
+    content: '';
     transition: all 0.4s;
-  }
+  }		
 
   input.toggle-control + label::before {
-    background: #202020;
+    background: white;
     border-radius: 60px;
   }
 
   input.toggle-control + label::after {
     width: 18px;
-    background: white;
+    background: #297FB8;
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 
-  input.toggle-control:checked + label::before {
-    background: white;
-  }
+  input.toggle-control:checked + label::before { background: black; }
 
-  input.toggle-control:checked + label::after {
-    margin-left: 20px;
-  }
+  input.toggle-control:checked + label::after { margin-left: 20px; }
 `;

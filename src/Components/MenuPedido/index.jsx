@@ -1,9 +1,10 @@
-import React from "react";
+import { React, useContext } from "react";
 import './styles'
 import supermarket from "./images/market.png";
 import perfil from "./images/perfil.png";
 import { IoIosExit } from "react-icons/io";
 import { Section, Profile, DarkMode, Evaluation, ProfileSuggestion } from "./styles";
+import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
 
 export function MenuPedido() {
 
@@ -14,6 +15,8 @@ export function MenuPedido() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
   }
+
+  const { themeToggle } = useContext(ThemeContext)
 
   return (
     <>
@@ -27,8 +30,8 @@ export function MenuPedido() {
               </div>
             </Profile>
 
-            <DarkMode>
-              <input id="toggle" class="toggle-control" type="checkbox" />
+            <DarkMode >
+              <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />
               <label for="toggle"></label>
             </DarkMode>
 

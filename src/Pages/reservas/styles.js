@@ -7,7 +7,7 @@ const media = {
 };
 
 export const Home = styled.div` 
-  background-color: #ECF0F1;  
+  background-color: ${({ theme }) => theme.body};
 
   ${media.Tablet}{ margin-left: 20%; }
 
@@ -27,7 +27,7 @@ export const Category = styled.div`
     padding: 50px 5px 10px 5px;
     font-weight: 800;    
     font-family: 'Bakbak One', cursive;
-
+    color: ${({ theme }) => theme.fontColor};
     
     ${media.Tablet}{ font-size: 36px; }
 

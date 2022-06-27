@@ -12,7 +12,7 @@ export const Section = styled.section`
     max-width: 400px;
     width: 25%;
     height: 100vh;
-    background-color: #ECF0F1;
+    background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px; 
@@ -50,6 +50,7 @@ export const Cart = styled.div`
         h1{
           font-size: 20px;
           font-weight: bold;
+          color: ${({ theme }) => theme.fontColor};
 
           ${media.Tablet} { font-size: 18px; }  
 
@@ -59,7 +60,7 @@ export const Cart = styled.div`
         h2{
           margin-top: 10px;
           font-size: 17px;
-          color: #A6A8A9;
+          color: ${({ theme }) => theme.fontColor};
 
           ${media.Tablet} { font-size: 15px; }  
 

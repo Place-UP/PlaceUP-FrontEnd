@@ -36,6 +36,7 @@ export function MenuPrincipal() {
           <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />
           <label for="toggle"></label>
         </DarkMode>
+        
         <div className="ContainerPlace">
           <div className="PlaceArea">
             <img className="ImageLogoPlace" src={logoPlace} alt=".." />

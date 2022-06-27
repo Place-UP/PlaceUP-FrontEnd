@@ -11,7 +11,7 @@ export const Feed = styled.div`
   max-width: 1400px;
   width: 60%;
   border-radius: 20px;
-  background-color: white;
+  background-color: ${({ theme }) => theme.cards};
 
   ${media.Tablet} {        
     width: 70%;
@@ -37,8 +37,7 @@ export const Feed = styled.div`
       margin: 10px 5px;
     }
     
-    p{
-      color: #297FB8;
+    p{      
       font-size: 17px;
       font-family: 'Lato', cursive;
       margin: 10px 0px 20px 5px;
@@ -82,6 +81,7 @@ export const CointanerProduct = styled.div`
     font-size: 17px;     
     padding: 5px 7%;   
     font-family: 'Lato', cursive;
+    color: ${({ theme }) => theme.fontColor};
   }
 
   p{
