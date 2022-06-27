@@ -12,6 +12,15 @@ export const Main = styled.div`
   margin-left: 70px;
   display: flex;
   justify-content: space-between;
+
+  .active{
+    color: green;
+  }
+
+  .none{
+    background-color: red;
+  }
+
   ${Media.Laptop} {
     margin-left: 30px;
   }
@@ -111,13 +120,21 @@ export const Main = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    .active {
+      background-color: #C5FAE6;
+      
+    }
 
+    .never{
+      color: red;
+    }
 
+    }
       input{
         width: 100%;
-        background-color: #fff;
       }
-    }
+    
 
 
   .description {
