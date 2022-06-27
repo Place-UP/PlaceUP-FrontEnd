@@ -7,7 +7,10 @@ const media = {
 };
 
 export const Home = styled.div` 
-  text-align: center; 
+  text-align: center;
+  ${media.MobileS}{    
+    p{width: 90%;}
+  }
 `;
 
 export const Category = styled.div`
@@ -17,10 +20,16 @@ export const Category = styled.div`
   margin: 20px auto;
 
   h1{   
-    font-size: 25px; 
+    font-size: 38px; 
     padding: 50px 5px 10px 20px;
     font-weight: 800;    
     font-family: 'Bakbak One', cursive;
+
+    ${media.Tablet} { font-size: 36px; }  
+
+    ${media.Mobile} { font-size: 32px; }  
+  
+    ${media.MobileS} { font-size: 28px; }  
   }
 
   img {
@@ -38,11 +47,17 @@ export const Category = styled.div`
 export const Content = styled.div`
   h1{   
     width: 60%;
-    font-size: 20px; 
+    font-size: 36px; 
     font-weight: 800;    
     font-family: 'Bakbak One', cursive;
     color: #297FB8;
     margin: 50px auto;
+
+    ${media.Tablet} { font-size: 33px; }  
+
+    ${media.Mobile} { font-size: 30px; }  
+  
+    ${media.MobileS} { font-size: 26px; }  
   }
 
   .underlined{
@@ -57,6 +72,12 @@ export const Content = styled.div`
     font-weight: 400;
     font-size: 20px;
     margin: 50px auto;
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.Mobile} { font-size: 15px; }  
+  
+    ${media.MobileS} { font-size: 12px; }  
   }  
 
   ${media.Tablet}{    

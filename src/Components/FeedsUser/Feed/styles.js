@@ -7,7 +7,7 @@ const media = {
 };
 
 export const Feed = styled.div`
-  margin: 0px 0px 40px 17%;
+  margin: 0px 0px 40px 12%;
   max-width: 1400px;
   width: 60%;
   border-radius: 20px;
@@ -23,8 +23,7 @@ export const Feed = styled.div`
   
     img{
       width: 90%;
-      margin: 0px 5px;      
-      box-shadow: none;
+      margin: 0px 5px;    
     }
     
     h1{
@@ -159,7 +158,6 @@ export const CointanerProduct = styled.div`
     max-width: 400px;
     border-radius: 20px;
     padding: 10px 2%;
-    box-shadow: 10px 10px 10px rgb(180,180,180);
   }
 
   h1{

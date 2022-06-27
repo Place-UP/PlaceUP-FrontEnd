@@ -9,7 +9,9 @@ const media = {
 export const Home = styled.div`
   background-color: #ecf0f1;
 
-  ${media.MobileM} {   margin-left: 6%;  }  
+  ${media.Tablet} {   margin-left: 6%;   }  
+
+  ${media.MobileM} {   margin-left: 6%;   }  
 
   ${media.MobileS} {   margin-left: 2%;  } 
 `;
@@ -231,13 +233,19 @@ export const Filter = styled.div`
 
 export const Category = styled.div`
   width: 60%;
-  padding: 30px 0 30px 17%;
+  padding: 30px 0 30px 12%;
 
   h1 {
-    font-size: 25px;
+    font-size: 36px;
     margin-left: 5px;
     font-weight: 800;
     font-family: "Bakbak One", cursive;
+
+    ${media.Tablet} { font-size: 33px; }  
+
+    ${media.MobileM} { font-size: 30px; }  
+  
+    ${media.MobileS} { font-size: 26px; }  
   }
 
   .containerCategory {
@@ -250,8 +258,8 @@ export const Category = styled.div`
     justify-content: space-between;
 
     img {
-      width: 80px;
-      height: 85px;
+      width: 90px;
+      height: 95px;
     }
 
     ${media.Tablet} {
@@ -287,16 +295,16 @@ export const Category = styled.div`
 `;
 
 export const FilterCategory = styled.div`
-  width: 160px;
-  height: 80px;
+  width: 180px;
+  height: 90px;
   border-radius: 8px;
   margin-top: 70px;
   text-align: center;
   background-color: white;
 
   img {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     font-size: 17px;
     margin-top: -50px;
   }
@@ -312,14 +320,20 @@ export const InfoCategory = styled.div`
 
   h2 {
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     margin-left: 5px;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.MobileM} { font-size: 15px; }  
+  
+    ${media.MobileS} { font-size: 12px; }  
 
     &::before {
       content: "";
-      border-left: 5px solid #e85959;
+      border-left: 5px solid #0D5E92;
       padding-right: 8px;
     }
   }
@@ -330,12 +344,18 @@ export const InfoCategory = styled.div`
     align-items: center;
     width: 25px;
     height: 25px;
-    background-color: #e85959;
+    background-color: #0D5E92;
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     border-radius: 4px;
     line-height: -200px;
     cursor: pointer;
     font-family: "Lato";
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.MobileM} { font-size: 15px; }  
+  
+    ${media.MobileS} { font-size: 12px; }  
   }
 `;

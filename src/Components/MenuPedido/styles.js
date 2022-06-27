@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const media = {
   Tablet: "@media(max-width: 935px)",
-  Mobile: "@media(max-width: 600px)"
+  Mobile: "@media(max-width: 600px)",
+  MobileS: "@media(max-width: 340px)"
 };
 
 export const Section = styled.section`
@@ -19,10 +20,10 @@ export const Section = styled.section`
   }
 
   .mainMenu-Mobile{
-    max-width: 400px;
-    width: 95%;
+    max-width: 450px;
+    width: 100%;
     height: 100vh;
-    background-color: #ECF0F1;
+    background-color: #FFFFFF;
     margin: auto;
     transition: width 0.5s;
     padding-top: 100px; 
@@ -111,7 +112,7 @@ export const Section = styled.section`
         list-style-type: none;
     }
 
-    .nav-link{     margin: auto;   }
+    .nav-link{ margin: auto; }
 
     .nav-item{
         width: 100%;
@@ -131,11 +132,25 @@ export const Section = styled.section`
         right: -100%;
         top: -20px;
         height: 100vh;
-        width: 98%;
+        width: 75%;
         transition: 0.3s;
         list-style-type: none;
     }
-  }   
+  }     
+
+  ${media.MobileS}{
+    .hamburger {   display: block;   }    
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: -20px;
+        height: 100vh;
+        width: 100%;
+        transition: 0.3s;
+        list-style-type: none;
+    }
+  }  
 `
 
 export const Profile = styled.div`
