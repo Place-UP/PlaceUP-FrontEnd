@@ -12,7 +12,7 @@ export const Section = styled.section`
     max-width: 400px;
     width: 25%;
     height: 100vh;
-    background-color: #ECF0F1;
+    background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px; 
@@ -48,14 +48,23 @@ export const Cart = styled.div`
       text-align: center;
      
         h1{
-          font-size: 25px;
+          font-size: 20px;
           font-weight: bold;
+          color: ${({ theme }) => theme.fontColor};
+
+          ${media.Tablet} { font-size: 18px; }  
+
+          ${media.Mobile} { font-size: 15px; }   
         }
 
         h2{
           margin-top: 10px;
-          font-size: 23px;
-          color: #A6A8A9;
+          font-size: 17px;
+          color: ${({ theme }) => theme.fontColor};
+
+          ${media.Tablet} { font-size: 15px; }  
+
+          ${media.Mobile} { font-size: 13px; }  
         }
     }
 `;

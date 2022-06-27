@@ -7,11 +7,11 @@ const media = {
 };
 
 export const Feed = styled.div`
-  margin: 0px 0px 40px 17%;
+  margin: 0px 0px 40px 12%;
   max-width: 1400px;
   width: 60%;
   border-radius: 20px;
-  background-color: white;
+  background-color: ${({ theme }) => theme.cards};
 
   ${media.Tablet} {    
     .product {
@@ -23,8 +23,7 @@ export const Feed = styled.div`
   
     img{
       width: 90%;
-      margin: 0px 5px;      
-      box-shadow: none;
+      margin: 0px 5px;    
     }
     
     h1{
@@ -102,7 +101,7 @@ export const ContainerProfile = styled.div`
   .buttonSeeMore:hover{
     color: #297FB8;
     border: 2px solid #297FB8;
-    background-color: white;
+    background-color: ${({ theme }) => theme.body};
   }
 `
 
@@ -111,25 +110,28 @@ export const Profile = styled.div`
   flex-direction: row;
 
   img{
-    width: 70px;
-    height: 70px;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer;    
   }
 
   h1{
-    line-height:70px;
+    line-height: 70px;
     cursor: pointer;    
     font-weight: bold;    
     font-family: 'Lato', cursive;
-    padding: 0px 5px;
+    padding: 5px 10px;
+    color: ${({ theme }) => theme.fontColor};
   }
 
   .favorite{
     width: 30px;
     height: 30px;
-    margin: 20px 0px 0px 10px;
+    margin: 26px 0px 0px 0px;
     cursor: pointer;
+    color: ${({ theme }) => theme.fontColor};
   }
 `;
 
@@ -159,15 +161,15 @@ export const CointanerProduct = styled.div`
     max-width: 400px;
     border-radius: 20px;
     padding: 10px 2%;
-    box-shadow: 10px 10px 10px rgb(180,180,180);
   }
 
   h1{
     width: 90%;
     text-align: left;
     font-size: 17px;
-    padding: 20px 10px 0px 10px;    
-    font-family: 'Lato', cursive;
+    padding: 10px 10px 0px 15px;    
+    font-family: 'Lato', cursive;    
+    color: ${({ theme }) => theme.fontColor};
   }
 
   p{
@@ -175,6 +177,6 @@ export const CointanerProduct = styled.div`
     text-align: left;
     color: #297FB8;
     font-size: 17px;
-    padding-left: 10px;
+    padding: 5px 10px 0px 15px;    
   }
 `;

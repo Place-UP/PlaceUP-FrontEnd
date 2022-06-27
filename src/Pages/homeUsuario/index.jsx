@@ -1,9 +1,6 @@
 import React from "react";
-import { useContext } from 'react'
-import { CartContext } from '../../Common/Context'
 import { useState } from 'react';
 import { box } from '../../mock/boxVisalizer';
-import Carrinho from "./images/carrinho.png";
 import Bebida from "./images/bebida.png";
 import Mercado from "./images/mercado.png";
 import Sobremesas from "./images/sobremesa.png";
@@ -11,8 +8,8 @@ import Padaria from "./images/padaria.png";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/FeedsUser/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
-import { AiOutlineSearch } from "react-icons/ai"
-import { Home, SectionSearch, SearchBar, Car, ContainerSearch, Filter, Category, FilterCategory, InfoCategory } from "./styles";
+import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai"
+import { Main, SectionSearch, SearchBar, Car, ContainerSearch, Filter, Category, FilterCategory, InfoCategory } from "./styles";
 
 export function IndexHomeUser() {
   const [query, setQuery] = useState("")
@@ -26,10 +23,16 @@ export function IndexHomeUser() {
     )
   }
 
+  function CarrinhoFuction() {
+    const car = document.querySelector(".car");   
+
+    car.classList.toggle("active");
+  } 
+
   return (
     <>
       <Header />
-      <Home>
+      <Main>
         <MenuPrincipal />
 
         <Category>
@@ -38,9 +41,11 @@ export function IndexHomeUser() {
               <AiOutlineSearch className="icon"/>
               <input type="text" className="search" placeholder="Pesquisa"  onChange={(e) => setQuery(e.target.value)}></input>
             </SearchBar>
-            <Car>
-              <img src={Carrinho} alt="Carrinho" />
+
+            <Car onClick={CarrinhoFuction} className="car">
+              <AiOutlineShoppingCart className="carIcon" alt="Carrinho" />
             </Car>
+
           </SectionSearch>      
           {query &&
             <ContainerSearch>
@@ -63,10 +68,10 @@ export function IndexHomeUser() {
 
             <select name="Acessibilidade">
               <option value="acessibilidade" select>Acessibilidade</option>
-              <option value="cego">Suporte para cego</option>
-              <option value="surdo">Suporte para surdo</option>
-              <option value="mudo">Suporte para mudo</option>
-              <option value="cadeirante">Suporte para cadeirante</option>
+              <option value="cego">Suporte para Cego</option>
+              <option value="surdo">Suporte para Surdo</option>
+              <option value="mudo">Suporte para Mudo</option>
+              <option value="cadeirante">Suporte para Cadeirante</option>
             </select>
           </Filter>
           
@@ -111,7 +116,7 @@ export function IndexHomeUser() {
         <FeedUser />
         <FeedUser />
         <FeedUser />
-      </Home>
+      </Main>
     </>
   );
 }

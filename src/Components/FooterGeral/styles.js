@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-const media = { TabletAndMobile: "@media screen and (max-width: 863px)" };
+const media = { 
+  Tablet: "@media(max-width: 935px)",
+  Mobile: "@media(max-width: 435px)"
+};
 
 export const Footer = styled.div`
   position: absolute;
@@ -10,31 +13,21 @@ export const Footer = styled.div`
   text-align: center;
   background-color: #2c3e50;
 
-  ${media.TabletAndMobile} {
+  ${media.Tablet} {
     .container {      
       display: block;
       flex-direction: row;
     }
 
-    .logo-img {
-      margin: 0px 0px 0px 10px;
-    }
+    .logo-img {   margin: 0px 0px 0px 10px;    }
 
-    .linksFooter {
-      display: block;
-    }
+    .linksFooter {    display: block;   }
 
-    .linksFooter a {
-      text-align: center;
-    }
+    .linksFooter a {    text-align: center;   }
 
-    .links {
-      padding: 0px;
-    }
+    .links {  padding: 0px;   }
 
-    .linksFooter .links:nth-child(2) {
-      margin-top: 5px;
-    }
+    .linksFooter .links:nth-child(2) {   margin-top: 5px;  }
 
     .Social {
       text-align: center;
@@ -43,7 +36,7 @@ export const Footer = styled.div`
 
     .Socialh1 {
       text-align: center;
-      font-size: 20px;
+      font-size: 18px;
       margin: 50px 0;
       color: white;
     }
@@ -59,7 +52,8 @@ export const Footer = styled.div`
       font-size: 18px;
     }
   }
-`;
+
+  ${media.Mobile} {   .Socialh1{   font-size: 15px;   }  }`;
 
 export const ContainerFooter = styled.div`
   width: 100%;
@@ -71,15 +65,21 @@ export const ContainerFooter = styled.div`
 
 export const LinksFooter = styled.div`
   display: flex;
+
   a {
     font-family: "Lato", sans-serif;
     margin: 20px 0;
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     text-align: left;
     color: white;
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.Mobile} { font-size: 15px; }  
   }
+
   .links {
     margin: 20px;
     display: block;
@@ -112,12 +112,20 @@ export const FooterP = styled.p`
   font-size: 20px;
   color: white;
   margin-bottom: 50px;
+
+  ${media.Tablet} { font-size: 18px; }  
+
+  ${media.Mobile} { font-size: 15px; }  
 `;
 
 export const FooterH1 = styled.h1`
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   margin: 20px 0;
   color: white;
   font-family: "Lato", sans-serif;
+
+  ${media.Tablet} { font-size: 18px; }  
+
+  ${media.Mobile} { font-size: 15px; }  
 `;

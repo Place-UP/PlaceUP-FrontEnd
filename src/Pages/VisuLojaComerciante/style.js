@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 const Media = {
   Desktop: "@media(max-width:1300px)",
   Laptop: "@media(max-width:1024px)",
@@ -7,11 +8,13 @@ const Media = {
   MobileM: "@media(max-width:398px)",
   NavMob: "@media(max-width:935px)",
 };
+
 export const Main = styled.div`
   margin-left: 70px;
   display: flex;
   justify-content: space-between;
   background-color: ${({ theme }) => theme.body};
+  
   ${Media.Laptop} {
     margin-left: 30px;
   }

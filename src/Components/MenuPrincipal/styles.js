@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const media = {
   Tablet: "@media(max-width: 935px)",
-  Mobile: "@media(max-width: 600px)"
+  Mobile: "@media(max-width: 600px)",
+  MobileS: "@media(max-width: 340px)"
 };
 
 export const Section = styled.section`
@@ -12,17 +13,17 @@ export const Section = styled.section`
     max-width: 400px;
     width: 23%;
     height: 100vh;
-    background-color: #FFFFFF;
+    background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px; 
   }
 
   .mainMenu-Mobile{
-    max-width: 400px;
-    width: 95%;
+    max-width: 450px;
+    width: 100%;
     height: 100vh;
-    background-color: #ECF0F1;
+    background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
     padding-top: 100px; 
@@ -52,12 +53,12 @@ export const Section = styled.section`
     margin: 5px auto;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    background-color: black;
+    background-color: ${({ theme }) => theme.fontColor};
 }
 
   .bar:nth-child(1){
-      position: fixed;    
-      margin: 5px auto auto -20px;
+    position: fixed;    
+    margin: 5px auto auto -20px;
   }
 
   .bar:nth-child(2){
@@ -93,13 +94,9 @@ export const Section = styled.section`
 
     .hamburger.active .bar:nth-child(2){  opacity: 0; }
 
-    .hamburger.active .bar:nth-child(1){
-      transform: translateY(10px) rotate(45deg);
-    }
+    .hamburger.active .bar:nth-child(1){   transform: translateY(10px) rotate(45deg);   }
 
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-10px) rotate(-45deg);
-    }
+    .hamburger.active .bar:nth-child(3){  transform: translateY(-10px) rotate(-45deg);   }
 
     .nav-menu.active{right: 0;}
 
@@ -130,7 +127,21 @@ export const Section = styled.section`
         right: -100%;
         top: -20px;
         height: 100vh;
-        width: 98%;
+        width: 75%;
+        transition: 0.3s;
+        list-style-type: none;
+    }
+  }   
+
+  ${media.MobileS}{
+    .hamburger {   display: block;   }    
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: -20px;
+        height: 100vh;
+        width: 100%;
         transition: 0.3s;
         list-style-type: none;
     }
@@ -142,7 +153,7 @@ export const Profile = styled.div`
 
   .profile{
     width: 90%;
-    background-color: #ECF0F1;
+    background-color: ${({ theme }) => theme.body};
     border-radius: 50px;
     margin: auto;
     display: flex;
@@ -162,6 +173,14 @@ export const Profile = styled.div`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 20px;
+    color: ${({ theme }) => theme.fontColor};
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.Mobile} { font-size: 15px; } 
+
+    ${media.MobileS} { font-size: 12px; }  
   }
 
   .iconExit{
@@ -170,6 +189,7 @@ export const Profile = styled.div`
     padding-right: 10px;
     cursor: pointer; 
     padding-top: 5px;
+    color: ${({ theme }) => theme.fontColor};
   }
 `;
 
@@ -186,7 +206,6 @@ export const DarkMode = styled.section`
     display: block;
     width: 40px;
     height: 20px;
-    background: #ddd;
     border-radius: 60px;
     cursor: pointer;
     outline: none;
@@ -205,40 +224,47 @@ export const DarkMode = styled.section`
   }		
 
   input.toggle-control + label::before {
-    background: #202020;
+    background: white;
     border-radius: 60px;
   }
 
   input.toggle-control + label::after {
     width: 18px;
-    background: white;
+    background: #297FB8;
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 
-  input.toggle-control:checked + label::before { background: white; }
+  input.toggle-control:checked + label::before { background: black; }
 
   input.toggle-control:checked + label::after { margin-left: 20px; }
 `
 
 export const Suggestions = styled.div`
   width: 90%;
-  margin: 50px 0px 0px 5%;
+  margin: 120px 0px 0px 5%;
   text-align: center;
   border-radius: 20px;
+  background-color: ${({ theme }) => theme.body};
   padding-bottom: 30px;
 
   h1{
-    font-size: 22px;
+    color: #297FB8;
+    font-size: 25px;
     padding-top: 20px;
     font-family: 'Lato', cursive;
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.Mobile} { font-size: 15px; } 
+
+    ${media.MobileS} { font-size: 12px; }  
   }
 `
 
 export const ProfileSuggestions = styled.div`
   margin-top: 25px;
   width: 100%;
-  background-color: white;
   display: flex;
   flex-direction: row;
   border-left: 3px solid #2980B9;
@@ -247,15 +273,23 @@ export const ProfileSuggestions = styled.div`
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-left: 15%;
+    margin-left: 12%;
   }
 
   h2{
-    margin-left: 3%;
+    margin-left: 5%;
     line-height: 50px;    
     font-family: 'Lato', cursive;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 20px;
+    color: ${({ theme }) => theme.fontColor};
+
+    ${media.Tablet} { font-size: 18px; }  
+
+    ${media.Mobile} { font-size: 15px; } 
+
+    ${media.MobileS} { font-size: 12px; }  
   }
 `;

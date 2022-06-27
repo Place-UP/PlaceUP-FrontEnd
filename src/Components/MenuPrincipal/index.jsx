@@ -1,8 +1,9 @@
-import React from "react";
+import { React, useContext } from "react";
 import './styles'
 import perfil from "./images/perfil.png";
 import { IoIosExit } from "react-icons/io";
 import { Section, Profile, DarkMode, Suggestions, ProfileSuggestions } from "./styles";
+import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
 
 export function MenuPrincipal() {
 
@@ -13,6 +14,8 @@ export function MenuPrincipal() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
   }
+
+  const { themeToggle } = useContext(ThemeContext)
 
   return (
     <>
@@ -26,8 +29,8 @@ export function MenuPrincipal() {
               </div>
             </Profile>
 
-            <DarkMode>
-              <input id="toggle" class="toggle-control" type="checkbox" />
+            <DarkMode >
+              <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />
               <label for="toggle"></label>
             </DarkMode>
 
