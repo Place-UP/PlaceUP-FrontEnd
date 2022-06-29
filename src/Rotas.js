@@ -19,6 +19,7 @@ import { Calculator } from "./Pages/Calculadora/index";
 import { CartContextProvider } from "./Common/Context/index";
 import { Favoritos } from "./Pages/Favoritos/Index";
 import { Perfil } from "./Pages/Perfil/Index";
+import { DirecCadastro } from "./Pages/DirecCadastro";
 import { Cursos } from "./Pages/Cursos/index";
 import { GlobalStyles } from "./Common/Context/theme";
 import { CadastroUserPhone } from "./Pages/CadastroUsuerPhone";
@@ -70,6 +71,7 @@ function Rotas() {
               path="/VisualizacaoComerciante"
               element={<VisualizacaoComerciante />}
             />
+            <Route path="/DirecCadastro"   element={<DirecCadastro />} />
             <Route path="/Chat" element={<ChatComerciante />} />
             <Route path="/AddProduct" element={<AddProduct />} />
             <Route path="*" element={<Pagina404 />} />

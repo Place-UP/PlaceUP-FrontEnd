@@ -171,19 +171,18 @@ export const ContWhitePart = styled.div`
         } */
       }
       .Quant {
-        margin-left: 5px;
         font-family: "Lato";
         font-style: normal;
         font-weight: 700;
-        font-size: 9px;
-        color: #7a7979;
+        font-size: 12px;
+        color: ${({ theme }) => theme.fontColor};
       }
     }
     .Price {
       font-family: "Lato";
       font-style: normal;
       font-weight: 700;
-      font-size: 11px;
+      font-size: 15px;
       color: ${({ theme }) => theme.fontColor};
     }
 
@@ -192,7 +191,7 @@ export const ContWhitePart = styled.div`
       font-style: normal;
       font-weight: 700;
       font-size: 11px;
-      color: #8b8383;
+      color: #F43D3D;
       text-decoration: line-through;
     }
   }

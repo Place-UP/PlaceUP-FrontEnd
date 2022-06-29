@@ -205,7 +205,8 @@ export const Btn = styled.button`
 
 
     &:hover{
-        background-color: ${(props) => props.primary ? "#22597d" : "#F4F4F4"};
+        background-color: ${(props) => props.primary ? "#22597d" : "#22597d"};
+        color: ${({ theme }) => theme.fontColor};
     }
 
 
