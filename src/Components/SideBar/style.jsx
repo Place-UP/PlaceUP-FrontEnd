@@ -6,13 +6,14 @@ export const Container = styled.div`
     margin: auto;
     height: 100%;
     right: 0;
+    background-color: ${({ theme }) => theme.cards};
     top: 0;
 `
 
 export const Search = styled.div`
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.fontColor};
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: flex;
     justify-content: center;

@@ -7,8 +7,7 @@ export const Container = styled.div`
     
     &::-webkit-scrollbar{
         width: 6px;
-        border-radius: 10px;
-        
+        border-radius: 10px;        
     }
 
     &::-webkit-scrollbar-thumb{

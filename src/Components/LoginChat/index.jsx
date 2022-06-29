@@ -1,7 +1,7 @@
 import React from "react"
 import { auth, provider } from '../../Services/firebase'
 import * as C from "./style"
-import Logo from "../../Img/PlaceUp animação.svg";
+import Logo from "../../Img/logo-darkmode.png";
 
 export function LoginChat() {
     const handleSignin = () => {

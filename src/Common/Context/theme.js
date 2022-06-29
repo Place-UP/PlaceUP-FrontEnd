@@ -6,7 +6,8 @@ export const lightMode = {
     title: "#2980b9",
     cards: "#FFFFFF",
     barRight: "#fff",
-    bar: "#2980B9"
+    bar: "#2980B9",
+
 }
 
 export const darkMode = {

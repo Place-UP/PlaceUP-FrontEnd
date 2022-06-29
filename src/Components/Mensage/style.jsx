@@ -16,7 +16,7 @@ export const Line = styled.div`
 `
 
 export const Content = styled.div`
-    background-color: #599FCB;
+    background-color: ${({ theme }) => theme.cards};
     color: ${({ theme }) => theme.fontColor};
     border-radius: 10px;
     box-shadow: 0 1px 1px #ccc;

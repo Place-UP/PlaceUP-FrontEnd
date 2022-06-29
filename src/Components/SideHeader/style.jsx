@@ -29,7 +29,7 @@ export const CreateContact = styled.div`
         box-sizing: border-box;
         border-radius: 30px;
         background-color: #4FCE63;
-        color: #fff;
+        color: ${({ theme }) => theme.fontColor};
         cursor: pointer;
     }
 `

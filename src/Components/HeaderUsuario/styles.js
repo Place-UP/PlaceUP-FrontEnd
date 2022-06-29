@@ -88,7 +88,6 @@ export const Navigation = styled.div`
     font-size: 1.5rem;
     align-items: center;
 
-    color: ${({ theme }) => theme.icon};
     ${Media.MobileL} {
       font-size: 1rem;
     }
@@ -100,7 +99,7 @@ export const Navigation = styled.div`
   }
 
   .Active {
-    background: #ffffff;    
+    background: ${({ theme }) => theme.body};
     &::after {
       content: "";
       position: absolute;
@@ -109,7 +108,7 @@ export const Navigation = styled.div`
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      box-shadow: 15px 15px 0 #ffff;
+      box-shadow: 15px 15px 0 ${({ theme }) => theme.body};
     }
     &::before {
       content: "";
@@ -119,10 +118,10 @@ export const Navigation = styled.div`
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      box-shadow: 15px -15px 0 #ffff;
+      box-shadow: 15px -15px 0 ${({ theme }) => theme.body};
     }
     .preto {
-      color: black;
+      color: ${({ theme }) => theme.fontColor};
     }
   }
 

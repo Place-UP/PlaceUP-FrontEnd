@@ -30,25 +30,24 @@ export function Header() {
                 <Title>Home</Title>
               </Link>
             </List>
-
-            <List className={`${path === "/chat" ? "Active" : ""}`}>
-              <Link to="/chat" className={`${path === "/chat" ? "preto" : ""}`}>
+            <List className={`${path === "/Chat" ? "Active" : ""}`}>
+              <Link to="/Chat" className={`${path === "/Chat" ? "preto" : ""}`}>
                 <Icon>
                   <BsChatDots />
                 </Icon>
                 <Title>chat</Title>
               </Link>
             </List>
-            <List className={`${path === "/reservas" ? "Active" : ""}`}>
-              <Link to="/reservas" className={`${path === "/reservas" ? "preto" : ""}`}>
+            <List className={`${path === "/Reservas" ? "Active" : ""}`}>
+              <Link to="/Reservas" className={`${path === "/Reservas" ? "preto" : "claro"}`}>
                 <Icon>
                   <AiOutlineSchedule />
                 </Icon>
                 <Title>Reservas</Title>
               </Link>
             </List>
-            <List className={`${path === "/favoritos" ? "Active" : ""}`}>
-            <Link to="/favoritos" className={`${path === "/favoritos" ? "preto" : ""}`}>
+            <List className={`${path === "/Favoritos" ? "Active" : ""}`}>
+              <Link to="/Favoritos" className={`${path === "/Favoritos" ? "preto" : "claro"}`}>
                 <Icon>
                   <MdFavoriteBorder />
                 </Icon>

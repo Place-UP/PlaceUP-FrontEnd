@@ -9,13 +9,13 @@ export const Container = styled.div`
     div{
         position: absolute;
         top: 0;
-        left: 50;
+        left: 48;
     }
 
     img {
         margin-top: 50px;
-        width: 100px;
-        height: 100px;
+        width: 165px;
+        height: 150px;
         z-index: 1;
     }      
 `
