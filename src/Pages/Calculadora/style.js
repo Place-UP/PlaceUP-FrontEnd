@@ -398,7 +398,7 @@ export const ButtonStyle = styled.button`
     font-family: "Lato";
     font-style: normal;
     font-size: 20px;
-    color: ${({ theme }) => theme.fontColor};
+    color: white;
     opacity: 0.6;
     transform: 1s;
     ${Media.Laptop} {
