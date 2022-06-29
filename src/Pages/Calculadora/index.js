@@ -146,15 +146,7 @@ export function Calculator() {
                   <p>Máximo</p>
                 </div>
                 <div className="TablePlaceUP">
-                  <span>PlaceUP</span>
                   <p>{!adicional ? "" : formatter.format(result)}</p>
-                  <p>{!result ? "" : formatter.format(result)}</p>
-                  <p>{!result ? "" : formatter.format(result)}</p>
-                </div>
-
-                <div className="TableGoogleShopping">
-                  <span>Google Shopping</span>
-                  <p>{!result ? "" : formatter.format(result)}</p>
                   <p>{!result ? "" : formatter.format(result)}</p>
                   <p>{!result ? "" : formatter.format(result)}</p>
                 </div>
