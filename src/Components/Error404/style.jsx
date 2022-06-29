@@ -43,7 +43,7 @@ export const Box = styled.div`
 
     span{
         font-size: 3rem;
-        color: #666161;
+        color: ${({ theme }) => theme.fontColor};
         font-weight: 600;
         margin-top: 10%;
         margin-bottom: 10%;

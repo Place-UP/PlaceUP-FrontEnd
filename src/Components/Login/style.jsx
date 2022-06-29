@@ -167,7 +167,7 @@ export const Formulario = styled.form`
     input[type=submit]{
         width: 69%;
         height: 55px;
-        color: #fff;
+        color: ${({ theme }) => theme.fontColor};
         margin: auto;
         background-color: var(--Azul-Escuro);
         margin-top: 40px;
@@ -210,7 +210,7 @@ export const Legend = styled.legend`
     font-size: 1.6em;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-    color: var(--Azul--legend);
+    color: ${({ theme }) => theme.fontColor};
     margin-bottom: 60px;
 
     ${Media.MobileL}{
@@ -223,6 +223,7 @@ export const OR = styled.div`
     text-align: center;
     animation: 1s ${aparecaForm} ease-in;
     span{
+        color: ${({ theme }) => theme.fontColor};
         position: relative;
         font-weight: 600;
         font-size: 1.1em;
@@ -263,7 +264,7 @@ export const CampoInput = styled.input`
     width: 100%;
     outline: none;
     background-color: transparent;
-    caret-color: var(--Azul-Escuro);
+    color: ${({ theme }) => theme.fontColor};
 `
 
 export const BoxMidia = styled.div`

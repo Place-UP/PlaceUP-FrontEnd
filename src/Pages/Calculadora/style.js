@@ -15,7 +15,7 @@ export const Main = styled.div`
   width: 100%;
   margin: auto;
 
-  background-color: #e1e5e5;
+  background-color: ${({ theme }) => theme.body};
   .ContainerCalculator {
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,7 @@ export const Main = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 38px;
-        color: #2980b9;
+        color: ${({ theme }) => theme.title};
         margin-bottom: 10px;
         ${Media.Laptop} {
           font-size: 36px;
@@ -64,7 +64,7 @@ export const Main = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        color: #807b7b;
+        color: ${({ theme }) => theme.fontColor};
         ${Media.Laptop} {
           font-size: 18px;
         }
@@ -101,7 +101,7 @@ export const Main = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 40px;
-        color: #2980b9;
+        color: ${({ theme }) => theme.title};
         margin-bottom: 10px;
         margin-top: 30px;
         ${Media.Laptop} {
@@ -119,7 +119,7 @@ export const Main = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        color: #807b7b;
+        color: ${({ theme }) => theme.fontColor};
         ${Media.Laptop} {
           font-size: 18px;
         }
@@ -143,7 +143,7 @@ export const Main = styled.div`
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
-        color: #2980b9;
+        color: ${({ theme }) => theme.fontColor};
         ${Media.Laptop} {
           font-size: 18px;
         }
@@ -160,7 +160,7 @@ export const Main = styled.div`
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
-        color: #807b7b;
+        color: ${({ theme }) => theme.fontColor};
         ${Media.Laptop} {
           font-size: 18px;
         }
@@ -177,7 +177,7 @@ export const Main = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-around;
-      background: #ffffff;
+      background-color: ${({ theme }) => theme.cards};
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
       border-radius: 30px;
       /* margin-bottom: 30px; */
@@ -194,8 +194,9 @@ export const Main = styled.div`
           font-style: normal;
           /* font-weight: 400; */
           font-size: 20px;
-          color: #807b7b;
+          color: ${({ theme }) => theme.fontColor};
         }
+        p{ color: ${({ theme }) => theme.fontColor}; }
       }
       .TableGoogleShopping {
         margin-top: 50px;
@@ -208,7 +209,7 @@ export const Main = styled.div`
           font-style: normal;
           font-weight: 400;
           font-size: 20px;
-          color: #807b7b;
+          color: ${({ theme }) => theme.fontColor};
           ${Media.Laptop} {
             font-size: 18px;
           }
@@ -219,13 +220,14 @@ export const Main = styled.div`
             font-size: 12px;
           }
         }
+        p{ color: ${({ theme }) => theme.fontColor}; }
       }
     }
   }
 
   .ResulteWhite {
     width: 563px;
-    background: #ffffff;
+    background-color: ${({ theme }) => theme.cards};
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     border-radius: 62px;
     padding: 30px 0;
@@ -235,7 +237,7 @@ export const Main = styled.div`
       font-family: "Lato";
       font-style: normal;
       font-size: 34px;
-      color: #493d3d;
+      color: ${({ theme }) => theme.fontColor};
       ${Media.Laptop} {
         font-size: 31px;
       }
@@ -254,7 +256,7 @@ export const Main = styled.div`
       font-style: normal;
       font-weight: 400;
       font-size: 38px;
-      color: #2d3e50;
+      color: ${({ theme }) => theme.fontColor};
       text-align: center;
       ${Media.Laptop} {
         font-size: 36px;
@@ -266,6 +268,7 @@ export const Main = styled.div`
         font-size: 28px;
       }
     }
+    p{ color: ${({ theme }) => theme.fontColor}; }
     .InformationsDescription {
       margin-top: 30px;
       margin-left: 30px;
@@ -294,7 +297,7 @@ export const InputArea = styled.div`
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
-    color: #807b7b;
+    color: ${({ theme }) => theme.fontColor};
     ${Media.Laptop} {
       font-size: 18px;
     }
@@ -311,7 +314,7 @@ export const InputArea = styled.div`
     font-weight: 400;
     font-size: 34px;
     line-height: 36px;
-    color: #0009;
+    color: ${({ theme }) => theme.title};
     ${Media.Laptop} {
       font-size: 31px;
     }
@@ -325,6 +328,8 @@ export const InputArea = styled.div`
 
   input {
     background-color: transparent;
+    height: 30px;
+    color: ${({ theme }) => theme.fontColor};
   }
 `;
 
@@ -339,7 +344,7 @@ export const ButtonStyle = styled.button`
     font-family: "Lato";
     font-style: normal;
     font-size: 20px;
-    color: white;
+    color: ${({ theme }) => theme.fontColor};
     opacity: 0.6;
     transform: 1s;
     ${Media.Laptop} {

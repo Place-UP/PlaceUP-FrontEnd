@@ -3,6 +3,7 @@ import styled from "styled-components";
 const media = {
   Tablet: "@media(max-width:900px)",
   Mobile: "@media(max-width:675px)",
+  MobileM: "@media(max-width: 440px)",
   MobileS: "@media(max-width:320px)"
 };
 
@@ -14,6 +15,8 @@ export const Feed = styled.div`
   background-color: ${({ theme }) => theme.cards};
 
   ${media.Tablet} {    
+    width: 73%;
+
     .product {
       max-width: 300px;
       display: block;
@@ -40,6 +43,8 @@ export const Feed = styled.div`
       margin: 10px 0px 20px 5px;
     }
   }
+
+  ${media.MobileM}{ margin-left: 16%;}
 
     ${media.Mobile} {
       width: 70%;

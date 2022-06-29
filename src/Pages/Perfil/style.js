@@ -41,7 +41,7 @@ export const Body = styled.body`
       margin-left: 6%;
     }
     p {
-      color: #2d3e50;
+      color: ${({ theme }) => theme.title};
       font-weight: bold;
       font-size: 40px;
     }
@@ -90,6 +90,7 @@ export const Locate = styled.div`
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
+  color: ${({ theme }) => theme.fontColor};
   line-height: 38px;
 `;
 
@@ -109,6 +110,7 @@ export const NameEdit = styled.div`
     font-weight: 400;
     font-size: 30px;
     line-height: 56px;
+    color: ${({ theme }) => theme.fontColor};
   }
 
   .edit {
@@ -134,6 +136,7 @@ export const Buttons = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: ${({ theme }) => theme.title};
   margin-top: 5%;
   .corBtn {
     border-bottom: 2px solid #2980b9;
@@ -179,6 +182,7 @@ export const Sections = styled.div`
     justify-content: space-between;
     display: grid;
     align-items: center;
+    color: ${({ theme }) => theme.fontColor};
   }
 
   .A {
@@ -198,10 +202,14 @@ export const Sections = styled.div`
     border: none;
     background-color: transparent;
     text-align: right;
-    float: right;
-    /* background-color: transparent; */
-  
+    outline: none;
+    float: right;  
   }
+
+  select {
+    background-color: ${({ theme }) => theme.cards};
+  }
+
   Select {
     text-align: center;
   }

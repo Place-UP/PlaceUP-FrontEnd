@@ -25,8 +25,8 @@ export const Body = styled.body`
     left: 3%;
     top: 9%;
 
-    p {
-      color: #2d3e50;
+    p {      
+      color: ${({ theme }) => theme.title};
       font-weight: bold;
       font-size: 40px;
       ${Media.Tablet} {
@@ -58,6 +58,8 @@ export const Merchant1 = styled.div`
   display: flex;
   align-items: center;
   align-content: space-between;
+  background-color: ${({ theme }) => theme.cards};
+
   ${Media.Tablet} {
     width: 30%;
   }
@@ -83,7 +85,8 @@ export const Merchant1 = styled.div`
 
   p {
     margin-top: 15px;
-    font-weight: bold;
+    font-weight: bold;    
+    color: ${({ theme }) => theme.fontColor};
   }
 
   .Heart {

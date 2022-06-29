@@ -51,11 +51,11 @@ export const Main = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding-top: 50px;
+    margin-top: 50px;
     h1 {
       font-family: "Bakbak One";
-      font-size: 48px;
-      color: #333333;
+      font-size: 48px;      
+      color: ${({ theme }) => theme.title};
     }
     .hrs {
       width: 100px;
@@ -67,7 +67,7 @@ export const Main = styled.div`
   .whitePart {
     margin: auto;
     margin-top: 20px;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.cards};
     width: 80%;
 
     border-radius: 20px;
@@ -85,7 +85,7 @@ export const Main = styled.div`
     width: 60%;
     margin-right: 5%;
     height: 366px;
-    background: #c5c5c5;
+    background-color: ${({ theme }) => theme.body};
     border-radius: 20px;
     input[type="file"] {
       display: none;
@@ -120,39 +120,47 @@ export const Main = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: ${({ theme }) => theme.fontColor};
     
     .active {
-      background-color: #C5FAE6;
-      
+      background-color: ${({ theme }) => theme.body};
+      color: ${({ theme }) => theme.fontColor};
     }
 
     .never{
       color: red;
+      margin: 10px 0;
     }
 
     }
-      input{
-        width: 100%;
-      }
+
+    input{
+      width: 100%;
+      background-color: ${({ theme }) => theme.body};
+      color: ${({ theme }) => theme.fontColor};
+    }
     
 
 
   .description {
     width: 80%;
     margin: auto;
+
     p {
       margin-top: 20px;
       font-family: "Lato";
-      font-weight: 700;
-      color: #000000;
+      font-weight: 700;      
+      color: ${({ theme }) => theme.fontColor};
     }
-    input {
+
+    .description {
+      padding-left: 20px;
       margin-top: 20px;
       width: 100%;
-      height: 50px;
-      background: #c5c5c5;
-      border-radius: 20px;
-   
+      height: 70px;
+      background-color: ${({ theme }) => theme.body};
+      border-radius: 10px;
+      color: ${({ theme }) => theme.fontColor};   
     }
   }
 `;

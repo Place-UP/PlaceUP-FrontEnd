@@ -76,7 +76,8 @@ export function AddProduct() {
                 <input
                   type="text"
                   placeholder="Adicione a descrisão do seu produto..."
-                />
+                  className="description"
+               />
               </div>
             </div>
           </div>
@@ -88,3 +89,4 @@ export function AddProduct() {
     </>
   );
 }
+

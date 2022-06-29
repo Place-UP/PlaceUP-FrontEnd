@@ -111,7 +111,7 @@ export function IndexHomeUser() {
           </div>
         </Category>
 
-        <FeedUser />
+        <FeedUser className="feed" />
         <FeedUser />
         <FeedUser />
         <FeedUser />

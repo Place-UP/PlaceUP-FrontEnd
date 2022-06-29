@@ -13,7 +13,6 @@ import { FaleConosco } from "./Pages/FaleConosco/index";
 import { Pagina404 } from "./Components/Error404";
 import { Institucional } from "./Pages/InstitucionalLading/index";
 import { CadastroComerciante } from "./Pages/cadastroComerciante/Index";
-import { DirecCadastro } from "./Pages/DirecCadastro";
 import { VisualizacaoUsuario } from "./Pages/VisuLojaUsuario/index";
 import { VisualizacaoComerciante } from "./Pages/VisuLojaComerciante/index";
 import { Calculator } from "./Pages/Calculadora/index";
@@ -63,7 +62,6 @@ function Rotas() {
             <Route path="/Termos" element={<Termos />} />
             <Route path="/Calculadora" element={<IndexCalculadora />} />
             <Route path="/Institucional" element={<Institucional />} />
-            <Route path="/DirecCadastro" element={<DirecCadastro />} />
             <Route
               path="/VisualizacaoUsuario"
               element={<VisualizacaoUsuario />}

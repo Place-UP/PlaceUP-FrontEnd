@@ -85,5 +85,6 @@ export const Notification = styled.div`
     span{
       cursor: pointer;
       font-size: 2rem;
+      color: ${({ theme }) => theme.fontColor};
     }
 `

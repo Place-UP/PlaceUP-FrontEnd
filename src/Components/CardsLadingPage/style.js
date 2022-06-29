@@ -14,7 +14,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: auto; 
 
     ${Media.Tablet}{
         width: 70%;
@@ -54,7 +54,7 @@ export const Box = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F8F6F6;
+    background-color: ${({ theme }) => theme.cards};
     border-radius: 40px;
     box-shadow: ${(props) => props.primary};
 
@@ -94,6 +94,7 @@ export const Box = styled.div`
     font-weight: 600;
     font-size: 1.5rem;
     margin-top: 40%;
+    color: ${({ theme }) => theme.fontColor};
 
     ${Media.Laptop}{
         font-size: 1.1rem;
@@ -114,6 +115,7 @@ export const Box = styled.div`
     font-weight: 600;
     margin-top: 20%;
     margin-bottom: 20%;
+    color: ${({ theme }) => theme.fontColor};
     
     ${Media.Laptop}{
         width: 80%;

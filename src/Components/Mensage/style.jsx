@@ -8,8 +8,8 @@ export const Line = styled.div`
 
     &.me{
         > div{
-            background-color: #FEFEFE;
-            color: #131212;
+            background-color: ${({ theme }) => theme.cards};
+            color: ${({ theme }) => theme.fontColor};
         }
         justify-content: right;
     }
@@ -17,7 +17,7 @@ export const Line = styled.div`
 
 export const Content = styled.div`
     background-color: #599FCB;
-    color: #fff;
+    color: ${({ theme }) => theme.fontColor};
     border-radius: 10px;
     box-shadow: 0 1px 1px #ccc;
     display: flex;
@@ -35,7 +35,7 @@ export const Message = styled.span`
 
 export const MessageDate = styled.span`
     font-size: 10px;
-    color: #3F3636;
+    color: ${({ theme }) => theme.fontColor};
     text-align: right;
     height: 15px;
     margin: -5px 5px 0;

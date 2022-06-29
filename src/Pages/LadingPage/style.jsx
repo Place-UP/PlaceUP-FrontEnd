@@ -57,7 +57,7 @@ export const Header = styled.header`
         position: relative;
         width: 55px;
         height: 50px;
-        background-color: #f4f4f4;
+        background-color: ${({ theme }) => theme.fontColor};
         box-shadow: 0 10px 20px #ccc;
         border-radius: 10px;
         display: flex;
@@ -194,7 +194,7 @@ export const Box = styled.div`
 export const Btn = styled.button`
     background-color: ${(props) => props.primary ? "var(--Azul-Escuro)" : "transparent"} ;
     border: ${(props) => props.primary ? "0px solid var(--Azul-Escuro)" : "3px solid var(--Azul-Escuro)"};
-    color: ${(props) => props.primary ? "#fff" : "#000"} ;
+    color: ${({ theme }) => theme.fontColor};
     border-radius: 25px;
     box-sizing: border-box;
     height: 45px;
@@ -260,7 +260,7 @@ export const Card = styled.div`
 `
 
 export const TitleCard = styled.h1`
-    color: #344758;
+    color: ${({ theme }) => theme.fontColor};
     font-size: 3.25rem;
     font-weight: 600;
     font-family: 'Bakbak One', cursive;
@@ -284,7 +284,7 @@ export const TitleCard = styled.h1`
 
 export const ParagrafoCard = styled.p`
     font-size: 1.4rem;
-    color: #344758;
+    color: ${({ theme }) => theme.fontColor};
     font-weight: 500;
     margin-bottom: 3.5rem;
 
@@ -400,7 +400,7 @@ export const ContentText = styled.article`
     height: 100%;
     margin: auto;
     text-align: center;
-
+    color: ${({ theme }) => theme.fontColor};
 
     ${Media.MobileM}{
         width: 80%;
@@ -410,7 +410,7 @@ export const ContentText = styled.article`
         font-family: 'Bakbak One', cursive;
         font-weight: 500;
         font-size: 3rem;
-        color: #2D3E50;
+        color: ${({ theme }) => theme.fontColor};
 
         ${Media.TabletM}{
             font-size: 1.7rem;
@@ -426,6 +426,7 @@ export const ContentText = styled.article`
         margin-bottom: 2rem;
         font-weight: 300;
         font-size: 1.5em;
+        color: ${({ theme }) => theme.fontColor};
         
         ${Media.TabletM}{
             font-size: 1rem;

@@ -24,6 +24,8 @@ export const SectionSearch = styled.div`
   justify-content: space-between;
   border-radius: 50%;
 
+  ${media.Tablet} {   width: 130%;   }
+
   ${media.MobileM} {
     width: 80%;    
     margin-right: auto;     
@@ -76,11 +78,15 @@ export const SearchBar = styled.div`
 
   ${media.MobileM} {
     width: 50px;
+    width: 90%;
+
     &:hover {
       transition: 0.5s;
       width: 30vw;
     }
   }
+
+  ${media.Tablet} {   width: 100%;   }
 `;
 
 export const Car = styled.div`
@@ -270,7 +276,7 @@ export const Category = styled.div`
     }
 
     ${media.Tablet} {
-      width: 100%;
+      width: 120%;
       gap: 10px;
       grid: auto / auto auto;
     }

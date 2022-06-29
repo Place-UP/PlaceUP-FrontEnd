@@ -27,7 +27,7 @@ export const Category = styled.div`
     padding: 50px 5px 10px 5px;
     font-weight: 800;    
     font-family: 'Bakbak One', cursive;
-    color: ${({ theme }) => theme.fontColor};
+    color: ${({ theme }) => theme.title};
     
     ${media.Tablet}{ font-size: 36px; }
 

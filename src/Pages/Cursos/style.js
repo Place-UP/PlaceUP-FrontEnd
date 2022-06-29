@@ -74,6 +74,7 @@ export const BoxImg = styled.div`
     p{
         font-family: 'Poppins';
         font-weight: 600;
+        color: ${({ theme }) => theme.fontColor};
 
         ${Media.MobileL}{
             font-size: 1.2rem;
@@ -117,6 +118,7 @@ export const BoxTitle = styled.div`
     p{
         font-weight: 600;
         font-size: 0.6rem;
+        color: ${({ theme }) => theme.fontColor};
 
         ${Media.MobileL}{
             font-size: 0.8rem;
@@ -130,7 +132,7 @@ export const BoxTitle = styled.div`
 
 export const BoxSelect = styled.div`
     width: 100%;
-    height: 100%;
+    height: 100%;    
 
     margin-top: 15%;
 
@@ -146,6 +148,8 @@ export const BoxSelect = styled.div`
       flex-direction: column;
       margin-top: 15px;
       border: 0;
+      background-color: ${({ theme }) => theme.cards};
+      color: ${({ theme }) => theme.fontColor};
       outline: none;
       
       ${Media.Tablet}{
@@ -178,8 +182,8 @@ export const Calculator = styled.div`
 
     p{
         font-size: 0.6rem;
-        font-weight: 300;
-        color: gray;
+        font-weight: 400;
+        color: ${({ theme }) => theme.fontColor};
 
         ${Media.MobileL}{
             font-size: 1rem;
