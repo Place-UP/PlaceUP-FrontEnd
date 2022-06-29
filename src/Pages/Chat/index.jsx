@@ -5,7 +5,6 @@ import { SideBar } from "../../Components/SideBar";
 import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
 import { auth, db } from "../../Services/firebase";
 import { LoginChat } from "../../Components/LoginChat";
-import { Loading } from "../../Components/Loading";
 import * as C from './style'
 import { Chat } from "../../Components/Chat";
 
@@ -22,7 +21,7 @@ export function ChatComerciante() {
         }
     }, [user])
 
-    if (loading) return <Loading />
+
 
     if (!user) return <LoginChat />
 

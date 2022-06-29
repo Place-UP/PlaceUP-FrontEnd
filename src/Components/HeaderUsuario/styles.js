@@ -73,7 +73,6 @@ export const Navigation = styled.div`
     min-width: 60px;
     text-align: center;
     align-items: center;
-     color: ${({ theme }) => theme.icon};
     z-index: 1;
   }
 
@@ -88,7 +87,6 @@ export const Navigation = styled.div`
     font-size: 1.5rem;
     align-items: center;
 
-    color: ${({ theme }) => theme.icon};
     ${Media.MobileL} {
       font-size: 1rem;
     }
@@ -100,7 +98,7 @@ export const Navigation = styled.div`
   }
 
   .Active {
-    background: #ffffff;
+    background: ${({ theme }) => theme.body};
     &::after {
       content: "";
       position: absolute;
@@ -108,9 +106,8 @@ export const Navigation = styled.div`
       right: 0;
       width: 30px;
       height: 30px;
-      background-color: #2980b9;
       border-radius: 50%;
-      box-shadow: 15px 15px 0 #ffff;
+      box-shadow: 15px 15px 0 ${({ theme }) => theme.body};
     }
     &::before {
       content: "";
@@ -119,12 +116,11 @@ export const Navigation = styled.div`
       right: 0;
       width: 30px;
       height: 30px;
-      background-color: #2980b9;
       border-radius: 50%;
-      box-shadow: 15px -15px 0 #ffff;
+      box-shadow: 15px -15px 0 ${({ theme }) => theme.body};
     }
     .preto {
-      color: black;
+      color: ${({ theme }) => theme.fontColor};
     }
   }
 

@@ -46,7 +46,7 @@ export function AddProduct() {
 
           <div className="whitePart">
             <div className="contIntoArea">
-              <form className="putImage" onSubmit={submit}>
+              <form className="putImage" >
                 {selectImage ? (
                   <img src={URL.createObjectURL(selectImage)} />
                 ) : (
@@ -85,7 +85,7 @@ export function AddProduct() {
                   type="text"
                   placeholder="Adicione a descrisão do seu produto..."
                   className="description"
-               />
+                />
               </div>
             </div>
           </div>
