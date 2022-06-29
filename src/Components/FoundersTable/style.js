@@ -20,7 +20,7 @@ export const FoundersPart = styled.div`
       font-weight: bold;
       font-size: 54px;
       line-height: 90px;
-      color: #2c3e50;
+      color: ${({ theme }) => theme.title};
       ${Media.Desktop} {
         font-size: 50px;
       }
@@ -86,7 +86,7 @@ export const FoundersPart = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     gap: 50px;
-    background: white;
+    background-color: ${({ theme }) => theme.body};
     overflow-y: hidden;
     ${Media.Tablet} {
       display: flex;
@@ -115,7 +115,7 @@ export const FoundersPart = styled.div`
       font-family: "Bakbak One";
       font-weight: 400;
       font-size: 32px;
-      color: #2c3e50;
+      color: ${({ theme }) => theme.fontColor};
       margin-bottom: 10px;
     }
   }

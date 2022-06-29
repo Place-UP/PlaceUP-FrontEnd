@@ -37,6 +37,7 @@ export const Termos = styled.div`
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
+    color: ${({ theme }) => theme.fontColor};
 
     a{
         color: #2980B9;
@@ -61,6 +62,7 @@ export const Label = styled.label`
         background-color: transparent;
         width: 100%;
         outline: none;
+        color: ${({ theme }) => theme.fontColor};
         padding-left: 15px;
     }
 

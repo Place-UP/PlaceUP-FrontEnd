@@ -8,13 +8,14 @@ export const Container = styled.div`
     cursor: pointer;
 
     &:hover{
-        background-color: #f0f2f5;
+        background-color: ${({ theme }) => theme.body};
     }
 
     svg {
         width: 30px;
         height: 30px;
         background-color: #ccc;
+        color: ${({ theme }) => theme.fontColor};
         border-radius: 50%;
         margin-right: 10px;
         min-width: fit-content;
@@ -30,6 +31,7 @@ export const Name = styled.span`
     overflow: hidden;
     text-overflow: ellipsis;
     padding-left: 15px;
+    color: ${({ theme }) => theme.fontColor};
 `
 
 export const Avatar = styled.img`

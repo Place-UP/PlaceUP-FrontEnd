@@ -43,6 +43,7 @@ export const Buttons = styled.div`
         cursor: pointer;
         font-size: 2rem;
         margin-right: 10px;
+        color: ${({ theme }) => theme.fontColor};
 
         ${Media.MobileL}{
             font-size: 1.4rem;
@@ -66,7 +67,7 @@ export const Box = styled.section`
     height: 100%;
     margin: auto;
     margin-right: 20px;
-    background-color: #F8F8F8;
+    background-color: ${({ theme }) => theme.cards};
     box-shadow: 4px 4px 10px 1px #ccc;
     border-radius: 10px;
     margin-left: 15px;
@@ -98,6 +99,7 @@ export const PerfilFoto = styled.div`
         font-family: 'Poppins';
         font-weight: 600;
         text-align: center;
+        color: ${({ theme }) => theme.fontColor};
 
         ${Media.Tablet}{
             font-size: 1.2rem;
@@ -151,6 +153,7 @@ export const Coment = styled.div`
         margin: auto;
         font-size: 1.25rem;
         text-align: center;
+        color: ${({ theme }) => theme.fontColor};
 
         ${Media.MobileL}{
             font-size: 1rem;
@@ -220,7 +223,7 @@ export const Txt = styled.div`
         }
 
     h1{
-        color: #2D3E50;
+        color: ${({ theme }) => theme.fontColor};
         font-size: 2rem;
         font-weight: 700;
         

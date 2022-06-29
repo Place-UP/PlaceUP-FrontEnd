@@ -66,14 +66,16 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: ${({ theme }) => theme.fontColor};
+
     ${Media.Tablet} {
       text-align: center;
       width: max-content;
     }
     h1 {
       font-family: "Bakbak One";
-      font-size: 38px;
-      color: #333333;
+      font-size: 38px;      
+      color: ${({ theme }) => theme.title};
       margin-bottom: 23px;
       ${Media.Laptop} {
         font-size: 36px;
@@ -95,7 +97,7 @@ export const Container = styled.div`
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
-      color: #807b7b;
+      color: ${({ theme }) => theme.fontColor};
       margin-bottom: 23px;
       ${Media.Laptop} {
         font-size: 18px;
@@ -178,7 +180,7 @@ export const Container = styled.div`
         font-family: "Lato";
         font-style: normal;
         font-size: 34px;
-        color: #2d3e50;
+        color: ${({ theme }) => theme.title};
         ${Media.Laptop} {
           font-size: 31px;
         }
@@ -228,7 +230,7 @@ export const Container = styled.div`
         margin-right: 100px;
         font-family: "Lato";
         font-size: 20px;
-        color: #333333;
+        color: ${({ theme }) => theme.fontColor};
         ${Media.Laptop} {
           font-size: 18px;
         }
@@ -298,7 +300,7 @@ export const Container = styled.div`
       h1 {
         font-family: "Lato";
         font-size: 34px;
-        color: #333333;
+        color: ${({ theme }) => theme.fontColor};
         ${Media.Laptop} {
           font-size: 31px;
         }
@@ -316,7 +318,7 @@ export const Container = styled.div`
         font-family: "Lato";
         font-weight: 800;
         font-size: 20px;
-        color: #333333;
+        color: ${({ theme }) => theme.fontColor};
         ${Media.Laptop} {
           font-size: 18px;
         }
@@ -331,12 +333,7 @@ export const Container = styled.div`
   }
   .StartBackground {
     width: 100%;
-    background: linear-gradient(
-      304.69deg,
-      rgba(116, 189, 235, 0.2) 0.55%,
-      rgba(240, 240, 255, 0.51) 69.7%,
-      #ffffff 98.57%
-    );
+    background-color: ${({ theme }) => theme.cards};
 
     .FinalPart {
       width: 70%;
@@ -364,7 +361,7 @@ export const Container = styled.div`
           font-family: "Lato";
           font-weight: 900;
           font-size: 38px;
-          color: #333333;
+          color: ${({ theme }) => theme.fontColor};
           ${Media.Laptop} {
             font-size: 36px;
           }
@@ -382,7 +379,7 @@ export const Container = styled.div`
           font-family: "Lato";
           font-weight: 600;
           font-size: 18px;
-          color: #333333;
+          color: ${({ theme }) => theme.fontColor};
           ${Media.Laptop} {
             font-size: 18px;
           }
@@ -434,7 +431,7 @@ export const Container = styled.div`
           font-family: "Lato";
           font-size: 24px;
           text-align: center;
-          color: #f4f4f4;
+          color: white;
           ${Media.Laptop} {
             padding: 18px 22px;
             font-size: 18px;
@@ -465,7 +462,7 @@ export const ContCards = styled.div`
 
 export const Cards = styled.div`
   margin-top: 80px;
-
+  
   .CardsTittle {
     display: flex;
     align-items: flex-start;
@@ -474,7 +471,7 @@ export const Cards = styled.div`
       margin-left: 10px;
       font-family: "Lato";
       font-size: 24px;
-      color: #333333;
+      color: ${({ theme }) => theme.fontColor};
       opacity: 0.8;
       ${Media.Laptop} {
         font-size: 21px;
@@ -492,7 +489,7 @@ export const Cards = styled.div`
   .AreaWhite {
     width: 300px;
     height: 500px;
-    background: #ffffff;
+    background-color: ${({ theme }) => theme.cards};
     display: flex;
 
     justify-content: center;
@@ -516,7 +513,7 @@ export const Cards = styled.div`
           font-style: normal;
           font-weight: 400;
           font-size: 20px;
-          color: #333333;
+          color: ${({ theme }) => theme.fontColor};
           ${Media.Laptop} {
             font-size: 18px;
           }

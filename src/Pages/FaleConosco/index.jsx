@@ -28,21 +28,21 @@ export function FaleConosco() {
               method="POST"
             >
               <label>
-                Nome
+                <h1>Nome</h1>
                 <input type="text" required />
               </label>{" "}
               <br />
               <label>
-                Email
+                <h1>Email</h1>
                 <input type="email" required />
               </label>{" "}
               <br />
               <label>
-                Telefone
+                <h1>Telefone</h1>
                 <input type="number" required />
               </label>
               <br />
-              <label>Assunto</label>
+                <label><h1>Assunto</h1></label>
               <br />
               <textarea className="Assunto" required cols="33"></textarea>
               <button>

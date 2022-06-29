@@ -15,7 +15,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F9F9F9;
+    background-color: color: ${({ theme }) => theme.body};
     overflow: hidden;
     
 
@@ -57,6 +57,7 @@ export const Container = styled.div`
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         z-index: 10;
+        color: ${({ theme }) => theme.fontColor};
 
         &:hover{
             transform: translateX(8px);
@@ -76,7 +77,7 @@ export const Box = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.cards};
     border-radius: 15px;
     box-shadow: 10px 10px 50px 0 #8DCFDE;
     transition: all 0.1s ease-in-out;

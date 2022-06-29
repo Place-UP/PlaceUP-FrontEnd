@@ -47,8 +47,8 @@ export const Carrinho = styled.div`
       position: absolute;
       left: 30px;
       text-align: center;
-      background-color: #f01;
-      color: #fff;
+      background-color: #f01;      
+      color: ${({ theme }) => theme.fontColor};
       width: 15px;
       height: 15px;
       border-radius: 50%;
@@ -120,7 +120,7 @@ width: 90%;
 height: 53px;
 display: flex;
 align-items: center; 
-background: white;
+background-color: ${({ theme }) => theme.fontColor};
 border-radius: 26.5px;
 font-family: "Poppins";
 background-color: ${({ theme }) => theme.cards};
@@ -147,7 +147,7 @@ input {
     ${Media.Tablet} {  
       color: transparent;
       &:hover {
-        color: black;
+        color: ${({ theme }) => theme.fontColor};
         width: 20vw;
       }
     }
@@ -168,7 +168,7 @@ position: absolute;
 width: 64%;
 height: 50%;
 text-align: center;
-background-color: #fff;
+background-color: ${({ theme }) => theme.cards};
 margin-top: 5px;
 border: 1px solid rgb( 180, 180, 180 );
 border-radius: 10px;
@@ -191,11 +191,13 @@ overflow-y: auto;
   }
 
   p{
+    color: ${({ theme }) => theme.fontColor};
     width: 20%;
   }
 
   span{
     width: 20%;
+    color: ${({ theme }) => theme.fontColor};
     font-size: 1.2rem;
   }
 
@@ -209,7 +211,7 @@ ${Media.Tablet}{
   width: 48%;
   height: 50%;
   text-align: center;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.fontColor};
   margin-top: 5px;
   border: 1px solid rgb( 180, 180, 180 );
   border-radius: 10px;
@@ -235,11 +237,13 @@ ${Media.Tablet}{
       text-align: center;
       margin: 20px;
       width: auto;
+      color: ${({ theme }) => theme.fontColor};
     }
 
     span{
       text-align: center;
       font-size: 1.2rem;
+      color: ${({ theme }) => theme.fontColor};
     }
 
     img{  

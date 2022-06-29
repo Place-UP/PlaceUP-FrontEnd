@@ -5,7 +5,7 @@ export function CardsCursos() {
     return (
         <Container>
             <Paragraph>
-                <h1>PLACE UP INDICA</h1>
+                <h1>PLACEUP INDICA</h1>
                 <p></p>
             </Paragraph>
             {Cards.map((item) => (

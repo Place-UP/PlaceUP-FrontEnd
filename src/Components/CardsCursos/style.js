@@ -24,6 +24,7 @@ export const Paragraph = styled.div`
     h1{
         position: relative;
         font-weight: 700;
+        color: ${({ theme }) => theme.title};
         font-size: 1.2rem;
 
         &::before{
@@ -36,6 +37,7 @@ export const Paragraph = styled.div`
             bottom: -20%;
             background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);  
         }
+
          ${Media.MobileL}{
             font-size: 1.4rem;
          }
@@ -43,14 +45,12 @@ export const Paragraph = styled.div`
          ${Media.Tablet}{
             font-size: 2rem;
          }
-
-         
-         
     }
 
     p{
         font-size: 0.6rem;
         padding-top: 1.2rem;
+        color: ${({ theme }) => theme.fontColor};
         
         ${Media.MobileL}{
             font-size: 0.8rem;
@@ -73,6 +73,7 @@ export const TxtBox = styled.div`
     margin-bottom: 1.5rem;
 
     h2{
+        color: ${({ theme }) => theme.fontColor};
         font-size: 0.7rem;
         background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
          background-clip: text;
@@ -94,7 +95,7 @@ export const TxtBox = styled.div`
 
     p{
         font-size: 0.6rem;
-        color: #000000;
+        color: ${({ theme }) => theme.fontColor};
         padding-top: 10px;
         
         ${Media.MobileL}{
@@ -114,7 +115,7 @@ export const Box = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.cards};
     border-radius: 15px;
     margin-bottom: 1.5rem;
     border-right: 5px solid #2575A9;
@@ -147,8 +148,10 @@ export const Txt = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    color: ${({ theme }) => theme.fontColor};
+
     span{
-        
+        color: ${({ theme }) => theme.fontColor};
         font-size: 0.7rem;
         font-family: 'Poppins';
         font-weight: 600;

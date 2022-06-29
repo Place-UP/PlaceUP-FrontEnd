@@ -36,6 +36,7 @@ export const Form = styled.form`
 export const Termos = styled.div`
     margin-top: 40px;
     margin-bottom: 40px;
+    color: ${({ theme }) => theme.fontColor};
     text-align: center;
 
     a{
@@ -60,6 +61,7 @@ export const Label = styled.label`
     input{
         background-color: transparent;
         width: 100%;
+        color: ${({ theme }) => theme.fontColor};
         outline: none;
         padding-left: 15px;
     }

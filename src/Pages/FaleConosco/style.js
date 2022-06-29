@@ -10,7 +10,9 @@ const Media = {
 export const Main = styled.main`
   width: 100%;
   height: 500px;
-  background-color: #ecf0f1;
+  background-color: ${({ theme }) => theme.body};
+  padding-top: 60px;
+
   ${Media.Tablet} {
     height: 700px;
   }
@@ -30,7 +32,7 @@ export const Main = styled.main`
     margin: auto;
     font-family: "Bakbak One";
     text-decoration: underline 4px #2980b9;
-    color: #2d3e50;
+    color: ${({ theme }) => theme.title};
     ${Media.MobileL} {
       font-size: 30px;
     }
@@ -87,13 +89,18 @@ export const Contact = styled.form`
   label {
     display: flex;
     flex-direction: column;
+    
+    h1{      
+      color: ${({ theme }) => theme.fontColor};
+    }
   }
 
   input {
     margin-top: 10px;
     border-radius: 5px;
     border: 1.5px solid #297fb8;
-    height: 50%;
+    outline: none;
+    height: 30px;
     display: flex;
   }
 
@@ -154,5 +161,5 @@ export const Contact = styled.form`
 
 export const Footer = styled.div`
   align-items: flex-end;
-  margin-top: 120px;
+  margin-top: 180px;
 `;

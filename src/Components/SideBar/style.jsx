@@ -5,13 +5,13 @@ export const Container = styled.div`
     width: 25%;
     margin: auto;
     height: 100%;
-    background-color: #F8F8F8;
     right: 0;
     top: 0;
 `
 
 export const Search = styled.div`
-    background-color: #EDEAEA;
+    background-color: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.fontColor};
     width: 80%;
     margin: auto;
     display: flex;
@@ -22,7 +22,7 @@ export const Search = styled.div`
     border-radius: 30px;
 
     i{
-        color: #969292;
+        color: ${({ theme }) => theme.fontColor};
         font-size: 1.3rem;
         padding-right: 20px;
         
@@ -35,6 +35,6 @@ export const Search = styled.div`
         height: 100%;
         text-decoration: none;
         background-color: transparent;
-        color: #969292;
+        color: ${({ theme }) => theme.fontColor};
     }
 `

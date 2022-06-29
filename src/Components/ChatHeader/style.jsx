@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     height: 70px;
-    background-color: #F8F8F8;
+    background-color: ${({ theme }) => theme.cards};
     padding: 10px 10px;
     display: flex;
     align-items: center;
@@ -33,6 +33,7 @@ export const Name = styled.span`
     font-family: 'Poppins';
     font-size: 18px;
     text-overflow: ellipsis;
+    color: ${({ theme }) => theme.fontColor};
 `
 
 export const Avatar = styled.img`

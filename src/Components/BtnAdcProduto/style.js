@@ -44,12 +44,13 @@ export const Modal = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.cards};
     border-radius: 15px;
     bottom: 20%;
     right: 20.5%;
 
     a{
+        color: ${({ theme }) => theme.fontColor};
         height: 100%;
         display: flex;
         align-items: center;

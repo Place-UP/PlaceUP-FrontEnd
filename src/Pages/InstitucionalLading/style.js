@@ -64,7 +64,7 @@ export const FirstView = styled.div`
     flex-direction: column;
   }
   div h1 {
-    color: #344758;
+    color: ${({ theme }) => theme.title};
     font-size: 54px;
     font-family: "Bakbak One";
     margin-bottom: 90px;
@@ -143,10 +143,11 @@ export const ContainerCard = styled.div`
 export const Card = styled.div`
   width: 30vw;
   height: 454px;
-  background: #f8f6f6;
+  background-color: ${({ theme }) => theme.cards};
   border-radius: 57px;
   box-shadow: ${(props) => props.primary};
   margin: auto;
+  color: ${({ theme }) => theme.fontColor};
   margin-top: 150px;
   ${Media.Tablet} {
     width: 50vw;
@@ -209,7 +210,7 @@ export const Cards = styled.main`
 
 export const Hystory = styled.div`
   display: flex;
-  background: #2d3e50;
+  background-color: ${({ theme }) => theme.body};
   flex-direction: column;
   margin-top: 250px;
   ${Media.MobileL} {
@@ -228,7 +229,7 @@ export const Hystory = styled.div`
     font-weight: 400;
     font-size: 54px;
     line-height: 90px;
-    color: #ecf0f1;
+    color: ${({ theme }) => theme.title};
 
     ${Media.Desktop} {
       font-size: 50px;
@@ -252,7 +253,7 @@ export const Hystory = styled.div`
     margin-top: 180px;
     margin-left: 100px;
     font-size: 42px;
-    color: #ffffff;
+    color: ${({ theme }) => theme.fontColor};
     max-width: 50%;
     text-align: left;
     float: left;

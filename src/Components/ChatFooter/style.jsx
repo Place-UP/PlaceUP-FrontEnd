@@ -5,9 +5,11 @@ export const Container = styled.div`
   width: 65%;
   margin-left: 2%;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.cards};
   padding: 10px;
   bottom: 3%;
+  color: ${({ theme }) => theme.fontColor};
+  
   svg {
     width: 25px;
     height: 25px;
@@ -19,6 +21,7 @@ export const Form = styled.form`
   align-items: center;
   gap: 5px;
   width: 100%;
+  color: ${({ theme }) => theme.fontColor};
 `;
 
 export const Input = styled.input`
@@ -27,6 +30,7 @@ export const Input = styled.input`
   border: none;
   border-radius: 5px;
   width: 100%;
+  color: ${({ theme }) => theme.fontColor};
   background-color: transparent;
 `;
 

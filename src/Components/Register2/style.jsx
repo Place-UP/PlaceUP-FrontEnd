@@ -22,7 +22,7 @@ export const Regis = styled.section`
 
     button{
         border: 4px solid #fff;
-        color: #fff;
+        color: ${({ theme }) => theme.fontColor};
         padding: 8px 30px;
         border-radius: 20px;
         font-size: 1.1rem;

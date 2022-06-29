@@ -264,7 +264,7 @@ export const DarkMode = styled.section`
   }		
 
   input.toggle-control + label::before {
-    background: #202020;
+    background: white;
     border-radius: 60px;
   }
 
@@ -275,7 +275,7 @@ export const DarkMode = styled.section`
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 
-  input.toggle-control:checked + label::before { background: white; }
+  input.toggle-control:checked + label::before { background: black; }
 
   input.toggle-control:checked + label::after { margin-left: 20px; }
 `;
