@@ -84,16 +84,18 @@ export const Main = styled.div`
     position: relative;
     width: 60%;
     margin-right: 5%;
-    height: 366px;
+    height: 100%;
     background: #c5c5c5;
     border-radius: 20px;
     input[type="file"] {
       display: none;
     }
     label {
-      position: relative;
+      position: absolute;
       margin: auto;
-      top: 46%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -113,6 +115,11 @@ export const Main = styled.div`
         color: #000000;
       }
     }
+
+     img{
+        width: 100%;
+        height: 100%;
+      }
   }
   .informationProduct {
     width: 50%;
@@ -122,8 +129,7 @@ export const Main = styled.div`
     justify-content: center;
     
     .active {
-      background-color: #C5FAE6;
-      
+      background-color: #C5FAE6; 
     }
 
     .never{
@@ -133,9 +139,23 @@ export const Main = styled.div`
     }
       input{
         width: 100%;
+        background-color: none;
       }
-    
 
+      input[type="submit"]{
+        padding: 15px;
+        width: 60%;
+        margin: auto;
+        border-radius: 15px;
+        margin-top: 5%;
+        background-color: #2980b9;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover{
+          background-color: #2975b9;
+        }
+      }
 
   .description {
     width: 80%;
