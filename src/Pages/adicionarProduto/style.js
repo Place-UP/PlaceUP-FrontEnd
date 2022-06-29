@@ -13,11 +13,11 @@ export const Main = styled.div`
   display: flex;
   justify-content: space-between;
 
-  .active{
+  .active {
     color: green;
   }
 
-  .none{
+  .none {
     background-color: red;
   }
 
@@ -54,7 +54,7 @@ export const Main = styled.div`
     margin-top: 50px;
     h1 {
       font-family: "Bakbak One";
-      font-size: 48px;      
+      font-size: 48px;
       color: ${({ theme }) => theme.title};
     }
     .hrs {
@@ -121,10 +121,10 @@ export const Main = styled.div`
       }
     }
 
-     img{
-        width: 100%;
-        height: 100%;
-      }
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
   .informationProduct {
     width: 50%;
@@ -133,51 +133,45 @@ export const Main = styled.div`
     flex-direction: column;
     justify-content: center;
     color: ${({ theme }) => theme.fontColor};
-    
-    .active {
 
-      background-color: #C5FAE6; 
+    .active {
+      background-color: #c5fae6;
 
       background-color: ${({ theme }) => theme.body};
       color: ${({ theme }) => theme.fontColor};
-
     }
 
-    .never{
+    .never {
       color: red;
       margin: 10px 0;
     }
+  }
 
+  input {
+    width: 100%;
+    background-color: none;
+  }
+
+  input {
+    width: 100%;
+    background-color: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.fontColor};
+  }
+
+  input[type="submit"] {
+    padding: 15px;
+    width: 60%;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 5%;
+    background-color: #2980b9;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2975b9;
     }
-
-      input{
-        width: 100%;
-        background-color: none;
-      }
-
-
-    input{
-      width: 100%;
-      background-color: ${({ theme }) => theme.body};
-      color: ${({ theme }) => theme.fontColor};
-    }
-    
-
-
-      input[type="submit"]{
-        padding: 15px;
-        width: 60%;
-        margin: auto;
-        border-radius: 15px;
-        margin-top: 5%;
-        background-color: #2980b9;
-        color: #fff;
-        cursor: pointer;
-
-        &:hover{
-          background-color: #2975b9;
-        }
-      }
+  }
 
   .description {
     width: 80%;
@@ -186,7 +180,7 @@ export const Main = styled.div`
     p {
       margin-top: 20px;
       font-family: "Lato";
-      font-weight: 700;      
+      font-weight: 700;
       color: ${({ theme }) => theme.fontColor};
     }
 
@@ -197,7 +191,7 @@ export const Main = styled.div`
       height: 70px;
       background-color: ${({ theme }) => theme.body};
       border-radius: 10px;
-      color: ${({ theme }) => theme.fontColor};   
+      color: ${({ theme }) => theme.fontColor};
     }
   }
 `;
