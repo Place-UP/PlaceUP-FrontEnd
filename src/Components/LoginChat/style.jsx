@@ -5,12 +5,26 @@ export const Container = styled.div`
     height: 100vh;
     align-items: center;
     justify-content: center;
+
+    div{
+        position: absolute;
+        top: 0;
+        left: 50;
+    }
+
+    img {
+        margin-top: 50px;
+        width: 100px;
+        height: 100px;
+        z-index: 1;
+    }      
 `
 
 export const Button = styled.button`
     outline: none;
     font-size: 18px;
     padding: 14px 18px;
-    background-color: #ccc;
+    background-color: #fff;
     cursor: pointer;
+    border-radius: 30px;
 `

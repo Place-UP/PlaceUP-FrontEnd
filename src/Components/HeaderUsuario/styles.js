@@ -22,7 +22,7 @@ export const Navigation = styled.div`
   z-index: 30;
   
   ${Media.MobileL} {
-    width: 50px;
+    width: 60px;
     font-size: 10px;
   }
   &:hover {
@@ -37,7 +37,7 @@ export const Navigation = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 60px;
+      width: 50px;
       text-align: center;
       z-index: 1;
       padding-bottom: 50px;
@@ -73,7 +73,7 @@ export const Navigation = styled.div`
     min-width: 60px;
     text-align: center;
     align-items: center;
-     color: ${({ theme }) => theme.icon};
+    color: ${({ theme }) => theme.icon};
     z-index: 1;
   }
 
@@ -100,7 +100,7 @@ export const Navigation = styled.div`
   }
 
   .Active {
-    background: #ffffff;
+    background: #ffffff;    
     &::after {
       content: "";
       position: absolute;
@@ -108,7 +108,6 @@ export const Navigation = styled.div`
       right: 0;
       width: 30px;
       height: 30px;
-      background-color: #2980b9;
       border-radius: 50%;
       box-shadow: 15px 15px 0 #ffff;
     }
@@ -119,7 +118,6 @@ export const Navigation = styled.div`
       right: 0;
       width: 30px;
       height: 30px;
-      background-color: #2980b9;
       border-radius: 50%;
       box-shadow: 15px -15px 0 #ffff;
     }

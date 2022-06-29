@@ -19,10 +19,10 @@ export function Header() {
 
         <IconContext.Provider value={{ size: "30px" }}>
           <ul>
-            <List className={`${path === "/HomeUser" ? "Active" : ""}`}>
+            <List className={`${path === "/FeedUser" ? "Active" : ""}`}>
               <Link
-                to="/HomeUser"
-                className={`${path === "/HomeUser" ? "preto" : ""}`}
+                to="/FeedUser"
+                className={`${path === "/FeedUser" ? "preto" : ""}`}
               >
                 <Icon>
                   <BiHomeAlt />
@@ -31,24 +31,24 @@ export function Header() {
               </Link>
             </List>
 
-            <List className={`${path === "/" ? "Active" : ""}`}>
-              <Link to="/" className={`${path === "/" ? "preto" : ""}`}>
+            <List className={`${path === "/chat" ? "Active" : ""}`}>
+              <Link to="/chat" className={`${path === "/chat" ? "preto" : ""}`}>
                 <Icon>
                   <BsChatDots />
                 </Icon>
                 <Title>chat</Title>
               </Link>
             </List>
-            <List className={`${path === "/" ? "Active" : ""}`}>
-              <Link to="" className={`${path === "/" ? "preto" : ""}`}>
+            <List className={`${path === "/reservas" ? "Active" : ""}`}>
+              <Link to="/reservas" className={`${path === "/reservas" ? "preto" : ""}`}>
                 <Icon>
                   <AiOutlineSchedule />
                 </Icon>
                 <Title>Reservas</Title>
               </Link>
             </List>
-            <List className={`${path === "/" ? "Active" : ""}`}>
-              <Link to="" className={`${path === "/" ? "preto" : ""}`}>
+            <List className={`${path === "/favoritos" ? "Active" : ""}`}>
+            <Link to="/favoritos" className={`${path === "/favoritos" ? "preto" : ""}`}>
                 <Icon>
                   <MdFavoriteBorder />
                 </Icon>

@@ -25,7 +25,7 @@ export const Navigation = styled.div`
   
 
   ${Media.MobileL} {
-    width: 50px;
+    width: 60px;
     font-size: 10px;
   }
   &:hover {
@@ -39,7 +39,7 @@ export const Navigation = styled.div`
     img{
       padding: 10px;
       margin-bottom: 40px;
-      width: 70px;
+      width: 50px;
     }
   }
 
@@ -110,7 +110,6 @@ export const Navigation = styled.div`
       right: 0;
       width: 30px;
       height: 30px;
-      background-color: #2980b9;
       border-radius: 50%;
       box-shadow: 15px 15px 0 #ffff;
     }
@@ -121,7 +120,6 @@ export const Navigation = styled.div`
       right: 0;
       width: 30px;
       height: 30px;
-      background-color: #2980b9;
       border-radius: 50%;
       box-shadow: 15px -15px 0 #ffff;
     }
