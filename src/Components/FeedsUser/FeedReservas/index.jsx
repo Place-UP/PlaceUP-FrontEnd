@@ -2,6 +2,7 @@ import React from "react";
 import './styles'
 import supermarket from "./images/market.png";
 import produto from "./images/imageProduto.png";
+import { Link } from "react-router-dom";
 import { Feed, Profile, ContainerProfile, Button, Product, CointanerProduct } from "./styles";
 
 export function FeedReservas() {
@@ -18,7 +19,9 @@ export function FeedReservas() {
                     </div>
                 </Profile>
                 
-                <Button className="buttonSeeMore">Veja Lista</Button>
+                <Link
+                to="/Pedido"                
+                ><Button className="buttonSeeMore">Veja Lista</Button></Link>
             </ContainerProfile> 
 
             <Product className="product">

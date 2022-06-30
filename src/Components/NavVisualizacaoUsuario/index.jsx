@@ -4,6 +4,7 @@ import perfil from "./images/perfil.png";
 import logoPlace from "./images/LogoPlace.svg";
 import { FaWheelchair } from "react-icons/fa";
 import { IoIosExit } from "react-icons/io";
+import { Link } from "react-router-dom";
 import { AiOutlineClockCircle, AiOutlineStar } from "react-icons/ai";
 import { MdOutlinePlace } from "react-icons/md";
 import { Section, Profile, DarkMode } from "./styles";
@@ -26,8 +27,9 @@ export function MenuPrincipal() {
       <div className="mainMenu">
         <Profile>
           <div className="profile">
-            <img src={perfil} alt="Foto de Perfil" />
-            <h1>Name User</h1>
+          <Link to="/Perfil" className="link">
+                <img src={perfil} alt="Foto de Perfil" />
+                <h1 className="perfilTitle">Name User</h1></Link>
             <IoIosExit className="iconExit" />
           </div>
         </Profile>
@@ -94,6 +96,19 @@ export function MenuPrincipal() {
               <Section>
                 <div className="mainMenu-Mobile">
                   <div className="ContainerPlace">
+                    <Profile>
+                      <div className="profile">
+                        <Link to="/Perfil" className="link">
+                        <img src={perfil} alt="Foto de Perfil" />
+                        <h1>Name User</h1></Link>
+                        <IoIosExit className="iconExit"/>
+                      </div>
+                    </Profile>  
+
+                    <DarkMode >
+                      <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />
+                      <label for="toggle"></label>
+                    </DarkMode>
                     <div className="PlaceArea">
                       <img
                         className="ImageLogoPlace"

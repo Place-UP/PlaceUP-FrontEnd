@@ -13,7 +13,7 @@ export const Section = styled.section`
     max-width: 400px;
     width: 23%;
     height: 100vh;
-    background-color: ${({ theme }) => theme.cards};
+    background-color: ${({ theme }) => theme.barRight};
     margin: auto;
     transition: width 0.5s;
     padding-top: 30px; 
@@ -23,7 +23,7 @@ export const Section = styled.section`
     max-width: 450px;
     width: 100%;
     height: 100vh;
-    background-color: ${({ theme }) => theme.cards};
+    background-color: ${({ theme }) => theme.barRight};
     margin: auto;
     transition: width 0.5s;
     padding-top: 100px; 
@@ -161,29 +161,37 @@ export const Profile = styled.div`
     justify-content: space-between;
   }
 
-  img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
+  .link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-  h1{
-    line-height: 60px;    
-    font-family: 'Lato', cursive;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 20px;
-    color: ${({ theme }) => theme.fontColor};
-
-    ${media.Tablet} { font-size: 18px; }  
-
-    ${media.Mobile} { font-size: 15px; } 
-
-    ${media.MobileS} { font-size: 12px; }  
+    img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;     
+    }
+  
+    h1{
+      line-height: 60px;    
+      font-family: 'Lato', cursive;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-left: 20px;
+      text-overflow: ellipsis;
+      font-size: 20px;
+      color: ${({ theme }) => theme.fontColor};
+  
+      ${media.Tablet} { font-size: 18px; }  
+  
+      ${media.Mobile} { font-size: 15px; } 
+  
+      ${media.MobileS} { font-size: 12px; }  
+    }
   }
 
   .iconExit{
+    min-width: 13%;
     width: 15%;
     height: 50px;
     padding-right: 10px;

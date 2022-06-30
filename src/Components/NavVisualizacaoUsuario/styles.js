@@ -22,7 +22,7 @@ export const Section = styled.section`
     max-width: 400px;
     width: 95%;
     height: 100vh;
-    background-color: #ECF0F1;
+    background-color: ${({ theme }) => theme.barRight};
     margin: auto;
     transition: width 0.5s;
     padding-top: 100px; 
@@ -52,7 +52,7 @@ export const Section = styled.section`
     margin: 5px auto;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    background-color: black;
+    background-color: ${({ theme }) => theme.fontColor};
   }
 
   .ContainerPlace {
@@ -60,7 +60,10 @@ export const Section = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: ${({ theme }) => theme.barRight};
     margin: auto;
+
+    span{color: ${({ theme }) => theme.fontColor};}
 
     .DefaulConfig {
       width: 100%;
@@ -76,7 +79,6 @@ export const Section = styled.section`
         font-size: 14px;
         margin: auto;
         text-align: center;
-
         color: ${({ theme }) => theme.fontColor};
       }
 
@@ -86,13 +88,14 @@ export const Section = styled.section`
         color: ${({ theme }) => theme.fontColor};
       }
     }
+
     .PlaceArea {
       img {
         display: block;
         margin: auto;
         margin-top: 20px;
       }
-      h1 {
+      .perfilTitle {
         font-family: "Inter";
         font-weight: 600;
         font-size: 24px;
@@ -222,8 +225,8 @@ export const Section = styled.section`
     .mainMenu-Mobile{
       max-width: 400px;
       width: 95%;
-      height: 100vh;
-      background-color: #ECF0F1;
+      height: 100vh;      
+      background-color: ${({ theme }) => theme.barRight};
       margin: auto;
       transition: width 0.5s;
       padding-top: 100px; 
@@ -246,6 +249,7 @@ export const Section = styled.section`
     }
   }
 `;
+
 export const Profile = styled.div`
   width: 100%;
   
@@ -261,25 +265,40 @@ export const Profile = styled.div`
     background-color: ${({ theme }) => theme.body};
   }
 
-  img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+  .link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;     
+    }
+  
+    h1{
+      line-height: 60px;    
+      font-family: 'Lato', cursive;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-left: 20px;
+      text-overflow: ellipsis;
+      font-size: 20px;
+      color: ${({ theme }) => theme.fontColor};
+  
+      ${media.Tablet} { font-size: 18px; }  
+  
+      ${media.Mobile} { font-size: 15px; } 
+    }
   }
 
-  h1 {
-    line-height: 60px;
-    font-family: "Lato", cursive;
-    color: ${({ theme }) => theme.fontColor};
-  }
-
-  .iconExit {
+  .iconExit{
+    min-width: 13%;
     width: 15%;
     height: 50px;
     padding-right: 10px;
-    cursor: pointer;
+    cursor: pointer; 
     padding-top: 5px;
-
     color: ${({ theme }) => theme.fontColor};
   }
 `;

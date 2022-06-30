@@ -33,7 +33,7 @@ export const Main = styled.div`
     width: 20%;
     ${Media.NavMob} {
       position: absolute;
-      width: 90%;
+      width: 100%;
     }
   }
 `;

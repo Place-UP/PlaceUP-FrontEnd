@@ -6,7 +6,7 @@ export const Container = styled.div`
     margin: auto;
     height: 100%;
     right: 0;
-    background-color: ${({ theme }) => theme.cards};
+    background-color: ${({ theme }) => theme.barRight};
     top: 0;
 `
 

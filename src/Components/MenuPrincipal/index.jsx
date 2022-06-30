@@ -2,6 +2,7 @@ import { React, useContext } from "react";
 import './styles'
 import perfil from "./images/perfil.png";
 import { IoIosExit } from "react-icons/io";
+import { Link } from "react-router-dom";
 import { Section, Profile, DarkMode, Suggestions, ProfileSuggestions } from "./styles";
 import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
 
@@ -23,8 +24,9 @@ export function MenuPrincipal() {
           <div className="mainMenu">
             <Profile>
               <div className="profile">
+              <Link to="/Perfil" className="link">
                 <img src={perfil} alt="Foto de Perfil" />
-                <h1>Name User</h1>
+                <h1>Name User</h1></Link>
                 <IoIosExit className="iconExit"/>
               </div>
             </Profile>
@@ -71,8 +73,9 @@ export function MenuPrincipal() {
                       <div className="mainMenu-Mobile">
                         <Profile>
                           <div className="profile">
+                            <Link to="/Perfil" className="link">
                             <img src={perfil} alt="Foto de Perfil" />
-                            <h1>Name User</h1>
+                            <h1>Name User</h1></Link>
                             <IoIosExit className="iconExit"/>
                           </div>
                         </Profile>               

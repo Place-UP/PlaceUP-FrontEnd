@@ -3,6 +3,7 @@ import './styles'
 import supermarket from "./images/market.png";
 import perfil from "./images/perfil.png";
 import { IoIosExit } from "react-icons/io";
+import { Link } from "react-router-dom";
 import { Section, Profile, DarkMode, Evaluation, ProfileSuggestion } from "./styles";
 import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
 
@@ -24,8 +25,9 @@ export function MenuPedido() {
         <div className="mainMenu">
             <Profile>
               <div className="profile">
+              <Link to="/Perfil" className="link">
                 <img src={perfil} alt="Foto de Perfil" />
-                <h1>Name User</h1>
+                <h1>Name User</h1></Link>
                 <IoIosExit className="iconExit"/>
               </div>
             </Profile>
@@ -56,8 +58,9 @@ export function MenuPedido() {
                       <div className="mainMenu-Mobile">
                           <Profile>
                             <div className="profile">
+                            <Link to="/Perfil" className="link">
                               <img src={perfil} alt="Foto de Perfil" />
-                              <h1>Name User</h1>
+                              <h1>Name User</h1></Link>
                               <IoIosExit className="iconExit"/>
                             </div>
                           </Profile>
