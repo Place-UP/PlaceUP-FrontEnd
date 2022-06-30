@@ -27,8 +27,9 @@ export const Body = styled.body`
 
     p {      
       color: ${({ theme }) => theme.title};
-      font-weight: bold;
+      font-weight: 400px;
       font-size: 40px;
+      font-family: "Bakbak One";
       ${Media.Tablet} {
         font-size: 30px;
       }
@@ -44,13 +45,14 @@ export const Itens = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 10px 20px;
+  column-gap: 900px;
+  gap: 40px 40px;
   margin-bottom: 50px;
 `;
 
 export const Merchant1 = styled.div`
-  width: 150px;
-  height: 185px;
+  width: 250px;
+  height: 285px;
   margin-bottom: 25px;
   box-shadow: rgba(41, 127, 184, 1) 0px 8px 0px 0px;
   border-radius: 40px;
@@ -79,13 +81,17 @@ export const Merchant1 = styled.div`
     height: 30%;
     width: auto;
     padding: 2px;
+    margin-top: 20px;
     border: black solid 1px;
     border-radius: 50%;
   }
 
   p {
     margin-top: 15px;
-    font-weight: bold;    
+    font-weight: bold;   
+    font-family: lato;
+    font-size: 20px; 
+    margin-top: 20px;
     color: ${({ theme }) => theme.fontColor};
   }
 

@@ -59,7 +59,7 @@ export function Header() {
                 <Icon>
                   <BsFillGearFill />
                 </Icon>
-                <Title>Favoritos</Title>
+                <Title>Perfil</Title>
               </Link>
             </List>
           </ul>

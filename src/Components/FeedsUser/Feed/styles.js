@@ -134,10 +134,15 @@ export const Profile = styled.div`
   .favorite{
     width: 30px;
     height: 30px;
-    margin: 26px 0px 0px 0px;
+    margin: 6px 0px 0px 0px;
     cursor: pointer;
     color: ${({ theme }) => theme.fontColor};
   }
+
+  .favorite.active{  fill: #2980B9; }
+  .disfavor.active{  fill: white; }
+    
+  .favorite:hover{ transform: scale(1.2); }
 `;
 
 export const Button = styled.button`

@@ -1,12 +1,21 @@
 import { useState, useEffect } from "react";
 import './styles'
 import supermarket from "./images/market.png";
-import { AiOutlineHeart } from "react-icons/ai";
+import { AiFillHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { Feed, Profile, ContainerProfile, Button, Product, CointanerProduct } from "./styles";
 import axios from "axios";
 
 export function FeedUser() {
+
+  function colorFavorite() {
+    const favorite = document.querySelector(".favorite");
+    const disfavor = document.querySelector(".disfavor");
+
+    favorite.classList.toggle("active");
+    disfavor.classList.toggle("active");
+  }
+
 
     const [ product, setProducts] = useState([]);
     useEffect(() => {
@@ -37,7 +46,7 @@ export function FeedUser() {
                 <Profile className="profile">
                     <img src={supermarket} alt="foto do comércio" />
                     <h1>NameMarket</h1>
-                    <AiOutlineHeart alt="Favorito" className="favorite" />
+                    <button className="disfavor"><AiFillHeart alt="Favorito" className="favorite" onClick={colorFavorite} /></button>
                 </Profile>
                 
                 <Link

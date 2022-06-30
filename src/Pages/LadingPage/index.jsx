@@ -27,7 +27,6 @@ import {
 } from "react-icons/ai";
 
 import { Link } from "react-router-dom";
-
 import LogoPlaceUP from "../../Img/ImgLading/PlaceUp animação.svg";
 import CidadeVetor from "../../Img/ImgLading/VetorCidadePlaceUp.svg";
 import CursosPlaceUp from "../../Img/ImgLading/Conteudo_Cursos.svg";
@@ -80,36 +79,32 @@ export function LadingPage() {
           </TitleCard>
 
           <ParagrafoCard>
-            Encontre comércios mais próximo da sua região e fique sempre
-            atualizado sem sair de casa!
+            Conheça mais sobre a Place UP a empresa que está sempre com você!
           </ParagrafoCard>
 
           <BoxCard>
+          <Link to="/Institucional">
             <BtnCard primary>Saiba Mais</BtnCard>
+          </Link>
           </BoxCard>
 
           <Cenarios src={Cenario} alt="Parte do cenario" />
           <Midia>
-            <Link to="">
+            <a href="https://twitter.com/iPlaceUP">
               <li>
                 <AiOutlineTwitter />
               </li>
-            </Link>
-            <Link to="">
-              <li>
-                <AiOutlineInstagram />
-              </li>
-            </Link>
-            <Link to="">
+            </a>            
+              <a href="https://www.instagram.com/iplaceup/">  
+                <li>
+                  <AiOutlineInstagram />
+                </li>  
+              </a>
+            <a href="https://www.facebook.com/iplaceup/">
               <li>
                 <AiOutlineFacebook />
               </li>
-            </Link>
-            <Link to="">
-              <li>
-                <AiOutlineGoogle />
-              </li>
-            </Link>
+            </a>            
           </Midia>
         </Card>
 
@@ -132,7 +127,7 @@ export function LadingPage() {
               Aprenda a impulsionar seu negócio com cursos, uma calculadora para
               te ajudar a precificar o seu produto e muito mais.{" "}
             </p>
-            <BtnCard>Ver mais</BtnCard>
+            <Link to="/DirecCadastro"><BtnCard>Ver mais</BtnCard></Link>
           </ContentText>
         </ContentRight>
       </Container>
@@ -143,7 +138,7 @@ export function LadingPage() {
           <ContentText>
             <h1>Calcula com a gente </h1>
             <p>Calcule seus produtos de forma efetiva. </p>
-            <BtnCard><Link to="/Cursos">Ver mais</Link></BtnCard>
+            <BtnCard><Link to="/calcular">Ver mais</Link></BtnCard>
           </ContentText>
         </ContentRight>
         <Box primary>
@@ -160,7 +155,7 @@ export function LadingPage() {
           <ContentText>
             <h1>Reserve Seu produto</h1>
             <p>Reserve produtos quando quiser. </p>
-            <BtnCard>Ver mais</BtnCard>
+            <Link to="/FeedUser"><BtnCard>Ver mais</BtnCard></Link>
           </ContentText>
         </ContentRight>
       </Container>

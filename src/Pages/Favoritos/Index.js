@@ -17,7 +17,7 @@ export function Favoritos() {
         <Body>
            
           <div className="Title">
-            <p>Favoritos</p>
+            <p>FAVORITOS</p>
           </div>
 
           <Itens>

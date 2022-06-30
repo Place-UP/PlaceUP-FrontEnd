@@ -29,7 +29,7 @@ export function MenuPrincipal() {
           <div className="profile">
           <Link to="/Perfil" className="link">
                 <img src={perfil} alt="Foto de Perfil" />
-                <h1 className="perfilTitle">Name User</h1></Link>
+                <h1>Name User</h1></Link>
             <IoIosExit className="iconExit" />
           </div>
         </Profile>

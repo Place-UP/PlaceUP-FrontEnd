@@ -42,8 +42,9 @@ export const Body = styled.body`
     }
     p {
       color: ${({ theme }) => theme.title};
-      font-weight: bold;
+      font-weight: 400px;
       font-size: 40px;
+      font-family: "Bakbak One";
     }
   }
 `;
