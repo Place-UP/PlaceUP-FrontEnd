@@ -20,7 +20,8 @@ export const Main = styled.div`
     background-color: none;
   }
   .Container1 {
-    width: 80%;
+    width: 75%;
+    margin: auto;
     ${Media.NavMob} {
       width: 100%;
     }
