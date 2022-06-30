@@ -65,9 +65,9 @@ export function Box() {
         {products.map((item) =>
           <div className="ContainerCarousel" key={item.saller}>
             <div className="Carousel">
-              <div className="boxImg">
-                <img className="image" src={item.imageLink} alt="img" />
-              </div>
+
+              <img className="image" src={item.imageLink} alt="img" />
+
               <button onClick={() => HandleAddCart({ ...item })}>
                 <GrFormAdd className="AddIcon" />
               </button>

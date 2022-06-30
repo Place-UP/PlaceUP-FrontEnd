@@ -192,7 +192,7 @@ export const Box = styled.div`
 `
 
 export const Btn = styled.button`
-    background-color: ${(props) => props.primary ? "var(--Azul-Escuro)" : "var(--Azul-Escuro)"} ;
+    background-color: ${(props) => props.primary ? "var(--Azul-Escuro)" : ""} ;
     border: ${(props) => props.primary ? "0px solid var(--Azul-Escuro)" : "3px solid var(--Azul-Escuro)"};
     color: white;
     border-radius: 25px;

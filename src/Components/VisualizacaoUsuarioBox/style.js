@@ -70,45 +70,36 @@ export const Main = styled.main`
 `;
 
 export const ContWhitePart = styled.div`
+  width: 100%;
   margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   overflow: auto;
   scroll-behavior: smooth;
+  column-gap: 20px;
 
   &::-webkit-scrollbar {
     display: none;
   }
 
   .ContainerCarousel{
-    padding: 15px;
-    position: relative;
     width: 100%;
-    height: 500px; 
-    margin: 0 10px;
+    padding: 15px;
     background-color: ${({ theme }) => theme.cards};
     border-radius: 15px;
+   
   }
 
   .Carousel {
     position: relative;
-    width: 80%;
     margin: auto;
 
-    .boxImg{
-      width: 350px;
-      height: 400px;
-      flex: content;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+
 
     .image{
       position: relative;
-      margin-right: 70px;
-      width: 300px;
+      width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 15px;  
@@ -120,13 +111,14 @@ export const ContWhitePart = styled.div`
       position: absolute;
       bottom: 20%;
       right: 0;
-      margin-left: 30px;
+      margin-right: 3px;
       cursor: pointer;
-      width: 45px;
-      height: 45px;
+      width: 38px;
+      height: 38px;
       background-color: #4FCE63;
       color: #fff;
       border-radius: 50%;
+      z-index: 10;
 
       ${Media.Tablet} {
         margin-left: 177px;
@@ -137,13 +129,10 @@ export const ContWhitePart = styled.div`
     }
 
     .Info {
-      width: 200px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       gap: 5px;
-      ${Media.MobileM} {
-        width: 140px;
-      }
 
       .SeparationPrices {
         display: flex;
@@ -152,26 +141,15 @@ export const ContWhitePart = styled.div`
       }
       .Tittle {
         font-family: "Lato";
-        font-size: 22px;
+        font-size: 15px;
         padding-top: 10px;
         font-weight: 700;
         color: ${({ theme }) => theme.fontColor};
-        /* ${Media.MobileM} {
-          font-size: 12px;
-        } */
       }
-
-
-      .Quant {
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        color: ${({ theme }) => theme.fontColor};
-      }
+   
     }
 
-    .description{
+      .description{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -182,8 +160,7 @@ export const ContWhitePart = styled.div`
       font-family: "Lato";
       font-style: normal;
       font-weight: 700;
-      font-size: 1.2rem;
-      margin-left: 120px;
+      font-size: 0.8rem;
       color: ${({ theme }) => theme.fontColor};
     }
 
