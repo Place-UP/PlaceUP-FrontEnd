@@ -85,6 +85,8 @@ export const ContWhitePart = styled.div`
     padding: 15px;
     position: relative;
     width: 100%;
+    height: 500px; 
+    margin: 0 10px;
     background-color: ${({ theme }) => theme.cards};
     border-radius: 15px;
   }
@@ -95,8 +97,8 @@ export const ContWhitePart = styled.div`
     margin: auto;
 
     .boxImg{
-      width: 100%;
-      height: 300px;
+      width: 350px;
+      height: 400px;
       flex: content;
       display: flex;
       justify-content: center;
@@ -105,7 +107,8 @@ export const ContWhitePart = styled.div`
 
     .image{
       position: relative;
-      width: 100%;
+      margin-right: 70px;
+      width: 300px;
       height: 100%;
       object-fit: cover;
       border-radius: 15px;  
@@ -117,10 +120,10 @@ export const ContWhitePart = styled.div`
       position: absolute;
       bottom: 20%;
       right: 0;
-      margin-right: 3px;
+      margin-left: 30px;
       cursor: pointer;
-      width: 38px;
-      height: 38px;
+      width: 45px;
+      height: 45px;
       background-color: #4FCE63;
       color: #fff;
       border-radius: 50%;
@@ -149,7 +152,7 @@ export const ContWhitePart = styled.div`
       }
       .Tittle {
         font-family: "Lato";
-        font-size: 15px;
+        font-size: 22px;
         padding-top: 10px;
         font-weight: 700;
         color: ${({ theme }) => theme.fontColor};
@@ -163,12 +166,12 @@ export const ContWhitePart = styled.div`
         font-family: "Lato";
         font-style: normal;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 16px;
         color: ${({ theme }) => theme.fontColor};
       }
     }
 
-      .description{
+    .description{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -179,7 +182,8 @@ export const ContWhitePart = styled.div`
       font-family: "Lato";
       font-style: normal;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.2rem;
+      margin-left: 120px;
       color: ${({ theme }) => theme.fontColor};
     }
 

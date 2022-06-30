@@ -57,7 +57,7 @@ export const Header = styled.header`
         position: relative;
         width: 55px;
         height: 50px;
-        background-color: ${({ theme }) => theme.fontColor};
+        background-color: white;
         box-shadow: 0 10px 20px #ccc;
         border-radius: 10px;
         display: flex;
@@ -192,9 +192,9 @@ export const Box = styled.div`
 `
 
 export const Btn = styled.button`
-    background-color: ${(props) => props.primary ? "var(--Azul-Escuro)" : "transparent"} ;
+    background-color: ${(props) => props.primary ? "var(--Azul-Escuro)" : "var(--Azul-Escuro)"} ;
     border: ${(props) => props.primary ? "0px solid var(--Azul-Escuro)" : "3px solid var(--Azul-Escuro)"};
-    color: ${({ theme }) => theme.fontColor};
+    color: white;
     border-radius: 25px;
     box-sizing: border-box;
     height: 45px;
@@ -206,7 +206,6 @@ export const Btn = styled.button`
 
     &:hover{
         background-color: ${(props) => props.primary ? "#22597d" : "#22597d"};
-        color: ${({ theme }) => theme.fontColor};
     }
 
 
