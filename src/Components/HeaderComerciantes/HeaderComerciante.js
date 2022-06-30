@@ -60,7 +60,7 @@ export function HeaderComerciante() {
                 </Link>
               </List>
             </div>
-            <div>
+            <div className="boxExist">
               <List>
                 <Link to="" className={`${path === "/" ? "preto" : ""}`}>
                   <Icon>

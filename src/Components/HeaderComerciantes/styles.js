@@ -22,7 +22,7 @@ export const Navigation = styled.div`
   padding-top: 50px;
   border-radius: 0 14px 14px 0;
   z-index: 20;
-  
+
 
   ${Media.MobileL} {
     width: 60px;
@@ -131,4 +131,5 @@ export const Navigation = styled.div`
     max-height: 100px;
     margin: 0 auto;
   }
+
 `;

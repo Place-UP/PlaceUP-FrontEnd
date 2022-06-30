@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { BiHomeAlt } from "react-icons/bi";
-import { BsChatDots } from "react-icons/bs";
+import { BsChatDots, BsFillGearFill } from "react-icons/bs";
 import { MdFavoriteBorder } from "react-icons/md";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { IconContext } from "react-icons";
@@ -50,6 +50,14 @@ export function Header() {
               <Link to="/Favoritos" className={`${path === "/Favoritos" ? "preto" : "claro"}`}>
                 <Icon>
                   <MdFavoriteBorder />
+                </Icon>
+                <Title>Favoritos</Title>
+              </Link>
+            </List>
+            <List className={`${path === "/Perfil" ? "Active" : ""}`}>
+              <Link to="/Perfil" className={`${path === "/Perfil" ? "preto" : "claro"}`}>
+                <Icon>
+                  <BsFillGearFill />
                 </Icon>
                 <Title>Favoritos</Title>
               </Link>

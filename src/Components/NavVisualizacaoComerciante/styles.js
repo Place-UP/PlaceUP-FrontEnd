@@ -19,14 +19,14 @@ export const Section = styled.section`
     background-color: ${({ theme }) => theme.barRight};
   }
 
-  .mainMenu-Mobile {
+  .mainMenu-Mobile{
     max-width: 400px;
     width: 95%;
     height: 100vh;
-    background-color: #ecf0f1;
+    background-color: ${({ theme }) => theme.barRight};
     margin: auto;
     transition: width 0.5s;
-    padding-top: 100px;
+    padding-top: 100px; 
   }
 
   .mobile {
@@ -44,6 +44,31 @@ export const Section = styled.section`
     display: none;
     cursor: pointer;
     margin: 30px 0;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: ${({ theme }) => theme.fontColor};
+  }
+
+  .bar:nth-child(1){
+    position: fixed;    
+    margin: 5px auto auto -20px;
+  }
+
+  .bar:nth-child(2){
+    position: fixed;
+    margin: 15px auto auto -20px;
+  }
+
+  .bar:nth-child(3){
+    position: fixed;
+    margin: 25px auto auto -20px;
   }
 
   .ContainerPlace {
@@ -199,7 +224,7 @@ export const Section = styled.section`
       right: -100%;
       top: -20px;
       height: 100vh;
-      width: 50%;
+      width: 60%;
       transition: 0.3s;
       list-style-type: none;
     }
@@ -216,12 +241,23 @@ export const Section = styled.section`
   }
 
   ${media.Mobile} {
+    .mainMenu-Mobile{
+      max-width: 400px;
+      width: 95%;
+      height: 100vh;      
+      background-color: ${({ theme }) => theme.barRight};
+      margin: auto;
+      transition: width 0.5s;
+      padding-top: 100px; 
+    }
+
     .hamburger {
       display: block;
       padding-left: 200px;
     }
 
     .nav-menu {
+      max-width: 400px;
       position: fixed;
       right: -100%;
       top: -20px;
@@ -230,6 +266,59 @@ export const Section = styled.section`
       transition: 0.3s;
       list-style-type: none;
     }
+  }
+`;
+
+export const Profile = styled.div`
+  width: 100%;
+  
+  .profile {
+    width: 90%;
+    background-color: white;
+    border-radius: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: ${({ theme }) => theme.body};
+  }
+
+  .link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;     
+    }
+  
+    h1{
+      line-height: 60px;    
+      font-family: 'Lato', cursive;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-left: 20px;
+      text-overflow: ellipsis;
+      font-size: 20px;
+      color: ${({ theme }) => theme.fontColor};
+  
+      ${media.Tablet} { font-size: 18px; }  
+  
+      ${media.Mobile} { font-size: 15px; }
+    }
+  }
+
+  .iconExit{
+    min-width: 13%;
+    width: 15%;
+    height: 50px;
+    padding-right: 10px;
+    cursor: pointer; 
+    padding-top: 5px;
+    color: ${({ theme }) => theme.fontColor};
   }
 `;
 

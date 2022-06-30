@@ -53,7 +53,7 @@ function Rotas() {
             <Route path="/CadastroUsuario" element={<CadastroUser />} />
             <Route path="/UserPhone" element={<CadastroUserPhone />} />
             <Route path="/UserPassword" element={<CadastroPasswordUser />} />
-
+            
             <Route path="/FeedUser" element={<IndexHomeUser />} />
             <Route path="/Reservas" element={<Reservas />} />
             <Route path="/Pedido" element={<Pedido />} />

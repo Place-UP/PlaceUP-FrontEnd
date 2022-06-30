@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import './styles'
 import supermarket from "./images/market.png";
 import { AiOutlineHeart } from "react-icons/ai";
-import { box } from "../../../mock/boxVisalizer";
+import { Link } from "react-router-dom";
 import { Feed, Profile, ContainerProfile, Button, Product, CointanerProduct } from "./styles";
 import axios from "axios";
 
@@ -40,7 +40,9 @@ export function FeedUser() {
                     <AiOutlineHeart alt="Favorito" className="favorite" />
                 </Profile>
                 
-                <Button className="buttonSeeMore">Veja Mais</Button>
+                <Link
+                to="/VisualizacaoUsuario"                
+                ><Button className="buttonSeeMore">Veja Mais</Button></Link>
             </ContainerProfile> 
 
             <Product className="product">

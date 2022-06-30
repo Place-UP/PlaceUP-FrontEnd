@@ -118,6 +118,7 @@ export const ContWhitePart = styled.div`
         align-items: center;
         justify-content: space-between;
       }
+      
       .Tittle {
         font-family: "Lato";
         font-size: 15px;
