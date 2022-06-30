@@ -50,7 +50,7 @@ export function AddProduct() {
                 {selectImage ? (
                   <img src={URL.createObjectURL(selectImage)} />
                 ) : (
-                  <img src={endImg} alt="Sem imagem" />
+                  <img className="ImgFiles" src={endImg} alt="Sem imagem" />
                 )}
                 <label for="arquivo">
                   <AiOutlineUpload className="icon-upload" />

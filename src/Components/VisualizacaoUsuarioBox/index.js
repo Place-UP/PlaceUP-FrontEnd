@@ -1,10 +1,9 @@
-import { useRef, useContext } from "react";
-import { box } from "../../mock/boxVisalizer";
+import { useRef, useContext, useEffect, useState } from "react";
 import { Main, ContWhitePart } from "./style";
 import { GrFormAdd } from "react-icons/gr";
 import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-icons/md"
 import { CartContext } from './../../Common/Context/index';
-
+import axios from "axios";
 
 export function Box() {
 
@@ -20,6 +19,32 @@ export function Box() {
   };
 
   const { HandleAddCart } = useContext(CartContext)
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function getProducts() {
+      let config = {
+        method: 'get',
+        url: 'http://localhost:8080/api/products?order=?',
+        headers: {
+          'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0ZUBlbWFpbC5jb20iLCJleHAiOjE2NTY4OTQwNDl9.c6I-XgzCUNd-m65YVWlT4Mm4wreSdfim0f9IYTvaQvciFxcSvQA0FVfSSk_qEcpT5DixRaVk2b4H78_h0hwXdw'
+        }
+      };
+
+      axios(config)
+        .then(function (response) {
+          setProducts(response.data)
+
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
+    getProducts();
+
+  }, []);
+
 
   return (
     <Main>
@@ -37,29 +62,25 @@ export function Box() {
         </div>
       </div>
       <ContWhitePart className="carousel" ref={carousel}>
-        {box.map((item) => {
-          const { id, name, price, oldPrice, image } = item;
-          return (
-            <div className="ContainerCarousel" key={id}>
-              <div className="Carousel">
-                <div className="containerIMG">
-                  <img className="image" src={image} alt="img" />
-                  <button onClick={() => HandleAddCart({ ...item })}>
-                    <GrFormAdd className="AddIcon" />
-                  </button>
-                </div>
-                <div className="Info">
-                  <span className="Tittle"> {name}</span>
+        {products.map((item) =>
+          <div className="ContainerCarousel" key={item.saller}>
+            <div className="Carousel">
+              <div className="boxImg">
+                <img className="image" src={item.imageLink} alt="img" />
+              </div>
+              <button onClick={() => HandleAddCart({ ...item })}>
+                <GrFormAdd className="AddIcon" />
+              </button>
+              <div className="Info">
+                <span className="Tittle"> {item.description}</span>
+                <div className="description">
                   <span className="Quant"> 400mg</span>
-                  <div className="SeparationPrices">
-                    <span className="OldPrice"> {oldPrice}</span>
-                    <span className="Price">{price}</span>
-                  </div>
+                  <span className="Price">R${item.price.toFixed(2)}</span>
                 </div>
               </div>
             </div>
-          );
-        })}
+          </div>
+        )}
       </ContWhitePart>
     </Main>
 

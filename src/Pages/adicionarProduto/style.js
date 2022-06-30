@@ -69,7 +69,6 @@ export const Main = styled.div`
     margin-top: 20px;
     background-color: ${({ theme }) => theme.cards};
     width: 80%;
-
     border-radius: 20px;
     padding: 20px 0;
   }
@@ -82,15 +81,10 @@ export const Main = styled.div`
   }
   .putImage {
     position: relative;
-    width: 60%;
-    margin-right: 5%;
-
+    width: 40%;
     height: 100%;
     background: #c5c5c5;
-
-    height: 366px;
     background-color: ${({ theme }) => theme.body};
-
     border-radius: 20px;
     input[type="file"] {
       display: none;
@@ -124,7 +118,10 @@ export const Main = styled.div`
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
     }
+
   }
   .informationProduct {
     width: 50%;
@@ -136,8 +133,6 @@ export const Main = styled.div`
 
     .active {
       background-color: #c5fae6;
-
-      background-color: ${({ theme }) => theme.body};
       color: ${({ theme }) => theme.fontColor};
     }
 
@@ -148,13 +143,6 @@ export const Main = styled.div`
   }
 
   input {
-    width: 100%;
-    background-color: none;
-  }
-
-  input {
-    width: 100%;
-    background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.fontColor};
   }
 

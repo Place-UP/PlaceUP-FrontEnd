@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Buttons } from './../../Pages/Perfil/style';
 
 const Media = {
   Desktop: "@media(max-width:1300px)",
@@ -10,9 +11,8 @@ const Media = {
 };
 export const Main = styled.main`
   width: 90%;
-  display: block;
   margin: 0 auto;
-  background: ${({ theme }) => theme.cards};
+
   ${Media.NavMob} {
     background: none;
     width: 90%;
@@ -72,59 +72,59 @@ export const Main = styled.main`
 export const ContWhitePart = styled.div`
   margin-top: 50px;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   overflow: auto;
   scroll-behavior: smooth;
-  gap: 40px;
-  
-
 
   &::-webkit-scrollbar {
     display: none;
   }
 
+  .ContainerCarousel{
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    background-color: ${({ theme }) => theme.cards};
+    border-radius: 15px;
+  }
+
   .Carousel {
-    width: 90%;
+    position: relative;
+    width: 80%;
     margin: auto;
-    flex-direction: row;
 
-    
-
-    .Item {
-      position: relative;
-      overflow: auto;
-    }
-    .image {
-      width: 220px;
-      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.100);
-      border-radius: 10px;
-      object-fit: cover;
-
-      ${Media.Tablet} {
-        width: 222px;
-      }
-      ${Media.MobileM} {
-        width: 172px;
-      }
+    .boxImg{
+      width: 100%;
+      height: 300px;
+      flex: content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .containerIMG{
+    .image{
       position: relative;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;  
     }
 
-    .AddIcon {
+    }
+
+     .AddIcon {
       position: absolute;
-      bottom: 10%;
-      right: -10%;
+      bottom: 20%;
+      right: 0;
       margin-right: 3px;
       cursor: pointer;
       width: 38px;
       height: 38px;
       background-color: #4FCE63;
       color: #fff;
-      box-shadow: 1px 0px 18px -4px rgba(0, 0, 0, 0.54);
       border-radius: 50%;
-     
+
       ${Media.Tablet} {
         margin-left: 177px;
       }
@@ -133,21 +133,7 @@ export const ContWhitePart = styled.div`
       }
     }
 
-    .DeleteIcon{
-      position: absolute;
-      bottom: 5%;
-      left: 5%;
-      margin-right: 3px;
-      cursor: pointer;
-      width: 38px;
-      height: 38px;
-      background: #ffffff;
-      box-shadow: 1px 0px 18px -4px rgba(0, 0, 0, 0.54);
-      border-radius: 50%;
-    }
     .Info {
-      margin-left: 10px;
-      margin-top: 10px;
       width: 200px;
       display: flex;
       flex-direction: column;
@@ -164,36 +150,37 @@ export const ContWhitePart = styled.div`
       .Tittle {
         font-family: "Lato";
         font-size: 15px;
+        padding-top: 10px;
         font-weight: 700;
         color: ${({ theme }) => theme.fontColor};
         /* ${Media.MobileM} {
           font-size: 12px;
         } */
       }
-      .Quant {
-        margin-left: 5px;
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 9px;
-        color: #7a7979;
-      }
+   
     }
+
+      .description{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+    }
+
     .Price {
       font-family: "Lato";
       font-style: normal;
       font-weight: 700;
-      font-size: 11px;
+      font-size: 1rem;
       color: ${({ theme }) => theme.fontColor};
     }
 
-    .OldPrice {
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 11px;
-      color: #8b8383;
-      text-decoration: line-through;
-    }
-  }
-`;
+       .Quant {
+        margin-left: 5px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: #7a7979;
+      }  
+`
