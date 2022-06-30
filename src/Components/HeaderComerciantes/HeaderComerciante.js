@@ -47,7 +47,7 @@ export function HeaderComerciante() {
                   <Icon>
                     <FiBox className="IconsHeader" />
                   </Icon>
-                  <Title>Reservas</Title>
+                  <Title>Loja</Title>
                 </Link>
               </List>
 

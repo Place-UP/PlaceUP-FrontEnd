@@ -118,7 +118,7 @@ export const Main = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 40px;
-        color: ${({ theme }) => theme.title};
+        color: ${({ theme }) => theme.fontColor};
         margin-bottom: 10px;
         margin-top: 30px;
         ${Media.Laptop} {
@@ -301,6 +301,7 @@ export const Main = styled.div`
       gap: 30px;
       flex-direction: column;
       justify-content: start;
+      color: ${({ theme }) => theme.fontColor};
       ${Media.Nav} {
         margin-left: 0;
         align-items: center;
@@ -355,7 +356,7 @@ export const InputArea = styled.div`
     font-weight: 400;
     font-size: 34px;
     line-height: 36px;
-    color: ${({ theme }) => theme.tittle};
+    color: ${({ theme }) => theme.title};
     ${Media.Laptop} {
       font-size: 31px;
       text-align: center;
@@ -397,7 +398,7 @@ export const ButtonStyle = styled.button`
     font-family: "Lato";
     font-style: normal;
     font-size: 20px;
-    color: ${({ theme }) => theme.fontColor};
+    color: white;
     opacity: 0.6;
     transform: 1s;
     ${Media.Laptop} {

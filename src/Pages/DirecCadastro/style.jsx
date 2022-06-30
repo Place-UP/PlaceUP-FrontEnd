@@ -135,7 +135,7 @@ export const Box = styled.div`
 
     button{
         position: relative;
-        background-color: #4C3D3D;
+        background-color: #149FD4;
         width: 50px;
         height: 50px;
         border-radius: 25px;

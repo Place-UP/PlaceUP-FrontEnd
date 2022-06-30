@@ -1,11 +1,13 @@
 import React from "react";
 import './styles'
 import supermarket from "./images/market.png";
-import produto from "./images/imageProduto.png";
 import { AiOutlineHeart } from "react-icons/ai";
+import { box } from "../../../mock/boxVisalizer";
 import { Feed, Profile, ContainerProfile, Button, Product, CointanerProduct } from "./styles";
 
-export function FeedUser(props) {
+const copiaArray = box.slice(0,3);
+
+export function FeedUser() {
   return (
     <>
         <Feed>
@@ -20,23 +22,16 @@ export function FeedUser(props) {
             </ContainerProfile> 
 
             <Product className="product">
-                <CointanerProduct className="cointanerProduct">
-                    <img src={produto} alt="Foto do Produto" />
-                    <h1>Nome do Produto</h1>
-                    <p>R$ 00,00</p>
-                </CointanerProduct>    
-
-                <CointanerProduct className="cointanerProduct">
-                    <img src={produto} alt="Foto do Produto" />
-                    <h1>Nome do Produto</h1>
-                    <p>R$ 00,00</p>
-                </CointanerProduct> 
-
-                <CointanerProduct className="cointanerProduct">
-                    <img src={produto} alt="Foto do Produto" />
-                    <h1>Nome do Produto</h1>
-                    <p>R$ 00,00</p>
-                </CointanerProduct> 
+                {copiaArray.map((item) => {
+                    const { name, price, image } = item;
+                    return (
+                        <CointanerProduct className="cointanerProduct">
+                            <img src={image} alt="Foto do Produto" />
+                            <h1>{name}</h1>
+                            <p>{price}</p>
+                        </CointanerProduct> 
+                    );
+                    })}
             </Product>                                                    
         </Feed>
     </>

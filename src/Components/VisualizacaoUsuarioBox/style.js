@@ -157,7 +157,15 @@ export const ContWhitePart = styled.div`
           font-size: 12px;
         } */
       }
-   
+
+
+      .Quant {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        color: ${({ theme }) => theme.fontColor};
+      }
     }
 
       .description{

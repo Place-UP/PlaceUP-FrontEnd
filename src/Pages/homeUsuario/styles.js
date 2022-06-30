@@ -359,7 +359,7 @@ export const InfoCategory = styled.div`
     width: 25px;
     height: 25px;
     background-color: #0D5E92;
-    color: ${({ theme }) => theme.fontColor};
+    color: white;
     font-size: 20px;
     border-radius: 4px;
     line-height: -200px;

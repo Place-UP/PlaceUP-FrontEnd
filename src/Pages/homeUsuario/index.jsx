@@ -81,7 +81,7 @@ export function IndexHomeUser() {
               <img src={Mercado} alt="Icone Shopping" />
               <InfoCategory>
                 <h2>Mercado</h2>
-                <p> &#x2192; </p>
+                <p>&gt;</p>
               </InfoCategory>
             </FilterCategory>
 
@@ -89,7 +89,7 @@ export function IndexHomeUser() {
               <img src={Padaria} alt="Icone Shopping" />
               <InfoCategory>
                 <h2>Padaria</h2>
-                <p> &#x2192; </p>
+                <p>&gt;</p>
               </InfoCategory>
             </FilterCategory >
 
@@ -97,7 +97,7 @@ export function IndexHomeUser() {
               <img src={Sobremesas} alt="Icone Shopping" />
               <InfoCategory>
                 <h2>Sobremesas</h2>
-                <p> &#x2192; </p>
+                <p>&gt;</p>
               </InfoCategory>
             </FilterCategory>
 
@@ -105,7 +105,7 @@ export function IndexHomeUser() {
               <img src={Bebida} alt="Icone Shopping" />
               <InfoCategory>
                 <h2>Bebida</h2>
-                <p> &#x2192; </p>
+                <p>&gt;</p>
               </InfoCategory>
             </FilterCategory>
           </div>
