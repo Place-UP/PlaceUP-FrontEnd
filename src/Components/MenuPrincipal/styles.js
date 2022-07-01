@@ -253,6 +253,7 @@ export const ContainerCalendar = styled.div`
   padding: 10px 0 30px 6%;
   
   .calendar{ 
+    width: 90%;
     background-color: ${({ theme }) => theme.cards};
     color: ${({ theme }) => theme.fontColor};
     border-radius: 20px;

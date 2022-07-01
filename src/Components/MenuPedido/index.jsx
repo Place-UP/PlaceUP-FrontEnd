@@ -1,11 +1,12 @@
-import { React, useContext } from "react";
+import { React, useContext, useState } from "react";
 import './styles'
 import supermarket from "./images/market.png";
 import perfil from "./images/perfil.png";
 import { IoIosExit } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { Section, Profile, DarkMode, Evaluation, ProfileSuggestion } from "./styles";
+import { Section, Profile, DarkMode, ContainerCalendar, Evaluation, ProfileSuggestion } from "./styles";
 import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
+import Calendar from 'react-calendar';
 
 export function MenuPedido() {
 
@@ -17,7 +18,8 @@ export function MenuPedido() {
     navMenu.classList.toggle("active");
   }
 
-  const { themeToggle } = useContext(ThemeContext)
+  const { themeToggle } = useContext(ThemeContext);  
+  const [value, onChange] = useState(new Date());
 
   return (
     <>
@@ -36,6 +38,10 @@ export function MenuPedido() {
               <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />
               <label for="toggle"></label>
             </DarkMode>
+
+            <ContainerCalendar>
+                <Calendar onChange={onChange} value={value} className="calendar" />
+            </ContainerCalendar>
 
             <Evaluation>
                 <img src={supermarket} alt="Foto do Comerciante"></img>
@@ -70,6 +76,10 @@ export function MenuPedido() {
                             <label for="toggle"></label>
                           </DarkMode>
 
+                          <ContainerCalendar>
+                            <Calendar onChange={onChange} value={value} className="calendar" />
+                          </ContainerCalendar>
+
                           <Evaluation>
                               <img src={supermarket} alt="Foto do Comerciante"></img>
                               <h1>Pedido #0690590  - <span>CONCLUÍDO</span></h1>
@@ -81,6 +91,8 @@ export function MenuPedido() {
                                 <input type="submit"></input>
                               </ProfileSuggestion>                
                           </Evaluation>
+
+                          <div class="bottomContainer"></div>
                       </div>  
                   </Section>
               </li>

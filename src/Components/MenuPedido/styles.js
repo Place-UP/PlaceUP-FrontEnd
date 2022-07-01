@@ -22,11 +22,18 @@ export const Section = styled.section`
   .mainMenu-Mobile{
     max-width: 450px;
     width: 100%;
-    height: 100vh;
     background-color: ${({ theme }) => theme.barRight};
     margin: auto;
     transition: width 0.5s;
     padding-top: 100px; 
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .bottomContainer{ padding-bottom: 100px; }
+
+  &::-webkit-scrollbar{
+    width: 0;
   }
 
   .mobile{
@@ -163,46 +170,51 @@ export const Profile = styled.div`
     justify-content: space-between;
   }
 
-  img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;     
+  .link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;     
+    }
+  
+    h1{
+      line-height: 60px;    
+      font-family: 'Lato', cursive;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-left: 20px;
+      text-overflow: ellipsis;
+      font-size: 20px;
+      color: ${({ theme }) => theme.fontColor};
+  
+      ${media.Tablet} { font-size: 18px; }  
+  
+      ${media.Mobile} { font-size: 15px; } 
+    }
   }
 
-  h1{
-    line-height: 60px;    
-    font-family: 'Lato', cursive;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-left: 20px;
-    text-overflow: ellipsis;
-    font-size: 20px;
+  .iconExit{
+    min-width: 13%;
+    width: 15%;
+    height: 50px;
+    padding-right: 10px;
+    cursor: pointer; 
+    padding-top: 5px;
     color: ${({ theme }) => theme.fontColor};
-
-    ${media.Tablet} { font-size: 18px; }  
-
-    ${media.Mobile} { font-size: 15px; } 
-
-    ${media.MobileS} { font-size: 12px; }  
   }
-}
-
-.iconExit{
-  min-width: 13%;
-  width: 15%;
-  height: 50px;
-  padding-right: 10px;
-  cursor: pointer; 
-  padding-top: 5px;
-  color: ${({ theme }) => theme.fontColor};
-}
 `;
 
 export const DarkMode = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 20px 0px;
+  margin: 10px 0px;
+
+  ${media.Tablet} { margin: 20px 0px; }  
 
   .toggle-control { display: none;  }
   
@@ -245,18 +257,32 @@ export const DarkMode = styled.section`
   input.toggle-control:checked + label::after { margin-left: 20px; }
 `
 
+export const ContainerCalendar = styled.div`
+  width: 100%;
+  padding: 10px 0 30px 6%;
+  
+  .calendar{ 
+    width: 90%;
+    background-color: ${({ theme }) => theme.cards};
+    color: ${({ theme }) => theme.fontColor};
+    border-radius: 20px;
+  }  
+`;
+
 export const Evaluation = styled.div`
   width: 90%;
-  margin: 50px 0px 0px 5%;
+  margin: 5px 0px 0px 5%;
   text-align: center;
-  bbackground-color: ${({ theme }) => theme.body};
+  background-color: ${({ theme }) => theme.body};
   border-radius: 20px;
   padding-bottom: 20px;
+
+  ${media.Tablet} { margin: 10px 0px 0px 5%; }  
 
   img{
     width: 100px;
     height: 100px;
-    padding: 20px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
     border-radius: 50%;
   }
 
@@ -268,15 +294,13 @@ export const Evaluation = styled.div`
     ${media.Tablet} { font-size: 18px; }  
 
     ${media.Mobile} { font-size: 15px; } 
-
-    ${media.MobileS} { font-size: 12px; }  
   }
 
   span{ color:#2980B9; }
 
   p{
     font-size: 17px;
-    padding-top: 20px;
+    padding-top: 15px;
     font-weight: 700px;
     font-family: 'Lato', cursive;    
     color: ${({ theme }) => theme.fontColor}; 
@@ -288,22 +312,21 @@ export const Evaluation = styled.div`
 `
 
 export const ProfileSuggestion = styled.div`
-  margin-top: 20px;
   width: 100%;
   text-align: center;
   display: inline-block;
 
   textarea{
     width: 90%;
-    height: 150px;
+    height: 120px;
     padding-left: 10px;
     padding-top: 10px;
     border-radius: 10px;
-    border: 1px solid ${({ theme }) => theme.body};
+    border: 1px solid ${({ theme }) => theme.cards};
     resize: none;
     outline:0px none transparent;
     color: ${({ theme }) => theme.fontColor};    
-    background-color: ${({ theme }) => theme.body};
+    background-color: ${({ theme }) => theme.cards};
   }
 
   input{
@@ -314,7 +337,7 @@ export const ProfileSuggestion = styled.div`
     font-size: 17px;
     color: white;
     cursor: pointer;
-    background-color: ${({ theme }) => theme.body};
+    background-color: ${({ theme }) => theme.barRight};    
   }
 
   input:hover{
@@ -334,8 +357,6 @@ export const ProfileSuggestion = styled.div`
 
     ${media.Tablet} { font-size: 18px; }  
 
-    ${media.Mobile} { font-size: 15px; } 
-
-    ${media.MobileS} { font-size: 12px; }  
+    ${media.Mobile} { font-size: 15px; }   
   }
 `;

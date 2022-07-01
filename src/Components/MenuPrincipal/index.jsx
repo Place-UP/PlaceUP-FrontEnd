@@ -90,6 +90,11 @@ export function MenuPrincipal() {
                           <input id="toggle" class="toggle-control" type="checkbox" />
                           <label for="toggle"></label>
                         </DarkMode>
+
+                        <ContainerCalendar>
+                            <Calendar onChange={onChange} value={value} className="calendar" />
+                        </ContainerCalendar>
+
                             <Suggestions>
                                 <h1>SUGESTÕES</h1>
                                 <ProfileSuggestions>
