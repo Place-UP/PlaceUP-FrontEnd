@@ -1,15 +1,15 @@
 import React from "react";
 import { useState } from 'react';
 import { box } from '../../mock/boxVisalizer';
-import Bebida from "./images/bebida.png";
 import Mercado from "./images/mercado.png";
-import Sobremesas from "./images/sobremesa.png";
-import Padaria from "./images/padaria.png";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/FeedsUser/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai"
-import { Main, SectionSearch, SearchBar, Car, ContainerSearch, Filter, Category, FilterCategory, InfoCategory } from "./styles";
+import * as C from './styles'
+import { CarrinhoComProduto } from "../../Components/Carrinho/CarrinhoComProduto";
+import { cardsHome } from './../../mock/CardsHome';
+import { IoIosArrowForward } from "react-icons/io";
 
 export function IndexHomeUser() {
   const [query, setQuery] = useState("")
@@ -23,44 +23,47 @@ export function IndexHomeUser() {
     )
   }
 
-  function CarrinhoFuction() {
-    const car = document.querySelector(".car");   
-
-    car.classList.toggle("active");
-  } 
+  const [isOpen, setIsOpen] = useState('')
 
   return (
     <>
       <Header />
-      <Main>
+      <C.Main>
         <MenuPrincipal />
-
-        <Category>
-          <SectionSearch>
-            <SearchBar>
-              <AiOutlineSearch className="icon"/>
-              <input type="text" className="search" placeholder="Pesquisa"  onChange={(e) => setQuery(e.target.value)}></input>
-            </SearchBar>
-
-            <Car onClick={CarrinhoFuction} className="car">
+        <C.Category>
+          <C.SectionSearch>
+            <C.SearchBar>
+              <AiOutlineSearch className="icon" />
+              <input type="text" className="search" placeholder="Pesquisa" onChange={(e) => setQuery(e.target.value)}></input>
+            </C.SearchBar>
+            <C.Car onClick={() => setIsOpen(!isOpen)} className="car">
               <AiOutlineShoppingCart className="carIcon" alt="Carrinho" />
-            </Car>
-
-          </SectionSearch>      
+            </C.Car>
+          </C.SectionSearch>
           {query &&
-            <ContainerSearch>
+            <C.ContainerSearch>
               {search().map((item) => (
-                <div key={item.id} className="VisuBarSearch">                  
-                  <img src={item.image} alt="Foto Produto" />                  
+                <div key={item.id} className="VisuBarSearch">
+                  <img src={item.image} alt="Foto Produto" />
                   <span>{item.name}</span>
                   <p>{item.price}</p>
                 </div>
               ))}
-            </ContainerSearch>
+            </C.ContainerSearch>
           }
 
-          <Filter>
-            <select name="Ordenar por">              
+          {isOpen ? (
+            <>
+              <CarrinhoComProduto />
+            </>
+          ) :
+            <>
+
+            </>
+          }
+
+          <C.Filter>
+            <select name="Ordenar por">
               <option value="ordenar" select>Ordenar</option>
               <option value="maior">Maior Preço</option>
               <option value="menor">Menor Preço</option>
@@ -73,50 +76,25 @@ export function IndexHomeUser() {
               <option value="mudo">Suporte para Mudo</option>
               <option value="cadeirante">Suporte para Cadeirante</option>
             </select>
-          </Filter>
-          
+          </C.Filter>
+
           <h1>CATEGORIAS</h1>
           <div className="containerCategory">
-            <FilterCategory>
-              <img src={Mercado} alt="Icone Shopping" />
-              <InfoCategory>
-                <h2>Mercado</h2>
-                <p>&gt;</p>
-              </InfoCategory>
-            </FilterCategory>
-
-            <FilterCategory>
-              <img src={Padaria} alt="Icone Shopping" />
-              <InfoCategory>
-                <h2>Padaria</h2>
-                <p>&gt;</p>
-              </InfoCategory>
-            </FilterCategory >
-
-            <FilterCategory>
-              <img src={Sobremesas} alt="Icone Shopping" />
-              <InfoCategory>
-                <h2>Sobremesas</h2>
-                <p>&gt;</p>
-              </InfoCategory>
-            </FilterCategory>
-
-            <FilterCategory>
-              <img src={Bebida} alt="Icone Shopping" />
-              <InfoCategory>
-                <h2>Bebida</h2>
-                <p>&gt;</p>
-              </InfoCategory>
-            </FilterCategory>
+            {cardsHome.map((item) => (
+              <C.FilterCategory key={item.id} primary={`${item.color}`}>
+                <img src={item.img} alt="Icone Shopping" />
+                <C.InfoCategory>
+                  <C.BtnBuscar><IoIosArrowForward /></C.BtnBuscar>
+                </C.InfoCategory>
+              </C.FilterCategory>
+            ))}
           </div>
-        </Category>
+        </C.Category>
 
         <FeedUser className="feed" />
         <FeedUser />
         <FeedUser />
-        <FeedUser />
-        <FeedUser />
-      </Main>
+      </C.Main>
     </>
   );
 }

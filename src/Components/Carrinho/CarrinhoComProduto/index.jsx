@@ -1,82 +1,92 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import './styles'
 import { AiOutlineClose } from "react-icons/ai";
-import { Section, Information, Day, Scheduling, Cart, Product, ProductContainer, Finalize } from "./styles";
+import * as C from './styles.js'
+import { PedidoEfetuado } from './../PedidoEfetuado/index';
+import { CarrinhoVazio } from "../CarrinhoVazio";
+import { CartContext } from "../../../Common/Context";
 
 export function CarrinhoComProduto() {
+
+  const [isOpen, setIsOpen] = useState(true)
+  const [component, setComponent] = useState(false)
+
+  const { carrinho, HandleRemoveCart } = useContext(CartContext)
+
   return (
     <>
-      <Section>
-        <div className="cart">
-            <Information>
-              <AiOutlineClose className="Close" />
-              <div className="business">                  
-                <h3>Seu pedido em </h3>
-                <h1>Nome do Comércio</h1>
-              </div>
-            </Information>
+      {isOpen ? (
+        <>
+          <C.Section>
+            <div className="cart">
+              <C.Information>
+                <AiOutlineClose className="Close" onClick={() => setIsOpen(!isOpen)} />
+                <div className="business">
+                  <h3>Seu pedido em </h3>
+                  <h1>Nome do Comércio</h1>
+                </div>
+              </C.Information>
 
-            <Cart>
-              <div className="cartContainer">                  
-                <h1 className="Titule">Agendar para:</h1>
+              <C.Cart>
+                <div className="cartContainer">
+                  <h1 className="Titule">Agendar para:</h1>
 
-                <div className="ReservationSystem">
-                    <Day>
+                  <div className="ReservationSystem">
+                    <C.Day>
                       <h1>Hoje:</h1>
                       <p>18:30h</p>
-                    </Day>
+                    </C.Day>
 
-                    <Scheduling>
+                    <C.Scheduling>
                       <h1>Agendar para:</h1>
                       <p>07/07</p>
                       <p>20:00h</p>
-                    </Scheduling>
+                    </C.Scheduling>
+                  </div>
                 </div>
-              </div>
+                <C.Product>
+                  <C.ProductContainer>
+                    {carrinho.map((item) => {
+                      const { id, qtd, name, price } = item
+                      return (
+                        <>
+                          <div className="product" key={id}>
+                            <h1>{qtd}</h1>
+                            <h1>{name}</h1>
+                            <h1>R$ {price}</h1>
+                          </div>
+                          <p onClick={() => HandleRemoveCart(id)}>Remover</p>
+                        </>
+                      )
+                    })}
+                  </C.ProductContainer>
+                </C.Product>
+              </C.Cart>
 
+              <C.Finalize>
+                <C.Total>
+                  <h1>TOTAL</h1>
+                  <h1>R$ 300.00</h1>
+                </C.Total>
 
-              <Product>
-                <ProductContainer>
-                  <div className="product">
-                    <h2>1x</h2>
-                    <h1>Nome do Produto</h1>
-                    <h1>R$ 100.00</h1>
-                  </div>
-                  <p>Remover</p>
-                </ProductContainer>
+                <button className="buttonSeeMore" onClick={() => setComponent(!component)}>Finalizar</button>
+              </C.Finalize>
+            </div>
+          </C.Section>
+        </>
+      ) : (
+        <>
 
-                <ProductContainer>
-                  <div className="product">
-                    <h2>1x</h2>
-                    <h1>Nome do Produto</h1>
-                    <h1>R$ 100.00</h1>
-                  </div>
-                  <p>Remover</p>
-                </ProductContainer>
+        </>)}
 
-                <ProductContainer>
-                  <div className="product">
-                    <h2>1x</h2>
-                    <h1>Nome do Produto</h1>
-                    <h1>R$ 100.00</h1>
-                  </div>
-                  <p>Remover</p>
-                </ProductContainer>          
-              </Product>
-
-
-            </Cart>
-
-            <Finalize>
-              <div className="total">
-                <h1>TOTAL</h1>
-                <h1>R$ 300.00</h1>
-              </div>
-
-              <button className="buttonSeeMore">Finalizar Reserva</button>
-            </Finalize>
-        </div>  
-      </Section>
+      {component ? (
+        <>
+          <PedidoEfetuado />
+        </>
+      ) : (
+        <>
+        </>
+      )}
     </>
   );
 }
