@@ -59,11 +59,8 @@ export function Header() {
                 <Icon>
                   <BsFillGearFill />
                 </Icon>
-<<<<<<< HEAD
                 <Title>Configuração</Title>
-=======
                 <Title>Perfil</Title>
->>>>>>> fb05620744633ed7d9eda350b3351c91a1586ad5
               </Link>
             </List>
           </ul>

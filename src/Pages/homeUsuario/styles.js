@@ -90,7 +90,7 @@ export const SearchBar = styled.div`
 `;
 
 export const Car = styled.div`
-  width: 20%;
+  width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,8 +248,6 @@ export const Category = styled.div`
   padding: 30px 0 30px 12%;
 
   h1 {
-    font-size: 34px;
-    margin-left: 5px;
     font-weight: 800;
     font-family: "Bakbak One", cursive;
     color: ${({ theme }) => theme.fontColor};
@@ -269,6 +267,7 @@ export const Category = styled.div`
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+    margin-top: 5%;
 
     img {
       width: 90px;
@@ -309,17 +308,14 @@ export const Category = styled.div`
 
 export const FilterCategory = styled.div`
   width: 180px;
-  height: 90px;
+  height: 100%;
   border-radius: 8px;
-  margin-top: 70px;
   text-align: center;
-  background-color: ${({ theme }) => theme.cards};
+  background-color: ${(props) => props.primary};
 
   img {
-    width: 100px;
-    height: 100px;
-    font-size: 17px;
-    margin-top: -50px;
+    width: 100%;
+    height: 100%;
   }
 `;
 
@@ -330,6 +326,7 @@ export const InfoCategory = styled.div`
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 15px;
 
   h2 {
     text-align: center;
@@ -373,3 +370,17 @@ export const InfoCategory = styled.div`
     ${media.MobileS} { font-size: 12px; }  
   }
 `;
+
+export const BtnBuscar = styled.button`
+  background-color: #0D5E92;
+  padding: 10px;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+`

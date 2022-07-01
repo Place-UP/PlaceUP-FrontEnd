@@ -1,16 +1,15 @@
 import React from "react";
 import { useState } from 'react';
 import { box } from '../../mock/boxVisalizer';
-import Bebida from "./images/bebida.png";
 import Mercado from "./images/mercado.png";
-import Sobremesas from "./images/sobremesa.png";
-import Padaria from "./images/padaria.png";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/FeedsUser/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai"
 import * as C from './styles'
 import { CarrinhoComProduto } from "../../Components/Carrinho/CarrinhoComProduto";
+import { cardsHome } from './../../mock/CardsHome';
+import { IoIosArrowForward } from "react-icons/io";
 
 export function IndexHomeUser() {
   const [query, setQuery] = useState("")
@@ -31,18 +30,15 @@ export function IndexHomeUser() {
       <Header />
       <C.Main>
         <MenuPrincipal />
-
         <C.Category>
           <C.SectionSearch>
             <C.SearchBar>
               <AiOutlineSearch className="icon" />
               <input type="text" className="search" placeholder="Pesquisa" onChange={(e) => setQuery(e.target.value)}></input>
             </C.SearchBar>
-
             <C.Car onClick={() => setIsOpen(!isOpen)} className="car">
               <AiOutlineShoppingCart className="carIcon" alt="Carrinho" />
             </C.Car>
-
           </C.SectionSearch>
           {query &&
             <C.ContainerSearch>
@@ -60,9 +56,10 @@ export function IndexHomeUser() {
             <>
               <CarrinhoComProduto />
             </>
-          ) : <>
+          ) :
+            <>
 
-          </>
+            </>
           }
 
           <C.Filter>
@@ -83,43 +80,18 @@ export function IndexHomeUser() {
 
           <h1>CATEGORIAS</h1>
           <div className="containerCategory">
-            <C.FilterCategory>
-              <img src={Mercado} alt="Icone Shopping" />
-              <C.InfoCategory>
-                <h2>Mercado</h2>
-                <p>&gt;</p>
-              </C.InfoCategory>
-            </C.FilterCategory>
-
-            <C.FilterCategory>
-              <img src={Padaria} alt="Icone Shopping" />
-              <C.InfoCategory>
-                <h2>Padaria</h2>
-                <p>&gt;</p>
-              </C.InfoCategory>
-            </C.FilterCategory >
-
-            <C.FilterCategory>
-              <img src={Sobremesas} alt="Icone Shopping" />
-              <C.InfoCategory>
-                <h2>Sobremesas</h2>
-                <p>&gt;</p>
-              </C.InfoCategory>
-            </C.FilterCategory>
-
-            <C.FilterCategory>
-              <img src={Bebida} alt="Icone Shopping" />
-              <C.InfoCategory>
-                <h2>Bebida</h2>
-                <p>&gt;</p>
-              </C.InfoCategory>
-            </C.FilterCategory>
+            {cardsHome.map((item) => (
+              <C.FilterCategory key={item.id} primary={`${item.color}`}>
+                <img src={item.img} alt="Icone Shopping" />
+                <C.InfoCategory>
+                  <C.BtnBuscar><IoIosArrowForward /></C.BtnBuscar>
+                </C.InfoCategory>
+              </C.FilterCategory>
+            ))}
           </div>
         </C.Category>
 
         <FeedUser className="feed" />
-        <FeedUser />
-        <FeedUser />
         <FeedUser />
         <FeedUser />
       </C.Main>
