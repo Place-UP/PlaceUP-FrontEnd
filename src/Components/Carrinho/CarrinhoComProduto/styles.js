@@ -246,7 +246,5 @@ export const Finalize = styled.div`
       background-color: #297FB8;
     }
 
-    .buttonSeeMore:hover{
-      opacity: 0.8;
-    }
+    .buttonSeeMore:hover{   opacity: 0.8;   }
 `;
