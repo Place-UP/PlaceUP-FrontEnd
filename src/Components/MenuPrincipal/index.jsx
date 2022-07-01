@@ -1,10 +1,11 @@
-import { React, useContext } from "react";
+import { React, useContext, useState } from "react";
 import './styles'
 import perfil from "./images/perfil.png";
 import { IoIosExit } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { Section, Profile, DarkMode, Suggestions, ProfileSuggestions } from "./styles";
+import { Section, Profile, DarkMode, ContainerCalendar, Suggestions, ProfileSuggestions } from "./styles";
 import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
+import Calendar from 'react-calendar';
 
 export function MenuPrincipal() {
 
@@ -17,6 +18,7 @@ export function MenuPrincipal() {
   }
 
   const { themeToggle } = useContext(ThemeContext)
+  const [value, onChange] = useState(new Date());
 
   return (
     <>
@@ -35,6 +37,10 @@ export function MenuPrincipal() {
               <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />
               <label for="toggle"></label>
             </DarkMode>
+
+            <ContainerCalendar>
+                <Calendar onChange={onChange} value={value} className="calendar" />
+            </ContainerCalendar>
 
             <Suggestions>
               <h1>SUGESTÕES</h1>

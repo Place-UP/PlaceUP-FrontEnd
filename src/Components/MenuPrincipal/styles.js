@@ -205,7 +205,7 @@ export const DarkMode = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 20px 0px;
+  margin: 10px 0px;
 
   .toggle-control { display: none;  }
   
@@ -248,9 +248,20 @@ export const DarkMode = styled.section`
   input.toggle-control:checked + label::after { margin-left: 20px; }
 `
 
+export const ContainerCalendar = styled.div`
+  width: 100%;
+  padding: 10px 0 30px 6%;
+  
+  .calendar{ 
+    background-color: ${({ theme }) => theme.cards};
+    color: ${({ theme }) => theme.fontColor};
+    border-radius: 20px;
+  }
+`;
+
 export const Suggestions = styled.div`
   width: 90%;
-  margin: 120px 0px 0px 5%;
+  margin: 20px 0px 0px 5%;
   text-align: center;
   border-radius: 20px;
   background-color: ${({ theme }) => theme.body};

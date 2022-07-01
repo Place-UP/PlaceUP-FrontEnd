@@ -19,8 +19,8 @@ export const Section = styled.section`
   }
 
   .mainMenu-Mobile{
-    max-width: 400px;
-    width: 95%;
+    max-width: 450px;
+    width: 100%;
     height: 100vh;
     background-color: ${({ theme }) => theme.barRight};
     margin: auto;
@@ -164,16 +164,14 @@ export const Section = styled.section`
 
     .hamburger {
       display: block;
-      padding: 0 1%;
-      padding-left: 20px;
+      margin-right: 35px;
     }
 
-    .mobile {
-      float: right;
-      margin: 7px 10% 0 2%;
+    .mobile{   
       display: block;
-      z-index: 3;
-    }
+      float: right;
+      z-index: 99;
+  }
 
     .desktop {
       display: none;
@@ -222,30 +220,16 @@ export const Section = styled.section`
   }
 
   ${media.Mobile} {
-    .mainMenu-Mobile{
-      max-width: 400px;
-      width: 95%;
-      height: 100vh;      
-      background-color: ${({ theme }) => theme.barRight};
-      margin: auto;
-      transition: width 0.5s;
-      padding-top: 100px; 
-    }
+    .hamburger {   display: block;   }    
 
-    .hamburger {
-      display: block;
-      padding-left: 200px;
-    }
-
-    .nav-menu {
-      max-width: 400px;
-      position: fixed;
-      right: -100%;
-      top: -20px;
-      height: 100vh;
-      width: 98%;
-      transition: 0.3s;
-      list-style-type: none;
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: -20px;
+        height: 100vh;
+        width: 100%;
+        transition: 0.3s;
+        list-style-type: none;
     }
   }
 `;

@@ -3,6 +3,7 @@ import { Login } from "./Components/Login/Index";
 import { CadastroUser } from "./Pages/cadastroUsuario";
 import { IndexCalculadora } from "./Pages/PageCalculadora/index";
 import { IndexHomeUser } from "./Pages/homeUsuario/index";
+import { HomeComerciante } from "./Pages/homeComerciante/index.jsx";
 import { Pedido } from "./Pages/pedido/index";
 import { Reservas } from "./Pages/reservas/index";
 import { LadingPage } from "./Pages/LadingPage";
@@ -55,6 +56,7 @@ function Rotas() {
             <Route path="/UserPassword" element={<CadastroPasswordUser />} />
             
             <Route path="/FeedUser" element={<IndexHomeUser />} />
+            <Route path="/FeedComerciante" element={<HomeComerciante />} />
             <Route path="/Reservas" element={<Reservas />} />
             <Route path="/Pedido" element={<Pedido />} />
             <Route path="/Politica" element={<Politica />} />
