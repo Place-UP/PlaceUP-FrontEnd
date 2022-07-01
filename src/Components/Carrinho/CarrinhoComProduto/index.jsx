@@ -5,6 +5,7 @@ import * as C from './styles.js'
 import { PedidoEfetuado } from './../PedidoEfetuado/index';
 import { CarrinhoVazio } from "../CarrinhoVazio";
 import { CartContext } from "../../../Common/Context";
+import { IoMdTrash } from 'react-icons/io'
 
 export function CarrinhoComProduto() {
 
@@ -47,28 +48,29 @@ export function CarrinhoComProduto() {
                 <C.Product>
                   <C.ProductContainer>
                     {carrinho.map((item) => {
-                      const { id, qtd, name, price } = item
+                      const { id, qtd, name, price, image } = item
                       return (
                         <>
-                          <div className="product" key={id}>
-                            <h1>{qtd}</h1>
-                            <h1>{name}</h1>
-                            <h1>R$ {price}</h1>
-                          </div>
-                          <p onClick={() => HandleRemoveCart(id)}>Remover</p>
+                          <C.Box key={id}>
+                            <img src={item.image} alt="" />
+                            <h1 className="Qtd">{qtd}</h1>
+                            <div className="names">
+                              <h1>{name}</h1>
+                              <h1>R$ {price}</h1>
+                            </div>
+                            <p onClick={() => HandleRemoveCart(id)}><IoMdTrash /></p>
+                          </C.Box>
                         </>
                       )
                     })}
                   </C.ProductContainer>
                 </C.Product>
               </C.Cart>
-
               <C.Finalize>
                 <C.Total>
                   <h1>TOTAL</h1>
                   <h1>R$ 300.00</h1>
                 </C.Total>
-
                 <button className="buttonSeeMore" onClick={() => setComponent(!component)}>Finalizar</button>
               </C.Finalize>
             </div>

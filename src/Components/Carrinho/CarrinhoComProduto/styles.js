@@ -176,14 +176,31 @@ export const Product = styled.div`
       padding: 15px 5%; 
       cursor: pointer;      
     }
-    
-    .product{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0 5%;  
-    }
 `;
+
+export const Box = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+    img{
+      width: 50px;
+    }
+
+    .Qtd {
+      width: 20%;
+      font-size: 1,5;
+    }
+
+    .names{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+    }
+`
 
 export const ProductContainer = styled.div`
     width: 90%;
@@ -192,7 +209,6 @@ export const ProductContainer = styled.div`
 
     h1{
       font-size: 15px;
-      margin-left: 10px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
