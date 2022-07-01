@@ -54,7 +54,55 @@ export function HomeComerciante() {
             </div>
         </B.Contagem>
 
+          <B.Seller>
+           
+            <div className='tableSeller'>
+            <h1 className='title'>PRODUTOS MAIS VENVIDOS</h1>
 
+              <div className='containerProducts'>
+                <div className='product1'>                
+                    <div class="container">
+                      <h1>COCA COLA</h1>
+                      <div class="Loading"></div>
+                      <p>30</p>
+                    </div>
+                </div>
+
+                <div className='product2'>                
+                    <div class="container">
+                      <h1>CAFÉ 3 CORAÇÕES</h1>
+                      <div class="Loading"></div>                    
+                      <p>25</p>
+                    </div>
+                </div>
+
+                <div className='product3'>                
+                    <div class="container">
+                      <h1>AÇÚCAR UNIÃO</h1>
+                      <div class="Loading"></div>                    
+                      <p>23</p>
+                    </div>
+                </div>
+
+                <div className='product4'>                
+                    <div class="container">
+                      <h1>CHOCOLATE LACTA</h1>
+                      <div class="Loading"></div>                    
+                      <p>18</p>
+                    </div>
+                </div>
+
+                <div className='product5'>               
+                    <div class="container">
+                      <h1>BOLACHA OREO</h1>
+                      <div class="Loading"></div>                    
+                      <p>14</p>
+                    </div>
+                </div>
+              </div> 
+
+            </div>                
+           </B.Seller>
       </B.Main>
     </>
   );

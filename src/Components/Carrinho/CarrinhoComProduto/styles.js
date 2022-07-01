@@ -91,6 +91,7 @@ export const Cart = styled.div`
     .Titule{
       font-size: 25px;
       font-weight: bold;
+      margin-top: 20px;
       color: ${({ theme }) => theme.fontColor};
       margin-bottom: 30px;
     }
@@ -171,7 +172,7 @@ export const Product = styled.div`
     }
 
     p{
-      color: ${({ theme }) => theme.fontColor};
+      color: #E6533F;
       display: flex;
       padding: 15px 5%; 
       cursor: pointer;      
@@ -211,7 +212,8 @@ export const Total = styled.div`
       h1{
         font-family: 'Poppins';
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 500;       
+        color: ${({ theme }) => theme.fontColor};
       }
 `
 

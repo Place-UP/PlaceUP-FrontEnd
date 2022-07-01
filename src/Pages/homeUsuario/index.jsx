@@ -78,7 +78,7 @@ export function IndexHomeUser() {
             </select>
           </C.Filter>
 
-          <h1>CATEGORIAS</h1>
+          <h1 className="categoryTitle">CATEGORIAS</h1>
           <div className="containerCategory">
             {cardsHome.map((item) => (
               <C.FilterCategory key={item.id} primary={`${item.color}`}>
