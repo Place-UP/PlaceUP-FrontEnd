@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const media = {
   Tablet: "@media(max-width: 935px)",
@@ -6,15 +6,19 @@ const media = {
 };
 
 export const Section = styled.section`
+  height: 100%;
+  
   .cart{
     position: fixed;
-    right: 0pt;
-    max-width: 400px;
+    top: 0;
+    right: 0;
+    height: 100%;
     width: 25%;
     background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
-    padding-top: 30px; 
+    animation: fadeInRightBig 0.3s ease-in-out ;
+    z-index: 9;
   }
 
   .Close{
@@ -22,6 +26,14 @@ export const Section = styled.section`
     width: 40px;
     height: 40px;
     margin-left: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+     border-radius: 50%;
+  
+
+    &:hover{
+      background-color: #F3ECEC;
+    }
   }
 
   ${media.Tablet} {
@@ -42,8 +54,8 @@ export const Section = styled.section`
 
 export const Information = styled.div`
     display: flex;
-    padding-bottom: 30px;
     border-bottom: 1px solid #A6A8A9;
+    padding: 15px 0;
 
     .business{ margin-left: 25px; }
 
@@ -70,10 +82,11 @@ export const Information = styled.div`
 
 export const Cart = styled.div`
     position: relative;
-    top: 5%;
     text-align: center;
 
-    .cartContainer{   text-align: center;   }
+    .cartContainer{ 
+        text-align: center;  
+    }
 
     .Titule{
       font-size: 25px;
@@ -149,9 +162,13 @@ export const Scheduling = styled.div`
 `;
 
 export const Product = styled.div`
-    margin-top: 50px;
-    height: 250px;
+    margin-top: 1.5rem;
+    height: 100%;
     overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+      width: 0;
+    }
 
     p{
       color: ${({ theme }) => theme.fontColor};
@@ -170,10 +187,11 @@ export const Product = styled.div`
 
 export const ProductContainer = styled.div`
     width: 90%;
+    height: 200px;
     margin: 20px auto;
-    border-bottom: 2px solid #2980B9;
 
-    h1{      
+    h1{
+      font-size: 15px;
       margin-left: 10px;
       white-space: nowrap;
       overflow: hidden;
@@ -182,26 +200,26 @@ export const ProductContainer = styled.div`
     }
 `;
 
-export const Finalize = styled.div`
-    margin-top: 80px;
-
-    .total{
+export const Total = styled.div`
       width: 90%;
       margin: 10px auto;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-    }
+      border-top: 2px solid #297FB8;
 
-    .buttonSeeMore:hover{
-      color: #297FB8;
-      border: 2px solid #297FB8;
-      background-color: white;
-    }
+      h1{
+        font-family: 'Poppins';
+        font-size: 18px;
+        font-weight: 500;
+      }
+`
 
+export const Finalize = styled.div`
+  
     .buttonSeeMore{
       width: 60%;
-      height: 40px;
+      height: 55px;
       margin: 15px auto 0px 20%;
       border-radius: 20px;
       font-size: 17px;
@@ -209,4 +227,9 @@ export const Finalize = styled.div`
       cursor: pointer;
       background-color: #297FB8;
     }
+
+    .buttonSeeMore:hover{
+      opacity: 0.8;
+    }
+
 `;

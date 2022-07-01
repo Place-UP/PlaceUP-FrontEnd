@@ -6,16 +6,19 @@ const media = {
 };
 
 export const Section = styled.section`
+  
   .OrderPlaced{
     position: fixed;
-    right: 0pt;
+    top: 0;
+    right: 0;
     max-width: 400px;
-    width: 23%;
-    height: 100vh;
+    width: 25%;
+    height: 100%;
     background-color: ${({ theme }) => theme.cards};
     margin: auto;
     transition: width 0.5s;
-    padding-top: 30px; 
+    padding: 15px 0;
+    z-index: 10;
   }
 
   .Close{
@@ -23,6 +26,12 @@ export const Section = styled.section`
     width: 40px;
     height: 40px;
     margin-left: 25px;
+    border-radius: 50%;
+    
+
+     &:hover{
+      background-color: #F3ECEC;
+    }
   }
   
   ${media.Tablet} {

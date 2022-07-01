@@ -6,6 +6,7 @@ import { box } from "../../mock/boxVisalizer";
 import React, { useContext, useState } from "react";
 import { CartContext } from "../../Common/Context";
 import { BoxCart, Txt } from "./styleCart";
+import { CarrinhoComProduto } from "../Carrinho/CarrinhoComProduto";
 
 export function BarraBusca() {
 
@@ -21,8 +22,6 @@ export function BarraBusca() {
   };
 
   const [isOpen, setIsOpen] = useState(false)
-
-  const { carrinho, HandleRemoveCart } = useContext(CartContext)
 
   return (
     <>
@@ -42,31 +41,14 @@ export function BarraBusca() {
             <span></span>
           </Carrinho>
         </Container>
-        <BoxCarrinho className={isOpen ? "Active" : "None"}>
-          <header>
-            <i onClick={() => setIsOpen(false)}><AiOutlineClose /></i>
-            <div className="BoxTitle">
-              <p>Seu pedido</p>
-              <span>Nome do comercio</span>
-            </div>
-          </header>
-          <div>
-            {carrinho.map((produto) => {
-              const { id, name, price, oldPrice, image, qtd } = produto
-              return (
-                <BoxCart key={id}>
-                  <img src={image} alt="" />
-                  <div>
-                    <h1>{name}</h1>
-                    <p>{price}</p>
-                  </div>
-                  <Txt>{qtd}</Txt>
-                  <button onClick={() => HandleRemoveCart(id)}>Remover</button>
-                </BoxCart>
-              )
-            })}
-          </div>
-        </BoxCarrinho>
+        {isOpen ? (
+          <CarrinhoComProduto />
+        ) : (
+          <>
+
+          </>
+        )}
+
         {query && (
           <Filter>
             {search().map((item) => (

@@ -8,7 +8,8 @@ const media = {
 export const Section = styled.section`
   .EmptyCart{
     position: fixed;
-    right: 0pt;
+    top: 0;
+    right: 0;
     max-width: 400px;
     width: 25%;
     height: 100vh;
