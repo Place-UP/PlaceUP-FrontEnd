@@ -92,7 +92,7 @@ export const Section = styled.section`
       }
 
       p {
-        font-family: "Inter";
+        font-family: "Lato";
         font-weight: 500;
         font-size: 16px;
         margin: auto;
@@ -115,7 +115,7 @@ export const Section = styled.section`
         margin-top: 20px;
       }
       h1 {
-        font-family: "Inter";
+        font-family: "Lato";
         font-weight: 600;
         font-size: 24px;
         margin-top: 20px;

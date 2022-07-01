@@ -74,7 +74,7 @@ export const Section = styled.section`
       gap: 10px;
 
       p {
-        font-family: "Inter";
+        font-family: "Lato";
         font-weight: 500;
         font-size: 14px;
         margin: auto;
@@ -95,8 +95,8 @@ export const Section = styled.section`
         margin: auto;
         margin-top: 20px;
       }
-      .perfilTitle {
-        font-family: "Inter";
+      h1 {
+        font-family: "Lato";
         font-weight: 600;
         font-size: 24px;
         margin-top: 20px;

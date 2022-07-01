@@ -105,7 +105,7 @@ export const Contact = styled.form`
   }
 
   button {
-    font-family: inherit;
+    font-family: lato;
     font-size: 20px;
     background: royalblue;
     color: white;

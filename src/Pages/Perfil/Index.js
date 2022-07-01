@@ -24,7 +24,7 @@ export function Perfil() {
       <Main>
         <Body>
           <div className="Title">
-            <p>Perfil</p>
+            <p>PERFIL</p>
           </div>
 
           <Inf>

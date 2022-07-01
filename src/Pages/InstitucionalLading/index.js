@@ -26,7 +26,7 @@ export function Institucional() {
             <img className="logomob" src={Logo} alt="logoBackground" />
           </Link>
           <div>
-            <Link to="">
+            <Link to="/">
               <span>PlaceUP</span>
             </Link>
           </div>

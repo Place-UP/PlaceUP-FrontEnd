@@ -8,7 +8,7 @@ export const Line = styled.div`
 
     &.me{
         > div{
-            background-color: ${({ theme }) => theme.cards};
+            background-color: #218531;
             color: ${({ theme }) => theme.fontColor};
         }
         justify-content: right;
