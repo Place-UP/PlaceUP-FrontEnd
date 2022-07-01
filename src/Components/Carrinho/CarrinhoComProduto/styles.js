@@ -249,5 +249,4 @@ export const Finalize = styled.div`
     .buttonSeeMore:hover{
       opacity: 0.8;
     }
-
 `;
