@@ -145,7 +145,9 @@ export function Login() {
                                 </>
                             )}
                         </LabelBox>
-                        <input disabled={!coment} type="submit" value="Enviar" />
+                        <Link to="/feeduser">
+                            <input disabled={!coment} type="submit" value="Enviar" />
+                            </Link>
                     </Formulario>
                     <OR>
                         <span>OR</span>

@@ -4,6 +4,7 @@ import { BsChatDots, BsFillGearFill } from "react-icons/bs";
 import { MdFavoriteBorder } from "react-icons/md";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { IconContext } from "react-icons";
+import { BiExit } from "react-icons/bi";
 import { Navigation, Title, List, Icon } from "./styles";
 import Logo from "../../Img/PlaceUp animação.svg";
 
@@ -39,7 +40,10 @@ export function Header() {
               </Link>
             </List>
             <List className={`${path === "/Reservas" ? "Active" : ""}`}>
-              <Link to="/Reservas" className={`${path === "/Reservas" ? "preto" : "claro"}`}>
+              <Link
+                to="/Reservas"
+                className={`${path === "/Reservas" ? "preto" : "claro"}`}
+              >
                 <Icon>
                   <AiOutlineSchedule />
                 </Icon>
@@ -47,7 +51,10 @@ export function Header() {
               </Link>
             </List>
             <List className={`${path === "/Favoritos" ? "Active" : ""}`}>
-              <Link to="/Favoritos" className={`${path === "/Favoritos" ? "preto" : "claro"}`}>
+              <Link
+                to="/Favoritos"
+                className={`${path === "/Favoritos" ? "preto" : "claro"}`}
+              >
                 <Icon>
                   <MdFavoriteBorder />
                 </Icon>
@@ -55,12 +62,23 @@ export function Header() {
               </Link>
             </List>
             <List className={`${path === "/Perfil" ? "Active" : ""}`}>
-              <Link to="/Perfil" className={`${path === "/Perfil" ? "preto" : "claro"}`}>
+              <Link
+                to="/Perfil"
+                className={`${path === "/Perfil" ? "preto" : "claro"}`}
+              >
                 <Icon>
                   <BsFillGearFill />
                 </Icon>
                 <Title>Configuração</Title>
                 <Title>Perfil</Title>
+              </Link>
+            </List>
+            <List>
+              <Link to="/" className={`${path === "/" ? "preto" : ""}`}>
+                <Icon>
+                  <BiExit className="IconsHeader" />
+                </Icon>
+                <Title>Sair</Title>
               </Link>
             </List>
           </ul>
