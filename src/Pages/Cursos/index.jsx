@@ -5,12 +5,14 @@ import iconePC from '../../Img/Cursos/IconePC.png'
 
 import { select } from '../../mock/selectCurso.js'
 import { CardsCursos } from '../../Components/CardsCursos'
+import { InputDarkMode } from "../../Components/inputDark";
 import { FooterGeral } from '../../Components/FooterGeral/footer.js'
 
 export function Cursos() {
     return (
         <>
-            <Header />
+            <Header />            
+            <InputDarkMode />
             <Container>
                 <Box>
                     <Img src={fundoRight} alt="" />

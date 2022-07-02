@@ -4,11 +4,13 @@ import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
 import { Main, ContactUs, Contact, FaleImg, Footer } from "./style";
 import FaleConoscoImg from "../FaleConosco/img/FaleConoscoPC.svg";
+import { InputDarkMode } from "../../Components/inputDark";
 
 export function FaleConosco() {
   return (
     <>
       <Header />
+      <InputDarkMode />
       <Main>
         <div className="Title">
           <p>Fale Conosco</p>

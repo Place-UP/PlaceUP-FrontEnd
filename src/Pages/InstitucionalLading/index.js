@@ -10,10 +10,13 @@ import TableFounders from "../../Components/FoundersTable/index";
 import VectorOurHistory from "./img/VectorOurHistory.svg";
 import { colors } from "../../mock/CardsInstitucional";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
+import { InputDarkMode } from "../../Components/inputDark";
+
 export function Institucional() {
   return (
     <>
       <Main>
+      <InputDarkMode />
         <header>
           <Link to="/">
             <img
