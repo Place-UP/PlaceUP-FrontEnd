@@ -7,12 +7,14 @@ export default function Lucros(props) {
       <InputArea>
         <p> Margem de lucro desejada:*</p>
         <input
-          type="tel"
+          type="number"
           maxLength="10"
           placeholder="Digite aqui %"
           value={props.lucro}
           onChange={(entrada) => {
-            props.setlucros(entrada.target.value.replace(/\D/g, ""));
+            props.setlucros(
+              entrada.target.value.replace(/[^-\d.]/g, "").replace(/^-,/, "")
+            );
           }}
         />
       </InputArea>

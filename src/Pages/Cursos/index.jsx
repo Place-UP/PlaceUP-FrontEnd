@@ -1,8 +1,8 @@
-import { Header } from "../../Components/HeaderUsuario/HeaderUser"
+import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante"
 import { Box, BoxImg, BoxSelect, BoxTitle, Calculator, Container, Img } from './style';
 import fundoRight from '../../Img/Cursos/fundoRight.png'
 import iconePC from '../../Img/Cursos/IconePC.png'
-
+import {Link} from "react-router-dom"
 import { select } from '../../mock/selectCurso.js'
 import { CardsCursos } from '../../Components/CardsCursos'
 import { InputDarkMode } from "../../Components/inputDark";
@@ -11,7 +11,7 @@ import { FooterGeral } from '../../Components/FooterGeral/footer.js'
 export function Cursos() {
     return (
         <>
-            <Header />            
+            <HeaderComerciante />            
             <InputDarkMode />
             <Container>
                 <Box>
@@ -22,19 +22,23 @@ export function Cursos() {
                     </BoxImg>
                 </Box>
                 <BoxTitle>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur mollit anim id est  odjaojd ojdaojod aoda o koa  laborum.</p>
+                    <p>Saber como administrar um pequeno negócio é um desafio para todos, especialmente para os empreendedores iniciantes que não têm experiência no assunto. Afinal, criar um bom planejamento estratégico é algo complexo, que envolve muitas etapas.</p>
                 </BoxTitle>
                 <BoxSelect>
                     {select.map((item) => (
+                <Link to="/calculadora">
                         <select key={item.id}>
                             <option value="Lorem">{item.title}</option>
                         </select>
+                    </Link>
                     ))}
-                </BoxSelect>
+                    </BoxSelect>
                 <CardsCursos />
                 <Calculator>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <button>CALCULADORA</button>
+                    <p>Além dessas dicas de como gerir o seu negócio, você pode aprender a precificar seu produto com o auxílio de nossa calculadora de precificação.</p>
+                    <Link to="/calculadora">
+                        <button>CALCULADORA</button>
+                    </Link>
                 </Calculator>
             </Container>
             <FooterGeral />

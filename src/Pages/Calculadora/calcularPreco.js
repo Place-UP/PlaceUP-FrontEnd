@@ -26,6 +26,8 @@ export default function Calcular(props) {
     props.setResultado(Markup * TotalPreco + TotalPreco);
     if (calculoPorcentagem >= 87) {
       props.setResultado("A porcentagem inserida é inválida");
+    } else if (adicionalReal < 0) {
+      props.setResultado("Número negativo detectado");
     }
   }
 

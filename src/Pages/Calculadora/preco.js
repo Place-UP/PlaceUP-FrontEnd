@@ -6,12 +6,12 @@ export default function Preco(props) {
       <InputArea>
         <p>preço pago pelo produto:*</p>
         <input
-          type="tel"
+          type="number"
           maxLength="10"
           placeholder="Digite aqui R$"
           value={props.preco}
           onChange={(entrada) => {
-            props.setprecos(entrada.target.value.replace(/\D/g, ""));
+            props.setprecos(entrada.target.value.replace(/\D,./g, ""));
           }}
         />
       </InputArea>

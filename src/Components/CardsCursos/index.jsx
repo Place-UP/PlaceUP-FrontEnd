@@ -14,6 +14,7 @@ export function CardsCursos() {
                         <h2>{item.CousersTitle}</h2>
                         <p>{item.CousersInfo}</p>
                     </TxtBox>
+                        <a href={item.link}>
                     <Box >
                         <BoxImg>
                             <img src={item.img} alt="" />
@@ -24,6 +25,7 @@ export function CardsCursos() {
                             <p>{item.info}</p>
                         </Txt>
                     </Box>
+                    </a>
                 </Courses>
             ))}
         </Container>

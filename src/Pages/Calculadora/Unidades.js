@@ -11,7 +11,9 @@ export default function Unidade(props) {
           placeholder="Digite aqui"
           value={props.unidade}
           onChange={(entrada) => {
-            props.setUnidade(entrada.target.value.replace(/\D/g, ""));
+            props.setUnidade(
+              entrada.target.value.replace(/[^-\d.]/g, "").replace(/^-,/, "")
+            );
           }}
         />
       </InputArea>

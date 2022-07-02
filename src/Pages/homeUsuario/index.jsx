@@ -14,7 +14,7 @@ import * as C from "./styles";
 import { CarrinhoComProduto } from "../../Components/Carrinho/CarrinhoComProduto";
 import { cardsHome } from "./../../mock/CardsHome";
 import { IoIosArrowForward } from "react-icons/io";
-
+import { Link } from "react-router-dom";
 export function IndexHomeUser() {
   const [query, setQuery] = useState("");
 
@@ -102,7 +102,7 @@ export function IndexHomeUser() {
                     <IoIosArrowForward />
                   </C.BtnBuscar>
                 </C.InfoCategory>
-              </C.FilterCategory>
+                </C.FilterCategory>
             ))}
           </div>
         </C.Category>

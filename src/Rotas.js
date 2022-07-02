@@ -40,7 +40,7 @@ import { CadastroComerACD } from "./Pages/CadastroComerACD";
 import { ChatComerciante } from "./Pages/Chat/index";
 import { AddProduct } from "./Pages/adicionarProduto/index";
 import { CreateProductContext } from "./Common/Context/AddProduct";
-
+import { VisualizacaoComerciante } from "./Pages/VisuLojaComerciante/index";
 function Rotas() {
   return (
     <>
@@ -84,6 +84,10 @@ function Rotas() {
               <Route
                 path="/VisualizacaoUsuario"
                 element={<VisualizacaoUsuario />}
+              />
+              <Route
+                path="/VisualizacaoComerciante"
+                element={<VisualizacaoComerciante />}
               />
               <Route
                 path="/VisualizacaoUsuario2"

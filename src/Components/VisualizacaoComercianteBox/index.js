@@ -1,11 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { Main, ContWhitePart } from "./style";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import { useProducts } from './../../Common/Context/AddProduct';
+import { useProducts } from "./../../Common/Context/AddProduct";
 import { comercio1 } from "../../mock/comercio1";
 
 export function Box() {
-
   const carousel = useRef(null);
 
   const handleLeftClick = (e) => {
@@ -17,9 +16,8 @@ export function Box() {
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 
-
-  const { task } = useProducts()
-  const coppyArray = [...task, ...comercio1]
+  const { task } = useProducts();
+  const coppyArray = [...task, ...comercio1];
 
   return (
     <>
@@ -47,7 +45,6 @@ export function Box() {
                 </div>
                 <div className="Info">
                   <span className="Tittle"> {item.name}</span>
-                  <span className="Quant"> 400mg</span>
                   <div className="SeparationPrices">
                     <span className="Price">{item.price}</span>
                   </div>

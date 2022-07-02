@@ -1,27 +1,40 @@
-import { SearchBar, Container, Main, Carrinho, Filter, BoxCarrinho } from "./style";
+import {
+  SearchBar,
+  Container,
+  Main,
+  Carrinho,
+  Filter,
+  BoxCarrinho,
+} from "./style";
 
-import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineClose } from "react-icons/ai";
+import {
+  AiOutlineSearch,
+  AiOutlineShoppingCart,
+  AiOutlineClose,
+} from "react-icons/ai";
 
-import { comercio6 } from "../../mock/comercio6";
+import { comercio1 } from "../../mock/comercio1";
 import React, { useContext, useState } from "react";
 import { CartContext } from "../../Common/Context";
 import { BoxCart, Txt } from "./styleCart";
 import { CarrinhoComProduto } from "../Carrinho/CarrinhoComProduto";
 
 export function BarraBusca() {
-
   const [query, setQuery] = useState("");
 
   const search = () => {
     if (!query) return [];
-    return comercio6.filter(
+    return comercio1.filter(
       (item) =>
-        item.name.toLowerCase().normalize("NFD").replace(/[^a-zA-Zs]/g, "").includes(query) ||
-        item.price.includes(query)
+        item.name
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[^a-zA-Zs]/g, "")
+          .includes(query) || item.price.includes(query)
     );
   };
 
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -37,17 +50,14 @@ export function BarraBusca() {
             />
           </SearchBar>
           <Carrinho>
-            <AiOutlineShoppingCart className="car" onClick={() => setIsOpen(!isOpen)} />
+            <AiOutlineShoppingCart
+              className="car"
+              onClick={() => setIsOpen(!isOpen)}
+            />
             <span></span>
           </Carrinho>
         </Container>
-        {isOpen ? (
-          <CarrinhoComProduto />
-        ) : (
-          <>
-
-          </>
-        )}
+        {isOpen ? <CarrinhoComProduto /> : <></>}
 
         {query && (
           <Filter>

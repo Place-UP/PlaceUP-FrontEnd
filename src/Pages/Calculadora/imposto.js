@@ -11,7 +11,9 @@ export default function Imposto(props) {
           placeholder="Digite aqui %"
           value={props.imposto}
           onChange={(entrada) => {
-            props.setImpostos(entrada.target.value.replace(/\D/g, ""));
+            props.setImpostos(
+              entrada.target.value.replace(/[^-\d.]/g, "").replace(/^-,/, "")
+            );
           }}
         />
       </InputArea>
