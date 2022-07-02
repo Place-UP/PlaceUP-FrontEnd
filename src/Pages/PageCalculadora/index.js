@@ -9,11 +9,13 @@ import Porcent2 from "../../Img/Calculadora/PorcentagemIcon2.svg";
 import Porcent from "../../Img/Calculadora/PorcentagemIcon.svg";
 import BackgroundFinal from "../../Img/Calculadora/FinalParte.svg";
 import { calculadoraCards } from "../../mock/CardCalculadora";
+import { InputDarkMode } from "../../Components/inputDark";
 
 export function IndexCalculadora() {
   return (
     <>
       <HeaderComerciante />
+      <InputDarkMode />
       <Main>
         <Container>
           <div className="ContainerBanner">

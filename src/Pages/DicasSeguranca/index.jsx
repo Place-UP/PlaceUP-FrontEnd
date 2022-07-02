@@ -2,11 +2,13 @@ import React from "react";
 import logo from "./images/logo.png";
 import { Home, Category, Content } from "./styles";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
+import { InputDarkMode } from "../../Components/inputDark";
 
 export function Dicas() {
   return (
     <>
       <Home>
+        <InputDarkMode />
         <Category>
           <img src={logo} alt="logo" />
           <h1>Dicas de segurança</h1>

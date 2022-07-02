@@ -23,7 +23,7 @@ export function FooterGeral() {
 
           <LinksFooter className="linksFooter">
             <div className="links">
-              <Link to="">Fale conosco</Link>
+              <Link to="/FaleConosco">Fale conosco</Link>
               <Link to="/Dicas">Dicas de segurança</Link>
             </div>
 

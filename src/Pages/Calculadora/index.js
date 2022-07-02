@@ -11,6 +11,7 @@ import Adicional from "./Adicional";
 import AdicionalPorcentagem from "./AdicionalPorcentagem";
 import Logo from "./img/LogoPlaceUP.svg";
 import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
+import { InputDarkMode } from "../../Components/inputDark";
 
 export function Calculator() {
   const [imposto, setImposto] = useState("");
@@ -39,6 +40,7 @@ export function Calculator() {
   return (
     <>
       <HeaderComerciante />
+      <InputDarkMode />
       <Main>
         <Conatiner>
           <div className="container">

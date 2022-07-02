@@ -2,11 +2,13 @@ import React from "react";
 import logo from "./images/logo.png";
 import { Home, Category, Content } from "./styles";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
+import { InputDarkMode } from "../../Components/inputDark";
 
 export function Termos() {
   return (
     <>
       <Home>
+        <InputDarkMode />
         <Category>
           <img src={logo} alt="logo" />
           <h1>Termos e condições de uso</h1>

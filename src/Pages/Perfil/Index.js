@@ -12,7 +12,7 @@ import {
 } from "./style";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import Self from "./img/perfil.svg";
-
+import { InputDarkMode } from "../../Components/inputDark";
 
 export function Perfil() {
 
@@ -21,6 +21,7 @@ export function Perfil() {
   return (
     <>
       <Header />
+      <InputDarkMode />
       <Main>
         <Body>
           <div className="Title">

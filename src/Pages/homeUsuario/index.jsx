@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from 'react';
 import { box } from '../../mock/boxVisalizer';
-import Mercado from "./images/mercado.png";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/FeedsUser/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
