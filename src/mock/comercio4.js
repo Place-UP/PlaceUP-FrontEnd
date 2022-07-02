@@ -25,13 +25,13 @@ import xaropeVick from "./comercio4/Xarope.jpg";
 
 import imgPerfil from "./comercio4/drogariaVidaNova.jpg";
 
-export const Bussines = [
+export const Bussines4 = [
   {
     owner: "Drogario vida nova",
     pefilimg: imgPerfil,
   },
 ];
-export const comercio1 = [
+export const comercio4 = [
   {
     id: 1,
     name: "Enxaguante bucal Listerine",
