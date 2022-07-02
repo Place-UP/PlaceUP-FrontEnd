@@ -74,7 +74,7 @@ export const Container = styled.div`
     }
     h1 {
       font-family: "Bakbak One";
-      font-size: 38px;      
+      font-size: 38px;
       color: ${({ theme }) => theme.title};
       margin-bottom: 23px;
       ${Media.Laptop} {
@@ -160,6 +160,9 @@ export const Container = styled.div`
     align-items: baseline;
     justify-content: space-between;
 
+    .t1 {
+      flex-direction: row-reverse;
+    }
     ${Media.Tablet} {
       justify-content: space-evenly;
     }
@@ -244,6 +247,10 @@ export const Container = styled.div`
         }
       }
     }
+  }
+  .t2 {
+    flex-direction: row-reverse;
+    margin-bottom: 200px;
   }
 
   //Part do cards background da area
@@ -417,6 +424,7 @@ export const Container = styled.div`
         }
 
         button {
+          cursor: pointer;
           background: linear-gradient(
             297.29deg,
             rgba(23, 118, 180, 0.83) 2.88%,
@@ -462,7 +470,7 @@ export const ContCards = styled.div`
 
 export const Cards = styled.div`
   margin-top: 80px;
-  
+
   .CardsTittle {
     display: flex;
     align-items: flex-start;
@@ -506,6 +514,10 @@ export const Cards = styled.div`
       margin: auto;
       .IconCard {
         margin-bottom: 180px;
+        .igmCard {
+          width: 50px;
+          height: 50px;
+        }
       }
       .Textarea {
         p {
