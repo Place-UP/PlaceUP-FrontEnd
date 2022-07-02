@@ -1,37 +1,15 @@
 import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
 import { MenuPrincipal } from "../../Components/NavVisualizacaoComerciante/index";
 import { Main } from "./style";
-import { AiOutlineUpload, AiOutlineCamera } from "react-icons/ai";
+import { AiOutlineUpload } from "react-icons/ai";
 import { TextField } from "@mui/material";
 import { useState } from 'react';
+import { useProducts } from "../../Common/Context/AddProduct";
 
 
 export function AddProduct() {
 
-  const [Nome, setNome] = useState('')
-  const [Marca, setMarca] = useState('')
-  const [Categoria, setCategoria] = useState('')
-  const [Peso, setPeso] = useState('')
-  const [Valor, setValor] = useState('')
-  const [error, setError] = useState(false)
-
-  const [selectImage, setSelectImage] = useState()
-  const [endImg] = useState('https://cdn-icons-png.flaticon.com/512/685/685655.png')
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-
-    if (Nome.length == 0 || Marca.length == 0 || Categoria.length == 0 || Peso.length == 0 || Valor.length == 0) {
-      setError(true)
-    }
-    console.log(Nome)
-  }
-
-  const imageChange = (e) => {
-    if (e.target.files && e.target.files.length > 0) {
-      setSelectImage(e.target.files[0])
-    }
-  }
+  const { handleSubmit, error, setError, task, setTask, Valor, setValor, Nome, setNome, setSelectImage, selectImage, imageChange, endImg } = useProducts()
 
   return (
 
@@ -59,19 +37,11 @@ export function AddProduct() {
                 <input type="file" name="arquivo" id="arquivo" onChange={imageChange} accept="image/*" />
               </form>
               <div className="informationProduct" >
-                <TextField id="filled-basic" label="Nome" variant="filled" className={Nome.length > 0 ? "active" : ""} onChange={(e) => setNome(e.target.value)} />
+                <TextField id="filled-basic" label="Nome" variant="filled" value={Nome} className={Nome.length > 0 ? "active" : ""} onChange={(e) => setNome(e.target.value)} />
                 {error && Nome.length <= 0 ? (
                   <p className="never">Campo invalido</p>
                 ) : ""}
-                <TextField id="filled-basic" label="Marca" variant="filled" className={Marca.length > 0 ? "active" : ""} onChange={(e) => setMarca(e.target.value)} />
-                {error && Marca.length <= 0 ? (
-                  <p className="never">Campo invalido</p>
-                ) : ""}
-                <TextField id="filled-basic" label="Categoria" variant="filled" className={Categoria.length > 0 ? "active" : ""} onChange={(e) => setCategoria(e.target.value)} />
-                {error && Categoria.length <= 0 ? (
-                  <p className="never">Campo invalido</p>
-                ) : ""}
-                <TextField type="number" id="filled-basic" label="Valor" variant="filled" className={Valor.length > 0 ? "active" : ""} onChange={(e) => setValor(e.target.value)} />
+                <TextField type="number" id="filled-basic" label="Valor" variant="filled" value={Valor} className={Valor.length > 0 ? "active" : ""} onChange={(e) => setValor(e.target.value)} />
                 {error && Valor.length <= 0 ? (
                   <p className="never">Campo invalido</p>
                 ) : ""}
@@ -92,7 +62,10 @@ export function AddProduct() {
         </div>
         <div class="Container2">
           <MenuPrincipal />
+
         </div>
+
+
       </Main>
     </>
   );

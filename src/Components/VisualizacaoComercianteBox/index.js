@@ -1,19 +1,12 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { box } from "../../mock/boxVisalizer";
 import { Main, ContWhitePart } from "./style";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-
-
+import { useProducts } from './../../Common/Context/AddProduct';
+import { axios } from 'axios';
 
 export function Box() {
-  // const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   fetch("https://localhost:3000/static/shoes.json")
-  //     .then((response) => response.json())
-  //     .then(setData);
-  // }, []);
 
-  // if (!data || !data.length) return null;
   const carousel = useRef(null);
 
   const handleLeftClick = (e) => {
@@ -24,6 +17,10 @@ export function Box() {
     e.preventDefault();
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
+
+
+  const { task } = useProducts()
+  const coppyArray = [...task, ...box]
 
   return (
     <>
@@ -43,10 +40,10 @@ export function Box() {
           </div>
         </div>
         <ContWhitePart className="carousel" ref={carousel}>
-          {box.map((item) => {
-            const { name, price, oldPrice, image } = item;
+          {coppyArray.map((item) => {
+            const { id, name, price, image } = item
             return (
-              <div className="ContainerCarousel">
+              <div className="ContainerCarousel" key={id}>
                 <div className="Carousel">
                   <div className="containerIMG">
                     <img className="image" src={image} alt="img" />
@@ -55,13 +52,13 @@ export function Box() {
                     <span className="Tittle"> {name}</span>
                     <span className="Quant"> 400mg</span>
                     <div className="SeparationPrices">
-                      <span className="OldPrice"> {oldPrice}</span>
                       <span className="Price">{price}</span>
                     </div>
                   </div>
                 </div>
               </div>
-            );
+            )
+
           })}
         </ContWhitePart>
       </Main>

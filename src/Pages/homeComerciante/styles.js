@@ -116,8 +116,8 @@ export const ContainerCalendar = styled.div`
     background-color: white;
     background-image:url(${grafico});
     background-repeat: no-repeat;
-    background-size: 85%;
-    background-position: 50% 80%;
+    background-size: 85% 78%;
+    background-position: 50% 95%;
 
     ${media.Notebook} { 
       min-width: 80%;
