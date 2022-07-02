@@ -39,8 +39,6 @@ import Cenario from "../../Img/ImgLading/Cenario.svg";
 import { Depoimentos } from "../../Components/ComentariosLading/index";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
 import { Cards } from "../../Components/CardsLadingPage";
-import { styled } from 'styled-components';
-import { InputDarkMode } from "../../Components/inputDark";
 
 export function LadingPage() {
   //variavel, function
@@ -49,7 +47,6 @@ export function LadingPage() {
   return (
     <>
       <Header>
-      <InputDarkMode />
         <HeaderImg>
           <div>
             <img src={LogoPlaceUP} alt="Logo PlaceUP" />
@@ -85,9 +82,9 @@ export function LadingPage() {
           </ParagrafoCard>
 
           <BoxCard>
-          <Link to="/Institucional">
-            <BtnCard primary>Saiba Mais</BtnCard>
-          </Link>
+            <Link to="/Institucional">
+              <BtnCard primary>Saiba Mais</BtnCard>
+            </Link>
           </BoxCard>
 
           <Cenarios src={Cenario} alt="Parte do cenario" />
@@ -96,17 +93,17 @@ export function LadingPage() {
               <li>
                 <AiOutlineTwitter />
               </li>
-            </a>            
-              <a href="https://www.instagram.com/iplaceup/">  
-                <li>
-                  <AiOutlineInstagram />
-                </li>  
-              </a>
+            </a>
+            <a href="https://www.instagram.com/iplaceup/">
+              <li>
+                <AiOutlineInstagram />
+              </li>
+            </a>
             <a href="https://www.facebook.com/iplaceup/">
               <li>
                 <AiOutlineFacebook />
               </li>
-            </a>            
+            </a>
           </Midia>
         </Card>
 

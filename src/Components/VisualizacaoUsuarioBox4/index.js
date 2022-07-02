@@ -21,7 +21,6 @@ export function Box() {
 
   const { HandleAddCart } = useContext(CartContext)
 
-
   return (
     <Main>
       <div className="Offers">
@@ -41,7 +40,7 @@ export function Box() {
         {comercio4.map((item) => (
           <div className="ContainerCarousel" key={item.id}>
             <div className="Carousel">
-              <img className="image" src={item.img} alt="img" />
+              <img className="image" src={item.image} alt="img" />
               <button onClick={() => HandleAddCart({ ...item })}>
                 <GrFormAdd className="AddIcon" />
               </button>

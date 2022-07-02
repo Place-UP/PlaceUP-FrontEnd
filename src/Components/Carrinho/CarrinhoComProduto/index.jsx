@@ -3,7 +3,6 @@ import './styles'
 import { AiOutlineClose } from "react-icons/ai";
 import * as C from './styles.js'
 import { PedidoEfetuado } from './../PedidoEfetuado/index';
-import { CarrinhoVazio } from "../CarrinhoVazio";
 import { CartContext } from "../../../Common/Context";
 import { IoMdTrash } from 'react-icons/io'
 
@@ -52,7 +51,7 @@ export function CarrinhoComProduto() {
                       return (
                         <>
                           <C.Box key={id}>
-                            <img src={item.image} alt="" />
+                            <img src={image} alt="" />
                             <h1 className="Qtd">{qtd}</h1>
                             <div className="names">
                               <h1>{name}</h1>
