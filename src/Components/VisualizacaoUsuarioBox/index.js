@@ -2,7 +2,7 @@ import { useRef, useContext } from "react";
 import { Main, ContWhitePart } from "./style";
 import { GrFormAdd } from "react-icons/gr";
 import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-icons/md"
-import { box } from '../../mock/boxVisalizer'
+import { comercio1 } from "../../mock/comercio1";
 import { CartContext } from './../../Common/Context/index';
 
 
@@ -38,10 +38,10 @@ export function Box() {
         </div>
       </div>
       <ContWhitePart className="carousel" ref={carousel}>
-        {box.map((item) => (
+        {comercio1.map((item) => (
           <div className="ContainerCarousel" key={item.id}>
             <div className="Carousel">
-              <img className="image" src={item.image} alt="img" />
+              <img className="image" src={item.img} alt="img" />
               <button onClick={() => HandleAddCart({ ...item })}>
                 <GrFormAdd className="AddIcon" />
               </button>

@@ -6,11 +6,12 @@ export default function Unidade(props) {
       <InputArea>
         <p>Insira quantas unidades tem esse produto: </p>
         <input
-          type="number"
-          placeholder="Digite aqui "
+          type="text"
+          maxLength="999"
+          placeholder="Digite aqui"
           value={props.unidade}
           onChange={(entrada) => {
-            props.setUnidade(entrada.target.value);
+            props.setUnidade(entrada.target.value.replace(/\D/g, ""));
           }}
         />
       </InputArea>

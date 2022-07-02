@@ -4,6 +4,7 @@ import { Main, ContWhitePart } from "./style";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { useProducts } from './../../Common/Context/AddProduct';
 import { axios } from 'axios';
+import { comercio1 } from "../../mock/comercio1";
 
 export function Box() {
 
@@ -40,26 +41,22 @@ export function Box() {
           </div>
         </div>
         <ContWhitePart className="carousel" ref={carousel}>
-          {coppyArray.map((item) => {
-            const { id, name, price, image } = item
-            return (
-              <div className="ContainerCarousel" key={id}>
+          {comercio1.map((item) => (            
+              <div className="ContainerCarousel" key={item.id}>
                 <div className="Carousel">
                   <div className="containerIMG">
-                    <img className="image" src={image} alt="img" />
+                    <img className="image" src={item.img} alt="img" />
                   </div>
                   <div className="Info">
-                    <span className="Tittle"> {name}</span>
+                    <span className="Tittle"> {item.name}</span>
                     <span className="Quant"> 400mg</span>
                     <div className="SeparationPrices">
-                      <span className="Price">{price}</span>
+                      <span className="Price">{item.price}</span>
                     </div>
                   </div>
                 </div>
-              </div>
-            )
-
-          })}
+              </div>            
+          ))}
         </ContWhitePart>
       </Main>
     </>

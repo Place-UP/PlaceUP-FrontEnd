@@ -11,6 +11,7 @@ import Adicional from "./Adicional";
 import AdicionalPorcentagem from "./AdicionalPorcentagem";
 import Logo from "./img/LogoPlaceUP.svg";
 import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
+import { InputDarkMode } from "../../Components/inputDark";
 
 export function Calculator() {
   const [imposto, setImposto] = useState("");
@@ -39,6 +40,7 @@ export function Calculator() {
   return (
     <>
       <HeaderComerciante />
+      <InputDarkMode />
       <Main>
         <Conatiner>
           <div className="container">
@@ -47,12 +49,18 @@ export function Calculator() {
                 <img src={Logo} alt="Logo" />
                 <h1>Calculadora de precificação</h1>
                 <p>Calcular um produto nunca foi tão fácil.</p>
+                <Link to="/calculadora">
+                  <ButtonStyle className="btn">
+                    <p>Aprenda a usar a calculadora </p>
+                  </ButtonStyle>
+                </Link>
               </div>
             </div>
-
             <div className="ContainerCalculator">
               <div>
                 <InputArea>
+                  {/* Divisao entra o nome do produto e o botao para outra page */}
+
                   <h1> Coloque o nome do produto</h1>
 
                   <input
@@ -64,11 +72,6 @@ export function Calculator() {
                       setProduct(entrada.target.value);
                     }}
                   />
-                  <Link to="/calculadora">
-                    <ButtonStyle className="btn">
-                      <p>Aprenda a usar a calculadora </p>
-                    </ButtonStyle>
-                  </Link>
                 </InputArea>
                 <Imposto imposto={imposto} setImpostos={setImposto} />
                 <Lucros lucro={lucro} setlucros={setlucro} />
@@ -121,11 +124,6 @@ export function Calculator() {
                       : result.toLocaleString("pt-BR", {
                           style: "currency",
                           currency: "BRL",
-                        }) && adicional == ""
-                      ? "Parametro invalido"
-                      : result.toLocaleString("pt-BR", {
-                          style: "currency",
-                          currency: "BRL",
                         })
                   }
                 />
@@ -156,14 +154,17 @@ export function Calculator() {
               <div className="TableContainer">
                 <div className="TableTitleList">
                   <span>Produto: {Product}</span>
+                  <span>
+                    Preço gerado: {!result ? "" : formatter.format(result)}
+                  </span>
                   <p>Mínimo</p>
                   <p>Média</p>
                   <p>Máximo</p>
                 </div>
                 <div className="TablePlaceUP">
-                  <p>{!adicional ? "" : formatter.format(result)}</p>
-                  <p>{!result ? "" : formatter.format(result)}</p>
-                  <p>{!result ? "" : formatter.format(result)}</p>
+                  <p>{!result ? "" : formatter.format(result - result / 5)}</p>
+                  <p>{!result ? "" : formatter.format(result + result / 5)}</p>
+                  <p>{!result ? "" : formatter.format(result + result / 3)}</p>
                 </div>
               </div>
             </div>

@@ -40,6 +40,7 @@ import { Depoimentos } from "../../Components/ComentariosLading/index";
 import { FooterGeral } from "../../Components/FooterGeral/footer";
 import { Cards } from "../../Components/CardsLadingPage";
 import { styled } from 'styled-components';
+import { InputDarkMode } from "../../Components/inputDark";
 
 export function LadingPage() {
   //variavel, function
@@ -48,6 +49,7 @@ export function LadingPage() {
   return (
     <>
       <Header>
+      <InputDarkMode />
         <HeaderImg>
           <div>
             <img src={LogoPlaceUP} alt="Logo PlaceUP" />

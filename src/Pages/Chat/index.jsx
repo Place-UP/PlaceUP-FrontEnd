@@ -6,6 +6,7 @@ import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderCom
 import { auth, db } from "../../Services/firebase";
 import { LoginChat } from "../../Components/LoginChat";
 import * as C from './style'
+import { InputDarkMode } from "../../Components/inputDark";
 import { Chat } from "../../Components/Chat";
 
 
@@ -27,7 +28,8 @@ export function ChatComerciante() {
 
     return (
         <C.Container>
-            <HeaderComerciante />
+            <HeaderComerciante />            
+            <InputDarkMode />
             <Chat userChat={userChat} />
             <SideBar setUserChat={setUserChat} userChat={userChat} />
         </C.Container>

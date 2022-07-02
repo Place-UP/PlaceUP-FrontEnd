@@ -1,29 +1,32 @@
 import React from "react";
-import { useState } from 'react';
-import { box } from '../../mock/boxVisalizer';
-import Mercado from "./images/mercado.png";
+import { useState } from "react";
+import { box } from "../../mock/boxVisalizer";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/FeedsUser/Feed/index";
+import { FeedUser4 } from "../../Components/FeedsUser4/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
-import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai"
-import * as C from './styles'
+import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
+import * as C from "./styles";
 import { CarrinhoComProduto } from "../../Components/Carrinho/CarrinhoComProduto";
-import { cardsHome } from './../../mock/CardsHome';
+import { cardsHome } from "./../../mock/CardsHome";
 import { IoIosArrowForward } from "react-icons/io";
 
 export function IndexHomeUser() {
-  const [query, setQuery] = useState("")
+  const [query, setQuery] = useState("");
 
   const search = () => {
-    if (!query) return ([])
+    if (!query) return [];
     return box.filter(
       (item) =>
-        item.name.toLowerCase().normalize("NFD").replace(/[^a-zA-Zs]/g, "").includes(query) ||
-        item.price.includes(query)
-    )
-  }
+        item.name
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[^a-zA-Zs]/g, "")
+          .includes(query) || item.price.includes(query)
+    );
+  };
 
-  const [isOpen, setIsOpen] = useState('')
+  const [isOpen, setIsOpen] = useState("");
 
   return (
     <>
@@ -34,13 +37,18 @@ export function IndexHomeUser() {
           <C.SectionSearch>
             <C.SearchBar>
               <AiOutlineSearch className="icon" />
-              <input type="text" className="search" placeholder="Pesquisa" onChange={(e) => setQuery(e.target.value)}></input>
+              <input
+                type="text"
+                className="search"
+                placeholder="Pesquisa"
+                onChange={(e) => setQuery(e.target.value)}
+              ></input>
             </C.SearchBar>
             <C.Car onClick={() => setIsOpen(!isOpen)} className="car">
               <AiOutlineShoppingCart className="carIcon" alt="Carrinho" />
             </C.Car>
           </C.SectionSearch>
-          {query &&
+          {query && (
             <C.ContainerSearch>
               {search().map((item) => (
                 <div key={item.id} className="VisuBarSearch">
@@ -50,27 +58,29 @@ export function IndexHomeUser() {
                 </div>
               ))}
             </C.ContainerSearch>
-          }
+          )}
 
           {isOpen ? (
             <>
               <CarrinhoComProduto />
             </>
-          ) :
-            <>
-
-            </>
-          }
+          ) : (
+            <></>
+          )}
 
           <C.Filter>
             <select name="Ordenar por">
-              <option value="ordenar" select>Ordenar</option>
+              <option value="ordenar" select>
+                Ordenar
+              </option>
               <option value="maior">Maior Preço</option>
               <option value="menor">Menor Preço</option>
             </select>
 
             <select name="Acessibilidade">
-              <option value="acessibilidade" select>Acessibilidade</option>
+              <option value="acessibilidade" select>
+                Acessibilidade
+              </option>
               <option value="cego">Suporte para Cego</option>
               <option value="surdo">Suporte para Surdo</option>
               <option value="mudo">Suporte para Mudo</option>
@@ -84,7 +94,9 @@ export function IndexHomeUser() {
               <C.FilterCategory key={item.id} primary={`${item.color}`}>
                 <img src={item.img} alt="Icone Shopping" />
                 <C.InfoCategory>
-                  <C.BtnBuscar><IoIosArrowForward /></C.BtnBuscar>
+                  <C.BtnBuscar>
+                    <IoIosArrowForward />
+                  </C.BtnBuscar>
                 </C.InfoCategory>
               </C.FilterCategory>
             ))}
@@ -92,8 +104,7 @@ export function IndexHomeUser() {
         </C.Category>
 
         <FeedUser className="feed" />
-        <FeedUser />
-        <FeedUser />
+        <FeedUser4  />
       </C.Main>
     </>
   );

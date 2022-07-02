@@ -9,11 +9,13 @@ import Porcent2 from "../../Img/Calculadora/PorcentagemIcon2.svg";
 import Porcent from "../../Img/Calculadora/PorcentagemIcon.svg";
 import BackgroundFinal from "../../Img/Calculadora/FinalParte.svg";
 import { calculadoraCards } from "../../mock/CardCalculadora";
+import { InputDarkMode } from "../../Components/inputDark";
 
 export function IndexCalculadora() {
   return (
     <>
       <HeaderComerciante />
+      <InputDarkMode />
       <Main>
         <Container>
           <div className="ContainerBanner">
@@ -24,8 +26,8 @@ export function IndexCalculadora() {
                 <br /> a gente!
               </h1>
               <p>Calcular um produto nunca foi tão fácil.</p>
-              <Link to="">
-                <button>Começar pelo vídeo</button>
+              <Link to="/calcular">
+                <button>Voltar para a calculadora</button>
               </Link>
             </div>
             <div className="ImageArea">
