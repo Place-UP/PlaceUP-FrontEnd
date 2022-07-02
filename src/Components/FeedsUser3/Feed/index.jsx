@@ -21,7 +21,7 @@ export function FeedUser3() {
 
     favorite.classList.toggle("active");
     disfavor.classList.toggle("active");
-  } 
+  }
 
   const box08 = comercio3.slice(0, 3);
 
@@ -43,7 +43,7 @@ export function FeedUser3() {
               </button>
             </Profile>
           ))}
-          
+
           <Link to="/VisualizacaoUsuario3">
             <Button className="buttonSeeMore">Veja Mais</Button>
           </Link>
@@ -52,7 +52,7 @@ export function FeedUser3() {
         <Product className="product">
           {box08.map((item) => (
             <CointanerProduct className="cointanerProduct">
-              <img src={item.img} alt="Foto do Produto" />
+              <img src={item.image} alt="Foto do Produto" />
               <h1>{item.name}</h1>
               <p>{item.price}</p>
             </CointanerProduct>

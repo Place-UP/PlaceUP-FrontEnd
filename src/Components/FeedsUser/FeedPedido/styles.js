@@ -27,7 +27,6 @@ export const Feed = styled.div`
   
     img{
       width: 90%;
-      margin: 0px 5px;
     }
     
     h1{

@@ -21,7 +21,7 @@ export function Box() {
 
 
   const { task } = useProducts()
-  const coppyArray = [...task, ...box]
+  const coppyArray = [...task, ...comercio5]
 
   return (
     <>
@@ -41,21 +41,21 @@ export function Box() {
           </div>
         </div>
         <ContWhitePart className="carousel" ref={carousel}>
-          {comercio5.map((item) => (            
-              <div className="ContainerCarousel" key={item.id}>
-                <div className="Carousel">
-                  <div className="containerIMG">
-                    <img className="image" src={item.img} alt="img" />
-                  </div>
-                  <div className="Info">
-                    <span className="Tittle"> {item.name}</span>
-                    <span className="Quant"> 400mg</span>
-                    <div className="SeparationPrices">
-                      <span className="Price">{item.price}</span>
-                    </div>
+          {comercio5.map((item) => (
+            <div className="ContainerCarousel" key={item.id}>
+              <div className="Carousel">
+                <div className="containerIMG">
+                  <img className="image" src={item.image} alt="img" />
+                </div>
+                <div className="Info">
+                  <span className="Tittle"> {item.name}</span>
+                  <span className="Quant"> 400mg</span>
+                  <div className="SeparationPrices">
+                    <span className="Price">{item.price}</span>
                   </div>
                 </div>
-              </div>            
+              </div>
+            </div>
           ))}
         </ContWhitePart>
       </Main>

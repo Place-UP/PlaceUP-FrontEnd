@@ -7,17 +7,17 @@ import { comercio1 } from "../../../mock/comercio1";
 export function FeedPedido() {
   return (
     <>
-        <Feed>
+      <Feed>
         <Product className="product">
-            {comercio1.map((item) => (
+          {comercio1.map((item) => (
             <CointanerProduct className="cointanerProduct">
-              <img src={item.img} alt="Foto do Produto" />
+              <img src={item.image} alt="Foto do Produto" />
               <h1>{item.name}</h1>
               <p>{item.price}</p>
-            </CointanerProduct>  
-            ))}          
-        </Product>                                                         
-        </Feed>
+            </CointanerProduct>
+          ))}
+        </Product>
+      </Feed>
     </>
   );
 }
