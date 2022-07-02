@@ -5,7 +5,10 @@ import { IndexCalculadora } from "./Pages/PageCalculadora/index";
 import { IndexHomeUser } from "./Pages/homeUsuario/index";
 import { HomeComerciante } from "./Pages/homeComerciante/index.jsx";
 import { Pedido } from "./Pages/pedido/index";
+import { Pedido2 } from "./Pages/pedido2/index";
+import { Pedido3 } from "./Pages/pedido3/index";
 import { Pedido4 } from "./Pages/pedido4/index";
+import { Pedido5 } from "./Pages/pedido5/index";
 import { Reservas } from "./Pages/reservas/index";
 import { LadingPage } from "./Pages/LadingPage";
 import { Politica } from "./Pages/Politica/index";
@@ -17,8 +20,14 @@ import { Institucional } from "./Pages/InstitucionalLading/index";
 import { CadastroComerciante } from "./Pages/cadastroComerciante/Index";
 import { VisualizacaoUsuario } from "./Pages/VisuLojaUsuario/index";
 import { VisualizacaoComerciante } from "./Pages/VisuLojaComerciante/index";
+import { VisualizacaoUsuario2 } from "./Pages/VisuLojaUsuario2/index";
+import { VisualizacaoComerciante2 } from "./Pages/VisuLojaComerciante2/index";
+import { VisualizacaoUsuario3 } from "./Pages/VisuLojaUsuario3/index";
+import { VisualizacaoComerciante3 } from "./Pages/VisuLojaComerciante3/index";
 import { VisualizacaoUsuario4 } from "./Pages/VisuLojaUsuario4/index";
 import { VisualizacaoComerciante4 } from "./Pages/VisuLojaComerciante4/index";
+import { VisualizacaoUsuario5 } from "./Pages/VisuLojaUsuario5/index";
+import { VisualizacaoComerciante5 } from "./Pages/VisuLojaComerciante5/index";
 import { Calculator } from "./Pages/Calculadora/index";
 import { CartContextProvider } from "./Common/Context/index";
 import { Favoritos } from "./Pages/Favoritos/Index";
@@ -64,7 +73,10 @@ function Rotas() {
               <Route path="/FeedComerciante" element={<HomeComerciante />} />
               <Route path="/Reservas" element={<Reservas />} />
               <Route path="/Pedido" element={<Pedido />} />
+              <Route path="/Pedido2" element={<Pedido2 />} />
+              <Route path="/Pedido3" element={<Pedido3 />} />
               <Route path="/Pedido4" element={<Pedido4 />} />
+              <Route path="/Pedido5" element={<Pedido5 />} />
               <Route path="/Politica" element={<Politica />} />
               <Route path="/Dicas" element={<Dicas />} />
               <Route path="/FaleConosco" element={<FaleConosco />} />
@@ -79,14 +91,43 @@ function Rotas() {
                 path="/VisualizacaoComerciante"
                 element={<VisualizacaoComerciante />}
               />
+
+              <Route
+                path="/VisualizacaoUsuario2"
+                element={<VisualizacaoUsuario2 />}
+              />
+              <Route
+                path="/VisualizacaoComerciante2"
+                element={<VisualizacaoComerciante2 />}
+              />
+
+              <Route
+                path="/VisualizacaoUsuario3"
+                element={<VisualizacaoUsuario3 />}
+              />
+              <Route
+                path="/VisualizacaoComerciante3"
+                element={<VisualizacaoComerciante3 />}
+              />
+
               <Route
                 path="/VisualizacaoUsuario4"
                 element={<VisualizacaoUsuario4 />}
               />
               <Route
-                path="/VisualizacaoUsuario4"
+                path="/VisualizacaoComerciante4"
                 element={<VisualizacaoComerciante4 />}
               />
+
+              <Route
+                path="/VisualizacaoUsuario5"
+                element={<VisualizacaoUsuario5 />}
+              />
+              <Route
+                path="/VisualizacaoComerciante5"
+                element={<VisualizacaoComerciante5 />}
+              />
+
               <Route path="/DirecCadastro" element={<DirecCadastro />} />
               <Route path="/Chat" element={<ChatComerciante />} />
               <Route path="/AddProduct" element={<AddProduct />} />

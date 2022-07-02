@@ -7,15 +7,15 @@ import BalaHalls from "./comercio2/Bala Halls.jpg";
 import BalaHallsS from "./comercio2/Bala Halls.png";
 import BisExtra from "./comercio2/Bis Extra.png";
 import BolachaOreo from "./comercio2/Bolacha Oreo.png";
-import BolachãoPassaTempo from "./comercio2/Bolachão PassaTempo.png";
-import Café3corações from "./comercio2/Café 3 corações.png";
-import CaféPilão from "./comercio2/Café Pilão.png";
+import BolachaoPassaTempo from "./comercio2/Bolachão PassaTempo.png";
+import Cafe3coracoes from "./comercio2/Café 3 corações.png";
+import CafePilao from "./comercio2/Café Pilão.png";
 import Cenoura from "./comercio2/Cenoura.png";
 import ChineloHavaianas from "./comercio2/Chinelo Havaianas.jpg";
 import ChocolateLacta from "./comercio2/Chocolate Lacta.jpg";
 import CocaColaLata from "./comercio2/Coca-Cola Lata.jpg";
 import Doritos from "./comercio2/Doritos.jpg";
-import FeijãoCamil from "./comercio2/Feijão Camil.jpeg";
+import FeijaoCamil from "./comercio2/Feijão Camil.jpeg";
 import CocaGarrafa from "./comercio2/foto_original.jpg";
 import FeijaoKicaldo from "./comercio2/images.jpg";
 import LeiteJussara from "./comercio2/Leite Jussara.jpg";
@@ -33,7 +33,7 @@ import Snickers from "./comercio2/Snickers.png";
 import Tomate from "./comercio2/Tomater.jpg";
 import Traquinas from "./comercio2/Tra.png";
 import perfil from "./comercio2/perfil.jpg";
-export const Bussines = [
+export const Bussines2 = [
   {
     owner: "Caminho Supermarcado",
     pefilimg: perfil,
@@ -79,159 +79,212 @@ export const comercio2 = [
   },
   {
     id: 6,
-    name: "Bala Halls ",
-    quantidade: "1 unidade",
-    price: "R$ 2,23",
+    name: "Bala Halls Cereja ",
+    quantidade: "50 unidade",
+    price: "R$ 56.79",
     img: BalaHalls,
   },
   {
     id: 7,
-    name: "Caderno Neon 240 folhas",
+    name: "Bala Halls Black",
     quantidade: "1 unidade",
-    price: "R$ 10,57",
-    img: BalaHalls,
+    price: "R$ 2,57",
+    img: BalaHallsS,
   },
   {
     id: 8,
-    name: "Caderno Tilibras 240 folhas",
+    name: "Bix Extra",
     quantidade: "1 unidade",
-    price: "R$ 15,57",
-    img: CadernoTilibras,
+    price: "R$ 4,57",
+    img: BisExtra,
   },
   {
     id: 9,
-    name: "Kit Canetas Permanente Fabber Castell ",
-    quantidade: "4 unidade",
-    price: "R$ 15,57",
-    img: CadernaPermanente,
+    name: "Bolacha Oreo ",
+    quantidade: "1 unidade",
+    price: "R$ 3,57",
+    img: BolachaOreo,
   },
   {
     id: 10,
-    name: "Kit Canetas Permanente Fabber Castell ",
-    quantidade: "4 unidade",
-    price: "R$ 5,57",
-    img: CanetaSemiPermanenteKit,
+    name: "Bolcha passatempo ",
+    quantidade: "1 unidade",
+    price: "R$ 2,57",
+    img: BolachaoPassaTempo,
   },
   {
     id: 11,
-    name: "kit Lapis De colorir premium 24 unidades",
-    quantidade: "18 unidades",
-    price: "R$ 55,57",
-    img: CanetasPremiumFabberCastel,
+    name: "Café 3 corações",
+    quantidade: "1 unidades",
+    price: "R$ 15,57",
+    img: Cafe3coracoes,
   },
   {
     id: 12,
-    name: "Corretivo Acrilex ",
+    name: "Café Pilão ",
     quantidade: "1 unidade",
-    price: "R$ 4,57",
-
-    img: CorretivoAcrilex,
+    price: "R$ 12,57",
+    img: CafePilao,
   },
   {
     id: 13,
-    name: "Estojo Rosa Largo ",
+    name: "Cenoura ",
     quantidade: "1 unidade",
-    price: "R$ 22,57",
-
-    img: Estojo,
+    price: "R$ 5,57",
+    img: Cenoura,
   },
   {
     id: 14,
-    name: "Folha Sulfite 400 páginas ",
+    name: "Chinelo Havaianas ",
     quantidade: "1 unidade",
-    price: "R$ 9,57",
-
-    img: FolhaSulfite,
+    price: "R$ 22,57",
+    img: ChineloHavaianas,
   },
   {
     id: 15,
-    name: "Folha Sulfite 400 páginas ",
+    name: "Chocalate Lacta ",
     quantidade: "1 unidade",
-    price: "R$ 24,57",
-
-    img: FolhaSulfite,
+    price: "R$ 6,57",
+    img: ChocolateLacta,
   },
   {
     id: 16,
-    name: "Cardenos Arcos 220 folhas ",
+    name: "Coca Cola Lata 250ml ",
     quantidade: "1 unidade",
-    price: "R$ 15,57",
-
-    img: CadernorArcoIris,
+    price: "R$ 4,57",
+    img: CocaColaLata,
   },
   {
     id: 17,
-    name: "Cardenos Arcos 220 folhas ",
+    name: "Doritos ",
     quantidade: "1 unidade",
-    price: "R$ 32,57",
-
-    img: CadernorArcoIris,
+    price: "R$ 9,57",
+    img: Doritos,
   },
   {
     id: 18,
-    name: "Kit canetas basicas ",
-    quantidade: "3 unidades",
+    name: "Feijão Camil ",
+    quantidade: "1 unidades",
     price: "R$ 6,57",
-
-    img: canetaBasicaBic,
+    img: FeijaoCamil,
   },
   {
     id: 19,
-    name: "Kit Folha A4 1000 folhas ",
+    name: "Coca Cola Garrafa 2L ",
     quantidade: "1 unidade",
-    price: "R$ 36,57",
-
-    img: kitFolhaA4,
+    price: "R$ 8,57",
+    img: CocaGarrafa,
   },
   {
     id: 20,
-    name: "Kit Canetas Metalizadas 17 lápis ",
+    name: "Feijão Kicaldo ",
     quantidade: "1 unidade",
-    price: "R$ 80,57",
-    img: KitProducaoCanetasMetalicas,
+    price: "R$ 7,57",
+    img: FeijaoKicaldo,
   },
   {
     id: 21,
-    name: "Kit canetas basicas ",
-    quantidade: "3 unidades",
-    price: "R$ 5,57",
-    img: canetaBasicaBic,
+    name: "Leite Jussara 1L ",
+    quantidade: "1 unidades",
+    price: "R$ 4,57",
+    img: LeiteJussara,
   },
   {
     id: 22,
-    name: "Kit para caneta 0.7mm ",
-    quantidade: "3 unidades",
-    price: "R$ 44,57",
-    img: KitStabiloFabberCastel,
+    name: "Margarina Doriana ",
+    quantidade: "1 unidades",
+    price: "R$ 3,57",
+    img: MargarinaDoriana,
   },
   {
     id: 23,
-    name: "Lapis bic  ",
+    name: "Molho de Tomate Pomarola ",
     quantidade: "1 unidade",
     price: "R$ 1,57",
-    img: LapisBic,
+    img: MolhodetomatePomarola,
   },
   {
     id: 24,
-    name: "Lapis Grip Fabber Castell  ",
+    name: "Óleo Soya 1L  ",
     quantidade: "1 unidade",
     price: "R$ 1,57",
-    img: LapisGrip,
+    img: OleoSoya,
   },
   {
     id: 25,
-    name: "Tinta Guache",
+    name: "Pepsi Lata 250ml",
     quantidade: "1 unidade",
-    price: "R$ 11,57",
-
-    img: TintaGuache,
+    price: "R$ 3,57",
+    img: PepsiLata,
+  },
+  {
+    id: 26,
+    name: "Pepsi Garrafa 2L",
+    quantidade: "1 unidade",
+    price: "R$ 6,57",
+    img: Pespsi1L,
+  },
+  {
+    id: 27,
+    name: "Pepsi Garrafa 2L",
+    quantidade: "1 unidade",
+    price: "R$ 6,57",
+    img: Pespsi1L,
   },
   {
     id: 28,
-    name: "Tinta Para impressora",
+    name: "Salgadinho Cebolitos",
     quantidade: "1 unidade",
-    price: "R$ 61,57",
-
-    img: TintaParacartucho,
+    price: "R$ 2,57",
+    img: SalgadinhoCebolitos,
+  },
+  {
+    id: 29,
+    name: "Salgadinho Cheetes Queijo Cheedar",
+    quantidade: "1 unidade",
+    price: "R$ 4,57",
+    img: SalgadinhoCheetosQueijoCheedar,
+  },
+    {
+    id: 30,
+    name: "Salgadinho Ruffles",
+    quantidade: "1 unidade",
+    price: "R$ 4,57",
+    img: SalgadinhoRuffles,
+  },
+    {
+    id: 31,
+    name: "Salgadinho Cheetes Queijo",
+    quantidade: "1 unidade",
+    price: "R$ 4,57",
+    img: SalgadinhoscheetosQueijo,
+  },
+  {
+    id: 32,
+    name: "Salgadinho Cheetes Requeijão",
+    quantidade: "1 unidade",
+    price: "R$ 4,57",
+    img: SalgadinhosCheetosRequeijão,
+  },
+  {
+    id: 33,
+    name: "Chocolate Sneackers",
+    quantidade: "1 unidade",
+    price: "R$ 2,57",
+    img: Snickers,
+  },
+      {
+    id: 34,
+    name: "Tomate",
+    quantidade: "1 unidade",
+    price: "R$ 4,57",
+    img: Tomate,
+  },
+  {
+    id: 35,
+    name: "Traquinas",
+    quantidade: "1 unidade",
+    price: "R$ 2,57",
+    img: Traquinas,
   },
 ];
