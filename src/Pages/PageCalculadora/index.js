@@ -26,7 +26,7 @@ export function IndexCalculadora() {
                 <br /> a gente!
               </h1>
               <p>Calcular um produto nunca foi tão fácil.</p>
-              <Link to="">
+              <Link to="/calcular">
                 <button>Voltar para a calculadora</button>
               </Link>
             </div>
