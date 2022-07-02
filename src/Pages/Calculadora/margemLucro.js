@@ -7,7 +7,8 @@ export default function Lucros(props) {
       <InputArea>
         <p> Margem de lucro desejada:*</p>
         <input
-          type="number"
+          type="text"
+          maxLength="10"
           placeholder="Digite aqui %"
           value={props.lucro}
           onChange={(entrada) => {

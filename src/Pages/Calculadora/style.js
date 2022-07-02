@@ -26,6 +26,7 @@ export const Main = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
     margin: auto;
     ${Media.Tablet} {
       justify-content: center;
@@ -384,6 +385,10 @@ export const ButtonStyle = styled.button`
   box-shadow: 9px 27px 20px rgb(0 0 0 / 10%);
   border-radius: 19px;
   height: 50px;
+  .btn {
+    width: 2000px;
+    padding: 10px 20px;
+  }
   ${Media.Laptop} {
     width: 180px;
   }
