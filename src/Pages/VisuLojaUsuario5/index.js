@@ -2,7 +2,7 @@ import { Main } from "./style";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { BarraBusca } from "../../Components/BarraDePesquisa/index";
 import { Box } from "../../Components/VisualizacaoUsuarioBox5/index";
-import { MenuPrincipal } from "../../Components/NavVisualizacaoComerciante5/index";
+import { MenuPrincipal } from "../../Components/NavVisualizacaoUsuario5/index";
 
 export function VisualizacaoUsuario5() {
     return (

@@ -36,21 +36,21 @@ export const comercio1 = [
     name: "Kit apontadores coloridos",
     quantidade: "6 unidades",
     price: "R$ 12,00",
-    img: Apontador,
+    image: Apontador,
   },
   {
     id: 2,
     name: "Borracha Escolar Mercur",
     quantidade: "1 unidade",
     price: "R$ 2,50",
-    img: Borracha,
+    image: Borracha,
   },
   {
     id: 3,
     name: "Borracha Fabber Castell escura",
     quantidade: "1 unidade",
     price: "R$ 3,50",
-    img: BorrachaFabberCastel,
+    image: BorrachaFabberCastel,
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ export const comercio1 = [
     quantidade: "1 unidade",
     price: "R$ 15,87",
 
-    img: CadernoColoridoAnotacao,
+    image: CadernoColoridoAnotacao,
   },
   {
     id: 5,
@@ -66,49 +66,49 @@ export const comercio1 = [
     quantidade: "1 unidade",
     price: "R$ 22,87",
 
-    img: CadernoCachorro,
+    image: CadernoCachorro,
   },
   {
     id: 6,
     name: "Caderno de Anotação 80 folhas ",
     quantidade: "1 unidade",
     price: "R$ 8,23",
-    img: CadernoAnotacao,
+    image: CadernoAnotacao,
   },
   {
     id: 7,
     name: "Caderno Neon 240 folhas",
     quantidade: "1 unidade",
     price: "R$ 10,57",
-    img: CadernoNeon,
+    image: CadernoNeon,
   },
   {
     id: 8,
     name: "Caderno Tilibras 240 folhas",
     quantidade: "1 unidade",
     price: "R$ 15,57",
-    img: CadernoTilibras,
+    image: CadernoTilibras,
   },
   {
     id: 9,
     name: "Kit Canetas Permanente Fabber Castell ",
     quantidade: "4 unidade",
     price: "R$ 15,57",
-    img: CadernaPermanente,
+    image: CadernaPermanente,
   },
   {
     id: 10,
     name: "Kit Canetas Permanente Fabber Castell ",
     quantidade: "4 unidade",
     price: "R$ 5,57",
-    img: CanetaSemiPermanenteKit,
+    image: CanetaSemiPermanenteKit,
   },
   {
     id: 11,
     name: "kit Lapis De colorir premium 24 unidades",
     quantidade: "18 unidades",
     price: "R$ 55,57",
-    img: CanetasPremiumFabberCastel,
+    image: CanetasPremiumFabberCastel,
   },
   {
     id: 12,
@@ -116,15 +116,14 @@ export const comercio1 = [
     quantidade: "1 unidade",
     price: "R$ 4,57",
 
-    img: CorretivoAcrilex,
+    image: CorretivoAcrilex,
   },
   {
     id: 13,
     name: "Estojo Rosa Largo ",
     quantidade: "1 unidade",
     price: "R$ 22,57",
-
-    img: Estojo,
+    image: Estojo,
   },
   {
     id: 14,
@@ -132,7 +131,7 @@ export const comercio1 = [
     quantidade: "1 unidade",
     price: "R$ 9,57",
 
-    img: FolhaSulfite,
+    image: FolhaSulfite,
   },
   {
     id: 15,
@@ -140,7 +139,7 @@ export const comercio1 = [
     quantidade: "1 unidade",
     price: "R$ 24,57",
 
-    img: FolhaSulfite,
+    image: FolhaSulfite,
   },
   {
     id: 16,
@@ -148,7 +147,7 @@ export const comercio1 = [
     quantidade: "1 unidade",
     price: "R$ 15,57",
 
-    img: CadernorArcoIris,
+    image: CadernorArcoIris,
   },
   {
     id: 17,
@@ -156,7 +155,7 @@ export const comercio1 = [
     quantidade: "1 unidade",
     price: "R$ 32,57",
 
-    img: CadernorArcoIris,
+    image: CadernorArcoIris,
   },
   {
     id: 18,
@@ -164,7 +163,7 @@ export const comercio1 = [
     quantidade: "3 unidades",
     price: "R$ 6,57",
 
-    img: canetaBasicaBic,
+    image: canetaBasicaBic,
   },
   {
     id: 19,
@@ -172,42 +171,42 @@ export const comercio1 = [
     quantidade: "1 unidade",
     price: "R$ 36,57",
 
-    img: kitFolhaA4,
+    image: kitFolhaA4,
   },
   {
     id: 20,
     name: "Kit Canetas Metalizadas 17 lápis ",
     quantidade: "1 unidade",
     price: "R$ 80,57",
-    img: KitProducaoCanetasMetalicas,
+    image: KitProducaoCanetasMetalicas,
   },
   {
     id: 21,
     name: "Kit canetas basicas ",
     quantidade: "3 unidades",
     price: "R$ 5,57",
-    img: canetaBasicaBic,
+    image: canetaBasicaBic,
   },
   {
     id: 22,
     name: "Kit para caneta 0.7mm ",
     quantidade: "3 unidades",
     price: "R$ 44,57",
-    img: KitStabiloFabberCastel,
+    image: KitStabiloFabberCastel,
   },
   {
     id: 23,
     name: "Lapis bic  ",
     quantidade: "1 unidade",
     price: "R$ 1,57",
-    img: LapisBic,
+    image: LapisBic,
   },
   {
     id: 24,
     name: "Lapis Grip Fabber Castell  ",
     quantidade: "1 unidade",
     price: "R$ 1,57",
-    img: LapisGrip,
+    image: LapisGrip,
   },
   {
     id: 25,
@@ -215,7 +214,7 @@ export const comercio1 = [
     quantidade: "1 unidade",
     price: "R$ 11,57",
 
-    img: TintaGuache,
+    image: TintaGuache,
   },
   {
     id: 28,
@@ -223,6 +222,6 @@ export const comercio1 = [
     quantidade: "1 unidade",
     price: "R$ 61,57",
 
-    img: TintaParacartucho,
+    image: TintaParacartucho,
   },
 ];

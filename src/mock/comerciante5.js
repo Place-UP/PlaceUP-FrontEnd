@@ -25,21 +25,21 @@ export const comercio5 = [
     name: "Bix Extra",
     quantidade: "1 unidade",
     price: "R$ 3,50",
-    img: bisExtra,
+    image: bisExtra,
   },
   {
     id: 2,
     name: "Bala fini amoras",
     quantidade: "1 unidade",
     price: "R$ 15,50",
-    img: finiAmoras,
+    image: finiAmoras,
   },
   {
     id: 3,
     name: "Bala fini beijos",
     quantidade: "1 unidade",
     price: "R$ 13,50",
-    img: finiBeijos,
+    image: finiBeijos,
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const comercio5 = [
     quantidade: "1 unidade",
     price: "R$ 8,87",
 
-    img: finiDentaduras,
+    image: finiDentaduras,
   },
   {
     id: 5,
@@ -55,49 +55,49 @@ export const comercio5 = [
     quantidade: "1 unidade",
     price: "R$ 10,87",
 
-    img: finiMinhocas,
+    image: finiMinhocas,
   },
   {
     id: 6,
     name: "bala fini tubes ",
     quantidade: "1 unidade",
     price: "R$ 2,23",
-    img: finiTubes,
+    image: finiTubes,
   },
   {
     id: 7,
     name: "Bala fini Ursinhos",
     quantidade: "1 unidade",
     price: "R$ 10,57",
-    img: finiUrsinhos,
+    image: finiUrsinhos,
   },
   {
     id: 8,
     name: "Chocolate galak",
     quantidade: "1 unidade",
     price: "R$ 15,57",
-    img: galak,
+    image: galak,
   },
   {
     id: 9,
     name: "Chocolate garoto ao leite ",
     quantidade: "4 unidade",
     price: "R$ 15,57",
-    img: garoroAoLeite,
+    image: garoroAoLeite,
   },
   {
     id: 10,
     name: "Chocolate kit kat dark ",
     quantidade: "4 unidade",
     price: "R$ 5,57",
-    img: kitKatDark,
+    image: kitKatDark,
   },
   {
     id: 11,
     name: "Kit kat white",
     quantidade: "18 unidades",
     price: "R$ 55,57",
-    img: kitKatWhite,
+    image: kitKatWhite,
   },
   {
     id: 12,
@@ -105,7 +105,7 @@ export const comercio5 = [
     quantidade: "1 unidade",
     price: "R$ 4,57",
 
-    img: lactaOreo,
+    image: lactaOreo,
   },
   {
     id: 13,
@@ -113,7 +113,7 @@ export const comercio5 = [
     quantidade: "1 unidade",
     price: "R$ 22,57",
 
-    img: plutonitaAtomic,
+    image: plutonitaAtomic,
   },
   {
     id: 14,
@@ -121,6 +121,6 @@ export const comercio5 = [
     quantidade: "1 unidade",
     price: "R$ 9,57",
 
-    img: plutonitaZumbis,
+    image: plutonitaZumbis,
   },
 ];

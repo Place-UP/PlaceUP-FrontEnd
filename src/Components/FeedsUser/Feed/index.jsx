@@ -23,8 +23,6 @@ export function FeedUser() {
     disfavor.classList.toggle("active");
   }
 
-  const comercio = comercio1;
-
   const box08 = comercio1.slice(0, 3);
 
   return (
@@ -45,7 +43,7 @@ export function FeedUser() {
               </button>
             </Profile>
           ))}
-          
+
           <Link to="/VisualizacaoUsuario">
             <Button className="buttonSeeMore">Veja Mais</Button>
           </Link>
@@ -54,7 +52,7 @@ export function FeedUser() {
         <Product className="product">
           {box08.map((item) => (
             <CointanerProduct className="cointanerProduct">
-              <img src={item.img} alt="Foto do Produto" />
+              <img src={item.image} alt="Foto do Produto" />
               <h1>{item.name}</h1>
               <p>{item.price}</p>
             </CointanerProduct>

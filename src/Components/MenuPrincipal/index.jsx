@@ -14,6 +14,10 @@ import {
 import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
 import Calendar from "react-calendar";
 import { Bussines } from "../../mock/comercio1";
+import { Bussines2 } from "../../mock/comercio2";
+import { Bussines3 } from "../../mock/comercio3";
+import { Bussines4 } from "../../mock/comercio4";
+import { Bussines5 } from "../../mock/comerciante5";
 
 export function MenuPrincipal() {
   function menuHamburger() {
@@ -64,22 +68,33 @@ export function MenuPrincipal() {
               </ProfileSuggestions>
             ))}
             
-            <ProfileSuggestions>
-              <img src={perfil} alt="Foto de Perfil" />
-              <h2>Name Market</h2>
-            </ProfileSuggestions>
-            <ProfileSuggestions>
-              <img src={perfil} alt="Foto de Perfil" />
-              <h2>Name Market</h2>
-            </ProfileSuggestions>
-            <ProfileSuggestions>
-              <img src={perfil} alt="Foto de Perfil" />
-              <h2>Name Market</h2>
-            </ProfileSuggestions>
-            <ProfileSuggestions>
-              <img src={perfil} alt="Foto de Perfil" />
-              <h2>Name Market</h2>
-            </ProfileSuggestions>
+            {Bussines2.map((item) => (
+              <ProfileSuggestions>
+                <img src={item.pefilimg} alt="Foto de Perfil" />
+                <h2>{item.owner}</h2>
+              </ProfileSuggestions>
+            ))}
+
+            {Bussines4.map((item) => (
+              <ProfileSuggestions>
+                <img src={item.pefilimg} alt="Foto de Perfil" />
+                <h2>{item.owner}</h2>
+              </ProfileSuggestions>
+            ))}
+
+            {Bussines5.map((item) => (
+              <ProfileSuggestions>
+                <img src={item.pefilimg} alt="Foto de Perfil" />
+                <h2>{item.owner}</h2>
+              </ProfileSuggestions>
+            ))}
+
+            {Bussines3.map((item) => (
+              <ProfileSuggestions>
+                <img src={item.pefilimg} alt="Foto de Perfil" />
+                <h2>{item.owner}</h2>
+              </ProfileSuggestions>
+            ))}
           </Suggestions>
         </div>
 
@@ -123,27 +138,35 @@ export function MenuPrincipal() {
                           <img src={item.pefilimg} alt="Foto de Perfil" />
                           <h2>{item.owner}</h2>
                         </ProfileSuggestions>
-                      ))}                     
+                      ))}
+                      
+                      {Bussines2.map((item) => (
+                        <ProfileSuggestions>
+                          <img src={item.pefilimg} alt="Foto de Perfil" />
+                          <h2>{item.owner}</h2>
+                        </ProfileSuggestions>
+                      ))}
 
-                      <ProfileSuggestions>
-                        <img src={perfil} alt="Foto de Perfil" />
-                        <h2>Name Market</h2>
-                      </ProfileSuggestions>
+                      {Bussines4.map((item) => (
+                        <ProfileSuggestions>
+                          <img src={item.pefilimg} alt="Foto de Perfil" />
+                          <h2>{item.owner}</h2>
+                        </ProfileSuggestions>
+                      ))}
 
-                      <ProfileSuggestions>
-                        <img src={perfil} alt="Foto de Perfil" />
-                        <h2>Name Market</h2>
-                      </ProfileSuggestions>
+                      {Bussines5.map((item) => (
+                        <ProfileSuggestions>
+                          <img src={item.pefilimg} alt="Foto de Perfil" />
+                          <h2>{item.owner}</h2>
+                        </ProfileSuggestions>
+                      ))}
 
-                      <ProfileSuggestions>
-                        <img src={perfil} alt="Foto de Perfil" />
-                        <h2>Name Market</h2>
-                      </ProfileSuggestions>
-
-                      <ProfileSuggestions>
-                        <img src={perfil} alt="Foto de Perfil" />
-                        <h2>Name Market</h2>
-                      </ProfileSuggestions>
+                      {Bussines3.map((item) => (
+                        <ProfileSuggestions>
+                          <img src={item.pefilimg} alt="Foto de Perfil" />
+                          <h2>{item.owner}</h2>
+                        </ProfileSuggestions>
+                      ))}
                     </Suggestions>
                   </div>
                 </Section>

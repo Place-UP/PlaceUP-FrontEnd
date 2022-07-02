@@ -9,7 +9,7 @@ import { AiOutlineClockCircle, AiOutlineStar } from "react-icons/ai";
 import { MdOutlinePlace } from "react-icons/md";
 import { Section, Profile, DarkMode } from "./styles";
 import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
-import { Bussines } from "../../mock/comerciante5";
+import { Bussines5 } from "../../mock/comerciante5";
 
 export function MenuPrincipal() {
   function menuHamburger() {
@@ -41,7 +41,7 @@ export function MenuPrincipal() {
         
         <div className="ContainerPlace">
 
-          {Bussines.map((item) => (
+          {Bussines5.map((item) => (
           <div className="PlaceArea">
             <img className="ImageLogoPlace" src={item.pefilimg} alt=".." />
             <h1>{item.owner}</h1>
@@ -113,7 +113,7 @@ export function MenuPrincipal() {
                       <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />
                       <label for="toggle"></label>
                     </DarkMode>
-                    {Bussines.map((item) => (
+                    {Bussines5.map((item) => (
                       <div className="PlaceArea">
                         <img className="ImageLogoPlace" src={item.pefilimg} alt=".." />
                         <h1>{item.owner}</h1>

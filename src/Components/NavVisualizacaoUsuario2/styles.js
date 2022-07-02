@@ -93,7 +93,8 @@ export const Section = styled.section`
       img {
         max-width: 150px;
         display: block;
-        margin: auto;
+        margin: auto; 
+        border-radius: 50%;
         margin-top: 20px;
       }
       h1 {

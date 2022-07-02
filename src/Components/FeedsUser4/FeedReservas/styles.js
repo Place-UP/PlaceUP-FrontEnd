@@ -151,7 +151,7 @@ export const CointanerProduct = styled.div`
   
   img{
     width: 90%;
-    max-width: 400px;
+    max-width: 400px;    
     border-radius: 20px;
     padding: 10px 2%;
   }
