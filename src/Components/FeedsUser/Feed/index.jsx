@@ -3,6 +3,7 @@ import './styles'
 import supermarket from "./images/market.png";
 import { AiFillHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { box } from '../../../mock/boxVisalizer';
 import { Feed, Profile, ContainerProfile, Button, Product, CointanerProduct } from "./styles";
 import axios from "axios";
 
@@ -37,7 +38,7 @@ export function FeedUser() {
 
   },[]);
 
-  const copiaArray = product.slice(0,3);
+  const box08 = box.slice(0,3);
 
   return (
     <>
@@ -49,16 +50,14 @@ export function FeedUser() {
                     <button className="disfavor"><AiFillHeart alt="Favorito" className="favorite" onClick={colorFavorite} /></button>
                 </Profile>
                 
-                <Link
-                to="/VisualizacaoUsuario"                
-                ><Button className="buttonSeeMore">Veja Mais</Button></Link>
+                <Link to="/VisualizacaoUsuario"><Button className="buttonSeeMore">Veja Mais</Button></Link>
             </ContainerProfile> 
 
             <Product className="product">
-                {copiaArray.map((item) => (                    
+                {box08.map((item) => (                    
                     <CointanerProduct className="cointanerProduct">
-                        <img src={item.imageLink} alt="Foto do Produto" />
-                        <h1>{item.description}</h1>
+                        <img src={item.image} alt="Foto do Produto" />
+                        <h1>{item.name}</h1>
                         <p>R$ {item.price}</p>
                     </CointanerProduct> 
                 ))};
