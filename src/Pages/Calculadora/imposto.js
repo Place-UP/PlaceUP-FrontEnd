@@ -6,7 +6,8 @@ export default function Imposto(props) {
       <InputArea>
         <p>Imposto pago mensalmente/anualmente: *</p>
         <input
-          type="number"
+          type="text"
+          maxLength="10"
           placeholder="Digite aqui %"
           value={props.imposto}
           onChange={(entrada) => {

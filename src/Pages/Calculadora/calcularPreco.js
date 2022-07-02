@@ -24,6 +24,9 @@ export default function Calcular(props) {
   console.log(Markup);
   function calc() {
     props.setResultado(Markup * TotalPreco + TotalPreco);
+    if (calculoPorcentagem >= 87) {
+      props.setResultado("A porcentagem inserida é inválida");
+    }
   }
 
   return (

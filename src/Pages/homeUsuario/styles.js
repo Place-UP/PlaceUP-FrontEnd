@@ -8,6 +8,7 @@ const media = {
 
 export const Main = styled.div`
   background-color: ${({ theme }) => theme.body};
+  
 
   ${media.Tablet} {   margin-left: 6%;   }  
 
@@ -211,6 +212,7 @@ export const ContainerSearch = styled.div`
 export const Filter = styled.div`
   width: 100%;  
   margin: 30px auto;
+  font-family: Lato;
 
   select {
     width: 150px;
@@ -226,9 +228,12 @@ export const Filter = styled.div`
     width: 150px;
     height: 40px;
     padding: 0px 4px;
-    margin: 10px auto 10px 0px;
+    margin: 10px auto 10px 20px;
     border-radius: 20px;
   }
+
+  ${media.Tablet} {
+    select:nth-child(2) {   margin: 10px auto 10px 0px;    }
 
   ${media.MobileM} {
     select {
@@ -236,8 +241,9 @@ export const Filter = styled.div`
       height: 40px;
       padding: 0px 4px;
       margin: 10px auto;
-      border-radius: 20px;
+      border-radius: 20px;      
     }
+    
     margin-right: auto;
     margin-left: 5%;
   }
@@ -247,10 +253,11 @@ export const Category = styled.div`
   width: 60%;
   padding: 30px 0 30px 12%;
 
-  h1 {
+  .categoryTitle {
     font-weight: 800;
     font-family: "Bakbak One", cursive;
     color: ${({ theme }) => theme.fontColor};
+    font-size: 33px;
 
     ${media.Tablet} { font-size: 31px; }  
 
@@ -307,13 +314,14 @@ export const Category = styled.div`
 `;
 
 export const FilterCategory = styled.div`
-  width: 180px;
-  height: 100%;
+  width: 190px;
+  height: 180px;
   border-radius: 8px;
   text-align: center;
   background-color: ${(props) => props.primary};
 
   img {
+    margin-top: 10px;
     width: 100%;
     height: 100%;
   }

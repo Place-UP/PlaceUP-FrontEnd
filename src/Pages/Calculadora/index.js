@@ -1,5 +1,6 @@
 import { Main, InputArea, ButtonStyle, Conatiner } from "./style";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Preco from "./preco";
 import Imposto from "./imposto";
 import Calcular from "./calcularPreco";
@@ -19,8 +20,7 @@ export function Calculator() {
   const [adicional, setadicional] = useState("");
   const [adicionalPorcentagem, setadicionalPorcentagem] = useState("");
   const [Product, setProduct] = useState("");
-  const [unidade, setUnidade] = useState("");
-
+  const [unidade, setUnidade] = useState(1);
   const formatter = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
@@ -32,7 +32,7 @@ export function Calculator() {
     setlucro("");
     setadicional("");
     setadicionalPorcentagem("");
-    setUnidade("");
+    setUnidade(1);
   }
   const formatterPorcent = new Intl.NumberFormat("pt-BR", {});
 
@@ -57,12 +57,18 @@ export function Calculator() {
 
                   <input
                     type="text"
+                    maxLength="16"
                     value={Product}
                     placeholder="Nome do produto"
                     onChange={(entrada) => {
                       setProduct(entrada.target.value);
                     }}
                   />
+                  <Link to="/calculadora">
+                    <ButtonStyle className="btn">
+                      <p>Aprenda a usar a calculadora </p>
+                    </ButtonStyle>
+                  </Link>
                 </InputArea>
                 <Imposto imposto={imposto} setImpostos={setImposto} />
                 <Lucros lucro={lucro} setlucros={setlucro} />
@@ -115,6 +121,11 @@ export function Calculator() {
                       : result.toLocaleString("pt-BR", {
                           style: "currency",
                           currency: "BRL",
+                        }) && adicional == ""
+                      ? "Parametro invalido"
+                      : result.toLocaleString("pt-BR", {
+                          style: "currency",
+                          currency: "BRL",
                         })
                   }
                 />
@@ -122,9 +133,13 @@ export function Calculator() {
                 <span>
                   Valor unitário:{" "}
                   {!(result / unidade)
-                    ? ""
+                    ? "" && 0
+                    : formatter.format(result / unidade) &&
+                      unidade / result === 0
+                    ? "valor zerado"
                     : formatter.format(result / unidade)}
                 </span>
+
                 <div className="buttonContainer">
                   <ButtonStyle onClick={del}>
                     <p>Redefinir</p>
