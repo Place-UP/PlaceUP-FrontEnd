@@ -26,7 +26,7 @@ export function FeedReservas5() {
                 </Profile>
                 ))}
                 <Link
-                to="/Pedido4"                
+                to="/Pedido5"                
                 ><Button className="buttonSeeMore">Veja Lista</Button></Link>
             </ContainerProfile> 
                  

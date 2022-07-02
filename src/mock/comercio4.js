@@ -22,7 +22,6 @@ import paracetamol from "./comercio4/paracetamol.png";
 import bandAid from "./comercio4/bandAid.png";
 import saboneteDove from "./comercio4/sabonete.jpg";
 import xaropeVick from "./comercio4/Xarope.jpg";
-
 import imgPerfil from "./comercio4/drogariaVidaNova.jpg";
 
 export const Bussines4 = [

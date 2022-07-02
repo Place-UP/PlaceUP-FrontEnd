@@ -1,9 +1,13 @@
 import React from "react";
 import { useState } from "react";
-import { box } from "../../mock/boxVisalizer";
+import { comercio6 } from "../../mock/comercio6";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/FeedsUser/Feed/index";
+import { FeedUser2 } from "../../Components/FeedsUser2/Feed/index";
+import { FeedUser3 } from "../../Components/FeedsUser3/Feed/index";
 import { FeedUser4 } from "../../Components/FeedsUser4/Feed/index";
+import { FeedUser5 } from "../../Components/FeedsUser5/Feed/index";
+import { FeedUser6 } from "../../Components/FeedsUser6/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import * as C from "./styles";
@@ -16,7 +20,7 @@ export function IndexHomeUser() {
 
   const search = () => {
     if (!query) return [];
-    return box.filter(
+    return comercio6.filter(
       (item) =>
         item.name
           .toLowerCase()
@@ -103,8 +107,12 @@ export function IndexHomeUser() {
           </div>
         </C.Category>
 
-        <FeedUser className="feed" />
+        <FeedUser   />
+        <FeedUser5  />
+        <FeedUser3  />
         <FeedUser4  />
+        <FeedUser2  />        
+        <FeedUser6  />
       </C.Main>
     </>
   );

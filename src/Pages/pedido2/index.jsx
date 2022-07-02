@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedPedido2 } from "../../Components/FeedsUser2/FeedPedido/index";
-import { MenuPedido } from "../../Components/MenuPedido/index";
+import { MenuPedido2 } from "../../Components/MenuPedido2/index";
 import { Home, Category } from "./styles";
 
 export function Pedido2() {
@@ -9,7 +9,7 @@ export function Pedido2() {
     <>
       <Header />
       <Home>
-        <MenuPedido />
+        <MenuPedido2 />
 
         <Category>
           <h1>LISTA DO PEDIDO #0690590</h1>

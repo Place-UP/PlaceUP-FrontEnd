@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import { Section, Profile, DarkMode, ContainerCalendar, Evaluation, ProfileSuggestion } from "./styles";
 import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
 import Calendar from 'react-calendar';
+import { Bussines } from "../../mock/comercio1";
+
 
 export function MenuPedido() {
 
@@ -26,10 +28,10 @@ export function MenuPedido() {
       <Section>
         <div className="mainMenu">
             <Profile>
-              <div className="profile">
-              <Link to="/Perfil" className="link">
+              <div className="profile">                
+                <Link to="/Perfil" className="link">
                 <img src={perfil} alt="Foto de Perfil" />
-                <h1>Name User</h1></Link>
+                <h1>Name User</h1></Link>  
                 <IoIosExit className="iconExit"/>
               </div>
             </Profile>
@@ -43,9 +45,11 @@ export function MenuPedido() {
                 <Calendar onChange={onChange} value={value} className="calendar" />
             </ContainerCalendar>
 
+            {Bussines.map((item) => (
             <Evaluation>
-                <img src={supermarket} alt="Foto do Comerciante"></img>
-                <h1>Pedido #0690590  - <span>CONCLUÍDO</span></h1>
+              
+                <img src={item.pefilimg} alt="Foto do Comerciante"></img>
+                <h1>Pedido #0690590  - <span>PENDENTE</span></h1>
                 <p>25/04/2022 - 11:00h</p>
                 <p>TOTAL - R$ 300,00</p>
                 <ProfileSuggestion>
@@ -54,6 +58,7 @@ export function MenuPedido() {
                   <input type="submit"></input>
                 </ProfileSuggestion>                
             </Evaluation>
+            ))}  
         </div>  
 
           <div class="mobile">
@@ -80,9 +85,11 @@ export function MenuPedido() {
                             <Calendar onChange={onChange} value={value} className="calendar" />
                           </ContainerCalendar>
 
+                          {Bussines.map((item) => (
                           <Evaluation>
-                              <img src={supermarket} alt="Foto do Comerciante"></img>
-                              <h1>Pedido #0690590  - <span>CONCLUÍDO</span></h1>
+                            
+                              <img src={item.pefilimg} alt="Foto do Comerciante"></img>
+                              <h1>Pedido #0690590  - <span>PENDENTE</span></h1>
                               <p>25/04/2022 - 11:00h</p>
                               <p>TOTAL - R$ 300,00</p>
                               <ProfileSuggestion>
@@ -91,6 +98,7 @@ export function MenuPedido() {
                                 <input type="submit"></input>
                               </ProfileSuggestion>                
                           </Evaluation>
+                          ))}  
 
                           <div class="bottomContainer"></div>
                       </div>  

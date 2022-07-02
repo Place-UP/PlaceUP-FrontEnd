@@ -112,6 +112,7 @@ export const Section = styled.section`
       img {
         max-width: 150px;
         display: block;
+        border-radius: 50%;
         margin: auto;
         margin-top: 20px;
       }

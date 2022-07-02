@@ -72,10 +72,8 @@ export const CointanerProduct = styled.div`
     width: 90%;
     max-width: 400px;
     max-height: 400px;
-    min-width: 380px;
-    min-height: 380px;
     object-fit: contain;
-    border-radius: 20px;    
+    border-radius: 30px;    
     padding: 10px 6%;
   }
 

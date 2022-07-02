@@ -2,7 +2,7 @@ import { SearchBar, Container, Main, Carrinho, Filter, BoxCarrinho } from "./sty
 
 import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineClose } from "react-icons/ai";
 
-import { box } from "../../mock/boxVisalizer";
+import { comercio6 } from "../../mock/comercio6";
 import React, { useContext, useState } from "react";
 import { CartContext } from "../../Common/Context";
 import { BoxCart, Txt } from "./styleCart";
@@ -14,7 +14,7 @@ export function BarraBusca() {
 
   const search = () => {
     if (!query) return [];
-    return box.filter(
+    return comercio6.filter(
       (item) =>
         item.name.toLowerCase().normalize("NFD").replace(/[^a-zA-Zs]/g, "").includes(query) ||
         item.price.includes(query)
