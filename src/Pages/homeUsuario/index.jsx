@@ -3,6 +3,7 @@ import { useState } from "react";
 import { box } from "../../mock/boxVisalizer";
 import { Header } from "../../Components/HeaderUsuario/HeaderUser";
 import { FeedUser } from "../../Components/FeedsUser/Feed/index";
+import { FeedUser4 } from "../../Components/FeedsUser4/Feed/index";
 import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import * as C from "./styles";
@@ -103,6 +104,7 @@ export function IndexHomeUser() {
         </C.Category>
 
         <FeedUser className="feed" />
+        <FeedUser4  />
       </C.Main>
     </>
   );

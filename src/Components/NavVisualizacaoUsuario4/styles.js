@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from './../../mock/CardsInstitucional';
 
 const media = {
   Tablet: "@media(max-width: 935px)",
@@ -7,16 +6,16 @@ const media = {
 };
 
 export const Section = styled.section`
-  .mainMenu {
+  .mainMenu{
     position: fixed;
     right: 0pt;
-    width: 20%;
+    max-width: 400px;
+    width: 23%;
     height: 100vh;
+    background-color: ${({ theme }) => theme.barRight};
     margin: auto;
     transition: width 0.5s;
-    padding-top: 30px;
-
-    background-color: ${({ theme }) => theme.barRight};
+    padding-top: 30px; 
   }
 
   .mainMenu-Mobile{
@@ -56,28 +55,15 @@ export const Section = styled.section`
     background-color: ${({ theme }) => theme.fontColor};
   }
 
-  .bar:nth-child(1){
-    position: fixed;    
-    margin: 5px auto auto -20px;
-  }
-
-  .bar:nth-child(2){
-    position: fixed;
-    margin: 15px auto auto -20px;
-  }
-
-  .bar:nth-child(3){
-    position: fixed;
-    margin: 25px auto auto -20px;
-  }
-
   .ContainerPlace {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: ${({ theme }) => theme.barRight};
     margin: auto;
-    margin-right: 13px;
+
+    span{color: ${({ theme }) => theme.fontColor};}
 
     .DefaulConfig {
       width: 100%;
@@ -87,27 +73,22 @@ export const Section = styled.section`
       margin-top: 30px;
       gap: 10px;
 
-      span{
-        color: ${({ theme }) => theme.fontColor};
-      }
-
       p {
         font-family: "Lato";
         font-weight: 500;
-        font-size: 16px;
+        font-size: 14px;
         margin: auto;
         text-align: center;
-
         color: ${({ theme }) => theme.fontColor};
       }
 
       .IconMenu {
         height: 20px;
         width: 20px;
-
         color: ${({ theme }) => theme.fontColor};
       }
     }
+
     .PlaceArea {
       img {
         max-width: 150px;
@@ -124,13 +105,13 @@ export const Section = styled.section`
         margin-bottom: 40px;
         color: ${({ theme }) => theme.fontColor};
       }
-    }
-    .Avaliation {
-      .ImageStars {
+    }   
+    .ImageStars {
         display: block;
         margin: auto;
+        color: ${({ theme }) => theme.fontColor};
       }
-    }
+  
     .Acessible {
       p {
         color: #4fce63;
@@ -138,12 +119,12 @@ export const Section = styled.section`
     }
   }
   .SectionPlace {
+    width: 70%;
     margin-top: 30px;
     max-height: 100px;
     overflow: auto;
     direction: rtl;
     text-align: left;
-
     &::-webkit-scrollbar {
       width: 8px;
       height: 48px;
@@ -157,7 +138,6 @@ export const Section = styled.section`
       font-size: 16px;
       margin-top: 20px;
       margin-bottom: 20px;
-
       color: ${({ theme }) => theme.fontColor};
     }
   }
@@ -168,15 +148,16 @@ export const Section = styled.section`
     justify-content: center;
     margin-top: 50px;
     flex-direction: column;
-
-    h1{
-      font-family: "Lato";
-      font-weight: 600;
-      font-size: 22px;
-      color: ${({ theme }) => theme.fontColor};
-    }
   }
 
+  .TitleCorredores {
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 22px;
+
+    color: ${({ theme }) => theme.fontColor};
+  }
+ 
   ${media.Tablet} {
     .mainMenu {
       display: none;
@@ -292,7 +273,7 @@ export const Profile = styled.div`
   
       ${media.Tablet} { font-size: 18px; }  
   
-      ${media.Mobile} { font-size: 15px; }
+      ${media.Mobile} { font-size: 15px; } 
     }
   }
 
@@ -306,6 +287,7 @@ export const Profile = styled.div`
     color: ${({ theme }) => theme.fontColor};
   }
 `;
+
 
 export const DarkMode = styled.section`
   width: 100%;

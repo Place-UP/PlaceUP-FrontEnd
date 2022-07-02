@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Buttons } from '../../Pages/Perfil/style';
 
 const Media = {
   Desktop: "@media(max-width:1300px)",
@@ -17,7 +18,6 @@ export const Main = styled.main`
     background: none;
     width: 90%;
   }
-
   border-radius: 20px;
   .Offers {
     margin: 30px;
@@ -30,18 +30,16 @@ export const Main = styled.main`
       font-size: 22px;
       display: block;
       color: ${({ theme }) => theme.fontColor};
-
-      ${Media.Tablet} {
-        margin: auto;
-      }
+   
+        ${Media.Tablet} {
+          margin: auto;
+        }   
     }
-
     .scrollLeft {
       cursor: pointer;
       width: 25px;
       height: 25px;
       color: ${({ theme }) => theme.fontColor};
-
       ${Media.Tablet} {
         display: none;
       }
@@ -71,24 +69,34 @@ export const Main = styled.main`
 export const ContWhitePart = styled.div`
   margin-top: 50px;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   overflow: auto;
   scroll-behavior: smooth;
-  gap: 40px;
-
+  
   &::-webkit-scrollbar {
     display: none;
   }
-
+  .ContainerCarousel{
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    margin: 0 10px;
+    border-radius: 15px;
+  }
   .Carousel {
-    width: 90%;
+    position: relative;
+    width: 100%;
+    height: 100%;
     margin: auto;
-    flex-direction: row;
-
-    .Item {
-      position: relative;
-      overflow: auto;
+    .boxImg{
+      flex: content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .image {
+    .image{
       width: 220px;
       box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
@@ -97,38 +105,40 @@ export const ContWhitePart = styled.div`
         max-height: 220px;
         min-width: 220px;
         min-height: 220px;
-
+    }
+    }
+     .AddIcon {
+      position: absolute;
+      bottom: 30%;
+      right: 5%;
+      margin-left: 30px;
+      cursor: pointer;
+      width: 45px;
+      height: 45px;
+      background-color: #4FCE63;
+      color: #fff;
+      border-radius: 50%;
       ${Media.Tablet} {
-        width: 222px;
+        margin-left: 177px;
       }
       ${Media.MobileM} {
-        width: 172px;
+        margin-left: 120px;
       }
     }
-
     .Info {
-      margin-left: 10px;
-      margin-top: 10px;
-      width: 200px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       gap: 5px;
       ${Media.MobileM} {
         width: 140px;
       }
-
-      .SeparationPrices {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      
       .Tittle {
         font-family: "Lato";
         font-size: 15px;
         font-weight: 700;
+        padding: 10px 0;
         color: ${({ theme }) => theme.fontColor};
-
         /* ${Media.MobileM} {
           font-size: 12px;
         } */
@@ -137,25 +147,28 @@ export const ContWhitePart = styled.div`
         font-family: "Lato";
         font-style: normal;
         font-weight: 700;
+        font-size: 16px;
         color: ${({ theme }) => theme.fontColor};
-        font-size: 10px;
       }
+    }
+    .description{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
     }
     .Price {
       font-family: "Lato";
       font-style: normal;
       font-weight: 700;
-      font-size: 15px;
       color: ${({ theme }) => theme.fontColor};
     }
-
-    .OldPrice {
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 11px;
-      text-decoration: line-through;
-      color: #F43D3D;
-    }
-  }
-`;
+       .Quant {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: #7a7979;
+      }  
+`

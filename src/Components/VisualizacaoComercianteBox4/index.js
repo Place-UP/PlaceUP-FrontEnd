@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { box } from "../../mock/boxVisalizer";
 import { Main, ContWhitePart } from "./style";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import { useProducts } from './../../Common/Context/AddProduct';
+import { useProducts } from '../../Common/Context/AddProduct';
 import { axios } from 'axios';
-import { comercio1 } from "../../mock/comercio1";
+import { comercio4 } from "../../mock/comercio4";
 
 export function Box() {
 
@@ -41,7 +41,7 @@ export function Box() {
           </div>
         </div>
         <ContWhitePart className="carousel" ref={carousel}>
-          {comercio1.map((item) => (            
+          {comercio4.map((item) => (            
               <div className="ContainerCarousel" key={item.id}>
                 <div className="Carousel">
                   <div className="containerIMG">

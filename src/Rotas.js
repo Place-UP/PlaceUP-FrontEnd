@@ -5,6 +5,7 @@ import { IndexCalculadora } from "./Pages/PageCalculadora/index";
 import { IndexHomeUser } from "./Pages/homeUsuario/index";
 import { HomeComerciante } from "./Pages/homeComerciante/index.jsx";
 import { Pedido } from "./Pages/pedido/index";
+import { Pedido4 } from "./Pages/pedido4/index";
 import { Reservas } from "./Pages/reservas/index";
 import { LadingPage } from "./Pages/LadingPage";
 import { Politica } from "./Pages/Politica/index";
@@ -16,6 +17,8 @@ import { Institucional } from "./Pages/InstitucionalLading/index";
 import { CadastroComerciante } from "./Pages/cadastroComerciante/Index";
 import { VisualizacaoUsuario } from "./Pages/VisuLojaUsuario/index";
 import { VisualizacaoComerciante } from "./Pages/VisuLojaComerciante/index";
+import { VisualizacaoUsuario4 } from "./Pages/VisuLojaUsuario4/index";
+import { VisualizacaoComerciante4 } from "./Pages/VisuLojaComerciante4/index";
 import { Calculator } from "./Pages/Calculadora/index";
 import { CartContextProvider } from "./Common/Context/index";
 import { Favoritos } from "./Pages/Favoritos/Index";
@@ -61,6 +64,7 @@ function Rotas() {
               <Route path="/FeedComerciante" element={<HomeComerciante />} />
               <Route path="/Reservas" element={<Reservas />} />
               <Route path="/Pedido" element={<Pedido />} />
+              <Route path="/Pedido4" element={<Pedido4 />} />
               <Route path="/Politica" element={<Politica />} />
               <Route path="/Dicas" element={<Dicas />} />
               <Route path="/FaleConosco" element={<FaleConosco />} />
@@ -74,6 +78,14 @@ function Rotas() {
               <Route
                 path="/VisualizacaoComerciante"
                 element={<VisualizacaoComerciante />}
+              />
+              <Route
+                path="/VisualizacaoUsuario4"
+                element={<VisualizacaoUsuario4 />}
+              />
+              <Route
+                path="/VisualizacaoUsuario4"
+                element={<VisualizacaoComerciante4 />}
               />
               <Route path="/DirecCadastro" element={<DirecCadastro />} />
               <Route path="/Chat" element={<ChatComerciante />} />

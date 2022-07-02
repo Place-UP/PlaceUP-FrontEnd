@@ -13,7 +13,7 @@ import absorventeIntimus from "./comercio4/download.jpg";
 import draminB6 from "./comercio4/dramin.jpg";
 import escovaDentalGreen3 from "./comercio4/escova_dental_green_adulto_tri_com_3_unidades.jpg";
 import escovaDentalColgateBlack from "./comercio4/escova-de-dente-colgate-slim-soft-black-com-3-unidades-1.jpg";
-import AbsorventeSempreLivre from "./comercio4/images(1).jpg";
+import AbsorventeSempreLivre from "./comercio4/dklaodkoak.jpg";
 import desodoranteNivea from "./comercio4/nivea.png";
 import desodoranteOldSpice from "./comercio4/oldspice.jpg";
 import condicionadorPantene from "./comercio4/pantene-condicionador.jpg";
@@ -25,13 +25,14 @@ import xaropeVick from "./comercio4/Xarope.jpg";
 
 import imgPerfil from "./comercio4/drogariaVidaNova.jpg";
 
-export const Bussines = [
+export const Bussines4 = [
   {
-    owner: "Drogario vida nova",
+    owner: "Drogaria Vida Nova",
     pefilimg: imgPerfil,
   },
 ];
-export const comercio1 = [
+
+export const comercio4 = [
   {
     id: 1,
     name: "Enxaguante bucal Listerine",
