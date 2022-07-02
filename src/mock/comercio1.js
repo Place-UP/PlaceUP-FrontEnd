@@ -29,6 +29,7 @@ export const Bussines = [
     pefilimg: imgPerfil,
   },
 ];
+
 export const comercio1 = [
   {
     id: 1,
