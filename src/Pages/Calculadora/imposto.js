@@ -6,12 +6,12 @@ export default function Imposto(props) {
       <InputArea>
         <p>Imposto pago mensalmente/anualmente: *</p>
         <input
-          type="text"
+          type="tel"
           maxLength="10"
           placeholder="Digite aqui %"
           value={props.imposto}
           onChange={(entrada) => {
-            props.setImpostos(entrada.target.value);
+            props.setImpostos(entrada.target.value.replace(/\D/g, ""));
           }}
         />
       </InputArea>

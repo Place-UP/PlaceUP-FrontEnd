@@ -23,6 +23,11 @@ export const Main = styled.div`
   margin: auto;
   background-color: ${({ theme }) => theme.body};
   .ContainerCalculator {
+    .AreaContentV {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +49,20 @@ export const Main = styled.div`
     margin-left: 70px;
     ${Media.Nav} {
       margin-left: 40px;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 300px;
+      ${Media.Tablet} {
+        width: 280px;
+      }
+      ${Media.MobileL} {
+        width: 250px;
+      }
+      ${Media.MobileM} {
+        width: 200px;
+      }
     }
   }
   .backButton {
@@ -192,7 +211,9 @@ export const Main = styled.div`
       }
     }
     .TableContainer {
+      margin: auto;
       margin-top: 30px;
+      margin-bottom: 30px;
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -202,8 +223,9 @@ export const Main = styled.div`
       /* margin-bottom: 30px; */
       padding-bottom: 30px;
 
+      max-width: 500px;
       .TablePlaceUP {
-        margin-top: 50px;
+        margin-top: 170px;
         display: flex;
         gap: 52px;
         flex-direction: column;
