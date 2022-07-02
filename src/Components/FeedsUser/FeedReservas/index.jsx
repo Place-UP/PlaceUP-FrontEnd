@@ -4,39 +4,40 @@ import supermarket from "./images/market.png";
 import produto from "./images/imageProduto.png";
 import { Link } from "react-router-dom";
 import { Feed, Profile, ContainerProfile, Button, Product, CointanerProduct } from "./styles";
+import { comercio1 } from "../../../mock/comercio1";
+import { Bussines } from "../../../mock/comercio1";
 
 export function FeedReservas() {
+
+  const box08 = comercio1.slice(0, 3);
+
   return (
     <>
         <Feed>
             <ContainerProfile className="containerProfile">
+                {Bussines.map((item) => (
                 <Profile className="profile">
-                    <img src={supermarket} alt="foto do comércio" className="foto-perfil" />
+                    <img src={item.pefilimg} alt="foto do comércio" className="foto-perfil" />
 
                     <div>                    
-                        <h1>NameMarket</h1>
+                        <h1>{item.owner}</h1>
                         <p>07/07/2022 - PEDIDO #0690590 - <span>PENDENTE</span>   </p>   
                     </div>
                 </Profile>
-                
+                ))}
                 <Link
                 to="/Pedido"                
                 ><Button className="buttonSeeMore">Veja Lista</Button></Link>
             </ContainerProfile> 
-
+                 
             <Product className="product">
+                {box08.map((item) => (   
                 <CointanerProduct className="cointanerProduct">
-                    <img src={produto} alt="Foto do Produto" />
-                </CointanerProduct>    
-
-                <CointanerProduct className="cointanerProduct">
-                    <img src={produto} alt="Foto do Produto" />
-                </CointanerProduct> 
-
-                <CointanerProduct className="cointanerProduct">
-                    <img src={produto} alt="Foto do Produto" />
-                </CointanerProduct> 
-            </Product>                                                    
+                    <img src={item.img} alt="Foto do Produto" />
+                </CointanerProduct>   
+            ))}          
+            </Product>    
+                                                  
         </Feed>
     </>
   );

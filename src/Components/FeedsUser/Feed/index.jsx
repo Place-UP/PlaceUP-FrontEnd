@@ -4,8 +4,7 @@ import supermarket from "./images/market.png";
 import { AiFillHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { comercio1 } from "../../../mock/comercio1";
-
-import { comercio1 } from "../../../mock/comercio1";
+import { Bussines } from "../../../mock/comercio1";
 import {
   Feed,
   Profile,
@@ -32,7 +31,7 @@ export function FeedUser() {
     <>
       <Feed>
         <ContainerProfile className="containerProfile">
-          {comercio1.map((item) => (
+          {Bussines.map((item) => (
             <Profile className="profile">
               <img src={item.pefilimg} alt="foto do comercio" />
               <h1>{item.owner}</h1>
@@ -46,7 +45,7 @@ export function FeedUser() {
               </button>
             </Profile>
           ))}
-          ;
+          
           <Link to="/VisualizacaoUsuario">
             <Button className="buttonSeeMore">Veja Mais</Button>
           </Link>

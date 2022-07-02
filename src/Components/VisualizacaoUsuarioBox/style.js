@@ -100,7 +100,11 @@ export const ContWhitePart = styled.div`
       width: 220px;
       box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
-      object-fit: cover; 
+      object-fit: contain; 
+        max-width: 220px;
+        max-height: 220px;
+        min-width: 220px;
+        min-height: 220px;
     }
     }
      .AddIcon {

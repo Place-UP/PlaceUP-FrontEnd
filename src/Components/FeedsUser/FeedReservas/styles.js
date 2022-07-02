@@ -147,7 +147,7 @@ export const Product = styled.div`
 `
 
 export const CointanerProduct = styled.div`
-  width: 90%;
+  width: 100%;
   
   img{
     width: 90%;

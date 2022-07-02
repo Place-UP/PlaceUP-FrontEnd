@@ -9,7 +9,7 @@ import { AiOutlineClockCircle, AiOutlineStar } from "react-icons/ai";
 import { MdOutlinePlace } from "react-icons/md";
 import { Section, Profile, DarkMode } from "./styles";
 import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
-
+import { Bussines } from "../../mock/comercio1";
 
 export function MenuPrincipal() {
   function menuHamburger() {
@@ -40,10 +40,14 @@ export function MenuPrincipal() {
         </DarkMode>
         
         <div className="ContainerPlace">
+
+          {Bussines.map((item) => (
           <div className="PlaceArea">
-            <img className="ImageLogoPlace" src={logoPlace} alt=".." />
-            <h1>Buteco de minas</h1>
+            <img className="ImageLogoPlace" src={item.pefilimg} alt=".." />
+            <h1>{item.owner}</h1>
           </div>
+          ))}
+
           <div className="box">
             <div className="WorkTimePlace DefaulConfig">
               <AiOutlineClockCircle className="IconMenu" />
@@ -109,14 +113,12 @@ export function MenuPrincipal() {
                       <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />
                       <label for="toggle"></label>
                     </DarkMode>
-                    <div className="PlaceArea">
-                      <img
-                        className="ImageLogoPlace"
-                        src={logoPlace}
-                        alt=".."
-                      />
-                      <h1>Buteca de minas</h1>
-                    </div>
+                    {Bussines.map((item) => (
+                      <div className="PlaceArea">
+                        <img className="ImageLogoPlace" src={item.pefilimg} alt=".." />
+                        <h1>{item.owner}</h1>
+                      </div>
+                    ))}
                     <div>
                       <div className="WorkTimePlace DefaulConfig">
                         <AiOutlineClockCircle className="IconMenu" />

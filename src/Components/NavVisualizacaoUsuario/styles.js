@@ -91,6 +91,7 @@ export const Section = styled.section`
 
     .PlaceArea {
       img {
+        max-width: 150px;
         display: block;
         margin: auto;
         margin-top: 20px;
