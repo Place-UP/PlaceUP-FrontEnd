@@ -21,13 +21,12 @@ import LapisBic from "./comercio1/LapisBic.jpg";
 import LapisGrip from "./comercio1/LapisGrip.jpg";
 import TintaGuache from "./comercio1/TintaGuache.jpg";
 import TintaParacartucho from "./comercio1/TintaParacartucho.jpg";
-import imgPerfil from "./comercio1/perfil.jpg"
+import imgPerfil from "./comercio1/perfil.jpg";
 export const comercio1 = [
-
-    {
-        owner: "Mundo da papelaria",
-        pefilimg: imgPerfil,
-    }
+  {
+    owner: "Mundo da papelaria",
+    pefilimg: imgPerfil,
+  },
   {
     id: 1,
     name: "Kit apontadores coloridos",
