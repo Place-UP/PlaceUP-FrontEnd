@@ -2,7 +2,7 @@ import react from "react";
 export default function Resultado(props) {
   return (
     <>
-      <span>Valor total : {props.resultado}</span>
+      <span className='span-total'>Valor total : {props.resultado}</span>
     </>
   );
 }

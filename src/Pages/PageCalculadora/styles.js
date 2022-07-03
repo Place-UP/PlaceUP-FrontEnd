@@ -251,6 +251,16 @@ export const Container = styled.div`
   .t2 {
     flex-direction: row-reverse;
     margin-bottom: 200px;
+        ${Media.Tablet} {
+      justify-content: space-evenly;
+    }
+    ${Media.MobileL} {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   //Part do cards background da area
@@ -279,8 +289,12 @@ export const Container = styled.div`
       justify-content: space-around;
       align-items: center;
       flex-direction: row;
-      ${Media.MobileM} {
+      ${Media.Tablet} {
         flex-direction: column;
+        hr{
+          display:none;
+  
+        }
       }
       span {
         display: flex;

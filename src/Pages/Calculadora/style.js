@@ -316,6 +316,10 @@ export const Main = styled.div`
         font-size: 18px;
       }
     }
+    .span-total{
+      font-size: 36px;
+      font-weight: bold;
+    }
     .InformationsDescription {
       margin-top: 30px;
       margin-left: 30px;

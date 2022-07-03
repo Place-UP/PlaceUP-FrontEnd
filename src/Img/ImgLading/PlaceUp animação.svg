@@ -24,7 +24,7 @@
             .cls-4 {
                 font-size: 150.87px;
                 fill: #fff;
-                font-family: WarlowSans, Warlow Sans;
+                font-family: WarlowSans, Warlow Sans,Arial;
             }
 
             .cls-5 {
@@ -34,7 +34,7 @@
             .cls-6 {
                 fill: #292f35;
                 font-size: 167.64px;
-                font-family: Poppins-SemiBold, Poppins;
+                font-family: Poppins-SemiBold, Poppins,Arial;
                 font-weight: 600;
             }
         </style>

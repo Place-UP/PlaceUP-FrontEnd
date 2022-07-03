@@ -22,7 +22,7 @@ export function HomeComerciante() {
         </B.Top>
 
         <B.On>
-            <h1>NameUser</h1>
+            <h1>Mundo da papelaria</h1>
         </B.On>
 
         <B.ContainerCalendar>

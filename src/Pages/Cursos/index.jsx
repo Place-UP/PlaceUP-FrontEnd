@@ -24,7 +24,7 @@ export function Cursos() {
                 <BoxTitle>
                     <p>Saber como administrar um pequeno negócio é um desafio para todos, especialmente para os empreendedores iniciantes que não têm experiência no assunto. Afinal, criar um bom planejamento estratégico é algo complexo, que envolve muitas etapas.</p>
                 </BoxTitle>
-                <BoxSelect>
+                {/* <BoxSelect>
                     {select.map((item) => (
                 <Link to="/calculadora">
                         <select key={item.id}>
@@ -32,7 +32,7 @@ export function Cursos() {
                         </select>
                     </Link>
                     ))}
-                    </BoxSelect>
+                    </BoxSelect> */}
                 <CardsCursos />
                 <Calculator>
                     <p>Além dessas dicas de como gerir o seu negócio, você pode aprender a precificar seu produto com o auxílio de nossa calculadora de precificação.</p>
