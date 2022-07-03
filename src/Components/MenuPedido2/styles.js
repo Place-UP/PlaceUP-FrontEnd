@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const media = {
+  Notebook: "@media(max-width: 1300px)",
   Tablet: "@media(max-width: 935px)",
   Mobile: "@media(max-width: 600px)",
   MobileS: "@media(max-width: 340px)"
@@ -182,6 +183,7 @@ export const Profile = styled.div`
     }
   
     h1{
+      width: 100%;
       line-height: 60px;    
       font-family: 'Lato', cursive;
       white-space: nowrap;
@@ -190,8 +192,17 @@ export const Profile = styled.div`
       text-overflow: ellipsis;
       font-size: 20px;
       color: ${({ theme }) => theme.fontColor};
+
+      ${media.Notebook} { 
+        width: 20px;
+        margin-left: 10px;
+        min-width: 100%;
+      }
   
-      ${media.Tablet} { font-size: 18px; }  
+      ${media.Tablet} { 
+        font-size: 18px; 
+        width: 100%;
+      }  
   
       ${media.Mobile} { font-size: 15px; } 
     }

@@ -36,7 +36,7 @@ export function Perfil() {
             <Inform>
               <NameEdit>
                 <div>
-                  <p className="name">UserName</p>
+                  <p className="name">Rodolfo Martins</p>
                 </div>
 
                 <div>

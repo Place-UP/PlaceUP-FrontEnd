@@ -26,15 +26,18 @@ export function MenuPrincipal() {
     <>
       <Section>
         <div className="mainMenu">
-
+{Bussines.map((item) => (
         <Profile>
+          
           <div className="profile">
           <Link to="/Perfil" className="link">
-                <img src={perfil} alt="Foto de Perfil" />
-                <h1>Rodolfo Martins</h1></Link>
+                <img src={item.pefilimg} alt="Foto de Perfil" />
+                <h1>{item.owner}</h1></Link>
             <IoIosExit className="iconExit" />
           </div>
+          
         </Profile>
+        ))}
 
           <DarkMode >
             <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />
@@ -98,14 +101,16 @@ export function MenuPrincipal() {
               <li class="nav-item">
                 <Section>
                   <div className="mainMenu-Mobile">
-                  <Profile>
+                    <Profile>
+                      {Bussines.map((item) => (
                       <div className="profile">
-                        <Link to="/Perfil" className="link">
-                        <img src={perfil} alt="Foto de Perfil" />
-                        <h1>Name User</h1></Link>
-                        <IoIosExit className="iconExit"/>
+                      <Link to="/Perfil" className="link">
+                            <img src={item.pefilimg} alt="Foto de Perfil" />
+                            <h1>{item.owner}</h1></Link>
+                        <IoIosExit className="iconExit" />
                       </div>
-                    </Profile>  
+                      ))}
+                    </Profile>
 
                     <DarkMode >
                       <input id="toggle" class="toggle-control" type="checkbox" onClick={() => themeToggle()} />

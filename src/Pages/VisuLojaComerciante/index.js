@@ -3,7 +3,7 @@ import { Main } from "./style";
 import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderComerciante";
 import { BarraBusca } from "../../Components/BarraDePesquisaComerciante/index";
 import { Box } from "../../Components/VisualizacaoComercianteBox/index";
-import { MenuPrincipal } from "../../Components/NavVisualizacaoComerciante/index";
+import { MenuPrincipal } from "../../Components/NavVisualizacaoComerciante/index.jsx";
 import { BtnCreateProdutc } from "../../Components/BtnAdcProduto";
 
 export function VisualizacaoComerciante() {

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { colors } from './../../mock/CardsInstitucional';
 
 const media = {
+  Notebook: "@media(max-width: 1300px)",
   Tablet: "@media(max-width: 935px)",
   Mobile: "@media(max-width: 600px)",
 };
@@ -179,14 +180,12 @@ export const Section = styled.section`
   }
 
   ${media.Tablet} {
-    .mainMenu {
-      display: none;
-    }
+    .mainMenu{   display: none;   }
 
     .hamburger {
       display: block;
-      margin-right: 35px;
-    }
+      margin-right: 75px;
+    }    
 
     .mobile{   
       display: block;
@@ -282,6 +281,7 @@ export const Profile = styled.div`
     }
   
     h1{
+      width: 130px;
       line-height: 60px;    
       font-family: 'Lato', cursive;
       white-space: nowrap;
@@ -290,8 +290,17 @@ export const Profile = styled.div`
       text-overflow: ellipsis;
       font-size: 20px;
       color: ${({ theme }) => theme.fontColor};
+
+      ${media.Notebook} { 
+        width: 20px;
+        margin-left: 10px;
+        min-width: 100%;
+      }
   
-      ${media.Tablet} { font-size: 18px; }  
+      ${media.Tablet} { 
+        font-size: 18px; 
+        width: 100%;
+      }  
   
       ${media.Mobile} { font-size: 15px; }
     }

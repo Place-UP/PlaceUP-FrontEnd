@@ -39,7 +39,7 @@ export function MenuPrincipal() {
             <div className="profile">
               <Link to="/Perfil" className="link">
                 <img src={perfil} alt="Foto de Perfil" />
-                <h1>Name User</h1>
+                <h1>Rodolfo Martins</h1>
               </Link>
               <IoIosExit className="iconExit" />
             </div>
@@ -62,38 +62,48 @@ export function MenuPrincipal() {
           <Suggestions>
             <h1>SUGESTÕES</h1>
             {Bussines.map((item) => (
-              <ProfileSuggestions>
-                <img src={item.pefilimg} alt="Foto de Perfil" />
-                <h2>{item.owner}</h2>
-              </ProfileSuggestions>
+              <Link to="/VisualizacaoUsuario" className="link">
+                <ProfileSuggestions>
+                  <img src={item.pefilimg} alt="Foto de Perfil" />
+                  <h2>{item.owner}</h2>
+                </ProfileSuggestions>
+              </Link>              
             ))}
             
             {Bussines2.map((item) => (
-              <ProfileSuggestions>
-                <img src={item.pefilimg} alt="Foto de Perfil" />
-                <h2>{item.owner}</h2>
-              </ProfileSuggestions>
+              <Link to="/VisualizacaoUsuario2" className="link">
+                <ProfileSuggestions>
+                  <img src={item.pefilimg} alt="Foto de Perfil" />
+                  <h2>{item.owner}</h2>
+                </ProfileSuggestions>
+              </Link>
             ))}
 
             {Bussines4.map((item) => (
-              <ProfileSuggestions>
-                <img src={item.pefilimg} alt="Foto de Perfil" />
-                <h2>{item.owner}</h2>
-              </ProfileSuggestions>
+              <Link to="/VisualizacaoUsuario4" className="link">
+                <ProfileSuggestions>
+                  <img src={item.pefilimg} alt="Foto de Perfil" />
+                  <h2>{item.owner}</h2>
+                </ProfileSuggestions>                
+              </Link>
             ))}
 
             {Bussines5.map((item) => (
-              <ProfileSuggestions>
-                <img src={item.pefilimg} alt="Foto de Perfil" />
-                <h2>{item.owner}</h2>
-              </ProfileSuggestions>
+              <Link to="/VisualizacaoUsuario5" className="link">
+                <ProfileSuggestions>
+                  <img src={item.pefilimg} alt="Foto de Perfil" />
+                  <h2>{item.owner}</h2>
+                </ProfileSuggestions>
+              </Link>              
             ))}
 
             {Bussines3.map((item) => (
-              <ProfileSuggestions>
-                <img src={item.pefilimg} alt="Foto de Perfil" />
-                <h2>{item.owner}</h2>
-              </ProfileSuggestions>
+              <Link to="/VisualizacaoUsuario3" className="link">
+                <ProfileSuggestions>
+                    <img src={item.pefilimg} alt="Foto de Perfil" />
+                    <h2>{item.owner}</h2>
+                </ProfileSuggestions>
+              </Link>
             ))}
           </Suggestions>
         </div>
@@ -108,8 +118,7 @@ export function MenuPrincipal() {
                       <div className="profile">
                         <Link to="/Perfil" className="link">
                           <img src={perfil} alt="Foto de Perfil" />
-                          <h1>Name User</h1>
-                        </Link>
+                          <h1>Rodolfo Martins</h1></Link>
                         <IoIosExit className="iconExit" />
                       </div>
                     </Profile>

@@ -31,7 +31,7 @@ export function MenuPedido4() {
               <div className="profile">                
                 <Link to="/Perfil" className="link">
                 <img src={perfil} alt="Foto de Perfil" />
-                <h1>Name User</h1></Link>  
+                <h1>Rodolfo Martins</h1></Link>  
                 <IoIosExit className="iconExit"/>
               </div>
             </Profile>
@@ -71,7 +71,7 @@ export function MenuPedido4() {
                             <div className="profile">
                             <Link to="/Perfil" className="link">
                               <img src={perfil} alt="Foto de Perfil" />
-                              <h1>Name User</h1></Link>
+                              <h1>Rodolfo Martins</h1></Link>
                               <IoIosExit className="iconExit"/>
                             </div>
                           </Profile>
