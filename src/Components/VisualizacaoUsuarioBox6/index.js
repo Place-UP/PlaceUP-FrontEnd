@@ -49,7 +49,7 @@ export function Box() {
                 <span className="Tittle"> {item.name}</span>
                 <div className="description">
                   <span className="Quant"> 400mg</span>
-                  <span className="Price">R${item.price}</span>
+                  <span className="Price">{item.price}</span>
                 </div>
               </div>
             </div>

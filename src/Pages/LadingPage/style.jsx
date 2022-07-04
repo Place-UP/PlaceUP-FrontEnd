@@ -17,7 +17,7 @@ export const Header = styled.header`
     justify-content: space-between;
     overflow: hidden;
 
-    .nav-bar{
+    .nav-bar{        
         ${Media.Tablet}{
             width: 20%;
             height: 100%;
