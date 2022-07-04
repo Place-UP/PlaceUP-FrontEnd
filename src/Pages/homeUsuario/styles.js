@@ -8,13 +8,18 @@ const media = {
 
 export const Main = styled.div`
   background-color: ${({ theme }) => theme.body};
-  
 
-  ${media.Tablet} {   margin-left: 6%;   }  
+  ${media.Tablet} {
+    margin-left: 6%;
+  }
 
-  ${media.MobileM} {   margin-left: 6%;   }  
+  ${media.MobileM} {
+    margin-left: 6%;
+  }
 
-  ${media.MobileS} {   margin-left: 2%;  } 
+  ${media.MobileS} {
+    margin-left: 2%;
+  }
 `;
 
 export const SectionSearch = styled.div`
@@ -25,11 +30,13 @@ export const SectionSearch = styled.div`
   justify-content: space-between;
   border-radius: 50%;
 
-  ${media.Tablet} {   width: 130%;   }
+  ${media.Tablet} {
+    width: 130%;
+  }
 
   ${media.MobileM} {
-    width: 80%;    
-    margin-right: auto;     
+    width: 80%;
+    margin-right: auto;
   }
 
   ${media.MobileS} {
@@ -87,7 +94,9 @@ export const SearchBar = styled.div`
     }
   }
 
-  ${media.Tablet} {   width: 100%;   }
+  ${media.Tablet} {
+    width: 100%;
+  }
 `;
 
 export const Car = styled.div`
@@ -105,7 +114,9 @@ export const Car = styled.div`
     color: ${({ theme }) => theme.fontColor};
   }
 
-  ${media.MobileM} {   margin-right: 5%;  }
+  ${media.MobileM} {
+    margin-right: 5%;
+  }
 `;
 
 export const ContainerSearch = styled.div`
@@ -138,13 +149,13 @@ export const ContainerSearch = styled.div`
     }
 
     p {
-      width: 20%;      
+      width: 20%;
       color: ${({ theme }) => theme.fontColor};
     }
 
     span {
       width: 20%;
-      font-size: 1.2rem;      
+      font-size: 1.2rem;
       color: ${({ theme }) => theme.fontColor};
     }
 
@@ -259,11 +270,17 @@ export const Category = styled.div`
     color: ${({ theme }) => theme.fontColor};
     font-size: 33px;
 
-    ${media.Tablet} { font-size: 31px; }  
+    ${media.Tablet} {
+      font-size: 31px;
+    }
 
-    ${media.MobileM} { font-size: 28px; }  
-  
-    ${media.MobileS} { font-size: 26px; }  
+    ${media.MobileM} {
+      font-size: 28px;
+    }
+
+    ${media.MobileS} {
+      font-size: 26px;
+    }
   }
 
   .containerCategory {
@@ -277,8 +294,8 @@ export const Category = styled.div`
     margin-top: 5%;
 
     img {
-      width: 90px;
-      height: 95px;
+      width: 46px;
+      height: 46px;
     }
 
     ${media.Tablet} {
@@ -291,7 +308,7 @@ export const Category = styled.div`
       width: 100%;
       grid-template-columns: auto auto auto 20px;
       grid: auto / auto;
-      margin: 0 auto;     
+      margin: 0 auto;
     }
 
     ${media.MobileS} {
@@ -314,8 +331,8 @@ export const Category = styled.div`
 `;
 
 export const FilterCategory = styled.div`
-  width: 190px;
-  height: 180px;
+  width: 110px;
+  height: 110px;
   border-radius: 8px;
   text-align: center;
   background-color: ${(props) => props.primary};
@@ -344,15 +361,21 @@ export const InfoCategory = styled.div`
     cursor: pointer;
     color: ${({ theme }) => theme.fontColor};
 
-    ${media.Tablet} { font-size: 18px; }  
+    ${media.Tablet} {
+      font-size: 18px;
+    }
 
-    ${media.MobileM} { font-size: 15px; }  
-  
-    ${media.MobileS} { font-size: 12px; }  
+    ${media.MobileM} {
+      font-size: 15px;
+    }
+
+    ${media.MobileS} {
+      font-size: 12px;
+    }
 
     &::before {
       content: "";
-      border-left: 5px solid #0D5E92;
+      border-left: 5px solid #0d5e92;
       padding-right: 8px;
     }
   }
@@ -363,7 +386,7 @@ export const InfoCategory = styled.div`
     align-items: center;
     width: 25px;
     height: 25px;
-    background-color: #0D5E92;
+    background-color: #0d5e92;
     color: white;
     font-size: 20px;
     border-radius: 4px;
@@ -371,24 +394,29 @@ export const InfoCategory = styled.div`
     cursor: pointer;
     font-family: "Lato";
 
-    ${media.Tablet} { font-size: 18px; }  
+    ${media.Tablet} {
+      font-size: 18px;
+    }
 
-    ${media.MobileM} { font-size: 15px; }  
-  
-    ${media.MobileS} { font-size: 12px; }  
+    ${media.MobileM} {
+      font-size: 15px;
+    }
+
+    ${media.MobileS} {
+      font-size: 12px;
+    }
   }
 `;
 
 export const BtnBuscar = styled.button`
-  background-color: #0D5E92;
+  background-color: #0d5e92;
   padding: 10px;
   color: #fff;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     opacity: 0.8;
   }
-
-`
+`;
