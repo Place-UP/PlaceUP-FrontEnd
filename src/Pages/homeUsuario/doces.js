@@ -12,7 +12,7 @@ import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import * as C from "./styles";
 import { CarrinhoComProduto } from "../../Components/Carrinho/CarrinhoComProduto";
-import { cardsHome } from "../../mock/CardsHome";
+import { cardsHome } from "./../../mock/CardsHome";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 export function Doces() {
@@ -109,8 +109,7 @@ export function Doces() {
           </div>
         </C.Category>
 
-        <FeedUser3 />
-        <FeedUser2 />
+        <FeedUser5 />
       </C.Main>
     </>
   );

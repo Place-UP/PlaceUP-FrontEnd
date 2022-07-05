@@ -15,7 +15,14 @@ import { CarrinhoComProduto } from "../../Components/Carrinho/CarrinhoComProduto
 import { cardsHome } from "./../../mock/CardsHome";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+
+
 export function IndexHomeUser() {
+  
+   function Teste(elemento)
+    {
+        window.alert(elemento.value);
+    }
   const [query, setQuery] = useState("");
 
   const search = () => {
@@ -85,7 +92,7 @@ export function IndexHomeUser() {
               <option value="acessibilidade" select>
                 Acessibilidade
               </option>
-              <option value="cego">Suporte para Cego</option>
+              <option value="cego" onChange={Teste}>Suporte Para cego</option>
               <option value="surdo">Suporte para Surdo</option>
               <option value="mudo">Suporte para Mudo</option>
               <option value="cadeirante">Suporte para Cadeirante</option>
