@@ -193,7 +193,7 @@ export const Box = styled.div`
             }
 
             ${Media.MobileM}{
-                width: 125px;
+                width: 130px;
             }
         }
     }
@@ -244,6 +244,10 @@ export const Container = styled.section`
         align-items: center;
         justify-content: center;
         margin-top: ${(props) => props.primary ? "100px" : "0"};
+    }
+
+    ${Media.MobileM}{
+        margin-top: ${(props) => props.primary ? "50px" : "0"};
     }
 
     ${Media.MobileM}{

@@ -13,11 +13,12 @@ import * as C from "./styles";
 import { CarrinhoComProduto } from "../../Components/Carrinho/CarrinhoComProduto";
 import { cardsHome } from "../../mock/CardsHome";
 import { IoIosArrowForward } from "react-icons/io";
-import { Link, Navigate, useNavigate  } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Reservas } from './../reservas/index';
 
 
 export function IndexHomeUser() {
-    
+
   const [query, setQuery] = useState("");
 
   const search = () => {
@@ -32,29 +33,21 @@ export function IndexHomeUser() {
     );
   };
 
-  const [isOpen, setIsOpen] = useState(""); 
+  const [isOpen, setIsOpen] = useState("");
 
   const navegate = useNavigate();
 
-  function Home(){
-    navegate("/FeedUser"); 
+
+  function MudarRota(props) {
+    switch (props) {
+      case 'Home':
+        navegate('/Reservas')
+      case 'Cego':
+        navegate('/Blind')
+    }
   }
 
-  function Cego(){
-    navegate("/Blind"); 
-  }
 
-  function Surdo(){
-    navegate("/Deaf"); 
-  }
-
-  function Mudo(){
-    navegate("/Mute"); 
-  }
-
-  function Cadeirante(){
-    navegate("/Wheelchair"); 
-  }
 
   return (
     <>
@@ -102,38 +95,39 @@ export function IndexHomeUser() {
               <option value="maior">Maior Preço</option>
               <option value="menor">Menor Preço</option>
             </select>
-            <select id="select" onChange={Home}>
-              <option value="acessibiliade1" id="select" onChange={Home}>Acessibilidade</option>
-              <option value="cego1" onChange={Cego}>Suporte para Cego</option>
-              <option value="surdo1" onChange={Surdo}>Suporte para Surdo</option>
-              <option value="mudo1" onChange={Mudo}>Suporte para Mudo</option>
-              <option value="cadeirante1" onChange={Cadeirante}>Suporte para Cadeirante</option>
-            </select>          
+
+            <select id="acessibilidade" onChange={MudarRota}>
+              <option value="" onClick={() => MudarRota('Home')}>Acessibilidade</option>
+              <option value="" onClick={() => MudarRota('Cego')}>Suporte para Cego</option>
+              <option value="">Suporte para Surdo</option>
+              <option value="">Suporte para Mudo</option>
+              <option value="">Suporte para Cadeirante</option>
+            </select>
           </C.Filter>
+
 
           <h1 className="categoryTitle">CATEGORIAS</h1>
           <div className="containerCategory">
             {cardsHome.map((item) => (
               <Link to={item.link}>
-              <C.FilterCategory key={item.id} primary={`${item.color}`}>
-                <img src={item.img} alt="Icone Shopping" />
-                <C.InfoCategory>
-                  <C.BtnBuscar> 
-                    <IoIosArrowForward />
-                   </C.BtnBuscar>
-                </C.InfoCategory>
+                <C.FilterCategory key={item.id} primary={`${item.color}`}>
+                  <img src={item.img} alt="Icone Shopping" />
+                  <C.InfoCategory>
+                    <C.BtnBuscar>
+                      <IoIosArrowForward />
+                    </C.BtnBuscar>
+                  </C.InfoCategory>
                 </C.FilterCategory>
-                </Link>
+              </Link>
             ))}
           </div>
         </C.Category>
-
-        <FeedUser  />
-        <FeedUser5  />
-        <FeedUser3  />
-        <FeedUser4  />
-        <FeedUser2  />        
-        <FeedUser6  />     
+        <FeedUser />
+        <FeedUser5 />
+        <FeedUser3 />
+        <FeedUser4 />
+        <FeedUser2 />
+        <FeedUser6 />
       </C.Main>
     </>
   );

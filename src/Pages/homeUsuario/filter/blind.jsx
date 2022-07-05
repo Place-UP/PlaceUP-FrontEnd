@@ -13,7 +13,7 @@ import * as C from "./styles";
 import { CarrinhoComProduto } from "../../../Components/Carrinho/CarrinhoComProduto";
 import { cardsHome } from "../../../mock/CardsHome";
 import { IoIosArrowForward } from "react-icons/io";
-import { Navigate, useNavigate  } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 export function Blind() {
   const [query, setQuery] = useState("");
@@ -30,29 +30,35 @@ export function Blind() {
     );
   };
 
-  const [isOpen, setIsOpen] = useState(""); 
+  const [isOpen, setIsOpen] = useState("");
 
   const navegate = useNavigate();
 
-  function Home(){
-    navegate("/FeedUser"); 
+  function Home() {
+    navegate("/FeedUser");
   }
 
-  function Cego(){
-    navegate("/Blind"); 
+  function Cego() {
+    navegate("/Blind");
   }
 
-  function Surdo(){
-    navegate("/Deaf"); 
+  function Surdo() {
+    navegate("/Deaf");
   }
 
-  function Mudo(){
-    navegate("/Mute"); 
+  function Mudo() {
+    navegate("/Mute");
   }
 
-  function Cadeirante(){
-    navegate("/Wheelchair"); 
+  function Cadeirante() {
+    navegate("/Wheelchair");
   }
+
+  const [home, setHome] = useState(false)
+  const [cego, setCego] = useState(false)
+  const [surdo, setSurdo] = useState(false)
+  const [mudo, setMudo] = useState(false)
+  const [cadeirante, setCadeirante] = useState(false)
 
   return (
     <>
@@ -105,12 +111,12 @@ export function Blind() {
 
 
             <select id="select" onChange={Home}>
-              <option value="acessibiliade1" id="select" onChange={Home}>Acessibilidade</option>
-              <option value="cego1" onChange={Cego}>Suporte para Cego</option>
-              <option value="surdo1" onChange={Surdo}>Suporte para Surdo</option>
-              <option value="mudo1" onChange={Mudo}>Suporte para Mudo</option>
-              <option value="cadeirante1" onChange={Cadeirante}>Suporte para Cadeirante</option>
-            </select>                                
+              <option value="acessibiliade1" id="select" onChange={() => setHome(home ? "/FeedUser" : "")}>Acessibilidade</option>
+              <option value="cego1" onChange={() => setCego(true)}>Suporte para Cego</option>
+              <option value="surdo1" onChange={() => setSurdo(true)}>Suporte para Surdo</option>
+              <option value="mudo1" onChange={() => setMudo(true)}>Suporte para Mudo</option>
+              <option value="cadeirante1" onChange={() => setCadeirante(true)}>Suporte para Cadeirante</option>
+            </select>
           </C.Filter>
 
           <h1 className="categoryTitle">CATEGORIAS</h1>
@@ -123,13 +129,13 @@ export function Blind() {
                     <IoIosArrowForward />
                   </C.BtnBuscar>
                 </C.InfoCategory>
-                </C.FilterCategory>
+              </C.FilterCategory>
             ))}
           </div>
         </C.Category>
 
-        <FeedUser4  />
-        <FeedUser2  />        
+        <FeedUser4 />
+        <FeedUser2 />
       </C.Main>
     </>
   );
