@@ -2,17 +2,15 @@ import { HeaderComerciante } from "../../Components/HeaderComerciantes/HeaderCom
 import { Box, BoxImg, BoxSelect, BoxTitle, Calculator, Container, Img } from './style';
 import fundoRight from '../../Img/Cursos/fundoRight.png'
 import iconePC from '../../Img/Cursos/IconePC.png'
-import {Link} from "react-router-dom"
-import { select } from '../../mock/selectCurso.js'
+import { Link } from "react-router-dom"
 import { CardsCursos } from '../../Components/CardsCursos'
-import { InputDarkMode } from "../../Components/inputDark";
 import { FooterGeral } from '../../Components/FooterGeral/footer.js'
 
 export function Cursos() {
     return (
         <>
-            <HeaderComerciante />            
-            <InputDarkMode />
+            <HeaderComerciante />
+
             <Container>
                 <Box>
                     <Img src={fundoRight} alt="" />
