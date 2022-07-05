@@ -15,8 +15,6 @@ import {
 
 import { comercio1 } from "../../mock/comercio1";
 import React, { useContext, useState } from "react";
-import { CartContext } from "../../Common/Context";
-import { BoxCart, Txt } from "./styleCart";
 import { CarrinhoComProduto } from "../Carrinho/CarrinhoComProduto";
 
 export function BarraBusca() {

@@ -187,6 +187,14 @@ export const Box = styled.div`
             position: ${(props) => props.primary ? "" : "absolute"};
             width: 200px;
             bottom: ${(props) => props.primary ? "" : "0"};
+
+            ${Media.MobileM}{
+                width: 150px;
+            }
+
+            ${Media.MobileM}{
+                width: 125px;
+            }
         }
     }
 `
@@ -381,10 +389,11 @@ export const ContentRight = styled.div`
 `
 
 export const CenarioRightStyle = styled.img`
-      position: absolute;
-        top: 0;
-        right:0;
-        width: 10%;
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 10%;
+
 `
 
 export const CenarioLeftStyle = styled.img`
@@ -398,8 +407,12 @@ export const ContentText = styled.article`
     font-family: 'Bakbak One', cursive;
     width: 60%;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: ${({ theme }) => theme.fontColor};
 
     ${Media.MobileM}{
