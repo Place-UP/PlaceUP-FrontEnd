@@ -9,6 +9,10 @@ import { Mercado } from "./Pages/homeUsuario/mercado";
 import { Doces } from "./Pages/homeUsuario/doces";
 
 import { HomeComerciante } from "./Pages/homeComerciante/index.jsx";
+import { Blind } from "./Pages/homeUsuario/filter/blind";
+import { Wheelchair } from "./Pages/homeUsuario/filter/wheelchair";
+import { Mute } from "./Pages/homeUsuario/filter/mute";
+import { Deaf } from "./Pages/homeUsuario/filter/deaf";
 import { Pedido } from "./Pages/pedido/index";
 import { Pedido2 } from "./Pages/pedido2/index";
 import { Pedido3 } from "./Pages/pedido3/index";
@@ -71,6 +75,10 @@ function Rotas() {
               <Route path="/UserPhone" element={<CadastroUserPhone />} />
               <Route path="/UserPassword" element={<CadastroPasswordUser />} />
               <Route path="/FeedUser" element={<IndexHomeUser />} />
+              <Route path="/Mute" element={<Mute />} />
+              <Route path="/Wheelchair" element={<Wheelchair />} />
+              <Route path="/Deaf" element={<Deaf />} />
+              <Route path="/Blind" element={<Blind />} />
               <Route path="/FeedComerciante" element={<HomeComerciante />} />
               <Route path="/Reservas" element={<Reservas />} />
               <Route path="/Pedido" element={<Pedido />} />

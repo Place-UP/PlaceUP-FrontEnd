@@ -37,7 +37,6 @@ export const Section = styled.section`
   }
 
   ${media.Tablet} {
-    display: none;
     .cart{ 
       width: 50%;
     }
