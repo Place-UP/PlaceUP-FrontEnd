@@ -41,6 +41,27 @@ export const Bussines2 = [
 ];
 export const comercio2 = [
   {
+    id: 16,
+    name: "Coca Cola Lata 250ml ",
+    quantidade: "1 unidade",
+    price: "R$ 4,57",
+    image: CocaColaLata,
+  },
+  {
+    id: 17,
+    name: "Doritos ",
+    quantidade: "1 unidade",
+    price: "R$ 9,57",
+    image: Doritos,
+  },
+  {
+    id: 15,
+    name: "Chocalate Lacta ",
+    quantidade: "1 unidade",
+    price: "R$ 6,57",
+    image: ChocolateLacta,
+  },
+  {
     id: 1,
     name: "Alface",
     quantidade: "1 unidade",
@@ -140,13 +161,7 @@ export const comercio2 = [
     price: "R$ 22,57",
     image: ChineloHavaianas,
   },
-  {
-    id: 15,
-    name: "Chocalate Lacta ",
-    quantidade: "1 unidade",
-    price: "R$ 6,57",
-    image: ChocolateLacta,
-  },
+
   {
     id: 16,
     name: "Coca Cola Lata 250ml ",

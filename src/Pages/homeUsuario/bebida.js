@@ -15,7 +15,7 @@ import { CarrinhoComProduto } from "../../Components/Carrinho/CarrinhoComProduto
 import { cardsHome } from "./../../mock/CardsHome";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
-export function IndexHomeUser() {
+export function Bebidas() {
   const [query, setQuery] = useState("");
 
   const search = () => {
@@ -96,25 +96,21 @@ export function IndexHomeUser() {
           <div className="containerCategory">
             {cardsHome.map((item) => (
               <Link to={item.link}>
-              <C.FilterCategory key={item.id} primary={`${item.color}`}>
-                <img src={item.img} alt="Icone Shopping" />
-                <C.InfoCategory>
-                  <C.BtnBuscar> 
-                    <IoIosArrowForward />
-                   </C.BtnBuscar>
-                </C.InfoCategory>
+                <C.FilterCategory key={item.id} primary={`${item.color}`}>
+                  <img src={item.img} alt="Icone Shopping" />
+                  <C.InfoCategory>
+                    <C.BtnBuscar>
+                      <IoIosArrowForward />
+                    </C.BtnBuscar>
+                  </C.InfoCategory>
                 </C.FilterCategory>
-                </Link>
+              </Link>
             ))}
           </div>
         </C.Category>
 
-        <FeedUser   />
-        <FeedUser5  />
-        <FeedUser3  />
-        <FeedUser4  />
-        <FeedUser2  />        
-        <FeedUser6  />
+        <FeedUser2 />
+        <FeedUser3 />
       </C.Main>
     </>
   );

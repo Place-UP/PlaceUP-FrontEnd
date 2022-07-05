@@ -41,6 +41,13 @@ export const Bussines3 = [
 ];
 export const comercio3 = [
   {
+    id: 9,
+    name: "Bolacha Oreo ",
+    quantidade: "1 unidade",
+    price: "R$ 3,57",
+    image: BolachaOreo,
+  },
+  {
     id: 1,
     name: "Alface",
     quantidade: "1 unidade",
