@@ -13,7 +13,7 @@ import * as C from "./styles";
 import { CarrinhoComProduto } from "../../../Components/Carrinho/CarrinhoComProduto";
 import { cardsHome } from "../../../mock/CardsHome";
 import { IoIosArrowForward } from "react-icons/io";
-import { Navigate, useNavigate  } from "react-router-dom";
+import { Link, Navigate, useNavigate  } from "react-router-dom";
 
 export function Wheelchair() {
   const [query, setQuery] = useState("");
@@ -30,30 +30,15 @@ export function Wheelchair() {
     );
   };
 
-  const [isOpen, setIsOpen] = useState("");
-
   const navegate = useNavigate();
 
-  function Home(){
-    navegate("/FeedUser"); 
-  }
+  function Navigation(props){
+    navegate(`/${props}`)
+  }     
 
-  function Cego(){
-    navegate("/Blind"); 
-  }
+  const [isOpen, setIsOpen] = useState(""); 
 
-  function Surdo(){
-    navegate("/Deaf"); 
-  }
 
-  function Mudo(){
-    navegate("/Mute"); 
-  }
-
-  function Cadeirante(){
-    navegate("/Wheelchair"); 
-  }
-  
   return (
     <>
       <Header />
@@ -96,34 +81,33 @@ export function Wheelchair() {
 
           <C.Filter>
             <select name="Ordenar por">
-              <option value="ordenar" select>
-                Ordenar
-              </option>
+              <option value="ordenar" select>Ordenar</option>
               <option value="maior">Maior Preço</option>
               <option value="menor">Menor Preço</option>
             </select>
 
-
-            <select id="acessibilidade">
-              <option value="acessibilidade" onChange={Home}>Acessibilidade</option>
-              <option value="cego" onChange={Cego}>Suporte para Cego</option>
-              <option value="surdo"  onChange={Surdo}>Suporte para Surdo</option>
-              <option value="mudo"  onChange={Mudo}>Suporte para Mudo</option>
-              <option value="cadeirante" onChange={Cadeirante}>Suporte para Cadeirante</option>
-            </select>                             
+            <select id="select" onChange={(e) => Navigation(e.target.value)}>
+              <option value="FeedUser">Acessibilidade</option>
+              <option value="Blind">Suporte para Cego</option>
+              <option value="Deaf">Suporte para Surdo</option>
+              <option value="Mute">Suporte para Mudo</option>
+              <option value="Wheelchair">Suporte para Cadeirante</option>
+            </select>          
           </C.Filter>
 
           <h1 className="categoryTitle">CATEGORIAS</h1>
           <div className="containerCategory">
             {cardsHome.map((item) => (
+              <Link to={item.link}>
               <C.FilterCategory key={item.id} primary={`${item.color}`}>
                 <img src={item.img} alt="Icone Shopping" />
                 <C.InfoCategory>
-                  <C.BtnBuscar>
+                  <C.BtnBuscar> 
                     <IoIosArrowForward />
-                  </C.BtnBuscar>
+                   </C.BtnBuscar>
                 </C.InfoCategory>
                 </C.FilterCategory>
+                </Link>
             ))}
           </div>
         </C.Category>

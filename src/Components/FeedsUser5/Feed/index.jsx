@@ -56,8 +56,7 @@ export function FeedUser5() {
               <h1>{item.name}</h1>
               <p>{item.price}</p>
             </CointanerProduct>
-          ))}
-          ;
+          ))}          
         </Product>
       </Feed>
     </>

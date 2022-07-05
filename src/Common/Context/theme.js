@@ -7,7 +7,6 @@ export const lightMode = {
     cards: "#FFFFFF",
     barRight: "#fff",
     bar: "#2980B9",
-
 }
 
 export const darkMode = {
@@ -17,7 +16,7 @@ export const darkMode = {
     cards: "#393E4B",
     barRight: "#2D3E50",
     bar: "#2D3E50",
-    icon: "#969FA8"
+    icon: "#969FA8",
 }
 export const GlobalStyles = createGlobalStyle`
     body{

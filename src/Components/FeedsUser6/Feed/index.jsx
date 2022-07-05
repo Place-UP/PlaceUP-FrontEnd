@@ -57,7 +57,6 @@ export function FeedUser6() {
               <p>{item.price}</p>
             </CointanerProduct>
           ))}
-          ;
         </Product>
       </Feed>
     </>

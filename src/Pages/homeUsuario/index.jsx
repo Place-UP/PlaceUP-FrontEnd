@@ -32,29 +32,14 @@ export function IndexHomeUser() {
     );
   };
 
-  const [isOpen, setIsOpen] = useState(""); 
-
   const navegate = useNavigate();
 
-  function Home(){
-    navegate("/FeedUser"); 
-  }
+  function Navigation(props){
+    navegate(`/${props}`)
+  }     
 
-  function Cego(){
-    navegate("/Blind"); 
-  }
+  const [isOpen, setIsOpen] = useState(""); 
 
-  function Surdo(){
-    navegate("/Deaf"); 
-  }
-
-  function Mudo(){
-    navegate("/Mute"); 
-  }
-
-  function Cadeirante(){
-    navegate("/Wheelchair"); 
-  }
 
   return (
     <>
@@ -102,12 +87,13 @@ export function IndexHomeUser() {
               <option value="maior">Maior Preço</option>
               <option value="menor">Menor Preço</option>
             </select>
-            <select id="select" onChange={Home}>
-              <option value="acessibiliade1" id="select" onChange={Home}>Acessibilidade</option>
-              <option value="cego1" onChange={Cego}>Suporte para Cego</option>
-              <option value="surdo1" onChange={Surdo}>Suporte para Surdo</option>
-              <option value="mudo1" onChange={Mudo}>Suporte para Mudo</option>
-              <option value="cadeirante1" onChange={Cadeirante}>Suporte para Cadeirante</option>
+
+            <select id="select" onChange={(e) => Navigation(e.target.value)}>
+              <option value="FeedUser">Acessibilidade</option>
+              <option value="Blind">Suporte para Cego</option>
+              <option value="Deaf">Suporte para Surdo</option>
+              <option value="Mute">Suporte para Mudo</option>
+              <option value="Wheelchair">Suporte para Cadeirante</option>
             </select>          
           </C.Filter>
 
