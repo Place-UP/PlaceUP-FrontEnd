@@ -1,28 +1,29 @@
-import hamburguer from "../Img/Home/Icono de hamburguesa colección de comida rápida_ icono de comida aislado _ Vector Premium 1.png";
-import donut from "../Img/Home/Donut voador derretido ilustração do ícone dos desenhos animados _ Vetor Grátis.png";
-import drink from "../Img/Home/Cola art illustration 1.png";
-import hotdog from "../Img/Home/Explore Catalyststuff best graphic resources.png";
+import bebida from "../Pages/homeUsuario/images/bebida.png";
+import sobremesa from "../Pages/homeUsuario/images/DOCES.png";
+import farmacia from "../Pages/homeUsuario/images/Farmacia.png";
+import mercado from "../Pages/homeUsuario/images/mercado.png";
+
 export const cardsHome = [
   {
     id: 1,
-    img: hamburguer,
-    color: "#FECB80",
+    img: bebida,
+    color: "#edcccc",
   },
   {
     id: 2,
-    img: donut,
-    color: "#DC9AFE",
+    img: sobremesa,
+    color: "#f7f0cc",
   },
 
   {
     id: 3,
-    img: drink,
-    color: "#FEA465",
+    img: farmacia,
+    color: "#c2dae9",
   },
 
   {
     id: 4,
-    img: hotdog,
-    color: "#FFD452",
+    img: mercado,
+    color: "#ffdf94",
   },
 ];
