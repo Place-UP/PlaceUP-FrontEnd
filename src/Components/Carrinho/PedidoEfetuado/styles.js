@@ -34,9 +34,7 @@ export const Section = styled.section`
     }
   }
   
-  ${media.Tablet} {
-    display: none;
-    
+  ${media.Tablet} {    
     .OrderPlaced{ width: 50%;  }
 
     h1{ 

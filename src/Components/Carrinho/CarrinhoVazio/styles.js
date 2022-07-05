@@ -27,7 +27,6 @@ export const Section = styled.section`
   }
   
   ${media.Tablet} {
-    display: none;
     .EmptyCart{ 
       width: 50%;
     }

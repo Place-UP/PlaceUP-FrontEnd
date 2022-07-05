@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import { comercio6 } from "../../mock/comercio6";
-import { Header } from "../../Components/HeaderUsuario/HeaderUser";
-import { FeedUser } from "../../Components/FeedsUser/Feed/index";
-import { FeedUser2 } from "../../Components/FeedsUser2/Feed/index";
-import { FeedUser3 } from "../../Components/FeedsUser3/Feed/index";
-import { FeedUser4 } from "../../Components/FeedsUser4/Feed/index";
-import { FeedUser5 } from "../../Components/FeedsUser5/Feed/index";
-import { FeedUser6 } from "../../Components/FeedsUser6/Feed/index";
-import { MenuPrincipal } from "../../Components/MenuPrincipal/index";
+import { comercio6 } from "../../../mock/comercio6";
+import { Header } from "../../../Components/HeaderUsuario/HeaderUser";
+import { FeedUser } from "../../../Components/FeedsUser/Feed/index";
+import { FeedUser2 } from "../../../Components/FeedsUser2/Feed/index";
+import { FeedUser3 } from "../../../Components/FeedsUser3/Feed/index";
+import { FeedUser4 } from "../../../Components/FeedsUser4/Feed/index";
+import { FeedUser5 } from "../../../Components/FeedsUser5/Feed/index";
+import { FeedUser6 } from "../../../Components/FeedsUser6/Feed/index";
+import { MenuPrincipal } from "../../../Components/MenuPrincipal/index";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import * as C from "./styles";
-import { CarrinhoComProduto } from "../../Components/Carrinho/CarrinhoComProduto";
-import { cardsHome } from "../../mock/CardsHome";
+import { CarrinhoComProduto } from "../../../Components/Carrinho/CarrinhoComProduto";
+import { cardsHome } from "../../../mock/CardsHome";
 import { IoIosArrowForward } from "react-icons/io";
 import { Navigate, useNavigate  } from "react-router-dom";
 
-export function IndexHomeUser() {
+export function Blind() {
   const [query, setQuery] = useState("");
 
   const search = () => {
@@ -96,10 +96,13 @@ export function IndexHomeUser() {
 
           <C.Filter>
             <select name="Ordenar por">
-              <option value="ordenar" select>Ordenar</option>
+              <option value="ordenar" select>
+                Ordenar
+              </option>
               <option value="maior">Maior Preço</option>
               <option value="menor">Menor Preço</option>
             </select>
+
 
             <select id="select" onChange={Home}>
               <option value="acessibiliade1" id="select" onChange={Home}>Acessibilidade</option>
@@ -107,7 +110,7 @@ export function IndexHomeUser() {
               <option value="surdo1" onChange={Surdo}>Suporte para Surdo</option>
               <option value="mudo1" onChange={Mudo}>Suporte para Mudo</option>
               <option value="cadeirante1" onChange={Cadeirante}>Suporte para Cadeirante</option>
-            </select>          
+            </select>                                
           </C.Filter>
 
           <h1 className="categoryTitle">CATEGORIAS</h1>
@@ -125,12 +128,8 @@ export function IndexHomeUser() {
           </div>
         </C.Category>
 
-        <FeedUser  />
-        <FeedUser5  />
-        <FeedUser3  />
         <FeedUser4  />
         <FeedUser2  />        
-        <FeedUser6  />     
       </C.Main>
     </>
   );
