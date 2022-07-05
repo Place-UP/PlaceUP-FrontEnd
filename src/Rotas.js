@@ -3,6 +3,11 @@ import { Login } from "./Components/Login/Index";
 import { CadastroUser } from "./Pages/cadastroUsuario";
 import { IndexCalculadora } from "./Pages/PageCalculadora/index";
 import { IndexHomeUser } from "./Pages/homeUsuario/index";
+import { Bebidas } from "./Pages/homeUsuario/bebida";
+import { Farmacia } from "./Pages/homeUsuario/farmacia";
+import { Mercado } from "./Pages/homeUsuario/mercado";
+import { Doces } from "./Pages/homeUsuario/doces";
+
 import { HomeComerciante } from "./Pages/homeComerciante/index.jsx";
 import { Blind } from "./Pages/homeUsuario/filter/blind";
 import { Wheelchair } from "./Pages/homeUsuario/filter/wheelchair";
@@ -45,6 +50,7 @@ import { ChatComerciante } from "./Pages/Chat/index";
 import { AddProduct } from "./Pages/adicionarProduto/index";
 import { CreateProductContext } from "./Common/Context/AddProduct";
 import { VisualizacaoComerciante } from "./Pages/VisuLojaComerciante/index";
+
 function Rotas() {
   return (
     <>
@@ -65,11 +71,9 @@ function Rotas() {
                 path="/CadastroComerPassword"
                 element={<CadastroComerPassword />}
               />
-
               <Route path="/CadastroUsuario" element={<CadastroUser />} />
               <Route path="/UserPhone" element={<CadastroUserPhone />} />
               <Route path="/UserPassword" element={<CadastroPasswordUser />} />
-
               <Route path="/FeedUser" element={<IndexHomeUser />} />
               <Route path="/Mute" element={<Mute />} />
               <Route path="/Wheelchair" element={<Wheelchair />} />
@@ -105,12 +109,10 @@ function Rotas() {
                 path="/VisualizacaoUsuario3"
                 element={<VisualizacaoUsuario3 />}
               />
-
               <Route
                 path="/VisualizacaoUsuario4"
                 element={<VisualizacaoUsuario4 />}
               />
-
               <Route
                 path="/VisualizacaoUsuario5"
                 element={<VisualizacaoUsuario5 />}
@@ -127,6 +129,11 @@ function Rotas() {
               <Route path="/Perfil" element={<Perfil />} />
               <Route path="/Favoritos" element={<Favoritos />} />
               <Route path="/Cursos" element={<Cursos />} />
+
+              <Route path="/Bebidas" element={<Bebidas />} />
+              <Route path="/Farmacia" element={<Farmacia />} />
+              <Route path="/Doces" element={<Doces />} />
+              <Route path="/Mercado" element={<Mercado />} />
             </Routes>
           </BrowserRouter>
         </CartContextProvider>

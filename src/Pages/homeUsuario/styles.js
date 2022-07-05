@@ -274,7 +274,7 @@ export const Filter = styled.div`
 export const Category = styled.div`
   width: 60%;
   padding: 30px 0 30px 12.5%;
-
+  
   .categoryTitle {
     font-weight: 800;
     font-family: "Bakbak One", cursive;
@@ -308,6 +308,7 @@ export const Category = styled.div`
     img {
       width: 65px;
       height: 65px;
+      cursor: pointer;
     }
 
     ${media.Tablet} {
