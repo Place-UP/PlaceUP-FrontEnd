@@ -50,15 +50,13 @@ export function HeaderComerciante() {
               </List>
 
               <List
-                className={`${
-                  path === "/VisualizacaoComerciante" ? "Active" : ""
-                }`}
+                className={`${path === "/VisualizacaoComerciante" ? "Active" : ""
+                  }`}
               >
                 <Link
                   to="/VisualizacaoComerciante"
-                  className={`${
-                    path === "/VisualizacaoComerciante" ? "preto" : ""
-                  }`}
+                  className={`${path === "/VisualizacaoComerciante" ? "preto" : ""
+                    }`}
                 >
                   <Icon>
                     <FiBox className="IconsHeader" />
@@ -80,19 +78,17 @@ export function HeaderComerciante() {
               </List>
 
               <List
-                className={`${
-                  path === "/calcular" || path === "/calculadora"
-                    ? "Active"
-                    : ""
-                }`}
+                className={`${path === "/calcular" || path === "/calculadora"
+                  ? "Active"
+                  : ""
+                  }`}
               >
                 <Link
                   to="/calcular"
-                  className={`${
-                    path === "/calcular" || path === "/calculadora"
-                      ? "preto"
-                      : ""
-                  }`}
+                  className={`${path === "/calcular" || path === "/calculadora"
+                    ? "preto"
+                    : ""
+                    }`}
                 >
                   <Icon>
                     <TiCalculator className="IconsHeader" />
