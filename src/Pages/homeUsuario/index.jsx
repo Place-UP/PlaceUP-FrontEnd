@@ -15,6 +15,7 @@ import { CarrinhoComProduto } from "../../Components/Carrinho/CarrinhoComProduto
 import { cardsHome } from "./../../mock/CardsHome";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+
 export function IndexHomeUser() {
   const [query, setQuery] = useState("");
 
@@ -82,9 +83,7 @@ export function IndexHomeUser() {
             </select>
 
             <select name="Acessibilidade">
-              <option value="acessibilidade" select>
-                Acessibilidade
-              </option>
+              <option value="acessibilidade" select>Acessibilidade</option>
               <option value="cego">Suporte para Cego</option>
               <option value="surdo">Suporte para Surdo</option>
               <option value="mudo">Suporte para Mudo</option>
