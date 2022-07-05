@@ -128,7 +128,7 @@ export function Calculator() {
                   }
                 />
 
-                <span>
+                <span className='span-total'>
                   Valor unitário:{" "}
                   {!(result / unidade)
                     ? "" && 0
