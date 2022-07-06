@@ -7,6 +7,8 @@ import { IoIosExit } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { AiOutlineClockCircle, AiOutlineStar } from "react-icons/ai";
 import { MdOutlinePlace } from "react-icons/md";
+import { FaBlind } from "react-icons/fa";
+
 import { Section, Profile, DarkMode } from "./styles";
 import { ThemeContext } from "../../Common/Context/DarkThemeProvider";
 import { Bussines4 } from "../../mock/comercio4";
@@ -51,10 +53,10 @@ export function MenuPrincipal() {
           <div className="box">
             <div className="WorkTimePlace DefaulConfig">
               <AiOutlineClockCircle className="IconMenu" />
-              <p> Aberto das 8h/18h</p>
+              <p> Aberto 24h</p>
             </div>
             <div className="Avaliation DefaulConfig">
-              <span className="IconMenu">4,4</span>
+              <span className="IconMenu">4,9</span>
               <div className="ImageStars">
                 <AiOutlineStar className="IconMenu " />
                 <AiOutlineStar className="IconMenu " />
@@ -65,10 +67,12 @@ export function MenuPrincipal() {
             </div>
             <div className="Location DefaulConfig">
               <MdOutlinePlace className="IconMenu" />
-              <p> Endereco do restaurante</p>
+
+
+              <p> Endereco do comércio</p>
             </div>
             <div className="Acessible DefaulConfig">
-              <FaWheelchair className="IconMenu" />
+              <FaBlind className="IconMenu" />
               <p> Acessivel</p>
             </div>
 
@@ -76,18 +80,11 @@ export function MenuPrincipal() {
               <h1 className="TitleCorredores">Corredores</h1>
 
               <div className="SectionPlace">
-                <span>Snacks</span>
-                <span>Limpeza</span>
-                <span>Açougue</span>
-                <span>Bebidas(+18)</span>
-                <span>Snacks</span>
-                <span>Limpeza</span>
-                <span>Açougue</span>
-                <span>Bebidas(+18)</span>
-                <span>Snacks</span>
-                <span>Limpeza</span>
-                <span>Açougue</span>
-                <span>Bebidas(+18)</span>
+                <span>Ofertas</span>
+                <span>Remedios</span>
+                <span>Higiene</span>
+                <span>Banho</span>
+                <span>Primeiro Socorros</span>
               </div>
             </div>
           </div>

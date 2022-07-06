@@ -54,7 +54,7 @@ export function MenuPrincipal() {
               <p> Aberto das 8h/18h</p>
             </div>
             <div className="Avaliation DefaulConfig">
-              <span className="IconMenu">4,4</span>
+              <span className="IconMenu">4,3</span>
               <div className="ImageStars">
                 <AiOutlineStar className="IconMenu " />
                 <AiOutlineStar className="IconMenu " />
@@ -65,10 +65,12 @@ export function MenuPrincipal() {
             </div>
             <div className="Location DefaulConfig">
               <MdOutlinePlace className="IconMenu" />
-              <p> Endereco do restaurante</p>
+              <p> Endereco do comércio</p>
             </div>
             <div className="Acessible DefaulConfig">
               <FaWheelchair className="IconMenu" />
+                            <MdOutlinePlace className="IconMenu" />
+
               <p> Acessivel</p>
             </div>
 
