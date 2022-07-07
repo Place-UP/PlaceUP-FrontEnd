@@ -2,7 +2,7 @@ import { React, useContext } from "react";
 import "./styles";
 import perfil from "./images/perfil.png";
 import logoPlace from "./images/LogoPlace.svg";
-import { FaWheelchair } from "react-icons/fa";
+import { FaDeaf } from "react-icons/fa";
 import { IoIosExit } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { AiOutlineClockCircle, AiOutlineStar } from "react-icons/ai";
@@ -65,10 +65,10 @@ export function MenuPrincipal() {
             </div>
             <div className="Location DefaulConfig">
               <MdOutlinePlace className="IconMenu" />
-              <p> Endereco do restaurante</p>
+              <p> Endereco do comércio</p>
             </div>
             <div className="Acessible DefaulConfig">
-              <FaWheelchair className="IconMenu" />
+              <FaDeaf className="IconMenu" />
               <p> Acessivel</p>
             </div>
 
@@ -139,7 +139,7 @@ export function MenuPrincipal() {
                         <p> Endereco do restaurante</p>
                       </div>
                       <div className="Acessible DefaulConfig">
-                        <FaWheelchair className="IconMenu" />
+                        <FaDeaf className="IconMenu" />
                         <p> Acessivel</p>
                       </div>
 
@@ -148,14 +148,6 @@ export function MenuPrincipal() {
 
                         <div className="SectionPlace">
                           <div>
-                            <span>Snacks</span>
-                            <span>Limpeza</span>
-                            <span>Açougue</span>
-                            <span>Bebidas(+18)</span>
-                            <span>Snacks</span>
-                            <span>Limpeza</span>
-                            <span>Açougue</span>
-                            <span>Bebidas(+18)</span>
                             <span>Snacks</span>
                             <span>Limpeza</span>
                             <span>Açougue</span>
