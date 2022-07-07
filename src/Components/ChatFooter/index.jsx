@@ -18,9 +18,10 @@ export const ChatFooter = ({ chatId }) => {
             user: user.email,
             photoURL: user.photoURL,
             timestamp: firebase.firestore.FieldValue.serverTimestamp()
+
         })
 
-        setMessage("")
+        setMessage('')
     }
 
     return (

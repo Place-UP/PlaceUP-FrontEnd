@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+const Media = {
+    Tablet: "@media(max-width: 768px)",
+}
+
 export const Container = styled.div`
     height: 70px;
     background-color: ${({ theme }) => theme.cards};
@@ -11,6 +15,13 @@ export const Container = styled.div`
     box-shadow: 0 1px 2px #0003;
     z-index: 1;
     box-sizing: border-box;
+
+    ${Media.Tablet}{
+        width: 85%;
+        margin-left: 10%;
+        box-shadow: none;
+        border-right: none;
+    }
 `
 export const UserInfo = styled.div`
     display: flex;
@@ -42,5 +53,17 @@ export const Avatar = styled.img`
     border-radius: 50%;
     margin-right: 10px;
     min-width: fit-content;
+`
+
+export const Menu = styled.div`
+    display: none;
+    button{
+        color: #2980B9;
+        font-size: 2rem;
+    }
+
+    ${Media.Tablet}{
+        display: block;
+    }
 `
 

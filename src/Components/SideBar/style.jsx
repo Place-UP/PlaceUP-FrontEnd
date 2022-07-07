@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+const Media = {
+    MobileL: "@media(max-width: 425px)",
+    Tablet: "@media(max-width: 768px)",
+    Laptop: "@media(max-width: 1024px)"
+}
+
 export const Container = styled.div`
     position: fixed;
     width: 25%;
@@ -8,6 +14,10 @@ export const Container = styled.div`
     right: 0;
     background-color: ${({ theme }) => theme.barRight};
     top: 0;
+
+    ${Media.Tablet}{
+        display: none;
+    }
 `
 
 export const Search = styled.div`
@@ -38,4 +48,16 @@ export const Search = styled.div`
         background-color: transparent;
         color: ${({ theme }) => theme.fontColor};
     }
+
+    ${Media.Laptop}{
+        i{
+            font-size: 0.8rem;
+        }
+
+        input{
+            font-size: 0.8rem;
+        }
+    }
+
+    
 `

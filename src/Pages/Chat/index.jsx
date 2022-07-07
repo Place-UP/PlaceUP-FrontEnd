@@ -28,8 +28,7 @@ export function ChatComerciante() {
 
     return (
         <C.Container>
-            <HeaderComerciante />            
-            <InputDarkMode />
+            <HeaderComerciante />
             <Chat userChat={userChat} />
             <SideBar setUserChat={setUserChat} userChat={userChat} />
         </C.Container>

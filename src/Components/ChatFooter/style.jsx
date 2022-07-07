@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+const Media = {
+  Tablet: "@media(max-width: 768px)",
+}
+
 export const Container = styled.div`
   position: absolute;
   width: 65%;
@@ -13,6 +17,12 @@ export const Container = styled.div`
   svg {
     width: 25px;
     height: 25px;
+  }
+
+  ${Media.Tablet}{
+    width: 85%;
+    margin-left: 8%;
+    bottom: 0;
   }
 `;
 

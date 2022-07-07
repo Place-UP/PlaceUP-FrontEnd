@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+const Media = {
+    MobileL: "@media(min-width: 425px)",
+    Tablet: "@media(min-width: 768px)",
+    Laptop: "@media(min-width: 1024px)"
+}
+
 export const Container = styled.div`
     position: relative;
     display: flex;
